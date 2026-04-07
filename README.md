@@ -33,3 +33,10 @@ AxDx 전문가 과정
 - 6교시: AI 전환 개념 심화 | 자동화와 지능화의 차이를 이해하고 적용 범위를 넓힌다.
 - 7교시: ChatGPT 페이지 활용법 - GPTs, 앱, codex, 메모리
 - 8교시:
+
+```text
+C:\Users\Administrator\dxAx\실습결과물\07\업무분석보고서.md 이 파일의 내용을 채워 넣으려고 한다.
+C:\Users\Administrator\dxAx\나의업무분석 이 안에 있는 업무일지를 분석을 해서
+C:\Users\Administrator\dxAx\README.md 이 리드미 파일의 이틀간(4/6~4/7)의 수업에서 진행 한 분석방법으로
+자세하게 업무를 분석하고 AX 전환 대상이 되는 업무를 판별하는 보고서를 10페이지 분량으로 작성해줘
+```
