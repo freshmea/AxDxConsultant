@@ -85,3 +85,11 @@ C:\Users\Administrator\dxAx\README.md 이 리드미 파일의 이틀간(4/6~4/7)
 - 6교시:
 - 7교시:
 - 8교시:
+
+```text
+C:\Users\Administrator\dxAx\orange_example\titanic.csv 이 파일을 분석해서 생존 여부를 타겟으로 각 status, age ,sex 에 대해서 분석하는 글을 써줘. pandas 와 scit-learn 을 써서 python 파일도 폴더에 남겨서 볼 수 있게하고 통계 분석을 먼저 진행 하고 분석을 해줘
+
+위 의 csv 데이터의 k-fold 해서 10배로 늘린다음에 80%를 램던 중복해서 샘플링하고 adaboost 모델을 써서 머신러닝 훈련을 진행하고 모델 파일을 저장해줘.
+그리고 샘플링을 다시 500개만 진행해서 confusion matrix 를 구하고 결과를 해석해줘.
+사용된 파이썬 스크립트를 저장하고 분석 결과도 md 형식으로 저장해줘
+```
