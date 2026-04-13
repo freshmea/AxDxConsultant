@@ -106,7 +106,7 @@ C:\Users\Administrator\dxAx\orange_example\body-fat-brozek.csv 이 수치 데이
 
 - 1교시: 복습
 - 2교시: 2주차 과정 소개
-- 3교시:
+- 3교시: 프롬프트 실습 + 노트북LM 을 활용한 프롬프트 실습
 - 4교시:
 - 5교시:
 - 6교시: [실습] Orange3로 모델 훈련 | AdaBoost 모델 훈련과 저장 실습
