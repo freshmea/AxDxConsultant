@@ -123,7 +123,7 @@ C:\Users\Administrator\dxAx\orange_example\body-fat-brozek.csv 이 수치 데이
 - 2교시: 비즈니스 문서의 핵심 구조,"기획서, 보고서, 제안서
 - 3교시: skill 개념 설명 - 예제 (docx, pdf 사용으로 회사 문서 만들기)
 - 4교시: codex 에서 스킬 설치하고 사용하기
-- 5교시:
+- 5교시: codex 자동화 실습, codex 로 주간 업무 일지 작성하기
 - 6교시:
 - 7교시:
 - 8교시:
