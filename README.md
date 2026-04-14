@@ -125,5 +125,5 @@ C:\Users\Administrator\dxAx\orange_example\body-fat-brozek.csv 이 수치 데이
 - 4교시: codex 에서 스킬 설치하고 사용하기
 - 5교시: codex 자동화 실습, codex 로 주간 업무 일지 작성하기
 - 6교시: 목차 작성 후 세부 내용 순차 작성 실습
-- 7교시: 소설 작성 실습
-- 8교시: 기획안 작성 실습
+- 7교시: 소설 작성 실습, 기획안 작성 실습
+- 8교시: 핵심 요약, 톤앤매너 수정
