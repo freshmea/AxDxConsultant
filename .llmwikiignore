@@ -1,0 +1,14 @@
+# Paths excluded from LLM Wiki indexing.
+# Supports simple path prefixes and glob patterns.
+
+.git/
+.mypy_cache/
+.obsidian/
+wiki/
+output/
+tmp/
+나의업무분석/
+
+# Generated or backup markdown
+**/*_backup.md
+**/*.pdf.md
