@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T05:28:46.551210+00:00",
+  "generated_at": "2026-04-15T05:40:30.006290+00:00",
   "repo_root": "C:\\Users\\Administrator\\dxAx",
   "nodes": [
     {
@@ -18,7 +18,7 @@
       "word_count": 239,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 2
     },
     {
       "id": "llm_wiki/README",
@@ -36,7 +36,7 @@
       "word_count": 136,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 2
     },
     {
       "id": "notion_app_date_filter_fallback_skill/SKILL",
@@ -153,6 +153,27 @@
       "inbound_count": 0
     },
     {
+      "id": "실습결과물/06/00-INDEX",
+      "title": "실습결과물 06 인덱스",
+      "path": "실습결과물/06/00-INDEX.md",
+      "summary": "tags: [실습결과물, day06, 리서치, paperclip, markdown]",
+      "headings": [
+        "실습결과물 06 인덱스",
+        "개요",
+        "문서 묶음"
+      ],
+      "tokens_estimate": 87,
+      "word_count": 50,
+      "outbound_links": [
+        "실습결과물/06/deep-research-report",
+        "실습결과물/06/mermaidTest",
+        "실습결과물/06/paperclipai교육요약",
+        "실습결과물/06/paperclipai사업계획서"
+      ],
+      "unresolved_links": [],
+      "inbound_count": 0
+    },
+    {
       "id": "실습결과물/06/deep-research-report",
       "title": "PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지",
       "path": "실습결과물/06/deep-research-report.md",
@@ -175,7 +196,7 @@
       "word_count": 4187,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/06/mermaidTest",
@@ -189,7 +210,7 @@
       "word_count": 44,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/06/paperclipai교육요약",
@@ -211,7 +232,7 @@
       "word_count": 192,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/06/paperclipai사업계획서",
@@ -236,7 +257,31 @@
       "word_count": 370,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/07/00-INDEX",
+      "title": "실습결과물 07 인덱스",
+      "path": "실습결과물/07/00-INDEX.md",
+      "summary": "tags: [실습결과물, day07, 업무분석, dx, ax, 프로세스]",
+      "headings": [
+        "실습결과물 07 인덱스",
+        "개요",
+        "문서 묶음"
+      ],
+      "tokens_estimate": 88,
+      "word_count": 71,
+      "outbound_links": [
+        "실습결과물/07/01-업무-흐름-구조화",
+        "실습결과물/07/02-업무-흐름-mermaid",
+        "실습결과물/07/03-업무-비효율-수치화-템플릿",
+        "실습결과물/07/04-as-is-프로세스-스케치",
+        "실습결과물/07/업무분석보고서"
+      ],
+      "unresolved_links": [
+        "./5가지단계로%20나누기.md"
+      ],
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/07/01-업무-흐름-구조화",
@@ -250,7 +295,7 @@
       "word_count": 55,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 1
+      "inbound_count": 3
     },
     {
       "id": "실습결과물/07/02-업무-흐름-mermaid",
@@ -264,7 +309,7 @@
       "word_count": 155,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 1
+      "inbound_count": 3
     },
     {
       "id": "실습결과물/07/03-업무-비효율-수치화-템플릿",
@@ -278,7 +323,7 @@
       "word_count": 50,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 1
+      "inbound_count": 3
     },
     {
       "id": "실습결과물/07/04-as-is-프로세스-스케치",
@@ -292,7 +337,7 @@
       "word_count": 88,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 1
+      "inbound_count": 3
     },
     {
       "id": "실습결과물/07/5가지단계로 나누기",
@@ -317,9 +362,10 @@
       "id": "실습결과물/07/업무분석보고서",
       "title": "업무분석보고서",
       "path": "실습결과물/07/업무분석보고서.md",
-      "summary": "작성 목적: `나의업무분석` 주간 업무일지(총 49주)를 기반으로, 2026년 4월 6일~4월 7일 수업에서 다룬 분석 방법(업무 흐름 구조화, 비효율 수치화, DX 개선 포인트 도출, AX 전환 판별)을 적용해 실제 업무를 진단하고 AX 전환 우선순위를 제시한다. - 분석 기간: 업무일지 기준 2024년 12월 30일~2025년 12월 26일 - 분석 대상: 교육 운영, 교안/콘텐츠 제작, 기술 환경 구축, 행정/기획/보고,",
+      "summary": "tags: [실습결과물, day07, 업무분석, dx, ax]",
       "headings": [
         "업무분석보고서",
+        "관련 문서",
         "0. 문서 개요",
         "1. 분석 방법론 (2026-04-06~2026-04-07 수업 적용)",
         "1.1 적용한 수업 방법",
@@ -329,12 +375,42 @@
         "2.2 업무군 분류 결과 (업무일지 라인 기반)",
         "2.3 핵심 관찰",
         "3. AS-IS 업무 흐름 구조화",
-        "3.1 End-to-End 흐름",
-        "3.2 공급자-핵심직무-수요자 관점"
+        "3.1 End-to-End 흐름"
       ],
-      "tokens_estimate": 2776,
-      "word_count": 2627,
-      "outbound_links": [],
+      "tokens_estimate": 2846,
+      "word_count": 2685,
+      "outbound_links": [
+        "실습결과물/07/00-INDEX",
+        "실습결과물/07/01-업무-흐름-구조화",
+        "실습결과물/07/02-업무-흐름-mermaid",
+        "실습결과물/07/03-업무-비효율-수치화-템플릿",
+        "실습결과물/07/04-as-is-프로세스-스케치"
+      ],
+      "unresolved_links": [
+        "./5가지단계로%20나누기.md"
+      ],
+      "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/08/00-INDEX",
+      "title": "실습결과물 08 인덱스",
+      "path": "실습결과물/08/00-INDEX.md",
+      "summary": "tags: [실습결과물, day08, ai-workflow, 업무리스트, 우선순위, 명세서]",
+      "headings": [
+        "실습결과물 08 인덱스",
+        "개요",
+        "문서 묶음"
+      ],
+      "tokens_estimate": 106,
+      "word_count": 85,
+      "outbound_links": [
+        "실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스",
+        "실습결과물/08/02-AI-활용영역-보조-요약-생성-분석",
+        "실습결과물/08/03-정량평가-우선순위",
+        "실습결과물/08/04-value-estimation-canvas",
+        "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우",
+        "실습결과물/08/업무리스트"
+      ],
       "unresolved_links": [],
       "inbound_count": 0
     },
@@ -354,7 +430,7 @@
       "word_count": 319,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/08/02-AI-활용영역-보조-요약-생성-분석",
@@ -379,7 +455,7 @@
       "word_count": 393,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/08/03-정량평가-우선순위",
@@ -400,7 +476,7 @@
       "word_count": 294,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/08/04-value-estimation-canvas",
@@ -418,7 +494,7 @@
       "word_count": 164,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우",
@@ -440,7 +516,7 @@
       "word_count": 487,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 1
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/08/업무리스트",
@@ -460,6 +536,27 @@
         "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우"
       ],
       "unresolved_links": [],
+      "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/09/00-INDEX",
+      "title": "실습결과물 09 인덱스",
+      "path": "실습결과물/09/00-INDEX.md",
+      "summary": "tags: [실습결과물, day09, 문제정의, 현상분석, 사례]",
+      "headings": [
+        "실습결과물 09 인덱스",
+        "개요",
+        "문서 묶음"
+      ],
+      "tokens_estimate": 54,
+      "word_count": 37,
+      "outbound_links": [
+        "실습결과물/09/노래요청",
+        "실습결과물/09/문제 정의서",
+        "실습결과물/09/미션20대여성상품",
+        "실습결과물/09/현상에서문제로"
+      ],
+      "unresolved_links": [],
       "inbound_count": 0
     },
     {
@@ -474,7 +571,7 @@
       "word_count": 253,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/09/문제 정의서",
@@ -499,7 +596,7 @@
       "word_count": 518,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/09/미션20대여성상품",
@@ -524,7 +621,7 @@
       "word_count": 440,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/09/현상에서문제로",
@@ -549,6 +646,33 @@
       "word_count": 461,
       "outbound_links": [],
       "unresolved_links": [],
+      "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/13/00-INDEX",
+      "title": "실습결과물 13 인덱스",
+      "path": "실습결과물/13/00-INDEX.md",
+      "summary": "tags: [실습결과물, day13, 수업요약, 해양드론, 수중드론, 블로그]",
+      "headings": [
+        "실습결과물 13 인덱스",
+        "개요",
+        "수업 요약",
+        "해양드론/수중드론",
+        "기타 콘텐츠"
+      ],
+      "tokens_estimate": 102,
+      "word_count": 57,
+      "outbound_links": [
+        "실습결과물/13/AIDX_5일차_교시별_요약",
+        "실습결과물/13/광물자료조사",
+        "실습결과물/13/노트북lm 수업 요약보고서",
+        "실습결과물/13/블로그 형태",
+        "실습결과물/13/수중드론_블로그",
+        "실습결과물/13/수중드론_사업화_기획안",
+        "실습결과물/13/해양드론딥리서치결과",
+        "실습결과물/13/해양드론조사보고서"
+      ],
+      "unresolved_links": [],
       "inbound_count": 0
     },
     {
@@ -565,7 +689,7 @@
       "word_count": 355,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/13/광물자료조사",
@@ -583,7 +707,7 @@
       "word_count": 1098,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/13/노트북lm 수업 요약보고서",
@@ -595,7 +719,7 @@
       "word_count": 771,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/13/블로그 형태",
@@ -607,7 +731,7 @@
       "word_count": 598,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/13/수중드론_블로그",
@@ -619,7 +743,7 @@
       "word_count": 611,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/13/수중드론_사업화_기획안",
@@ -644,7 +768,7 @@
       "word_count": 1210,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 3
     },
     {
       "id": "실습결과물/13/해양드론딥리서치결과",
@@ -669,7 +793,7 @@
       "word_count": 4449,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 3
     },
     {
       "id": "실습결과물/13/해양드론조사보고서",
@@ -694,7 +818,83 @@
       "word_count": 1774,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/14/00-INDEX",
+      "title": "실습결과물 14 인덱스",
+      "path": "실습결과물/14/00-INDEX.md",
+      "summary": "tags: [실습결과물, day14, 업무일지, 수중드론, 소설, 프롬프트]",
+      "headings": [
+        "실습결과물 14 인덱스",
+        "개요",
+        "하위 허브",
+        "프롬프트/보조 문서"
+      ],
+      "tokens_estimate": 97,
+      "word_count": 73,
+      "outbound_links": [
+        "실습결과물/14/10-주간업무일지-INDEX",
+        "실습결과물/14/20-수중드론-INDEX",
+        "실습결과물/14/30-소설-INDEX",
+        "실습결과물/14/AI요청 프롬프트",
+        "실습결과물/14/시대상 과 역사적 사실",
+        "실습결과물/14/업무일지 작성프롬프트",
+        "실습결과물/14/이메일발송프롬프트"
+      ],
+      "unresolved_links": [],
+      "inbound_count": 4
+    },
+    {
+      "id": "실습결과물/14/10-주간업무일지-INDEX",
+      "title": "주간 업무일지 인덱스",
+      "path": "실습결과물/14/10-주간업무일지-INDEX.md",
+      "summary": "tags: [실습결과물, day14, 업무일지, 주간리포트]",
+      "headings": [
+        "주간 업무일지 인덱스",
+        "문서 목록",
+        "관련 문서"
+      ],
+      "tokens_estimate": 90,
+      "word_count": 47,
+      "outbound_links": [
+        "실습결과물/14/00-INDEX",
+        "실습결과물/14/2026_3_13_주간 업무일지",
+        "실습결과물/14/2026_3_20_주간 업무일지",
+        "실습결과물/14/2026_3_27_주간 업무일지",
+        "실습결과물/14/2026_4_10_주간 업무일지",
+        "실습결과물/14/2026_4_3_주간 업무일지",
+        "실습결과물/14/업무일지 작성프롬프트"
+      ],
+      "unresolved_links": [],
+      "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/14/20-수중드론-INDEX",
+      "title": "수중드론 사업화 인덱스",
+      "path": "실습결과물/14/20-수중드론-INDEX.md",
+      "summary": "tags: [실습결과물, day14, 수중드론, 사업화, bluf, 타당성]",
+      "headings": [
+        "수중드론 사업화 인덱스",
+        "핵심 문서",
+        "요약/변형 문서",
+        "이전 맥락"
+      ],
+      "tokens_estimate": 123,
+      "word_count": 50,
+      "outbound_links": [
+        "실습결과물/13/수중드론_사업화_기획안",
+        "실습결과물/13/해양드론딥리서치결과",
+        "실습결과물/14/00-INDEX",
+        "실습결과물/14/수중드론_사업화_1페이지_BLUF",
+        "실습결과물/14/수중드론_사업화_1페이지_BLUF_열정설득서술형",
+        "실습결과물/14/수중드론_사업화_1페이지_BLUF_포멀서술형",
+        "실습결과물/14/수중드론_사업화_기획안",
+        "실습결과물/14/수중드론_사업화_상세기획안",
+        "실습결과물/14/수중드론_사업화_타당성"
+      ],
+      "unresolved_links": [],
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/14/2026_3_13_주간 업무일지",
@@ -719,7 +919,7 @@
       "word_count": 331,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/2026_3_20_주간 업무일지",
@@ -744,7 +944,7 @@
       "word_count": 296,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/2026_3_27_주간 업무일지",
@@ -769,7 +969,7 @@
       "word_count": 299,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/2026_4_10_주간 업무일지",
@@ -794,7 +994,7 @@
       "word_count": 330,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/2026_4_3_주간 업무일지",
@@ -819,7 +1019,35 @@
       "word_count": 353,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/14/30-소설-INDEX",
+      "title": "소설 프로젝트 인덱스",
+      "path": "실습결과물/14/30-소설-INDEX.md",
+      "summary": "tags: [실습결과물, day14, 소설, 목파5부작, 스토리]",
+      "headings": [
+        "소설 프로젝트 인덱스",
+        "기획 문서",
+        "본문 문서",
+        "운영 문서"
+      ],
+      "tokens_estimate": 86,
+      "word_count": 53,
+      "outbound_links": [
+        "실습결과물/14/00-INDEX",
+        "실습결과물/14/고려빙의_스토리라인",
+        "실습결과물/14/목파_5부작_목차",
+        "실습결과물/14/소설1권",
+        "실습결과물/14/소설2권",
+        "실습결과물/14/소설3권",
+        "실습결과물/14/소설4권",
+        "실습결과물/14/소설5권",
+        "실습결과물/14/소설_연속작성_토큰로그",
+        "실습결과물/14/시대상 과 역사적 사실"
+      ],
+      "unresolved_links": [],
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/AI요청 프롬프트",
@@ -831,7 +1059,7 @@
       "word_count": 180,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/고려빙의_스토리라인",
@@ -850,7 +1078,7 @@
       "word_count": 548,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/목파_5부작_목차",
@@ -869,7 +1097,7 @@
       "word_count": 181,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/소설1권",
@@ -894,7 +1122,7 @@
       "word_count": 2729,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/소설2권",
@@ -919,7 +1147,7 @@
       "word_count": 1767,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/소설3권",
@@ -944,7 +1172,7 @@
       "word_count": 1666,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/소설4권",
@@ -969,7 +1197,7 @@
       "word_count": 1485,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/소설5권",
@@ -994,7 +1222,7 @@
       "word_count": 1358,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/소설_연속작성_토큰로그",
@@ -1013,7 +1241,7 @@
       "word_count": 162,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/수중드론_사업화_1페이지_BLUF",
@@ -1035,7 +1263,7 @@
       "word_count": 381,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/14/수중드론_사업화_1페이지_BLUF_열정설득서술형",
@@ -1049,7 +1277,7 @@
       "word_count": 323,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/수중드론_사업화_1페이지_BLUF_포멀서술형",
@@ -1063,15 +1291,16 @@
       "word_count": 362,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/수중드론_사업화_기획안",
       "title": "수중드론 사업화 기획안(운영형)",
       "path": "실습결과물/14/수중드론_사업화_기획안.md",
-      "summary": "1. 배경과 필요성 1.1 해양 현장의 정보 사각지대와 시장 변화 1.2 기존 모니터링 방식의 구조적 한계 1.3 수중드론 사업화 기회 요인 1.4 초기 타겟 시장 선정 근거(B2B/B2G 우선) 2. 프로젝트 목적 2.1 프로젝트 비전과 추진 방향 2.2 정량/정성 목표 2.3 핵심 서비스 범위(탐색-정보전달-실행) 2.4 핵심 성과지표(KPI) 3. 핵심 실행방안 3.1 제품·서비스 아키텍처(USV+수중모듈+플랫폼) 3.2",
+      "summary": "tags: [실습결과물, day14, 수중드론, 사업화, 기획안]",
       "headings": [
         "수중드론 사업화 기획안(운영형)",
+        "관련 문서",
         "목차",
         "1. 배경과 필요성",
         "1.1 해양 현장의 정보 사각지대와 시장 변화",
@@ -1081,14 +1310,21 @@
         "2. 프로젝트 목적",
         "2.1 프로젝트 비전과 추진 방향",
         "2.2 정량/정성 목표",
-        "2.3 핵심 서비스 범위(탐색-정보전달-실행)",
-        "2.4 핵심 성과지표(KPI)"
+        "2.3 핵심 서비스 범위(탐색-정보전달-실행)"
       ],
-      "tokens_estimate": 1242,
-      "word_count": 1210,
-      "outbound_links": [],
+      "tokens_estimate": 1324,
+      "word_count": 1249,
+      "outbound_links": [
+        "실습결과물/13/수중드론_사업화_기획안",
+        "실습결과물/13/해양드론딥리서치결과",
+        "실습결과물/14/00-INDEX",
+        "실습결과물/14/20-수중드론-INDEX",
+        "실습결과물/14/수중드론_사업화_1페이지_BLUF",
+        "실습결과물/14/수중드론_사업화_상세기획안",
+        "실습결과물/14/수중드론_사업화_타당성"
+      ],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/14/수중드론_사업화_상세기획안",
@@ -1113,7 +1349,7 @@
       "word_count": 1422,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/14/수중드론_사업화_타당성",
@@ -1132,7 +1368,7 @@
       "word_count": 3173,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/14/시대상 과 역사적 사실",
@@ -1156,7 +1392,7 @@
       "word_count": 606,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/14/업무일지 작성프롬프트",
@@ -1170,7 +1406,7 @@
       "word_count": 95,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/14/이메일발송프롬프트",
@@ -1184,24 +1420,100 @@
       "word_count": 53,
       "outbound_links": [],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/15/00-INDEX",
+      "title": "실습결과물 15 인덱스",
+      "path": "실습결과물/15/00-INDEX.md",
+      "summary": "tags: [실습결과물, day15, llm-wiki, codex, graph]",
+      "headings": [
+        "실습결과물 15 인덱스",
+        "개요",
+        "문서 묶음"
+      ],
+      "tokens_estimate": 75,
+      "word_count": 44,
+      "outbound_links": [
+        "AGENTS",
+        "llm_wiki/README",
+        "실습결과물/15/wikiLLM"
+      ],
+      "unresolved_links": [
+        "../../wiki/index.md",
+        "../../wiki/log.md"
+      ],
+      "inbound_count": 1
     },
     {
       "id": "실습결과물/15/wikiLLM",
       "title": "wikillm 을 구현하기 위한 프롬프트",
       "path": "실습결과물/15/wikiLLM.md",
-      "summary": "```text GitHub Gist(karpathy/llm-wiki.md) 를 참고해서 wifi llm 을 구축하려고 한다. 구축을 진행해 주고 Graphite 를 설치하고 md 파일들 간의 연결을 json 으로 확인해서 토큰사용을 절약할 수 있는 시스템으로 만들어줘 ```",
+      "summary": "tags: [실습결과물, day15, llm-wiki, codex, graph, token-saving]",
       "headings": [
-        "wikillm 을 구현하기 위한 프롬프트"
+        "wikillm 을 구현하기 위한 프롬프트",
+        "관련 문서"
       ],
-      "tokens_estimate": 46,
-      "word_count": 38,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "inbound_count": 0
+      "tokens_estimate": 105,
+      "word_count": 72,
+      "outbound_links": [
+        "AGENTS",
+        "llm_wiki/README",
+        "실습결과물/15/00-INDEX"
+      ],
+      "unresolved_links": [
+        "../../wiki/index.md",
+        "../../wiki/log.md"
+      ],
+      "inbound_count": 1
     }
   ],
   "edges": [
+    {
+      "source": "실습결과물/06/00-INDEX",
+      "target": "실습결과물/06/deep-research-report",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/06/00-INDEX",
+      "target": "실습결과물/06/paperclipai교육요약",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/06/00-INDEX",
+      "target": "실습결과물/06/paperclipai사업계획서",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/06/00-INDEX",
+      "target": "실습결과물/06/mermaidTest",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/00-INDEX",
+      "target": "실습결과물/07/01-업무-흐름-구조화",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/00-INDEX",
+      "target": "실습결과물/07/02-업무-흐름-mermaid",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/00-INDEX",
+      "target": "실습결과물/07/03-업무-비효율-수치화-템플릿",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/00-INDEX",
+      "target": "실습결과물/07/04-as-is-프로세스-스케치",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/00-INDEX",
+      "target": "실습결과물/07/업무분석보고서",
+      "kind": "markdown"
+    },
     {
       "source": "실습결과물/07/5가지단계로 나누기",
       "target": "실습결과물/07/01-업무-흐름-구조화",
@@ -1220,6 +1532,61 @@
     {
       "source": "실습결과물/07/5가지단계로 나누기",
       "target": "실습결과물/07/04-as-is-프로세스-스케치",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/업무분석보고서",
+      "target": "실습결과물/07/00-INDEX",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/업무분석보고서",
+      "target": "실습결과물/07/01-업무-흐름-구조화",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/업무분석보고서",
+      "target": "실습결과물/07/02-업무-흐름-mermaid",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/업무분석보고서",
+      "target": "실습결과물/07/03-업무-비효율-수치화-템플릿",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/업무분석보고서",
+      "target": "실습결과물/07/04-as-is-프로세스-스케치",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/08/00-INDEX",
+      "target": "실습결과물/08/업무리스트",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/08/00-INDEX",
+      "target": "실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/08/00-INDEX",
+      "target": "실습결과물/08/02-AI-활용영역-보조-요약-생성-분석",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/08/00-INDEX",
+      "target": "실습결과물/08/03-정량평가-우선순위",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/08/00-INDEX",
+      "target": "실습결과물/08/04-value-estimation-canvas",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/08/00-INDEX",
+      "target": "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우",
       "kind": "markdown"
     },
     {
@@ -1246,12 +1613,302 @@
       "source": "실습결과물/08/업무리스트",
       "target": "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우",
       "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/09/00-INDEX",
+      "target": "실습결과물/09/현상에서문제로",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/09/00-INDEX",
+      "target": "실습결과물/09/문제 정의서",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/09/00-INDEX",
+      "target": "실습결과물/09/미션20대여성상품",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/09/00-INDEX",
+      "target": "실습결과물/09/노래요청",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/13/00-INDEX",
+      "target": "실습결과물/13/AIDX_5일차_교시별_요약",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/13/00-INDEX",
+      "target": "실습결과물/13/노트북lm 수업 요약보고서",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/13/00-INDEX",
+      "target": "실습결과물/13/해양드론조사보고서",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/13/00-INDEX",
+      "target": "실습결과물/13/해양드론딥리서치결과",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/13/00-INDEX",
+      "target": "실습결과물/13/수중드론_사업화_기획안",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/13/00-INDEX",
+      "target": "실습결과물/13/수중드론_블로그",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/13/00-INDEX",
+      "target": "실습결과물/13/블로그 형태",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/13/00-INDEX",
+      "target": "실습결과물/13/광물자료조사",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/00-INDEX",
+      "target": "실습결과물/14/10-주간업무일지-INDEX",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/00-INDEX",
+      "target": "실습결과물/14/20-수중드론-INDEX",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/00-INDEX",
+      "target": "실습결과물/14/30-소설-INDEX",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/00-INDEX",
+      "target": "실습결과물/14/AI요청 프롬프트",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/00-INDEX",
+      "target": "실습결과물/14/업무일지 작성프롬프트",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/00-INDEX",
+      "target": "실습결과물/14/이메일발송프롬프트",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/00-INDEX",
+      "target": "실습결과물/14/시대상 과 역사적 사실",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/10-주간업무일지-INDEX",
+      "target": "실습결과물/14/2026_3_13_주간 업무일지",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/10-주간업무일지-INDEX",
+      "target": "실습결과물/14/2026_3_20_주간 업무일지",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/10-주간업무일지-INDEX",
+      "target": "실습결과물/14/2026_3_27_주간 업무일지",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/10-주간업무일지-INDEX",
+      "target": "실습결과물/14/2026_4_3_주간 업무일지",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/10-주간업무일지-INDEX",
+      "target": "실습결과물/14/2026_4_10_주간 업무일지",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/10-주간업무일지-INDEX",
+      "target": "실습결과물/14/업무일지 작성프롬프트",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/10-주간업무일지-INDEX",
+      "target": "실습결과물/14/00-INDEX",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/20-수중드론-INDEX",
+      "target": "실습결과물/14/수중드론_사업화_기획안",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/20-수중드론-INDEX",
+      "target": "실습결과물/14/수중드론_사업화_상세기획안",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/20-수중드론-INDEX",
+      "target": "실습결과물/14/수중드론_사업화_타당성",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/20-수중드론-INDEX",
+      "target": "실습결과물/14/수중드론_사업화_1페이지_BLUF",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/20-수중드론-INDEX",
+      "target": "실습결과물/14/수중드론_사업화_1페이지_BLUF_열정설득서술형",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/20-수중드론-INDEX",
+      "target": "실습결과물/14/수중드론_사업화_1페이지_BLUF_포멀서술형",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/20-수중드론-INDEX",
+      "target": "실습결과물/13/해양드론딥리서치결과",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/20-수중드론-INDEX",
+      "target": "실습결과물/13/수중드론_사업화_기획안",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/20-수중드론-INDEX",
+      "target": "실습결과물/14/00-INDEX",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/30-소설-INDEX",
+      "target": "실습결과물/14/고려빙의_스토리라인",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/30-소설-INDEX",
+      "target": "실습결과물/14/목파_5부작_목차",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/30-소설-INDEX",
+      "target": "실습결과물/14/시대상 과 역사적 사실",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/30-소설-INDEX",
+      "target": "실습결과물/14/소설1권",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/30-소설-INDEX",
+      "target": "실습결과물/14/소설2권",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/30-소설-INDEX",
+      "target": "실습결과물/14/소설3권",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/30-소설-INDEX",
+      "target": "실습결과물/14/소설4권",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/30-소설-INDEX",
+      "target": "실습결과물/14/소설5권",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/30-소설-INDEX",
+      "target": "실습결과물/14/소설_연속작성_토큰로그",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/30-소설-INDEX",
+      "target": "실습결과물/14/00-INDEX",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/수중드론_사업화_기획안",
+      "target": "실습결과물/14/00-INDEX",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/수중드론_사업화_기획안",
+      "target": "실습결과물/14/20-수중드론-INDEX",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/수중드론_사업화_기획안",
+      "target": "실습결과물/14/수중드론_사업화_상세기획안",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/수중드론_사업화_기획안",
+      "target": "실습결과물/14/수중드론_사업화_타당성",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/수중드론_사업화_기획안",
+      "target": "실습결과물/14/수중드론_사업화_1페이지_BLUF",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/수중드론_사업화_기획안",
+      "target": "실습결과물/13/해양드론딥리서치결과",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/14/수중드론_사업화_기획안",
+      "target": "실습결과물/13/수중드론_사업화_기획안",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/15/00-INDEX",
+      "target": "실습결과물/15/wikiLLM",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/15/00-INDEX",
+      "target": "AGENTS",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/15/00-INDEX",
+      "target": "llm_wiki/README",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/15/wikiLLM",
+      "target": "실습결과물/15/00-INDEX",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/15/wikiLLM",
+      "target": "AGENTS",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/15/wikiLLM",
+      "target": "llm_wiki/README",
+      "kind": "markdown"
     }
   ],
   "stats": {
-    "markdown_pages": 59,
-    "resolved_edges": 9,
-    "unresolved_links": 0,
-    "total_tokens_estimate": 52986
+    "markdown_pages": 69,
+    "resolved_edges": 87,
+    "unresolved_links": 6,
+    "total_tokens_estimate": 54105
   }
 }

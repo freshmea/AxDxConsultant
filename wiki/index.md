@@ -1,9 +1,9 @@
 # Wiki Index
 
-- Generated: 2026-04-15T05:28:46.551210+00:00
-- Markdown pages: 59
-- Resolved edges: 9
-- Estimated full-read tokens: 52986
+- Generated: 2026-04-15T05:40:30.006290+00:00
+- Markdown pages: 69
+- Resolved edges: 87
+- Estimated full-read tokens: 54105
 - Ignore file: `.llmwikiignore`
 
 ## Pages
@@ -36,6 +36,10 @@
   - Path: `README.md`
   - Summary: AxDx 전문가 과정
   - Links: 0 outbound / 0 unresolved
+- [실습결과물 06 인덱스](../실습결과물/06/00-INDEX.md)
+  - Path: `실습결과물/06/00-INDEX.md`
+  - Summary: tags: [실습결과물, day06, 리서치, paperclip, markdown]
+  - Links: 4 outbound / 0 unresolved
 - [PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지](../실습결과물/06/deep-research-report.md)
   - Path: `실습결과물/06/deep-research-report.md`
   - Summary: PaperclipAI는 “에이전트(직원)를 만드는 프레임워크”라기보다, **이미 존재하는 다양한 AI 에이전트 런타임(예: Claude/Codex/OpenClaw 계열)을 ‘회사 운영 체계’로 조직화**하는 오픈소스 오케스트레이션 플랫폼에 가깝습니다. 핵심은 **회사(Company) 단위의 목표(Goals)–업무(Tasks/Issues)–조직도(Org)–하트비트(Heartbeats) 실행 모델–예산/비용(Cost & Budge
@@ -52,6 +56,10 @@
   - Path: `실습결과물/06/paperclipai사업계획서.md`
   - Summary: 본 사업은 AI 에이전트를 단순 개발이 아닌 **조직 단위로 운영·관리하는 교육 플랫폼**인 *PaperclipAI 기반 교육 프로그램*을 구축하는 것을 목표로 한다.
   - Links: 0 outbound / 0 unresolved
+- [실습결과물 07 인덱스](../실습결과물/07/00-INDEX.md)
+  - Path: `실습결과물/07/00-INDEX.md`
+  - Summary: tags: [실습결과물, day07, 업무분석, dx, ax, 프로세스]
+  - Links: 5 outbound / 1 unresolved
 - [1. 업무 흐름 구조화](../실습결과물/07/01-업무-흐름-구조화.md)
   - Path: `실습결과물/07/01-업무-흐름-구조화.md`
   - Summary: 업무 흐름을 단계별로 나누어 구조화 - 1: paperclipai 자료 조사 - 구현 사례조사 - 2시간 - 2: 자료 정리 - Youtube 영상, 블로그 글 문서화 및 정리 - 1시간 - 3: 구현 - GMKtec evo-x2 에 실제 구현해 봄 - 6시간 - 4: 결과 분석 - 구현 결과를 분석하여 개선점 도출 - 1시간 - 5: 보고서 작성 - 분석 결과를 바탕으로 보고서 작성 - 1시간
@@ -74,8 +82,12 @@
   - Links: 4 outbound / 0 unresolved
 - [업무분석보고서](../실습결과물/07/업무분석보고서.md)
   - Path: `실습결과물/07/업무분석보고서.md`
-  - Summary: 작성 목적: `나의업무분석` 주간 업무일지(총 49주)를 기반으로, 2026년 4월 6일~4월 7일 수업에서 다룬 분석 방법(업무 흐름 구조화, 비효율 수치화, DX 개선 포인트 도출, AX 전환 판별)을 적용해 실제 업무를 진단하고 AX 전환 우선순위를 제시한다. - 분석 기간: 업무일지 기준 2024년 12월 30일~2025년 12월 26일 - 분석 대상: 교육 운영, 교안/콘텐츠 제작, 기술 환경 구축, 행정/기획/보고,
-  - Links: 0 outbound / 0 unresolved
+  - Summary: tags: [실습결과물, day07, 업무분석, dx, ax]
+  - Links: 5 outbound / 1 unresolved
+- [실습결과물 08 인덱스](../실습결과물/08/00-INDEX.md)
+  - Path: `실습결과물/08/00-INDEX.md`
+  - Summary: tags: [실습결과물, day08, ai-workflow, 업무리스트, 우선순위, 명세서]
+  - Links: 6 outbound / 0 unresolved
 - [나의 핵심 업무 리스트업](../실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스.md)
   - Path: `실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스.md`
   - Summary: (summary unavailable)
@@ -100,6 +112,10 @@
   - Path: `실습결과물/08/업무리스트.md`
   - Summary: 내용을 주제별로 아래 파일로 분할했습니다.
   - Links: 5 outbound / 0 unresolved
+- [실습결과물 09 인덱스](../실습결과물/09/00-INDEX.md)
+  - Path: `실습결과물/09/00-INDEX.md`
+  - Summary: tags: [실습결과물, day09, 문제정의, 현상분석, 사례]
+  - Links: 4 outbound / 0 unresolved
 - [suno 노래 요청](../실습결과물/09/노래요청.md)
   - Path: `실습결과물/09/노래요청.md`
   - Summary: 로보카폴리 만화 주제곡같은 형식의 노래를 만들어 주는데 가사에 "최소니"라는 이름을 넣어서 포기 하지 않는 여자아이에 관련된 노래를 작성해줘.
@@ -116,6 +132,10 @@
   - Path: `실습결과물/09/현상에서문제로.md`
   - Summary: 막연한 불만이나 겉으로 드러난 결과를 1문장으로 작성
   - Links: 0 outbound / 0 unresolved
+- [실습결과물 13 인덱스](../실습결과물/13/00-INDEX.md)
+  - Path: `실습결과물/13/00-INDEX.md`
+  - Summary: tags: [실습결과물, day13, 수업요약, 해양드론, 수중드론, 블로그]
+  - Links: 8 outbound / 0 unresolved
 - [AIDX_5일차_교시별_요약](../실습결과물/13/AIDX_5일차_교시별_요약.md)
   - Path: `실습결과물/13/AIDX_5일차_교시별_요약.md`
   - Summary: 기준: - 파일: `C:\Users\Administrator\dxAx\실습결과물\13\GMT20260409-222215_Recording.transcript.vtt` - 실제 수업 시작으로 보이는 `02:08:56` 이후를 분석 - 약 9분 이상 공백을 쉬는시간으로 간주해 교시 분할
@@ -148,6 +168,18 @@
   - Path: `실습결과물/13/해양드론조사보고서.md`
   - Summary: 프롬프트
   - Links: 0 outbound / 0 unresolved
+- [실습결과물 14 인덱스](../실습결과물/14/00-INDEX.md)
+  - Path: `실습결과물/14/00-INDEX.md`
+  - Summary: tags: [실습결과물, day14, 업무일지, 수중드론, 소설, 프롬프트]
+  - Links: 7 outbound / 0 unresolved
+- [주간 업무일지 인덱스](../실습결과물/14/10-주간업무일지-INDEX.md)
+  - Path: `실습결과물/14/10-주간업무일지-INDEX.md`
+  - Summary: tags: [실습결과물, day14, 업무일지, 주간리포트]
+  - Links: 7 outbound / 0 unresolved
+- [수중드론 사업화 인덱스](../실습결과물/14/20-수중드론-INDEX.md)
+  - Path: `실습결과물/14/20-수중드론-INDEX.md`
+  - Summary: tags: [실습결과물, day14, 수중드론, 사업화, bluf, 타당성]
+  - Links: 9 outbound / 0 unresolved
 - [🗓️ 주간 업무 보고서](../실습결과물/14/2026_3_13_주간 업무일지.md)
   - Path: `실습결과물/14/2026_3_13_주간 업무일지.md`
   - Summary: **기간**: 2026년 3월 9일 ~ 2026년 3월 13일
@@ -168,6 +200,10 @@
   - Path: `실습결과물/14/2026_4_3_주간 업무일지.md`
   - Summary: **기간**: 2026년 3월 30일 ~ 2026년 4월 3일
   - Links: 0 outbound / 0 unresolved
+- [소설 프로젝트 인덱스](../실습결과물/14/30-소설-INDEX.md)
+  - Path: `실습결과물/14/30-소설-INDEX.md`
+  - Summary: tags: [실습결과물, day14, 소설, 목파5부작, 스토리]
+  - Links: 10 outbound / 0 unresolved
 - [AI요청 프롬프트](../실습결과물/14/AI요청 프롬프트.md)
   - Path: `실습결과물/14/AI요청 프롬프트.md`
   - Summary: 당신은 기업 혁신 및 AX(AI Transformation) 전략 전문가입니다. 다음 상황을 바탕으로 임원진 보고용 제안서 초안을 작성해 주세요.
@@ -218,8 +254,8 @@
   - Links: 0 outbound / 0 unresolved
 - [수중드론 사업화 기획안(운영형)](../실습결과물/14/수중드론_사업화_기획안.md)
   - Path: `실습결과물/14/수중드론_사업화_기획안.md`
-  - Summary: 1. 배경과 필요성 1.1 해양 현장의 정보 사각지대와 시장 변화 1.2 기존 모니터링 방식의 구조적 한계 1.3 수중드론 사업화 기회 요인 1.4 초기 타겟 시장 선정 근거(B2B/B2G 우선) 2. 프로젝트 목적 2.1 프로젝트 비전과 추진 방향 2.2 정량/정성 목표 2.3 핵심 서비스 범위(탐색-정보전달-실행) 2.4 핵심 성과지표(KPI) 3. 핵심 실행방안 3.1 제품·서비스 아키텍처(USV+수중모듈+플랫폼) 3.2
-  - Links: 0 outbound / 0 unresolved
+  - Summary: tags: [실습결과물, day14, 수중드론, 사업화, 기획안]
+  - Links: 7 outbound / 0 unresolved
 - [수중드론 사업화 상세 기획안](../실습결과물/14/수중드론_사업화_상세기획안.md)
   - Path: `실습결과물/14/수중드론_사업화_상세기획안.md`
   - Summary: 문서명: 수중드론 사업화 상세 기획안(타당성 검토 반영본) - 작성 기준: `C:\Users\Administrator\dxAx\실습결과물\14\수중드론_사업화_타당성.md` - 핵심 초점: 수중에서 작동하는 드론을 "탐색-정보전달-실행"의 현장 실행자로 운영하기 위한 사업화·기체개발 구체화 - 개념도 미리보기 링크: [Gemini_Generated_Image_95m9e195m9e195m9.png](C:/Users/Adminis
@@ -240,7 +276,17 @@
   - Path: `실습결과물/14/이메일발송프롬프트.md`
   - Summary: ```text 이메일을 발송하고자 한다. A 업체 회의를 금요일로 미루자. 관련 자료가 있으면 미리 달라고 해. 라는 목적으로 이메일을 발송하고자 한다. 정중한 B2B 어조로 이메일 내용을 작성해줘.
   - Links: 0 outbound / 0 unresolved
+- [실습결과물 15 인덱스](../실습결과물/15/00-INDEX.md)
+  - Path: `실습결과물/15/00-INDEX.md`
+  - Summary: tags: [실습결과물, day15, llm-wiki, codex, graph]
+  - Links: 3 outbound / 2 unresolved
 - [wikillm 을 구현하기 위한 프롬프트](../실습결과물/15/wikiLLM.md)
   - Path: `실습결과물/15/wikiLLM.md`
-  - Summary: ```text GitHub Gist(karpathy/llm-wiki.md) 를 참고해서 wifi llm 을 구축하려고 한다. 구축을 진행해 주고 Graphite 를 설치하고 md 파일들 간의 연결을 json 으로 확인해서 토큰사용을 절약할 수 있는 시스템으로 만들어줘 ```
-  - Links: 0 outbound / 0 unresolved
+  - Summary: tags: [실습결과물, day15, llm-wiki, codex, graph, token-saving]
+  - Links: 3 outbound / 2 unresolved
+
+## Unresolved Links
+
+- `./5가지단계로%20나누기.md` x 2
+- `../../wiki/index.md` x 2
+- `../../wiki/log.md` x 2
