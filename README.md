@@ -140,5 +140,5 @@ C:\Users\Administrator\dxAx\orange_example\body-fat-brozek.csv 이 수치 데이
 - 4교시: [실습]영문 가이드 분석 1페이지 요약
 - 5교시: wiki llm 구축 실습, opsidian 과 graphite 설치
 - 6교시: local AI whisper 모델 설치 및 구동
-- 7교시:
+- 7교시: 화자 분리를 위한 whisperX 설명
 - 8교시:

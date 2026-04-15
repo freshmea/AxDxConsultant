@@ -9,5 +9,5 @@ tags: [실습결과물, day15, llm-wiki, codex, graph]
 - [wikiLLM](./wikiLLM.md)
 - [AGENTS](../../AGENTS.md)
 - [llm_wiki README](../../llm_wiki/README.md)
-- [wiki index](../../wiki/index.md)
-- [wiki log](../../wiki/log.md)
+- 생성물 참고: `wiki/index.md`
+- 빌드 로그 참고: `wiki/log.md`

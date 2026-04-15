@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T07:12:22.093206+00:00",
+  "generated_at": "2026-04-15T08:10:39.805028+00:00",
   "repo_root": "C:\\Users\\Administrator\\dxAx",
   "nodes": [
     {
@@ -14,8 +14,33 @@
         "Query Workflow",
         "Maintenance Workflow"
       ],
-      "tokens_estimate": 374,
-      "word_count": 239,
+      "tags": [],
+      "topics": [
+        "llm",
+        "local",
+        "pattern",
+        "repository",
+        "schema",
+        "uses",
+        "wiki",
+        "workflow"
+      ],
+      "entities": [
+        "layers",
+        "llm",
+        "local",
+        "maintenance",
+        "operating",
+        "pattern",
+        "query",
+        "repository",
+        "rules",
+        "schema",
+        "uses",
+        "wiki"
+      ],
+      "tokens_estimate": 416,
+      "word_count": 264,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 2
@@ -32,8 +57,33 @@
         "Ignore Rules",
         "Token-Saving Flow"
       ],
-      "tokens_estimate": 239,
-      "word_count": 136,
+      "tags": [],
+      "topics": [
+        "builds",
+        "files",
+        "karpathy",
+        "lightweight",
+        "llm",
+        "local",
+        "package",
+        "wiki"
+      ],
+      "entities": [
+        "builds",
+        "commands",
+        "files",
+        "generated",
+        "ignore",
+        "karpathy",
+        "lightweight",
+        "llm",
+        "local",
+        "package",
+        "rules",
+        "saving"
+      ],
+      "tokens_estimate": 331,
+      "word_count": 189,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 2
@@ -55,7 +105,36 @@
         "2) 후보 검색 (병렬 권장)",
         "3) 후보 페이지 속성 검증",
         "4) 필터 적용",
-        "5) 응답 포맷"
+        "5) 응답 포맷",
+        "실패/예외 처리",
+        "품질 체크리스트",
+        "예시 요약 문장",
+        "주의사항"
+      ],
+      "tags": [],
+      "topics": [
+        "app",
+        "date",
+        "fallback",
+        "filter",
+        "notion",
+        "skill",
+        "날짜",
+        "데이터소스"
+      ],
+      "entities": [
+        "app",
+        "date",
+        "fallback",
+        "filter",
+        "notion",
+        "skill",
+        "sql",
+        "데이터소스",
+        "도구",
+        "목적",
+        "사용",
+        "시점"
       ],
       "tokens_estimate": 469,
       "word_count": 375,
@@ -80,7 +159,36 @@
         "hip vs body fat",
         "weight vs body fat",
         "height vs body fat",
-        "age vs body fat"
+        "age vs body fat",
+        "wrist vs body fat",
+        "4) Box Plot 해석 (체지방 그룹별 분포)",
+        "Grouped Box: abdomen",
+        "Grouped Box: chest"
+      ],
+      "tags": [],
+      "topics": [
+        "body",
+        "box",
+        "brozek",
+        "fat",
+        "vs",
+        "분석",
+        "시각",
+        "중심"
+      ],
+      "entities": [
+        "252",
+        "body",
+        "box",
+        "brozek",
+        "fat",
+        "vs",
+        "데이터",
+        "미리보기",
+        "변수",
+        "분석",
+        "시각",
+        "중심"
       ],
       "tokens_estimate": 1549,
       "word_count": 722,
@@ -100,6 +208,31 @@
         "3) 500개 재샘플링 평가 (Confusion Matrix)",
         "분류 성능 지표",
         "4) 결과 해석"
+      ],
+      "tags": [],
+      "topics": [
+        "2201",
+        "adaboost",
+        "titanic",
+        "데이터",
+        "변수",
+        "분석",
+        "원본",
+        "타겟"
+      ],
+      "entities": [
+        "2201",
+        "500개",
+        "adaboost",
+        "titanic",
+        "데이터",
+        "변수",
+        "분석",
+        "샘플링",
+        "요청된",
+        "원본",
+        "전처리",
+        "절차"
       ],
       "tokens_estimate": 226,
       "word_count": 172,
@@ -124,6 +257,31 @@
         "3.1 분류 리포트",
         "3.2 변수 영향(로지스틱 계수)"
       ],
+      "tags": [],
+      "topics": [
+        "2201건",
+        "711건",
+        "titanic",
+        "관측치",
+        "분석",
+        "생존",
+        "생존자",
+        "전체"
+      ],
+      "entities": [
+        "2201건",
+        "age별",
+        "sex별",
+        "status",
+        "status별",
+        "titanic",
+        "관측치",
+        "기술통계",
+        "데이터",
+        "분석",
+        "생존",
+        "생존자"
+      ],
       "tokens_estimate": 883,
       "word_count": 321,
       "outbound_links": [],
@@ -146,8 +304,175 @@
         "2026_4_14",
         "2026_4_15"
       ],
-      "tokens_estimate": 907,
-      "word_count": 766,
+      "tags": [],
+      "topics": [
+        "2026_4_6",
+        "2026_4_7",
+        "2026_4_8",
+        "2026_4_9",
+        "axdx",
+        "axdxconsultant",
+        "과정",
+        "전문가"
+      ],
+      "entities": [
+        "2026_4_10",
+        "2026_4_13",
+        "2026_4_14",
+        "2026_4_15",
+        "2026_4_6",
+        "2026_4_7",
+        "2026_4_8",
+        "2026_4_9",
+        "axdx",
+        "axdxconsultant",
+        "과정",
+        "전문가"
+      ],
+      "tokens_estimate": 1010,
+      "word_count": 855,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0
+    },
+    {
+      "id": "skills/local-whisper-gpu/SKILL",
+      "title": "Local Whisper GPU",
+      "path": "skills/local-whisper-gpu/SKILL.md",
+      "summary": "Set up the STT stack in this order.",
+      "headings": [
+        "Local Whisper GPU",
+        "1. Confirm the required layout",
+        "2. Install the environment",
+        "3. Provide CUDA runtime DLLs",
+        "4. Validate GPU visibility",
+        "5. Run long recordings in chunks",
+        "6. Verify results after each run"
+      ],
+      "tags": [],
+      "topics": [
+        "gpu",
+        "in",
+        "local",
+        "run",
+        "set",
+        "stt",
+        "up",
+        "whisper"
+      ],
+      "entities": [
+        "confirm",
+        "environment",
+        "gpu",
+        "install",
+        "layout",
+        "local",
+        "provide",
+        "required",
+        "run",
+        "set",
+        "stack",
+        "stt"
+      ],
+      "tokens_estimate": 612,
+      "word_count": 326,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0
+    },
+    {
+      "id": "skills/troubleshooting",
+      "title": "Troubleshooting",
+      "path": "skills/troubleshooting.md",
+      "summary": "This note covers setup problems already encountered in this workspace while building the wiki LLM and local Whisper stack.",
+      "headings": [
+        "Troubleshooting",
+        "Wiki LLM",
+        "Unresolved links caused by `%20`",
+        "Unresolved links to `wiki/` generated files",
+        "Obsidian graph still shows excluded folders",
+        "PowerShell shows broken Korean text",
+        "Skill Docs",
+        "`quick_validate.py` fails with `UnicodeDecodeError`",
+        "`quick_validate.py` fails with invalid YAML",
+        "Local Whisper GPU",
+        "CUDA device count is `0`",
+        "Model loads on CPU instead of GPU",
+        "Long recording fails or is too slow"
+      ],
+      "tags": [],
+      "topics": [
+        "fails",
+        "links",
+        "llm",
+        "local",
+        "troubleshooting",
+        "unresolved",
+        "whisper",
+        "wiki"
+      ],
+      "entities": [
+        "covers",
+        "fails",
+        "gpu",
+        "is",
+        "links",
+        "note",
+        "problems",
+        "py",
+        "quick_validate",
+        "setup",
+        "shows",
+        "troubleshooting"
+      ],
+      "tokens_estimate": 852,
+      "word_count": 476,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0
+    },
+    {
+      "id": "skills/wiki-llm-setup/SKILL",
+      "title": "Wiki LLM Setup",
+      "path": "skills/wiki-llm-setup/SKILL.md",
+      "summary": "Recreate the wiki layer in this order.",
+      "headings": [
+        "Wiki LLM Setup",
+        "1. Confirm the required layout",
+        "2. Build the wiki artifacts",
+        "3. Keep query flow graph-first",
+        "4. Maintain explicit ignore rules",
+        "5. Keep Obsidian graph filtering separate",
+        "6. Repair unresolved links before expanding the corpus",
+        "7. Re-verify after every structural change"
+      ],
+      "tags": [],
+      "topics": [
+        "graph",
+        "in",
+        "keep",
+        "layer",
+        "llm",
+        "recreate",
+        "setup",
+        "wiki"
+      ],
+      "entities": [
+        "artifacts",
+        "build",
+        "confirm",
+        "graph",
+        "in",
+        "keep",
+        "layer",
+        "layout",
+        "llm",
+        "order",
+        "recreate",
+        "required"
+      ],
+      "tokens_estimate": 758,
+      "word_count": 430,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0
@@ -161,6 +486,32 @@
         "실습결과물 06 인덱스",
         "개요",
         "문서 묶음"
+      ],
+      "tags": [
+        "day06",
+        "markdown",
+        "paperclip",
+        "리서치",
+        "실습결과물"
+      ],
+      "topics": [
+        "06",
+        "day06",
+        "markdown",
+        "paperclip",
+        "리서치",
+        "묶음",
+        "인덱스"
+      ],
+      "entities": [
+        "06",
+        "day06",
+        "markdown",
+        "paperclip",
+        "리서치",
+        "묶음",
+        "실습결과물",
+        "인덱스"
       ],
       "tokens_estimate": 87,
       "word_count": 50,
@@ -177,7 +528,7 @@
       "id": "실습결과물/06/deep-research-report",
       "title": "PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지",
       "path": "실습결과물/06/deep-research-report.md",
-      "summary": "PaperclipAI는 “에이전트(직원)를 만드는 프레임워크”라기보다, **이미 존재하는 다양한 AI 에이전트 런타임(예: Claude/Codex/OpenClaw 계열)을 ‘회사 운영 체계’로 조직화**하는 오픈소스 오케스트레이션 플랫폼에 가깝습니다. 핵심은 **회사(Company) 단위의 목표(Goals)–업무(Tasks/Issues)–조직도(Org)–하트비트(Heartbeats) 실행 모델–예산/비용(Cost & Budge",
+      "summary": "PaperclipAI는 “에이전트(직원)를 만드는 프레임워크”라기보다, **이미 존재하는 다양한 AI 에이전트 런타임(예: Claude/Codex/OpenClaw 계열)을 ‘회사 운영 체계’로 조직화**하는 오픈소스 오케스트레이션 플랫폼에 가깝습니다. 핵심은 **회사(Company) 단위의 목표(Goals)–업무(Tasks/Issues)–조직도(Org)–하트비트(Heartbeats) 실행 모델–예산/비용(Cost & Budgets)–승인/거버넌스(Governance & Approvals)**를 결",
       "headings": [
         "PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지",
         "요약",
@@ -190,7 +541,36 @@
         "학기 운영 타임라인",
         "모듈별 상세 설계",
         "실습 가이드",
-        "실습 환경 공통 준비"
+        "실습 환경 공통 준비",
+        "실습 1: 로컬 설치·검증·인스턴스 구조 파악",
+        "실습 2: 회사·목표·업무(태스크) 최소 운영 사이클 만들기",
+        "실습 3: 하트비트 기반 실행과 관찰 가능성(로그/런 레코드)",
+        "실습 4: Process Adapter로 “우리 에이전트”를 붙이는 미니 프로젝트"
+      ],
+      "tags": [],
+      "topics": [
+        "paperclipai",
+        "강의자용",
+        "교육",
+        "실습",
+        "에이전트",
+        "운영",
+        "커리큘럼",
+        "회사"
+      ],
+      "entities": [
+        "paperclipai",
+        "paperclipai는",
+        "강의자용",
+        "개요와",
+        "교육",
+        "상세",
+        "설계",
+        "실습",
+        "에이전트",
+        "운영",
+        "직원",
+        "커리큘럼"
       ],
       "tokens_estimate": 6315,
       "word_count": 4187,
@@ -205,6 +585,25 @@
       "summary": "```mermaid graph TD A[전체 업무: 보고서 작성]",
       "headings": [
         "머메이드 테스트"
+      ],
+      "tags": [],
+      "topics": [
+        "graph",
+        "mermaid",
+        "td",
+        "머메이드",
+        "업무",
+        "작성",
+        "전체",
+        "테스트"
+      ],
+      "entities": [
+        "graph",
+        "mermaid",
+        "td",
+        "머메이드",
+        "전체",
+        "테스트"
       ],
       "tokens_estimate": 56,
       "word_count": 44,
@@ -227,6 +626,31 @@
         "■ 핵심 실습",
         "■ 차별 포인트",
         "■ 기대 역량"
+      ],
+      "tags": [],
+      "topics": [
+        "1페이지",
+        "ai를",
+        "교육",
+        "도구가",
+        "실습",
+        "요약본",
+        "조직",
+        "핵심"
+      ],
+      "entities": [
+        "1페이지",
+        "ai",
+        "ai를",
+        "company",
+        "page",
+        "paperclipai",
+        "교육",
+        "기반",
+        "도구가",
+        "아닌",
+        "요약본",
+        "운영"
       ],
       "tokens_estimate": 242,
       "word_count": 192,
@@ -253,6 +677,31 @@
         "5) 차별성",
         "6) 기대 효과"
       ],
+      "tags": [],
+      "topics": [
+        "ai",
+        "교육",
+        "목표",
+        "사업",
+        "사업계획서",
+        "사업은",
+        "에이전트를",
+        "요약형"
+      ],
+      "entities": [
+        "ai",
+        "교육",
+        "구성",
+        "단순",
+        "목표",
+        "사업",
+        "사업계획서",
+        "사업은",
+        "서비스",
+        "에이전트를",
+        "요약형",
+        "정량"
+      ],
       "tokens_estimate": 418,
       "word_count": 370,
       "outbound_links": [],
@@ -269,6 +718,36 @@
         "개요",
         "문서 묶음"
       ],
+      "tags": [
+        "ax",
+        "day07",
+        "dx",
+        "실습결과물",
+        "업무분석",
+        "프로세스"
+      ],
+      "topics": [
+        "07",
+        "ax",
+        "day07",
+        "dx",
+        "묶음",
+        "실습결과물",
+        "업무분석",
+        "인덱스",
+        "프로세스"
+      ],
+      "entities": [
+        "07",
+        "ax",
+        "day07",
+        "dx",
+        "묶음",
+        "실습결과물",
+        "업무분석",
+        "인덱스",
+        "프로세스"
+      ],
       "tokens_estimate": 88,
       "word_count": 71,
       "outbound_links": [
@@ -276,11 +755,10 @@
         "실습결과물/07/02-업무-흐름-mermaid",
         "실습결과물/07/03-업무-비효율-수치화-템플릿",
         "실습결과물/07/04-as-is-프로세스-스케치",
+        "실습결과물/07/5가지단계로 나누기",
         "실습결과물/07/업무분석보고서"
       ],
-      "unresolved_links": [
-        "./5가지단계로%20나누기.md"
-      ],
+      "unresolved_links": [],
       "inbound_count": 1
     },
     {
@@ -290,6 +768,26 @@
       "summary": "업무 흐름을 단계별로 나누어 구조화 - 1: paperclipai 자료 조사 - 구현 사례조사 - 2시간 - 2: 자료 정리 - Youtube 영상, 블로그 글 문서화 및 정리 - 1시간 - 3: 구현 - GMKtec evo-x2 에 실제 구현해 봄 - 6시간 - 4: 결과 분석 - 구현 결과를 분석하여 개선점 도출 - 1시간 - 5: 보고서 작성 - 분석 결과를 바탕으로 보고서 작성 - 1시간",
       "headings": [
         "1. 업무 흐름 구조화"
+      ],
+      "tags": [],
+      "topics": [
+        "1시간",
+        "결과를",
+        "구조화",
+        "구현",
+        "분석",
+        "업무",
+        "자료",
+        "흐름"
+      ],
+      "entities": [
+        "1시간",
+        "구조화",
+        "구현",
+        "분석",
+        "업무",
+        "자료",
+        "흐름"
       ],
       "tokens_estimate": 63,
       "word_count": 55,
@@ -305,6 +803,26 @@
       "headings": [
         "업무 흐름 (Mermaid)"
       ],
+      "tags": [],
+      "topics": [
+        "flowchart",
+        "l1",
+        "lr",
+        "mermaid",
+        "subgraph",
+        "swimlanes",
+        "업무",
+        "흐름"
+      ],
+      "entities": [
+        "flowchart",
+        "lr",
+        "mermaid",
+        "subgraph",
+        "swimlanes",
+        "업무",
+        "흐름"
+      ],
       "tokens_estimate": 310,
       "word_count": 155,
       "outbound_links": [],
@@ -318,6 +836,29 @@
       "summary": "업무명 | 유형 | 소요 시간 | 월 빈도 | 월간 낭비 시간 | 연간 환산 비용 ---|---|---|---|---|--- 수업 계획서 작성|문서 작성|2시간|4회|8시간|96시간|960,000원 시험문제 출제|문서 작성|3시간|2회|6시간|72시간|720,000원 수업 자료 조사|조사|4시간|4회|16시간|192시간|1,920,000원",
       "headings": [
         "나의 업무 비효율 수치화 템플릿 작성"
+      ],
+      "tags": [],
+      "topics": [
+        "000원",
+        "나의",
+        "비효율",
+        "수치화",
+        "시간",
+        "업무",
+        "작성",
+        "템플릿"
+      ],
+      "entities": [
+        "000원",
+        "4회",
+        "나의",
+        "비효율",
+        "수업",
+        "수치화",
+        "시간",
+        "업무",
+        "작성",
+        "템플릿"
       ],
       "tokens_estimate": 54,
       "word_count": 50,
@@ -333,6 +874,27 @@
       "headings": [
         "AS-IS 프로세스 스케치"
       ],
+      "tags": [],
+      "topics": [
+        "as",
+        "br",
+        "flowchart",
+        "is",
+        "mermaid",
+        "스케치",
+        "작성",
+        "프로세스"
+      ],
+      "entities": [
+        "as",
+        "br",
+        "flowchart",
+        "is",
+        "mermaid",
+        "스케치",
+        "작성",
+        "프로세스"
+      ],
       "tokens_estimate": 180,
       "word_count": 88,
       "outbound_links": [],
@@ -347,6 +909,29 @@
       "headings": [
         "나의 어제 하루 업무 5단계 쪼개기"
       ],
+      "tags": [],
+      "topics": [
+        "5단계",
+        "나의",
+        "내용을",
+        "어제",
+        "업무",
+        "주제별로",
+        "쪼개기",
+        "하루"
+      ],
+      "entities": [
+        "5단계",
+        "나의",
+        "내용을",
+        "아래",
+        "어제",
+        "업무",
+        "주제별로",
+        "쪼개기",
+        "파일로",
+        "하루"
+      ],
       "tokens_estimate": 59,
       "word_count": 59,
       "outbound_links": [
@@ -356,7 +941,7 @@
         "실습결과물/07/04-as-is-프로세스-스케치"
       ],
       "unresolved_links": [],
-      "inbound_count": 0
+      "inbound_count": 2
     },
     {
       "id": "실습결과물/07/업무분석보고서",
@@ -375,7 +960,44 @@
         "2.2 업무군 분류 결과 (업무일지 라인 기반)",
         "2.3 핵심 관찰",
         "3. AS-IS 업무 흐름 구조화",
-        "3.1 End-to-End 흐름"
+        "3.1 End-to-End 흐름",
+        "3.2 공급자-핵심직무-수요자 관점",
+        "3.3 핸드오프 리스크",
+        "4. 비효율 식별 (정성)",
+        "4.1 반복적으로 나타난 비효율 유형"
+      ],
+      "tags": [
+        "ax",
+        "day07",
+        "dx",
+        "실습결과물",
+        "업무분석"
+      ],
+      "topics": [
+        "04",
+        "2026",
+        "ax",
+        "day07",
+        "dx",
+        "결과",
+        "데이터",
+        "분류",
+        "수업",
+        "실습결과물"
+      ],
+      "entities": [
+        "04",
+        "2026",
+        "ax",
+        "day07",
+        "dx",
+        "end",
+        "결과",
+        "데이터",
+        "분류",
+        "수업",
+        "실습결과물",
+        "업무"
       ],
       "tokens_estimate": 2846,
       "word_count": 2685,
@@ -384,11 +1006,10 @@
         "실습결과물/07/01-업무-흐름-구조화",
         "실습결과물/07/02-업무-흐름-mermaid",
         "실습결과물/07/03-업무-비효율-수치화-템플릿",
-        "실습결과물/07/04-as-is-프로세스-스케치"
+        "실습결과물/07/04-as-is-프로세스-스케치",
+        "실습결과물/07/5가지단계로 나누기"
       ],
-      "unresolved_links": [
-        "./5가지단계로%20나누기.md"
-      ],
+      "unresolved_links": [],
       "inbound_count": 1
     },
     {
@@ -400,6 +1021,39 @@
         "실습결과물 08 인덱스",
         "개요",
         "문서 묶음"
+      ],
+      "tags": [
+        "ai-workflow",
+        "day08",
+        "명세서",
+        "실습결과물",
+        "업무리스트",
+        "우선순위"
+      ],
+      "topics": [
+        "08",
+        "ai",
+        "ai-workflow",
+        "day08",
+        "workflow",
+        "명세서",
+        "실습결과물",
+        "업무리스트",
+        "우선순위",
+        "인덱스"
+      ],
+      "entities": [
+        "08",
+        "ai",
+        "ai-workflow",
+        "day08",
+        "workflow",
+        "명세서",
+        "묶음",
+        "실습결과물",
+        "업무리스트",
+        "우선순위",
+        "인덱스"
       ],
       "tokens_estimate": 106,
       "word_count": 85,
@@ -426,6 +1080,29 @@
         "[Process] 처리 로직",
         "[Output] 최종 결과물"
       ],
+      "tags": [],
+      "topics": [
+        "나의",
+        "리스트업",
+        "명세서",
+        "발행",
+        "선택한",
+        "업무",
+        "작성",
+        "핵심"
+      ],
+      "entities": [
+        "input",
+        "나의",
+        "리스트업",
+        "명세서",
+        "발행",
+        "선택한",
+        "업무",
+        "작성",
+        "준비물",
+        "핵심"
+      ],
       "tokens_estimate": 374,
       "word_count": 319,
       "outbound_links": [],
@@ -449,7 +1126,36 @@
         "기대 효과",
         "3. 생성",
         "목적",
+        "AI에게 맡길 수 있는 Task",
+        "기대 효과",
+        "4. 분석",
+        "목적",
         "AI에게 맡길 수 있는 Task"
+      ],
+      "tags": [],
+      "topics": [
+        "ai에게",
+        "task",
+        "기대",
+        "맡길",
+        "목적",
+        "보조",
+        "있는",
+        "효과"
+      ],
+      "entities": [
+        "ai에게",
+        "task",
+        "기대",
+        "맡길",
+        "명세서",
+        "목적",
+        "발행",
+        "보조",
+        "분석",
+        "생성",
+        "있는",
+        "작성"
       ],
       "tokens_estimate": 424,
       "word_count": 393,
@@ -472,6 +1178,31 @@
         "🧩 후순위 (분석 영역)",
         "📌 한 줄 결론"
       ],
+      "tags": [],
+      "topics": [
+        "task",
+        "기준",
+        "기준으로",
+        "명세서",
+        "분석",
+        "영역",
+        "정량",
+        "평가"
+      ],
+      "entities": [
+        "03",
+        "1단계",
+        "기준",
+        "기준으로",
+        "명세서",
+        "분류한",
+        "앞에서",
+        "영역",
+        "우선순위",
+        "정량",
+        "정량평가",
+        "좋습니다"
+      ],
       "tokens_estimate": 350,
       "word_count": 294,
       "outbound_links": [],
@@ -489,6 +1220,31 @@
         "STEP 2. AI 개입 예상 단축 시간 (To-Be)",
         "STEP 3. 확보된 여유 시간의 활용 계획 (Re-investment)",
         "📌 최종 기대 효과"
+      ],
+      "tags": [],
+      "topics": [
+        "canvas",
+        "estimation",
+        "step",
+        "value",
+        "나의",
+        "대상",
+        "시간",
+        "업무"
+      ],
+      "entities": [
+        "1순위",
+        "as",
+        "canvas",
+        "estimation",
+        "quick",
+        "step",
+        "value",
+        "기존",
+        "나의",
+        "대상",
+        "빈도",
+        "소요"
       ],
       "tokens_estimate": 220,
       "word_count": 164,
@@ -512,6 +1268,29 @@
         "4단계: 이전 / 이후 비교",
         "5단계: 핵심 기대 효과"
       ],
+      "tags": [],
+      "topics": [
+        "ai",
+        "as",
+        "명세서",
+        "생성",
+        "워크플로우",
+        "자동",
+        "초안",
+        "프로세스"
+      ],
+      "entities": [
+        "ai",
+        "as",
+        "is",
+        "개입",
+        "명세서",
+        "생성",
+        "워크플로우",
+        "자동",
+        "초안",
+        "프로세스"
+      ],
       "tokens_estimate": 623,
       "word_count": 487,
       "outbound_links": [],
@@ -525,6 +1304,27 @@
       "summary": "내용을 주제별로 아래 파일로 분할했습니다.",
       "headings": [
         "나의 핵심 업무 리스트업"
+      ],
+      "tags": [],
+      "topics": [
+        "나의",
+        "내용을",
+        "리스트업",
+        "아래",
+        "업무",
+        "주제별로",
+        "파일로",
+        "핵심"
+      ],
+      "entities": [
+        "나의",
+        "내용을",
+        "리스트업",
+        "아래",
+        "업무",
+        "주제별로",
+        "파일로",
+        "핵심"
       ],
       "tokens_estimate": 84,
       "word_count": 78,
@@ -548,6 +1348,33 @@
         "개요",
         "문서 묶음"
       ],
+      "tags": [
+        "day09",
+        "문제정의",
+        "사례",
+        "실습결과물",
+        "현상분석"
+      ],
+      "topics": [
+        "09",
+        "day09",
+        "묶음",
+        "문제정의",
+        "사례",
+        "실습결과물",
+        "인덱스",
+        "현상분석"
+      ],
+      "entities": [
+        "09",
+        "day09",
+        "묶음",
+        "문제정의",
+        "사례",
+        "실습결과물",
+        "인덱스",
+        "현상분석"
+      ],
       "tokens_estimate": 54,
       "word_count": 37,
       "outbound_links": [
@@ -566,6 +1393,26 @@
       "summary": "로보카폴리 만화 주제곡같은 형식의 노래를 만들어 주는데 가사에 \"최소니\"라는 이름을 넣어서 포기 하지 않는 여자아이에 관련된 노래를 작성해줘.",
       "headings": [
         "suno 노래 요청"
+      ],
+      "tags": [],
+      "topics": [
+        "suno",
+        "노래",
+        "노래를",
+        "로보카폴리",
+        "만화",
+        "요청",
+        "주제곡같은",
+        "형식의"
+      ],
+      "entities": [
+        "suno",
+        "노래",
+        "노래를",
+        "로보카폴리",
+        "만화",
+        "요청",
+        "주제곡같은"
       ],
       "tokens_estimate": 269,
       "word_count": 253,
@@ -590,7 +1437,36 @@
         "■ 목표 정의 방식",
         "3. Constraints (제약 조건)",
         "■ 예산",
-        "■ 시간"
+        "■ 시간",
+        "■ 리소스",
+        "■ 정책 및 구조",
+        "4. Problem Structuring (핵심 Gap 정의)",
+        "■ As-Is (현재 상태)"
+      ],
+      "tags": [],
+      "topics": [
+        "ai",
+        "document",
+        "master",
+        "기반",
+        "목표",
+        "문제",
+        "정의서",
+        "협업"
+      ],
+      "entities": [
+        "2개월간",
+        "ai",
+        "as",
+        "document",
+        "is",
+        "master",
+        "기반",
+        "목표",
+        "문제",
+        "정의서",
+        "증가",
+        "최근"
       ],
       "tokens_estimate": 612,
       "word_count": 518,
@@ -615,7 +1491,34 @@
         "4. 1주 실행 타임라인",
         "Day 1~2",
         "Day 3~4",
-        "Day 5"
+        "Day 5",
+        "Day 6~7",
+        "핵심 전략 요약 (한 줄)"
+      ],
+      "tags": [],
+      "topics": [
+        "20가지",
+        "day",
+        "가성비",
+        "개선",
+        "실행",
+        "아이디어",
+        "인식",
+        "체감"
+      ],
+      "entities": [
+        "20가지",
+        "day",
+        "가격",
+        "가설이",
+        "가성비",
+        "개선",
+        "상황이라면",
+        "실행",
+        "아이디어",
+        "인식",
+        "저하",
+        "전략"
       ],
       "tokens_estimate": 526,
       "word_count": 440,
@@ -640,7 +1543,35 @@
         "3. AI 적용 핵심 업무 TOP 5",
         "1) 유사 키워드 확장 (D122)",
         "2) 검색 쿼리 설계 (D132)",
-        "3) 중복 제거 (D311)"
+        "3) 중복 제거 (D311)",
+        "4) 품질 기준 필터링 (D312)",
+        "5) 핵심 내용 요약 (D321)",
+        "4. 결론"
+      ],
+      "tags": [],
+      "topics": [
+        "step",
+        "막연한",
+        "문제",
+        "불만이나",
+        "업무",
+        "작성",
+        "정의",
+        "핵심"
+      ],
+      "entities": [
+        "before",
+        "step",
+        "겉으로",
+        "구체화된",
+        "드러난",
+        "막연한",
+        "모호한",
+        "문제",
+        "불만이나",
+        "업무",
+        "작성",
+        "정의"
       ],
       "tokens_estimate": 518,
       "word_count": 461,
@@ -659,6 +1590,37 @@
         "수업 요약",
         "해양드론/수중드론",
         "기타 콘텐츠"
+      ],
+      "tags": [
+        "day13",
+        "블로그",
+        "수업요약",
+        "수중드론",
+        "실습결과물",
+        "해양드론"
+      ],
+      "topics": [
+        "13",
+        "day13",
+        "블로그",
+        "수업",
+        "수업요약",
+        "수중드론",
+        "인덱스",
+        "해양드론"
+      ],
+      "entities": [
+        "13",
+        "day13",
+        "기타",
+        "블로그",
+        "수업",
+        "수업요약",
+        "수중드론",
+        "실습결과물",
+        "인덱스",
+        "콘텐츠",
+        "해양드론"
       ],
       "tokens_estimate": 102,
       "word_count": 57,
@@ -685,6 +1647,31 @@
         "쉬는시간(공백) 구간",
         "교시별 요약"
       ],
+      "tags": [],
+      "topics": [
+        "aidx_5일차_교시별_요약",
+        "users",
+        "교시",
+        "기준",
+        "분할",
+        "수업",
+        "쉬는시간",
+        "파일"
+      ],
+      "entities": [
+        "5일차",
+        "administrator",
+        "aidx",
+        "aidx_5일차_교시별_요약",
+        "dxax",
+        "users",
+        "공백",
+        "교시",
+        "구간",
+        "기준",
+        "분할",
+        "수업"
+      ],
       "tokens_estimate": 375,
       "word_count": 355,
       "outbound_links": [],
@@ -695,13 +1682,38 @@
       "id": "실습결과물/13/광물자료조사",
       "title": "광물자료조사",
       "path": "실습결과물/13/광물자료조사.md",
-      "summary": "아래는 **최근 1개월(2026년 3월 13일~4월 13일) 기준 국제 광물시장 요약 조사**입니다. 범위는 **로봇 산업에 직접 연결되는 희귀·전략 광물**로 좁혀, **영구자석용 희토류(Nd·Pr·Dy·Tb 계열)**와 **이동형 로봇·휴머노이드 전원용 리튬·코발트**를 중심으로 봤습니다. 로봇용 고성능 모터와 배터리는 이 광물들에 가장 민감합니다. EU JRC는 희토류 자석용 원소를 전략원자재로 분류하고, 희토류 수요가 ",
+      "summary": "아래는 **최근 1개월(2026년 3월 13일~4월 13일) 기준 국제 광물시장 요약 조사**입니다. 범위는 **로봇 산업에 직접 연결되는 희귀·전략 광물**로 좁혀, **영구자석용 희토류(Nd·Pr·Dy·Tb 계열)**와 **이동형 로봇·휴머노이드 전원용 리튬·코발트**를 중심으로 봤습니다. 로봇용 고성능 모터와 배터리는 이 광물들에 가장 민감합니다. EU JRC는 희토류 자석용 원소를 전략원자재로 분류하고, 희토류 수요가 전기차·로봇·풍력 확대로 크게 증가할 수 있다고 설명합니다. 미국 DOE",
       "headings": [
         "1페이지 요약 조사",
         "A. 가격 동향",
         "B. 관세 조치·무역장벽",
         "C. 투자 판단에 바로 연결되는 해석",
         "데이터 확인용 참조 단락"
+      ],
+      "tags": [],
+      "topics": [
+        "13일",
+        "광물자료조사",
+        "로봇",
+        "아래는",
+        "연결되는",
+        "조사",
+        "최근",
+        "희토류"
+      ],
+      "entities": [
+        "13일",
+        "1페이지",
+        "가격",
+        "관세",
+        "광물자료조사",
+        "동향",
+        "로봇",
+        "무역장벽",
+        "아래는",
+        "조사",
+        "조치",
+        "투자"
       ],
       "tokens_estimate": 1359,
       "word_count": 1098,
@@ -715,6 +1727,26 @@
       "path": "실습결과물/13/노트북lm 수업 요약보고서.md",
       "summary": "생성형 AI 활용 전략 및 데이터 기반 의사결정 브리핑 보고서",
       "headings": [],
+      "tags": [],
+      "topics": [
+        "ai",
+        "노트북lm",
+        "데이터",
+        "생성형",
+        "수업",
+        "요약보고서",
+        "전략",
+        "활용"
+      ],
+      "entities": [
+        "ai",
+        "노트북lm",
+        "생성형",
+        "수업",
+        "요약보고서",
+        "전략",
+        "활용"
+      ],
       "tokens_estimate": 965,
       "word_count": 771,
       "outbound_links": [],
@@ -727,6 +1759,25 @@
       "path": "실습결과물/13/블로그 형태.md",
       "summary": "로봇 시대의 '진짜' 주인은 누구인가: 최근 광물 시장이 던지는 4가지 경고장",
       "headings": [],
+      "tags": [],
+      "topics": [
+        "누구인가",
+        "로봇",
+        "블로그",
+        "시대의",
+        "주인은",
+        "진짜",
+        "최근",
+        "형태"
+      ],
+      "entities": [
+        "로봇",
+        "블로그",
+        "시대의",
+        "주인은",
+        "진짜",
+        "형태"
+      ],
       "tokens_estimate": 634,
       "word_count": 598,
       "outbound_links": [],
@@ -739,6 +1790,24 @@
       "path": "실습결과물/13/수중드론_블로그.md",
       "summary": "바닷속 금맥을 캐는 '수중 드론', 우리가 몰랐던 4가지 반전 인사이트",
       "headings": [],
+      "tags": [],
+      "topics": [
+        "금맥을",
+        "드론",
+        "몰랐던",
+        "바닷속",
+        "수중",
+        "수중드론_블로그",
+        "우리가",
+        "캐는"
+      ],
+      "entities": [
+        "금맥을",
+        "바닷속",
+        "수중",
+        "수중드론_블로그",
+        "캐는"
+      ],
       "tokens_estimate": 750,
       "word_count": 611,
       "outbound_links": [],
@@ -749,7 +1818,7 @@
       "id": "실습결과물/13/수중드론_사업화_기획안",
       "title": "수중드론 사업화 기획안(운영형)",
       "path": "실습결과물/13/수중드론_사업화_기획안.md",
-      "summary": "1. 배경과 필요성 1.1 해양 현장의 정보 사각지대와 시장 변화 1.2 기존 모니터링 방식의 구조적 한계 1.3 수중드론 사업화 기회 요인 1.4 초기 타겟 시장 선정 근거(B2B/B2G 우선) 2. 프로젝트 목적 2.1 프로젝트 비전과 추진 방향 2.2 정량/정성 목표 2.3 핵심 서비스 범위(탐색-정보전달-실행) 2.4 핵심 성과지표(KPI) 3. 핵심 실행방안 3.1 제품·서비스 아키텍처(USV+수중모듈+플랫폼) 3.2",
+      "summary": "1. 배경과 필요성 1.1 해양 현장의 정보 사각지대와 시장 변화 1.2 기존 모니터링 방식의 구조적 한계 1.3 수중드론 사업화 기회 요인 1.4 초기 타겟 시장 선정 근거(B2B/B2G 우선) 2. 프로젝트 목적 2.1 프로젝트 비전과 추진 방향 2.2 정량/정성 목표 2.3 핵심 서비스 범위(탐색-정보전달-실행) 2.4 핵심 성과지표(KPI) 3. 핵심 실행방안 3.1 제품·서비스 아키텍처(USV+수중모듈+플랫폼) 3.2 운영 시나리오와 표준 운영절차(SOP) 3.3 데이터 레이어링 기반 정",
       "headings": [
         "수중드론 사업화 기획안(운영형)",
         "목차",
@@ -762,7 +1831,36 @@
         "2.1 프로젝트 비전과 추진 방향",
         "2.2 정량/정성 목표",
         "2.3 핵심 서비스 범위(탐색-정보전달-실행)",
-        "2.4 핵심 성과지표(KPI)"
+        "2.4 핵심 성과지표(KPI)",
+        "3. 핵심 실행방안",
+        "3.1 제품·서비스 아키텍처(USV+수중모듈+플랫폼)",
+        "3.2 운영 시나리오와 표준 운영절차(SOP)",
+        "3.3 데이터 레이어링 기반 정보상품화 전략"
+      ],
+      "tags": [],
+      "topics": [
+        "기획안",
+        "배경과",
+        "사업화",
+        "서비스",
+        "수중드론",
+        "시장",
+        "운영형",
+        "핵심"
+      ],
+      "entities": [
+        "기획안",
+        "목차",
+        "배경과",
+        "사업화",
+        "서비스",
+        "수중드론",
+        "시장",
+        "운영형",
+        "정보",
+        "필요성",
+        "해양",
+        "핵심"
       ],
       "tokens_estimate": 1242,
       "word_count": 1210,
@@ -787,7 +1885,36 @@
         "시나리오(낙관·기본·비관) 요약",
         "기본 시나리오 연도별 손익·현금흐름(요약)",
         "민감도 분석(무엇이 BEP를 좌우하는가)",
-        "리스크·법적·윤리·환경 영향"
+        "리스크·법적·윤리·환경 영향",
+        "실행 로드맵·결론·권고안·체크리스트·출처",
+        "실행 로드맵(mermaid 타임라인)",
+        "이해관계자 매핑(Stakeholder Map)",
+        "결론(정식 문장)"
+      ],
+      "tags": [],
+      "topics": [
+        "가능성",
+        "결론",
+        "분석",
+        "사업화",
+        "시나리오",
+        "시장",
+        "해양드론을",
+        "활용한"
+      ],
+      "entities": [
+        "가능성",
+        "개발",
+        "근거",
+        "기본",
+        "동료",
+        "로드맵",
+        "분석",
+        "사업화",
+        "시나리오",
+        "시장",
+        "실행",
+        "제시"
       ],
       "tokens_estimate": 5617,
       "word_count": 4449,
@@ -812,7 +1939,35 @@
         "2.3 Expectation",
         "2.4 Audience",
         "2.5 Task Step",
-        "2.6 Extra Rules"
+        "2.6 Extra Rules",
+        "3. 단계별 조사 및 분석",
+        "3.1 1단계: 문제 정의",
+        "3.1.1 공통 문제",
+        "3.1.2 해결 가설"
+      ],
+      "tags": [],
+      "topics": [
+        "기반",
+        "문제",
+        "분석",
+        "수중",
+        "조사",
+        "탐사",
+        "프롬프트",
+        "해양드론"
+      ],
+      "entities": [
+        "기반",
+        "드론",
+        "레저용",
+        "무인",
+        "문제",
+        "분석",
+        "수중",
+        "조사",
+        "탐사",
+        "프롬프트",
+        "해양드론"
       ],
       "tokens_estimate": 1875,
       "word_count": 1774,
@@ -830,6 +1985,38 @@
         "개요",
         "하위 허브",
         "프롬프트/보조 문서"
+      ],
+      "tags": [
+        "day14",
+        "소설",
+        "수중드론",
+        "실습결과물",
+        "업무일지",
+        "프롬프트"
+      ],
+      "topics": [
+        "14",
+        "day14",
+        "소설",
+        "수중드론",
+        "실습결과물",
+        "업무일지",
+        "인덱스",
+        "프롬프트",
+        "하위"
+      ],
+      "entities": [
+        "14",
+        "day14",
+        "보조",
+        "소설",
+        "수중드론",
+        "실습결과물",
+        "업무일지",
+        "인덱스",
+        "프롬프트",
+        "하위",
+        "허브"
       ],
       "tokens_estimate": 97,
       "word_count": 73,
@@ -855,6 +2042,30 @@
         "문서 목록",
         "관련 문서"
       ],
+      "tags": [
+        "day14",
+        "실습결과물",
+        "업무일지",
+        "주간리포트"
+      ],
+      "topics": [
+        "day14",
+        "목록",
+        "실습결과물",
+        "업무일지",
+        "인덱스",
+        "주간",
+        "주간리포트"
+      ],
+      "entities": [
+        "day14",
+        "목록",
+        "실습결과물",
+        "업무일지",
+        "인덱스",
+        "주간",
+        "주간리포트"
+      ],
       "tokens_estimate": 90,
       "word_count": 47,
       "outbound_links": [
@@ -879,6 +2090,37 @@
         "핵심 문서",
         "요약/변형 문서",
         "이전 맥락"
+      ],
+      "tags": [
+        "bluf",
+        "day14",
+        "사업화",
+        "수중드론",
+        "실습결과물",
+        "타당성"
+      ],
+      "topics": [
+        "bluf",
+        "day14",
+        "변형",
+        "사업화",
+        "수중드론",
+        "인덱스",
+        "타당성",
+        "핵심"
+      ],
+      "entities": [
+        "bluf",
+        "day14",
+        "맥락",
+        "변형",
+        "사업화",
+        "수중드론",
+        "실습결과물",
+        "이전",
+        "인덱스",
+        "타당성",
+        "핵심"
       ],
       "tokens_estimate": 123,
       "word_count": 50,
@@ -915,6 +2157,31 @@
         "5. Notion 원천 데이터",
         "6. 참고 문서"
       ],
+      "tags": [],
+      "topics": [
+        "13일",
+        "2026년",
+        "3월",
+        "9일",
+        "업무",
+        "주간",
+        "주요",
+        "진행"
+      ],
+      "entities": [
+        "10일",
+        "11일",
+        "13일",
+        "2026년",
+        "3월",
+        "9일",
+        "기간",
+        "업무",
+        "일자별",
+        "주간",
+        "주요",
+        "진행"
+      ],
       "tokens_estimate": 401,
       "word_count": 331,
       "outbound_links": [],
@@ -939,6 +2206,31 @@
         "4. 차주 계획",
         "5. Notion 원천 데이터",
         "6. 참고 문서"
+      ],
+      "tags": [],
+      "topics": [
+        "16일",
+        "2026년",
+        "20일",
+        "3월",
+        "업무",
+        "주간",
+        "주요",
+        "진행"
+      ],
+      "entities": [
+        "16일",
+        "17일",
+        "18일",
+        "2026년",
+        "20일",
+        "3월",
+        "기간",
+        "업무",
+        "일자별",
+        "주간",
+        "주요",
+        "진행"
       ],
       "tokens_estimate": 376,
       "word_count": 296,
@@ -965,6 +2257,31 @@
         "5. Notion 원천 데이터",
         "6. 참고 문서"
       ],
+      "tags": [],
+      "topics": [
+        "2026년",
+        "23일",
+        "27일",
+        "3월",
+        "업무",
+        "주간",
+        "주요",
+        "진행"
+      ],
+      "entities": [
+        "2026년",
+        "23일",
+        "24일",
+        "25일",
+        "27일",
+        "3월",
+        "기간",
+        "업무",
+        "일자별",
+        "주간",
+        "주요",
+        "진행"
+      ],
       "tokens_estimate": 358,
       "word_count": 299,
       "outbound_links": [],
@@ -989,6 +2306,31 @@
         "4. 차주 계획",
         "5. Notion 원천 데이터",
         "6. 참고 문서"
+      ],
+      "tags": [],
+      "topics": [
+        "10일",
+        "2026년",
+        "4월",
+        "6일",
+        "업무",
+        "주간",
+        "주요",
+        "진행"
+      ],
+      "entities": [
+        "10일",
+        "2026년",
+        "4월",
+        "6일",
+        "7일",
+        "8일",
+        "기간",
+        "업무",
+        "일자별",
+        "주간",
+        "주요",
+        "진행"
       ],
       "tokens_estimate": 376,
       "word_count": 330,
@@ -1015,6 +2357,31 @@
         "5. Notion 원천 데이터",
         "6. 참고 문서"
       ],
+      "tags": [],
+      "topics": [
+        "2026년",
+        "30일",
+        "3월",
+        "3일",
+        "4월",
+        "업무",
+        "주간",
+        "진행"
+      ],
+      "entities": [
+        "2026년",
+        "30일",
+        "31일",
+        "3월",
+        "3일",
+        "4월",
+        "기간",
+        "업무",
+        "일자별",
+        "주간",
+        "주요",
+        "진행"
+      ],
       "tokens_estimate": 440,
       "word_count": 353,
       "outbound_links": [],
@@ -1031,6 +2398,34 @@
         "기획 문서",
         "본문 문서",
         "운영 문서"
+      ],
+      "tags": [
+        "day14",
+        "목파5부작",
+        "소설",
+        "스토리",
+        "실습결과물"
+      ],
+      "topics": [
+        "day14",
+        "기획",
+        "목파5부작",
+        "본문",
+        "소설",
+        "스토리",
+        "운영",
+        "인덱스"
+      ],
+      "entities": [
+        "day14",
+        "기획",
+        "목파5부작",
+        "본문",
+        "소설",
+        "스토리",
+        "실습결과물",
+        "운영",
+        "인덱스"
       ],
       "tokens_estimate": 86,
       "word_count": 53,
@@ -1055,6 +2450,25 @@
       "path": "실습결과물/14/AI요청 프롬프트.md",
       "summary": "당신은 기업 혁신 및 AX(AI Transformation) 전략 전문가입니다. 다음 상황을 바탕으로 임원진 보고용 제안서 초안을 작성해 주세요.",
       "headings": [],
+      "tags": [],
+      "topics": [
+        "ai",
+        "ai요청",
+        "ax",
+        "transformation",
+        "기업",
+        "당신은",
+        "프롬프트",
+        "혁신"
+      ],
+      "entities": [
+        "ai요청",
+        "ax",
+        "기업",
+        "당신은",
+        "프롬프트",
+        "혁신"
+      ],
       "tokens_estimate": 184,
       "word_count": 180,
       "outbound_links": [],
@@ -1073,6 +2487,31 @@
         "3권: 왕건, 왕좌를 향해",
         "4권: 두 개의 전선",
         "5권: 통일의 새벽"
+      ],
+      "tags": [],
+      "topics": [
+        "1500자",
+        "고려의",
+        "권별",
+        "그림자",
+        "새벽",
+        "설계자",
+        "스토리라인",
+        "철혈의"
+      ],
+      "entities": [
+        "1500자",
+        "1권",
+        "2권",
+        "고려의",
+        "권별",
+        "그림자",
+        "내외",
+        "새벽",
+        "설계자",
+        "송악의",
+        "스토리라인",
+        "이방인"
       ],
       "tokens_estimate": 561,
       "word_count": 548,
@@ -1097,7 +2536,34 @@
         "6장 칼보다 빠른 계산",
         "7장 궁예의 그림자",
         "8장 첫 승전의 대가",
-        "9장 이름 없는 공신"
+        "9장 이름 없는 공신",
+        "10장 송악의 맹세",
+        "에필로그 - 바늘의 방향"
+      ],
+      "tags": [],
+      "topics": [
+        "고려의",
+        "그림자",
+        "새벽",
+        "설계자",
+        "송악의",
+        "윤해진은",
+        "있었다",
+        "철혈의"
+      ],
+      "entities": [
+        "0과",
+        "2168년",
+        "겨울",
+        "고려의",
+        "그림자",
+        "새벽",
+        "설계자",
+        "송악의",
+        "윤해진은",
+        "이방인",
+        "있었다",
+        "제1권"
       ],
       "tokens_estimate": 2819,
       "word_count": 2729,
@@ -1109,7 +2575,7 @@
       "id": "실습결과물/14/소설2권",
       "title": "철혈의 새벽: 고려의 그림자 설계자",
       "path": "실습결과물/14/소설2권.md",
-      "summary": "윤해진은 22세기 기억을 가진 채 송악 하급 서리 왕융으로 살아남았다. - 청동 유물 `천문침`은 전황·배신 가능성을 보여주지만 사용할수록 기억을 잃게 만든다. - 송악 조창 개혁과 해상 보급선 분산으로 첫 군량 위기를 넘겼다. - 왕융은 의녀 오다련, 연락책 비룡과 함께 비밀 연락망의 씨앗을 만들었다. - 궁예 측 밀정망이 송악 내부까지 침투해 장부·인장을 조작하고 인신매매에 연루됐다. - 왕건은 왕융의 계산 능력을 인정하고",
+      "summary": "윤해진은 22세기 기억을 가진 채 송악 하급 서리 왕융으로 살아남았다. - 청동 유물 `천문침`은 전황·배신 가능성을 보여주지만 사용할수록 기억을 잃게 만든다. - 송악 조창 개혁과 해상 보급선 분산으로 첫 군량 위기를 넘겼다. - 왕융은 의녀 오다련, 연락책 비룡과 함께 비밀 연락망의 씨앗을 만들었다. - 궁예 측 밀정망이 송악 내부까지 침투해 장부·인장을 조작하고 인신매매에 연루됐다. - 왕건은 왕융의 계산 능력을 인정하고 비공식 참모로 삼았다. - 1권 말, 철원 정변이 임박했고 왕융은 \"왕",
       "headings": [
         "철혈의 새벽: 고려의 그림자 설계자",
         "소설 2권 - 태봉의 균열",
@@ -1122,7 +2588,36 @@
         "5장 철의 세금",
         "6장 의녀 오다련",
         "7장 암호망의 탄생",
-        "8장 무너진 성문"
+        "8장 무너진 성문",
+        "9장 배신의 증거",
+        "10장 쿠데타 전야",
+        "에필로그 - 새벽의 칼끝",
+        "다음 권 연결 고리(압축)"
+      ],
+      "tags": [],
+      "topics": [
+        "고려의",
+        "그림자",
+        "기억을",
+        "새벽",
+        "설계자",
+        "송악",
+        "왕융은",
+        "철혈의"
+      ],
+      "entities": [
+        "2권",
+        "고려의",
+        "그림자",
+        "기억을",
+        "새벽",
+        "설계자",
+        "소설",
+        "송악",
+        "압축",
+        "연결",
+        "왕융은",
+        "윤해진은"
       ],
       "tokens_estimate": 1836,
       "word_count": 1767,
@@ -1147,7 +2642,36 @@
         "5장 신숭겸의 창",
         "6장 유금필의 방패",
         "7장 잿더미의 민심",
-        "8장 서경의 협상"
+        "8장 서경의 협상",
+        "9장 남진과 북진",
+        "10장 왕관의 무게",
+        "에필로그 - 그림자 명부",
+        "다음 권 연결 고리(압축)"
+      ],
+      "tags": [],
+      "topics": [
+        "3권",
+        "고려의",
+        "그림자",
+        "새벽",
+        "설계자",
+        "왕건",
+        "왕융은",
+        "철혈의"
+      ],
+      "entities": [
+        "3권",
+        "고려의",
+        "궁예",
+        "그림자",
+        "새벽",
+        "설계자",
+        "소설",
+        "압축",
+        "연결",
+        "왕융은",
+        "정권은",
+        "철원에서"
       ],
       "tokens_estimate": 1721,
       "word_count": 1666,
@@ -1172,7 +2696,36 @@
         "5장 과학과 미신 사이",
         "6장 동맹의 조건",
         "7장 고립된 전략가",
-        "8장 오만의 대가"
+        "8장 오만의 대가",
+        "9장 패전의 기록",
+        "10장 다시 세운 진형",
+        "에필로그 - 유배를 가장한 그림자",
+        "다음 권 연결 고리(압축)"
+      ],
+      "tags": [],
+      "topics": [
+        "4권",
+        "고려의",
+        "그림자",
+        "새벽",
+        "설계자",
+        "압축",
+        "연결",
+        "철혈의"
+      ],
+      "entities": [
+        "4권",
+        "겨울",
+        "고려는",
+        "고려의",
+        "그림자",
+        "새벽",
+        "설계자",
+        "소설",
+        "압축",
+        "연결",
+        "즉위",
+        "철혈의"
       ],
       "tokens_estimate": 1572,
       "word_count": 1485,
@@ -1197,7 +2750,35 @@
         "5장 후백제의 끝",
         "6장 천하 재편",
         "7장 그림자 공신",
-        "8장 남겨진 미래"
+        "8장 남겨진 미래",
+        "9장 고려의 법도",
+        "10장 새벽을 넘어서",
+        "에필로그 - 다시 도는 바늘"
+      ],
+      "tags": [],
+      "topics": [
+        "5권",
+        "고려는",
+        "고려의",
+        "그림자",
+        "마지막",
+        "새벽",
+        "설계자",
+        "철혈의"
+      ],
+      "entities": [
+        "5권",
+        "고려는",
+        "고려의",
+        "그림자",
+        "기근을",
+        "버티며",
+        "새벽",
+        "설계자",
+        "소설",
+        "압축",
+        "양면전과",
+        "철혈의"
       ],
       "tokens_estimate": 1435,
       "word_count": 1358,
@@ -1218,6 +2799,31 @@
         "4권: 두 개의 전선",
         "5권: 통일의 새벽"
       ],
+      "tags": [],
+      "topics": [
+        "5부작",
+        "고려의",
+        "그림자",
+        "새벽",
+        "설계자",
+        "송악의",
+        "철혈의",
+        "추락한"
+      ],
+      "entities": [
+        "1권",
+        "2권",
+        "5부작",
+        "고려의",
+        "그림자",
+        "깨어난",
+        "새벽",
+        "서리",
+        "설계자",
+        "송악의",
+        "이방인",
+        "철혈의"
+      ],
       "tokens_estimate": 160,
       "word_count": 181,
       "outbound_links": [],
@@ -1236,6 +2842,31 @@
         "합계",
         "컨텍스트 압축 적용 요약",
         "메모"
+      ],
+      "tags": [],
+      "topics": [
+        "5부작",
+        "로그",
+        "소설",
+        "압축",
+        "작성",
+        "추정",
+        "컨텍스트",
+        "토큰"
+      ],
+      "entities": [
+        "5부작",
+        "계측값이",
+        "권별",
+        "기준",
+        "로그",
+        "소설",
+        "아니라",
+        "압축",
+        "작성",
+        "정확",
+        "추정",
+        "컨텍스트"
       ],
       "tokens_estimate": 197,
       "word_count": 162,
@@ -1259,6 +2890,31 @@
         "4) 임원 모니터링 KPI(월간)",
         "BLUF 구조 도식"
       ],
+      "tags": [],
+      "topics": [
+        "1페이지",
+        "bluf",
+        "사업화",
+        "수중드론",
+        "요약안",
+        "의사결정",
+        "임원",
+        "핵심"
+      ],
+      "entities": [
+        "1페이지",
+        "bluf",
+        "ceo",
+        "결론",
+        "대상",
+        "방안",
+        "보고",
+        "사업화",
+        "수중드론",
+        "실행",
+        "요약안",
+        "이유"
+      ],
       "tokens_estimate": 420,
       "word_count": 381,
       "outbound_links": [],
@@ -1273,6 +2929,30 @@
       "headings": [
         "수중드론 사업화 1페이지 제안서 (열정·설득 서술형)"
       ],
+      "tags": [],
+      "topics": [
+        "1페이지",
+        "사업화",
+        "서술형",
+        "설득",
+        "수중드론",
+        "열정",
+        "제안서",
+        "지금이"
+      ],
+      "entities": [
+        "1페이지",
+        "가장",
+        "사업화",
+        "서술형",
+        "선점할",
+        "설득",
+        "수중드론",
+        "시장을",
+        "열정",
+        "제안서",
+        "지금이"
+      ],
       "tokens_estimate": 334,
       "word_count": 323,
       "outbound_links": [],
@@ -1286,6 +2966,28 @@
       "summary": "본 보고서는 수중드론 사업을 단순 장비 판매가 아닌 수중 데이터 서비스(DaaS)로 전환하기 위한 12개월 실행안을 제시합니다. 당사의 우선 추진 방향은 B2B/B2G 시장, 즉 양식장과 항만·연안시설을 중심으로 초기 레퍼런스를 확보하는 것입니다. 이를 위해 규제 대응과 현장 운용 안정성 측면에서 유리한 USV(수상)+ROV(수중) 하이브리드 구조를 1차 상용 모델로 채택하고, 기술 검증과 사업 검증을 병행하고자 합니다.",
       "headings": [
         "수중드론 사업화 1페이지 보고서 (포멀 서술형)"
+      ],
+      "tags": [],
+      "topics": [
+        "1페이지",
+        "보고서는",
+        "사업을",
+        "사업화",
+        "서술형",
+        "수중",
+        "수중드론",
+        "포멀"
+      ],
+      "entities": [
+        "1페이지",
+        "단순",
+        "보고서는",
+        "사업을",
+        "사업화",
+        "서술형",
+        "수중",
+        "수중드론",
+        "포멀"
       ],
       "tokens_estimate": 365,
       "word_count": 362,
@@ -1310,7 +3012,42 @@
         "2. 프로젝트 목적",
         "2.1 프로젝트 비전과 추진 방향",
         "2.2 정량/정성 목표",
-        "2.3 핵심 서비스 범위(탐색-정보전달-실행)"
+        "2.3 핵심 서비스 범위(탐색-정보전달-실행)",
+        "2.4 핵심 성과지표(KPI)",
+        "3. 핵심 실행방안",
+        "3.1 제품·서비스 아키텍처(USV+수중모듈+플랫폼)",
+        "3.2 운영 시나리오와 표준 운영절차(SOP)"
+      ],
+      "tags": [
+        "day14",
+        "기획안",
+        "사업화",
+        "수중드론",
+        "실습결과물"
+      ],
+      "topics": [
+        "day14",
+        "기획안",
+        "사업화",
+        "서비스",
+        "수중드론",
+        "시장",
+        "운영형",
+        "핵심"
+      ],
+      "entities": [
+        "day14",
+        "기획안",
+        "목차",
+        "배경과",
+        "사업화",
+        "서비스",
+        "수중드론",
+        "시장",
+        "실습결과물",
+        "운영형",
+        "필요성",
+        "핵심"
       ],
       "tokens_estimate": 1324,
       "word_count": 1249,
@@ -1330,7 +3067,7 @@
       "id": "실습결과물/14/수중드론_사업화_상세기획안",
       "title": "수중드론 사업화 상세 기획안",
       "path": "실습결과물/14/수중드론_사업화_상세기획안.md",
-      "summary": "문서명: 수중드론 사업화 상세 기획안(타당성 검토 반영본) - 작성 기준: `C:\\Users\\Administrator\\dxAx\\실습결과물\\14\\수중드론_사업화_타당성.md` - 핵심 초점: 수중에서 작동하는 드론을 \"탐색-정보전달-실행\"의 현장 실행자로 운영하기 위한 사업화·기체개발 구체화 - 개념도 미리보기 링크: [Gemini_Generated_Image_95m9e195m9e195m9.png](C:/Users/Adminis",
+      "summary": "문서명: 수중드론 사업화 상세 기획안(타당성 검토 반영본) - 작성 기준: `C:\\Users\\Administrator\\dxAx\\실습결과물\\14\\수중드론_사업화_타당성.md` - 핵심 초점: 수중에서 작동하는 드론을 \"탐색-정보전달-실행\"의 현장 실행자로 운영하기 위한 사업화·기체개발 구체화 - 개념도 미리보기 링크: [Gemini_Generated_Image_95m9e195m9e195m9.png](C:/Users/Administrator/dxAx/실습결과물/14/assets/Gemini_Gener",
       "headings": [
         "수중드론 사업화 상세 기획안",
         "1. 배경과 필요성",
@@ -1343,7 +3080,36 @@
         "2.3 서비스 범위(탐색-정보전달-실행)",
         "3. 핵심 실행방안",
         "3.1 운영 아키텍처",
-        "3.2 기체 개발 상세안"
+        "3.2 기체 개발 상세안",
+        "3.2.1 미션 요구사항(Mission Requirement)",
+        "3.2.2 기체 구조 설계",
+        "3.2.3 추진·전원 설계",
+        "3.2.4 센서·항법·통신 설계"
+      ],
+      "tags": [],
+      "topics": [
+        "administrator",
+        "dxax",
+        "users",
+        "기획안",
+        "사업화",
+        "상세",
+        "설계",
+        "수중드론"
+      ],
+      "entities": [
+        "14",
+        "administrator",
+        "dxax",
+        "users",
+        "기체",
+        "기획안",
+        "배경과",
+        "사업화",
+        "상세",
+        "설계",
+        "수중드론",
+        "필요성"
       ],
       "tokens_estimate": 1607,
       "word_count": 1422,
@@ -1355,7 +3121,7 @@
       "id": "실습결과물/14/수중드론_사업화_타당성",
       "title": "수중드론 사업화 운영안 초안 타당성 검증 및 객관적 피드백 보고서",
       "path": "실습결과물/14/수중드론_사업화_타당성.md",
-      "summary": "**Executive summary** 본 보고서는 사용자 제공 초안(업로드 파일 경로: `/mnt/data/붙여넣은 마크다운(1).md`)을 “운영 목적·범위·조직·업무절차(SOP)·인력·예산·리스크·성과지표(KPI)” 관점에서 검증한 결과를 정리한다. 초안은 **하드웨어 판매 중심에서 데이터/운영 서비스(DaaS) 중심으로 전환**하려는 방향성, **아키텍처(USV+수중모듈+플랫폼)**, **단계별 로드맵**, **기초 K",
+      "summary": "**Executive summary** 본 보고서는 사용자 제공 초안(업로드 파일 경로: `/mnt/data/붙여넣은 마크다운(1).md`)을 “운영 목적·범위·조직·업무절차(SOP)·인력·예산·리스크·성과지표(KPI)” 관점에서 검증한 결과를 정리한다. 초안은 **하드웨어 판매 중심에서 데이터/운영 서비스(DaaS) 중심으로 전환**하려는 방향성, **아키텍처(USV+수중모듈+플랫폼)**, **단계별 로드맵**, **기초 KPI/리스크 항목**을 갖추어 기획의 뼈대는 충분하다. 다만 “운영안”으",
       "headings": [
         "수중드론 사업화 운영안 초안 타당성 검증 및 객관적 피드백 보고서",
         "검증 범위와 방법, 미확인 가정",
@@ -1363,6 +3129,31 @@
         "요약 표와 우선순위 개선 권고",
         "mermaid 부록",
         "참고 URL 목록"
+      ],
+      "tags": [],
+      "topics": [
+        "객관적",
+        "검증",
+        "사업화",
+        "수중드론",
+        "운영안",
+        "초안",
+        "타당성",
+        "피드백"
+      ],
+      "entities": [
+        "executive",
+        "kpi",
+        "객관적",
+        "검증",
+        "리스크",
+        "방법",
+        "범위와",
+        "사업화",
+        "수중드론",
+        "운영",
+        "운영안",
+        "초안"
       ],
       "tokens_estimate": 3708,
       "word_count": 3173,
@@ -1388,6 +3179,31 @@
         "6) 사료 해석상 주의점",
         "7) 참고 자료(원문/해설)"
       ],
+      "tags": [],
+      "topics": [
+        "건국기",
+        "검증",
+        "고려",
+        "사실",
+        "시대상과",
+        "역사적",
+        "정치",
+        "후삼국"
+      ],
+      "entities": [
+        "889",
+        "889년",
+        "936",
+        "건국기",
+        "검증",
+        "고려",
+        "메모",
+        "사실",
+        "시기",
+        "시대상과",
+        "애노",
+        "역사적"
+      ],
       "tokens_estimate": 714,
       "word_count": 606,
       "outbound_links": [],
@@ -1402,6 +3218,26 @@
       "headings": [
         "업무일지 작성 프롬프트"
       ],
+      "tags": [],
+      "topics": [
+        "codex",
+        "notion",
+        "text",
+        "설치",
+        "업무일지",
+        "에서",
+        "작성",
+        "프롬프트"
+      ],
+      "entities": [
+        "codex",
+        "notion",
+        "text",
+        "설치",
+        "업무일지",
+        "작성",
+        "프롬프트"
+      ],
       "tokens_estimate": 122,
       "word_count": 95,
       "outbound_links": [],
@@ -1415,6 +3251,26 @@
       "summary": "```text 이메일을 발송하고자 한다. A 업체 회의를 금요일로 미루자. 관련 자료가 있으면 미리 달라고 해. 라는 목적으로 이메일을 발송하고자 한다. 정중한 B2B 어조로 이메일 내용을 작성해줘.",
       "headings": [
         "이메일 발송 프롬프트"
+      ],
+      "tags": [],
+      "topics": [
+        "text",
+        "발송",
+        "발송하고자",
+        "업체",
+        "이메일",
+        "이메일을",
+        "프롬프트",
+        "한다"
+      ],
+      "entities": [
+        "text",
+        "발송",
+        "발송하고자",
+        "이메일",
+        "이메일을",
+        "프롬프트",
+        "한다"
       ],
       "tokens_estimate": 62,
       "word_count": 53,
@@ -1432,17 +3288,44 @@
         "개요",
         "문서 묶음"
       ],
-      "tokens_estimate": 75,
-      "word_count": 44,
+      "tags": [
+        "codex",
+        "day15",
+        "graph",
+        "llm-wiki",
+        "실습결과물"
+      ],
+      "topics": [
+        "15",
+        "codex",
+        "day15",
+        "graph",
+        "llm",
+        "llm-wiki",
+        "wiki",
+        "묶음",
+        "인덱스"
+      ],
+      "entities": [
+        "15",
+        "codex",
+        "day15",
+        "graph",
+        "llm",
+        "llm-wiki",
+        "wiki",
+        "묶음",
+        "실습결과물",
+        "인덱스"
+      ],
+      "tokens_estimate": 71,
+      "word_count": 45,
       "outbound_links": [
         "AGENTS",
         "llm_wiki/README",
         "실습결과물/15/wikiLLM"
       ],
-      "unresolved_links": [
-        "../../wiki/index.md",
-        "../../wiki/log.md"
-      ],
+      "unresolved_links": [],
       "inbound_count": 1
     },
     {
@@ -1454,18 +3337,150 @@
         "wikillm 을 구현하기 위한 프롬프트",
         "관련 문서"
       ],
-      "tokens_estimate": 105,
-      "word_count": 72,
+      "tags": [
+        "codex",
+        "day15",
+        "graph",
+        "llm-wiki",
+        "token-saving",
+        "실습결과물"
+      ],
+      "topics": [
+        "codex",
+        "day15",
+        "graph",
+        "llm",
+        "llm-wiki",
+        "wiki",
+        "wikillm",
+        "구현하기",
+        "위한",
+        "프롬프트"
+      ],
+      "entities": [
+        "codex",
+        "day15",
+        "graph",
+        "llm",
+        "llm-wiki",
+        "saving",
+        "token",
+        "token-saving",
+        "wiki",
+        "wikillm",
+        "구현하기",
+        "실습결과물"
+      ],
+      "tokens_estimate": 101,
+      "word_count": 73,
       "outbound_links": [
         "AGENTS",
         "llm_wiki/README",
         "실습결과물/15/00-INDEX"
       ],
-      "unresolved_links": [
-        "../../wiki/index.md",
-        "../../wiki/log.md"
-      ],
+      "unresolved_links": [],
       "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/15/Youtube 영상 스크립트",
+      "title": "Youtube 영상 스크립트",
+      "path": "실습결과물/15/Youtube 영상 스크립트.md",
+      "summary": "LLM Wiki를 업그레이드한 Graphify 개념 + 실습 가이드",
+      "headings": [],
+      "tags": [],
+      "topics": [
+        "graphify",
+        "llm",
+        "wiki를",
+        "youtube",
+        "개념",
+        "스크립트",
+        "업그레이드한",
+        "영상"
+      ],
+      "entities": [
+        "graphify",
+        "llm",
+        "wiki를",
+        "youtube",
+        "스크립트",
+        "업그레이드한",
+        "영상"
+      ],
+      "tokens_estimate": 1978,
+      "word_count": 1812,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0
+    },
+    {
+      "id": "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서",
+      "title": "Graphify 기반 LLM Wiki 활용 1페이지 요약보고서",
+      "path": "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md",
+      "summary": "이 자료는 **기존 LLM Wiki 방식의 한계**를 이해하고, 이를 보완하는 **Graphify 방식의 핵심 개념과 실습 흐름**을 교육생이 빠르게 파악할 수 있도록 정리한 배포용 요약본입니다.",
+      "headings": [
+        "Graphify 기반 LLM Wiki 활용 1페이지 요약보고서",
+        "1. 문서 목적",
+        "2. 핵심 메시지",
+        "3. 왜 중요한가",
+        "4. 실습 흐름 요약",
+        "5. 교육생이 반드시 이해해야 할 포인트",
+        "6. 참고해서 볼 내용",
+        "7. 결론"
+      ],
+      "tags": [],
+      "topics": [
+        "1페이지",
+        "graphify",
+        "llm",
+        "wiki",
+        "기반",
+        "방식의",
+        "요약보고서",
+        "활용"
+      ],
+      "entities": [
+        "1페이지",
+        "graphify",
+        "llm",
+        "wiki",
+        "기반",
+        "기존",
+        "메시지",
+        "목적",
+        "방식의",
+        "요약보고서",
+        "자료는",
+        "한계"
+      ],
+      "tokens_estimate": 522,
+      "word_count": 454,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0
+    },
+    {
+      "id": "실습결과물/15/YouTube 영상 요약본",
+      "title": "YouTube 영상 요약본",
+      "path": "실습결과물/15/YouTube 영상 요약본.md",
+      "summary": "요약",
+      "headings": [],
+      "tags": [],
+      "topics": [
+        "youtube",
+        "영상",
+        "요약본"
+      ],
+      "entities": [
+        "youtube",
+        "영상",
+        "요약본"
+      ],
+      "tokens_estimate": 298,
+      "word_count": 260,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0
     },
     {
       "id": "실습결과물/15/로컬 whisper 모델 설치 프롬프트",
@@ -1474,6 +3489,27 @@
       "summary": "```text 순위 small + faster-whisper 속도/정확도 밸런스 최고 VRAM 안정 이것이 사용가능하다고 한다. openai 모델을 받아서 로컬에서 동작 할 수 있게 설정해줘",
       "headings": [
         "whisper 모델 설치 프롬프트"
+      ],
+      "tags": [],
+      "topics": [
+        "faster",
+        "small",
+        "text",
+        "whisper",
+        "모델",
+        "설치",
+        "순위",
+        "프롬프트"
+      ],
+      "entities": [
+        "faster",
+        "small",
+        "text",
+        "whisper",
+        "모델",
+        "설치",
+        "순위",
+        "프롬프트"
       ],
       "tokens_estimate": 62,
       "word_count": 55,
@@ -1525,6 +3561,11 @@
     },
     {
       "source": "실습결과물/07/00-INDEX",
+      "target": "실습결과물/07/5가지단계로 나누기",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/00-INDEX",
       "target": "실습결과물/07/업무분석보고서",
       "kind": "markdown"
     },
@@ -1571,6 +3612,11 @@
     {
       "source": "실습결과물/07/업무분석보고서",
       "target": "실습결과물/07/04-as-is-프로세스-스케치",
+      "kind": "markdown"
+    },
+    {
+      "source": "실습결과물/07/업무분석보고서",
+      "target": "실습결과물/07/5가지단계로 나누기",
       "kind": "markdown"
     },
     {
@@ -1920,9 +3966,197 @@
     }
   ],
   "stats": {
-    "markdown_pages": 70,
-    "resolved_edges": 87,
-    "unresolved_links": 6,
-    "total_tokens_estimate": 54174
+    "markdown_pages": 76,
+    "resolved_edges": 89,
+    "unresolved_links": 0,
+    "total_tokens_estimate": 59423
+  },
+  "facets": {
+    "top_tags": [
+      [
+        "실습결과물",
+        13
+      ],
+      [
+        "day14",
+        5
+      ],
+      [
+        "수중드론",
+        4
+      ],
+      [
+        "ax",
+        2
+      ],
+      [
+        "day07",
+        2
+      ],
+      [
+        "dx",
+        2
+      ],
+      [
+        "업무분석",
+        2
+      ],
+      [
+        "소설",
+        2
+      ],
+      [
+        "업무일지",
+        2
+      ],
+      [
+        "사업화",
+        2
+      ],
+      [
+        "codex",
+        2
+      ],
+      [
+        "day15",
+        2
+      ],
+      [
+        "graph",
+        2
+      ],
+      [
+        "llm-wiki",
+        2
+      ],
+      [
+        "day06",
+        1
+      ]
+    ],
+    "top_topics": [
+      [
+        "업무",
+        14
+      ],
+      [
+        "인덱스",
+        10
+      ],
+      [
+        "수중드론",
+        10
+      ],
+      [
+        "사업화",
+        9
+      ],
+      [
+        "llm",
+        8
+      ],
+      [
+        "핵심",
+        8
+      ],
+      [
+        "wiki",
+        7
+      ],
+      [
+        "분석",
+        7
+      ],
+      [
+        "작성",
+        7
+      ],
+      [
+        "프롬프트",
+        7
+      ],
+      [
+        "고려의",
+        7
+      ],
+      [
+        "그림자",
+        7
+      ],
+      [
+        "새벽",
+        7
+      ],
+      [
+        "설계자",
+        7
+      ],
+      [
+        "철혈의",
+        7
+      ]
+    ],
+    "top_entities": [
+      [
+        "실습결과물",
+        13
+      ],
+      [
+        "업무",
+        13
+      ],
+      [
+        "인덱스",
+        10
+      ],
+      [
+        "수중드론",
+        10
+      ],
+      [
+        "사업화",
+        9
+      ],
+      [
+        "llm",
+        7
+      ],
+      [
+        "분석",
+        7
+      ],
+      [
+        "작성",
+        7
+      ],
+      [
+        "소설",
+        7
+      ],
+      [
+        "고려의",
+        7
+      ],
+      [
+        "그림자",
+        7
+      ],
+      [
+        "새벽",
+        7
+      ],
+      [
+        "설계자",
+        7
+      ],
+      [
+        "1페이지",
+        6
+      ],
+      [
+        "ai",
+        6
+      ]
+    ]
   }
 }

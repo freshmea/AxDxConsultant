@@ -1,22 +1,27 @@
 from __future__ import annotations
 
+import fnmatch
 import json
 import math
-import fnmatch
 import re
 from collections import Counter, defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
+from urllib.parse import unquote
 
 
 WIKI_LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]+)?\]\]")
 MD_LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.*)$")
+TAG_BLOCK_RE = re.compile(r"^tags:\s*\[(.*?)\]\s*$", re.MULTILINE)
+INLINE_TAG_RE = re.compile(r"(?:^|\s)#([0-9A-Za-z가-힣_\-]+)")
 WORD_RE = re.compile(r"[0-9A-Za-z가-힣_]+")
 FRONTMATTER_RE = re.compile(r"^---\n.*?\n---\n", re.DOTALL)
 DELETED_PATH_RE = re.compile(r"`?(?:tmp/)?kuBig2026/[^\s`]+`?", re.IGNORECASE)
+IGNORE_FILE_NAME = ".llmwikiignore"
+READ_ENCODINGS = ("utf-8-sig", "utf-8", "cp949", "euc-kr")
 SKIP_DIR_NAMES = {
     ".git",
     ".mypy_cache",
@@ -26,8 +31,27 @@ SKIP_DIR_NAMES = {
     "wiki",
     "output",
 }
-READ_ENCODINGS = ("utf-8-sig", "utf-8", "cp949", "euc-kr")
-IGNORE_FILE_NAME = ".llmwikiignore"
+STOPWORDS = {
+    "the",
+    "and",
+    "for",
+    "with",
+    "this",
+    "that",
+    "from",
+    "into",
+    "tags",
+    "index",
+    "문서",
+    "개요",
+    "관련",
+    "내용",
+    "정리",
+    "보고서",
+    "요약",
+    "프로젝트",
+    "실습결과물",
+}
 
 
 @dataclass
@@ -37,6 +61,9 @@ class PageRecord:
     relpath: str
     summary: str
     headings: List[str]
+    tags: List[str]
+    topics: List[str]
+    entities: List[str]
     tokens_estimate: int
     word_count: int
     outbound_links: List[str]
@@ -108,7 +135,7 @@ def extract_summary(content: str) -> str:
     if current:
         paragraphs.append(" ".join(current))
     summary = strip_deleted_path_mentions(paragraphs[0] if paragraphs else "")
-    return summary[:240]
+    return summary[:280]
 
 
 def extract_headings(content: str) -> List[str]:
@@ -117,14 +144,52 @@ def extract_headings(content: str) -> List[str]:
         match = HEADING_RE.match(line.strip())
         if match:
             headings.append(strip_deleted_path_mentions(match.group(2).strip()))
-    return headings[:12]
+    return headings[:16]
+
+
+def extract_tags(content: str) -> List[str]:
+    tags: List[str] = []
+    for match in TAG_BLOCK_RE.findall(content):
+        for raw in match.split(","):
+            cleaned = raw.strip().strip("'\"")
+            if cleaned:
+                tags.append(cleaned)
+    for tag in INLINE_TAG_RE.findall(content):
+        cleaned = tag.strip()
+        if cleaned:
+            tags.append(cleaned)
+    return sorted(dict.fromkeys(tags))
+
+
+def top_terms(texts: List[str], limit: int = 8) -> List[str]:
+    counts: Counter[str] = Counter()
+    for text in texts:
+        for token in tokenize(text):
+            if len(token) < 2 or token in STOPWORDS:
+                continue
+            counts[token] += 1
+    return [token for token, _ in counts.most_common(limit)]
+
+
+def extract_topics(title: str, headings: List[str], summary: str, tags: List[str]) -> List[str]:
+    terms = top_terms([title, summary, *headings], limit=8)
+    return sorted(dict.fromkeys([*tags[:4], *terms]))[:10]
+
+
+def extract_entities(title: str, headings: List[str], summary: str, tags: List[str]) -> List[str]:
+    candidates = []
+    candidates.extend(tags)
+    candidates.extend(top_terms([title, *headings], limit=10))
+    summary_terms = [token for token in top_terms([summary], limit=8) if token not in candidates]
+    candidates.extend(summary_terms[:4])
+    return sorted(dict.fromkeys(candidates))[:12]
 
 
 def resolve_markdown_target(current_path: Path, href: str, root: Path, known_pages: Dict[str, str]) -> Tuple[str | None, str | None]:
     raw_target = href.strip()
     if not raw_target or raw_target.startswith(("http://", "https://", "mailto:", "#")):
         return None, None
-    target = raw_target.split("#", 1)[0].split("?", 1)[0].strip()
+    target = unquote(raw_target.split("#", 1)[0].split("?", 1)[0].strip())
     if not target:
         return None, None
     if target.endswith(".md"):
@@ -215,6 +280,9 @@ def build_index(repo_root: Path) -> Dict[str, object]:
     inbound_counts: Counter[str] = Counter()
     unresolved_counts: Counter[str] = Counter()
     query_terms: Dict[str, Counter[str]] = defaultdict(Counter)
+    tag_counts: Counter[str] = Counter()
+    entity_counts: Counter[str] = Counter()
+    topic_counts: Counter[str] = Counter()
 
     for path in files:
         relpath = path.relative_to(repo_root).as_posix()
@@ -223,6 +291,9 @@ def build_index(repo_root: Path) -> Dict[str, object]:
         title = extract_title(content, path.stem)
         headings = extract_headings(content)
         summary = extract_summary(content)
+        tags = extract_tags(content)
+        topics = extract_topics(title, headings, summary, tags)
+        entities = extract_entities(title, headings, summary, tags)
         word_count = len(tokenize(content))
         tokens_estimate = estimate_tokens(content)
         outbound: List[str] = []
@@ -248,8 +319,11 @@ def build_index(repo_root: Path) -> Dict[str, object]:
                 unresolved.append(unresolved_target)
                 unresolved_counts[unresolved_target] += 1
 
-        combined_terms = tokenize(" ".join([title, summary, " ".join(headings), relpath]))
+        combined_terms = tokenize(" ".join([title, summary, " ".join(headings), relpath, " ".join(tags), " ".join(topics), " ".join(entities)]))
         query_terms[page_id].update(combined_terms)
+        tag_counts.update(tags)
+        entity_counts.update(entities)
+        topic_counts.update(topics)
 
         pages.append(
             PageRecord(
@@ -258,6 +332,9 @@ def build_index(repo_root: Path) -> Dict[str, object]:
                 relpath=relpath,
                 summary=summary,
                 headings=headings,
+                tags=tags,
+                topics=topics,
+                entities=entities,
                 tokens_estimate=tokens_estimate,
                 word_count=word_count,
                 outbound_links=sorted(set(outbound)),
@@ -276,6 +353,9 @@ def build_index(repo_root: Path) -> Dict[str, object]:
                 "path": page.relpath,
                 "summary": page.summary,
                 "headings": page.headings,
+                "tags": page.tags,
+                "topics": page.topics,
+                "entities": page.entities,
                 "tokens_estimate": page.tokens_estimate,
                 "word_count": page.word_count,
                 "outbound_links": page.outbound_links,
@@ -291,6 +371,30 @@ def build_index(repo_root: Path) -> Dict[str, object]:
             "unresolved_links": sum(len(page.unresolved_links) for page in pages),
             "total_tokens_estimate": sum(page.tokens_estimate for page in pages),
         },
+        "facets": {
+            "top_tags": tag_counts.most_common(15),
+            "top_topics": topic_counts.most_common(15),
+            "top_entities": entity_counts.most_common(15),
+        },
+    }
+
+    structure_index = {
+        "generated_at": graph["generated_at"],
+        "pages": [
+            {
+                "id": page.page_id,
+                "title": page.title,
+                "path": page.relpath,
+                "tags": page.tags,
+                "topics": page.topics,
+                "entities": page.entities,
+                "summary": page.summary,
+                "neighbors": page.outbound_links,
+                "inbound_count": inbound_counts.get(page.page_id, 0),
+                "tokens_estimate": page.tokens_estimate,
+            }
+            for page in pages
+        ],
     }
 
     query_cache = {
@@ -301,6 +405,9 @@ def build_index(repo_root: Path) -> Dict[str, object]:
                 "path": page.relpath,
                 "summary": page.summary,
                 "headings": page.headings,
+                "tags": page.tags,
+                "topics": page.topics,
+                "entities": page.entities,
                 "terms": dict(query_terms[page.page_id]),
                 "neighbors": page.outbound_links,
                 "inbound_count": inbound_counts.get(page.page_id, 0),
@@ -312,6 +419,7 @@ def build_index(repo_root: Path) -> Dict[str, object]:
 
     return {
         "graph": graph,
+        "structure_index": structure_index,
         "query_cache": query_cache,
         "pages": pages,
         "unresolved_counts": unresolved_counts,
@@ -329,14 +437,20 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
     graph_path = system_root / "link_graph.json"
     index_json_path = system_root / "page_index.json"
     cache_path = system_root / "query_cache.json"
+    structure_path = system_root / "structure_index.json"
+    report_path = wiki_root / "graph_report.md"
+    query_log_json_path = system_root / "query_log.json"
+    query_log_md_path = wiki_root / "query_log.md"
     index_md_path = wiki_root / "index.md"
     log_path = wiki_root / "log.md"
 
     graph = build["graph"]
+    structure_index = build["structure_index"]
     pages: List[PageRecord] = build["pages"]  # type: ignore[assignment]
     unresolved_counts: Counter[str] = build["unresolved_counts"]  # type: ignore[assignment]
 
     graph_path.write_text(json.dumps(graph, ensure_ascii=False, indent=2), encoding="utf-8")
+    structure_path.write_text(json.dumps(structure_index, ensure_ascii=False, indent=2), encoding="utf-8")
     index_json_path.write_text(
         json.dumps(
             {
@@ -347,6 +461,9 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
                         "title": page.title,
                         "path": page.relpath,
                         "summary": page.summary,
+                        "tags": page.tags,
+                        "topics": page.topics,
+                        "entities": page.entities,
                         "tokens_estimate": page.tokens_estimate,
                         "outbound_links": page.outbound_links,
                         "unresolved_links": page.unresolved_links,
@@ -360,6 +477,11 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         encoding="utf-8",
     )
     cache_path.write_text(json.dumps(build["query_cache"], ensure_ascii=False, indent=2), encoding="utf-8")
+
+    if not query_log_json_path.exists():
+        query_log_json_path.write_text("[]\n", encoding="utf-8")
+    if not query_log_md_path.exists():
+        query_log_md_path.write_text("# Query Log\n\n", encoding="utf-8")
 
     lines = [
         "# Wiki Index",
@@ -377,12 +499,48 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         lines.append(f"- [{page.title}](../{page.relpath})")
         lines.append(f"  - Path: `{page.relpath}`")
         lines.append(f"  - Summary: {page.summary or '(summary unavailable)'}")
+        lines.append(f"  - Tags: {', '.join(page.tags) if page.tags else '(none)'}")
+        lines.append(f"  - Topics: {', '.join(page.topics[:5]) if page.topics else '(none)'}")
         lines.append(f"  - Links: {len(page.outbound_links)} outbound / {len(page.unresolved_links)} unresolved")
     if unresolved_counts:
         lines.extend(["", "## Unresolved Links", ""])
         for target, count in unresolved_counts.most_common(20):
             lines.append(f"- `{target}` x {count}")
     index_md_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+    connected = sorted(pages, key=lambda page: (-len(page.outbound_links), page.relpath))[:10]
+    inbound_sorted = sorted(pages, key=lambda page: (-next((node["inbound_count"] for node in graph["nodes"] if node["id"] == page.page_id), 0), page.relpath))[:10]
+    orphan_pages = [page for page in pages if not page.outbound_links]
+    report_lines = [
+        "# Graph Report",
+        "",
+        f"- Generated: {graph['generated_at']}",
+        f"- Pages: {graph['stats']['markdown_pages']}",
+        f"- Edges: {graph['stats']['resolved_edges']}",
+        f"- Estimated full corpus tokens: {graph['stats']['total_tokens_estimate']}",
+        "",
+        "## Top Tags",
+        "",
+    ]
+    for tag, count in graph["facets"]["top_tags"]:
+        report_lines.append(f"- `{tag}` x {count}")
+    report_lines.extend(["", "## Top Topics", ""])
+    for topic, count in graph["facets"]["top_topics"]:
+        report_lines.append(f"- `{topic}` x {count}")
+    report_lines.extend(["", "## Top Entities", ""])
+    for entity, count in graph["facets"]["top_entities"]:
+        report_lines.append(f"- `{entity}` x {count}")
+    report_lines.extend(["", "## Most Connected Pages", ""])
+    for page in connected:
+        report_lines.append(f"- [{page.title}](../{page.relpath}) | outbound={len(page.outbound_links)}")
+    report_lines.extend(["", "## Most Referenced Pages", ""])
+    for page in inbound_sorted:
+        inbound_count = next((node["inbound_count"] for node in graph["nodes"] if node["id"] == page.page_id), 0)
+        report_lines.append(f"- [{page.title}](../{page.relpath}) | inbound={inbound_count}")
+    report_lines.extend(["", "## Orphan Candidates", ""])
+    for page in orphan_pages[:20]:
+        report_lines.append(f"- [{page.title}](../{page.relpath})")
+    report_path.write_text("\n".join(report_lines) + "\n", encoding="utf-8")
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     entry = (
@@ -401,6 +559,10 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         "graph_path": graph_path,
         "index_json_path": index_json_path,
         "cache_path": cache_path,
+        "structure_path": structure_path,
+        "report_path": report_path,
+        "query_log_json_path": query_log_json_path,
+        "query_log_md_path": query_log_md_path,
         "index_md_path": index_md_path,
         "log_path": log_path,
     }

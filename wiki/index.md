@@ -1,9 +1,9 @@
 # Wiki Index
 
-- Generated: 2026-04-15T07:12:22.093206+00:00
-- Markdown pages: 70
-- Resolved edges: 87
-- Estimated full-read tokens: 54174
+- Generated: 2026-04-15T08:10:39.805028+00:00
+- Markdown pages: 76
+- Resolved edges: 89
+- Estimated full-read tokens: 59423
 - Ignore file: `.llmwikiignore`
 
 ## Pages
@@ -11,286 +11,456 @@
 - [LLM Wiki Schema](../AGENTS.md)
   - Path: `AGENTS.md`
   - Summary: This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm-wiki.md` gist.
+  - Tags: (none)
+  - Topics: llm, local, pattern, repository, schema
   - Links: 0 outbound / 0 unresolved
 - [Local LLM Wiki](../llm_wiki/README.md)
   - Path: `llm_wiki/README.md`
   - Summary: This package builds a lightweight Karpathy-style wiki layer over the markdown files in this repository.
+  - Tags: (none)
+  - Topics: builds, files, karpathy, lightweight, llm
   - Links: 0 outbound / 0 unresolved
 - [Notion App Date Filter Fallback Skill](../notion_app_date_filter_fallback_skill/SKILL.md)
   - Path: `notion_app_date_filter_fallback_skill/SKILL.md`
   - Summary: Notion 앱 연동에서 데이터소스 SQL 도구(`notion-query-data-sources`)가 비활성일 때, `기간` 같은 날짜 속성 기준으로 업무를 정확하게 추출한다.
+  - Tags: (none)
+  - Topics: app, date, fallback, filter, notion
   - Links: 0 outbound / 0 unresolved
 - [Body Fat Brozek 시각 분석 보고서 (미리보기 중심)](../orange_example_10/bodyfat_analysis_report.md)
   - Path: `orange_example_10/bodyfat_analysis_report.md`
   - Summary: 데이터 행 수: **252** - 타겟 변수: `body fat brozek` - 분석 목표: 분포, 이상치, 상관관계, 변수별 패턴을 직관적으로 확인
+  - Tags: (none)
+  - Topics: body, box, brozek, fat, vs
   - Links: 0 outbound / 0 unresolved
 - [Titanic AdaBoost 분석 보고서](../orange_example_10/titanic_adaboost_report.md)
   - Path: `orange_example_10/titanic_adaboost_report.md`
   - Summary: 원본 데이터 행 수: 2201 - 타겟 변수: survived (yes/no) - 입력 변수: status, age, sex - 메타 행 제거 후 유효 카테고리만 사용
+  - Tags: (none)
+  - Topics: 2201, adaboost, titanic, 데이터, 변수
   - Links: 0 outbound / 0 unresolved
 - [Titanic 생존 분석 보고서](../orange_example_10/titanic_survival_report.md)
   - Path: `orange_example_10/titanic_survival_report.md`
   - Summary: 전체 관측치: 2201건 - 생존자: 711건 (32.30%)
+  - Tags: (none)
+  - Topics: 2201건, 711건, titanic, 관측치, 분석
   - Links: 0 outbound / 0 unresolved
 - [AxDxConsultant](../README.md)
   - Path: `README.md`
   - Summary: AxDx 전문가 과정
+  - Tags: (none)
+  - Topics: 2026_4_6, 2026_4_7, 2026_4_8, 2026_4_9, axdx
+  - Links: 0 outbound / 0 unresolved
+- [Local Whisper GPU](../skills/local-whisper-gpu/SKILL.md)
+  - Path: `skills/local-whisper-gpu/SKILL.md`
+  - Summary: Set up the STT stack in this order.
+  - Tags: (none)
+  - Topics: gpu, in, local, run, set
+  - Links: 0 outbound / 0 unresolved
+- [Troubleshooting](../skills/troubleshooting.md)
+  - Path: `skills/troubleshooting.md`
+  - Summary: This note covers setup problems already encountered in this workspace while building the wiki LLM and local Whisper stack.
+  - Tags: (none)
+  - Topics: fails, links, llm, local, troubleshooting
+  - Links: 0 outbound / 0 unresolved
+- [Wiki LLM Setup](../skills/wiki-llm-setup/SKILL.md)
+  - Path: `skills/wiki-llm-setup/SKILL.md`
+  - Summary: Recreate the wiki layer in this order.
+  - Tags: (none)
+  - Topics: graph, in, keep, layer, llm
   - Links: 0 outbound / 0 unresolved
 - [실습결과물 06 인덱스](../실습결과물/06/00-INDEX.md)
   - Path: `실습결과물/06/00-INDEX.md`
   - Summary: tags: [실습결과물, day06, 리서치, paperclip, markdown]
+  - Tags: day06, markdown, paperclip, 리서치, 실습결과물
+  - Topics: 06, day06, markdown, paperclip, 리서치
   - Links: 4 outbound / 0 unresolved
 - [PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지](../실습결과물/06/deep-research-report.md)
   - Path: `실습결과물/06/deep-research-report.md`
-  - Summary: PaperclipAI는 “에이전트(직원)를 만드는 프레임워크”라기보다, **이미 존재하는 다양한 AI 에이전트 런타임(예: Claude/Codex/OpenClaw 계열)을 ‘회사 운영 체계’로 조직화**하는 오픈소스 오케스트레이션 플랫폼에 가깝습니다. 핵심은 **회사(Company) 단위의 목표(Goals)–업무(Tasks/Issues)–조직도(Org)–하트비트(Heartbeats) 실행 모델–예산/비용(Cost & Budge
+  - Summary: PaperclipAI는 “에이전트(직원)를 만드는 프레임워크”라기보다, **이미 존재하는 다양한 AI 에이전트 런타임(예: Claude/Codex/OpenClaw 계열)을 ‘회사 운영 체계’로 조직화**하는 오픈소스 오케스트레이션 플랫폼에 가깝습니다. 핵심은 **회사(Company) 단위의 목표(Goals)–업무(Tasks/Issues)–조직도(Org)–하트비트(Heartbeats) 실행 모델–예산/비용(Cost & Budgets)–승인/거버넌스(Governance & Approvals)**를 결
+  - Tags: (none)
+  - Topics: paperclipai, 강의자용, 교육, 실습, 에이전트
   - Links: 0 outbound / 0 unresolved
 - [머메이드 테스트](../실습결과물/06/mermaidTest.md)
   - Path: `실습결과물/06/mermaidTest.md`
   - Summary: ```mermaid graph TD A[전체 업무: 보고서 작성]
+  - Tags: (none)
+  - Topics: graph, mermaid, td, 머메이드, 업무
   - Links: 0 outbound / 0 unresolved
 - [2. 교육 요약본 (1페이지)](../실습결과물/06/paperclipai교육요약.md)
   - Path: `실습결과물/06/paperclipai교육요약.md`
   - Summary: AI를 도구가 아닌 **조직(Company) 단위로 운영하는 방법**을 학습하는 실습 중심 교육
+  - Tags: (none)
+  - Topics: 1페이지, ai를, 교육, 도구가, 실습
   - Links: 0 outbound / 0 unresolved
 - [1. 사업계획서 (요약형)](../실습결과물/06/paperclipai사업계획서.md)
   - Path: `실습결과물/06/paperclipai사업계획서.md`
   - Summary: 본 사업은 AI 에이전트를 단순 개발이 아닌 **조직 단위로 운영·관리하는 교육 플랫폼**인 *PaperclipAI 기반 교육 프로그램*을 구축하는 것을 목표로 한다.
+  - Tags: (none)
+  - Topics: ai, 교육, 목표, 사업, 사업계획서
   - Links: 0 outbound / 0 unresolved
 - [실습결과물 07 인덱스](../실습결과물/07/00-INDEX.md)
   - Path: `실습결과물/07/00-INDEX.md`
   - Summary: tags: [실습결과물, day07, 업무분석, dx, ax, 프로세스]
-  - Links: 5 outbound / 1 unresolved
+  - Tags: ax, day07, dx, 실습결과물, 업무분석, 프로세스
+  - Topics: 07, ax, day07, dx, 묶음
+  - Links: 6 outbound / 0 unresolved
 - [1. 업무 흐름 구조화](../실습결과물/07/01-업무-흐름-구조화.md)
   - Path: `실습결과물/07/01-업무-흐름-구조화.md`
   - Summary: 업무 흐름을 단계별로 나누어 구조화 - 1: paperclipai 자료 조사 - 구현 사례조사 - 2시간 - 2: 자료 정리 - Youtube 영상, 블로그 글 문서화 및 정리 - 1시간 - 3: 구현 - GMKtec evo-x2 에 실제 구현해 봄 - 6시간 - 4: 결과 분석 - 구현 결과를 분석하여 개선점 도출 - 1시간 - 5: 보고서 작성 - 분석 결과를 바탕으로 보고서 작성 - 1시간
+  - Tags: (none)
+  - Topics: 1시간, 결과를, 구조화, 구현, 분석
   - Links: 0 outbound / 0 unresolved
 - [업무 흐름 (Mermaid)](../실습결과물/07/02-업무-흐름-mermaid.md)
   - Path: `실습결과물/07/02-업무-흐름-mermaid.md`
   - Summary: ```mermaid flowchart LR %% ========================= %% Swimlanes %% ========================= subgraph L1["데이터를 주는 사람 (공급자)"] direction LR A1["기획"] A2["강의 주제"] end
+  - Tags: (none)
+  - Topics: flowchart, l1, lr, mermaid, subgraph
   - Links: 0 outbound / 0 unresolved
 - [나의 업무 비효율 수치화 템플릿 작성](../실습결과물/07/03-업무-비효율-수치화-템플릿.md)
   - Path: `실습결과물/07/03-업무-비효율-수치화-템플릿.md`
   - Summary: 업무명 | 유형 | 소요 시간 | 월 빈도 | 월간 낭비 시간 | 연간 환산 비용 ---|---|---|---|---|--- 수업 계획서 작성|문서 작성|2시간|4회|8시간|96시간|960,000원 시험문제 출제|문서 작성|3시간|2회|6시간|72시간|720,000원 수업 자료 조사|조사|4시간|4회|16시간|192시간|1,920,000원
+  - Tags: (none)
+  - Topics: 000원, 나의, 비효율, 수치화, 시간
   - Links: 0 outbound / 0 unresolved
 - [AS-IS 프로세스 스케치](../실습결과물/07/04-as-is-프로세스-스케치.md)
   - Path: `실습결과물/07/04-as-is-프로세스-스케치.md`
   - Summary: ```mermaid flowchart LR %% ========================= %% Main Process %% ========================= A["1단계<br/>커리큘럼 작성"] B["2단계<br/>자료 조사"] C["3단계<br/>소스 코드 작성"] D["4단계<br/>검증 및 보완"] E["5단계<br/>문서 마무리"]
+  - Tags: (none)
+  - Topics: as, br, flowchart, is, mermaid
   - Links: 0 outbound / 0 unresolved
 - [나의 어제 하루 업무 5단계 쪼개기](../실습결과물/07/5가지단계로 나누기.md)
   - Path: `실습결과물/07/5가지단계로 나누기.md`
   - Summary: 내용을 주제별로 아래 파일로 분할했습니다.
+  - Tags: (none)
+  - Topics: 5단계, 나의, 내용을, 어제, 업무
   - Links: 4 outbound / 0 unresolved
 - [업무분석보고서](../실습결과물/07/업무분석보고서.md)
   - Path: `실습결과물/07/업무분석보고서.md`
   - Summary: tags: [실습결과물, day07, 업무분석, dx, ax]
-  - Links: 5 outbound / 1 unresolved
+  - Tags: ax, day07, dx, 실습결과물, 업무분석
+  - Topics: 04, 2026, ax, day07, dx
+  - Links: 6 outbound / 0 unresolved
 - [실습결과물 08 인덱스](../실습결과물/08/00-INDEX.md)
   - Path: `실습결과물/08/00-INDEX.md`
   - Summary: tags: [실습결과물, day08, ai-workflow, 업무리스트, 우선순위, 명세서]
+  - Tags: ai-workflow, day08, 명세서, 실습결과물, 업무리스트, 우선순위
+  - Topics: 08, ai, ai-workflow, day08, workflow
   - Links: 6 outbound / 0 unresolved
 - [나의 핵심 업무 리스트업](../실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스.md)
   - Path: `실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스.md`
   - Summary: (summary unavailable)
+  - Tags: (none)
+  - Topics: 나의, 리스트업, 명세서, 발행, 선택한
   - Links: 0 outbound / 0 unresolved
 - [02-AI-활용영역-보조-요약-생성-분석](../실습결과물/08/02-AI-활용영역-보조-요약-생성-분석.md)
   - Path: `실습결과물/08/02-AI-활용영역-보조-요약-생성-분석.md`
   - Summary: 명세서 작성 및 발행
+  - Tags: (none)
+  - Topics: ai에게, task, 기대, 맡길, 목적
   - Links: 0 outbound / 0 unresolved
 - [03-정량평가-우선순위](../실습결과물/08/03-정량평가-우선순위.md)
   - Path: `실습결과물/08/03-정량평가-우선순위.md`
   - Summary: 좋습니다. 앞에서 분류한 **보조 / 요약 / 생성 / 분석 Task**를 기준으로 **난이도(1~5)와 시급성(1~5)** 기준으로 현실적으로 평가해서 표로 정리했습니다.
+  - Tags: (none)
+  - Topics: task, 기준, 기준으로, 명세서, 분석
   - Links: 0 outbound / 0 unresolved
 - [📊 나의 Value Estimation Canvas](../실습결과물/08/04-value-estimation-canvas.md)
   - Path: `실습결과물/08/04-value-estimation-canvas.md`
   - Summary: | 대상 업무 (1순위 Quick Win) | |----------------------------| | 명세서 초안 자동 생성 |
+  - Tags: (none)
+  - Topics: canvas, estimation, step, value, 나의
   - Links: 0 outbound / 0 unresolved
 - [명세서 초안 자동 생성 AI 워크플로우](../실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md)
   - Path: `실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md`
   - Summary: 명세서 초안 자동 생성
+  - Tags: (none)
+  - Topics: ai, as, 명세서, 생성, 워크플로우
   - Links: 0 outbound / 0 unresolved
 - [나의 핵심 업무 리스트업](../실습결과물/08/업무리스트.md)
   - Path: `실습결과물/08/업무리스트.md`
   - Summary: 내용을 주제별로 아래 파일로 분할했습니다.
+  - Tags: (none)
+  - Topics: 나의, 내용을, 리스트업, 아래, 업무
   - Links: 5 outbound / 0 unresolved
 - [실습결과물 09 인덱스](../실습결과물/09/00-INDEX.md)
   - Path: `실습결과물/09/00-INDEX.md`
   - Summary: tags: [실습결과물, day09, 문제정의, 현상분석, 사례]
+  - Tags: day09, 문제정의, 사례, 실습결과물, 현상분석
+  - Topics: 09, day09, 묶음, 문제정의, 사례
   - Links: 4 outbound / 0 unresolved
 - [suno 노래 요청](../실습결과물/09/노래요청.md)
   - Path: `실습결과물/09/노래요청.md`
   - Summary: 로보카폴리 만화 주제곡같은 형식의 노래를 만들어 주는데 가사에 "최소니"라는 이름을 넣어서 포기 하지 않는 여자아이에 관련된 노래를 작성해줘.
+  - Tags: (none)
+  - Topics: suno, 노래, 노래를, 로보카폴리, 만화
   - Links: 0 outbound / 0 unresolved
 - [📄 AI 협업 기반 문제 정의서 (Master Document)](../실습결과물/09/문제 정의서.md)
   - Path: `실습결과물/09/문제 정의서.md`
   - Summary: 최근 2개월간 핵심 제품의 **30대 여성 고객 이탈률 급증** - 재구매율 감소 및 구매 주기 증가 - 동일 기간 내 타 연령대 대비 이탈 증가 폭이 가장 큼
+  - Tags: (none)
+  - Topics: ai, document, master, 기반, 목표
   - Links: 0 outbound / 0 unresolved
 - [1. 가성비 인식 개선 아이디어 20가지](../실습결과물/09/미션20대여성상품.md)
   - Path: `실습결과물/09/미션20대여성상품.md`
   - Summary: 가설이 **“가성비 인식 저하”**로 확정된 상황이라면, 핵심은 **실제 가격을 낮추는 것이 아니라 ‘지불 대비 체감 가치’를 빠르게 끌어올리는 것**입니다. 아래는 **아이디어 20개 → 실행 가능한 3개 선별 → 1주 액션 플랜 표** 순서로 정리했습니다.
+  - Tags: (none)
+  - Topics: 20가지, day, 가성비, 개선, 실행
   - Links: 0 outbound / 0 unresolved
 - [문제 정의 정리](../실습결과물/09/현상에서문제로.md)
   - Path: `실습결과물/09/현상에서문제로.md`
   - Summary: 막연한 불만이나 겉으로 드러난 결과를 1문장으로 작성
+  - Tags: (none)
+  - Topics: step, 막연한, 문제, 불만이나, 업무
   - Links: 0 outbound / 0 unresolved
 - [실습결과물 13 인덱스](../실습결과물/13/00-INDEX.md)
   - Path: `실습결과물/13/00-INDEX.md`
   - Summary: tags: [실습결과물, day13, 수업요약, 해양드론, 수중드론, 블로그]
+  - Tags: day13, 블로그, 수업요약, 수중드론, 실습결과물, 해양드론
+  - Topics: 13, day13, 블로그, 수업, 수업요약
   - Links: 8 outbound / 0 unresolved
 - [AIDX_5일차_교시별_요약](../실습결과물/13/AIDX_5일차_교시별_요약.md)
   - Path: `실습결과물/13/AIDX_5일차_교시별_요약.md`
   - Summary: 기준: - 파일: `C:\Users\Administrator\dxAx\실습결과물\13\GMT20260409-222215_Recording.transcript.vtt` - 실제 수업 시작으로 보이는 `02:08:56` 이후를 분석 - 약 9분 이상 공백을 쉬는시간으로 간주해 교시 분할
+  - Tags: (none)
+  - Topics: aidx_5일차_교시별_요약, users, 교시, 기준, 분할
   - Links: 0 outbound / 0 unresolved
 - [광물자료조사](../실습결과물/13/광물자료조사.md)
   - Path: `실습결과물/13/광물자료조사.md`
-  - Summary: 아래는 **최근 1개월(2026년 3월 13일~4월 13일) 기준 국제 광물시장 요약 조사**입니다. 범위는 **로봇 산업에 직접 연결되는 희귀·전략 광물**로 좁혀, **영구자석용 희토류(Nd·Pr·Dy·Tb 계열)**와 **이동형 로봇·휴머노이드 전원용 리튬·코발트**를 중심으로 봤습니다. 로봇용 고성능 모터와 배터리는 이 광물들에 가장 민감합니다. EU JRC는 희토류 자석용 원소를 전략원자재로 분류하고, 희토류 수요가 
+  - Summary: 아래는 **최근 1개월(2026년 3월 13일~4월 13일) 기준 국제 광물시장 요약 조사**입니다. 범위는 **로봇 산업에 직접 연결되는 희귀·전략 광물**로 좁혀, **영구자석용 희토류(Nd·Pr·Dy·Tb 계열)**와 **이동형 로봇·휴머노이드 전원용 리튬·코발트**를 중심으로 봤습니다. 로봇용 고성능 모터와 배터리는 이 광물들에 가장 민감합니다. EU JRC는 희토류 자석용 원소를 전략원자재로 분류하고, 희토류 수요가 전기차·로봇·풍력 확대로 크게 증가할 수 있다고 설명합니다. 미국 DOE
+  - Tags: (none)
+  - Topics: 13일, 광물자료조사, 로봇, 아래는, 연결되는
   - Links: 0 outbound / 0 unresolved
 - [노트북lm 수업 요약보고서](../실습결과물/13/노트북lm 수업 요약보고서.md)
   - Path: `실습결과물/13/노트북lm 수업 요약보고서.md`
   - Summary: 생성형 AI 활용 전략 및 데이터 기반 의사결정 브리핑 보고서
+  - Tags: (none)
+  - Topics: ai, 노트북lm, 데이터, 생성형, 수업
   - Links: 0 outbound / 0 unresolved
 - [블로그 형태](../실습결과물/13/블로그 형태.md)
   - Path: `실습결과물/13/블로그 형태.md`
   - Summary: 로봇 시대의 '진짜' 주인은 누구인가: 최근 광물 시장이 던지는 4가지 경고장
+  - Tags: (none)
+  - Topics: 누구인가, 로봇, 블로그, 시대의, 주인은
   - Links: 0 outbound / 0 unresolved
 - [수중드론_블로그](../실습결과물/13/수중드론_블로그.md)
   - Path: `실습결과물/13/수중드론_블로그.md`
   - Summary: 바닷속 금맥을 캐는 '수중 드론', 우리가 몰랐던 4가지 반전 인사이트
+  - Tags: (none)
+  - Topics: 금맥을, 드론, 몰랐던, 바닷속, 수중
   - Links: 0 outbound / 0 unresolved
 - [수중드론 사업화 기획안(운영형)](../실습결과물/13/수중드론_사업화_기획안.md)
   - Path: `실습결과물/13/수중드론_사업화_기획안.md`
-  - Summary: 1. 배경과 필요성 1.1 해양 현장의 정보 사각지대와 시장 변화 1.2 기존 모니터링 방식의 구조적 한계 1.3 수중드론 사업화 기회 요인 1.4 초기 타겟 시장 선정 근거(B2B/B2G 우선) 2. 프로젝트 목적 2.1 프로젝트 비전과 추진 방향 2.2 정량/정성 목표 2.3 핵심 서비스 범위(탐색-정보전달-실행) 2.4 핵심 성과지표(KPI) 3. 핵심 실행방안 3.1 제품·서비스 아키텍처(USV+수중모듈+플랫폼) 3.2
+  - Summary: 1. 배경과 필요성 1.1 해양 현장의 정보 사각지대와 시장 변화 1.2 기존 모니터링 방식의 구조적 한계 1.3 수중드론 사업화 기회 요인 1.4 초기 타겟 시장 선정 근거(B2B/B2G 우선) 2. 프로젝트 목적 2.1 프로젝트 비전과 추진 방향 2.2 정량/정성 목표 2.3 핵심 서비스 범위(탐색-정보전달-실행) 2.4 핵심 성과지표(KPI) 3. 핵심 실행방안 3.1 제품·서비스 아키텍처(USV+수중모듈+플랫폼) 3.2 운영 시나리오와 표준 운영절차(SOP) 3.3 데이터 레이어링 기반 정
+  - Tags: (none)
+  - Topics: 기획안, 배경과, 사업화, 서비스, 수중드론
   - Links: 0 outbound / 0 unresolved
 - [해양드론을 활용한 사업화 가능성 분석 보고서](../실습결과물/13/해양드론딥리서치결과.md)
   - Path: `실습결과물/13/해양드론딥리서치결과.md`
   - Summary: CREATE 적용: **C**(해양·수산/항만·안전/환경 현안이 ‘현장 데이터’ 수요로 연결), **R**(10년차 개발·기획자 관점: 기술-제품-시장-재무를 하나의 실행계획으로 정렬), **E**(동료 리뷰용 ‘설득형’ 요약: 결론·근거·결정포인트 우선 제시), **A**(개발/기획/사업/법무·보안 동료), **T**(핵심 가설→근거→권고안→다음 단계), **E**(정부 문서체·출처 명시·미지정 표기·시나리오 제시).
+  - Tags: (none)
+  - Topics: 가능성, 결론, 분석, 사업화, 시나리오
   - Links: 0 outbound / 0 unresolved
 - [해양드론 조사 보고서](../실습결과물/13/해양드론조사보고서.md)
   - Path: `실습결과물/13/해양드론조사보고서.md`
   - Summary: 프롬프트
+  - Tags: (none)
+  - Topics: 기반, 문제, 분석, 수중, 조사
   - Links: 0 outbound / 0 unresolved
 - [실습결과물 14 인덱스](../실습결과물/14/00-INDEX.md)
   - Path: `실습결과물/14/00-INDEX.md`
   - Summary: tags: [실습결과물, day14, 업무일지, 수중드론, 소설, 프롬프트]
+  - Tags: day14, 소설, 수중드론, 실습결과물, 업무일지, 프롬프트
+  - Topics: 14, day14, 소설, 수중드론, 실습결과물
   - Links: 7 outbound / 0 unresolved
 - [주간 업무일지 인덱스](../실습결과물/14/10-주간업무일지-INDEX.md)
   - Path: `실습결과물/14/10-주간업무일지-INDEX.md`
   - Summary: tags: [실습결과물, day14, 업무일지, 주간리포트]
+  - Tags: day14, 실습결과물, 업무일지, 주간리포트
+  - Topics: day14, 목록, 실습결과물, 업무일지, 인덱스
   - Links: 7 outbound / 0 unresolved
 - [수중드론 사업화 인덱스](../실습결과물/14/20-수중드론-INDEX.md)
   - Path: `실습결과물/14/20-수중드론-INDEX.md`
   - Summary: tags: [실습결과물, day14, 수중드론, 사업화, bluf, 타당성]
+  - Tags: bluf, day14, 사업화, 수중드론, 실습결과물, 타당성
+  - Topics: bluf, day14, 변형, 사업화, 수중드론
   - Links: 9 outbound / 0 unresolved
 - [🗓️ 주간 업무 보고서](../실습결과물/14/2026_3_13_주간 업무일지.md)
   - Path: `실습결과물/14/2026_3_13_주간 업무일지.md`
   - Summary: **기간**: 2026년 3월 9일 ~ 2026년 3월 13일
+  - Tags: (none)
+  - Topics: 13일, 2026년, 3월, 9일, 업무
   - Links: 0 outbound / 0 unresolved
 - [🗓️ 주간 업무 보고서](../실습결과물/14/2026_3_20_주간 업무일지.md)
   - Path: `실습결과물/14/2026_3_20_주간 업무일지.md`
   - Summary: **기간**: 2026년 3월 16일 ~ 2026년 3월 20일
+  - Tags: (none)
+  - Topics: 16일, 2026년, 20일, 3월, 업무
   - Links: 0 outbound / 0 unresolved
 - [🗓️ 주간 업무 보고서](../실습결과물/14/2026_3_27_주간 업무일지.md)
   - Path: `실습결과물/14/2026_3_27_주간 업무일지.md`
   - Summary: **기간**: 2026년 3월 23일 ~ 2026년 3월 27일
+  - Tags: (none)
+  - Topics: 2026년, 23일, 27일, 3월, 업무
   - Links: 0 outbound / 0 unresolved
 - [🗓️ 주간 업무 보고서](../실습결과물/14/2026_4_10_주간 업무일지.md)
   - Path: `실습결과물/14/2026_4_10_주간 업무일지.md`
   - Summary: **기간**: 2026년 4월 6일 ~ 2026년 4월 10일
+  - Tags: (none)
+  - Topics: 10일, 2026년, 4월, 6일, 업무
   - Links: 0 outbound / 0 unresolved
 - [🗓️ 주간 업무 보고서](../실습결과물/14/2026_4_3_주간 업무일지.md)
   - Path: `실습결과물/14/2026_4_3_주간 업무일지.md`
   - Summary: **기간**: 2026년 3월 30일 ~ 2026년 4월 3일
+  - Tags: (none)
+  - Topics: 2026년, 30일, 3월, 3일, 4월
   - Links: 0 outbound / 0 unresolved
 - [소설 프로젝트 인덱스](../실습결과물/14/30-소설-INDEX.md)
   - Path: `실습결과물/14/30-소설-INDEX.md`
   - Summary: tags: [실습결과물, day14, 소설, 목파5부작, 스토리]
+  - Tags: day14, 목파5부작, 소설, 스토리, 실습결과물
+  - Topics: day14, 기획, 목파5부작, 본문, 소설
   - Links: 10 outbound / 0 unresolved
 - [AI요청 프롬프트](../실습결과물/14/AI요청 프롬프트.md)
   - Path: `실습결과물/14/AI요청 프롬프트.md`
   - Summary: 당신은 기업 혁신 및 AX(AI Transformation) 전략 전문가입니다. 다음 상황을 바탕으로 임원진 보고용 제안서 초안을 작성해 주세요.
+  - Tags: (none)
+  - Topics: ai, ai요청, ax, transformation, 기업
   - Links: 0 outbound / 0 unresolved
 - [철혈의 새벽: 고려의 그림자 설계자](../실습결과물/14/고려빙의_스토리라인.md)
   - Path: `실습결과물/14/고려빙의_스토리라인.md`
   - Summary: **권별 스토리라인(총 1500자 내외)**
+  - Tags: (none)
+  - Topics: 1500자, 고려의, 권별, 그림자, 새벽
   - Links: 0 outbound / 0 unresolved
 - [철혈의 새벽: 고려의 그림자 설계자](../실습결과물/14/소설1권.md)
   - Path: `실습결과물/14/소설1권.md`
   - Summary: 윤해진은 2168년 겨울, 북위 38도 재난 시뮬레이션 센터의 유리창 앞에 서 있었다. 화면에는 한반도 전체가 검은 색으로 물들어 있었다. 가뭄, 식량 폭동, 항만 봉쇄, 국경 충돌. 알고리즘은 늘 같은 결론을 내렸다. “보급이 무너지면 국가는 무너진다.”
+  - Tags: (none)
+  - Topics: 고려의, 그림자, 새벽, 설계자, 송악의
   - Links: 0 outbound / 0 unresolved
 - [철혈의 새벽: 고려의 그림자 설계자](../실습결과물/14/소설2권.md)
   - Path: `실습결과물/14/소설2권.md`
-  - Summary: 윤해진은 22세기 기억을 가진 채 송악 하급 서리 왕융으로 살아남았다. - 청동 유물 `천문침`은 전황·배신 가능성을 보여주지만 사용할수록 기억을 잃게 만든다. - 송악 조창 개혁과 해상 보급선 분산으로 첫 군량 위기를 넘겼다. - 왕융은 의녀 오다련, 연락책 비룡과 함께 비밀 연락망의 씨앗을 만들었다. - 궁예 측 밀정망이 송악 내부까지 침투해 장부·인장을 조작하고 인신매매에 연루됐다. - 왕건은 왕융의 계산 능력을 인정하고
+  - Summary: 윤해진은 22세기 기억을 가진 채 송악 하급 서리 왕융으로 살아남았다. - 청동 유물 `천문침`은 전황·배신 가능성을 보여주지만 사용할수록 기억을 잃게 만든다. - 송악 조창 개혁과 해상 보급선 분산으로 첫 군량 위기를 넘겼다. - 왕융은 의녀 오다련, 연락책 비룡과 함께 비밀 연락망의 씨앗을 만들었다. - 궁예 측 밀정망이 송악 내부까지 침투해 장부·인장을 조작하고 인신매매에 연루됐다. - 왕건은 왕융의 계산 능력을 인정하고 비공식 참모로 삼았다. - 1권 말, 철원 정변이 임박했고 왕융은 "왕
+  - Tags: (none)
+  - Topics: 고려의, 그림자, 기억을, 새벽, 설계자
   - Links: 0 outbound / 0 unresolved
 - [철혈의 새벽: 고려의 그림자 설계자](../실습결과물/14/소설3권.md)
   - Path: `실습결과물/14/소설3권.md`
   - Summary: 철원에서 궁예 정권은 의심과 숙청으로 붕괴 직전까지 치달았다. - 왕융은 흑조단(정보·의료·연락 그림자망)을 정식으로 구축했다. - 북문 붕괴와 내부 배신 증거가 드러나며 태봉 체제의 균열이 공개화됐다. - 왕건 측은 정변 준비를 완료했고, `새벽 안개` 신호로 거사 실행 직전이다. - 천문침의 기억 대가가 가속되며 왕융은 유물 의존을 끊으려 시도 중이다.
+  - Tags: (none)
+  - Topics: 3권, 고려의, 그림자, 새벽, 설계자
   - Links: 0 outbound / 0 unresolved
 - [철혈의 새벽: 고려의 그림자 설계자](../실습결과물/14/소설4권.md)
   - Path: `실습결과물/14/소설4권.md`
   - Summary: 고려는 즉위 초기 혼란을 넘겼지만 927년 공산 패전으로 큰 타격을 입었다. - 신숭겸 전사 이후 유금필 중심 방어 체계로 전선을 재정비했다. - 930년 고창 승리로 전세를 돌렸으나 전쟁은 끝나지 않았다. - 왕융은 민생·행정·군량 실무를 장악하며 영향력이 커졌고, 귀족 반발도 함께 커졌다. - 천문침은 사용을 줄였어도 기억 손실이 누적되어 정체 붕괴 경고가 시작됐다.
+  - Tags: (none)
+  - Topics: 4권, 고려의, 그림자, 새벽, 설계자
   - Links: 0 outbound / 0 unresolved
 - [철혈의 새벽: 고려의 그림자 설계자](../실습결과물/14/소설5권.md)
   - Path: `실습결과물/14/소설5권.md`
   - Summary: 고려는 양면전과 기근을 버티며 전선을 재정비했다. - 왕융은 개혁 반발로 표면상 실각했으나, 실질적으로는 비밀 참모 역할을 유지 중이다. - 후백제 내부에서 신검 세력과 견훤 구세력의 충돌이 임계점에 도달했다. - 천문침은 왕융에게 마지막 수준의 정체 붕괴 경고를 보낸 상태다. - 최종전은 정면 격돌보다 `내분+민심+보급` 삼중 전장에서 결정될 가능성이 커졌다.
+  - Tags: (none)
+  - Topics: 5권, 고려는, 고려의, 그림자, 마지막
   - Links: 0 outbound / 0 unresolved
 - [철혈의 새벽: 고려의 그림자 설계자 (5부작)](../실습결과물/14/소설_목차_5부작.md)
   - Path: `실습결과물/14/소설_목차_5부작.md`
   - Summary: 1. 추락한 별, 깨어난 서리 2. 혼란의 장부 3. 왕건의 눈 4. 바닷길의 해답 5. 곡창의 수수께끼 6. 칼보다 빠른 계산 7. 궁예의 그림자 8. 첫 승전의 대가 9. 이름 없는 공신 10. 송악의 맹세
+  - Tags: (none)
+  - Topics: 5부작, 고려의, 그림자, 새벽, 설계자
   - Links: 0 outbound / 0 unresolved
 - [소설 5부작 작성 로그 (컨텍스트 압축 + 토큰 추정)](../실습결과물/14/소설_연속작성_토큰로그.md)
   - Path: `실습결과물/14/소설_연속작성_토큰로그.md`
   - Summary: 토큰은 정확 계측값이 아니라 **문자수 기반 추정 범위(0.8x~1.2x)** 입니다. - 각 권 시작부에 `컨텍스트 압축 요약`을 넣어 이전권 정보를 10~12줄로 축약 후 이어서 집필했습니다.
+  - Tags: (none)
+  - Topics: 5부작, 로그, 소설, 압축, 작성
   - Links: 0 outbound / 0 unresolved
 - [수중드론 사업화 1페이지 요약안 (BLUF)](../실습결과물/14/수중드론_사업화_1페이지_BLUF.md)
   - Path: `실습결과물/14/수중드론_사업화_1페이지_BLUF.md`
   - Summary: 보고 대상: CEO/임원 의사결정 - 기준 문서: `C:\Users\Administrator\dxAx\실습결과물\14\수중드론_사업화_상세기획안.md`
+  - Tags: (none)
+  - Topics: 1페이지, bluf, 사업화, 수중드론, 요약안
   - Links: 0 outbound / 0 unresolved
 - [수중드론 사업화 1페이지 제안서 (열정·설득 서술형)](../실습결과물/14/수중드론_사업화_1페이지_BLUF_열정설득서술형.md)
   - Path: `실습결과물/14/수중드론_사업화_1페이지_BLUF_열정설득서술형.md`
   - Summary: 지금이 수중드론 시장을 선점할 가장 현실적이고도 강력한 타이밍입니다. 우리는 드론을 파는 회사가 아니라, 바닷속의 불확실성을 실시간 데이터로 바꾸어 고객의 손실을 줄이는 데이터 서비스(DaaS) 사업자로 도약할 수 있습니다. 첫 12개월 안에 유료 파일럿 5개소를 확보하고, B2B/B2G 핵심 수요처인 양식장과 항만·연안시설에서 “실제로 성과를 만드는 운영 모델”을 증명하겠습니다.
+  - Tags: (none)
+  - Topics: 1페이지, 사업화, 서술형, 설득, 수중드론
   - Links: 0 outbound / 0 unresolved
 - [수중드론 사업화 1페이지 보고서 (포멀 서술형)](../실습결과물/14/수중드론_사업화_1페이지_BLUF_포멀서술형.md)
   - Path: `실습결과물/14/수중드론_사업화_1페이지_BLUF_포멀서술형.md`
   - Summary: 본 보고서는 수중드론 사업을 단순 장비 판매가 아닌 수중 데이터 서비스(DaaS)로 전환하기 위한 12개월 실행안을 제시합니다. 당사의 우선 추진 방향은 B2B/B2G 시장, 즉 양식장과 항만·연안시설을 중심으로 초기 레퍼런스를 확보하는 것입니다. 이를 위해 규제 대응과 현장 운용 안정성 측면에서 유리한 USV(수상)+ROV(수중) 하이브리드 구조를 1차 상용 모델로 채택하고, 기술 검증과 사업 검증을 병행하고자 합니다.
+  - Tags: (none)
+  - Topics: 1페이지, 보고서는, 사업을, 사업화, 서술형
   - Links: 0 outbound / 0 unresolved
 - [수중드론 사업화 기획안(운영형)](../실습결과물/14/수중드론_사업화_기획안.md)
   - Path: `실습결과물/14/수중드론_사업화_기획안.md`
   - Summary: tags: [실습결과물, day14, 수중드론, 사업화, 기획안]
+  - Tags: day14, 기획안, 사업화, 수중드론, 실습결과물
+  - Topics: day14, 기획안, 사업화, 서비스, 수중드론
   - Links: 7 outbound / 0 unresolved
 - [수중드론 사업화 상세 기획안](../실습결과물/14/수중드론_사업화_상세기획안.md)
   - Path: `실습결과물/14/수중드론_사업화_상세기획안.md`
-  - Summary: 문서명: 수중드론 사업화 상세 기획안(타당성 검토 반영본) - 작성 기준: `C:\Users\Administrator\dxAx\실습결과물\14\수중드론_사업화_타당성.md` - 핵심 초점: 수중에서 작동하는 드론을 "탐색-정보전달-실행"의 현장 실행자로 운영하기 위한 사업화·기체개발 구체화 - 개념도 미리보기 링크: [Gemini_Generated_Image_95m9e195m9e195m9.png](C:/Users/Adminis
+  - Summary: 문서명: 수중드론 사업화 상세 기획안(타당성 검토 반영본) - 작성 기준: `C:\Users\Administrator\dxAx\실습결과물\14\수중드론_사업화_타당성.md` - 핵심 초점: 수중에서 작동하는 드론을 "탐색-정보전달-실행"의 현장 실행자로 운영하기 위한 사업화·기체개발 구체화 - 개념도 미리보기 링크: [Gemini_Generated_Image_95m9e195m9e195m9.png](C:/Users/Administrator/dxAx/실습결과물/14/assets/Gemini_Gener
+  - Tags: (none)
+  - Topics: administrator, dxax, users, 기획안, 사업화
   - Links: 0 outbound / 0 unresolved
 - [수중드론 사업화 운영안 초안 타당성 검증 및 객관적 피드백 보고서](../실습결과물/14/수중드론_사업화_타당성.md)
   - Path: `실습결과물/14/수중드론_사업화_타당성.md`
-  - Summary: **Executive summary** 본 보고서는 사용자 제공 초안(업로드 파일 경로: `/mnt/data/붙여넣은 마크다운(1).md`)을 “운영 목적·범위·조직·업무절차(SOP)·인력·예산·리스크·성과지표(KPI)” 관점에서 검증한 결과를 정리한다. 초안은 **하드웨어 판매 중심에서 데이터/운영 서비스(DaaS) 중심으로 전환**하려는 방향성, **아키텍처(USV+수중모듈+플랫폼)**, **단계별 로드맵**, **기초 K
+  - Summary: **Executive summary** 본 보고서는 사용자 제공 초안(업로드 파일 경로: `/mnt/data/붙여넣은 마크다운(1).md`)을 “운영 목적·범위·조직·업무절차(SOP)·인력·예산·리스크·성과지표(KPI)” 관점에서 검증한 결과를 정리한다. 초안은 **하드웨어 판매 중심에서 데이터/운영 서비스(DaaS) 중심으로 전환**하려는 방향성, **아키텍처(USV+수중모듈+플랫폼)**, **단계별 로드맵**, **기초 KPI/리스크 항목**을 갖추어 기획의 뼈대는 충분하다. 다만 “운영안”으
+  - Tags: (none)
+  - Topics: 객관적, 검증, 사업화, 수중드론, 운영안
   - Links: 0 outbound / 0 unresolved
 - [후삼국~고려 건국기 시대상과 역사적 사실 검증 메모 (889~936)](../실습결과물/14/시대상 과 역사적 사실.md)
   - Path: `실습결과물/14/시대상 과 역사적 사실.md`
   - Summary: 시기: **889년(원종·애노 봉기)**부터 **936년(후삼국 통일)**까지. - 주제: 정치 흐름, 서민 생활, 전쟁/행정 구조, 종교·이념. - 기준: 1차 사료 DB(국사편찬위원회)와 학술형 2차 정리(한국민족문화대백과, Britannica) 교차 확인.
+  - Tags: (none)
+  - Topics: 건국기, 검증, 고려, 사실, 시대상과
   - Links: 0 outbound / 0 unresolved
 - [업무일지 작성 프롬프트](../실습결과물/14/업무일지 작성프롬프트.md)
   - Path: `실습결과물/14/업무일지 작성프롬프트.md`
   - Summary: ```text 1. codex 에 notion 설치. 2. notion 에서 데이터 읽어 오는 것 테스트 - 26년 3월 31일 날짜에 최수길 차장이 진행한 업무를 리스트업해줘 3. 실제 요청
+  - Tags: (none)
+  - Topics: codex, notion, text, 설치, 업무일지
   - Links: 0 outbound / 0 unresolved
 - [이메일 발송 프롬프트](../실습결과물/14/이메일발송프롬프트.md)
   - Path: `실습결과물/14/이메일발송프롬프트.md`
   - Summary: ```text 이메일을 발송하고자 한다. A 업체 회의를 금요일로 미루자. 관련 자료가 있으면 미리 달라고 해. 라는 목적으로 이메일을 발송하고자 한다. 정중한 B2B 어조로 이메일 내용을 작성해줘.
+  - Tags: (none)
+  - Topics: text, 발송, 발송하고자, 업체, 이메일
   - Links: 0 outbound / 0 unresolved
 - [실습결과물 15 인덱스](../실습결과물/15/00-INDEX.md)
   - Path: `실습결과물/15/00-INDEX.md`
   - Summary: tags: [실습결과물, day15, llm-wiki, codex, graph]
-  - Links: 3 outbound / 2 unresolved
+  - Tags: codex, day15, graph, llm-wiki, 실습결과물
+  - Topics: 15, codex, day15, graph, llm
+  - Links: 3 outbound / 0 unresolved
 - [wikillm 을 구현하기 위한 프롬프트](../실습결과물/15/wikiLLM.md)
   - Path: `실습결과물/15/wikiLLM.md`
   - Summary: tags: [실습결과물, day15, llm-wiki, codex, graph, token-saving]
-  - Links: 3 outbound / 2 unresolved
+  - Tags: codex, day15, graph, llm-wiki, token-saving, 실습결과물
+  - Topics: codex, day15, graph, llm, llm-wiki
+  - Links: 3 outbound / 0 unresolved
+- [Youtube 영상 스크립트](../실습결과물/15/Youtube 영상 스크립트.md)
+  - Path: `실습결과물/15/Youtube 영상 스크립트.md`
+  - Summary: LLM Wiki를 업그레이드한 Graphify 개념 + 실습 가이드
+  - Tags: (none)
+  - Topics: graphify, llm, wiki를, youtube, 개념
+  - Links: 0 outbound / 0 unresolved
+- [Graphify 기반 LLM Wiki 활용 1페이지 요약보고서](../실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md)
+  - Path: `실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md`
+  - Summary: 이 자료는 **기존 LLM Wiki 방식의 한계**를 이해하고, 이를 보완하는 **Graphify 방식의 핵심 개념과 실습 흐름**을 교육생이 빠르게 파악할 수 있도록 정리한 배포용 요약본입니다.
+  - Tags: (none)
+  - Topics: 1페이지, graphify, llm, wiki, 기반
+  - Links: 0 outbound / 0 unresolved
+- [YouTube 영상 요약본](../실습결과물/15/YouTube 영상 요약본.md)
+  - Path: `실습결과물/15/YouTube 영상 요약본.md`
+  - Summary: 요약
+  - Tags: (none)
+  - Topics: youtube, 영상, 요약본
+  - Links: 0 outbound / 0 unresolved
 - [whisper 모델 설치 프롬프트](../실습결과물/15/로컬 whisper 모델 설치 프롬프트.md)
   - Path: `실습결과물/15/로컬 whisper 모델 설치 프롬프트.md`
   - Summary: ```text 순위 small + faster-whisper 속도/정확도 밸런스 최고 VRAM 안정 이것이 사용가능하다고 한다. openai 모델을 받아서 로컬에서 동작 할 수 있게 설정해줘
+  - Tags: (none)
+  - Topics: faster, small, text, whisper, 모델
   - Links: 0 outbound / 0 unresolved
-
-## Unresolved Links
-
-- `./5가지단계로%20나누기.md` x 2
-- `../../wiki/index.md` x 2
-- `../../wiki/log.md` x 2

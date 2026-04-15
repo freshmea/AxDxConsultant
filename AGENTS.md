@@ -11,7 +11,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 ## Operating Rules
 
 1. Never edit raw source files during indexing.
-2. Update `wiki/system/page_index.json`, `wiki/system/link_graph.json`, `wiki/system/query_cache.json`, `wiki/index.md`, and `wiki/log.md` together.
+2. Update `wiki/system/page_index.json`, `wiki/system/link_graph.json`, `wiki/system/query_cache.json`, `wiki/system/structure_index.json`, `wiki/index.md`, `wiki/graph_report.md`, and `wiki/log.md` together.
 3. Prefer answering questions by reading the JSON index/graph first, then opening only a small set of markdown files.
 4. Treat markdown links and wiki links as first-class edges.
 5. Preserve relative paths from the repository root in generated metadata.
@@ -20,9 +20,10 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 ## Query Workflow
 
 1. Load `wiki/system/query_cache.json`.
-2. Rank candidate pages using title, summary, headings, path tokens, and graph neighbors.
-3. Read only the top-ranked markdown pages that are needed to answer the question.
-4. If a useful synthesis is created, store it back into `wiki/notes/`.
+2. Rank candidate pages using title, summary, headings, tags, topics, entities, path tokens, and graph neighbors.
+3. Prefer the `ask` workflow so the graph-first route and token savings are logged.
+4. Read only the top-ranked markdown pages that are needed to answer the question.
+5. If a useful synthesis is created, store it back into `wiki/notes/`.
 
 ## Maintenance Workflow
 
