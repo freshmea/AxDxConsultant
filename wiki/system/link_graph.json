@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T05:40:30.006290+00:00",
+  "generated_at": "2026-04-15T07:12:22.093206+00:00",
   "repo_root": "C:\\Users\\Administrator\\dxAx",
   "nodes": [
     {
@@ -146,8 +146,8 @@
         "2026_4_14",
         "2026_4_15"
       ],
-      "tokens_estimate": 900,
-      "word_count": 759,
+      "tokens_estimate": 907,
+      "word_count": 766,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0
@@ -1037,12 +1037,12 @@
       "outbound_links": [
         "실습결과물/14/00-INDEX",
         "실습결과물/14/고려빙의_스토리라인",
-        "실습결과물/14/목파_5부작_목차",
         "실습결과물/14/소설1권",
         "실습결과물/14/소설2권",
         "실습결과물/14/소설3권",
         "실습결과물/14/소설4권",
         "실습결과물/14/소설5권",
+        "실습결과물/14/소설_목차_5부작",
         "실습결과물/14/소설_연속작성_토큰로그",
         "실습결과물/14/시대상 과 역사적 사실"
       ],
@@ -1076,25 +1076,6 @@
       ],
       "tokens_estimate": 561,
       "word_count": 548,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "inbound_count": 1
-    },
-    {
-      "id": "실습결과물/14/목파_5부작_목차",
-      "title": "철혈의 새벽: 고려의 그림자 설계자 (5부작)",
-      "path": "실습결과물/14/목파_5부작_목차.md",
-      "summary": "1. 추락한 별, 깨어난 서리 2. 혼란의 장부 3. 왕건의 눈 4. 바닷길의 해답 5. 곡창의 수수께끼 6. 칼보다 빠른 계산 7. 궁예의 그림자 8. 첫 승전의 대가 9. 이름 없는 공신 10. 송악의 맹세",
-      "headings": [
-        "철혈의 새벽: 고려의 그림자 설계자 (5부작)",
-        "1권: 송악의 이방인",
-        "2권: 태봉의 균열",
-        "3권: 왕건, 왕좌를 향해",
-        "4권: 두 개의 전선",
-        "5권: 통일의 새벽"
-      ],
-      "tokens_estimate": 160,
-      "word_count": 181,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 1
@@ -1220,6 +1201,25 @@
       ],
       "tokens_estimate": 1435,
       "word_count": 1358,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/14/소설_목차_5부작",
+      "title": "철혈의 새벽: 고려의 그림자 설계자 (5부작)",
+      "path": "실습결과물/14/소설_목차_5부작.md",
+      "summary": "1. 추락한 별, 깨어난 서리 2. 혼란의 장부 3. 왕건의 눈 4. 바닷길의 해답 5. 곡창의 수수께끼 6. 칼보다 빠른 계산 7. 궁예의 그림자 8. 첫 승전의 대가 9. 이름 없는 공신 10. 송악의 맹세",
+      "headings": [
+        "철혈의 새벽: 고려의 그림자 설계자 (5부작)",
+        "1권: 송악의 이방인",
+        "2권: 태봉의 균열",
+        "3권: 왕건, 왕좌를 향해",
+        "4권: 두 개의 전선",
+        "5권: 통일의 새벽"
+      ],
+      "tokens_estimate": 160,
+      "word_count": 181,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 1
@@ -1466,6 +1466,20 @@
         "../../wiki/log.md"
       ],
       "inbound_count": 1
+    },
+    {
+      "id": "실습결과물/15/로컬 whisper 모델 설치 프롬프트",
+      "title": "whisper 모델 설치 프롬프트",
+      "path": "실습결과물/15/로컬 whisper 모델 설치 프롬프트.md",
+      "summary": "```text 순위 small + faster-whisper 속도/정확도 밸런스 최고 VRAM 안정 이것이 사용가능하다고 한다. openai 모델을 받아서 로컬에서 동작 할 수 있게 설정해줘",
+      "headings": [
+        "whisper 모델 설치 프롬프트"
+      ],
+      "tokens_estimate": 62,
+      "word_count": 55,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0
     }
   ],
   "edges": [
@@ -1796,7 +1810,7 @@
     },
     {
       "source": "실습결과물/14/30-소설-INDEX",
-      "target": "실습결과물/14/목파_5부작_목차",
+      "target": "실습결과물/14/소설_목차_5부작",
       "kind": "markdown"
     },
     {
@@ -1906,9 +1920,9 @@
     }
   ],
   "stats": {
-    "markdown_pages": 69,
+    "markdown_pages": 70,
     "resolved_edges": 87,
     "unresolved_links": 6,
-    "total_tokens_estimate": 54105
+    "total_tokens_estimate": 54174
   }
 }

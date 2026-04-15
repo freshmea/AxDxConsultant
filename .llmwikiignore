@@ -8,6 +8,9 @@ wiki/
 output/
 tmp/
 나의업무분석/
+.venv-whisper/
+local_whisper/
+
 
 # Generated or backup markdown
 **/*_backup.md

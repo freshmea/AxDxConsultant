@@ -1,2 +1,6 @@
 나의업무분석/
 tmp/
+.venv-whisper/
+local_whisper/
+*.mp4
+*.m4a
