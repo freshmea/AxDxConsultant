@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0c288939716ad54d",
+        "id": "7ac3878b16b8789b",
         "type": "tabs",
         "children": [
           {
-            "id": "713f342c466fe677",
+            "id": "5a9714e6a4b7809a",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "icon": "lucide-file",
+              "title": "새 탭"
             }
           }
         ]
@@ -176,22 +176,24 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "713f342c466fe677",
+  "active": "5a9714e6a4b7809a",
   "lastOpenFiles": [
+    "실습결과물/16/imports-85_interactive_dashboard.html",
+    "실습결과물/16/imports-85_interactive_report.md",
+    "실습결과물/16/imports85_report_assets/segment_table.html",
+    "실습결과물/16/imports85_report_assets/segment_map.html",
+    "실습결과물/16/imports85_report_assets/price_decile_line.html",
+    "실습결과물/16/imports85_report_assets/correlation_heatmap.html",
+    "실습결과물/16/imports85_report_assets/body_drive_price.html",
+    "실습결과물/16/imports85_report_assets/brand_metrics.html",
+    "실습결과물/16/imports85_report_assets/scatter_mpg_price.html",
+    "실습결과물/16/imports85_report_assets/scatter_weight_price.html",
+    "실습결과물/16/imports85_report_assets/scatter_hp_price.html",
+    "실습결과물/16/imports85_report_assets/scatter_engine_price.html",
     "실습결과물/16/자동차수출예제관련프롬프트.md",
     "실습결과물/16/imports-85_actual_data_summary.md",
-    "tmp/__pycache__/analyze_imports85.cpython-39.pyc",
-    "tmp/__pycache__",
-    "실습결과물/16/imports-85_outliers.json",
-    "실습결과물/16/imports-85_fill_log.json",
     "실습결과물/16/imports-85_report.md",
-    "실습결과물/16/imports-85_cleaned.csv",
-    "tmp/analyze_imports85.py",
-    "실습결과물/16/imports-85.csv",
     "실습결과물/16/한페이지요약 HRD AX 수업도향.md",
-    "실습결과물/16/KPC2026HRDTrendReport.pdf",
-    "실습결과물/16",
-    "수업자료/9-2.pdf",
     "wiki/notes/2026-04-14_dxax_class_summary.md",
     "wiki/notes/2026-04-13_dxax_class_summary.md",
     "wiki/notes/2026-04-10_dxax_class_summary.md",
@@ -212,8 +214,6 @@
     "README.md",
     "실습결과물/14/소설_목차_5부작.md",
     "실습결과물/14/30-소설-INDEX.md",
-    "실습결과물/14/AI요청 프롬프트.md",
-    "실습결과물/14/10-주간업무일지-INDEX.md",
     "wiki/system/link_graph.svg"
   ]
 }
