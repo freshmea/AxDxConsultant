@@ -178,6 +178,20 @@
   },
   "active": "5a9714e6a4b7809a",
   "lastOpenFiles": [
+    "실습결과물/16/retail_sales_report_assets/README.md",
+    "실습결과물/16/retail_sales_report_assets/14_category_profit_margin_bar.png",
+    "실습결과물/16/retail_sales_report_assets/13_payment_method_share_pie.png",
+    "실습결과물/16/retail_sales_report_assets/12_category_net_sales_pie.png",
+    "실습결과물/16/retail_sales_report_assets/11_gender_net_sales_bar.png",
+    "실습결과물/16/retail_sales_report_assets/10_quantity_distribution_count.png",
+    "실습결과물/16/retail_sales_report_assets/09_discount_distribution_count.png",
+    "실습결과물/16/retail_sales_report_assets/08_order_value_distribution_hist.png",
+    "실습결과물/16/retail_sales_report_assets/07_customer_age_distribution_hist.png",
+    "실습결과물/16/retail_sales_report_assets/06_weekday_net_sales_bar.png",
+    "실습결과물/16/retail_sales_report_assets/05_payment_method_counts_bar.png",
+    "실습결과물/16/retail_sales_report_assets",
+    "실습결과물/16/retail_sales_seaborn_report.py",
+    "실습결과물/16/~$retail_sales_dataset.xlsx",
     "실습결과물/16/retail_sales_dataset.xlsx",
     "실습결과물/16/imports85_report_assets/value_efficiency_map.html",
     "실습결과물/16/imports-85_reintegrated_analysis_base.csv",
@@ -186,10 +200,6 @@
     "실습결과물/16/imports85_report_assets/segment_table.html",
     "실습결과물/16/imports85_report_assets/segment_map.html",
     "실습결과물/16/imports85_report_assets/price_decile_line.html",
-    "실습결과물/16/imports85_report_assets/correlation_heatmap.html",
-    "실습결과물/16/imports85_report_assets/body_drive_price.html",
-    "실습결과물/16/imports85_report_assets/brand_metrics.html",
-    "실습결과물/16/imports85_report_assets/scatter_mpg_price.html",
     "실습결과물/16/자동차수출예제관련프롬프트.md",
     "실습결과물/16/imports-85_actual_data_summary.md",
     "실습결과물/16/imports-85_report.md",
@@ -213,7 +223,6 @@
     "local_whisper/README.md",
     "README.md",
     "실습결과물/14/소설_목차_5부작.md",
-    "실습결과물/14/30-소설-INDEX.md",
-    "wiki/system/link_graph.svg"
+    "실습결과물/14/30-소설-INDEX.md"
   ]
 }
