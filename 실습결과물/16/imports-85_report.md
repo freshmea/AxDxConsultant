@@ -1,0 +1,174 @@
+# imports-85 정제 보고서
+
+## 결측치 요약
+- 정제 전 결측치 수: 59
+- bore: 4
+- horsepower: 2
+- normalized-losses: 41
+- num-of-doors: 2
+- peak-rpm: 2
+- price: 4
+- stroke: 4
+
+## 결측치 대체 기준
+- 범주형은 같은 제조사와 차체 유형을 우선 비교해 최빈값으로 채움
+- 수치형은 유사 항목 중앙값과 근접 이웃 기반 추세 추정값을 결합해 채움
+- 비교군이 부족한 경우 전역 중앙값으로 보수적으로 대체함
+
+## 대체 로그
+- line 4 | normalized-losses -> 123 (peer:body-style+trend:knn)
+- line 5 | normalized-losses -> 128 (peer:body-style+trend:knn)
+- line 6 | normalized-losses -> 157 (peer:make+trend:knn)
+- line 9 | normalized-losses -> 162 (peer:make+body-style+trend:knn)
+- line 11 | normalized-losses -> 160 (peer:make+trend:knn)
+- line 13 | normalized-losses -> 168 (peer:make+trend:knn)
+- line 13 | price -> 17594 (peer:make+num-of-cylinders+trend:knn)
+- line 18 | normalized-losses -> 189 (peer:make+body-style+trend:knn)
+- line 19 | normalized-losses -> 154 (peer:make+body-style+trend:knn)
+- line 20 | normalized-losses -> 171 (peer:make+body-style+trend:knn)
+- line 21 | normalized-losses -> 175 (peer:make+body-style+trend:knn)
+- line 31 | num-of-doors -> four (mode:make+body-style)
+- line 47 | normalized-losses -> 119 (peer:body-style+trend:knn)
+- line 48 | normalized-losses -> 105 (peer:body-style+trend:knn)
+- line 48 | price -> 7665 (peer:make+num-of-cylinders+trend:knn)
+- line 49 | normalized-losses -> 104 (peer:make+body-style+trend:knn)
+- line 49 | price -> 7020 (peer:make+body-style+aspiration+trend:knn)
+- line 50 | normalized-losses -> 123 (peer:make+trend:knn)
+- line 52 | normalized-losses -> 130 (peer:body-style+trend:knn)
+- line 53 | normalized-losses -> 149 (peer:make+body-style+trend:knn)
+- line 59 | bore -> 3.264 (trend:knn)
+- line 59 | stroke -> 3.454 (trend:knn)
+- line 60 | bore -> 3.265 (trend:knn)
+- line 60 | stroke -> 3.454 (trend:knn)
+- line 61 | bore -> 3.265 (peer:make+engine-type+num-of-cylinders+trend:knn)
+- line 61 | stroke -> 3.454 (peer:make+engine-type+num-of-cylinders+trend:knn)
+- line 62 | bore -> 3.265 (peer:make+engine-type+num-of-cylinders+trend:knn)
+- line 62 | stroke -> 3.454 (peer:make+engine-type+num-of-cylinders+trend:knn)
+- line 67 | num-of-doors -> four (mode:make+body-style)
+- line 67 | normalized-losses -> 107 (peer:make+body-style+trend:knn)
+- line 70 | normalized-losses -> 111 (peer:make+body-style+trend:knn)
+- line 75 | normalized-losses -> 119 (peer:make+body-style+trend:knn)
+- line 77 | normalized-losses -> 106 (peer:make+body-style+trend:knn)
+- line 78 | normalized-losses -> 100 (peer:make+trend:knn)
+- line 79 | normalized-losses -> 124 (peer:body-style+trend:knn)
+- line 86 | normalized-losses -> 153 (peer:make+body-style+trend:knn)
+- line 87 | normalized-losses -> 155 (peer:make+body-style+trend:knn)
+- line 88 | normalized-losses -> 154 (peer:make+body-style+trend:knn)
+- line 113 | normalized-losses -> 161 (peer:make+trend:knn)
+- line 114 | normalized-losses -> 156 (peer:make+trend:knn)
+- line 117 | normalized-losses -> 160 (peer:make+body-style+trend:knn)
+- line 118 | normalized-losses -> 158 (peer:make+body-style+trend:knn)
+- line 128 | normalized-losses -> 135 (peer:make+body-style+trend:knn)
+- line 130 | normalized-losses -> 155 (peer:body-style+trend:knn)
+- line 131 | normalized-losses -> 163 (peer:make+trend:knn)
+- line 132 | normalized-losses -> 161 (peer:make+trend:knn)
+- line 133 | normalized-losses -> 172 (peer:make+trend:knn)
+- line 133 | price -> 20412 (peer:body-style+drive-wheels+trend:knn)
+- line 134 | normalized-losses -> 90 (peer:body-style+trend:knn)
+- line 134 | horsepower -> 86 (peer:num-of-cylinders+aspiration+trend:knn)
+- line 134 | peak-rpm -> 4998 (peer:engine-type+aspiration+trend:knn)
+- line 135 | normalized-losses -> 129 (peer:body-style+trend:knn)
+- line 135 | horsepower -> 95 (peer:num-of-cylinders+aspiration+trend:knn)
+- line 135 | peak-rpm -> 5048 (peer:engine-type+aspiration+trend:knn)
+- line 185 | normalized-losses -> 119 (peer:make+body-style+trend:knn)
+- line 193 | normalized-losses -> 113 (peer:make+trend:knn)
+- line 195 | normalized-losses -> 108 (peer:make+body-style+trend:knn)
+- line 196 | normalized-losses -> 97 (peer:make+body-style+trend:knn)
+- line 197 | normalized-losses -> 100 (peer:make+trend:knn)
+
+## 이상치 보고
+- 기준: 수치형 컬럼별 IQR 1.5배 바깥 값
+- `compression-ratio`는 `fuel-type` 그룹 기준으로 판정함
+- 탐지 건수: 78
+- stroke: 20
+- price: 14
+- engine-size: 10
+- compression-ratio: 8
+- width: 8
+- horsepower: 6
+- highway-mpg: 3
+- wheel-base: 3
+- city-mpg: 2
+- peak-rpm: 2
+- length: 1
+- normalized-losses: 1
+
+## 이상치 상세
+- line 22 | chevrolet hatchback | city-mpg=47.0 | 범위 [2.5, 46.5]
+- line 34 | honda hatchback | city-mpg=49.0 | 범위 [2.5, 46.5]
+- line 13 | audi hatchback | compression-ratio=7.0 | 범위 [7.15, 10.75] | 그룹 ['fuel-type']=['gas']
+- line 33 | dodge hatchback | compression-ratio=7.0 | 범위 [7.15, 10.75] | 그룹 ['fuel-type']=['gas']
+- line 53 | jaguar sedan | compression-ratio=11.5 | 범위 [7.15, 10.75] | 그룹 ['fuel-type']=['gas']
+- line 86 | mitsubishi hatchback | compression-ratio=7.0 | 범위 [7.15, 10.75] | 그룹 ['fuel-type']=['gas']
+- line 87 | mitsubishi hatchback | compression-ratio=7.0 | 범위 [7.15, 10.75] | 그룹 ['fuel-type']=['gas']
+- line 88 | mitsubishi hatchback | compression-ratio=7.0 | 범위 [7.15, 10.75] | 그룹 ['fuel-type']=['gas']
+- line 121 | peugot sedan | compression-ratio=7.0 | 범위 [7.15, 10.75] | 그룹 ['fuel-type']=['gas']
+- line 128 | plymouth hatchback | compression-ratio=7.0 | 범위 [7.15, 10.75] | 그룹 ['fuel-type']=['gas']
+- line 19 | bmw sedan | engine-size=209.0 | 범위 [31.0, 207.0]
+- line 20 | bmw sedan | engine-size=209.0 | 범위 [31.0, 207.0]
+- line 21 | bmw sedan | engine-size=209.0 | 범위 [31.0, 207.0]
+- line 51 | jaguar sedan | engine-size=258.0 | 범위 [31.0, 207.0]
+- line 52 | jaguar sedan | engine-size=258.0 | 범위 [31.0, 207.0]
+- line 53 | jaguar sedan | engine-size=326.0 | 범위 [31.0, 207.0]
+- line 75 | mercedes-benz sedan | engine-size=234.0 | 범위 [31.0, 207.0]
+- line 76 | mercedes-benz convertible | engine-size=234.0 | 범위 [31.0, 207.0]
+- line 77 | mercedes-benz sedan | engine-size=308.0 | 범위 [31.0, 207.0]
+- line 78 | mercedes-benz hardtop | engine-size=304.0 | 범위 [31.0, 207.0]
+- line 22 | chevrolet hatchback | highway-mpg=53.0 | 범위 [11.5, 47.5]
+- line 34 | honda hatchback | highway-mpg=54.0 | 범위 [11.5, 47.5]
+- line 94 | nissan sedan | highway-mpg=50.0 | 범위 [11.5, 47.5]
+- line 53 | jaguar sedan | horsepower=262.0 | 범위 [1.0, 185.0]
+- line 109 | nissan hatchback | horsepower=200.0 | 범위 [1.0, 185.0]
+- line 130 | porsche hardtop | horsepower=207.0 | 범위 [1.0, 185.0]
+- line 131 | porsche hardtop | horsepower=207.0 | 범위 [1.0, 185.0]
+- line 132 | porsche convertible | horsepower=207.0 | 범위 [1.0, 185.0]
+- line 133 | porsche hatchback | horsepower=288.0 | 범위 [1.0, 185.0]
+- line 22 | chevrolet hatchback | length=141.1 | 범위 [141.1, 208.3]
+- line 194 | volkswagen hatchback | normalized-losses=256.0 | 범위 [14.0, 238.0]
+- line 169 | toyota sedan | peak-rpm=6600.0 | 범위 [3750.0, 6550.0]
+- line 170 | toyota hatchback | peak-rpm=6600.0 | 범위 [3750.0, 6550.0]
+- line 19 | bmw sedan | price=30760.0 | 범위 [-5317.0, 29595.0]
+- line 20 | bmw sedan | price=41315.0 | 범위 [-5317.0, 29595.0]
+- line 21 | bmw sedan | price=36880.0 | 범위 [-5317.0, 29595.0]
+- line 51 | jaguar sedan | price=32250.0 | 범위 [-5317.0, 29595.0]
+- line 52 | jaguar sedan | price=35550.0 | 범위 [-5317.0, 29595.0]
+- line 53 | jaguar sedan | price=36000.0 | 범위 [-5317.0, 29595.0]
+- line 74 | mercedes-benz sedan | price=31600.0 | 범위 [-5317.0, 29595.0]
+- line 75 | mercedes-benz sedan | price=34184.0 | 범위 [-5317.0, 29595.0]
+- line 76 | mercedes-benz convertible | price=35056.0 | 범위 [-5317.0, 29595.0]
+- line 77 | mercedes-benz sedan | price=40960.0 | 범위 [-5317.0, 29595.0]
+- line 78 | mercedes-benz hardtop | price=45400.0 | 범위 [-5317.0, 29595.0]
+- line 130 | porsche hardtop | price=32528.0 | 범위 [-5317.0, 29595.0]
+- line 131 | porsche hardtop | price=34028.0 | 범위 [-5317.0, 29595.0]
+- line 132 | porsche convertible | price=37028.0 | 범위 [-5317.0, 29595.0]
+- line 33 | dodge hatchback | stroke=3.9 | 범위 [2.66, 3.86]
+- line 51 | jaguar sedan | stroke=4.17 | 범위 [2.66, 3.86]
+- line 52 | jaguar sedan | stroke=4.17 | 범위 [2.66, 3.86]
+- line 115 | peugot sedan | stroke=2.19 | 범위 [2.66, 3.86]
+- line 117 | peugot wagon | stroke=2.19 | 범위 [2.66, 3.86]
+- line 134 | renault wagon | stroke=3.9 | 범위 [2.66, 3.86]
+- line 135 | renault hatchback | stroke=3.9 | 범위 [2.66, 3.86]
+- line 138 | saab hatchback | stroke=2.07 | 범위 [2.66, 3.86]
+- line 142 | subaru hatchback | stroke=2.36 | 범위 [2.66, 3.86]
+- line 143 | subaru hatchback | stroke=2.64 | 범위 [2.66, 3.86]
+- line 144 | subaru hatchback | stroke=2.64 | 범위 [2.66, 3.86]
+- line 145 | subaru sedan | stroke=2.64 | 범위 [2.66, 3.86]
+- line 146 | subaru sedan | stroke=2.64 | 범위 [2.66, 3.86]
+- line 147 | subaru sedan | stroke=2.64 | 범위 [2.66, 3.86]
+- line 148 | subaru sedan | stroke=2.64 | 범위 [2.66, 3.86]
+- line 149 | subaru sedan | stroke=2.64 | 범위 [2.66, 3.86]
+- line 150 | subaru wagon | stroke=2.64 | 범위 [2.66, 3.86]
+- line 151 | subaru wagon | stroke=2.64 | 범위 [2.66, 3.86]
+- line 152 | subaru wagon | stroke=2.64 | 범위 [2.66, 3.86]
+- line 153 | subaru wagon | stroke=2.64 | 범위 [2.66, 3.86]
+- line 74 | mercedes-benz sedan | wheel-base=115.6 | 범위 [82.65, 114.25]
+- line 75 | mercedes-benz sedan | wheel-base=115.6 | 범위 [82.65, 114.25]
+- line 77 | mercedes-benz sedan | wheel-base=120.9 | 범위 [82.65, 114.25]
+- line 10 | audi sedan | width=71.4 | 범위 [59.9, 71.1]
+- line 11 | audi wagon | width=71.4 | 범위 [59.9, 71.1]
+- line 12 | audi sedan | width=71.4 | 범위 [59.9, 71.1]
+- line 74 | mercedes-benz sedan | width=71.7 | 범위 [59.9, 71.1]
+- line 75 | mercedes-benz sedan | width=71.7 | 범위 [59.9, 71.1]
+- line 77 | mercedes-benz sedan | width=71.7 | 범위 [59.9, 71.1]
+- line 78 | mercedes-benz hardtop | width=72.0 | 범위 [59.9, 71.1]
+- line 133 | porsche hatchback | width=72.3 | 범위 [59.9, 71.1]

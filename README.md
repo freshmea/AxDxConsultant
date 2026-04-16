@@ -142,3 +142,18 @@ C:\Users\Administrator\dxAx\orange_example\body-fat-brozek.csv 이 수치 데이
 - 6교시: wiki LLM 구축 실습 - Markdown 기반 지식 축적, MD 링크 구조, Obsidian 설치, 그래프 기반 탐색과 토큰 절감을 위한 Graph 계열 접근 소개
 - 7교시: local AI Whisper 설치 및 구동 - Codex로 로컬 STT 환경을 세팅하고 GPU를 활용해 긴 음성 파일을 텍스트로 변환하는 흐름 실습
 - 8교시: WhisperX와 화자 분리 개요, 회의 음성 → 한 페이지 요약 → 액션 아이템/리스크 도출로 이어지는 STT 기반 지식화 실습
+
+---
+
+## 2026_4_16
+
+---
+
+- 1교시: 전날 복습 -
+- 2교시:
+- 3교시:
+- 4교시:
+- 5교시:
+- 6교시:
+- 7교시:
+- 8교시:

@@ -1,0 +1,356 @@
+[
+  {
+    "line": 4,
+    "column": "normalized-losses",
+    "value": 123,
+    "method": "peer:body-style+trend:knn"
+  },
+  {
+    "line": 5,
+    "column": "normalized-losses",
+    "value": 128,
+    "method": "peer:body-style+trend:knn"
+  },
+  {
+    "line": 6,
+    "column": "normalized-losses",
+    "value": 157,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 9,
+    "column": "normalized-losses",
+    "value": 162,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 11,
+    "column": "normalized-losses",
+    "value": 160,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 13,
+    "column": "normalized-losses",
+    "value": 168,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 13,
+    "column": "price",
+    "value": 17594,
+    "method": "peer:make+num-of-cylinders+trend:knn"
+  },
+  {
+    "line": 18,
+    "column": "normalized-losses",
+    "value": 189,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 19,
+    "column": "normalized-losses",
+    "value": 154,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 20,
+    "column": "normalized-losses",
+    "value": 171,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 21,
+    "column": "normalized-losses",
+    "value": 175,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 31,
+    "column": "num-of-doors",
+    "value": "four",
+    "method": "mode:make+body-style"
+  },
+  {
+    "line": 47,
+    "column": "normalized-losses",
+    "value": 119,
+    "method": "peer:body-style+trend:knn"
+  },
+  {
+    "line": 48,
+    "column": "normalized-losses",
+    "value": 105,
+    "method": "peer:body-style+trend:knn"
+  },
+  {
+    "line": 48,
+    "column": "price",
+    "value": 7665,
+    "method": "peer:make+num-of-cylinders+trend:knn"
+  },
+  {
+    "line": 49,
+    "column": "normalized-losses",
+    "value": 104,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 49,
+    "column": "price",
+    "value": 7020,
+    "method": "peer:make+body-style+aspiration+trend:knn"
+  },
+  {
+    "line": 50,
+    "column": "normalized-losses",
+    "value": 123,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 52,
+    "column": "normalized-losses",
+    "value": 130,
+    "method": "peer:body-style+trend:knn"
+  },
+  {
+    "line": 53,
+    "column": "normalized-losses",
+    "value": 149,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 59,
+    "column": "bore",
+    "value": 3.264,
+    "method": "trend:knn"
+  },
+  {
+    "line": 59,
+    "column": "stroke",
+    "value": 3.454,
+    "method": "trend:knn"
+  },
+  {
+    "line": 60,
+    "column": "bore",
+    "value": 3.265,
+    "method": "trend:knn"
+  },
+  {
+    "line": 60,
+    "column": "stroke",
+    "value": 3.454,
+    "method": "trend:knn"
+  },
+  {
+    "line": 61,
+    "column": "bore",
+    "value": 3.265,
+    "method": "peer:make+engine-type+num-of-cylinders+trend:knn"
+  },
+  {
+    "line": 61,
+    "column": "stroke",
+    "value": 3.454,
+    "method": "peer:make+engine-type+num-of-cylinders+trend:knn"
+  },
+  {
+    "line": 62,
+    "column": "bore",
+    "value": 3.265,
+    "method": "peer:make+engine-type+num-of-cylinders+trend:knn"
+  },
+  {
+    "line": 62,
+    "column": "stroke",
+    "value": 3.454,
+    "method": "peer:make+engine-type+num-of-cylinders+trend:knn"
+  },
+  {
+    "line": 67,
+    "column": "num-of-doors",
+    "value": "four",
+    "method": "mode:make+body-style"
+  },
+  {
+    "line": 67,
+    "column": "normalized-losses",
+    "value": 107,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 70,
+    "column": "normalized-losses",
+    "value": 111,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 75,
+    "column": "normalized-losses",
+    "value": 119,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 77,
+    "column": "normalized-losses",
+    "value": 106,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 78,
+    "column": "normalized-losses",
+    "value": 100,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 79,
+    "column": "normalized-losses",
+    "value": 124,
+    "method": "peer:body-style+trend:knn"
+  },
+  {
+    "line": 86,
+    "column": "normalized-losses",
+    "value": 153,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 87,
+    "column": "normalized-losses",
+    "value": 155,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 88,
+    "column": "normalized-losses",
+    "value": 154,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 113,
+    "column": "normalized-losses",
+    "value": 161,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 114,
+    "column": "normalized-losses",
+    "value": 156,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 117,
+    "column": "normalized-losses",
+    "value": 160,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 118,
+    "column": "normalized-losses",
+    "value": 158,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 128,
+    "column": "normalized-losses",
+    "value": 135,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 130,
+    "column": "normalized-losses",
+    "value": 155,
+    "method": "peer:body-style+trend:knn"
+  },
+  {
+    "line": 131,
+    "column": "normalized-losses",
+    "value": 163,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 132,
+    "column": "normalized-losses",
+    "value": 161,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 133,
+    "column": "normalized-losses",
+    "value": 172,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 133,
+    "column": "price",
+    "value": 20412,
+    "method": "peer:body-style+drive-wheels+trend:knn"
+  },
+  {
+    "line": 134,
+    "column": "normalized-losses",
+    "value": 90,
+    "method": "peer:body-style+trend:knn"
+  },
+  {
+    "line": 134,
+    "column": "horsepower",
+    "value": 86,
+    "method": "peer:num-of-cylinders+aspiration+trend:knn"
+  },
+  {
+    "line": 134,
+    "column": "peak-rpm",
+    "value": 4998,
+    "method": "peer:engine-type+aspiration+trend:knn"
+  },
+  {
+    "line": 135,
+    "column": "normalized-losses",
+    "value": 129,
+    "method": "peer:body-style+trend:knn"
+  },
+  {
+    "line": 135,
+    "column": "horsepower",
+    "value": 95,
+    "method": "peer:num-of-cylinders+aspiration+trend:knn"
+  },
+  {
+    "line": 135,
+    "column": "peak-rpm",
+    "value": 5048,
+    "method": "peer:engine-type+aspiration+trend:knn"
+  },
+  {
+    "line": 185,
+    "column": "normalized-losses",
+    "value": 119,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 193,
+    "column": "normalized-losses",
+    "value": 113,
+    "method": "peer:make+trend:knn"
+  },
+  {
+    "line": 195,
+    "column": "normalized-losses",
+    "value": 108,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 196,
+    "column": "normalized-losses",
+    "value": 97,
+    "method": "peer:make+body-style+trend:knn"
+  },
+  {
+    "line": 197,
+    "column": "normalized-losses",
+    "value": 100,
+    "method": "peer:make+trend:knn"
+  }
+]

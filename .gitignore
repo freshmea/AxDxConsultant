@@ -4,3 +4,4 @@ tmp/
 local_whisper/
 *.mp4
 *.m4a
+.venv-report/

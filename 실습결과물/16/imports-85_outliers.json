@@ -1,0 +1,892 @@
+[
+  {
+    "line": 22,
+    "make": "chevrolet",
+    "body-style": "hatchback",
+    "column": "city-mpg",
+    "value": 47.0,
+    "lower_bound": 2.5,
+    "upper_bound": 46.5,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 34,
+    "make": "honda",
+    "body-style": "hatchback",
+    "column": "city-mpg",
+    "value": 49.0,
+    "lower_bound": 2.5,
+    "upper_bound": 46.5,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 13,
+    "make": "audi",
+    "body-style": "hatchback",
+    "column": "compression-ratio",
+    "value": 7.0,
+    "lower_bound": 7.15,
+    "upper_bound": 10.75,
+    "group_basis": [
+      "fuel-type"
+    ],
+    "group_value": [
+      "gas"
+    ]
+  },
+  {
+    "line": 33,
+    "make": "dodge",
+    "body-style": "hatchback",
+    "column": "compression-ratio",
+    "value": 7.0,
+    "lower_bound": 7.15,
+    "upper_bound": 10.75,
+    "group_basis": [
+      "fuel-type"
+    ],
+    "group_value": [
+      "gas"
+    ]
+  },
+  {
+    "line": 53,
+    "make": "jaguar",
+    "body-style": "sedan",
+    "column": "compression-ratio",
+    "value": 11.5,
+    "lower_bound": 7.15,
+    "upper_bound": 10.75,
+    "group_basis": [
+      "fuel-type"
+    ],
+    "group_value": [
+      "gas"
+    ]
+  },
+  {
+    "line": 86,
+    "make": "mitsubishi",
+    "body-style": "hatchback",
+    "column": "compression-ratio",
+    "value": 7.0,
+    "lower_bound": 7.15,
+    "upper_bound": 10.75,
+    "group_basis": [
+      "fuel-type"
+    ],
+    "group_value": [
+      "gas"
+    ]
+  },
+  {
+    "line": 87,
+    "make": "mitsubishi",
+    "body-style": "hatchback",
+    "column": "compression-ratio",
+    "value": 7.0,
+    "lower_bound": 7.15,
+    "upper_bound": 10.75,
+    "group_basis": [
+      "fuel-type"
+    ],
+    "group_value": [
+      "gas"
+    ]
+  },
+  {
+    "line": 88,
+    "make": "mitsubishi",
+    "body-style": "hatchback",
+    "column": "compression-ratio",
+    "value": 7.0,
+    "lower_bound": 7.15,
+    "upper_bound": 10.75,
+    "group_basis": [
+      "fuel-type"
+    ],
+    "group_value": [
+      "gas"
+    ]
+  },
+  {
+    "line": 121,
+    "make": "peugot",
+    "body-style": "sedan",
+    "column": "compression-ratio",
+    "value": 7.0,
+    "lower_bound": 7.15,
+    "upper_bound": 10.75,
+    "group_basis": [
+      "fuel-type"
+    ],
+    "group_value": [
+      "gas"
+    ]
+  },
+  {
+    "line": 128,
+    "make": "plymouth",
+    "body-style": "hatchback",
+    "column": "compression-ratio",
+    "value": 7.0,
+    "lower_bound": 7.15,
+    "upper_bound": 10.75,
+    "group_basis": [
+      "fuel-type"
+    ],
+    "group_value": [
+      "gas"
+    ]
+  },
+  {
+    "line": 19,
+    "make": "bmw",
+    "body-style": "sedan",
+    "column": "engine-size",
+    "value": 209.0,
+    "lower_bound": 31.0,
+    "upper_bound": 207.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 20,
+    "make": "bmw",
+    "body-style": "sedan",
+    "column": "engine-size",
+    "value": 209.0,
+    "lower_bound": 31.0,
+    "upper_bound": 207.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 21,
+    "make": "bmw",
+    "body-style": "sedan",
+    "column": "engine-size",
+    "value": 209.0,
+    "lower_bound": 31.0,
+    "upper_bound": 207.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 51,
+    "make": "jaguar",
+    "body-style": "sedan",
+    "column": "engine-size",
+    "value": 258.0,
+    "lower_bound": 31.0,
+    "upper_bound": 207.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 52,
+    "make": "jaguar",
+    "body-style": "sedan",
+    "column": "engine-size",
+    "value": 258.0,
+    "lower_bound": 31.0,
+    "upper_bound": 207.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 53,
+    "make": "jaguar",
+    "body-style": "sedan",
+    "column": "engine-size",
+    "value": 326.0,
+    "lower_bound": 31.0,
+    "upper_bound": 207.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 75,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "engine-size",
+    "value": 234.0,
+    "lower_bound": 31.0,
+    "upper_bound": 207.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 76,
+    "make": "mercedes-benz",
+    "body-style": "convertible",
+    "column": "engine-size",
+    "value": 234.0,
+    "lower_bound": 31.0,
+    "upper_bound": 207.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 77,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "engine-size",
+    "value": 308.0,
+    "lower_bound": 31.0,
+    "upper_bound": 207.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 78,
+    "make": "mercedes-benz",
+    "body-style": "hardtop",
+    "column": "engine-size",
+    "value": 304.0,
+    "lower_bound": 31.0,
+    "upper_bound": 207.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 22,
+    "make": "chevrolet",
+    "body-style": "hatchback",
+    "column": "highway-mpg",
+    "value": 53.0,
+    "lower_bound": 11.5,
+    "upper_bound": 47.5,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 34,
+    "make": "honda",
+    "body-style": "hatchback",
+    "column": "highway-mpg",
+    "value": 54.0,
+    "lower_bound": 11.5,
+    "upper_bound": 47.5,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 94,
+    "make": "nissan",
+    "body-style": "sedan",
+    "column": "highway-mpg",
+    "value": 50.0,
+    "lower_bound": 11.5,
+    "upper_bound": 47.5,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 53,
+    "make": "jaguar",
+    "body-style": "sedan",
+    "column": "horsepower",
+    "value": 262.0,
+    "lower_bound": 1.0,
+    "upper_bound": 185.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 109,
+    "make": "nissan",
+    "body-style": "hatchback",
+    "column": "horsepower",
+    "value": 200.0,
+    "lower_bound": 1.0,
+    "upper_bound": 185.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 130,
+    "make": "porsche",
+    "body-style": "hardtop",
+    "column": "horsepower",
+    "value": 207.0,
+    "lower_bound": 1.0,
+    "upper_bound": 185.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 131,
+    "make": "porsche",
+    "body-style": "hardtop",
+    "column": "horsepower",
+    "value": 207.0,
+    "lower_bound": 1.0,
+    "upper_bound": 185.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 132,
+    "make": "porsche",
+    "body-style": "convertible",
+    "column": "horsepower",
+    "value": 207.0,
+    "lower_bound": 1.0,
+    "upper_bound": 185.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 133,
+    "make": "porsche",
+    "body-style": "hatchback",
+    "column": "horsepower",
+    "value": 288.0,
+    "lower_bound": 1.0,
+    "upper_bound": 185.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 22,
+    "make": "chevrolet",
+    "body-style": "hatchback",
+    "column": "length",
+    "value": 141.1,
+    "lower_bound": 141.1,
+    "upper_bound": 208.3,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 194,
+    "make": "volkswagen",
+    "body-style": "hatchback",
+    "column": "normalized-losses",
+    "value": 256.0,
+    "lower_bound": 14.0,
+    "upper_bound": 238.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 169,
+    "make": "toyota",
+    "body-style": "sedan",
+    "column": "peak-rpm",
+    "value": 6600.0,
+    "lower_bound": 3750.0,
+    "upper_bound": 6550.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 170,
+    "make": "toyota",
+    "body-style": "hatchback",
+    "column": "peak-rpm",
+    "value": 6600.0,
+    "lower_bound": 3750.0,
+    "upper_bound": 6550.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 19,
+    "make": "bmw",
+    "body-style": "sedan",
+    "column": "price",
+    "value": 30760.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 20,
+    "make": "bmw",
+    "body-style": "sedan",
+    "column": "price",
+    "value": 41315.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 21,
+    "make": "bmw",
+    "body-style": "sedan",
+    "column": "price",
+    "value": 36880.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 51,
+    "make": "jaguar",
+    "body-style": "sedan",
+    "column": "price",
+    "value": 32250.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 52,
+    "make": "jaguar",
+    "body-style": "sedan",
+    "column": "price",
+    "value": 35550.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 53,
+    "make": "jaguar",
+    "body-style": "sedan",
+    "column": "price",
+    "value": 36000.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 74,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "price",
+    "value": 31600.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 75,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "price",
+    "value": 34184.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 76,
+    "make": "mercedes-benz",
+    "body-style": "convertible",
+    "column": "price",
+    "value": 35056.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 77,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "price",
+    "value": 40960.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 78,
+    "make": "mercedes-benz",
+    "body-style": "hardtop",
+    "column": "price",
+    "value": 45400.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 130,
+    "make": "porsche",
+    "body-style": "hardtop",
+    "column": "price",
+    "value": 32528.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 131,
+    "make": "porsche",
+    "body-style": "hardtop",
+    "column": "price",
+    "value": 34028.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 132,
+    "make": "porsche",
+    "body-style": "convertible",
+    "column": "price",
+    "value": 37028.0,
+    "lower_bound": -5317.0,
+    "upper_bound": 29595.0,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 33,
+    "make": "dodge",
+    "body-style": "hatchback",
+    "column": "stroke",
+    "value": 3.9,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 51,
+    "make": "jaguar",
+    "body-style": "sedan",
+    "column": "stroke",
+    "value": 4.17,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 52,
+    "make": "jaguar",
+    "body-style": "sedan",
+    "column": "stroke",
+    "value": 4.17,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 115,
+    "make": "peugot",
+    "body-style": "sedan",
+    "column": "stroke",
+    "value": 2.19,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 117,
+    "make": "peugot",
+    "body-style": "wagon",
+    "column": "stroke",
+    "value": 2.19,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 134,
+    "make": "renault",
+    "body-style": "wagon",
+    "column": "stroke",
+    "value": 3.9,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 135,
+    "make": "renault",
+    "body-style": "hatchback",
+    "column": "stroke",
+    "value": 3.9,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 138,
+    "make": "saab",
+    "body-style": "hatchback",
+    "column": "stroke",
+    "value": 2.07,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 142,
+    "make": "subaru",
+    "body-style": "hatchback",
+    "column": "stroke",
+    "value": 2.36,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 143,
+    "make": "subaru",
+    "body-style": "hatchback",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 144,
+    "make": "subaru",
+    "body-style": "hatchback",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 145,
+    "make": "subaru",
+    "body-style": "sedan",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 146,
+    "make": "subaru",
+    "body-style": "sedan",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 147,
+    "make": "subaru",
+    "body-style": "sedan",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 148,
+    "make": "subaru",
+    "body-style": "sedan",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 149,
+    "make": "subaru",
+    "body-style": "sedan",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 150,
+    "make": "subaru",
+    "body-style": "wagon",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 151,
+    "make": "subaru",
+    "body-style": "wagon",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 152,
+    "make": "subaru",
+    "body-style": "wagon",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 153,
+    "make": "subaru",
+    "body-style": "wagon",
+    "column": "stroke",
+    "value": 2.64,
+    "lower_bound": 2.66,
+    "upper_bound": 3.86,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 74,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "wheel-base",
+    "value": 115.6,
+    "lower_bound": 82.65,
+    "upper_bound": 114.25,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 75,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "wheel-base",
+    "value": 115.6,
+    "lower_bound": 82.65,
+    "upper_bound": 114.25,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 77,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "wheel-base",
+    "value": 120.9,
+    "lower_bound": 82.65,
+    "upper_bound": 114.25,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 10,
+    "make": "audi",
+    "body-style": "sedan",
+    "column": "width",
+    "value": 71.4,
+    "lower_bound": 59.9,
+    "upper_bound": 71.1,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 11,
+    "make": "audi",
+    "body-style": "wagon",
+    "column": "width",
+    "value": 71.4,
+    "lower_bound": 59.9,
+    "upper_bound": 71.1,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 12,
+    "make": "audi",
+    "body-style": "sedan",
+    "column": "width",
+    "value": 71.4,
+    "lower_bound": 59.9,
+    "upper_bound": 71.1,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 74,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "width",
+    "value": 71.7,
+    "lower_bound": 59.9,
+    "upper_bound": 71.1,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 75,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "width",
+    "value": 71.7,
+    "lower_bound": 59.9,
+    "upper_bound": 71.1,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 77,
+    "make": "mercedes-benz",
+    "body-style": "sedan",
+    "column": "width",
+    "value": 71.7,
+    "lower_bound": 59.9,
+    "upper_bound": 71.1,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 78,
+    "make": "mercedes-benz",
+    "body-style": "hardtop",
+    "column": "width",
+    "value": 72.0,
+    "lower_bound": 59.9,
+    "upper_bound": 71.1,
+    "group_basis": [],
+    "group_value": []
+  },
+  {
+    "line": 133,
+    "make": "porsche",
+    "body-style": "hatchback",
+    "column": "width",
+    "value": 72.3,
+    "lower_bound": 59.9,
+    "upper_bound": 71.1,
+    "group_basis": [],
+    "group_value": []
+  }
+]
