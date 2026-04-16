@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T08:10:39.805028+00:00",
+  "generated_at": "2026-04-15T09:19:09.211724+00:00",
   "pages": [
     {
       "id": "AGENTS",
@@ -235,7 +235,7 @@
         "과정",
         "전문가"
       ],
-      "tokens_estimate": 1010,
+      "tokens_estimate": 1262,
       "outbound_links": [],
       "unresolved_links": []
     },

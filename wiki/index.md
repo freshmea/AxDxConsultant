@@ -1,9 +1,9 @@
 # Wiki Index
 
-- Generated: 2026-04-15T08:10:39.805028+00:00
+- Generated: 2026-04-15T09:19:09.211724+00:00
 - Markdown pages: 76
 - Resolved edges: 89
-- Estimated full-read tokens: 59423
+- Estimated full-read tokens: 59675
 - Ignore file: `.llmwikiignore`
 
 ## Pages

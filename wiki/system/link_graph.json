@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-15T08:10:39.805028+00:00",
+  "generated_at": "2026-04-15T09:19:09.211724+00:00",
   "repo_root": "C:\\Users\\Administrator\\dxAx",
   "nodes": [
     {
@@ -329,8 +329,8 @@
         "과정",
         "전문가"
       ],
-      "tokens_estimate": 1010,
-      "word_count": 855,
+      "tokens_estimate": 1262,
+      "word_count": 1120,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0
@@ -3969,7 +3969,7 @@
     "markdown_pages": 76,
     "resolved_edges": 89,
     "unresolved_links": 0,
-    "total_tokens_estimate": 59423
+    "total_tokens_estimate": 59675
   },
   "facets": {
     "top_tags": [
