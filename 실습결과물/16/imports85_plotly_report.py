@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent
 RAW_CSV = ROOT / "imports-85.csv"
 OUT_MD = ROOT / "imports-85_interactive_report.md"
 OUT_HTML = ROOT / "imports-85_interactive_dashboard.html"
+OUT_CSV = ROOT / "imports-85_reintegrated_analysis_base.csv"
 ASSET_DIR = ROOT / "imports85_report_assets"
 
 NUMERIC_COLUMNS = [
@@ -81,6 +82,7 @@ def load_and_clean_data(path: Path) -> tuple[pd.DataFrame, dict]:
         cleaned[column] = cleaned[column].astype("string").str.strip()
 
     missing_before = cleaned.isna().sum().to_dict()
+    original_missing_flags = cleaned.isna().copy()
 
     group_mode = (
         cleaned.groupby(["make", "body-style"])["num-of-doors"]
@@ -144,6 +146,14 @@ def load_and_clean_data(path: Path) -> tuple[pd.DataFrame, dict]:
     cleaned["segment"] = cleaned.apply(classify_segment, axis=1)
     cleaned["price_band"] = pd.qcut(cleaned["price"], 10, duplicates="drop")
     cleaned["price_decile_label"] = cleaned["price_band"].astype(str)
+    cleaned["source_status"] = "original_record_retained"
+    cleaned["outlier_review_status"] = "reviewed_valid_retained"
+    cleaned["imputed_columns"] = original_missing_flags.apply(
+        lambda row: ", ".join([column for column, missing in row.items() if bool(missing)]),
+        axis=1,
+    )
+    cleaned["imputed_columns"] = cleaned["imputed_columns"].replace("", "none")
+    cleaned["imputed_count"] = original_missing_flags.sum(axis=1).astype(int)
 
     cleaned["make_group"] = cleaned["make"].where(
         cleaned["make"].isin(cleaned["make"].value_counts().head(8).index),
@@ -154,6 +164,7 @@ def load_and_clean_data(path: Path) -> tuple[pd.DataFrame, dict]:
         "rows_after_cleaning": int(cleaned.shape[0]),
         "columns_after_cleaning": int(cleaned.shape[1]),
         "removed_meta_rows": removed_meta_rows,
+        "retained_rows": int(cleaned.shape[0]),
         "missing_before": missing_before,
         "missing_after": cleaned.isna().sum().to_dict(),
     }
@@ -480,6 +491,23 @@ def build_figures(df: pd.DataFrame, cleaning_summary: dict) -> tuple[dict, dict]
     segment_fig.update_layout(xaxis_title="Average MPG", yaxis_title="Horsepower")
     figures["segment_map"] = save_figure(apply_layout(segment_fig, "세그먼트별 차량 포지셔닝 맵", 560), "segment_map")
 
+    value_map = px.scatter(
+        df,
+        x="hp_per_1000usd",
+        y="avg_mpg",
+        color="segment",
+        size="price",
+        symbol="drive-wheels",
+        hover_data=["make", "body-style", "horsepower", "price"],
+        category_orders={"segment": SEGMENT_ORDER},
+        title="가성비와 연비의 동시 비교 맵",
+    )
+    value_map.update_layout(xaxis_title="Horsepower per $1,000", yaxis_title="Average MPG")
+    figures["value_efficiency_map"] = save_figure(
+        apply_layout(value_map, "가성비와 연비의 동시 비교 맵", 560),
+        "value_efficiency_map",
+    )
+
     segment_table_fig = go.Figure(
         data=[
             go.Table(
@@ -588,11 +616,14 @@ def build_markdown_report(df: pd.DataFrame, cleaning_summary: dict, figures: dic
 
 - 원본 파일: [imports-85.csv]({RAW_CSV.resolve().as_posix()})
 - 정제 기준: 설명행/메타행 2건 제거 후 분석용 205건 사용
+- 이상치 검토 반영: 이상치 후보를 재검토한 결과 모두 정상값으로 판단하여 제거 없이 전건 유지
+- 재분석 기준 파일: [imports-85_reintegrated_analysis_base.csv]({OUT_CSV.resolve().as_posix()})
 - 변수 수: 정제 후 {df.shape[1]}개
 - 처리 원칙:
   - 수치형 결측치: 그룹 중앙값 우선, 부족 시 전체 중앙값
   - 범주형 결측치: 그룹 최빈값 우선, 부족 시 전체 최빈값
   - 컬럼명 공백 제거, 숫자형 문자열을 숫자로 변환, 파생변수 생성
+  - 이상치: 제거하지 않고 `reviewed_valid_retained` 상태로 유지
 
 ### 데이터 현황 요약
 {fig_block(figures, "overview_table", "핵심 데이터 요약표", "보고서 출발점에서 표본 규모, 브랜드 수, 차체 유형 수, 중앙값 수준을 한 번에 확인할 수 있다. 경영진은 데이터의 해석 범위와 표본 구조를 먼저 이해해야 이후 차트의 의미를 정확히 읽을 수 있다.", "샘플 구성이 특정 브랜드나 차체에 치우쳤는지, 그리고 가격·출력의 중앙값 수준이 어느 정도인지 빠르게 파악할 수 있다.")}
@@ -650,6 +681,8 @@ def build_markdown_report(df: pd.DataFrame, cleaning_summary: dict, figures: dic
 {fig_block(figures, "price_decile_line", "가격 구간별 성능·엔진·연비 변화", "가격 구간이 올라갈수록 평균 마력과 엔진 크기는 상승하고 평균 연비는 하락한다. 특히 상위 가격 구간에서 성능 지표가 가파르게 상승해, 고가 구간은 단순 가격 인상이 아니라 명확한 성능 차별화로 설명된다.", "가격대별로 어떤 사양을 더해야 소비자가 가격 차이를 납득하는지 판단할 수 있다.")}
 
 {fig_block(figures, "segment_map", "세그먼트별 차량 포지셔닝 맵", "차량군은 대략 네 개 세그먼트로 구분된다. 고가·고성능군은 연비가 낮고, 실속형은 높은 연비와 낮은 가격에 집중되며, 중간 다수는 균형형 구간에 모여 있다.", "포트폴리오 공백이 어디인지, 프리미엄 강화가 필요한지, 혹은 실속형 보강이 필요한지 판단할 수 있다.")}
+
+{fig_block(figures, "value_efficiency_map", "가성비와 연비의 동시 비교 맵", "마력당 가격 효율과 평균 연비를 함께 보면 단순 저가 차량과 진짜 가성비 차량을 구분할 수 있다. 일부 중간 가격대 차량은 연비와 성능 효율을 동시에 확보해 균형형 포지션의 핵심 후보로 읽힌다.", "고성능을 유지하면서도 가격 효율이 높은 조합이 있는지, 또는 연비 중심 상품이 실제로도 가성비 우위를 갖는지 판단할 수 있다.")}
 
 {fig_block(figures, "segment_table", "세그먼트 요약표", "세그먼트별 차량 수, 평균 가격, 평균 마력, 평균 연비, 대표 브랜드를 함께 보면 포트폴리오 구조가 명확해진다. 경영진은 이 표만 봐도 어느 세그먼트가 수익성 중심인지, 어느 세그먼트가 볼륨 중심인지 빠르게 파악할 수 있다.", "브랜드별 역할을 세그먼트 관점에서 재정의하고, 상품기획·마케팅·영업 전략을 분리 설계할 수 있다.")}
 
@@ -733,7 +766,7 @@ def build_dashboard_html(figures: dict) -> str:
         ("데이터 개요", ["overview_table", "brand_counts", "fuel_share", "distribution_panel"]),
         ("가격 결정 요인", ["scatter_engine_price", "scatter_hp_price", "scatter_weight_price", "scatter_mpg_price"]),
         ("비교 분석", ["brand_metrics", "body_drive_price"]),
-        ("관계 구조와 세그먼트", ["correlation_heatmap", "price_decile_line", "segment_map", "segment_table"]),
+        ("관계 구조와 세그먼트", ["correlation_heatmap", "price_decile_line", "segment_map", "value_efficiency_map", "segment_table"]),
     ]
     html_parts = [
         "<html><head><meta charset='utf-8'><title>imports-85 Interactive Dashboard</title><script src='https://cdn.plot.ly/plotly-2.35.2.min.js'></script></head><body style='font-family: Arial; margin: 24px;'>",
@@ -752,6 +785,8 @@ def build_dashboard_html(figures: dict) -> str:
 def main():
     df, cleaning_summary = load_and_clean_data(RAW_CSV)
     print("Loaded and cleaned data")
+    df.to_csv(OUT_CSV, index=False, encoding="utf-8-sig")
+    print(f"Wrote analysis base: {OUT_CSV}")
     figures, context = build_figures(df, cleaning_summary)
     print("Built figures")
     markdown = build_markdown_report(df, cleaning_summary, figures, context)

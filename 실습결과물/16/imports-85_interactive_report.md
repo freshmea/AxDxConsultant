@@ -6,11 +6,14 @@
 
 - 원본 파일: [imports-85.csv](C:/Users/Administrator/dxAx/실습결과물/16/imports-85.csv)
 - 정제 기준: 설명행/메타행 2건 제거 후 분석용 205건 사용
-- 변수 수: 정제 후 36개
+- 이상치 검토 반영: 이상치 후보를 재검토한 결과 모두 정상값으로 판단하여 제거 없이 전건 유지
+- 재분석 기준 파일: [imports-85_reintegrated_analysis_base.csv](C:/Users/Administrator/dxAx/실습결과물/16/imports-85_reintegrated_analysis_base.csv)
+- 변수 수: 정제 후 40개
 - 처리 원칙:
   - 수치형 결측치: 그룹 중앙값 우선, 부족 시 전체 중앙값
   - 범주형 결측치: 그룹 최빈값 우선, 부족 시 전체 최빈값
   - 컬럼명 공백 제거, 숫자형 문자열을 숫자로 변환, 파생변수 생성
+  - 이상치: 제거하지 않고 `reviewed_valid_retained` 상태로 유지
 
 ### 데이터 현황 요약
 ### 핵심 데이터 요약표
@@ -162,6 +165,13 @@ Jaguar, Mercedes-Benz, Porsche, BMW는 평균 가격과 출력이 높고, 연비
 차량군은 대략 네 개 세그먼트로 구분된다. 고가·고성능군은 연비가 낮고, 실속형은 높은 연비와 낮은 가격에 집중되며, 중간 다수는 균형형 구간에 모여 있다.
 
 판단 포인트: 포트폴리오 공백이 어디인지, 프리미엄 강화가 필요한지, 혹은 실속형 보강이 필요한지 판단할 수 있다.
+
+### 가성비와 연비의 동시 비교 맵
+[인터랙티브 보기](C:/Users/Administrator/dxAx/실습결과물/16/imports85_report_assets/value_efficiency_map.html)
+
+마력당 가격 효율과 평균 연비를 함께 보면 단순 저가 차량과 진짜 가성비 차량을 구분할 수 있다. 일부 중간 가격대 차량은 연비와 성능 효율을 동시에 확보해 균형형 포지션의 핵심 후보로 읽힌다.
+
+판단 포인트: 고성능을 유지하면서도 가격 효율이 높은 조합이 있는지, 또는 연비 중심 상품이 실제로도 가성비 우위를 갖는지 판단할 수 있다.
 
 ### 세그먼트 요약표
 [인터랙티브 보기](C:/Users/Administrator/dxAx/실습결과물/16/imports85_report_assets/segment_table.html)
