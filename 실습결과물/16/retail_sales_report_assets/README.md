@@ -14,3 +14,11 @@
 - 12_category_net_sales_pie.png: 카테고리 순매출 비중 원그래프
 - 13_payment_method_share_pie.png: 결제수단 비중 원그래프
 - 14_category_profit_margin_bar.png: 카테고리별 추정 이익률
+- 15_monthly_quantity_trend.png: 월별 판매수량 추세
+- 16_daily_net_sales_trend.png: 일자별 순매출 추세
+- 17_daily_quantity_trend.png: 일자별 판매수량 추세
+- 18_monthly_category_sales_trend.png: 카테고리별 월별 순매출 추세
+- 19_monthly_category_quantity_trend.png: 카테고리별 월별 판매수량 추세
+- 20_monthly_store_sales_trend.png: 매장별 월별 순매출 추세
+- 21_monthly_payment_quantity_trend.png: 결제수단별 월별 판매수량 추세
+- 22_daily_category_sales_trend.png: 카테고리별 일자별 순매출 추세

@@ -82,6 +82,135 @@ def plot_monthly_sales(sales: pd.DataFrame) -> None:
     save_plot("01_monthly_net_sales_trend.png")
 
 
+def plot_monthly_quantity_trend(sales: pd.DataFrame) -> None:
+    monthly_qty = sales.groupby("YearMonth", as_index=False)["Quantity"].sum()
+    plt.figure(figsize=(14, 6))
+    ax = sns.lineplot(data=monthly_qty, x="YearMonth", y="Quantity", marker="o", linewidth=2.5, color="#2a9d8f")
+    ax.set_title("Monthly Quantity Sold Trend")
+    ax.set_xlabel("Month")
+    ax.set_ylabel("Quantity Sold")
+    ax.tick_params(axis="x", rotation=45)
+    save_plot("15_monthly_quantity_trend.png")
+
+
+def plot_daily_sales_trend(sales: pd.DataFrame) -> None:
+    daily = sales.groupby("Date", as_index=False)["NetSales"].sum()
+    plt.figure(figsize=(15, 6))
+    ax = sns.lineplot(data=daily, x="Date", y="NetSales", linewidth=1.6, color="#264653")
+    ax.set_title("Daily Net Sales Trend")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Net Sales")
+    save_plot("16_daily_net_sales_trend.png")
+
+
+def plot_daily_quantity_trend(sales: pd.DataFrame) -> None:
+    daily_qty = sales.groupby("Date", as_index=False)["Quantity"].sum()
+    plt.figure(figsize=(15, 6))
+    ax = sns.lineplot(data=daily_qty, x="Date", y="Quantity", linewidth=1.6, color="#f4a261")
+    ax.set_title("Daily Quantity Sold Trend")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Quantity Sold")
+    save_plot("17_daily_quantity_trend.png")
+
+
+def plot_monthly_category_sales_trend(sales: pd.DataFrame) -> None:
+    monthly_category = sales.groupby(["YearMonth", "Category"], as_index=False)["NetSales"].sum()
+    plt.figure(figsize=(15, 7))
+    ax = sns.lineplot(
+        data=monthly_category,
+        x="YearMonth",
+        y="NetSales",
+        hue="Category",
+        marker="o",
+        linewidth=2.2,
+        palette="Set2",
+    )
+    ax.set_title("Monthly Net Sales Trend by Category")
+    ax.set_xlabel("Month")
+    ax.set_ylabel("Net Sales")
+    ax.tick_params(axis="x", rotation=45)
+    save_plot("18_monthly_category_sales_trend.png")
+
+
+def plot_monthly_category_quantity_trend(sales: pd.DataFrame) -> None:
+    monthly_category_qty = sales.groupby(["YearMonth", "Category"], as_index=False)["Quantity"].sum()
+    plt.figure(figsize=(15, 7))
+    ax = sns.lineplot(
+        data=monthly_category_qty,
+        x="YearMonth",
+        y="Quantity",
+        hue="Category",
+        marker="o",
+        linewidth=2.2,
+        palette="Set2",
+    )
+    ax.set_title("Monthly Quantity Trend by Category")
+    ax.set_xlabel("Month")
+    ax.set_ylabel("Quantity Sold")
+    ax.tick_params(axis="x", rotation=45)
+    save_plot("19_monthly_category_quantity_trend.png")
+
+
+def plot_monthly_store_sales_trend(sales: pd.DataFrame) -> None:
+    monthly_store = sales.groupby(["YearMonth", "StoreName"], as_index=False)["NetSales"].sum()
+    plt.figure(figsize=(15, 7))
+    ax = sns.lineplot(
+        data=monthly_store,
+        x="YearMonth",
+        y="NetSales",
+        hue="StoreName",
+        marker="o",
+        linewidth=2.0,
+        palette="tab10",
+    )
+    ax.set_title("Monthly Net Sales Trend by Store")
+    ax.set_xlabel("Month")
+    ax.set_ylabel("Net Sales")
+    ax.tick_params(axis="x", rotation=45)
+    save_plot("20_monthly_store_sales_trend.png")
+
+
+def plot_monthly_payment_trend(sales: pd.DataFrame) -> None:
+    monthly_payment = sales.groupby(["YearMonth", "PaymentMethod"], as_index=False)["Quantity"].sum()
+    plt.figure(figsize=(15, 7))
+    ax = sns.lineplot(
+        data=monthly_payment,
+        x="YearMonth",
+        y="Quantity",
+        hue="PaymentMethod",
+        marker="o",
+        linewidth=2.0,
+        palette="Dark2",
+    )
+    ax.set_title("Monthly Quantity Trend by Payment Method")
+    ax.set_xlabel("Month")
+    ax.set_ylabel("Quantity Sold")
+    ax.tick_params(axis="x", rotation=45)
+    save_plot("21_monthly_payment_quantity_trend.png")
+
+
+def plot_daily_category_sales_trend(sales: pd.DataFrame) -> None:
+    top_categories = sales.groupby("Category")["NetSales"].sum().sort_values(ascending=False).head(3).index
+    daily_category = (
+        sales[sales["Category"].isin(top_categories)]
+        .groupby(["Date", "Category"], as_index=False)["NetSales"]
+        .sum()
+    )
+    plt.figure(figsize=(15, 7))
+    ax = sns.lineplot(
+        data=daily_category,
+        x="Date",
+        y="NetSales",
+        hue="Category",
+        linewidth=1.6,
+        palette="Set2",
+    )
+    ax.set_title("Daily Net Sales Trend by Category")
+    ax.set_xlabel("Date")
+    ax.set_ylabel("Net Sales")
+    save_plot("22_daily_category_sales_trend.png")
+
+
 def plot_category_sales(sales: pd.DataFrame) -> None:
     category = sales.groupby("Category", as_index=False)["NetSales"].sum().sort_values("NetSales", ascending=False)
     plt.figure(figsize=(10, 6))
@@ -250,6 +379,14 @@ def write_manifest() -> None:
 - 12_category_net_sales_pie.png: 카테고리 순매출 비중 원그래프
 - 13_payment_method_share_pie.png: 결제수단 비중 원그래프
 - 14_category_profit_margin_bar.png: 카테고리별 추정 이익률
+- 15_monthly_quantity_trend.png: 월별 판매수량 추세
+- 16_daily_net_sales_trend.png: 일자별 순매출 추세
+- 17_daily_quantity_trend.png: 일자별 판매수량 추세
+- 18_monthly_category_sales_trend.png: 카테고리별 월별 순매출 추세
+- 19_monthly_category_quantity_trend.png: 카테고리별 월별 판매수량 추세
+- 20_monthly_store_sales_trend.png: 매장별 월별 순매출 추세
+- 21_monthly_payment_quantity_trend.png: 결제수단별 월별 판매수량 추세
+- 22_daily_category_sales_trend.png: 카테고리별 일자별 순매출 추세
 """
     (OUTPUT_DIR / "README.md").write_text(manifest, encoding="utf-8")
 
@@ -274,6 +411,14 @@ def main() -> None:
     plot_category_sales_pie(sales)
     plot_payment_methods_pie(sales)
     plot_category_margin(sales)
+    plot_monthly_quantity_trend(sales)
+    plot_daily_sales_trend(sales)
+    plot_daily_quantity_trend(sales)
+    plot_monthly_category_sales_trend(sales)
+    plot_monthly_category_quantity_trend(sales)
+    plot_monthly_store_sales_trend(sales)
+    plot_monthly_payment_trend(sales)
+    plot_daily_category_sales_trend(sales)
     write_manifest()
 
     print(f"Saved graphs to: {OUTPUT_DIR}")
