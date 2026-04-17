@@ -156,4 +156,4 @@ C:\Users\Administrator\dxAx\orange_example\body-fat-brozek.csv 이 수치 데이
 - 5교시:
 - 6교시:
 - 7교시:
-- 8교시:
+- 8교시: 노트북LM 활용
