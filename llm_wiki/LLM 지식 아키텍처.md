@@ -153,3 +153,15 @@ flowchart TD
 개인 지식관리라면 **Karpathy LLM Wiki + Obsidian Smart Connections**가 가장 비용대비 효율이 좋습니다. 팀과 코딩 에이전트라면 **Claude Code 또는 OpenAI Skills 계층 + Git/위키/문서 검색**이 출발점이 좋습니다. 장기대화 챗봇과 개인화 에이전트라면 **Mem0 또는 Letta**, 시간이 바뀌는 엔터프라이즈 관계 데이터라면 **Graphiti**, 전역 문서 이해가 핵심이면 **GraphRAG**가 우선순위가 높습니다. 프레임워크를 직접 조립해야 하는 팀은 **LangMem/LangGraph 또는 LlamaIndex Memory**로 가는 편이 낫습니다. citeturn3view2turn19search0turn9view0turn17view0turn21search2turn24search16turn20view6turn13search1turn20view0turn20view2
 
 마지막으로 위험요소는 세 가지입니다. **stale memory**, **contradictory memory**, **평가 부재**입니다. LongMemEval이 knowledge updates와 abstention을 별도 능력으로 측정하는 이유도 여기에 있고, Karpathy가 lint를 넣은 이유도, Graphiti가 temporal validity를 강조하는 이유도, Letta와 Mem0가 background consolidation을 강조하는 이유도 모두 같습니다. 기억을 “많이 저장하는 것”보다 **“무엇을 언제 잊고, 어떻게 갱신하며, 언제 모른다고 말하게 할지”**를 설계하는 편이 실제 성능에 더 중요합니다. citeturn22search1turn3view3turn20view6turn24search0turn21search0
+
+- codex 지식 시스템 추가 요청 사항
+
+```text
+sentence-transformers + faiss를 붙여 로컬 의미검색 추가
+Obsidian Smart Connections 설치 전제에 맞춰 설정 문서 작성
+현재 llm_wiki를 GraphRAG-lite 형태로 확장해 커뮤니티 요약 JSON 추가
+이 세가지를 실행해서 시스템을 구축해주고
+Graphiti 또는 Mem0
+목적: 문서가 말한 “변화하는 사실” 계층 추가
+이 부분도 같이 설치해서 시스템이 좀 더 똑똑해진 지식 체계를 구축하도록 진행해줘
+```
