@@ -1,0 +1,27 @@
+{
+  "vector_store": {
+    "provider": "qdrant",
+    "config": {
+      "collection_name": "dxax_mem0",
+      "path": "C:\\Users\\Administrator\\dxAx\\memory_layer\\qdrant",
+      "on_disk": true
+    }
+  },
+  "llm": {
+    "provider": "ollama",
+    "config": {
+      "model": "qwen2.5:1.5b",
+      "ollama_base_url": "http://127.0.0.1:11434",
+      "temperature": 0.0
+    }
+  },
+  "embedder": {
+    "provider": "ollama",
+    "config": {
+      "model": "nomic-embed-text",
+      "ollama_base_url": "http://127.0.0.1:11434"
+    }
+  },
+  "history_db_path": "C:\\Users\\Administrator\\dxAx\\memory_layer\\history.db",
+  "version": "v1.1"
+}

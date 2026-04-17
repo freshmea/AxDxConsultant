@@ -10,6 +10,8 @@ tmp/
 나의업무분석/
 .venv-whisper/
 local_whisper/
+.venv-report/
+.venv-knowledge/
 
 
 # Generated or backup markdown

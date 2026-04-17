@@ -1,9 +1,9 @@
 # Graph Report
 
-- Generated: 2026-04-17T05:24:40.756622+00:00
-- Pages: 96
+- Generated: 2026-04-17T07:53:51.059976+00:00
+- Pages: 95
 - Edges: 89
-- Estimated full corpus tokens: 76480
+- Estimated full corpus tokens: 81190
 
 ## Top Tags
 
@@ -26,13 +26,13 @@
 ## Top Topics
 
 - `업무` x 14
+- `분석` x 10
 - `인덱스` x 10
 - `수중드론` x 10
 - `프롬프트` x 10
+- `llm` x 9
 - `핵심` x 9
 - `사업화` x 9
-- `llm` x 8
-- `분석` x 8
 - `1페이지` x 8
 - `wiki` x 7
 - `작성` x 7
@@ -45,19 +45,34 @@
 
 - `실습결과물` x 13
 - `업무` x 13
+- `분석` x 10
 - `인덱스` x 10
 - `1페이지` x 10
 - `수중드론` x 10
 - `사업화` x 9
 - `프롬프트` x 9
-- `분석` x 8
-- `llm` x 7
+- `llm` x 8
 - `데이터` x 7
 - `작성` x 7
 - `소설` x 7
 - `고려의` x 7
 - `그림자` x 7
 - `새벽` x 7
+
+## Communities
+
+- `community-001` | size=11 | representative=[실습결과물 14 인덱스](../실습결과물/14/00-INDEX.md)
+- `community-002` | size=9 | representative=[소설 프로젝트 인덱스](../실습결과물/14/30-소설-INDEX.md)
+- `community-003` | size=9 | representative=[수중드론 사업화 인덱스](../실습결과물/14/20-수중드론-INDEX.md)
+- `community-004` | size=7 | representative=[실습결과물 07 인덱스](../실습결과물/07/00-INDEX.md)
+- `community-005` | size=7 | representative=[실습결과물 08 인덱스](../실습결과물/08/00-INDEX.md)
+- `community-006` | size=7 | representative=[실습결과물 13 인덱스](../실습결과물/13/00-INDEX.md)
+- `community-007` | size=5 | representative=[실습결과물 06 인덱스](../실습결과물/06/00-INDEX.md)
+- `community-008` | size=5 | representative=[실습결과물 09 인덱스](../실습결과물/09/00-INDEX.md)
+- `community-009` | size=4 | representative=[실습결과물 15 인덱스](../실습결과물/15/00-INDEX.md)
+- `community-010` | size=1 | representative=[LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
+- `community-011` | size=1 | representative=[Obsidian Smart Connections Setup](../llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md)
+- `community-012` | size=1 | representative=[Local Memory Layer](../memory_layer/README.md)
 
 ## Most Connected Pages
 
@@ -87,15 +102,11 @@
 
 ## Orphan Candidates
 
-- [MathJax](../.venv-report/Lib/site-packages/kaleido/executable/etc/mathjax/README.md)
-- [NCSA Open Source License](../.venv-report/Lib/site-packages/numpy/random/LICENSE.md)
-- [LICENSE](../.venv-report/Lib/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md)
-- [LICENSE](../.venv-report/Lib/site-packages/pip/_vendor/idna/LICENSE.md)
-- [best_practices](../.venv-report/Lib/site-packages/pyparsing/ai/best_practices.md)
-- [LICENSE](../.venv-report/Lib/site-packages/scipy/fft/_pocketfft/LICENSE.md)
-- [LICENSE](../.venv-report/Lib/site-packages/seaborn-0.13.2.dist-info/LICENSE.md)
 - [LLM Wiki Schema](../AGENTS.md)
+- [LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
+- [Obsidian Smart Connections Setup](../llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md)
 - [Local LLM Wiki](../llm_wiki/README.md)
+- [Local Memory Layer](../memory_layer/README.md)
 - [Notion App Date Filter Fallback Skill](../notion_app_date_filter_fallback_skill/SKILL.md)
 - [Body Fat Brozek 시각 분석 보고서 (미리보기 중심)](../orange_example_10/bodyfat_analysis_report.md)
 - [Titanic AdaBoost 분석 보고서](../orange_example_10/titanic_adaboost_report.md)
@@ -107,3 +118,7 @@
 - [PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지](../실습결과물/06/deep-research-report.md)
 - [머메이드 테스트](../실습결과물/06/mermaidTest.md)
 - [2. 교육 요약본 (1페이지)](../실습결과물/06/paperclipai교육요약.md)
+- [1. 사업계획서 (요약형)](../실습결과물/06/paperclipai사업계획서.md)
+- [1. 업무 흐름 구조화](../실습결과물/07/01-업무-흐름-구조화.md)
+- [업무 흐름 (Mermaid)](../실습결과물/07/02-업무-흐름-mermaid.md)
+- [나의 업무 비효율 수치화 템플릿 작성](../실습결과물/07/03-업무-비효율-수치화-템플릿.md)

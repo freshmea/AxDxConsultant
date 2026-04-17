@@ -1,418 +1,6 @@
 {
-  "generated_at": "2026-04-17T05:24:40.756622+00:00",
+  "generated_at": "2026-04-17T07:53:51.059976+00:00",
   "pages": {
-    ".venv-report/Lib/site-packages/kaleido/executable/etc/mathjax/README": {
-      "title": "MathJax",
-      "path": ".venv-report/Lib/site-packages/kaleido/executable/etc/mathjax/README.md",
-      "summary": "MathJax is an open-source JavaScript display engine for LaTeX, MathML, and AsciiMath notation that works in all modern browsers. It was designed with the goal of consolidating the recent advances in web technologies into a single, definitive, math-on-the-web platform supporting t",
-      "headings": [
-        "MathJax",
-        "Beautiful math in all browsers",
-        "Installation and Usage",
-        "Community"
-      ],
-      "tags": [],
-      "topics": [
-        "all",
-        "an",
-        "browsers",
-        "in",
-        "is",
-        "math",
-        "mathjax",
-        "web"
-      ],
-      "entities": [
-        "all",
-        "an",
-        "beautiful",
-        "browsers",
-        "community",
-        "in",
-        "installation",
-        "is",
-        "math",
-        "mathjax",
-        "open",
-        "usage"
-      ],
-      "terms": {
-        "mathjax": 6,
-        "is": 3,
-        "an": 3,
-        "open": 2,
-        "source": 1,
-        "javascript": 1,
-        "display": 1,
-        "engine": 1,
-        "for": 1,
-        "latex": 1,
-        "mathml": 1,
-        "and": 2,
-        "asciimath": 1,
-        "notation": 1,
-        "that": 1,
-        "works": 1,
-        "in": 5,
-        "all": 4,
-        "modern": 1,
-        "browsers": 4,
-        "it": 1,
-        "was": 1,
-        "designed": 1,
-        "with": 1,
-        "the": 3,
-        "goal": 1,
-        "of": 1,
-        "consolidating": 1,
-        "recent": 1,
-        "advances": 1,
-        "web": 3,
-        "technologies": 1,
-        "into": 1,
-        "a": 1,
-        "single": 1,
-        "definitive": 1,
-        "math": 4,
-        "on": 1,
-        "platform": 1,
-        "supporting": 1,
-        "t": 1,
-        "beautiful": 2,
-        "installation": 2,
-        "usage": 2,
-        "community": 2,
-        "venv": 1,
-        "report": 1,
-        "lib": 1,
-        "site": 1,
-        "packages": 1,
-        "kaleido": 1,
-        "executable": 1,
-        "etc": 1,
-        "readme": 1,
-        "md": 1
-      },
-      "neighbors": [],
-      "inbound_count": 0,
-      "tokens_estimate": 545
-    },
-    ".venv-report/Lib/site-packages/numpy/random/LICENSE": {
-      "title": "NCSA Open Source License",
-      "path": ".venv-report/Lib/site-packages/numpy/random/LICENSE.md",
-      "summary": "**This software is dual-licensed under the The University of Illinois/NCSA Open Source License (NCSA) and The 3-Clause BSD License**",
-      "headings": [
-        "NCSA Open Source License",
-        "3-Clause BSD License",
-        "Components"
-      ],
-      "tags": [],
-      "topics": [
-        "bsd",
-        "clause",
-        "is",
-        "license",
-        "ncsa",
-        "open",
-        "software",
-        "source"
-      ],
-      "entities": [
-        "bsd",
-        "clause",
-        "components",
-        "dual",
-        "is",
-        "license",
-        "licensed",
-        "ncsa",
-        "open",
-        "software",
-        "source"
-      ],
-      "terms": {
-        "ncsa": 6,
-        "open": 5,
-        "source": 5,
-        "license": 8,
-        "this": 1,
-        "software": 3,
-        "is": 3,
-        "dual": 2,
-        "licensed": 2,
-        "under": 1,
-        "the": 3,
-        "university": 1,
-        "of": 1,
-        "illinois": 1,
-        "and": 1,
-        "3": 2,
-        "clause": 4,
-        "bsd": 4,
-        "components": 2,
-        "venv": 1,
-        "report": 1,
-        "lib": 1,
-        "site": 1,
-        "packages": 1,
-        "numpy": 1,
-        "random": 1,
-        "md": 1
-      },
-      "neighbors": [],
-      "inbound_count": 0,
-      "tokens_estimate": 878
-    },
-    ".venv-report/Lib/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE": {
-      "title": "LICENSE",
-      "path": ".venv-report/Lib/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
-      "summary": "BSD 3-Clause License",
-      "headings": [],
-      "tags": [],
-      "topics": [
-        "bsd",
-        "clause",
-        "license"
-      ],
-      "entities": [
-        "bsd",
-        "clause",
-        "license"
-      ],
-      "terms": {
-        "license": 5,
-        "bsd": 3,
-        "3": 1,
-        "clause": 3,
-        "venv": 1,
-        "report": 1,
-        "lib": 1,
-        "site": 1,
-        "packages": 1,
-        "pip": 2,
-        "26": 1,
-        "0": 1,
-        "1": 1,
-        "dist": 1,
-        "info": 1,
-        "licenses": 1,
-        "src": 1,
-        "_vendor": 1,
-        "idna": 1,
-        "md": 1
-      },
-      "neighbors": [],
-      "inbound_count": 0,
-      "tokens_estimate": 386
-    },
-    ".venv-report/Lib/site-packages/pip/_vendor/idna/LICENSE": {
-      "title": "LICENSE",
-      "path": ".venv-report/Lib/site-packages/pip/_vendor/idna/LICENSE.md",
-      "summary": "BSD 3-Clause License",
-      "headings": [],
-      "tags": [],
-      "topics": [
-        "bsd",
-        "clause",
-        "license"
-      ],
-      "entities": [
-        "bsd",
-        "clause",
-        "license"
-      ],
-      "terms": {
-        "license": 5,
-        "bsd": 3,
-        "3": 1,
-        "clause": 3,
-        "venv": 1,
-        "report": 1,
-        "lib": 1,
-        "site": 1,
-        "packages": 1,
-        "pip": 1,
-        "_vendor": 1,
-        "idna": 1,
-        "md": 1
-      },
-      "neighbors": [],
-      "inbound_count": 0,
-      "tokens_estimate": 386
-    },
-    ".venv-report/Lib/site-packages/pyparsing/ai/best_practices": {
-      "title": "best_practices",
-      "path": ".venv-report/Lib/site-packages/pyparsing/ai/best_practices.md",
-      "summary": "<!-- This file contains instructions for best practices for developing parsers with pyparsing, and can be used by AI agents when generating Python code using pyparsing. -->",
-      "headings": [
-        "Planning",
-        "Implementing",
-        "Testing",
-        "Debugging"
-      ],
-      "tags": [],
-      "topics": [
-        "best",
-        "best_practices",
-        "contains",
-        "developing",
-        "file",
-        "instructions",
-        "practices",
-        "pyparsing"
-      ],
-      "entities": [
-        "best_practices",
-        "contains",
-        "debugging",
-        "file",
-        "implementing",
-        "instructions",
-        "planning",
-        "pyparsing",
-        "testing"
-      ],
-      "terms": {
-        "best_practices": 4,
-        "this": 1,
-        "file": 3,
-        "contains": 3,
-        "instructions": 3,
-        "for": 2,
-        "best": 2,
-        "practices": 2,
-        "developing": 2,
-        "parsers": 1,
-        "with": 1,
-        "pyparsing": 5,
-        "and": 1,
-        "can": 1,
-        "be": 1,
-        "used": 1,
-        "by": 1,
-        "ai": 2,
-        "agents": 1,
-        "when": 1,
-        "generating": 1,
-        "python": 1,
-        "code": 1,
-        "using": 1,
-        "planning": 2,
-        "implementing": 2,
-        "testing": 2,
-        "debugging": 2,
-        "venv": 1,
-        "report": 1,
-        "lib": 1,
-        "site": 1,
-        "packages": 1,
-        "md": 1
-      },
-      "neighbors": [],
-      "inbound_count": 0,
-      "tokens_estimate": 2118
-    },
-    ".venv-report/Lib/site-packages/scipy/fft/_pocketfft/LICENSE": {
-      "title": "LICENSE",
-      "path": ".venv-report/Lib/site-packages/scipy/fft/_pocketfft/LICENSE.md",
-      "summary": "Copyright (C) 2010-2019 Max-Planck-Society All rights reserved.",
-      "headings": [],
-      "tags": [],
-      "topics": [
-        "2010",
-        "2019",
-        "all",
-        "copyright",
-        "license",
-        "max",
-        "planck",
-        "society"
-      ],
-      "entities": [
-        "2010",
-        "2019",
-        "copyright",
-        "license",
-        "max"
-      ],
-      "terms": {
-        "license": 4,
-        "copyright": 3,
-        "c": 1,
-        "2010": 3,
-        "2019": 3,
-        "max": 3,
-        "planck": 2,
-        "society": 2,
-        "all": 2,
-        "rights": 1,
-        "reserved": 1,
-        "venv": 1,
-        "report": 1,
-        "lib": 1,
-        "site": 1,
-        "packages": 1,
-        "scipy": 1,
-        "fft": 1,
-        "_pocketfft": 1,
-        "md": 1
-      },
-      "neighbors": [],
-      "inbound_count": 0,
-      "tokens_estimate": 375
-    },
-    ".venv-report/Lib/site-packages/seaborn-0.13.2.dist-info/LICENSE": {
-      "title": "LICENSE",
-      "path": ".venv-report/Lib/site-packages/seaborn-0.13.2.dist-info/LICENSE.md",
-      "summary": "Copyright (c) 2012-2023, Michael L. Waskom All rights reserved.",
-      "headings": [],
-      "tags": [],
-      "topics": [
-        "2012",
-        "2023",
-        "all",
-        "copyright",
-        "license",
-        "michael",
-        "rights",
-        "waskom"
-      ],
-      "entities": [
-        "2012",
-        "2023",
-        "copyright",
-        "license",
-        "michael"
-      ],
-      "terms": {
-        "license": 4,
-        "copyright": 3,
-        "c": 1,
-        "2012": 3,
-        "2023": 3,
-        "michael": 3,
-        "l": 1,
-        "waskom": 2,
-        "all": 2,
-        "rights": 2,
-        "reserved": 1,
-        "venv": 1,
-        "report": 1,
-        "lib": 1,
-        "site": 1,
-        "packages": 1,
-        "seaborn": 1,
-        "0": 1,
-        "13": 1,
-        "2": 1,
-        "dist": 1,
-        "info": 1,
-        "md": 1
-      },
-      "neighbors": [],
-      "inbound_count": 0,
-      "tokens_estimate": 373
-    },
     "AGENTS": {
       "title": "LLM Wiki Schema",
       "path": "AGENTS.md",
@@ -421,6 +9,7 @@
         "LLM Wiki Schema",
         "Layers",
         "Operating Rules",
+        "Unicode And Chart Rules",
         "Query Workflow",
         "Maintenance Workflow"
       ],
@@ -428,37 +17,37 @@
       "topics": [
         "llm",
         "local",
-        "pattern",
         "repository",
+        "rules",
         "schema",
         "uses",
         "wiki",
         "workflow"
       ],
       "entities": [
+        "chart",
         "layers",
         "llm",
         "local",
-        "maintenance",
         "operating",
         "pattern",
         "query",
         "repository",
         "rules",
         "schema",
-        "uses",
-        "wiki"
+        "unicode",
+        "uses"
       ],
       "terms": {
         "llm": 6,
-        "wiki": 6,
+        "wiki": 5,
         "schema": 4,
         "this": 1,
         "repository": 3,
         "uses": 3,
         "a": 1,
         "local": 3,
-        "pattern": 3,
+        "pattern": 2,
         "inspired": 1,
         "by": 1,
         "andrej": 1,
@@ -468,15 +57,256 @@
         "gist": 1,
         "layers": 2,
         "operating": 2,
-        "rules": 2,
+        "rules": 4,
+        "unicode": 2,
+        "and": 1,
+        "chart": 2,
         "query": 2,
         "workflow": 3,
-        "maintenance": 2,
+        "maintenance": 1,
         "agents": 1
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 416
+      "tokens_estimate": 630,
+      "community_ids": [
+        "community-009"
+      ]
+    },
+    "llm_wiki/LLM 지식 아키텍처": {
+      "title": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서",
+      "path": "llm_wiki/LLM 지식 아키텍처.md",
+      "summary": "2023~2026년의 흐름을 한 문장으로 요약하면, **“큰 컨텍스트 창에 다 때려 넣는 방식”에서 “필요한 지식과 절차를 분리해 지속적으로 기억·갱신하는 방식”으로 이동**했다고 볼 수 있습니다. 2023년 MemGPT는 제한된 컨텍스트 윈도우를 계층형 메모리로 우회하는 문제를 제기했고, 2024년 Microsoft GraphRAG는 사설 문서 코퍼스에 대해 **그래프 인덱스 + 커뮤니티 요약**으로 전역 질문을 다루는 방법을 제시했습니다. 2025년 Zep/Graphiti와 Mem0는 장기 기",
+      "headings": [
+        "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서",
+        "Executive Summary",
+        "선정한 도구와 프레임워크",
+        "스킬 기반 지시와 wiki-LLM의 차이",
+        "성능 관점의 공개 근거와 재현 실험 설계",
+        "실제 적용 시나리오와 권장 아키텍처 패턴",
+        "장단점 요약과 의사결정 체크리스트",
+        "결론과 실무 권장사항"
+      ],
+      "tags": [],
+      "topics": [
+        "llm",
+        "기억",
+        "도구",
+        "비교",
+        "아키텍처와",
+        "장기",
+        "지식",
+        "컨텍스트"
+      ],
+      "entities": [
+        "2023",
+        "executive",
+        "llm",
+        "summary",
+        "기억",
+        "도구",
+        "방식",
+        "비교",
+        "선정한",
+        "아키텍처와",
+        "으로",
+        "장기"
+      ],
+      "terms": {
+        "llm": 5,
+        "지식": 4,
+        "아키텍처와": 4,
+        "장기": 5,
+        "기억": 5,
+        "도구": 4,
+        "비교": 4,
+        "보고서": 2,
+        "2023": 2,
+        "2026년의": 1,
+        "흐름을": 1,
+        "한": 1,
+        "문장으로": 1,
+        "요약하면": 1,
+        "큰": 1,
+        "컨텍스트": 3,
+        "창에": 1,
+        "다": 1,
+        "때려": 1,
+        "넣는": 1,
+        "방식": 3,
+        "에서": 1,
+        "필요한": 1,
+        "지식과": 1,
+        "절차를": 1,
+        "분리해": 1,
+        "지속적으로": 1,
+        "갱신하는": 1,
+        "으로": 3,
+        "이동": 1,
+        "했다고": 1,
+        "볼": 1,
+        "수": 1,
+        "있습니다": 1,
+        "2023년": 1,
+        "memgpt는": 1,
+        "제한된": 1,
+        "윈도우를": 1,
+        "계층형": 1,
+        "메모리로": 1,
+        "우회하는": 1,
+        "문제를": 1,
+        "제기했고": 1,
+        "2024년": 1,
+        "microsoft": 1,
+        "graphrag는": 1,
+        "사설": 1,
+        "문서": 1,
+        "코퍼스에": 1,
+        "대해": 1,
+        "그래프": 1,
+        "인덱스": 1,
+        "커뮤니티": 1,
+        "요약": 1,
+        "전역": 1,
+        "질문을": 1,
+        "다루는": 1,
+        "방법을": 1,
+        "제시했습니다": 1,
+        "2025년": 1,
+        "zep": 1,
+        "graphiti와": 1,
+        "mem0는": 1,
+        "기": 1,
+        "executive": 2,
+        "summary": 2,
+        "선정한": 2,
+        "도구와": 1,
+        "프레임워크": 1,
+        "스킬": 1,
+        "기반": 1,
+        "지시와": 1,
+        "wiki": 1,
+        "llm의": 1,
+        "차이": 1,
+        "성능": 1,
+        "관점의": 1,
+        "공개": 1,
+        "근거와": 1,
+        "재현": 1,
+        "실험": 1,
+        "설계": 1,
+        "실제": 1,
+        "적용": 1,
+        "시나리오와": 1,
+        "권장": 1,
+        "아키텍처": 2,
+        "패턴": 1,
+        "장단점": 1,
+        "요약과": 1,
+        "의사결정": 1,
+        "체크리스트": 1,
+        "결론과": 1,
+        "실무": 1,
+        "권장사항": 1,
+        "llm_wiki": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 5618,
+      "community_ids": [
+        "community-010"
+      ]
+    },
+    "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP": {
+      "title": "Obsidian Smart Connections Setup",
+      "path": "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
+      "summary": "This workspace already uses Obsidian for graph navigation and `llm_wiki` for graph-first indexing. Smart Connections should be treated as the semantic front-end inside Obsidian, not as a replacement for the wiki build.",
+      "headings": [
+        "Obsidian Smart Connections Setup",
+        "Goal",
+        "Preconditions",
+        "Community Plugin Install",
+        "Recommended Plugin Settings",
+        "Operating Pattern",
+        "Maintenance",
+        "Troubleshooting"
+      ],
+      "tags": [],
+      "topics": [
+        "as",
+        "connections",
+        "graph",
+        "obsidian",
+        "plugin",
+        "setup",
+        "smart",
+        "workspace"
+      ],
+      "entities": [
+        "already",
+        "as",
+        "community",
+        "connections",
+        "goal",
+        "graph",
+        "install",
+        "obsidian",
+        "plugin",
+        "preconditions",
+        "recommended",
+        "setup"
+      ],
+      "terms": {
+        "obsidian": 6,
+        "smart": 4,
+        "connections": 5,
+        "setup": 4,
+        "this": 1,
+        "workspace": 2,
+        "already": 2,
+        "uses": 1,
+        "for": 3,
+        "graph": 4,
+        "navigation": 1,
+        "and": 1,
+        "llm_wiki": 2,
+        "first": 1,
+        "indexing": 1,
+        "should": 1,
+        "be": 1,
+        "treated": 1,
+        "as": 4,
+        "the": 2,
+        "semantic": 1,
+        "front": 1,
+        "end": 1,
+        "inside": 1,
+        "not": 1,
+        "a": 1,
+        "replacement": 1,
+        "wiki": 1,
+        "build": 1,
+        "goal": 2,
+        "preconditions": 2,
+        "community": 2,
+        "plugin": 4,
+        "install": 2,
+        "recommended": 2,
+        "settings": 1,
+        "operating": 1,
+        "pattern": 1,
+        "maintenance": 1,
+        "troubleshooting": 1,
+        "obsidian_smart_connections_setup": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 564,
+      "community_ids": [
+        "community-011"
+      ]
     },
     "llm_wiki/README": {
       "title": "Local LLM Wiki",
@@ -545,7 +375,75 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 331
+      "tokens_estimate": 331,
+      "community_ids": [
+        "community-009"
+      ]
+    },
+    "memory_layer/README": {
+      "title": "Local Memory Layer",
+      "path": "memory_layer/README.md",
+      "summary": "This folder holds the change-aware fact memory stack for this workspace.",
+      "headings": [
+        "Local Memory Layer",
+        "Stack",
+        "Files",
+        "Commands",
+        "Intended Use"
+      ],
+      "tags": [],
+      "topics": [
+        "aware",
+        "change",
+        "folder",
+        "holds",
+        "layer",
+        "local",
+        "memory",
+        "stack"
+      ],
+      "entities": [
+        "aware",
+        "change",
+        "commands",
+        "files",
+        "folder",
+        "holds",
+        "intended",
+        "layer",
+        "local",
+        "memory",
+        "stack",
+        "use"
+      ],
+      "terms": {
+        "local": 4,
+        "memory": 5,
+        "layer": 4,
+        "this": 2,
+        "folder": 3,
+        "holds": 3,
+        "the": 1,
+        "change": 3,
+        "aware": 3,
+        "fact": 1,
+        "stack": 4,
+        "for": 1,
+        "workspace": 1,
+        "files": 2,
+        "commands": 2,
+        "intended": 2,
+        "use": 2,
+        "memory_layer": 1,
+        "readme": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 325,
+      "community_ids": [
+        "community-012"
+      ]
     },
     "notion_app_date_filter_fallback_skill/SKILL": {
       "title": "Notion App Date Filter Fallback Skill",
@@ -660,7 +558,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 469
+      "tokens_estimate": 469,
+      "community_ids": [
+        "community-013"
+      ]
     },
     "orange_example_10/bodyfat_analysis_report": {
       "title": "Body Fat Brozek 시각 분석 보고서 (미리보기 중심)",
@@ -765,7 +666,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 1549
+      "tokens_estimate": 1549,
+      "community_ids": [
+        "community-014"
+      ]
     },
     "orange_example_10/titanic_adaboost_report": {
       "title": "Titanic AdaBoost 분석 보고서",
@@ -855,7 +759,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 226
+      "tokens_estimate": 226,
+      "community_ids": [
+        "community-015"
+      ]
     },
     "orange_example_10/titanic_survival_report": {
       "title": "Titanic 생존 분석 보고서",
@@ -943,7 +850,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 883
+      "tokens_estimate": 883,
+      "community_ids": [
+        "community-016"
+      ]
     },
     "README": {
       "title": "AxDxConsultant",
@@ -1005,7 +915,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 1578
+      "tokens_estimate": 1578,
+      "community_ids": [
+        "community-017"
+      ]
     },
     "skills/local-whisper-gpu/SKILL": {
       "title": "Local Whisper GPU",
@@ -1088,7 +1001,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 612
+      "tokens_estimate": 612,
+      "community_ids": [
+        "community-018"
+      ]
     },
     "skills/troubleshooting": {
       "title": "Troubleshooting",
@@ -1203,7 +1119,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 852
+      "tokens_estimate": 852,
+      "community_ids": [
+        "community-019"
+      ]
     },
     "skills/wiki-llm-setup/SKILL": {
       "title": "Wiki LLM Setup",
@@ -1296,7 +1215,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 758
+      "tokens_estimate": 758,
+      "community_ids": [
+        "community-020"
+      ]
     },
     "실습결과물/06/00-INDEX": {
       "title": "실습결과물 06 인덱스",
@@ -1356,7 +1278,10 @@
         "실습결과물/06/paperclipai사업계획서"
       ],
       "inbound_count": 0,
-      "tokens_estimate": 87
+      "tokens_estimate": 87,
+      "community_ids": [
+        "community-007"
+      ]
     },
     "실습결과물/06/deep-research-report": {
       "title": "PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지",
@@ -1522,7 +1447,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 6315
+      "tokens_estimate": 6315,
+      "community_ids": [
+        "community-007"
+      ]
     },
     "실습결과물/06/mermaidTest": {
       "title": "머메이드 테스트",
@@ -1568,7 +1496,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 56
+      "tokens_estimate": 56,
+      "community_ids": [
+        "community-007"
+      ]
     },
     "실습결과물/06/paperclipai교육요약": {
       "title": "2. 교육 요약본 (1페이지)",
@@ -1650,7 +1581,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 242
+      "tokens_estimate": 242,
+      "community_ids": [
+        "community-007"
+      ]
     },
     "실습결과물/06/paperclipai사업계획서": {
       "title": "1. 사업계획서 (요약형)",
@@ -1748,7 +1682,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 418
+      "tokens_estimate": 418,
+      "community_ids": [
+        "community-007"
+      ]
     },
     "실습결과물/07/00-INDEX": {
       "title": "실습결과물 07 인덱스",
@@ -1815,7 +1752,10 @@
         "실습결과물/07/업무분석보고서"
       ],
       "inbound_count": 1,
-      "tokens_estimate": 88
+      "tokens_estimate": 88,
+      "community_ids": [
+        "community-004"
+      ]
     },
     "실습결과물/07/01-업무-흐름-구조화": {
       "title": "1. 업무 흐름 구조화",
@@ -1894,7 +1834,10 @@
       },
       "neighbors": [],
       "inbound_count": 3,
-      "tokens_estimate": 63
+      "tokens_estimate": 63,
+      "community_ids": [
+        "community-004"
+      ]
     },
     "실습결과물/07/02-업무-흐름-mermaid": {
       "title": "업무 흐름 (Mermaid)",
@@ -1950,7 +1893,10 @@
       },
       "neighbors": [],
       "inbound_count": 3,
-      "tokens_estimate": 310
+      "tokens_estimate": 310,
+      "community_ids": [
+        "community-004"
+      ]
     },
     "실습결과물/07/03-업무-비효율-수치화-템플릿": {
       "title": "나의 업무 비효율 수치화 템플릿 작성",
@@ -2030,7 +1976,10 @@
       },
       "neighbors": [],
       "inbound_count": 3,
-      "tokens_estimate": 54
+      "tokens_estimate": 54,
+      "community_ids": [
+        "community-004"
+      ]
     },
     "실습결과물/07/04-as-is-프로세스-스케치": {
       "title": "AS-IS 프로세스 스케치",
@@ -2099,7 +2048,10 @@
       },
       "neighbors": [],
       "inbound_count": 3,
-      "tokens_estimate": 180
+      "tokens_estimate": 180,
+      "community_ids": [
+        "community-004"
+      ]
     },
     "실습결과물/07/5가지단계로 나누기": {
       "title": "나의 어제 하루 업무 5단계 쪼개기",
@@ -2156,7 +2108,10 @@
         "실습결과물/07/04-as-is-프로세스-스케치"
       ],
       "inbound_count": 2,
-      "tokens_estimate": 59
+      "tokens_estimate": 59,
+      "community_ids": [
+        "community-004"
+      ]
     },
     "실습결과물/07/업무분석보고서": {
       "title": "업무분석보고서",
@@ -2284,7 +2239,10 @@
         "실습결과물/07/5가지단계로 나누기"
       ],
       "inbound_count": 1,
-      "tokens_estimate": 2846
+      "tokens_estimate": 2846,
+      "community_ids": [
+        "community-004"
+      ]
     },
     "실습결과물/08/00-INDEX": {
       "title": "실습결과물 08 인덱스",
@@ -2355,7 +2313,10 @@
         "실습결과물/08/업무리스트"
       ],
       "inbound_count": 0,
-      "tokens_estimate": 106
+      "tokens_estimate": 106,
+      "community_ids": [
+        "community-005"
+      ]
     },
     "실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스": {
       "title": "나의 핵심 업무 리스트업",
@@ -2417,7 +2378,10 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 374
+      "tokens_estimate": 374,
+      "community_ids": [
+        "community-005"
+      ]
     },
     "실습결과물/08/02-AI-활용영역-보조-요약-생성-분석": {
       "title": "02-AI-활용영역-보조-요약-생성-분석",
@@ -2498,7 +2462,10 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 424
+      "tokens_estimate": 424,
+      "community_ids": [
+        "community-005"
+      ]
     },
     "실습결과물/08/03-정량평가-우선순위": {
       "title": "03-정량평가-우선순위",
@@ -2602,7 +2569,10 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 350
+      "tokens_estimate": 350,
+      "community_ids": [
+        "community-005"
+      ]
     },
     "실습결과물/08/04-value-estimation-canvas": {
       "title": "📊 나의 Value Estimation Canvas",
@@ -2688,7 +2658,10 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 220
+      "tokens_estimate": 220,
+      "community_ids": [
+        "community-005"
+      ]
     },
     "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우": {
       "title": "명세서 초안 자동 생성 AI 워크플로우",
@@ -2770,7 +2743,10 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 623
+      "tokens_estimate": 623,
+      "community_ids": [
+        "community-005"
+      ]
     },
     "실습결과물/08/업무리스트": {
       "title": "나의 핵심 업무 리스트업",
@@ -2823,7 +2799,10 @@
         "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우"
       ],
       "inbound_count": 1,
-      "tokens_estimate": 84
+      "tokens_estimate": 84,
+      "community_ids": [
+        "community-005"
+      ]
     },
     "실습결과물/09/00-INDEX": {
       "title": "실습결과물 09 인덱스",
@@ -2884,7 +2863,10 @@
         "실습결과물/09/현상에서문제로"
       ],
       "inbound_count": 0,
-      "tokens_estimate": 54
+      "tokens_estimate": 54,
+      "community_ids": [
+        "community-008"
+      ]
     },
     "실습결과물/09/노래요청": {
       "title": "suno 노래 요청",
@@ -2942,7 +2924,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 269
+      "tokens_estimate": 269,
+      "community_ids": [
+        "community-008"
+      ]
     },
     "실습결과물/09/문제 정의서": {
       "title": "📄 AI 협업 기반 문제 정의서 (Master Document)",
@@ -3069,7 +3054,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 612
+      "tokens_estimate": 612,
+      "community_ids": [
+        "community-008"
+      ]
     },
     "실습결과물/09/미션20대여성상품": {
       "title": "1. 가성비 인식 개선 아이디어 20가지",
@@ -3192,7 +3180,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 526
+      "tokens_estimate": 526,
+      "community_ids": [
+        "community-008"
+      ]
     },
     "실습결과물/09/현상에서문제로": {
       "title": "문제 정의 정리",
@@ -3310,7 +3301,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 518
+      "tokens_estimate": 518,
+      "community_ids": [
+        "community-008"
+      ]
     },
     "실습결과물/13/00-INDEX": {
       "title": "실습결과물 13 인덱스",
@@ -3384,7 +3378,10 @@
         "실습결과물/13/해양드론조사보고서"
       ],
       "inbound_count": 0,
-      "tokens_estimate": 102
+      "tokens_estimate": 102,
+      "community_ids": [
+        "community-006"
+      ]
     },
     "실습결과물/13/AIDX_5일차_교시별_요약": {
       "title": "AIDX_5일차_교시별_요약",
@@ -3462,7 +3459,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 375
+      "tokens_estimate": 375,
+      "community_ids": [
+        "community-006"
+      ]
     },
     "실습결과물/13/광물자료조사": {
       "title": "광물자료조사",
@@ -3589,7 +3589,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 1359
+      "tokens_estimate": 1359,
+      "community_ids": [
+        "community-006"
+      ]
     },
     "실습결과물/13/노트북lm 수업 요약보고서": {
       "title": "노트북lm 수업 요약보고서",
@@ -3636,7 +3639,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 965
+      "tokens_estimate": 965,
+      "community_ids": [
+        "community-006"
+      ]
     },
     "실습결과물/13/블로그 형태": {
       "title": "블로그 형태",
@@ -3682,7 +3688,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 634
+      "tokens_estimate": 634,
+      "community_ids": [
+        "community-006"
+      ]
     },
     "실습결과물/13/수중드론_블로그": {
       "title": "수중드론_블로그",
@@ -3725,7 +3734,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 750
+      "tokens_estimate": 750,
+      "community_ids": [
+        "community-006"
+      ]
     },
     "실습결과물/13/수중드론_사업화_기획안": {
       "title": "수중드론 사업화 기획안(운영형)",
@@ -3846,7 +3858,10 @@
       },
       "neighbors": [],
       "inbound_count": 3,
-      "tokens_estimate": 1242
+      "tokens_estimate": 1242,
+      "community_ids": [
+        "community-003"
+      ]
     },
     "실습결과물/13/해양드론딥리서치결과": {
       "title": "해양드론을 활용한 사업화 가능성 분석 보고서",
@@ -4007,7 +4022,10 @@
       },
       "neighbors": [],
       "inbound_count": 3,
-      "tokens_estimate": 5617
+      "tokens_estimate": 5617,
+      "community_ids": [
+        "community-003"
+      ]
     },
     "실습결과물/13/해양드론조사보고서": {
       "title": "해양드론 조사 보고서",
@@ -4107,7 +4125,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 1875
+      "tokens_estimate": 1875,
+      "community_ids": [
+        "community-006"
+      ]
     },
     "실습결과물/14/00-INDEX": {
       "title": "실습결과물 14 인덱스",
@@ -4180,7 +4201,10 @@
         "실습결과물/14/이메일발송프롬프트"
       ],
       "inbound_count": 4,
-      "tokens_estimate": 97
+      "tokens_estimate": 97,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/14/10-주간업무일지-INDEX": {
       "title": "주간 업무일지 인덱스",
@@ -4242,7 +4266,10 @@
         "실습결과물/14/업무일지 작성프롬프트"
       ],
       "inbound_count": 1,
-      "tokens_estimate": 90
+      "tokens_estimate": 90,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/14/20-수중드론-INDEX": {
       "title": "수중드론 사업화 인덱스",
@@ -4317,7 +4344,10 @@
         "실습결과물/14/수중드론_사업화_타당성"
       ],
       "inbound_count": 2,
-      "tokens_estimate": 123
+      "tokens_estimate": 123,
+      "community_ids": [
+        "community-003"
+      ]
     },
     "실습결과물/14/2026_3_13_주간 업무일지": {
       "title": "🗓️ 주간 업무 보고서",
@@ -4407,7 +4437,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 401
+      "tokens_estimate": 401,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/14/2026_3_20_주간 업무일지": {
       "title": "🗓️ 주간 업무 보고서",
@@ -4497,7 +4530,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 376
+      "tokens_estimate": 376,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/14/2026_3_27_주간 업무일지": {
       "title": "🗓️ 주간 업무 보고서",
@@ -4587,7 +4623,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 358
+      "tokens_estimate": 358,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/14/2026_4_10_주간 업무일지": {
       "title": "🗓️ 주간 업무 보고서",
@@ -4677,7 +4716,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 376
+      "tokens_estimate": 376,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/14/2026_4_3_주간 업무일지": {
       "title": "🗓️ 주간 업무 보고서",
@@ -4768,7 +4810,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 440
+      "tokens_estimate": 440,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/14/30-소설-INDEX": {
       "title": "소설 프로젝트 인덱스",
@@ -4839,7 +4884,10 @@
         "실습결과물/14/시대상 과 역사적 사실"
       ],
       "inbound_count": 1,
-      "tokens_estimate": 86
+      "tokens_estimate": 86,
+      "community_ids": [
+        "community-002"
+      ]
     },
     "실습결과물/14/AI요청 프롬프트": {
       "title": "AI요청 프롬프트",
@@ -4892,7 +4940,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 184
+      "tokens_estimate": 184,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/14/고려빙의_스토리라인": {
       "title": "철혈의 새벽: 고려의 그림자 설계자",
@@ -4965,7 +5016,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 561
+      "tokens_estimate": 561,
+      "community_ids": [
+        "community-002"
+      ]
     },
     "실습결과물/14/소설1권": {
       "title": "철혈의 새벽: 고려의 그림자 설계자",
@@ -5103,7 +5157,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 2819
+      "tokens_estimate": 2819,
+      "community_ids": [
+        "community-002"
+      ]
     },
     "실습결과물/14/소설2권": {
       "title": "철혈의 새벽: 고려의 그림자 설계자",
@@ -5275,7 +5332,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 1836
+      "tokens_estimate": 1836,
+      "community_ids": [
+        "community-002"
+      ]
     },
     "실습결과물/14/소설3권": {
       "title": "철혈의 새벽: 고려의 그림자 설계자",
@@ -5430,7 +5490,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 1721
+      "tokens_estimate": 1721,
+      "community_ids": [
+        "community-002"
+      ]
     },
     "실습결과물/14/소설4권": {
       "title": "철혈의 새벽: 고려의 그림자 설계자",
@@ -5593,7 +5656,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 1572
+      "tokens_estimate": 1572,
+      "community_ids": [
+        "community-002"
+      ]
     },
     "실습결과물/14/소설5권": {
       "title": "철혈의 새벽: 고려의 그림자 설계자",
@@ -5741,7 +5807,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 1435
+      "tokens_estimate": 1435,
+      "community_ids": [
+        "community-002"
+      ]
     },
     "실습결과물/14/소설_목차_5부작": {
       "title": "철혈의 새벽: 고려의 그림자 설계자 (5부작)",
@@ -5843,7 +5912,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 160
+      "tokens_estimate": 160,
+      "community_ids": [
+        "community-002"
+      ]
     },
     "실습결과물/14/소설_연속작성_토큰로그": {
       "title": "소설 5부작 작성 로그 (컨텍스트 압축 + 토큰 추정)",
@@ -5930,7 +6002,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 197
+      "tokens_estimate": 197,
+      "community_ids": [
+        "community-002"
+      ]
     },
     "실습결과물/14/수중드론_사업화_1페이지_BLUF": {
       "title": "수중드론 사업화 1페이지 요약안 (BLUF)",
@@ -6023,7 +6098,10 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 420
+      "tokens_estimate": 420,
+      "community_ids": [
+        "community-003"
+      ]
     },
     "실습결과물/14/수중드론_사업화_1페이지_BLUF_열정설득서술형": {
       "title": "수중드론 사업화 1페이지 제안서 (열정·설득 서술형)",
@@ -6119,7 +6197,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 334
+      "tokens_estimate": 334,
+      "community_ids": [
+        "community-003"
+      ]
     },
     "실습결과물/14/수중드론_사업화_1페이지_BLUF_포멀서술형": {
       "title": "수중드론 사업화 1페이지 보고서 (포멀 서술형)",
@@ -6221,7 +6302,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 365
+      "tokens_estimate": 365,
+      "community_ids": [
+        "community-003"
+      ]
     },
     "실습결과물/14/수중드론_사업화_기획안": {
       "title": "수중드론 사업화 기획안(운영형)",
@@ -6354,7 +6438,10 @@
         "실습결과물/14/수중드론_사업화_타당성"
       ],
       "inbound_count": 1,
-      "tokens_estimate": 1324
+      "tokens_estimate": 1324,
+      "community_ids": [
+        "community-003"
+      ]
     },
     "실습결과물/14/수중드론_사업화_상세기획안": {
       "title": "수중드론 사업화 상세 기획안",
@@ -6487,7 +6574,10 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 1607
+      "tokens_estimate": 1607,
+      "community_ids": [
+        "community-003"
+      ]
     },
     "실습결과물/14/수중드론_사업화_타당성": {
       "title": "수중드론 사업화 운영안 초안 타당성 검증 및 객관적 피드백 보고서",
@@ -6616,7 +6706,10 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 3708
+      "tokens_estimate": 3708,
+      "community_ids": [
+        "community-003"
+      ]
     },
     "실습결과물/14/시대상 과 역사적 사실": {
       "title": "후삼국~고려 건국기 시대상과 역사적 사실 검증 메모 (889~936)",
@@ -6750,7 +6843,10 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 714
+      "tokens_estimate": 714,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/14/업무일지 작성프롬프트": {
       "title": "업무일지 작성 프롬프트",
@@ -6815,7 +6911,10 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 122
+      "tokens_estimate": 122,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/14/이메일발송프롬프트": {
       "title": "이메일 발송 프롬프트",
@@ -6877,7 +6976,10 @@
       },
       "neighbors": [],
       "inbound_count": 1,
-      "tokens_estimate": 62
+      "tokens_estimate": 62,
+      "community_ids": [
+        "community-001"
+      ]
     },
     "실습결과물/15/00-INDEX": {
       "title": "실습결과물 15 인덱스",
@@ -6941,7 +7043,10 @@
         "실습결과물/15/wikiLLM"
       ],
       "inbound_count": 1,
-      "tokens_estimate": 71
+      "tokens_estimate": 71,
+      "community_ids": [
+        "community-009"
+      ]
     },
     "실습결과물/15/wikiLLM": {
       "title": "wikillm 을 구현하기 위한 프롬프트",
@@ -7011,7 +7116,10 @@
         "실습결과물/15/00-INDEX"
       ],
       "inbound_count": 1,
-      "tokens_estimate": 101
+      "tokens_estimate": 101,
+      "community_ids": [
+        "community-009"
+      ]
     },
     "실습결과물/15/Youtube 영상 스크립트": {
       "title": "Youtube 영상 스크립트",
@@ -7055,7 +7163,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 1978
+      "tokens_estimate": 1978,
+      "community_ids": [
+        "community-021"
+      ]
     },
     "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서": {
       "title": "Graphify 기반 LLM Wiki 활용 1페이지 요약보고서",
@@ -7156,7 +7267,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 522
+      "tokens_estimate": 522,
+      "community_ids": [
+        "community-022"
+      ]
     },
     "실습결과물/15/YouTube 영상 요약본": {
       "title": "YouTube 영상 요약본",
@@ -7185,7 +7299,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 298
+      "tokens_estimate": 298,
+      "community_ids": [
+        "community-023"
+      ]
     },
     "실습결과물/15/로컬 whisper 모델 설치 프롬프트": {
       "title": "whisper 모델 설치 프롬프트",
@@ -7249,7 +7366,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 62
+      "tokens_estimate": 62,
+      "community_ids": [
+        "community-024"
+      ]
     },
     "실습결과물/16/imports-85_actual_data_summary": {
       "title": "imports-85 실제데이터 기반 요약보고서",
@@ -7368,7 +7488,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 597
+      "tokens_estimate": 597,
+      "community_ids": [
+        "community-025"
+      ]
     },
     "실습결과물/16/imports-85_interactive_report": {
       "title": "자동차 모델 가격·성능·연비 관계 인터랙티브 보고서",
@@ -7481,7 +7604,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 2720
+      "tokens_estimate": 2720,
+      "community_ids": [
+        "community-026"
+      ]
     },
     "실습결과물/16/imports-85_report": {
       "title": "imports-85 정제 보고서",
@@ -7557,7 +7683,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 2434
+      "tokens_estimate": 2434,
+      "community_ids": [
+        "community-027"
+      ]
     },
     "실습결과물/16/retail_sales_report_assets/README": {
       "title": "Retail Sales Seaborn Graphs",
@@ -7621,7 +7750,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 274
+      "tokens_estimate": 274,
+      "community_ids": [
+        "community-028"
+      ]
     },
     "실습결과물/16/retail_sales_trend_onepage_report": {
       "title": "Retail Sales 추세 1페이지 보고서",
@@ -7715,7 +7847,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 804
+      "tokens_estimate": 804,
+      "community_ids": [
+        "community-029"
+      ]
     },
     "실습결과물/16/리테일 분석판매보고서노트북LM": {
       "title": "리테일 분석판매보고서노트북LM",
@@ -7754,7 +7889,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 830
+      "tokens_estimate": 830,
+      "community_ids": [
+        "community-030"
+      ]
     },
     "실습결과물/16/매출분석에 쓰인 프롬프트": {
       "title": "매출 분석에 쓰인 프롬프트",
@@ -7825,7 +7963,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 290
+      "tokens_estimate": 290,
+      "community_ids": [
+        "community-031"
+      ]
     },
     "실습결과물/16/자동차수출예제관련프롬프트": {
       "title": "자동차 수출 관련 예제 프롬프트",
@@ -7860,7 +8001,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 962
+      "tokens_estimate": 962,
+      "community_ids": [
+        "community-032"
+      ]
     },
     "실습결과물/16/한페이지요약 HRD AX 수업도향": {
       "title": "📊 2026 HRD Trend Report 요약",
@@ -7935,7 +8079,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 293
+      "tokens_estimate": 293,
+      "community_ids": [
+        "community-033"
+      ]
     },
     "실습결과물/17/02 Project Management_manager_ranking_report": {
       "title": "Project Management 매니저 성과 1페이지 요약 보고서",
@@ -8033,7 +8180,99 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 841
+      "tokens_estimate": 841,
+      "community_ids": [
+        "community-034"
+      ]
+    },
+    "실습결과물/17/02 Project Management_SCQA_insight_report": {
+      "title": "프로젝트 포트폴리오 SCQA 인사이트 리포트",
+      "path": "실습결과물/17/02 Project Management_SCQA_insight_report.md",
+      "summary": "프로젝트 포트폴리오 성과 저하는 전체 실행력 붕괴보다 `연도 효과 + 매니저별 backlog 편차`로 설명된다",
+      "headings": [
+        "프로젝트 포트폴리오 SCQA 인사이트 리포트",
+        "제목",
+        "S (Situation / 상황)",
+        "C (Complication / 문제)",
+        "Q (Question / 질문)",
+        "A (Answer / 해결책)",
+        "결론 및 액션",
+        "근거 시각화"
+      ],
+      "tags": [],
+      "topics": [
+        "scqa",
+        "리포트",
+        "성과",
+        "실행력",
+        "인사이트",
+        "저하는",
+        "전체",
+        "포트폴리오"
+      ],
+      "entities": [
+        "complication",
+        "question",
+        "scqa",
+        "situation",
+        "리포트",
+        "문제",
+        "상황",
+        "성과",
+        "실행력",
+        "인사이트",
+        "저하는",
+        "전체"
+      ],
+      "terms": {
+        "프로젝트": 3,
+        "포트폴리오": 4,
+        "scqa": 4,
+        "인사이트": 4,
+        "리포트": 4,
+        "성과": 3,
+        "저하는": 3,
+        "전체": 3,
+        "실행력": 3,
+        "붕괴보다": 1,
+        "연도": 1,
+        "효과": 1,
+        "매니저별": 1,
+        "backlog": 1,
+        "편차": 1,
+        "로": 1,
+        "설명된다": 1,
+        "제목": 1,
+        "s": 1,
+        "situation": 2,
+        "상황": 2,
+        "c": 1,
+        "complication": 2,
+        "문제": 2,
+        "q": 1,
+        "question": 2,
+        "질문": 1,
+        "a": 1,
+        "answer": 1,
+        "해결책": 1,
+        "결론": 1,
+        "및": 1,
+        "액션": 1,
+        "근거": 1,
+        "시각화": 1,
+        "실습결과물": 1,
+        "17": 1,
+        "02": 1,
+        "project": 1,
+        "management_scqa_insight_report": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 602,
+      "community_ids": [
+        "community-035"
+      ]
     },
     "실습결과물/17/02 Project Management_summary_report": {
       "title": "Project Management 데이터 1페이지 요약 보고서",
@@ -8138,7 +8377,204 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 481
+      "tokens_estimate": 481,
+      "community_ids": [
+        "community-036"
+      ]
+    },
+    "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report": {
+      "title": "E-Commerce Orders 매장별 일매출 이상치 분석 보고서",
+      "path": "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report.md",
+      "summary": "원본 파일: `08 E-Commerce Orders.xlsx` - 매장 정의: 별도 `Store` 컬럼이 없어 `Region`을 매장으로 간주 - 집계 방식: `Store × Order Date` 기준으로 `Total Revenue` 합계를 계산하여 일매출 생성 - 생성 CSV: `08 E-Commerce Orders_daily_sales_by_store.csv` - 생성 레코드 수: `871건`",
+      "headings": [
+        "E-Commerce Orders 매장별 일매출 이상치 분석 보고서",
+        "전처리",
+        "기본 IQR 1.5배 결과",
+        "조정된 IQR 배수",
+        "이상치 의미 분석",
+        "매장별 분포 비교",
+        "결론"
+      ],
+      "tags": [],
+      "topics": [
+        "08",
+        "commerce",
+        "orders",
+        "매장별",
+        "분석",
+        "생성",
+        "이상치",
+        "일매출"
+      ],
+      "entities": [
+        "08",
+        "5배",
+        "commerce",
+        "csv",
+        "iqr",
+        "orders",
+        "store",
+        "기본",
+        "매장별",
+        "분석",
+        "생성",
+        "이상치"
+      ],
+      "terms": {
+        "e": 5,
+        "commerce": 7,
+        "orders": 5,
+        "매장별": 5,
+        "일매출": 4,
+        "이상치": 5,
+        "분석": 5,
+        "보고서": 2,
+        "원본": 1,
+        "파일": 1,
+        "08": 5,
+        "xlsx": 1,
+        "매장": 1,
+        "정의": 1,
+        "별도": 1,
+        "store": 3,
+        "컬럼이": 1,
+        "없어": 1,
+        "region": 1,
+        "을": 1,
+        "매장으로": 1,
+        "간주": 1,
+        "집계": 1,
+        "방식": 1,
+        "order": 1,
+        "date": 1,
+        "기준으로": 1,
+        "total": 1,
+        "revenue": 1,
+        "합계를": 1,
+        "계산하여": 1,
+        "생성": 5,
+        "csv": 3,
+        "orders_daily_sales_by_store": 1,
+        "레코드": 1,
+        "수": 1,
+        "871건": 1,
+        "전처리": 1,
+        "기본": 2,
+        "iqr": 3,
+        "1": 1,
+        "5배": 2,
+        "결과": 1,
+        "조정된": 1,
+        "배수": 1,
+        "의미": 1,
+        "분포": 1,
+        "비교": 1,
+        "결론": 1,
+        "실습결과물": 1,
+        "17": 1,
+        "orders_daily_sales_outlier_report": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 1360,
+      "community_ids": [
+        "community-037"
+      ]
+    },
+    "실습결과물/17/08 E-Commerce Orders_price_outlier_report": {
+      "title": "E-Commerce Orders 가격 이상치 분석 보고서",
+      "path": "실습결과물/17/08 E-Commerce Orders_price_outlier_report.md",
+      "summary": "대상 파일: `08 E-Commerce Orders.xlsx` - 가격 변수: `Unit Price` - 기본 규칙: 박스플롯 기준 `IQR 1.5배` - 조정 규칙: 이상치 비율이 `5%`를 넘으면, 이상치 비율이 `1% 이하`가 되는 최소 배수로 상향 조정",
+      "headings": [
+        "E-Commerce Orders 가격 이상치 분석 보고서",
+        "분석 기준",
+        "1. 기본 IQR 1.5배 결과",
+        "2. 조정된 IQR 배수",
+        "3. 이상치의 의미",
+        "4. 카테고리별 확인",
+        "결론"
+      ],
+      "tags": [],
+      "topics": [
+        "commerce",
+        "iqr",
+        "orders",
+        "가격",
+        "규칙",
+        "기본",
+        "분석",
+        "이상치"
+      ],
+      "entities": [
+        "5배",
+        "commerce",
+        "iqr",
+        "orders",
+        "가격",
+        "결과",
+        "규칙",
+        "기본",
+        "기준",
+        "대상",
+        "분석",
+        "비율이"
+      ],
+      "terms": {
+        "e": 4,
+        "commerce": 6,
+        "orders": 5,
+        "가격": 5,
+        "이상치": 5,
+        "분석": 5,
+        "보고서": 2,
+        "대상": 2,
+        "파일": 1,
+        "08": 2,
+        "xlsx": 1,
+        "변수": 1,
+        "unit": 1,
+        "price": 1,
+        "기본": 4,
+        "규칙": 4,
+        "박스플롯": 1,
+        "기준": 3,
+        "iqr": 5,
+        "1": 4,
+        "5배": 3,
+        "조정": 2,
+        "비율이": 3,
+        "5": 1,
+        "를": 1,
+        "넘으면": 1,
+        "이하": 1,
+        "가": 1,
+        "되는": 1,
+        "최소": 1,
+        "배수로": 1,
+        "상향": 1,
+        "결과": 2,
+        "2": 1,
+        "조정된": 1,
+        "배수": 1,
+        "3": 1,
+        "이상치의": 1,
+        "의미": 1,
+        "4": 1,
+        "카테고리별": 1,
+        "확인": 1,
+        "결론": 1,
+        "실습결과물": 1,
+        "17": 1,
+        "orders_price_outlier_report": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 1088,
+      "community_ids": [
+        "community-038"
+      ]
     },
     "실습결과물/17/project Magement_blog": {
       "title": "project Magement_blog",
@@ -8184,7 +8620,10 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 738
+      "tokens_estimate": 738,
+      "community_ids": [
+        "community-039"
+      ]
     },
     "실습결과물/17/엑셀처리프롬프트": {
       "title": "엑셀 데이터 처리 프롬프트",
@@ -8259,7 +8698,3363 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 164
+      "tokens_estimate": 164,
+      "community_ids": [
+        "community-040"
+      ]
+    }
+  },
+  "communities": {
+    "community-001": {
+      "summary": "실습결과물 14 인덱스 중심의 지식 군집입니다. 핵심 주제는 주간, 2026년, 업무, 진행이며, 대표 문서는 실습결과물 14 인덱스, 주간 업무일지 인덱스, 🗓️ 주간 업무 보고서, 🗓️ 주간 업무 보고서 입니다.",
+      "top_tags": [
+        [
+          "day14",
+          2
+        ],
+        [
+          "실습결과물",
+          2
+        ],
+        [
+          "업무일지",
+          2
+        ],
+        [
+          "소설",
+          1
+        ],
+        [
+          "수중드론",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ],
+        [
+          "주간리포트",
+          1
+        ]
+      ],
+      "top_topics": [
+        [
+          "주간",
+          6
+        ],
+        [
+          "2026년",
+          5
+        ],
+        [
+          "업무",
+          5
+        ],
+        [
+          "진행",
+          5
+        ],
+        [
+          "프롬프트",
+          4
+        ],
+        [
+          "3월",
+          4
+        ],
+        [
+          "주요",
+          4
+        ],
+        [
+          "업무일지",
+          3
+        ]
+      ],
+      "top_entities": [
+        [
+          "주간",
+          6
+        ],
+        [
+          "2026년",
+          5
+        ],
+        [
+          "기간",
+          5
+        ],
+        [
+          "업무",
+          5
+        ],
+        [
+          "일자별",
+          5
+        ],
+        [
+          "주요",
+          5
+        ],
+        [
+          "진행",
+          5
+        ],
+        [
+          "프롬프트",
+          4
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/14/00-INDEX",
+        "실습결과물/14/10-주간업무일지-INDEX",
+        "실습결과물/14/2026_3_13_주간 업무일지",
+        "실습결과물/14/2026_3_20_주간 업무일지",
+        "실습결과물/14/2026_3_27_주간 업무일지",
+        "실습결과물/14/2026_4_10_주간 업무일지",
+        "실습결과물/14/2026_4_3_주간 업무일지",
+        "실습결과물/14/AI요청 프롬프트",
+        "실습결과물/14/시대상 과 역사적 사실",
+        "실습결과물/14/업무일지 작성프롬프트",
+        "실습결과물/14/이메일발송프롬프트"
+      ],
+      "paths": [
+        "실습결과물/14/00-INDEX.md",
+        "실습결과물/14/10-주간업무일지-INDEX.md",
+        "실습결과물/14/2026_3_13_주간 업무일지.md",
+        "실습결과물/14/2026_3_20_주간 업무일지.md",
+        "실습결과물/14/2026_3_27_주간 업무일지.md",
+        "실습결과물/14/2026_4_10_주간 업무일지.md",
+        "실습결과물/14/2026_4_3_주간 업무일지.md",
+        "실습결과물/14/AI요청 프롬프트.md",
+        "실습결과물/14/시대상 과 역사적 사실.md",
+        "실습결과물/14/업무일지 작성프롬프트.md",
+        "실습결과물/14/이메일발송프롬프트.md"
+      ]
+    },
+    "community-002": {
+      "summary": "소설 프로젝트 인덱스 중심의 지식 군집입니다. 핵심 주제는 고려의, 그림자, 새벽, 설계자이며, 대표 문서는 소설 프로젝트 인덱스, 철혈의 새벽: 고려의 그림자 설계자, 철혈의 새벽: 고려의 그림자 설계자, 철혈의 새벽: 고려의 그림자 설계자 입니다.",
+      "top_tags": [
+        [
+          "day14",
+          1
+        ],
+        [
+          "목파5부작",
+          1
+        ],
+        [
+          "소설",
+          1
+        ],
+        [
+          "스토리",
+          1
+        ],
+        [
+          "실습결과물",
+          1
+        ]
+      ],
+      "top_topics": [
+        [
+          "고려의",
+          7
+        ],
+        [
+          "그림자",
+          7
+        ],
+        [
+          "새벽",
+          7
+        ],
+        [
+          "설계자",
+          7
+        ],
+        [
+          "철혈의",
+          7
+        ],
+        [
+          "소설",
+          2
+        ],
+        [
+          "송악의",
+          2
+        ],
+        [
+          "왕융은",
+          2
+        ]
+      ],
+      "top_entities": [
+        [
+          "고려의",
+          7
+        ],
+        [
+          "그림자",
+          7
+        ],
+        [
+          "새벽",
+          7
+        ],
+        [
+          "설계자",
+          7
+        ],
+        [
+          "소설",
+          6
+        ],
+        [
+          "압축",
+          5
+        ],
+        [
+          "2권",
+          3
+        ],
+        [
+          "송악의",
+          3
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/14/30-소설-INDEX",
+        "실습결과물/14/고려빙의_스토리라인",
+        "실습결과물/14/소설1권",
+        "실습결과물/14/소설2권",
+        "실습결과물/14/소설3권",
+        "실습결과물/14/소설4권",
+        "실습결과물/14/소설5권",
+        "실습결과물/14/소설_목차_5부작",
+        "실습결과물/14/소설_연속작성_토큰로그"
+      ],
+      "paths": [
+        "실습결과물/14/30-소설-INDEX.md",
+        "실습결과물/14/고려빙의_스토리라인.md",
+        "실습결과물/14/소설1권.md",
+        "실습결과물/14/소설2권.md",
+        "실습결과물/14/소설3권.md",
+        "실습결과물/14/소설4권.md",
+        "실습결과물/14/소설5권.md",
+        "실습결과물/14/소설_목차_5부작.md",
+        "실습결과물/14/소설_연속작성_토큰로그.md"
+      ]
+    },
+    "community-003": {
+      "summary": "수중드론 사업화 인덱스 중심의 지식 군집입니다. 핵심 주제는 사업화, 수중드론, 핵심, 기획안이며, 대표 문서는 수중드론 사업화 기획안(운영형), 해양드론을 활용한 사업화 가능성 분석 보고서, 수중드론 사업화 인덱스, 수중드론 사업화 1페이지 요약안 (BLUF) 입니다.",
+      "top_tags": [
+        [
+          "day14",
+          2
+        ],
+        [
+          "사업화",
+          2
+        ],
+        [
+          "수중드론",
+          2
+        ],
+        [
+          "실습결과물",
+          2
+        ],
+        [
+          "bluf",
+          1
+        ],
+        [
+          "타당성",
+          1
+        ],
+        [
+          "기획안",
+          1
+        ]
+      ],
+      "top_topics": [
+        [
+          "사업화",
+          9
+        ],
+        [
+          "수중드론",
+          8
+        ],
+        [
+          "핵심",
+          4
+        ],
+        [
+          "기획안",
+          3
+        ],
+        [
+          "시장",
+          3
+        ],
+        [
+          "1페이지",
+          3
+        ],
+        [
+          "서비스",
+          2
+        ],
+        [
+          "운영형",
+          2
+        ]
+      ],
+      "top_entities": [
+        [
+          "사업화",
+          9
+        ],
+        [
+          "수중드론",
+          8
+        ],
+        [
+          "기획안",
+          3
+        ],
+        [
+          "배경과",
+          3
+        ],
+        [
+          "시장",
+          3
+        ],
+        [
+          "필요성",
+          3
+        ],
+        [
+          "핵심",
+          3
+        ],
+        [
+          "1페이지",
+          3
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/13/수중드론_사업화_기획안",
+        "실습결과물/13/해양드론딥리서치결과",
+        "실습결과물/14/20-수중드론-INDEX",
+        "실습결과물/14/수중드론_사업화_1페이지_BLUF",
+        "실습결과물/14/수중드론_사업화_1페이지_BLUF_열정설득서술형",
+        "실습결과물/14/수중드론_사업화_1페이지_BLUF_포멀서술형",
+        "실습결과물/14/수중드론_사업화_기획안",
+        "실습결과물/14/수중드론_사업화_상세기획안",
+        "실습결과물/14/수중드론_사업화_타당성"
+      ],
+      "paths": [
+        "실습결과물/13/수중드론_사업화_기획안.md",
+        "실습결과물/13/해양드론딥리서치결과.md",
+        "실습결과물/14/20-수중드론-INDEX.md",
+        "실습결과물/14/수중드론_사업화_1페이지_BLUF.md",
+        "실습결과물/14/수중드론_사업화_1페이지_BLUF_열정설득서술형.md",
+        "실습결과물/14/수중드론_사업화_1페이지_BLUF_포멀서술형.md",
+        "실습결과물/14/수중드론_사업화_기획안.md",
+        "실습결과물/14/수중드론_사업화_상세기획안.md",
+        "실습결과물/14/수중드론_사업화_타당성.md"
+      ]
+    },
+    "community-004": {
+      "summary": "실습결과물 07 인덱스 중심의 지식 군집입니다. 핵심 주제는 업무, ax, day07, dx이며, 대표 문서는 실습결과물 07 인덱스, 1. 업무 흐름 구조화, 업무 흐름 (Mermaid), 나의 업무 비효율 수치화 템플릿 작성 입니다.",
+      "top_tags": [
+        [
+          "ax",
+          2
+        ],
+        [
+          "day07",
+          2
+        ],
+        [
+          "dx",
+          2
+        ],
+        [
+          "실습결과물",
+          2
+        ],
+        [
+          "업무분석",
+          2
+        ],
+        [
+          "프로세스",
+          1
+        ]
+      ],
+      "top_topics": [
+        [
+          "업무",
+          4
+        ],
+        [
+          "ax",
+          2
+        ],
+        [
+          "day07",
+          2
+        ],
+        [
+          "dx",
+          2
+        ],
+        [
+          "실습결과물",
+          2
+        ],
+        [
+          "프로세스",
+          2
+        ],
+        [
+          "흐름",
+          2
+        ],
+        [
+          "flowchart",
+          2
+        ]
+      ],
+      "top_entities": [
+        [
+          "업무",
+          5
+        ],
+        [
+          "ax",
+          2
+        ],
+        [
+          "day07",
+          2
+        ],
+        [
+          "dx",
+          2
+        ],
+        [
+          "실습결과물",
+          2
+        ],
+        [
+          "프로세스",
+          2
+        ],
+        [
+          "흐름",
+          2
+        ],
+        [
+          "flowchart",
+          2
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/07/00-INDEX",
+        "실습결과물/07/01-업무-흐름-구조화",
+        "실습결과물/07/02-업무-흐름-mermaid",
+        "실습결과물/07/03-업무-비효율-수치화-템플릿",
+        "실습결과물/07/04-as-is-프로세스-스케치",
+        "실습결과물/07/5가지단계로 나누기",
+        "실습결과물/07/업무분석보고서"
+      ],
+      "paths": [
+        "실습결과물/07/00-INDEX.md",
+        "실습결과물/07/01-업무-흐름-구조화.md",
+        "실습결과물/07/02-업무-흐름-mermaid.md",
+        "실습결과물/07/03-업무-비효율-수치화-템플릿.md",
+        "실습결과물/07/04-as-is-프로세스-스케치.md",
+        "실습결과물/07/5가지단계로 나누기.md",
+        "실습결과물/07/업무분석보고서.md"
+      ]
+    },
+    "community-005": {
+      "summary": "실습결과물 08 인덱스 중심의 지식 군집입니다. 핵심 주제는 명세서, 나의, 업무, ai이며, 대표 문서는 실습결과물 08 인덱스, 나의 핵심 업무 리스트업, 02-AI-활용영역-보조-요약-생성-분석, 03-정량평가-우선순위 입니다.",
+      "top_tags": [
+        [
+          "ai-workflow",
+          1
+        ],
+        [
+          "day08",
+          1
+        ],
+        [
+          "명세서",
+          1
+        ],
+        [
+          "실습결과물",
+          1
+        ],
+        [
+          "업무리스트",
+          1
+        ],
+        [
+          "우선순위",
+          1
+        ]
+      ],
+      "top_topics": [
+        [
+          "명세서",
+          4
+        ],
+        [
+          "나의",
+          3
+        ],
+        [
+          "업무",
+          3
+        ],
+        [
+          "ai",
+          2
+        ],
+        [
+          "리스트업",
+          2
+        ],
+        [
+          "핵심",
+          2
+        ],
+        [
+          "task",
+          2
+        ],
+        [
+          "08",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "명세서",
+          5
+        ],
+        [
+          "나의",
+          3
+        ],
+        [
+          "ai",
+          2
+        ],
+        [
+          "우선순위",
+          2
+        ],
+        [
+          "리스트업",
+          2
+        ],
+        [
+          "발행",
+          2
+        ],
+        [
+          "업무",
+          2
+        ],
+        [
+          "작성",
+          2
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/08/00-INDEX",
+        "실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스",
+        "실습결과물/08/02-AI-활용영역-보조-요약-생성-분석",
+        "실습결과물/08/03-정량평가-우선순위",
+        "실습결과물/08/04-value-estimation-canvas",
+        "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우",
+        "실습결과물/08/업무리스트"
+      ],
+      "paths": [
+        "실습결과물/08/00-INDEX.md",
+        "실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스.md",
+        "실습결과물/08/02-AI-활용영역-보조-요약-생성-분석.md",
+        "실습결과물/08/03-정량평가-우선순위.md",
+        "실습결과물/08/04-value-estimation-canvas.md",
+        "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md",
+        "실습결과물/08/업무리스트.md"
+      ]
+    },
+    "community-006": {
+      "summary": "실습결과물 13 인덱스 중심의 지식 군집입니다. 핵심 주제는 수업, 블로그, 해양드론, 로봇이며, 대표 문서는 실습결과물 13 인덱스, AIDX_5일차_교시별_요약, 광물자료조사, 노트북lm 수업 요약보고서 입니다.",
+      "top_tags": [
+        [
+          "day13",
+          1
+        ],
+        [
+          "블로그",
+          1
+        ],
+        [
+          "수업요약",
+          1
+        ],
+        [
+          "수중드론",
+          1
+        ],
+        [
+          "실습결과물",
+          1
+        ],
+        [
+          "해양드론",
+          1
+        ]
+      ],
+      "top_topics": [
+        [
+          "수업",
+          3
+        ],
+        [
+          "블로그",
+          2
+        ],
+        [
+          "해양드론",
+          2
+        ],
+        [
+          "로봇",
+          2
+        ],
+        [
+          "조사",
+          2
+        ],
+        [
+          "최근",
+          2
+        ],
+        [
+          "수중",
+          2
+        ],
+        [
+          "13",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "수업",
+          3
+        ],
+        [
+          "블로그",
+          2
+        ],
+        [
+          "해양드론",
+          2
+        ],
+        [
+          "로봇",
+          2
+        ],
+        [
+          "조사",
+          2
+        ],
+        [
+          "수중",
+          2
+        ],
+        [
+          "13",
+          1
+        ],
+        [
+          "day13",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/13/00-INDEX",
+        "실습결과물/13/AIDX_5일차_교시별_요약",
+        "실습결과물/13/광물자료조사",
+        "실습결과물/13/노트북lm 수업 요약보고서",
+        "실습결과물/13/블로그 형태",
+        "실습결과물/13/수중드론_블로그",
+        "실습결과물/13/해양드론조사보고서"
+      ],
+      "paths": [
+        "실습결과물/13/00-INDEX.md",
+        "실습결과물/13/AIDX_5일차_교시별_요약.md",
+        "실습결과물/13/광물자료조사.md",
+        "실습결과물/13/노트북lm 수업 요약보고서.md",
+        "실습결과물/13/블로그 형태.md",
+        "실습결과물/13/수중드론_블로그.md",
+        "실습결과물/13/해양드론조사보고서.md"
+      ]
+    },
+    "community-007": {
+      "summary": "실습결과물 06 인덱스 중심의 지식 군집입니다. 핵심 주제는 교육, 실습, 06, day06이며, 대표 문서는 실습결과물 06 인덱스, PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지, 머메이드 테스트, 2. 교육 요약본 (1페이지) 입니다.",
+      "top_tags": [
+        [
+          "day06",
+          1
+        ],
+        [
+          "markdown",
+          1
+        ],
+        [
+          "paperclip",
+          1
+        ],
+        [
+          "리서치",
+          1
+        ],
+        [
+          "실습결과물",
+          1
+        ]
+      ],
+      "top_topics": [
+        [
+          "교육",
+          3
+        ],
+        [
+          "실습",
+          2
+        ],
+        [
+          "06",
+          1
+        ],
+        [
+          "day06",
+          1
+        ],
+        [
+          "markdown",
+          1
+        ],
+        [
+          "paperclip",
+          1
+        ],
+        [
+          "리서치",
+          1
+        ],
+        [
+          "묶음",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "교육",
+          3
+        ],
+        [
+          "paperclipai",
+          2
+        ],
+        [
+          "운영",
+          2
+        ],
+        [
+          "ai",
+          2
+        ],
+        [
+          "06",
+          1
+        ],
+        [
+          "day06",
+          1
+        ],
+        [
+          "markdown",
+          1
+        ],
+        [
+          "paperclip",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/06/00-INDEX",
+        "실습결과물/06/deep-research-report",
+        "실습결과물/06/mermaidTest",
+        "실습결과물/06/paperclipai교육요약",
+        "실습결과물/06/paperclipai사업계획서"
+      ],
+      "paths": [
+        "실습결과물/06/00-INDEX.md",
+        "실습결과물/06/deep-research-report.md",
+        "실습결과물/06/mermaidTest.md",
+        "실습결과물/06/paperclipai교육요약.md",
+        "실습결과물/06/paperclipai사업계획서.md"
+      ]
+    },
+    "community-008": {
+      "summary": "실습결과물 09 인덱스 중심의 지식 군집입니다. 핵심 주제는 문제, 09, day09, 묶음이며, 대표 문서는 실습결과물 09 인덱스, suno 노래 요청, 📄 AI 협업 기반 문제 정의서 (Master Document), 1. 가성비 인식 개선 아이디어 20가지 입니다.",
+      "top_tags": [
+        [
+          "day09",
+          1
+        ],
+        [
+          "문제정의",
+          1
+        ],
+        [
+          "사례",
+          1
+        ],
+        [
+          "실습결과물",
+          1
+        ],
+        [
+          "현상분석",
+          1
+        ]
+      ],
+      "top_topics": [
+        [
+          "문제",
+          2
+        ],
+        [
+          "09",
+          1
+        ],
+        [
+          "day09",
+          1
+        ],
+        [
+          "묶음",
+          1
+        ],
+        [
+          "문제정의",
+          1
+        ],
+        [
+          "사례",
+          1
+        ],
+        [
+          "실습결과물",
+          1
+        ],
+        [
+          "인덱스",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "문제",
+          2
+        ],
+        [
+          "09",
+          1
+        ],
+        [
+          "day09",
+          1
+        ],
+        [
+          "묶음",
+          1
+        ],
+        [
+          "문제정의",
+          1
+        ],
+        [
+          "사례",
+          1
+        ],
+        [
+          "실습결과물",
+          1
+        ],
+        [
+          "인덱스",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/09/00-INDEX",
+        "실습결과물/09/노래요청",
+        "실습결과물/09/문제 정의서",
+        "실습결과물/09/미션20대여성상품",
+        "실습결과물/09/현상에서문제로"
+      ],
+      "paths": [
+        "실습결과물/09/00-INDEX.md",
+        "실습결과물/09/노래요청.md",
+        "실습결과물/09/문제 정의서.md",
+        "실습결과물/09/미션20대여성상품.md",
+        "실습결과물/09/현상에서문제로.md"
+      ]
+    },
+    "community-009": {
+      "summary": "실습결과물 15 인덱스 중심의 지식 군집입니다. 핵심 주제는 llm, wiki, local, codex이며, 대표 문서는 LLM Wiki Schema, Local LLM Wiki, 실습결과물 15 인덱스, wikillm 을 구현하기 위한 프롬프트 입니다.",
+      "top_tags": [
+        [
+          "codex",
+          2
+        ],
+        [
+          "day15",
+          2
+        ],
+        [
+          "graph",
+          2
+        ],
+        [
+          "llm-wiki",
+          2
+        ],
+        [
+          "실습결과물",
+          2
+        ],
+        [
+          "token-saving",
+          1
+        ]
+      ],
+      "top_topics": [
+        [
+          "llm",
+          4
+        ],
+        [
+          "wiki",
+          4
+        ],
+        [
+          "local",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "day15",
+          2
+        ],
+        [
+          "graph",
+          2
+        ],
+        [
+          "llm-wiki",
+          2
+        ],
+        [
+          "repository",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "llm",
+          4
+        ],
+        [
+          "local",
+          2
+        ],
+        [
+          "rules",
+          2
+        ],
+        [
+          "saving",
+          2
+        ],
+        [
+          "codex",
+          2
+        ],
+        [
+          "day15",
+          2
+        ],
+        [
+          "graph",
+          2
+        ],
+        [
+          "llm-wiki",
+          2
+        ]
+      ],
+      "page_ids": [
+        "AGENTS",
+        "llm_wiki/README",
+        "실습결과물/15/00-INDEX",
+        "실습결과물/15/wikiLLM"
+      ],
+      "paths": [
+        "AGENTS.md",
+        "llm_wiki/README.md",
+        "실습결과물/15/00-INDEX.md",
+        "실습결과물/15/wikiLLM.md"
+      ]
+    },
+    "community-010": {
+      "summary": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서 중심의 지식 군집입니다. 핵심 주제는 llm, 기억, 도구, 비교이며, 대표 문서는 LLM 지식 아키텍처와 장기 기억 도구 비교 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "llm",
+          1
+        ],
+        [
+          "기억",
+          1
+        ],
+        [
+          "도구",
+          1
+        ],
+        [
+          "비교",
+          1
+        ],
+        [
+          "아키텍처와",
+          1
+        ],
+        [
+          "장기",
+          1
+        ],
+        [
+          "지식",
+          1
+        ],
+        [
+          "컨텍스트",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "2023",
+          1
+        ],
+        [
+          "executive",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "summary",
+          1
+        ],
+        [
+          "기억",
+          1
+        ],
+        [
+          "도구",
+          1
+        ],
+        [
+          "방식",
+          1
+        ],
+        [
+          "비교",
+          1
+        ]
+      ],
+      "page_ids": [
+        "llm_wiki/LLM 지식 아키텍처"
+      ],
+      "paths": [
+        "llm_wiki/LLM 지식 아키텍처.md"
+      ]
+    },
+    "community-011": {
+      "summary": "Obsidian Smart Connections Setup 중심의 지식 군집입니다. 핵심 주제는 as, connections, graph, obsidian이며, 대표 문서는 Obsidian Smart Connections Setup 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "as",
+          1
+        ],
+        [
+          "connections",
+          1
+        ],
+        [
+          "graph",
+          1
+        ],
+        [
+          "obsidian",
+          1
+        ],
+        [
+          "plugin",
+          1
+        ],
+        [
+          "setup",
+          1
+        ],
+        [
+          "smart",
+          1
+        ],
+        [
+          "workspace",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "already",
+          1
+        ],
+        [
+          "as",
+          1
+        ],
+        [
+          "community",
+          1
+        ],
+        [
+          "connections",
+          1
+        ],
+        [
+          "goal",
+          1
+        ],
+        [
+          "graph",
+          1
+        ],
+        [
+          "install",
+          1
+        ],
+        [
+          "obsidian",
+          1
+        ]
+      ],
+      "page_ids": [
+        "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP"
+      ],
+      "paths": [
+        "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md"
+      ]
+    },
+    "community-012": {
+      "summary": "Local Memory Layer 중심의 지식 군집입니다. 핵심 주제는 aware, change, folder, holds이며, 대표 문서는 Local Memory Layer 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "aware",
+          1
+        ],
+        [
+          "change",
+          1
+        ],
+        [
+          "folder",
+          1
+        ],
+        [
+          "holds",
+          1
+        ],
+        [
+          "layer",
+          1
+        ],
+        [
+          "local",
+          1
+        ],
+        [
+          "memory",
+          1
+        ],
+        [
+          "stack",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "aware",
+          1
+        ],
+        [
+          "change",
+          1
+        ],
+        [
+          "commands",
+          1
+        ],
+        [
+          "files",
+          1
+        ],
+        [
+          "folder",
+          1
+        ],
+        [
+          "holds",
+          1
+        ],
+        [
+          "intended",
+          1
+        ],
+        [
+          "layer",
+          1
+        ]
+      ],
+      "page_ids": [
+        "memory_layer/README"
+      ],
+      "paths": [
+        "memory_layer/README.md"
+      ]
+    },
+    "community-013": {
+      "summary": "Notion App Date Filter Fallback Skill 중심의 지식 군집입니다. 핵심 주제는 app, date, fallback, filter이며, 대표 문서는 Notion App Date Filter Fallback Skill 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "app",
+          1
+        ],
+        [
+          "date",
+          1
+        ],
+        [
+          "fallback",
+          1
+        ],
+        [
+          "filter",
+          1
+        ],
+        [
+          "notion",
+          1
+        ],
+        [
+          "skill",
+          1
+        ],
+        [
+          "날짜",
+          1
+        ],
+        [
+          "데이터소스",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "app",
+          1
+        ],
+        [
+          "date",
+          1
+        ],
+        [
+          "fallback",
+          1
+        ],
+        [
+          "filter",
+          1
+        ],
+        [
+          "notion",
+          1
+        ],
+        [
+          "skill",
+          1
+        ],
+        [
+          "sql",
+          1
+        ],
+        [
+          "데이터소스",
+          1
+        ]
+      ],
+      "page_ids": [
+        "notion_app_date_filter_fallback_skill/SKILL"
+      ],
+      "paths": [
+        "notion_app_date_filter_fallback_skill/SKILL.md"
+      ]
+    },
+    "community-014": {
+      "summary": "Body Fat Brozek 시각 분석 보고서 (미리보기 중심) 중심의 지식 군집입니다. 핵심 주제는 body, box, brozek, fat이며, 대표 문서는 Body Fat Brozek 시각 분석 보고서 (미리보기 중심) 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "body",
+          1
+        ],
+        [
+          "box",
+          1
+        ],
+        [
+          "brozek",
+          1
+        ],
+        [
+          "fat",
+          1
+        ],
+        [
+          "vs",
+          1
+        ],
+        [
+          "분석",
+          1
+        ],
+        [
+          "시각",
+          1
+        ],
+        [
+          "중심",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "252",
+          1
+        ],
+        [
+          "body",
+          1
+        ],
+        [
+          "box",
+          1
+        ],
+        [
+          "brozek",
+          1
+        ],
+        [
+          "fat",
+          1
+        ],
+        [
+          "vs",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ],
+        [
+          "미리보기",
+          1
+        ]
+      ],
+      "page_ids": [
+        "orange_example_10/bodyfat_analysis_report"
+      ],
+      "paths": [
+        "orange_example_10/bodyfat_analysis_report.md"
+      ]
+    },
+    "community-015": {
+      "summary": "Titanic AdaBoost 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 2201, adaboost, titanic, 데이터이며, 대표 문서는 Titanic AdaBoost 분석 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "2201",
+          1
+        ],
+        [
+          "adaboost",
+          1
+        ],
+        [
+          "titanic",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ],
+        [
+          "변수",
+          1
+        ],
+        [
+          "분석",
+          1
+        ],
+        [
+          "원본",
+          1
+        ],
+        [
+          "타겟",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "2201",
+          1
+        ],
+        [
+          "500개",
+          1
+        ],
+        [
+          "adaboost",
+          1
+        ],
+        [
+          "titanic",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ],
+        [
+          "변수",
+          1
+        ],
+        [
+          "분석",
+          1
+        ],
+        [
+          "샘플링",
+          1
+        ]
+      ],
+      "page_ids": [
+        "orange_example_10/titanic_adaboost_report"
+      ],
+      "paths": [
+        "orange_example_10/titanic_adaboost_report.md"
+      ]
+    },
+    "community-016": {
+      "summary": "Titanic 생존 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 2201건, 711건, titanic, 관측치이며, 대표 문서는 Titanic 생존 분석 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "2201건",
+          1
+        ],
+        [
+          "711건",
+          1
+        ],
+        [
+          "titanic",
+          1
+        ],
+        [
+          "관측치",
+          1
+        ],
+        [
+          "분석",
+          1
+        ],
+        [
+          "생존",
+          1
+        ],
+        [
+          "생존자",
+          1
+        ],
+        [
+          "전체",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "2201건",
+          1
+        ],
+        [
+          "age별",
+          1
+        ],
+        [
+          "sex별",
+          1
+        ],
+        [
+          "status",
+          1
+        ],
+        [
+          "status별",
+          1
+        ],
+        [
+          "titanic",
+          1
+        ],
+        [
+          "관측치",
+          1
+        ],
+        [
+          "기술통계",
+          1
+        ]
+      ],
+      "page_ids": [
+        "orange_example_10/titanic_survival_report"
+      ],
+      "paths": [
+        "orange_example_10/titanic_survival_report.md"
+      ]
+    },
+    "community-017": {
+      "summary": "AxDxConsultant 중심의 지식 군집입니다. 핵심 주제는 2026_4_6, 2026_4_7, 2026_4_8, 2026_4_9이며, 대표 문서는 AxDxConsultant 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "2026_4_6",
+          1
+        ],
+        [
+          "2026_4_7",
+          1
+        ],
+        [
+          "2026_4_8",
+          1
+        ],
+        [
+          "2026_4_9",
+          1
+        ],
+        [
+          "axdx",
+          1
+        ],
+        [
+          "axdxconsultant",
+          1
+        ],
+        [
+          "과정",
+          1
+        ],
+        [
+          "전문가",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "2026_4_10",
+          1
+        ],
+        [
+          "2026_4_13",
+          1
+        ],
+        [
+          "2026_4_14",
+          1
+        ],
+        [
+          "2026_4_15",
+          1
+        ],
+        [
+          "2026_4_16",
+          1
+        ],
+        [
+          "2026_4_6",
+          1
+        ],
+        [
+          "2026_4_7",
+          1
+        ],
+        [
+          "2026_4_8",
+          1
+        ]
+      ],
+      "page_ids": [
+        "README"
+      ],
+      "paths": [
+        "README.md"
+      ]
+    },
+    "community-018": {
+      "summary": "Local Whisper GPU 중심의 지식 군집입니다. 핵심 주제는 gpu, in, local, run이며, 대표 문서는 Local Whisper GPU 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "gpu",
+          1
+        ],
+        [
+          "in",
+          1
+        ],
+        [
+          "local",
+          1
+        ],
+        [
+          "run",
+          1
+        ],
+        [
+          "set",
+          1
+        ],
+        [
+          "stt",
+          1
+        ],
+        [
+          "up",
+          1
+        ],
+        [
+          "whisper",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "confirm",
+          1
+        ],
+        [
+          "environment",
+          1
+        ],
+        [
+          "gpu",
+          1
+        ],
+        [
+          "install",
+          1
+        ],
+        [
+          "layout",
+          1
+        ],
+        [
+          "local",
+          1
+        ],
+        [
+          "provide",
+          1
+        ],
+        [
+          "required",
+          1
+        ]
+      ],
+      "page_ids": [
+        "skills/local-whisper-gpu/SKILL"
+      ],
+      "paths": [
+        "skills/local-whisper-gpu/SKILL.md"
+      ]
+    },
+    "community-019": {
+      "summary": "Troubleshooting 중심의 지식 군집입니다. 핵심 주제는 fails, links, llm, local이며, 대표 문서는 Troubleshooting 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "fails",
+          1
+        ],
+        [
+          "links",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "local",
+          1
+        ],
+        [
+          "troubleshooting",
+          1
+        ],
+        [
+          "unresolved",
+          1
+        ],
+        [
+          "whisper",
+          1
+        ],
+        [
+          "wiki",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "covers",
+          1
+        ],
+        [
+          "fails",
+          1
+        ],
+        [
+          "gpu",
+          1
+        ],
+        [
+          "is",
+          1
+        ],
+        [
+          "links",
+          1
+        ],
+        [
+          "note",
+          1
+        ],
+        [
+          "problems",
+          1
+        ],
+        [
+          "py",
+          1
+        ]
+      ],
+      "page_ids": [
+        "skills/troubleshooting"
+      ],
+      "paths": [
+        "skills/troubleshooting.md"
+      ]
+    },
+    "community-020": {
+      "summary": "Wiki LLM Setup 중심의 지식 군집입니다. 핵심 주제는 graph, in, keep, layer이며, 대표 문서는 Wiki LLM Setup 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "graph",
+          1
+        ],
+        [
+          "in",
+          1
+        ],
+        [
+          "keep",
+          1
+        ],
+        [
+          "layer",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "recreate",
+          1
+        ],
+        [
+          "setup",
+          1
+        ],
+        [
+          "wiki",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "artifacts",
+          1
+        ],
+        [
+          "build",
+          1
+        ],
+        [
+          "confirm",
+          1
+        ],
+        [
+          "graph",
+          1
+        ],
+        [
+          "in",
+          1
+        ],
+        [
+          "keep",
+          1
+        ],
+        [
+          "layer",
+          1
+        ],
+        [
+          "layout",
+          1
+        ]
+      ],
+      "page_ids": [
+        "skills/wiki-llm-setup/SKILL"
+      ],
+      "paths": [
+        "skills/wiki-llm-setup/SKILL.md"
+      ]
+    },
+    "community-021": {
+      "summary": "Youtube 영상 스크립트 중심의 지식 군집입니다. 핵심 주제는 graphify, llm, wiki를, youtube이며, 대표 문서는 Youtube 영상 스크립트 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "graphify",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "wiki를",
+          1
+        ],
+        [
+          "youtube",
+          1
+        ],
+        [
+          "개념",
+          1
+        ],
+        [
+          "스크립트",
+          1
+        ],
+        [
+          "업그레이드한",
+          1
+        ],
+        [
+          "영상",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "graphify",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "wiki를",
+          1
+        ],
+        [
+          "youtube",
+          1
+        ],
+        [
+          "스크립트",
+          1
+        ],
+        [
+          "업그레이드한",
+          1
+        ],
+        [
+          "영상",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/15/Youtube 영상 스크립트"
+      ],
+      "paths": [
+        "실습결과물/15/Youtube 영상 스크립트.md"
+      ]
+    },
+    "community-022": {
+      "summary": "Graphify 기반 LLM Wiki 활용 1페이지 요약보고서 중심의 지식 군집입니다. 핵심 주제는 1페이지, graphify, llm, wiki이며, 대표 문서는 Graphify 기반 LLM Wiki 활용 1페이지 요약보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "1페이지",
+          1
+        ],
+        [
+          "graphify",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "wiki",
+          1
+        ],
+        [
+          "기반",
+          1
+        ],
+        [
+          "방식의",
+          1
+        ],
+        [
+          "요약보고서",
+          1
+        ],
+        [
+          "활용",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "1페이지",
+          1
+        ],
+        [
+          "graphify",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "wiki",
+          1
+        ],
+        [
+          "기반",
+          1
+        ],
+        [
+          "기존",
+          1
+        ],
+        [
+          "메시지",
+          1
+        ],
+        [
+          "목적",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서"
+      ],
+      "paths": [
+        "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md"
+      ]
+    },
+    "community-023": {
+      "summary": "YouTube 영상 요약본 중심의 지식 군집입니다. 핵심 주제는 youtube, 영상, 요약본이며, 대표 문서는 YouTube 영상 요약본 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "youtube",
+          1
+        ],
+        [
+          "영상",
+          1
+        ],
+        [
+          "요약본",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "youtube",
+          1
+        ],
+        [
+          "영상",
+          1
+        ],
+        [
+          "요약본",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/15/YouTube 영상 요약본"
+      ],
+      "paths": [
+        "실습결과물/15/YouTube 영상 요약본.md"
+      ]
+    },
+    "community-024": {
+      "summary": "whisper 모델 설치 프롬프트 중심의 지식 군집입니다. 핵심 주제는 faster, small, text, whisper이며, 대표 문서는 whisper 모델 설치 프롬프트 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "faster",
+          1
+        ],
+        [
+          "small",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "whisper",
+          1
+        ],
+        [
+          "모델",
+          1
+        ],
+        [
+          "설치",
+          1
+        ],
+        [
+          "순위",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "faster",
+          1
+        ],
+        [
+          "small",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "whisper",
+          1
+        ],
+        [
+          "모델",
+          1
+        ],
+        [
+          "설치",
+          1
+        ],
+        [
+          "순위",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/15/로컬 whisper 모델 설치 프롬프트"
+      ],
+      "paths": [
+        "실습결과물/15/로컬 whisper 모델 설치 프롬프트.md"
+      ]
+    },
+    "community-025": {
+      "summary": "imports-85 실제데이터 기반 요약보고서 중심의 지식 군집입니다. 핵심 주제는 85, 85_cleaned, imports, 기반이며, 대표 문서는 imports-85 실제데이터 기반 요약보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "85",
+          1
+        ],
+        [
+          "85_cleaned",
+          1
+        ],
+        [
+          "imports",
+          1
+        ],
+        [
+          "기반",
+          1
+        ],
+        [
+          "시각화",
+          1
+        ],
+        [
+          "실제",
+          1
+        ],
+        [
+          "실제데이터",
+          1
+        ],
+        [
+          "요약보고서",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "85",
+          1
+        ],
+        [
+          "85_cleaned",
+          1
+        ],
+        [
+          "csv",
+          1
+        ],
+        [
+          "imports",
+          1
+        ],
+        [
+          "mpg",
+          1
+        ],
+        [
+          "기반",
+          1
+        ],
+        [
+          "범위",
+          1
+        ],
+        [
+          "보고",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/16/imports-85_actual_data_summary"
+      ],
+      "paths": [
+        "실습결과물/16/imports-85_actual_data_summary.md"
+      ]
+    },
+    "community-026": {
+      "summary": "자동차 모델 가격·성능·연비 관계 인터랙티브 보고서 중심의 지식 군집입니다. 핵심 주제는 가격, 가격의, 관계, 데이터이며, 대표 문서는 자동차 모델 가격·성능·연비 관계 인터랙티브 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "가격",
+          1
+        ],
+        [
+          "가격의",
+          1
+        ],
+        [
+          "관계",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ],
+        [
+          "모델",
+          1
+        ],
+        [
+          "인터랙티브",
+          1
+        ],
+        [
+          "자동차",
+          1
+        ],
+        [
+          "핵심",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "administrator",
+          1
+        ],
+        [
+          "users",
+          1
+        ],
+        [
+          "가격",
+          1
+        ],
+        [
+          "가격의",
+          1
+        ],
+        [
+          "관계",
+          1
+        ],
+        [
+          "대시보드",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ],
+        [
+          "모델",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/16/imports-85_interactive_report"
+      ],
+      "paths": [
+        "실습결과물/16/imports-85_interactive_report.md"
+      ]
+    },
+    "community-027": {
+      "summary": "imports-85 정제 보고서 중심의 지식 군집입니다. 핵심 주제는 59, 85, bore, imports이며, 대표 문서는 imports-85 정제 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "59",
+          1
+        ],
+        [
+          "85",
+          1
+        ],
+        [
+          "bore",
+          1
+        ],
+        [
+          "imports",
+          1
+        ],
+        [
+          "결측치",
+          1
+        ],
+        [
+          "대체",
+          1
+        ],
+        [
+          "이상치",
+          1
+        ],
+        [
+          "정제",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "59",
+          1
+        ],
+        [
+          "85",
+          1
+        ],
+        [
+          "bore",
+          1
+        ],
+        [
+          "horsepower",
+          1
+        ],
+        [
+          "imports",
+          1
+        ],
+        [
+          "normalized",
+          1
+        ],
+        [
+          "결측치",
+          1
+        ],
+        [
+          "기준",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/16/imports-85_report"
+      ],
+      "paths": [
+        "실습결과물/16/imports-85_report.md"
+      ]
+    },
+    "community-028": {
+      "summary": "Retail Sales Seaborn Graphs 중심의 지식 군집입니다. 핵심 주제는 01_monthly_net_sales_trend, graphs, png, retail이며, 대표 문서는 Retail Sales Seaborn Graphs 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "01_monthly_net_sales_trend",
+          1
+        ],
+        [
+          "graphs",
+          1
+        ],
+        [
+          "png",
+          1
+        ],
+        [
+          "retail",
+          1
+        ],
+        [
+          "sales",
+          1
+        ],
+        [
+          "seaborn",
+          1
+        ],
+        [
+          "순매출",
+          1
+        ],
+        [
+          "월별",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "01_monthly_net_sales_trend",
+          1
+        ],
+        [
+          "graphs",
+          1
+        ],
+        [
+          "png",
+          1
+        ],
+        [
+          "retail",
+          1
+        ],
+        [
+          "sales",
+          1
+        ],
+        [
+          "seaborn",
+          1
+        ],
+        [
+          "순매출",
+          1
+        ],
+        [
+          "월별",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/16/retail_sales_report_assets/README"
+      ],
+      "paths": [
+        "실습결과물/16/retail_sales_report_assets/README.md"
+      ]
+    },
+    "community-029": {
+      "summary": "Retail Sales 추세 1페이지 보고서 중심의 지식 군집입니다. 핵심 주제는 1페이지, retail, sales, 매출이며, 대표 문서는 Retail Sales 추세 1페이지 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "1페이지",
+          1
+        ],
+        [
+          "retail",
+          1
+        ],
+        [
+          "sales",
+          1
+        ],
+        [
+          "매출",
+          1
+        ],
+        [
+          "작성일",
+          1
+        ],
+        [
+          "추세",
+          1
+        ],
+        [
+          "플랜",
+          1
+        ],
+        [
+          "해석",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "04",
+          1
+        ],
+        [
+          "16",
+          1
+        ],
+        [
+          "1페이지",
+          1
+        ],
+        [
+          "2026",
+          1
+        ],
+        [
+          "retail",
+          1
+        ],
+        [
+          "sales",
+          1
+        ],
+        [
+          "매출",
+          1
+        ],
+        [
+          "어떤",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/16/retail_sales_trend_onepage_report"
+      ],
+      "paths": [
+        "실습결과물/16/retail_sales_trend_onepage_report.md"
+      ]
+    },
+    "community-030": {
+      "summary": "리테일 분석판매보고서노트북LM 중심의 지식 군집입니다. 핵심 주제는 리테일, 분석, 분석판매보고서노트북lm, 브리핑이며, 대표 문서는 리테일 분석판매보고서노트북LM 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "리테일",
+          1
+        ],
+        [
+          "분석",
+          1
+        ],
+        [
+          "분석판매보고서노트북lm",
+          1
+        ],
+        [
+          "브리핑",
+          1
+        ],
+        [
+          "전략",
+          1
+        ],
+        [
+          "판매",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "리테일",
+          1
+        ],
+        [
+          "분석",
+          1
+        ],
+        [
+          "분석판매보고서노트북lm",
+          1
+        ],
+        [
+          "브리핑",
+          1
+        ],
+        [
+          "전략",
+          1
+        ],
+        [
+          "판매",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/16/리테일 분석판매보고서노트북LM"
+      ],
+      "paths": [
+        "실습결과물/16/리테일 분석판매보고서노트북LM.md"
+      ]
+    },
+    "community-031": {
+      "summary": "매출 분석에 쓰인 프롬프트 중심의 지식 군집입니다. 핵심 주제는 administrator, dxax, text, users이며, 대표 문서는 매출 분석에 쓰인 프롬프트 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "administrator",
+          1
+        ],
+        [
+          "dxax",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "users",
+          1
+        ],
+        [
+          "매출",
+          1
+        ],
+        [
+          "분석에",
+          1
+        ],
+        [
+          "쓰인",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "administrator",
+          1
+        ],
+        [
+          "dxax",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "users",
+          1
+        ],
+        [
+          "매출",
+          1
+        ],
+        [
+          "분석에",
+          1
+        ],
+        [
+          "쓰인",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/16/매출분석에 쓰인 프롬프트"
+      ],
+      "paths": [
+        "실습결과물/16/매출분석에 쓰인 프롬프트.md"
+      ]
+    },
+    "community-032": {
+      "summary": "자동차 수출 관련 예제 프롬프트 중심의 지식 군집입니다. 핵심 주제는 수출, 예제, 자동차, 프롬프트이며, 대표 문서는 자동차 수출 관련 예제 프롬프트 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "수출",
+          1
+        ],
+        [
+          "예제",
+          1
+        ],
+        [
+          "자동차",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "수출",
+          1
+        ],
+        [
+          "예제",
+          1
+        ],
+        [
+          "자동차",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/16/자동차수출예제관련프롬프트"
+      ],
+      "paths": [
+        "실습결과물/16/자동차수출예제관련프롬프트.md"
+      ]
+    },
+    "community-033": {
+      "summary": "📊 2026 HRD Trend Report 요약 중심의 지식 군집입니다. 핵심 주제는 2026, hrd, report, trend이며, 대표 문서는 📊 2026 HRD Trend Report 요약 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "2026",
+          1
+        ],
+        [
+          "hrd",
+          1
+        ],
+        [
+          "report",
+          1
+        ],
+        [
+          "trend",
+          1
+        ],
+        [
+          "다음은",
+          1
+        ],
+        [
+          "문제",
+          1
+        ],
+        [
+          "요청하신",
+          1
+        ],
+        [
+          "현황",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "1페이지",
+          1
+        ],
+        [
+          "2026",
+          1
+        ],
+        [
+          "current",
+          1
+        ],
+        [
+          "hrd",
+          1
+        ],
+        [
+          "issues",
+          1
+        ],
+        [
+          "report",
+          1
+        ],
+        [
+          "state",
+          1
+        ],
+        [
+          "trend",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/16/한페이지요약 HRD AX 수업도향"
+      ],
+      "paths": [
+        "실습결과물/16/한페이지요약 HRD AX 수업도향.md"
+      ]
+    },
+    "community-034": {
+      "summary": "Project Management 매니저 성과 1페이지 요약 보고서 중심의 지식 군집입니다. 핵심 주제는 1페이지, management, project, 기준으로이며, 대표 문서는 Project Management 매니저 성과 1페이지 요약 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "1페이지",
+          1
+        ],
+        [
+          "management",
+          1
+        ],
+        [
+          "project",
+          1
+        ],
+        [
+          "기준으로",
+          1
+        ],
+        [
+          "매니저",
+          1
+        ],
+        [
+          "보고서는",
+          1
+        ],
+        [
+          "성과",
+          1
+        ],
+        [
+          "완료",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "02",
+          1
+        ],
+        [
+          "1페이지",
+          1
+        ],
+        [
+          "management",
+          1
+        ],
+        [
+          "project",
+          1
+        ],
+        [
+          "기준으로",
+          1
+        ],
+        [
+          "매니저",
+          1
+        ],
+        [
+          "목적",
+          1
+        ],
+        [
+          "보고서는",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/17/02 Project Management_manager_ranking_report"
+      ],
+      "paths": [
+        "실습결과물/17/02 Project Management_manager_ranking_report.md"
+      ]
+    },
+    "community-035": {
+      "summary": "프로젝트 포트폴리오 SCQA 인사이트 리포트 중심의 지식 군집입니다. 핵심 주제는 scqa, 리포트, 성과, 실행력이며, 대표 문서는 프로젝트 포트폴리오 SCQA 인사이트 리포트 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "scqa",
+          1
+        ],
+        [
+          "리포트",
+          1
+        ],
+        [
+          "성과",
+          1
+        ],
+        [
+          "실행력",
+          1
+        ],
+        [
+          "인사이트",
+          1
+        ],
+        [
+          "저하는",
+          1
+        ],
+        [
+          "전체",
+          1
+        ],
+        [
+          "포트폴리오",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "complication",
+          1
+        ],
+        [
+          "question",
+          1
+        ],
+        [
+          "scqa",
+          1
+        ],
+        [
+          "situation",
+          1
+        ],
+        [
+          "리포트",
+          1
+        ],
+        [
+          "문제",
+          1
+        ],
+        [
+          "상황",
+          1
+        ],
+        [
+          "성과",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/17/02 Project Management_SCQA_insight_report"
+      ],
+      "paths": [
+        "실습결과물/17/02 Project Management_SCQA_insight_report.md"
+      ]
+    },
+    "community-036": {
+      "summary": "Project Management 데이터 1페이지 요약 보고서 중심의 지식 군집입니다. 핵심 주제는 02, 1페이지, date, management이며, 대표 문서는 Project Management 데이터 1페이지 요약 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "02",
+          1
+        ],
+        [
+          "1페이지",
+          1
+        ],
+        [
+          "date",
+          1
+        ],
+        [
+          "management",
+          1
+        ],
+        [
+          "project",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ],
+        [
+          "비교",
+          1
+        ],
+        [
+          "월별",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "02",
+          1
+        ],
+        [
+          "1페이지",
+          1
+        ],
+        [
+          "actual",
+          1
+        ],
+        [
+          "date",
+          1
+        ],
+        [
+          "management",
+          1
+        ],
+        [
+          "project",
+          1
+        ],
+        [
+          "결론",
+          1
+        ],
+        [
+          "담당자별",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/17/02 Project Management_summary_report"
+      ],
+      "paths": [
+        "실습결과물/17/02 Project Management_summary_report.md"
+      ]
+    },
+    "community-037": {
+      "summary": "E-Commerce Orders 매장별 일매출 이상치 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 08, commerce, orders, 매장별이며, 대표 문서는 E-Commerce Orders 매장별 일매출 이상치 분석 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "08",
+          1
+        ],
+        [
+          "commerce",
+          1
+        ],
+        [
+          "orders",
+          1
+        ],
+        [
+          "매장별",
+          1
+        ],
+        [
+          "분석",
+          1
+        ],
+        [
+          "생성",
+          1
+        ],
+        [
+          "이상치",
+          1
+        ],
+        [
+          "일매출",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "08",
+          1
+        ],
+        [
+          "5배",
+          1
+        ],
+        [
+          "commerce",
+          1
+        ],
+        [
+          "csv",
+          1
+        ],
+        [
+          "iqr",
+          1
+        ],
+        [
+          "orders",
+          1
+        ],
+        [
+          "store",
+          1
+        ],
+        [
+          "기본",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report"
+      ],
+      "paths": [
+        "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report.md"
+      ]
+    },
+    "community-038": {
+      "summary": "E-Commerce Orders 가격 이상치 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 commerce, iqr, orders, 가격이며, 대표 문서는 E-Commerce Orders 가격 이상치 분석 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "commerce",
+          1
+        ],
+        [
+          "iqr",
+          1
+        ],
+        [
+          "orders",
+          1
+        ],
+        [
+          "가격",
+          1
+        ],
+        [
+          "규칙",
+          1
+        ],
+        [
+          "기본",
+          1
+        ],
+        [
+          "분석",
+          1
+        ],
+        [
+          "이상치",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "5배",
+          1
+        ],
+        [
+          "commerce",
+          1
+        ],
+        [
+          "iqr",
+          1
+        ],
+        [
+          "orders",
+          1
+        ],
+        [
+          "가격",
+          1
+        ],
+        [
+          "결과",
+          1
+        ],
+        [
+          "규칙",
+          1
+        ],
+        [
+          "기본",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/17/08 E-Commerce Orders_price_outlier_report"
+      ],
+      "paths": [
+        "실습결과물/17/08 E-Commerce Orders_price_outlier_report.md"
+      ]
+    },
+    "community-039": {
+      "summary": "project Magement_blog 중심의 지식 군집입니다. 핵심 주제는 magement_blog, pm은, project, 끝내고이며, 대표 문서는 project Magement_blog 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "magement_blog",
+          1
+        ],
+        [
+          "pm은",
+          1
+        ],
+        [
+          "project",
+          1
+        ],
+        [
+          "끝내고",
+          1
+        ],
+        [
+          "두는가",
+          1
+        ],
+        [
+          "쌓아만",
+          1
+        ],
+        [
+          "어떤",
+          1
+        ],
+        [
+          "항상",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "magement_blog",
+          1
+        ],
+        [
+          "pm은",
+          1
+        ],
+        [
+          "project",
+          1
+        ],
+        [
+          "끝내고",
+          1
+        ],
+        [
+          "어떤",
+          1
+        ],
+        [
+          "항상",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/17/project Magement_blog"
+      ],
+      "paths": [
+        "실습결과물/17/project Magement_blog.md"
+      ]
+    },
+    "community-040": {
+      "summary": "엑셀 데이터 처리 프롬프트 중심의 지식 군집입니다. 핵심 주제는 text, users, 데이터, 되지이며, 대표 문서는 엑셀 데이터 처리 프롬프트 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "text",
+          1
+        ],
+        [
+          "users",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ],
+        [
+          "되지",
+          1
+        ],
+        [
+          "않아서",
+          1
+        ],
+        [
+          "엑셀",
+          1
+        ],
+        [
+          "처리",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "text",
+          1
+        ],
+        [
+          "users",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ],
+        [
+          "되지",
+          1
+        ],
+        [
+          "않아서",
+          1
+        ],
+        [
+          "엑셀",
+          1
+        ],
+        [
+          "처리",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/17/엑셀처리프롬프트"
+      ],
+      "paths": [
+        "실습결과물/17/엑셀처리프롬프트.md"
+      ]
     }
   }
 }

@@ -1,5 +1,7 @@
 {
-  "generated_at": "2026-04-17T07:53:51.059976+00:00",
+  "enabled": true,
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimension": 384,
   "pages": [
     {
       "id": "AGENTS",
@@ -30,12 +32,6 @@
         "schema",
         "unicode",
         "uses"
-      ],
-      "tokens_estimate": 630,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-009"
       ]
     },
     {
@@ -67,12 +63,6 @@
         "아키텍처와",
         "으로",
         "장기"
-      ],
-      "tokens_estimate": 5618,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-010"
       ]
     },
     {
@@ -104,12 +94,6 @@
         "preconditions",
         "recommended",
         "setup"
-      ],
-      "tokens_estimate": 564,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-011"
       ]
     },
     {
@@ -141,12 +125,6 @@
         "package",
         "rules",
         "saving"
-      ],
-      "tokens_estimate": 331,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-009"
       ]
     },
     {
@@ -178,12 +156,6 @@
         "memory",
         "stack",
         "use"
-      ],
-      "tokens_estimate": 325,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-012"
       ]
     },
     {
@@ -215,12 +187,6 @@
         "목적",
         "사용",
         "시점"
-      ],
-      "tokens_estimate": 469,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-013"
       ]
     },
     {
@@ -252,12 +218,6 @@
         "분석",
         "시각",
         "중심"
-      ],
-      "tokens_estimate": 1549,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-014"
       ]
     },
     {
@@ -289,12 +249,6 @@
         "원본",
         "전처리",
         "절차"
-      ],
-      "tokens_estimate": 226,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-015"
       ]
     },
     {
@@ -326,12 +280,6 @@
         "분석",
         "생존",
         "생존자"
-      ],
-      "tokens_estimate": 883,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-016"
       ]
     },
     {
@@ -363,12 +311,6 @@
         "axdx",
         "axdxconsultant",
         "과정"
-      ],
-      "tokens_estimate": 1578,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-017"
       ]
     },
     {
@@ -400,12 +342,6 @@
         "set",
         "stack",
         "stt"
-      ],
-      "tokens_estimate": 612,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-018"
       ]
     },
     {
@@ -437,12 +373,6 @@
         "setup",
         "shows",
         "troubleshooting"
-      ],
-      "tokens_estimate": 852,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-019"
       ]
     },
     {
@@ -474,12 +404,6 @@
         "order",
         "recreate",
         "required"
-      ],
-      "tokens_estimate": 758,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-020"
       ]
     },
     {
@@ -512,17 +436,6 @@
         "묶음",
         "실습결과물",
         "인덱스"
-      ],
-      "tokens_estimate": 87,
-      "outbound_links": [
-        "실습결과물/06/deep-research-report",
-        "실습결과물/06/mermaidTest",
-        "실습결과물/06/paperclipai교육요약",
-        "실습결과물/06/paperclipai사업계획서"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-007"
       ]
     },
     {
@@ -554,12 +467,6 @@
         "운영",
         "직원",
         "커리큘럼"
-      ],
-      "tokens_estimate": 6315,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-007"
       ]
     },
     {
@@ -585,12 +492,6 @@
         "머메이드",
         "전체",
         "테스트"
-      ],
-      "tokens_estimate": 56,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-007"
       ]
     },
     {
@@ -622,12 +523,6 @@
         "아닌",
         "요약본",
         "운영"
-      ],
-      "tokens_estimate": 242,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-007"
       ]
     },
     {
@@ -659,12 +554,6 @@
         "에이전트를",
         "요약형",
         "정량"
-      ],
-      "tokens_estimate": 418,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-007"
       ]
     },
     {
@@ -701,19 +590,6 @@
         "업무분석",
         "인덱스",
         "프로세스"
-      ],
-      "tokens_estimate": 88,
-      "outbound_links": [
-        "실습결과물/07/01-업무-흐름-구조화",
-        "실습결과물/07/02-업무-흐름-mermaid",
-        "실습결과물/07/03-업무-비효율-수치화-템플릿",
-        "실습결과물/07/04-as-is-프로세스-스케치",
-        "실습결과물/07/5가지단계로 나누기",
-        "실습결과물/07/업무분석보고서"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-004"
       ]
     },
     {
@@ -740,12 +616,6 @@
         "업무",
         "자료",
         "흐름"
-      ],
-      "tokens_estimate": 63,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-004"
       ]
     },
     {
@@ -772,12 +642,6 @@
         "swimlanes",
         "업무",
         "흐름"
-      ],
-      "tokens_estimate": 310,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-004"
       ]
     },
     {
@@ -807,12 +671,6 @@
         "업무",
         "작성",
         "템플릿"
-      ],
-      "tokens_estimate": 54,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-004"
       ]
     },
     {
@@ -840,12 +698,6 @@
         "스케치",
         "작성",
         "프로세스"
-      ],
-      "tokens_estimate": 180,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-004"
       ]
     },
     {
@@ -875,17 +727,6 @@
         "쪼개기",
         "파일로",
         "하루"
-      ],
-      "tokens_estimate": 59,
-      "outbound_links": [
-        "실습결과물/07/01-업무-흐름-구조화",
-        "실습결과물/07/02-업무-흐름-mermaid",
-        "실습결과물/07/03-업무-비효율-수치화-템플릿",
-        "실습결과물/07/04-as-is-프로세스-스케치"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-004"
       ]
     },
     {
@@ -925,19 +766,6 @@
         "수업",
         "실습결과물",
         "업무"
-      ],
-      "tokens_estimate": 2846,
-      "outbound_links": [
-        "실습결과물/07/00-INDEX",
-        "실습결과물/07/01-업무-흐름-구조화",
-        "실습결과물/07/02-업무-흐름-mermaid",
-        "실습결과물/07/03-업무-비효율-수치화-템플릿",
-        "실습결과물/07/04-as-is-프로세스-스케치",
-        "실습결과물/07/5가지단계로 나누기"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-004"
       ]
     },
     {
@@ -977,19 +805,6 @@
         "업무리스트",
         "우선순위",
         "인덱스"
-      ],
-      "tokens_estimate": 106,
-      "outbound_links": [
-        "실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스",
-        "실습결과물/08/02-AI-활용영역-보조-요약-생성-분석",
-        "실습결과물/08/03-정량평가-우선순위",
-        "실습결과물/08/04-value-estimation-canvas",
-        "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우",
-        "실습결과물/08/업무리스트"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-005"
       ]
     },
     {
@@ -1019,12 +834,6 @@
         "작성",
         "준비물",
         "핵심"
-      ],
-      "tokens_estimate": 374,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-005"
       ]
     },
     {
@@ -1056,12 +865,6 @@
         "생성",
         "있는",
         "작성"
-      ],
-      "tokens_estimate": 424,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-005"
       ]
     },
     {
@@ -1093,12 +896,6 @@
         "정량",
         "정량평가",
         "좋습니다"
-      ],
-      "tokens_estimate": 350,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-005"
       ]
     },
     {
@@ -1130,12 +927,6 @@
         "대상",
         "빈도",
         "소요"
-      ],
-      "tokens_estimate": 220,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-005"
       ]
     },
     {
@@ -1165,12 +956,6 @@
         "자동",
         "초안",
         "프로세스"
-      ],
-      "tokens_estimate": 623,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-005"
       ]
     },
     {
@@ -1198,18 +983,6 @@
         "주제별로",
         "파일로",
         "핵심"
-      ],
-      "tokens_estimate": 84,
-      "outbound_links": [
-        "실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스",
-        "실습결과물/08/02-AI-활용영역-보조-요약-생성-분석",
-        "실습결과물/08/03-정량평가-우선순위",
-        "실습결과물/08/04-value-estimation-canvas",
-        "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-005"
       ]
     },
     {
@@ -1243,17 +1016,6 @@
         "실습결과물",
         "인덱스",
         "현상분석"
-      ],
-      "tokens_estimate": 54,
-      "outbound_links": [
-        "실습결과물/09/노래요청",
-        "실습결과물/09/문제 정의서",
-        "실습결과물/09/미션20대여성상품",
-        "실습결과물/09/현상에서문제로"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-008"
       ]
     },
     {
@@ -1280,12 +1042,6 @@
         "만화",
         "요청",
         "주제곡같은"
-      ],
-      "tokens_estimate": 269,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-008"
       ]
     },
     {
@@ -1317,12 +1073,6 @@
         "정의서",
         "증가",
         "최근"
-      ],
-      "tokens_estimate": 612,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-008"
       ]
     },
     {
@@ -1354,12 +1104,6 @@
         "인식",
         "저하",
         "전략"
-      ],
-      "tokens_estimate": 526,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-008"
       ]
     },
     {
@@ -1391,12 +1135,6 @@
         "업무",
         "작성",
         "정의"
-      ],
-      "tokens_estimate": 518,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-008"
       ]
     },
     {
@@ -1434,21 +1172,6 @@
         "인덱스",
         "콘텐츠",
         "해양드론"
-      ],
-      "tokens_estimate": 102,
-      "outbound_links": [
-        "실습결과물/13/AIDX_5일차_교시별_요약",
-        "실습결과물/13/광물자료조사",
-        "실습결과물/13/노트북lm 수업 요약보고서",
-        "실습결과물/13/블로그 형태",
-        "실습결과물/13/수중드론_블로그",
-        "실습결과물/13/수중드론_사업화_기획안",
-        "실습결과물/13/해양드론딥리서치결과",
-        "실습결과물/13/해양드론조사보고서"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-006"
       ]
     },
     {
@@ -1480,12 +1203,6 @@
         "기준",
         "분할",
         "수업"
-      ],
-      "tokens_estimate": 375,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-006"
       ]
     },
     {
@@ -1517,12 +1234,6 @@
         "조사",
         "조치",
         "투자"
-      ],
-      "tokens_estimate": 1359,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-006"
       ]
     },
     {
@@ -1549,12 +1260,6 @@
         "요약보고서",
         "전략",
         "활용"
-      ],
-      "tokens_estimate": 965,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-006"
       ]
     },
     {
@@ -1580,12 +1285,6 @@
         "주인은",
         "진짜",
         "형태"
-      ],
-      "tokens_estimate": 634,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-006"
       ]
     },
     {
@@ -1610,12 +1309,6 @@
         "수중",
         "수중드론_블로그",
         "캐는"
-      ],
-      "tokens_estimate": 750,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-006"
       ]
     },
     {
@@ -1647,12 +1340,6 @@
         "필요성",
         "해양",
         "핵심"
-      ],
-      "tokens_estimate": 1242,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-003"
       ]
     },
     {
@@ -1684,12 +1371,6 @@
         "시장",
         "실행",
         "제시"
-      ],
-      "tokens_estimate": 5617,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-003"
       ]
     },
     {
@@ -1720,12 +1401,6 @@
         "탐사",
         "프롬프트",
         "해양드론"
-      ],
-      "tokens_estimate": 1875,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-006"
       ]
     },
     {
@@ -1764,20 +1439,6 @@
         "프롬프트",
         "하위",
         "허브"
-      ],
-      "tokens_estimate": 97,
-      "outbound_links": [
-        "실습결과물/14/10-주간업무일지-INDEX",
-        "실습결과물/14/20-수중드론-INDEX",
-        "실습결과물/14/30-소설-INDEX",
-        "실습결과물/14/AI요청 프롬프트",
-        "실습결과물/14/시대상 과 역사적 사실",
-        "실습결과물/14/업무일지 작성프롬프트",
-        "실습결과물/14/이메일발송프롬프트"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -1808,20 +1469,6 @@
         "인덱스",
         "주간",
         "주간리포트"
-      ],
-      "tokens_estimate": 90,
-      "outbound_links": [
-        "실습결과물/14/00-INDEX",
-        "실습결과물/14/2026_3_13_주간 업무일지",
-        "실습결과물/14/2026_3_20_주간 업무일지",
-        "실습결과물/14/2026_3_27_주간 업무일지",
-        "실습결과물/14/2026_4_10_주간 업무일지",
-        "실습결과물/14/2026_4_3_주간 업무일지",
-        "실습결과물/14/업무일지 작성프롬프트"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -1859,22 +1506,6 @@
         "인덱스",
         "타당성",
         "핵심"
-      ],
-      "tokens_estimate": 123,
-      "outbound_links": [
-        "실습결과물/13/수중드론_사업화_기획안",
-        "실습결과물/13/해양드론딥리서치결과",
-        "실습결과물/14/00-INDEX",
-        "실습결과물/14/수중드론_사업화_1페이지_BLUF",
-        "실습결과물/14/수중드론_사업화_1페이지_BLUF_열정설득서술형",
-        "실습결과물/14/수중드론_사업화_1페이지_BLUF_포멀서술형",
-        "실습결과물/14/수중드론_사업화_기획안",
-        "실습결과물/14/수중드론_사업화_상세기획안",
-        "실습결과물/14/수중드론_사업화_타당성"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-003"
       ]
     },
     {
@@ -1906,12 +1537,6 @@
         "주간",
         "주요",
         "진행"
-      ],
-      "tokens_estimate": 401,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -1943,12 +1568,6 @@
         "주간",
         "주요",
         "진행"
-      ],
-      "tokens_estimate": 376,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -1980,12 +1599,6 @@
         "주간",
         "주요",
         "진행"
-      ],
-      "tokens_estimate": 358,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -2017,12 +1630,6 @@
         "주간",
         "주요",
         "진행"
-      ],
-      "tokens_estimate": 376,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -2054,12 +1661,6 @@
         "주간",
         "주요",
         "진행"
-      ],
-      "tokens_estimate": 440,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -2094,23 +1695,6 @@
         "실습결과물",
         "운영",
         "인덱스"
-      ],
-      "tokens_estimate": 86,
-      "outbound_links": [
-        "실습결과물/14/00-INDEX",
-        "실습결과물/14/고려빙의_스토리라인",
-        "실습결과물/14/소설1권",
-        "실습결과물/14/소설2권",
-        "실습결과물/14/소설3권",
-        "실습결과물/14/소설4권",
-        "실습결과물/14/소설5권",
-        "실습결과물/14/소설_목차_5부작",
-        "실습결과물/14/소설_연속작성_토큰로그",
-        "실습결과물/14/시대상 과 역사적 사실"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-002"
       ]
     },
     {
@@ -2136,12 +1720,6 @@
         "당신은",
         "프롬프트",
         "혁신"
-      ],
-      "tokens_estimate": 184,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -2173,12 +1751,6 @@
         "송악의",
         "스토리라인",
         "이방인"
-      ],
-      "tokens_estimate": 561,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-002"
       ]
     },
     {
@@ -2210,12 +1782,6 @@
         "이방인",
         "있었다",
         "제1권"
-      ],
-      "tokens_estimate": 2819,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-002"
       ]
     },
     {
@@ -2247,12 +1813,6 @@
         "연결",
         "왕융은",
         "윤해진은"
-      ],
-      "tokens_estimate": 1836,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-002"
       ]
     },
     {
@@ -2284,12 +1844,6 @@
         "왕융은",
         "정권은",
         "철원에서"
-      ],
-      "tokens_estimate": 1721,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-002"
       ]
     },
     {
@@ -2321,12 +1875,6 @@
         "연결",
         "즉위",
         "철혈의"
-      ],
-      "tokens_estimate": 1572,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-002"
       ]
     },
     {
@@ -2358,12 +1906,6 @@
         "압축",
         "양면전과",
         "철혈의"
-      ],
-      "tokens_estimate": 1435,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-002"
       ]
     },
     {
@@ -2395,12 +1937,6 @@
         "송악의",
         "이방인",
         "철혈의"
-      ],
-      "tokens_estimate": 160,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-002"
       ]
     },
     {
@@ -2432,12 +1968,6 @@
         "정확",
         "추정",
         "컨텍스트"
-      ],
-      "tokens_estimate": 197,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-002"
       ]
     },
     {
@@ -2469,12 +1999,6 @@
         "실행",
         "요약안",
         "이유"
-      ],
-      "tokens_estimate": 420,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-003"
       ]
     },
     {
@@ -2505,12 +2029,6 @@
         "열정",
         "제안서",
         "지금이"
-      ],
-      "tokens_estimate": 334,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-003"
       ]
     },
     {
@@ -2539,12 +2057,6 @@
         "수중",
         "수중드론",
         "포멀"
-      ],
-      "tokens_estimate": 365,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-003"
       ]
     },
     {
@@ -2582,20 +2094,6 @@
         "운영형",
         "필요성",
         "핵심"
-      ],
-      "tokens_estimate": 1324,
-      "outbound_links": [
-        "실습결과물/13/수중드론_사업화_기획안",
-        "실습결과물/13/해양드론딥리서치결과",
-        "실습결과물/14/00-INDEX",
-        "실습결과물/14/20-수중드론-INDEX",
-        "실습결과물/14/수중드론_사업화_1페이지_BLUF",
-        "실습결과물/14/수중드론_사업화_상세기획안",
-        "실습결과물/14/수중드론_사업화_타당성"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-003"
       ]
     },
     {
@@ -2627,12 +2125,6 @@
         "설계",
         "수중드론",
         "필요성"
-      ],
-      "tokens_estimate": 1607,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-003"
       ]
     },
     {
@@ -2664,12 +2156,6 @@
         "운영",
         "운영안",
         "초안"
-      ],
-      "tokens_estimate": 3708,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-003"
       ]
     },
     {
@@ -2701,12 +2187,6 @@
         "시대상과",
         "애노",
         "역사적"
-      ],
-      "tokens_estimate": 714,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -2733,12 +2213,6 @@
         "업무일지",
         "작성",
         "프롬프트"
-      ],
-      "tokens_estimate": 122,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -2765,12 +2239,6 @@
         "이메일을",
         "프롬프트",
         "한다"
-      ],
-      "tokens_estimate": 62,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-001"
       ]
     },
     {
@@ -2807,16 +2275,6 @@
         "묶음",
         "실습결과물",
         "인덱스"
-      ],
-      "tokens_estimate": 71,
-      "outbound_links": [
-        "AGENTS",
-        "llm_wiki/README",
-        "실습결과물/15/wikiLLM"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-009"
       ]
     },
     {
@@ -2857,16 +2315,6 @@
         "wikillm",
         "구현하기",
         "실습결과물"
-      ],
-      "tokens_estimate": 101,
-      "outbound_links": [
-        "AGENTS",
-        "llm_wiki/README",
-        "실습결과물/15/00-INDEX"
-      ],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-009"
       ]
     },
     {
@@ -2893,12 +2341,6 @@
         "스크립트",
         "업그레이드한",
         "영상"
-      ],
-      "tokens_estimate": 1978,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-021"
       ]
     },
     {
@@ -2930,12 +2372,6 @@
         "요약보고서",
         "자료는",
         "한계"
-      ],
-      "tokens_estimate": 522,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-022"
       ]
     },
     {
@@ -2953,12 +2389,6 @@
         "youtube",
         "영상",
         "요약본"
-      ],
-      "tokens_estimate": 298,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-023"
       ]
     },
     {
@@ -2986,12 +2416,6 @@
         "설치",
         "순위",
         "프롬프트"
-      ],
-      "tokens_estimate": 62,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-024"
       ]
     },
     {
@@ -3023,12 +2447,6 @@
         "시각화",
         "실제",
         "실제데이터"
-      ],
-      "tokens_estimate": 597,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-025"
       ]
     },
     {
@@ -3060,12 +2478,6 @@
         "연비",
         "인터랙티브",
         "자동차"
-      ],
-      "tokens_estimate": 2720,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-026"
       ]
     },
     {
@@ -3097,12 +2509,6 @@
         "로그",
         "보고",
         "상세"
-      ],
-      "tokens_estimate": 2434,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-027"
       ]
     },
     {
@@ -3130,12 +2536,6 @@
         "seaborn",
         "순매출",
         "월별"
-      ],
-      "tokens_estimate": 274,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-028"
       ]
     },
     {
@@ -3167,12 +2567,6 @@
         "추세",
         "판매량",
         "플랜"
-      ],
-      "tokens_estimate": 804,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-029"
       ]
     },
     {
@@ -3196,12 +2590,6 @@
         "브리핑",
         "전략",
         "판매"
-      ],
-      "tokens_estimate": 830,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-030"
       ]
     },
     {
@@ -3229,12 +2617,6 @@
         "분석에",
         "쓰인",
         "프롬프트"
-      ],
-      "tokens_estimate": 290,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-031"
       ]
     },
     {
@@ -3254,12 +2636,6 @@
         "예제",
         "자동차",
         "프롬프트"
-      ],
-      "tokens_estimate": 962,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-032"
       ]
     },
     {
@@ -3291,12 +2667,6 @@
         "대응방안",
         "문제",
         "요청하신"
-      ],
-      "tokens_estimate": 293,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-033"
       ]
     },
     {
@@ -3328,12 +2698,6 @@
         "보정이",
         "성과",
         "알고리즘"
-      ],
-      "tokens_estimate": 841,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-034"
       ]
     },
     {
@@ -3365,12 +2729,6 @@
         "인사이트",
         "저하는",
         "전체"
-      ],
-      "tokens_estimate": 602,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-035"
       ]
     },
     {
@@ -3402,12 +2760,6 @@
         "비교",
         "비교는",
         "연도별"
-      ],
-      "tokens_estimate": 481,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-036"
       ]
     },
     {
@@ -3439,12 +2791,6 @@
         "분석",
         "생성",
         "이상치"
-      ],
-      "tokens_estimate": 1360,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-037"
       ]
     },
     {
@@ -3476,12 +2822,6 @@
         "대상",
         "분석",
         "비율이"
-      ],
-      "tokens_estimate": 1088,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-038"
       ]
     },
     {
@@ -3507,12 +2847,6 @@
         "끝내고",
         "어떤",
         "항상"
-      ],
-      "tokens_estimate": 738,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-039"
       ]
     },
     {
@@ -3540,12 +2874,6 @@
         "엑셀",
         "처리",
         "프롬프트"
-      ],
-      "tokens_estimate": 164,
-      "outbound_links": [],
-      "unresolved_links": [],
-      "community_ids": [
-        "community-040"
       ]
     }
   ]

@@ -11,6 +11,9 @@ from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
 from urllib.parse import unquote
 
+from .community import build_communities
+from .semantic import build_semantic_index
+
 
 WIKI_LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]+)?\]\]")
 MD_LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
@@ -343,6 +346,7 @@ def build_index(repo_root: Path) -> Dict[str, object]:
         )
 
     pages.sort(key=lambda page: page.relpath.lower())
+    community_graph, community_summaries, page_to_communities = build_communities(pages, edges, inbound_counts)
     graph = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "repo_root": str(repo_root),
@@ -361,15 +365,18 @@ def build_index(repo_root: Path) -> Dict[str, object]:
                 "outbound_links": page.outbound_links,
                 "unresolved_links": page.unresolved_links,
                 "inbound_count": inbound_counts.get(page.page_id, 0),
+                "community_ids": page_to_communities.get(page.page_id, []),
             }
             for page in pages
         ],
         "edges": edges,
+        "communities": community_summaries["communities"],
         "stats": {
             "markdown_pages": len(pages),
             "resolved_edges": len(edges),
             "unresolved_links": sum(len(page.unresolved_links) for page in pages),
             "total_tokens_estimate": sum(page.tokens_estimate for page in pages),
+            "community_count": community_summaries["stats"]["community_count"],
         },
         "facets": {
             "top_tags": tag_counts.most_common(15),
@@ -392,9 +399,11 @@ def build_index(repo_root: Path) -> Dict[str, object]:
                 "neighbors": page.outbound_links,
                 "inbound_count": inbound_counts.get(page.page_id, 0),
                 "tokens_estimate": page.tokens_estimate,
+                "community_ids": page_to_communities.get(page.page_id, []),
             }
             for page in pages
         ],
+        "communities": community_summaries["communities"],
     }
 
     query_cache = {
@@ -412,8 +421,20 @@ def build_index(repo_root: Path) -> Dict[str, object]:
                 "neighbors": page.outbound_links,
                 "inbound_count": inbound_counts.get(page.page_id, 0),
                 "tokens_estimate": page.tokens_estimate,
+                "community_ids": page_to_communities.get(page.page_id, []),
             }
             for page in pages
+        },
+        "communities": {
+            community["id"]: {
+                "summary": community["summary"],
+                "top_tags": community["top_tags"],
+                "top_topics": community["top_topics"],
+                "top_entities": community["top_entities"],
+                "page_ids": community["page_ids"],
+                "paths": community["paths"],
+            }
+            for community in community_summaries["communities"]
         },
     }
 
@@ -421,6 +442,8 @@ def build_index(repo_root: Path) -> Dict[str, object]:
         "graph": graph,
         "structure_index": structure_index,
         "query_cache": query_cache,
+        "community_graph": community_graph,
+        "community_summaries": community_summaries,
         "pages": pages,
         "unresolved_counts": unresolved_counts,
         "ignore_patterns": ignore_rules.patterns,
@@ -438,7 +461,10 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
     index_json_path = system_root / "page_index.json"
     cache_path = system_root / "query_cache.json"
     structure_path = system_root / "structure_index.json"
+    community_graph_path = system_root / "community_graph.json"
+    community_summaries_path = system_root / "community_summaries.json"
     report_path = wiki_root / "graph_report.md"
+    community_report_path = wiki_root / "community_report.md"
     query_log_json_path = system_root / "query_log.json"
     query_log_md_path = wiki_root / "query_log.md"
     index_md_path = wiki_root / "index.md"
@@ -446,11 +472,15 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
 
     graph = build["graph"]
     structure_index = build["structure_index"]
+    community_graph = build["community_graph"]
+    community_summaries = build["community_summaries"]
     pages: List[PageRecord] = build["pages"]  # type: ignore[assignment]
     unresolved_counts: Counter[str] = build["unresolved_counts"]  # type: ignore[assignment]
 
     graph_path.write_text(json.dumps(graph, ensure_ascii=False, indent=2), encoding="utf-8")
     structure_path.write_text(json.dumps(structure_index, ensure_ascii=False, indent=2), encoding="utf-8")
+    community_graph_path.write_text(json.dumps(community_graph, ensure_ascii=False, indent=2), encoding="utf-8")
+    community_summaries_path.write_text(json.dumps(community_summaries, ensure_ascii=False, indent=2), encoding="utf-8")
     index_json_path.write_text(
         json.dumps(
             {
@@ -467,8 +497,9 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
                         "tokens_estimate": page.tokens_estimate,
                         "outbound_links": page.outbound_links,
                         "unresolved_links": page.unresolved_links,
+                        "community_ids": structure_index["pages"][idx]["community_ids"],
                     }
-                    for page in pages
+                    for idx, page in enumerate(pages)
                 ],
             },
             ensure_ascii=False,
@@ -477,6 +508,22 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         encoding="utf-8",
     )
     cache_path.write_text(json.dumps(build["query_cache"], ensure_ascii=False, indent=2), encoding="utf-8")
+    semantic_meta = build_semantic_index(
+        system_root,
+        [
+            {
+                "id": page.page_id,
+                "title": page.title,
+                "path": page.relpath,
+                "summary": page.summary,
+                "headings": page.headings,
+                "tags": page.tags,
+                "topics": page.topics,
+                "entities": page.entities,
+            }
+            for page in pages
+        ],
+    )
 
     if not query_log_json_path.exists():
         query_log_json_path.write_text("[]\n", encoding="utf-8")
@@ -489,8 +536,10 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         f"- Generated: {graph['generated_at']}",
         f"- Markdown pages: {graph['stats']['markdown_pages']}",
         f"- Resolved edges: {graph['stats']['resolved_edges']}",
+        f"- Communities: {graph['stats']['community_count']}",
         f"- Estimated full-read tokens: {graph['stats']['total_tokens_estimate']}",
         f"- Ignore file: `{IGNORE_FILE_NAME}`",
+        f"- Semantic search: {'enabled' if semantic_meta.get('enabled') else 'disabled'}",
         "",
         "## Pages",
         "",
@@ -530,6 +579,11 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
     report_lines.extend(["", "## Top Entities", ""])
     for entity, count in graph["facets"]["top_entities"]:
         report_lines.append(f"- `{entity}` x {count}")
+    report_lines.extend(["", "## Communities", ""])
+    for community in community_summaries["communities"][:12]:
+        report_lines.append(
+            f"- `{community['id']}` | size={community['size']} | representative=[{community['representative_title']}](../{community['representative_path']})"
+        )
     report_lines.extend(["", "## Most Connected Pages", ""])
     for page in connected:
         report_lines.append(f"- [{page.title}](../{page.relpath}) | outbound={len(page.outbound_links)}")
@@ -542,11 +596,31 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         report_lines.append(f"- [{page.title}](../{page.relpath})")
     report_path.write_text("\n".join(report_lines) + "\n", encoding="utf-8")
 
+    community_lines = [
+        "# Community Report",
+        "",
+        f"- Generated: {graph['generated_at']}",
+        f"- Community count: {community_summaries['stats']['community_count']}",
+        "",
+    ]
+    for community in community_summaries["communities"]:
+        community_lines.append(f"## {community['id']}")
+        community_lines.append("")
+        community_lines.append(f"- Representative: [{community['representative_title']}](../{community['representative_path']})")
+        community_lines.append(f"- Size: {community['size']}")
+        community_lines.append(f"- Summary: {community['summary']}")
+        community_lines.append(f"- Topics: {', '.join(topic for topic, _ in community['top_topics']) or '(none)'}")
+        community_lines.append(f"- Entities: {', '.join(entity for entity, _ in community['top_entities']) or '(none)'}")
+        community_lines.append(f"- Pages: {', '.join(community['paths'])}")
+        community_lines.append("")
+    community_report_path.write_text("\n".join(community_lines), encoding="utf-8")
+
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     entry = (
         f"## [{timestamp}] build | markdown graph refresh\n"
         f"- pages: {graph['stats']['markdown_pages']}\n"
         f"- edges: {graph['stats']['resolved_edges']}\n"
+        f"- communities: {graph['stats']['community_count']}\n"
         f"- estimated tokens: {graph['stats']['total_tokens_estimate']}\n"
     )
     if log_path.exists():
@@ -560,7 +634,12 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         "index_json_path": index_json_path,
         "cache_path": cache_path,
         "structure_path": structure_path,
+        "community_graph_path": community_graph_path,
+        "community_summaries_path": community_summaries_path,
         "report_path": report_path,
+        "community_report_path": community_report_path,
+        "semantic_index_path": system_root / "semantic_index.faiss",
+        "semantic_meta_path": system_root / "semantic_meta.json",
         "query_log_json_path": query_log_json_path,
         "query_log_md_path": query_log_md_path,
         "index_md_path": index_md_path,

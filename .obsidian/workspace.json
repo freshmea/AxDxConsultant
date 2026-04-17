@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "7ac3878b16b8789b",
+        "id": "195e3499969c2a67",
         "type": "tabs",
         "children": [
           {
-            "id": "5a9714e6a4b7809a",
+            "id": "a94fc1ab5438420f",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "새 탭"
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
         ]
@@ -157,13 +157,23 @@
               "icon": "lucide-list",
               "title": "개요"
             }
+          },
+          {
+            "id": "b01eb13f35815758",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 584.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -173,22 +183,41 @@
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false
+      "bases:새 베이스 생성하기": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "5a9714e6a4b7809a",
+  "active": "b01eb13f35815758",
   "lastOpenFiles": [
-    "실습결과물/16/Strategic_Growth_Blueprint.pdf",
+    "wiki/system/link_graph.gv",
+    "$null",
+    "wiki/community_report.md",
+    "wiki/system/semantic_meta.json",
+    "wiki/system/semantic_index.faiss",
+    "wiki/system/community_summaries.json",
+    "wiki/system/community_graph.json",
+    "llm_wiki/__pycache__/memory_layer.cpython-312.pyc",
+    "llm_wiki/__pycache__/semantic.cpython-312.pyc",
+    "llm_wiki/__pycache__/community.cpython-312.pyc",
+    "llm_wiki/__pycache__/indexer.cpython-312.pyc",
+    "llm_wiki/__pycache__/cli.cpython-312.pyc",
+    "memory_layer/README.md",
+    "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
+    "실습결과물/17/02 Project Management_SCQA_insight_report.md",
+    "wiki/notes/2026-04-13_dxax_class_summary.md",
+    "wiki/notes/2026-04-09_dxax_class_summary.md",
+    "wiki/notes/2026-04-16_dxax_class_summary.md",
+    "wiki/notes/2026-04-15_dxax_class_summary.md",
+    "wiki/notes/2026-04-14_dxax_class_summary.md",
+    "wiki/notes/2026-04-10_dxax_class_summary.md",
+    "wiki/notes/2026-04-08_dxax_class_summary.md",
+    "wiki/notes/2026-04-06_dxax_class_summary.md",
+    "skills/local-whisper-gpu/SKILL.md",
     "실습결과물/16/retail_Sales_분석보고서노트북lm.png",
     "실습결과물/16/unnamed.png",
     "실습결과물/16/리테일 분석판매보고서노트북LM.md",
-    "실습결과물/16/retail_sales_dataset_Transactions.csv",
-    "실습결과물/16/retail_sales_dataset_Stores.csv",
-    "실습결과물/16/retail_sales_dataset_Products.csv",
-    "실습결과물/16/retail_sales_dataset_Customers.csv",
-    "실습결과물/16/~$retail_sales_dataset.xlsx",
-    "실습결과물/16/retail_sales_trend_onepage_report.pdf",
-    "실습결과물/16/retail_sales_trend_onepage_report_tmp.html",
     "실습결과물/16/retail_sales_trend_onepage_report.md",
     "실습결과물/16/매출분석에 쓰인 프롬프트.md",
     "실습결과물/16/retail_sales_report_assets/22_daily_category_sales_trend.png",
@@ -200,29 +229,13 @@
     "실습결과물/16/retail_sales_report_assets/16_daily_net_sales_trend.png",
     "실습결과물/16/retail_sales_report_assets/15_monthly_quantity_trend.png",
     "실습결과물/16/retail_sales_report_assets/README.md",
-    "실습결과물/16/retail_sales_report_assets",
-    "실습결과물/16/retail_sales_seaborn_report.py",
-    "실습결과물/16/retail_sales_dataset.xlsx",
     "실습결과물/16/imports-85_interactive_report.md",
     "실습결과물/16/자동차수출예제관련프롬프트.md",
     "실습결과물/16/imports-85_actual_data_summary.md",
     "실습결과물/16/imports-85_report.md",
     "실습결과물/16/한페이지요약 HRD AX 수업도향.md",
-    "wiki/notes/2026-04-14_dxax_class_summary.md",
-    "wiki/notes/2026-04-13_dxax_class_summary.md",
-    "wiki/notes/2026-04-10_dxax_class_summary.md",
-    "wiki/notes/2026-04-09_dxax_class_summary.md",
-    "wiki/notes/2026-04-08_dxax_class_summary.md",
     "skills/troubleshooting.md",
-    "skills/local-whisper-gpu/SKILL.md",
     "skills/wiki-llm-setup/SKILL.md",
-    "skills/local-llm-stack-setup/SKILL.md",
-    "wiki/graph_report.md",
-    "wiki/query_log.md",
-    "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md",
-    "실습결과물/15/YouTube 영상 요약본.md",
-    "실습결과물/15/Youtube 영상 스크립트.md",
-    "wiki/notes/2026-04-06_dxax_class_summary.md",
-    "실습결과물/15/로컬 whisper 모델 설치 프롬프트.md"
+    "skills/local-llm-stack-setup/SKILL.md"
   ]
 }

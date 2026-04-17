@@ -1,66 +1,44 @@
 # Wiki Index
 
-- Generated: 2026-04-17T05:24:40.756622+00:00
-- Markdown pages: 96
+- Generated: 2026-04-17T07:53:51.059976+00:00
+- Markdown pages: 95
 - Resolved edges: 89
-- Estimated full-read tokens: 76480
+- Communities: 40
+- Estimated full-read tokens: 81190
 - Ignore file: `.llmwikiignore`
+- Semantic search: enabled
 
 ## Pages
 
-- [MathJax](../.venv-report/Lib/site-packages/kaleido/executable/etc/mathjax/README.md)
-  - Path: `.venv-report/Lib/site-packages/kaleido/executable/etc/mathjax/README.md`
-  - Summary: MathJax is an open-source JavaScript display engine for LaTeX, MathML, and AsciiMath notation that works in all modern browsers. It was designed with the goal of consolidating the recent advances in web technologies into a single, definitive, math-on-the-web platform supporting t
-  - Tags: (none)
-  - Topics: all, an, browsers, in, is
-  - Links: 0 outbound / 0 unresolved
-- [NCSA Open Source License](../.venv-report/Lib/site-packages/numpy/random/LICENSE.md)
-  - Path: `.venv-report/Lib/site-packages/numpy/random/LICENSE.md`
-  - Summary: **This software is dual-licensed under the The University of Illinois/NCSA Open Source License (NCSA) and The 3-Clause BSD License**
-  - Tags: (none)
-  - Topics: bsd, clause, is, license, ncsa
-  - Links: 0 outbound / 0 unresolved
-- [LICENSE](../.venv-report/Lib/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md)
-  - Path: `.venv-report/Lib/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md`
-  - Summary: BSD 3-Clause License
-  - Tags: (none)
-  - Topics: bsd, clause, license
-  - Links: 0 outbound / 0 unresolved
-- [LICENSE](../.venv-report/Lib/site-packages/pip/_vendor/idna/LICENSE.md)
-  - Path: `.venv-report/Lib/site-packages/pip/_vendor/idna/LICENSE.md`
-  - Summary: BSD 3-Clause License
-  - Tags: (none)
-  - Topics: bsd, clause, license
-  - Links: 0 outbound / 0 unresolved
-- [best_practices](../.venv-report/Lib/site-packages/pyparsing/ai/best_practices.md)
-  - Path: `.venv-report/Lib/site-packages/pyparsing/ai/best_practices.md`
-  - Summary: <!-- This file contains instructions for best practices for developing parsers with pyparsing, and can be used by AI agents when generating Python code using pyparsing. -->
-  - Tags: (none)
-  - Topics: best, best_practices, contains, developing, file
-  - Links: 0 outbound / 0 unresolved
-- [LICENSE](../.venv-report/Lib/site-packages/scipy/fft/_pocketfft/LICENSE.md)
-  - Path: `.venv-report/Lib/site-packages/scipy/fft/_pocketfft/LICENSE.md`
-  - Summary: Copyright (C) 2010-2019 Max-Planck-Society All rights reserved.
-  - Tags: (none)
-  - Topics: 2010, 2019, all, copyright, license
-  - Links: 0 outbound / 0 unresolved
-- [LICENSE](../.venv-report/Lib/site-packages/seaborn-0.13.2.dist-info/LICENSE.md)
-  - Path: `.venv-report/Lib/site-packages/seaborn-0.13.2.dist-info/LICENSE.md`
-  - Summary: Copyright (c) 2012-2023, Michael L. Waskom All rights reserved.
-  - Tags: (none)
-  - Topics: 2012, 2023, all, copyright, license
-  - Links: 0 outbound / 0 unresolved
 - [LLM Wiki Schema](../AGENTS.md)
   - Path: `AGENTS.md`
   - Summary: This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm-wiki.md` gist.
   - Tags: (none)
-  - Topics: llm, local, pattern, repository, schema
+  - Topics: llm, local, repository, rules, schema
+  - Links: 0 outbound / 0 unresolved
+- [LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
+  - Path: `llm_wiki/LLM 지식 아키텍처.md`
+  - Summary: 2023~2026년의 흐름을 한 문장으로 요약하면, **“큰 컨텍스트 창에 다 때려 넣는 방식”에서 “필요한 지식과 절차를 분리해 지속적으로 기억·갱신하는 방식”으로 이동**했다고 볼 수 있습니다. 2023년 MemGPT는 제한된 컨텍스트 윈도우를 계층형 메모리로 우회하는 문제를 제기했고, 2024년 Microsoft GraphRAG는 사설 문서 코퍼스에 대해 **그래프 인덱스 + 커뮤니티 요약**으로 전역 질문을 다루는 방법을 제시했습니다. 2025년 Zep/Graphiti와 Mem0는 장기 기
+  - Tags: (none)
+  - Topics: llm, 기억, 도구, 비교, 아키텍처와
+  - Links: 0 outbound / 0 unresolved
+- [Obsidian Smart Connections Setup](../llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md)
+  - Path: `llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md`
+  - Summary: This workspace already uses Obsidian for graph navigation and `llm_wiki` for graph-first indexing. Smart Connections should be treated as the semantic front-end inside Obsidian, not as a replacement for the wiki build.
+  - Tags: (none)
+  - Topics: as, connections, graph, obsidian, plugin
   - Links: 0 outbound / 0 unresolved
 - [Local LLM Wiki](../llm_wiki/README.md)
   - Path: `llm_wiki/README.md`
   - Summary: This package builds a lightweight Karpathy-style wiki layer over the markdown files in this repository.
   - Tags: (none)
   - Topics: builds, files, karpathy, lightweight, llm
+  - Links: 0 outbound / 0 unresolved
+- [Local Memory Layer](../memory_layer/README.md)
+  - Path: `memory_layer/README.md`
+  - Summary: This folder holds the change-aware fact memory stack for this workspace.
+  - Tags: (none)
+  - Topics: aware, change, folder, holds, layer
   - Links: 0 outbound / 0 unresolved
 - [Notion App Date Filter Fallback Skill](../notion_app_date_filter_fallback_skill/SKILL.md)
   - Path: `notion_app_date_filter_fallback_skill/SKILL.md`
@@ -566,11 +544,29 @@
   - Tags: (none)
   - Topics: 1페이지, management, project, 기준으로, 매니저
   - Links: 0 outbound / 0 unresolved
+- [프로젝트 포트폴리오 SCQA 인사이트 리포트](../실습결과물/17/02 Project Management_SCQA_insight_report.md)
+  - Path: `실습결과물/17/02 Project Management_SCQA_insight_report.md`
+  - Summary: 프로젝트 포트폴리오 성과 저하는 전체 실행력 붕괴보다 `연도 효과 + 매니저별 backlog 편차`로 설명된다
+  - Tags: (none)
+  - Topics: scqa, 리포트, 성과, 실행력, 인사이트
+  - Links: 0 outbound / 0 unresolved
 - [Project Management 데이터 1페이지 요약 보고서](../실습결과물/17/02 Project Management_summary_report.md)
   - Path: `실습결과물/17/02 Project Management_summary_report.md`
   - Summary: 분석 대상: `02 Project Management_ml_imputed.xlsx` 1,000건 - 기간: 2024-01-02 ~ 2025-08-23 - 기준: 월별/연도별 비교는 `Planned Start Date`, 담당자 비교는 `Assigned To`를 프로젝트 매니저 대리 지표로 사용 - 전처리 참고: `Actual End Date` 결측 426건은 상태 기반 규칙으로 대체되었으며, 원본 여부는 `Actual End Date Was Imputed`로 추적 가능
   - Tags: (none)
   - Topics: 02, 1페이지, date, management, project
+  - Links: 0 outbound / 0 unresolved
+- [E-Commerce Orders 매장별 일매출 이상치 분석 보고서](../실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report.md)
+  - Path: `실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report.md`
+  - Summary: 원본 파일: `08 E-Commerce Orders.xlsx` - 매장 정의: 별도 `Store` 컬럼이 없어 `Region`을 매장으로 간주 - 집계 방식: `Store × Order Date` 기준으로 `Total Revenue` 합계를 계산하여 일매출 생성 - 생성 CSV: `08 E-Commerce Orders_daily_sales_by_store.csv` - 생성 레코드 수: `871건`
+  - Tags: (none)
+  - Topics: 08, commerce, orders, 매장별, 분석
+  - Links: 0 outbound / 0 unresolved
+- [E-Commerce Orders 가격 이상치 분석 보고서](../실습결과물/17/08 E-Commerce Orders_price_outlier_report.md)
+  - Path: `실습결과물/17/08 E-Commerce Orders_price_outlier_report.md`
+  - Summary: 대상 파일: `08 E-Commerce Orders.xlsx` - 가격 변수: `Unit Price` - 기본 규칙: 박스플롯 기준 `IQR 1.5배` - 조정 규칙: 이상치 비율이 `5%`를 넘으면, 이상치 비율이 `1% 이하`가 되는 최소 배수로 상향 조정
+  - Tags: (none)
+  - Topics: commerce, iqr, orders, 가격, 규칙
   - Links: 0 outbound / 0 unresolved
 - [project Magement_blog](../실습결과물/17/project Magement_blog.md)
   - Path: `실습결과물/17/project Magement_blog.md`

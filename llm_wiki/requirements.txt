@@ -1,0 +1,7 @@
+sentence-transformers==5.1.2
+faiss-cpu==1.13.0
+networkx==3.4.2
+graphviz
+mem0ai==2.0.0
+ollama==0.6.1
+requests>=2.33.0
