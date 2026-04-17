@@ -1,4 +1,4 @@
-﻿# E-Commerce Orders 가격 이상치 분석 보고서
+# E-Commerce Orders 가격 이상치 분석 보고서
 
 ## 분석 기준
 - 대상 파일: `08 E-Commerce Orders.xlsx`

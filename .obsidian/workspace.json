@@ -11,10 +11,14 @@
             "id": "a94fc1ab5438420f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "markdown",
+              "state": {
+                "file": "실습결과물/17/02 Project Management_SCQA_insight_report.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02 Project Management_SCQA_insight_report"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "실습결과물/17/02 Project Management_SCQA_insight_report.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "백링크"
+              "title": "02 Project Management_SCQA_insight_report 의 백링크"
             }
           },
           {
@@ -191,18 +196,21 @@
   },
   "active": "b01eb13f35815758",
   "lastOpenFiles": [
-    "wiki/system/link_graph.gv",
-    "$null",
+    "memory_layer/qdrant/collection/dxax_mem0_entities/storage.sqlite-journal",
+    "memory_layer/qdrant/collection/dxax_mem0_entities/storage.sqlite",
+    "memory_layer/qdrant/collection/dxax_mem0_entities",
+    "memory_layer/history.db-journal",
+    "실습결과물/17/08 E-Commerce Orders_price_outlier_report.md",
+    "실습결과물/17/02 Project Management_summary_report.md",
+    "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report.md",
+    "memory_layer/qdrant/collection/dxax_mem0/storage.sqlite-journal",
+    "memory_layer/memory_state.json",
+    "memory_layer/history.db",
+    "memory_layer/qdrant/collection/dxax_mem0/storage.sqlite",
+    "memory_layer/qdrant/collection/dxax_mem0",
+    "memory_layer/qdrant/collection",
+    "memory_layer/qdrant/meta.json",
     "wiki/community_report.md",
-    "wiki/system/semantic_meta.json",
-    "wiki/system/semantic_index.faiss",
-    "wiki/system/community_summaries.json",
-    "wiki/system/community_graph.json",
-    "llm_wiki/__pycache__/memory_layer.cpython-312.pyc",
-    "llm_wiki/__pycache__/semantic.cpython-312.pyc",
-    "llm_wiki/__pycache__/community.cpython-312.pyc",
-    "llm_wiki/__pycache__/indexer.cpython-312.pyc",
-    "llm_wiki/__pycache__/cli.cpython-312.pyc",
     "memory_layer/README.md",
     "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
     "실습결과물/17/02 Project Management_SCQA_insight_report.md",
@@ -233,9 +241,6 @@
     "실습결과물/16/자동차수출예제관련프롬프트.md",
     "실습결과물/16/imports-85_actual_data_summary.md",
     "실습결과물/16/imports-85_report.md",
-    "실습결과물/16/한페이지요약 HRD AX 수업도향.md",
-    "skills/troubleshooting.md",
-    "skills/wiki-llm-setup/SKILL.md",
-    "skills/local-llm-stack-setup/SKILL.md"
+    "실습결과물/16/한페이지요약 HRD AX 수업도향.md"
   ]
 }

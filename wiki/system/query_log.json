@@ -73,5 +73,53 @@
       "saved_estimate": 55471,
       "savings_ratio": 0.9481
     }
+  },
+  {
+    "timestamp": "2026-04-17T16:54:31.140578",
+    "query": "Smart Connections와 Mem0 설정",
+    "selected_paths": [
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
+      "실습결과물/07/03-업무-비효율-수치화-템플릿.md",
+      "실습결과물/08/03-정량평가-우선순위.md",
+      "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md",
+      "실습결과물/09/문제 정의서.md"
+    ],
+    "read_plan_paths": [
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
+      "실습결과물/07/03-업무-비효율-수치화-템플릿.md",
+      "실습결과물/08/03-정량평가-우선순위.md",
+      "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md",
+      "실습결과물/09/문제 정의서.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 81190,
+      "targeted_read_estimate": 2203,
+      "saved_estimate": 78987,
+      "savings_ratio": 0.9729
+    }
+  },
+  {
+    "timestamp": "2026-04-17T17:31:25.278810",
+    "query": "Smart Connections와 Mem0 설정",
+    "selected_paths": [
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
+      "실습결과물/07/03-업무-비효율-수치화-템플릿.md",
+      "실습결과물/08/03-정량평가-우선순위.md",
+      "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md",
+      "실습결과물/09/문제 정의서.md"
+    ],
+    "read_plan_paths": [
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
+      "실습결과물/07/03-업무-비효율-수치화-템플릿.md",
+      "실습결과물/08/03-정량평가-우선순위.md",
+      "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md",
+      "실습결과물/09/문제 정의서.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 81190,
+      "targeted_read_estimate": 2203,
+      "saved_estimate": 78987,
+      "savings_ratio": 0.9729
+    }
   }
 ]

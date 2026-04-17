@@ -218,6 +218,9 @@ def main() -> None:
     memory_bootstrap_parser = subparsers.add_parser("memory-bootstrap", help="Push wiki summaries into Mem0")
     memory_bootstrap_parser.add_argument("--root", default=".", help="Repository root")
     memory_bootstrap_parser.add_argument("--user-id", default="dxax-wiki", help="Mem0 user id namespace")
+    memory_bootstrap_parser.add_argument("--mode", choices=["pages", "communities"], default="communities", help="Bootstrap source")
+    memory_bootstrap_parser.add_argument("--offset", type=int, default=0, help="Start offset for resumable batching")
+    memory_bootstrap_parser.add_argument("--limit", type=int, default=0, help="Optional item limit")
 
     memory_add_parser = subparsers.add_parser("memory-add", help="Add a fact into Mem0")
     memory_add_parser.add_argument("text", help="Fact text")
@@ -270,7 +273,23 @@ def main() -> None:
 
     if args.command == "memory-bootstrap":
         cache = load_query_cache(repo_root)
-        result = bootstrap_memory(repo_root, list(cache["pages"].values()), user_id=args.user_id)  # type: ignore[arg-type]
+        if args.mode == "pages":
+            items = list(cache["pages"].values())  # type: ignore[arg-type]
+        else:
+            items = []
+            for community_id, community in cache.get("communities", {}).items():  # type: ignore[assignment]
+                items.append(
+                    {
+                        "id": community_id,
+                        "title": community_id,
+                        "path": ", ".join(community.get("paths", [])[:5]),
+                        "summary": community.get("summary", ""),
+                        "tags": [tag for tag, _ in community.get("top_tags", [])],
+                        "topics": [topic for topic, _ in community.get("top_topics", [])],
+                        "entities": [entity for entity, _ in community.get("top_entities", [])],
+                    }
+                )
+        result = bootstrap_memory(repo_root, items, user_id=args.user_id, offset=args.offset, limit=args.limit)
         emit_json(result)
         return
 

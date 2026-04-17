@@ -4,7 +4,8 @@
     "config": {
       "collection_name": "dxax_mem0",
       "path": "C:\\Users\\Administrator\\dxAx\\memory_layer\\qdrant",
-      "on_disk": true
+      "on_disk": true,
+      "embedding_model_dims": 768
     }
   },
   "llm": {

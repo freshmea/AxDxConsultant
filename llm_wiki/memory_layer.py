@@ -30,6 +30,7 @@ def default_mem0_config(repo_root: Path) -> Dict[str, object]:
                 "collection_name": "dxax_mem0",
                 "path": str(paths["qdrant_path"]),
                 "on_disk": True,
+                "embedding_model_dims": 768,
             },
         },
         "llm": {
@@ -95,14 +96,27 @@ def memory_add(repo_root: Path, text: str, user_id: str, metadata: Dict[str, obj
 
 def memory_search(repo_root: Path, query: str, user_id: str, top_k: int = 5) -> Dict[str, object]:
     memory = load_mem0(repo_root)
-    result = memory.search(query, user_id=user_id, top_k=top_k)
+    result = memory.search(query, top_k=top_k, filters={"user_id": user_id})
     return {"status": "ok", "result": result}
 
 
-def bootstrap_memory(repo_root: Path, pages: Iterable[Dict[str, object]], user_id: str = "dxax-wiki") -> Dict[str, object]:
+def bootstrap_memory(
+    repo_root: Path,
+    pages: Iterable[Dict[str, object]],
+    user_id: str = "dxax-wiki",
+    *,
+    offset: int = 0,
+    limit: int = 0,
+) -> Dict[str, object]:
     memory = load_mem0(repo_root)
+    items = list(pages)
+    if offset > 0:
+        items = items[offset:]
+    if limit > 0:
+        items = items[:limit]
     ingested = 0
-    for page in pages:
+    paths = memory_paths(repo_root)
+    for index, page in enumerate(items, start=offset):
         text = (
             f"문서 제목: {page['title']}\n"
             f"경로: {page['path']}\n"
@@ -118,10 +132,29 @@ def bootstrap_memory(repo_root: Path, pages: Iterable[Dict[str, object]], user_i
         }
         memory.add([{"role": "user", "content": text}], user_id=user_id, metadata=metadata, infer=True)
         ingested += 1
+        paths["state_path"].write_text(
+            json.dumps(
+                {
+                    "status": "running",
+                    "bootstrapped_pages": ingested,
+                    "user_id": user_id,
+                    "last_index": index,
+                    "next_offset": index + 1,
+                    "last_page_id": page["id"],
+                },
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
 
-    paths = memory_paths(repo_root)
-    paths["state_path"].write_text(
-        json.dumps({"bootstrapped_pages": ingested, "user_id": user_id}, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-    return {"status": "ok", "bootstrapped_pages": ingested, "state_path": str(paths["state_path"])}
+    state = {
+        "status": "completed",
+        "bootstrapped_pages": ingested,
+        "user_id": user_id,
+        "start_offset": offset,
+        "next_offset": offset + ingested,
+        "last_page_id": items[-1]["id"] if items else None,
+    }
+    paths["state_path"].write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+    return {"status": "ok", **state, "state_path": str(paths["state_path"])}

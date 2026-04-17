@@ -1,4 +1,4 @@
-﻿# E-Commerce Orders 매장별 일매출 이상치 분석 보고서
+# E-Commerce Orders 매장별 일매출 이상치 분석 보고서
 
 ## 전처리
 - 원본 파일: `08 E-Commerce Orders.xlsx`

@@ -17,3 +17,15 @@
 - Selected: skills/local-llm-stack-setup/SKILL.md, llm_wiki/README.md, AGENTS.md, notion_app_date_filter_fallback_skill/SKILL.md, 실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md
 - Read plan: skills/local-llm-stack-setup/SKILL.md, llm_wiki/README.md, AGENTS.md, notion_app_date_filter_fallback_skill/SKILL.md, 실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md
 - Tokens: full=58505 targeted=3034 saved=55471 ratio=0.9481
+
+## 2026-04-17T16:54:31.140578
+- Query: Smart Connections와 Mem0 설정
+- Selected: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md, 실습결과물/07/03-업무-비효율-수치화-템플릿.md, 실습결과물/08/03-정량평가-우선순위.md, 실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md, 실습결과물/09/문제 정의서.md
+- Read plan: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md, 실습결과물/07/03-업무-비효율-수치화-템플릿.md, 실습결과물/08/03-정량평가-우선순위.md, 실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md, 실습결과물/09/문제 정의서.md
+- Tokens: full=81190 targeted=2203 saved=78987 ratio=0.9729
+
+## 2026-04-17T17:31:25.278810
+- Query: Smart Connections와 Mem0 설정
+- Selected: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md, 실습결과물/07/03-업무-비효율-수치화-템플릿.md, 실습결과물/08/03-정량평가-우선순위.md, 실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md, 실습결과물/09/문제 정의서.md
+- Read plan: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md, 실습결과물/07/03-업무-비효율-수치화-템플릿.md, 실습결과물/08/03-정량평가-우선순위.md, 실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md, 실습결과물/09/문제 정의서.md
+- Tokens: full=81190 targeted=2203 saved=78987 ratio=0.9729
