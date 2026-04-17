@@ -50,3 +50,8 @@
 - edges: 89
 - estimated tokens: 59675
 
+## [2026-04-17 14:24:40] build | markdown graph refresh
+- pages: 96
+- edges: 89
+- estimated tokens: 76480
+

@@ -1,13 +1,55 @@
 # Wiki Index
 
-- Generated: 2026-04-15T09:19:09.211724+00:00
-- Markdown pages: 76
+- Generated: 2026-04-17T05:24:40.756622+00:00
+- Markdown pages: 96
 - Resolved edges: 89
-- Estimated full-read tokens: 59675
+- Estimated full-read tokens: 76480
 - Ignore file: `.llmwikiignore`
 
 ## Pages
 
+- [MathJax](../.venv-report/Lib/site-packages/kaleido/executable/etc/mathjax/README.md)
+  - Path: `.venv-report/Lib/site-packages/kaleido/executable/etc/mathjax/README.md`
+  - Summary: MathJax is an open-source JavaScript display engine for LaTeX, MathML, and AsciiMath notation that works in all modern browsers. It was designed with the goal of consolidating the recent advances in web technologies into a single, definitive, math-on-the-web platform supporting t
+  - Tags: (none)
+  - Topics: all, an, browsers, in, is
+  - Links: 0 outbound / 0 unresolved
+- [NCSA Open Source License](../.venv-report/Lib/site-packages/numpy/random/LICENSE.md)
+  - Path: `.venv-report/Lib/site-packages/numpy/random/LICENSE.md`
+  - Summary: **This software is dual-licensed under the The University of Illinois/NCSA Open Source License (NCSA) and The 3-Clause BSD License**
+  - Tags: (none)
+  - Topics: bsd, clause, is, license, ncsa
+  - Links: 0 outbound / 0 unresolved
+- [LICENSE](../.venv-report/Lib/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md)
+  - Path: `.venv-report/Lib/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md`
+  - Summary: BSD 3-Clause License
+  - Tags: (none)
+  - Topics: bsd, clause, license
+  - Links: 0 outbound / 0 unresolved
+- [LICENSE](../.venv-report/Lib/site-packages/pip/_vendor/idna/LICENSE.md)
+  - Path: `.venv-report/Lib/site-packages/pip/_vendor/idna/LICENSE.md`
+  - Summary: BSD 3-Clause License
+  - Tags: (none)
+  - Topics: bsd, clause, license
+  - Links: 0 outbound / 0 unresolved
+- [best_practices](../.venv-report/Lib/site-packages/pyparsing/ai/best_practices.md)
+  - Path: `.venv-report/Lib/site-packages/pyparsing/ai/best_practices.md`
+  - Summary: <!-- This file contains instructions for best practices for developing parsers with pyparsing, and can be used by AI agents when generating Python code using pyparsing. -->
+  - Tags: (none)
+  - Topics: best, best_practices, contains, developing, file
+  - Links: 0 outbound / 0 unresolved
+- [LICENSE](../.venv-report/Lib/site-packages/scipy/fft/_pocketfft/LICENSE.md)
+  - Path: `.venv-report/Lib/site-packages/scipy/fft/_pocketfft/LICENSE.md`
+  - Summary: Copyright (C) 2010-2019 Max-Planck-Society All rights reserved.
+  - Tags: (none)
+  - Topics: 2010, 2019, all, copyright, license
+  - Links: 0 outbound / 0 unresolved
+- [LICENSE](../.venv-report/Lib/site-packages/seaborn-0.13.2.dist-info/LICENSE.md)
+  - Path: `.venv-report/Lib/site-packages/seaborn-0.13.2.dist-info/LICENSE.md`
+  - Summary: Copyright (c) 2012-2023, Michael L. Waskom All rights reserved.
+  - Tags: (none)
+  - Topics: 2012, 2023, all, copyright, license
+  - Links: 0 outbound / 0 unresolved
 - [LLM Wiki Schema](../AGENTS.md)
   - Path: `AGENTS.md`
   - Summary: This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm-wiki.md` gist.
@@ -463,4 +505,82 @@
   - Summary: ```text 순위 small + faster-whisper 속도/정확도 밸런스 최고 VRAM 안정 이것이 사용가능하다고 한다. openai 모델을 받아서 로컬에서 동작 할 수 있게 설정해줘
   - Tags: (none)
   - Topics: faster, small, text, whisper, 모델
+  - Links: 0 outbound / 0 unresolved
+- [imports-85 실제데이터 기반 요약보고서](../실습결과물/16/imports-85_actual_data_summary.md)
+  - Path: `실습결과물/16/imports-85_actual_data_summary.md`
+  - Summary: 본 보고서는 [imports-85_cleaned.csv](C:/Users/Administrator/dxAx/실습결과물/16/imports-85_cleaned.csv) 의 실제 컬럼만 사용했다. - 실제 존재 컬럼: `make`, `body-style`, `fuel-type`, `drive-wheels`, `engine-size`, `horsepower`, `curb-weight`, `city-mpg`, `highway-mpg`, `price` 등. - 데이터에 없는 항목: `국가`, `수출량`, 
+  - Tags: (none)
+  - Topics: 85, 85_cleaned, imports, 기반, 시각화
+  - Links: 0 outbound / 0 unresolved
+- [자동차 모델 가격·성능·연비 관계 인터랙티브 보고서](../실습결과물/16/imports-85_interactive_report.md)
+  - Path: `실습결과물/16/imports-85_interactive_report.md`
+  - Summary: [전체 인터랙티브 대시보드](C:/Users/Administrator/dxAx/실습결과물/16/imports-85_interactive_dashboard.html)
+  - Tags: (none)
+  - Topics: 가격, 가격의, 관계, 데이터, 모델
+  - Links: 0 outbound / 0 unresolved
+- [imports-85 정제 보고서](../실습결과물/16/imports-85_report.md)
+  - Path: `실습결과물/16/imports-85_report.md`
+  - Summary: 정제 전 결측치 수: 59 - bore: 4 - horsepower: 2 - normalized-losses: 41 - num-of-doors: 2 - peak-rpm: 2 - price: 4 - stroke: 4
+  - Tags: (none)
+  - Topics: 59, 85, bore, imports, 결측치
+  - Links: 0 outbound / 0 unresolved
+- [Retail Sales Seaborn Graphs](../실습결과물/16/retail_sales_report_assets/README.md)
+  - Path: `실습결과물/16/retail_sales_report_assets/README.md`
+  - Summary: 01_monthly_net_sales_trend.png: 월별 순매출 추세 - 02_category_net_sales_bar.png: 카테고리별 순매출 비교 - 03_top10_subcategory_net_sales_barh.png: 상위 10개 서브카테고리 순매출 - 04_store_net_sales_barh.png: 매장별 순매출 - 05_payment_method_counts_bar.png: 결제수단별 거래 건수 - 06_weekday_net_sales_bar.png: 요일별 순매출 - 07
+  - Tags: (none)
+  - Topics: 01_monthly_net_sales_trend, graphs, png, retail, sales
+  - Links: 0 outbound / 0 unresolved
+- [Retail Sales 추세 1페이지 보고서](../실습결과물/16/retail_sales_trend_onepage_report.md)
+  - Path: `실습결과물/16/retail_sales_trend_onepage_report.md`
+  - Summary: 작성일: 2026-04-16 대상 데이터: `retail_sales_dataset.xlsx` 분석 기준: `순매출(Net Sales) = UnitPrice × Quantity × (1 - Discount)`
+  - Tags: (none)
+  - Topics: 1페이지, retail, sales, 매출, 작성일
+  - Links: 0 outbound / 0 unresolved
+- [리테일 분석판매보고서노트북LM](../실습결과물/16/리테일 분석판매보고서노트북LM.md)
+  - Path: `실습결과물/16/리테일 분석판매보고서노트북LM.md`
+  - Summary: 리테일 판매 분석 및 전략 브리핑 보고서
+  - Tags: (none)
+  - Topics: 리테일, 분석, 분석판매보고서노트북lm, 브리핑, 전략
+  - Links: 0 outbound / 0 unresolved
+- [매출 분석에 쓰인 프롬프트](../실습결과물/16/매출분석에 쓰인 프롬프트.md)
+  - Path: `실습결과물/16/매출분석에 쓰인 프롬프트.md`
+  - Summary: ```text C:\Users\Administrator\dxAx\실습결과물\16\retail_sales_dataset.xlsx 이 데이터를 분석해서 통계자료와 어떤 배경의 자료인지 요약해서 보고해줘 https://www.kaggle.com/datasets/buharishehu/retail-sales-dataset?resource=download 이 자료를 참고해줘
+  - Tags: (none)
+  - Topics: administrator, dxax, text, users, 매출
+  - Links: 0 outbound / 0 unresolved
+- [자동차 수출 관련 예제 프롬프트](../실습결과물/16/자동차수출예제관련프롬프트.md)
+  - Path: `실습결과물/16/자동차수출예제관련프롬프트.md`
+  - Summary: (summary unavailable)
+  - Tags: (none)
+  - Topics: 수출, 예제, 자동차, 프롬프트
+  - Links: 0 outbound / 0 unresolved
+- [📊 2026 HRD Trend Report 요약](../실습결과물/16/한페이지요약 HRD AX 수업도향.md)
+  - Path: `실습결과물/16/한페이지요약 HRD AX 수업도향.md`
+  - Summary: 다음은 요청하신 **제약조건(1페이지 / 현황-문제-대응 / 표 포함)**에 맞춘 요약입니다. (근거: )
+  - Tags: (none)
+  - Topics: 2026, hrd, report, trend, 다음은
+  - Links: 0 outbound / 0 unresolved
+- [Project Management 매니저 성과 1페이지 요약 보고서](../실습결과물/17/02 Project Management_manager_ranking_report.md)
+  - Path: `실습결과물/17/02 Project Management_manager_ranking_report.md`
+  - Summary: 이 보고서는 `02 Project Management_ml_imputed.xlsx`를 기준으로 매니저별 완료 성과를 비교하고, 2025년 8월 말 기준으로 아직 완료 시점이 오지 않은 작업 때문에 평가가 왜곡되지 않도록 보정한 뒤 석차를 제시한다.
+  - Tags: (none)
+  - Topics: 1페이지, management, project, 기준으로, 매니저
+  - Links: 0 outbound / 0 unresolved
+- [Project Management 데이터 1페이지 요약 보고서](../실습결과물/17/02 Project Management_summary_report.md)
+  - Path: `실습결과물/17/02 Project Management_summary_report.md`
+  - Summary: 분석 대상: `02 Project Management_ml_imputed.xlsx` 1,000건 - 기간: 2024-01-02 ~ 2025-08-23 - 기준: 월별/연도별 비교는 `Planned Start Date`, 담당자 비교는 `Assigned To`를 프로젝트 매니저 대리 지표로 사용 - 전처리 참고: `Actual End Date` 결측 426건은 상태 기반 규칙으로 대체되었으며, 원본 여부는 `Actual End Date Was Imputed`로 추적 가능
+  - Tags: (none)
+  - Topics: 02, 1페이지, date, management, project
+  - Links: 0 outbound / 0 unresolved
+- [project Magement_blog](../실습결과물/17/project Magement_blog.md)
+  - Path: `실습결과물/17/project Magement_blog.md`
+  - Summary: 왜 어떤 PM은 항상 끝내고, 어떤 PM은 쌓아만 두는가? 데이터가 증명하는 운영의 실체
+  - Tags: (none)
+  - Topics: magement_blog, pm은, project, 끝내고, 두는가
+  - Links: 0 outbound / 0 unresolved
+- [엑셀 데이터 처리 프롬프트](../실습결과물/17/엑셀처리프롬프트.md)
+  - Path: `실습결과물/17/엑셀처리프롬프트.md`
+  - Summary: ```text C:\Users\Administrator\dxAx\실습결과물\17\02 Project Management.xlsx 이 데이터에 대해서 빈칸의 데이터를 채워줘 작업이 완료가 되지 않아서 혹은 시작이 되지 않아서 날짜가 없는데 어떤한 방식을 추가해서 머신러닝에 쓸 수 있도록 결측치 처리를 해줘
+  - Tags: (none)
+  - Topics: text, users, 데이터, 되지, 않아서
   - Links: 0 outbound / 0 unresolved

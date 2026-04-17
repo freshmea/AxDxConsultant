@@ -17,6 +17,14 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 5. Preserve relative paths from the repository root in generated metadata.
 6. Respect `.llmwikiignore` when deciding which markdown files belong to the wiki corpus.
 
+## Unicode And Chart Rules
+
+1. When generating Korean markdown or report files from scripts, write them as UTF-8 and prefer `utf-8-sig` on Windows-facing deliverables.
+2. Do not rely on the shell console to verify Korean text because PowerShell display encoding may show mojibake even when the file bytes are correct.
+3. If a script-generated Korean string has any risk of console/codepage corruption, build the text from Unicode escape sequences and decode it inside Python before writing the file.
+4. When generating charts with Korean labels, explicitly load a Korean font file such as `C:\Windows\Fonts\NotoSansKR-Regular.ttf` and apply that font to titles, axes, tick labels, legends, and annotations.
+5. After creating a Korean report or chart, verify the output by checking file bytes or rendering the image instead of trusting terminal output alone.
+
 ## Query Workflow
 
 1. Load `wiki/system/query_cache.json`.

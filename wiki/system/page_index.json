@@ -1,6 +1,198 @@
 {
-  "generated_at": "2026-04-15T09:19:09.211724+00:00",
+  "generated_at": "2026-04-17T05:24:40.756622+00:00",
   "pages": [
+    {
+      "id": ".venv-report/Lib/site-packages/kaleido/executable/etc/mathjax/README",
+      "title": "MathJax",
+      "path": ".venv-report/Lib/site-packages/kaleido/executable/etc/mathjax/README.md",
+      "summary": "MathJax is an open-source JavaScript display engine for LaTeX, MathML, and AsciiMath notation that works in all modern browsers. It was designed with the goal of consolidating the recent advances in web technologies into a single, definitive, math-on-the-web platform supporting t",
+      "tags": [],
+      "topics": [
+        "all",
+        "an",
+        "browsers",
+        "in",
+        "is",
+        "math",
+        "mathjax",
+        "web"
+      ],
+      "entities": [
+        "all",
+        "an",
+        "beautiful",
+        "browsers",
+        "community",
+        "in",
+        "installation",
+        "is",
+        "math",
+        "mathjax",
+        "open",
+        "usage"
+      ],
+      "tokens_estimate": 545,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": ".venv-report/Lib/site-packages/numpy/random/LICENSE",
+      "title": "NCSA Open Source License",
+      "path": ".venv-report/Lib/site-packages/numpy/random/LICENSE.md",
+      "summary": "**This software is dual-licensed under the The University of Illinois/NCSA Open Source License (NCSA) and The 3-Clause BSD License**",
+      "tags": [],
+      "topics": [
+        "bsd",
+        "clause",
+        "is",
+        "license",
+        "ncsa",
+        "open",
+        "software",
+        "source"
+      ],
+      "entities": [
+        "bsd",
+        "clause",
+        "components",
+        "dual",
+        "is",
+        "license",
+        "licensed",
+        "ncsa",
+        "open",
+        "software",
+        "source"
+      ],
+      "tokens_estimate": 878,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": ".venv-report/Lib/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE",
+      "title": "LICENSE",
+      "path": ".venv-report/Lib/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md",
+      "summary": "BSD 3-Clause License",
+      "tags": [],
+      "topics": [
+        "bsd",
+        "clause",
+        "license"
+      ],
+      "entities": [
+        "bsd",
+        "clause",
+        "license"
+      ],
+      "tokens_estimate": 386,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": ".venv-report/Lib/site-packages/pip/_vendor/idna/LICENSE",
+      "title": "LICENSE",
+      "path": ".venv-report/Lib/site-packages/pip/_vendor/idna/LICENSE.md",
+      "summary": "BSD 3-Clause License",
+      "tags": [],
+      "topics": [
+        "bsd",
+        "clause",
+        "license"
+      ],
+      "entities": [
+        "bsd",
+        "clause",
+        "license"
+      ],
+      "tokens_estimate": 386,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": ".venv-report/Lib/site-packages/pyparsing/ai/best_practices",
+      "title": "best_practices",
+      "path": ".venv-report/Lib/site-packages/pyparsing/ai/best_practices.md",
+      "summary": "<!-- This file contains instructions for best practices for developing parsers with pyparsing, and can be used by AI agents when generating Python code using pyparsing. -->",
+      "tags": [],
+      "topics": [
+        "best",
+        "best_practices",
+        "contains",
+        "developing",
+        "file",
+        "instructions",
+        "practices",
+        "pyparsing"
+      ],
+      "entities": [
+        "best_practices",
+        "contains",
+        "debugging",
+        "file",
+        "implementing",
+        "instructions",
+        "planning",
+        "pyparsing",
+        "testing"
+      ],
+      "tokens_estimate": 2118,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": ".venv-report/Lib/site-packages/scipy/fft/_pocketfft/LICENSE",
+      "title": "LICENSE",
+      "path": ".venv-report/Lib/site-packages/scipy/fft/_pocketfft/LICENSE.md",
+      "summary": "Copyright (C) 2010-2019 Max-Planck-Society All rights reserved.",
+      "tags": [],
+      "topics": [
+        "2010",
+        "2019",
+        "all",
+        "copyright",
+        "license",
+        "max",
+        "planck",
+        "society"
+      ],
+      "entities": [
+        "2010",
+        "2019",
+        "copyright",
+        "license",
+        "max"
+      ],
+      "tokens_estimate": 375,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": ".venv-report/Lib/site-packages/seaborn-0.13.2.dist-info/LICENSE",
+      "title": "LICENSE",
+      "path": ".venv-report/Lib/site-packages/seaborn-0.13.2.dist-info/LICENSE.md",
+      "summary": "Copyright (c) 2012-2023, Michael L. Waskom All rights reserved.",
+      "tags": [],
+      "topics": [
+        "2012",
+        "2023",
+        "all",
+        "copyright",
+        "license",
+        "michael",
+        "rights",
+        "waskom"
+      ],
+      "entities": [
+        "2012",
+        "2023",
+        "copyright",
+        "license",
+        "michael"
+      ],
+      "tokens_estimate": 373,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
     {
       "id": "AGENTS",
       "title": "LLM Wiki Schema",
@@ -226,16 +418,16 @@
         "2026_4_13",
         "2026_4_14",
         "2026_4_15",
+        "2026_4_16",
         "2026_4_6",
         "2026_4_7",
         "2026_4_8",
         "2026_4_9",
         "axdx",
         "axdxconsultant",
-        "과정",
-        "전문가"
+        "과정"
       ],
-      "tokens_estimate": 1262,
+      "tokens_estimate": 1578,
       "outbound_links": [],
       "unresolved_links": []
     },
@@ -2652,6 +2844,410 @@
         "프롬프트"
       ],
       "tokens_estimate": 62,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/16/imports-85_actual_data_summary",
+      "title": "imports-85 실제데이터 기반 요약보고서",
+      "path": "실습결과물/16/imports-85_actual_data_summary.md",
+      "summary": "본 보고서는 [imports-85_cleaned.csv](C:/Users/Administrator/dxAx/실습결과물/16/imports-85_cleaned.csv) 의 실제 컬럼만 사용했다. - 실제 존재 컬럼: `make`, `body-style`, `fuel-type`, `drive-wheels`, `engine-size`, `horsepower`, `curb-weight`, `city-mpg`, `highway-mpg`, `price` 등. - 데이터에 없는 항목: `국가`, `수출량`, ",
+      "tags": [],
+      "topics": [
+        "85",
+        "85_cleaned",
+        "imports",
+        "기반",
+        "시각화",
+        "실제",
+        "실제데이터",
+        "요약보고서"
+      ],
+      "entities": [
+        "85",
+        "85_cleaned",
+        "csv",
+        "imports",
+        "mpg",
+        "기반",
+        "범위",
+        "보고",
+        "보고서는",
+        "시각화",
+        "실제",
+        "실제데이터"
+      ],
+      "tokens_estimate": 597,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/16/imports-85_interactive_report",
+      "title": "자동차 모델 가격·성능·연비 관계 인터랙티브 보고서",
+      "path": "실습결과물/16/imports-85_interactive_report.md",
+      "summary": "[전체 인터랙티브 대시보드](C:/Users/Administrator/dxAx/실습결과물/16/imports-85_interactive_dashboard.html)",
+      "tags": [],
+      "topics": [
+        "가격",
+        "가격의",
+        "관계",
+        "데이터",
+        "모델",
+        "인터랙티브",
+        "자동차",
+        "핵심"
+      ],
+      "entities": [
+        "administrator",
+        "users",
+        "가격",
+        "가격의",
+        "관계",
+        "대시보드",
+        "데이터",
+        "모델",
+        "성능",
+        "연비",
+        "인터랙티브",
+        "자동차"
+      ],
+      "tokens_estimate": 2720,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/16/imports-85_report",
+      "title": "imports-85 정제 보고서",
+      "path": "실습결과물/16/imports-85_report.md",
+      "summary": "정제 전 결측치 수: 59 - bore: 4 - horsepower: 2 - normalized-losses: 41 - num-of-doors: 2 - peak-rpm: 2 - price: 4 - stroke: 4",
+      "tags": [],
+      "topics": [
+        "59",
+        "85",
+        "bore",
+        "imports",
+        "결측치",
+        "대체",
+        "이상치",
+        "정제"
+      ],
+      "entities": [
+        "59",
+        "85",
+        "bore",
+        "horsepower",
+        "imports",
+        "normalized",
+        "결측치",
+        "기준",
+        "대체",
+        "로그",
+        "보고",
+        "상세"
+      ],
+      "tokens_estimate": 2434,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/16/retail_sales_report_assets/README",
+      "title": "Retail Sales Seaborn Graphs",
+      "path": "실습결과물/16/retail_sales_report_assets/README.md",
+      "summary": "01_monthly_net_sales_trend.png: 월별 순매출 추세 - 02_category_net_sales_bar.png: 카테고리별 순매출 비교 - 03_top10_subcategory_net_sales_barh.png: 상위 10개 서브카테고리 순매출 - 04_store_net_sales_barh.png: 매장별 순매출 - 05_payment_method_counts_bar.png: 결제수단별 거래 건수 - 06_weekday_net_sales_bar.png: 요일별 순매출 - 07",
+      "tags": [],
+      "topics": [
+        "01_monthly_net_sales_trend",
+        "graphs",
+        "png",
+        "retail",
+        "sales",
+        "seaborn",
+        "순매출",
+        "월별"
+      ],
+      "entities": [
+        "01_monthly_net_sales_trend",
+        "graphs",
+        "png",
+        "retail",
+        "sales",
+        "seaborn",
+        "순매출",
+        "월별"
+      ],
+      "tokens_estimate": 274,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/16/retail_sales_trend_onepage_report",
+      "title": "Retail Sales 추세 1페이지 보고서",
+      "path": "실습결과물/16/retail_sales_trend_onepage_report.md",
+      "summary": "작성일: 2026-04-16 대상 데이터: `retail_sales_dataset.xlsx` 분석 기준: `순매출(Net Sales) = UnitPrice × Quantity × (1 - Discount)`",
+      "tags": [],
+      "topics": [
+        "1페이지",
+        "retail",
+        "sales",
+        "매출",
+        "작성일",
+        "추세",
+        "플랜",
+        "해석"
+      ],
+      "entities": [
+        "04",
+        "16",
+        "1페이지",
+        "2026",
+        "retail",
+        "sales",
+        "매출",
+        "어떤",
+        "작성일",
+        "추세",
+        "판매량",
+        "플랜"
+      ],
+      "tokens_estimate": 804,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/16/리테일 분석판매보고서노트북LM",
+      "title": "리테일 분석판매보고서노트북LM",
+      "path": "실습결과물/16/리테일 분석판매보고서노트북LM.md",
+      "summary": "리테일 판매 분석 및 전략 브리핑 보고서",
+      "tags": [],
+      "topics": [
+        "리테일",
+        "분석",
+        "분석판매보고서노트북lm",
+        "브리핑",
+        "전략",
+        "판매"
+      ],
+      "entities": [
+        "리테일",
+        "분석",
+        "분석판매보고서노트북lm",
+        "브리핑",
+        "전략",
+        "판매"
+      ],
+      "tokens_estimate": 830,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/16/매출분석에 쓰인 프롬프트",
+      "title": "매출 분석에 쓰인 프롬프트",
+      "path": "실습결과물/16/매출분석에 쓰인 프롬프트.md",
+      "summary": "```text C:\\Users\\Administrator\\dxAx\\실습결과물\\16\\retail_sales_dataset.xlsx 이 데이터를 분석해서 통계자료와 어떤 배경의 자료인지 요약해서 보고해줘 https://www.kaggle.com/datasets/buharishehu/retail-sales-dataset?resource=download 이 자료를 참고해줘",
+      "tags": [],
+      "topics": [
+        "administrator",
+        "dxax",
+        "text",
+        "users",
+        "매출",
+        "분석에",
+        "쓰인",
+        "프롬프트"
+      ],
+      "entities": [
+        "administrator",
+        "dxax",
+        "text",
+        "users",
+        "매출",
+        "분석에",
+        "쓰인",
+        "프롬프트"
+      ],
+      "tokens_estimate": 290,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/16/자동차수출예제관련프롬프트",
+      "title": "자동차 수출 관련 예제 프롬프트",
+      "path": "실습결과물/16/자동차수출예제관련프롬프트.md",
+      "summary": "",
+      "tags": [],
+      "topics": [
+        "수출",
+        "예제",
+        "자동차",
+        "프롬프트"
+      ],
+      "entities": [
+        "수출",
+        "예제",
+        "자동차",
+        "프롬프트"
+      ],
+      "tokens_estimate": 962,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/16/한페이지요약 HRD AX 수업도향",
+      "title": "📊 2026 HRD Trend Report 요약",
+      "path": "실습결과물/16/한페이지요약 HRD AX 수업도향.md",
+      "summary": "다음은 요청하신 **제약조건(1페이지 / 현황-문제-대응 / 표 포함)**에 맞춘 요약입니다. (근거: )",
+      "tags": [],
+      "topics": [
+        "2026",
+        "hrd",
+        "report",
+        "trend",
+        "다음은",
+        "문제",
+        "요청하신",
+        "현황"
+      ],
+      "entities": [
+        "1페이지",
+        "2026",
+        "current",
+        "hrd",
+        "issues",
+        "report",
+        "state",
+        "trend",
+        "다음은",
+        "대응방안",
+        "문제",
+        "요청하신"
+      ],
+      "tokens_estimate": 293,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/17/02 Project Management_manager_ranking_report",
+      "title": "Project Management 매니저 성과 1페이지 요약 보고서",
+      "path": "실습결과물/17/02 Project Management_manager_ranking_report.md",
+      "summary": "이 보고서는 `02 Project Management_ml_imputed.xlsx`를 기준으로 매니저별 완료 성과를 비교하고, 2025년 8월 말 기준으로 아직 완료 시점이 오지 않은 작업 때문에 평가가 왜곡되지 않도록 보정한 뒤 석차를 제시한다.",
+      "tags": [],
+      "topics": [
+        "1페이지",
+        "management",
+        "project",
+        "기준으로",
+        "매니저",
+        "보고서는",
+        "성과",
+        "완료"
+      ],
+      "entities": [
+        "02",
+        "1페이지",
+        "management",
+        "project",
+        "기준으로",
+        "매니저",
+        "목적",
+        "보고서는",
+        "보정",
+        "보정이",
+        "성과",
+        "알고리즘"
+      ],
+      "tokens_estimate": 841,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/17/02 Project Management_summary_report",
+      "title": "Project Management 데이터 1페이지 요약 보고서",
+      "path": "실습결과물/17/02 Project Management_summary_report.md",
+      "summary": "분석 대상: `02 Project Management_ml_imputed.xlsx` 1,000건 - 기간: 2024-01-02 ~ 2025-08-23 - 기준: 월별/연도별 비교는 `Planned Start Date`, 담당자 비교는 `Assigned To`를 프로젝트 매니저 대리 지표로 사용 - 전처리 참고: `Actual End Date` 결측 426건은 상태 기반 규칙으로 대체되었으며, 원본 여부는 `Actual End Date Was Imputed`로 추적 가능",
+      "tags": [],
+      "topics": [
+        "02",
+        "1페이지",
+        "date",
+        "management",
+        "project",
+        "데이터",
+        "비교",
+        "월별"
+      ],
+      "entities": [
+        "02",
+        "1페이지",
+        "actual",
+        "date",
+        "management",
+        "project",
+        "결론",
+        "담당자별",
+        "데이터",
+        "비교",
+        "비교는",
+        "연도별"
+      ],
+      "tokens_estimate": 481,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/17/project Magement_blog",
+      "title": "project Magement_blog",
+      "path": "실습결과물/17/project Magement_blog.md",
+      "summary": "왜 어떤 PM은 항상 끝내고, 어떤 PM은 쌓아만 두는가? 데이터가 증명하는 운영의 실체",
+      "tags": [],
+      "topics": [
+        "magement_blog",
+        "pm은",
+        "project",
+        "끝내고",
+        "두는가",
+        "쌓아만",
+        "어떤",
+        "항상"
+      ],
+      "entities": [
+        "magement_blog",
+        "pm은",
+        "project",
+        "끝내고",
+        "어떤",
+        "항상"
+      ],
+      "tokens_estimate": 738,
+      "outbound_links": [],
+      "unresolved_links": []
+    },
+    {
+      "id": "실습결과물/17/엑셀처리프롬프트",
+      "title": "엑셀 데이터 처리 프롬프트",
+      "path": "실습결과물/17/엑셀처리프롬프트.md",
+      "summary": "```text C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\02 Project Management.xlsx 이 데이터에 대해서 빈칸의 데이터를 채워줘 작업이 완료가 되지 않아서 혹은 시작이 되지 않아서 날짜가 없는데 어떤한 방식을 추가해서 머신러닝에 쓸 수 있도록 결측치 처리를 해줘",
+      "tags": [],
+      "topics": [
+        "text",
+        "users",
+        "데이터",
+        "되지",
+        "않아서",
+        "엑셀",
+        "처리",
+        "프롬프트"
+      ],
+      "entities": [
+        "text",
+        "users",
+        "데이터",
+        "되지",
+        "않아서",
+        "엑셀",
+        "처리",
+        "프롬프트"
+      ],
+      "tokens_estimate": 164,
       "outbound_links": [],
       "unresolved_links": []
     }

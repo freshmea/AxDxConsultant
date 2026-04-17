@@ -1,9 +1,9 @@
 # Graph Report
 
-- Generated: 2026-04-15T09:19:09.211724+00:00
-- Pages: 76
+- Generated: 2026-04-17T05:24:40.756622+00:00
+- Pages: 96
 - Edges: 89
-- Estimated full corpus tokens: 59675
+- Estimated full corpus tokens: 76480
 
 ## Top Tags
 
@@ -28,36 +28,36 @@
 - `업무` x 14
 - `인덱스` x 10
 - `수중드론` x 10
+- `프롬프트` x 10
+- `핵심` x 9
 - `사업화` x 9
 - `llm` x 8
-- `핵심` x 8
+- `분석` x 8
+- `1페이지` x 8
 - `wiki` x 7
-- `분석` x 7
 - `작성` x 7
-- `프롬프트` x 7
 - `고려의` x 7
 - `그림자` x 7
 - `새벽` x 7
 - `설계자` x 7
-- `철혈의` x 7
 
 ## Top Entities
 
 - `실습결과물` x 13
 - `업무` x 13
 - `인덱스` x 10
+- `1페이지` x 10
 - `수중드론` x 10
 - `사업화` x 9
+- `프롬프트` x 9
+- `분석` x 8
 - `llm` x 7
-- `분석` x 7
+- `데이터` x 7
 - `작성` x 7
 - `소설` x 7
 - `고려의` x 7
 - `그림자` x 7
 - `새벽` x 7
-- `설계자` x 7
-- `1페이지` x 6
-- `ai` x 6
 
 ## Most Connected Pages
 
@@ -87,6 +87,13 @@
 
 ## Orphan Candidates
 
+- [MathJax](../.venv-report/Lib/site-packages/kaleido/executable/etc/mathjax/README.md)
+- [NCSA Open Source License](../.venv-report/Lib/site-packages/numpy/random/LICENSE.md)
+- [LICENSE](../.venv-report/Lib/site-packages/pip-26.0.1.dist-info/licenses/src/pip/_vendor/idna/LICENSE.md)
+- [LICENSE](../.venv-report/Lib/site-packages/pip/_vendor/idna/LICENSE.md)
+- [best_practices](../.venv-report/Lib/site-packages/pyparsing/ai/best_practices.md)
+- [LICENSE](../.venv-report/Lib/site-packages/scipy/fft/_pocketfft/LICENSE.md)
+- [LICENSE](../.venv-report/Lib/site-packages/seaborn-0.13.2.dist-info/LICENSE.md)
 - [LLM Wiki Schema](../AGENTS.md)
 - [Local LLM Wiki](../llm_wiki/README.md)
 - [Notion App Date Filter Fallback Skill](../notion_app_date_filter_fallback_skill/SKILL.md)
@@ -100,10 +107,3 @@
 - [PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지](../실습결과물/06/deep-research-report.md)
 - [머메이드 테스트](../실습결과물/06/mermaidTest.md)
 - [2. 교육 요약본 (1페이지)](../실습결과물/06/paperclipai교육요약.md)
-- [1. 사업계획서 (요약형)](../실습결과물/06/paperclipai사업계획서.md)
-- [1. 업무 흐름 구조화](../실습결과물/07/01-업무-흐름-구조화.md)
-- [업무 흐름 (Mermaid)](../실습결과물/07/02-업무-흐름-mermaid.md)
-- [나의 업무 비효율 수치화 템플릿 작성](../실습결과물/07/03-업무-비효율-수치화-템플릿.md)
-- [AS-IS 프로세스 스케치](../실습결과물/07/04-as-is-프로세스-스케치.md)
-- [나의 핵심 업무 리스트업](../실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스.md)
-- [02-AI-활용영역-보조-요약-생성-분석](../실습결과물/08/02-AI-활용영역-보조-요약-생성-분석.md)
