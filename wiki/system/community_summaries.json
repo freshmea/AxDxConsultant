@@ -1117,14 +1117,6 @@
           2
         ],
         [
-          "rules",
-          2
-        ],
-        [
-          "saving",
-          2
-        ],
-        [
           "codex",
           2
         ],
@@ -1138,6 +1130,14 @@
         ],
         [
           "llm-wiki",
+          2
+        ],
+        [
+          "wiki",
+          2
+        ],
+        [
+          "실습결과물",
           2
         ]
       ],
@@ -1940,15 +1940,11 @@
       "representative_page_id": "skills/troubleshooting",
       "representative_title": "Troubleshooting",
       "representative_path": "skills/troubleshooting.md",
-      "summary": "Troubleshooting 중심의 지식 군집입니다. 핵심 주제는 fails, links, llm, local이며, 대표 문서는 Troubleshooting 입니다.",
+      "summary": "Troubleshooting 중심의 지식 군집입니다. 핵심 주제는 fails, llm, local, mem0이며, 대표 문서는 Troubleshooting 입니다.",
       "top_tags": [],
       "top_topics": [
         [
           "fails",
-          1
-        ],
-        [
-          "links",
           1
         ],
         [
@@ -1960,15 +1956,19 @@
           1
         ],
         [
+          "mem0",
+          1
+        ],
+        [
+          "memory",
+          1
+        ],
+        [
+          "semantic",
+          1
+        ],
+        [
           "troubleshooting",
-          1
-        ],
-        [
-          "unresolved",
-          1
-        ],
-        [
-          "whisper",
           1
         ],
         [
@@ -1978,6 +1978,10 @@
       ],
       "top_entities": [
         [
+          "are",
+          1
+        ],
+        [
           "covers",
           1
         ],
@@ -1986,15 +1990,15 @@
           1
         ],
         [
-          "gpu",
-          1
-        ],
-        [
-          "is",
-          1
-        ],
-        [
           "links",
+          1
+        ],
+        [
+          "memory",
+          1
+        ],
+        [
+          "missing",
           1
         ],
         [
@@ -2003,10 +2007,6 @@
         ],
         [
           "problems",
-          1
-        ],
-        [
-          "py",
           1
         ]
       ],
@@ -2026,23 +2026,19 @@
       "representative_page_id": "skills/wiki-llm-setup/SKILL",
       "representative_title": "Wiki LLM Setup",
       "representative_path": "skills/wiki-llm-setup/SKILL.md",
-      "summary": "Wiki LLM Setup 중심의 지식 군집입니다. 핵심 주제는 graph, in, keep, layer이며, 대표 문서는 Wiki LLM Setup 입니다.",
+      "summary": "Wiki LLM Setup 중심의 지식 군집입니다. 핵심 주제는 change, graph, keep, llm이며, 대표 문서는 Wiki LLM Setup 입니다.",
       "top_tags": [],
       "top_topics": [
+        [
+          "change",
+          1
+        ],
         [
           "graph",
           1
         ],
         [
-          "in",
-          1
-        ],
-        [
           "keep",
-          1
-        ],
-        [
-          "layer",
           1
         ],
         [
@@ -2060,15 +2056,15 @@
         [
           "wiki",
           1
+        ],
+        [
+          "workspace",
+          1
         ]
       ],
       "top_entities": [
         [
-          "artifacts",
-          1
-        ],
-        [
-          "build",
+          "change",
           1
         ],
         [
@@ -2088,11 +2084,15 @@
           1
         ],
         [
-          "layer",
+          "layout",
           1
         ],
         [
-          "layout",
+          "llm",
+          1
+        ],
+        [
+          "order",
           1
         ]
       ],

@@ -12,6 +12,7 @@ from typing import Dict, Iterable, List, Tuple
 from urllib.parse import unquote
 
 from .community import build_communities
+from .obsidian_bridge import build_obsidian_semantic_cache
 from .semantic import build_semantic_index
 
 
@@ -347,6 +348,7 @@ def build_index(repo_root: Path) -> Dict[str, object]:
 
     pages.sort(key=lambda page: page.relpath.lower())
     community_graph, community_summaries, page_to_communities = build_communities(pages, edges, inbound_counts)
+    obsidian_cache = build_obsidian_semantic_cache(repo_root, pages)
     graph = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "repo_root": str(repo_root),
@@ -366,6 +368,7 @@ def build_index(repo_root: Path) -> Dict[str, object]:
                 "unresolved_links": page.unresolved_links,
                 "inbound_count": inbound_counts.get(page.page_id, 0),
                 "community_ids": page_to_communities.get(page.page_id, []),
+                "obsidian_related_count": len(obsidian_cache.get("pages", {}).get(page.page_id, {}).get("related", [])),
             }
             for page in pages
         ],
@@ -400,6 +403,7 @@ def build_index(repo_root: Path) -> Dict[str, object]:
                 "inbound_count": inbound_counts.get(page.page_id, 0),
                 "tokens_estimate": page.tokens_estimate,
                 "community_ids": page_to_communities.get(page.page_id, []),
+                "obsidian_related": obsidian_cache.get("pages", {}).get(page.page_id, {}).get("related", []),
             }
             for page in pages
         ],
@@ -422,6 +426,7 @@ def build_index(repo_root: Path) -> Dict[str, object]:
                 "inbound_count": inbound_counts.get(page.page_id, 0),
                 "tokens_estimate": page.tokens_estimate,
                 "community_ids": page_to_communities.get(page.page_id, []),
+                "obsidian_related": obsidian_cache.get("pages", {}).get(page.page_id, {}).get("related", []),
             }
             for page in pages
         },
@@ -436,6 +441,10 @@ def build_index(repo_root: Path) -> Dict[str, object]:
             }
             for community in community_summaries["communities"]
         },
+        "obsidian": {
+            "enabled": bool(obsidian_cache.get("enabled")),
+            "model": obsidian_cache.get("model", {}),
+        },
     }
 
     return {
@@ -444,6 +453,7 @@ def build_index(repo_root: Path) -> Dict[str, object]:
         "query_cache": query_cache,
         "community_graph": community_graph,
         "community_summaries": community_summaries,
+        "obsidian_cache": obsidian_cache,
         "pages": pages,
         "unresolved_counts": unresolved_counts,
         "ignore_patterns": ignore_rules.patterns,
@@ -463,6 +473,7 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
     structure_path = system_root / "structure_index.json"
     community_graph_path = system_root / "community_graph.json"
     community_summaries_path = system_root / "community_summaries.json"
+    obsidian_cache_path = system_root / "obsidian_semantic_cache.json"
     report_path = wiki_root / "graph_report.md"
     community_report_path = wiki_root / "community_report.md"
     query_log_json_path = system_root / "query_log.json"
@@ -474,6 +485,7 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
     structure_index = build["structure_index"]
     community_graph = build["community_graph"]
     community_summaries = build["community_summaries"]
+    obsidian_cache = build["obsidian_cache"]
     pages: List[PageRecord] = build["pages"]  # type: ignore[assignment]
     unresolved_counts: Counter[str] = build["unresolved_counts"]  # type: ignore[assignment]
 
@@ -481,6 +493,7 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
     structure_path.write_text(json.dumps(structure_index, ensure_ascii=False, indent=2), encoding="utf-8")
     community_graph_path.write_text(json.dumps(community_graph, ensure_ascii=False, indent=2), encoding="utf-8")
     community_summaries_path.write_text(json.dumps(community_summaries, ensure_ascii=False, indent=2), encoding="utf-8")
+    obsidian_cache_path.write_text(json.dumps(obsidian_cache, ensure_ascii=False, indent=2), encoding="utf-8")
     index_json_path.write_text(
         json.dumps(
             {
@@ -498,6 +511,7 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
                         "outbound_links": page.outbound_links,
                         "unresolved_links": page.unresolved_links,
                         "community_ids": structure_index["pages"][idx]["community_ids"],
+                        "obsidian_related": structure_index["pages"][idx]["obsidian_related"],
                     }
                     for idx, page in enumerate(pages)
                 ],
@@ -540,6 +554,7 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         f"- Estimated full-read tokens: {graph['stats']['total_tokens_estimate']}",
         f"- Ignore file: `{IGNORE_FILE_NAME}`",
         f"- Semantic search: {'enabled' if semantic_meta.get('enabled') else 'disabled'}",
+        f"- Smart Connections bridge: {'enabled' if obsidian_cache.get('enabled') else 'disabled'}",
         "",
         "## Pages",
         "",
@@ -551,6 +566,7 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         lines.append(f"  - Tags: {', '.join(page.tags) if page.tags else '(none)'}")
         lines.append(f"  - Topics: {', '.join(page.topics[:5]) if page.topics else '(none)'}")
         lines.append(f"  - Links: {len(page.outbound_links)} outbound / {len(page.unresolved_links)} unresolved")
+        lines.append(f"  - Smart Connections neighbors: {len(obsidian_cache.get('pages', {}).get(page.page_id, {}).get('related', []))}")
     if unresolved_counts:
         lines.extend(["", "## Unresolved Links", ""])
         for target, count in unresolved_counts.most_common(20):
@@ -567,6 +583,7 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         f"- Pages: {graph['stats']['markdown_pages']}",
         f"- Edges: {graph['stats']['resolved_edges']}",
         f"- Estimated full corpus tokens: {graph['stats']['total_tokens_estimate']}",
+        f"- Smart Connections bridge: {'enabled' if obsidian_cache.get('enabled') else 'disabled'}",
         "",
         "## Top Tags",
         "",
@@ -636,6 +653,7 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         "structure_path": structure_path,
         "community_graph_path": community_graph_path,
         "community_summaries_path": community_summaries_path,
+        "obsidian_cache_path": obsidian_cache_path,
         "report_path": report_path,
         "community_report_path": community_report_path,
         "semantic_index_path": system_root / "semantic_index.faiss",

@@ -29,3 +29,21 @@
 - Selected: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md, 실습결과물/07/03-업무-비효율-수치화-템플릿.md, 실습결과물/08/03-정량평가-우선순위.md, 실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md, 실습결과물/09/문제 정의서.md
 - Read plan: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md, 실습결과물/07/03-업무-비효율-수치화-템플릿.md, 실습결과물/08/03-정량평가-우선순위.md, 실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md, 실습결과물/09/문제 정의서.md
 - Tokens: full=81190 targeted=2203 saved=78987 ratio=0.9729
+
+## 2026-04-17T17:37:07.343857
+- Query: Smart Connections와 Mem0 설정
+- Selected: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md, skills/troubleshooting.md, 실습결과물/07/03-업무-비효율-수치화-템플릿.md, 실습결과물/08/03-정량평가-우선순위.md, 실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md
+- Read plan: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md, skills/troubleshooting.md, 실습결과물/07/03-업무-비효율-수치화-템플릿.md, 실습결과물/08/03-정량평가-우선순위.md, 실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md
+- Tokens: full=83023 targeted=3133 saved=79890 ratio=0.9623
+
+## 2026-04-17T17:54:10.198043
+- Query: Smart Connections와 관련된 설정 문서
+- Selected: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md, 실습결과물/07/03-업무-비효율-수치화-템플릿.md, 실습결과물/14/00-INDEX.md, 실습결과물/14/수중드론_사업화_1페이지_BLUF.md, 실습결과물/08/00-INDEX.md
+- Read plan: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md, 실습결과물/07/03-업무-비효율-수치화-템플릿.md, 실습결과물/14/00-INDEX.md, 실습결과물/14/10-주간업무일지-INDEX.md, 실습결과물/14/20-수중드론-INDEX.md, 실습결과물/14/30-소설-INDEX.md, 실습결과물/14/수중드론_사업화_1페이지_BLUF.md, 실습결과물/08/00-INDEX.md, 실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스.md, 실습결과물/08/02-AI-활용영역-보조-요약-생성-분석.md, 실습결과물/08/03-정량평가-우선순위.md
+- Tokens: full=83023 targeted=2688 saved=80335 ratio=0.9676
+
+## 2026-04-17T17:54:43.975972
+- Query: AGENTS wiki setup
+- Selected: skills/wiki-llm-setup/SKILL.md, AGENTS.md, 실습결과물/15/00-INDEX.md, llm_wiki/README.md, 실습결과물/15/wikiLLM.md
+- Read plan: skills/wiki-llm-setup/SKILL.md, AGENTS.md, 실습결과물/15/00-INDEX.md, llm_wiki/README.md, 실습결과물/15/wikiLLM.md
+- Tokens: full=83023 targeted=3028 saved=79995 ratio=0.9635

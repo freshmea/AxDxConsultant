@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T07:53:51.059976+00:00",
+  "generated_at": "2026-04-17T08:55:17.922616+00:00",
   "repo_root": "C:\\Users\\Administrator\\dxAx",
   "nodes": [
     {
@@ -40,14 +40,15 @@
         "unicode",
         "uses"
       ],
-      "tokens_estimate": 630,
-      "word_count": 406,
+      "tokens_estimate": 855,
+      "word_count": 538,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 2,
       "community_ids": [
         "community-009"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "llm_wiki/LLM 지식 아키텍처",
@@ -96,7 +97,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-010"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP",
@@ -145,53 +147,57 @@
       "inbound_count": 0,
       "community_ids": [
         "community-011"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "llm_wiki/README",
       "title": "Local LLM Wiki",
       "path": "llm_wiki/README.md",
-      "summary": "This package builds a lightweight Karpathy-style wiki layer over the markdown files in this repository.",
+      "summary": "This package builds a markdown-first local knowledge layer over the repository and adds three retrieval tiers",
       "headings": [
         "Local LLM Wiki",
+        "Environment",
         "Commands",
         "Generated Files",
         "Ignore Rules",
-        "Token-Saving Flow"
+        "Retrieval Flow",
+        "Related Docs"
       ],
       "tags": [],
       "topics": [
         "builds",
-        "files",
-        "karpathy",
-        "lightweight",
+        "first",
         "llm",
         "local",
+        "markdown",
         "package",
+        "retrieval",
         "wiki"
       ],
       "entities": [
         "builds",
         "commands",
+        "environment",
         "files",
+        "first",
         "generated",
         "ignore",
-        "karpathy",
-        "lightweight",
         "llm",
         "local",
+        "markdown",
         "package",
-        "rules",
-        "saving"
+        "retrieval"
       ],
-      "tokens_estimate": 331,
-      "word_count": 189,
+      "tokens_estimate": 1020,
+      "word_count": 550,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 2,
       "community_ids": [
         "community-009"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "memory_layer/README",
@@ -237,7 +243,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-012"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "notion_app_date_filter_fallback_skill/SKILL",
@@ -294,7 +301,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-013"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "orange_example_10/bodyfat_analysis_report",
@@ -351,7 +359,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-014"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "orange_example_10/titanic_adaboost_report",
@@ -398,7 +407,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-015"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "orange_example_10/titanic_survival_report",
@@ -449,7 +459,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-016"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "README",
@@ -466,7 +477,8 @@
         "2026_4_13",
         "2026_4_14",
         "2026_4_15",
-        "2026_4_16"
+        "2026_4_16",
+        "2026_4_17"
       ],
       "tags": [],
       "topics": [
@@ -493,14 +505,15 @@
         "axdxconsultant",
         "과정"
       ],
-      "tokens_estimate": 1578,
-      "word_count": 1418,
+      "tokens_estimate": 1584,
+      "word_count": 1419,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
         "community-017"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "skills/local-whisper-gpu/SKILL",
@@ -548,110 +561,118 @@
       "inbound_count": 0,
       "community_ids": [
         "community-018"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "skills/troubleshooting",
       "title": "Troubleshooting",
       "path": "skills/troubleshooting.md",
-      "summary": "This note covers setup problems already encountered in this workspace while building the wiki LLM and local Whisper stack.",
+      "summary": "This note covers setup problems already encountered in this workspace while building the wiki LLM, semantic retrieval, Mem0 memory, and the local Whisper stack.",
       "headings": [
         "Troubleshooting",
         "Wiki LLM",
         "Unresolved links caused by `%20`",
         "Unresolved links to `wiki/` generated files",
         "Obsidian graph still shows excluded folders",
+        "Semantic search artifacts are missing",
+        "Community summaries are missing",
         "PowerShell shows broken Korean text",
+        "Mem0 And Local Memory",
+        "`memory-check` cannot see Ollama models",
+        "`memory-add` fails with embedding dimension mismatch",
+        "`memory-search` fails because `user_id` is not accepted",
+        "Memory bootstrap locks or stalls",
+        "Local Qdrant warns that payload indexes have no effect",
         "Skill Docs",
-        "`quick_validate.py` fails with `UnicodeDecodeError`",
-        "`quick_validate.py` fails with invalid YAML",
-        "Local Whisper GPU",
-        "CUDA device count is `0`",
-        "Model loads on CPU instead of GPU",
-        "Long recording fails or is too slow"
+        "`quick_validate.py` fails with `UnicodeDecodeError`"
       ],
       "tags": [],
       "topics": [
         "fails",
-        "links",
         "llm",
         "local",
+        "mem0",
+        "memory",
+        "semantic",
         "troubleshooting",
-        "unresolved",
-        "whisper",
         "wiki"
       ],
       "entities": [
+        "are",
         "covers",
         "fails",
-        "gpu",
-        "is",
         "links",
+        "memory",
+        "missing",
         "note",
         "problems",
-        "py",
-        "quick_validate",
+        "search",
         "setup",
         "shows",
         "troubleshooting"
       ],
-      "tokens_estimate": 852,
-      "word_count": 476,
+      "tokens_estimate": 1542,
+      "word_count": 855,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
         "community-019"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "skills/wiki-llm-setup/SKILL",
       "title": "Wiki LLM Setup",
       "path": "skills/wiki-llm-setup/SKILL.md",
-      "summary": "Recreate the wiki layer in this order.",
+      "summary": "Recreate the workspace in this order.",
       "headings": [
         "Wiki LLM Setup",
         "1. Confirm the required layout",
-        "2. Build the wiki artifacts",
-        "3. Keep query flow graph-first",
-        "4. Maintain explicit ignore rules",
-        "5. Keep Obsidian graph filtering separate",
-        "6. Repair unresolved links before expanding the corpus",
-        "7. Re-verify after every structural change"
+        "2. Prepare the Python environment",
+        "3. Build the wiki artifacts",
+        "4. Keep query flow graph-first",
+        "5. Maintain explicit ignore rules",
+        "6. Keep Obsidian graph filtering separate",
+        "7. Add the change-aware fact layer",
+        "8. Repair unresolved links before expanding the corpus",
+        "9. Re-verify after every structural change"
       ],
       "tags": [],
       "topics": [
+        "change",
         "graph",
-        "in",
         "keep",
-        "layer",
         "llm",
         "recreate",
         "setup",
-        "wiki"
+        "wiki",
+        "workspace"
       ],
       "entities": [
-        "artifacts",
-        "build",
+        "change",
         "confirm",
         "graph",
         "in",
         "keep",
-        "layer",
         "layout",
         "llm",
         "order",
+        "prepare",
         "recreate",
-        "required"
+        "required",
+        "setup"
       ],
-      "tokens_estimate": 758,
-      "word_count": 430,
+      "tokens_estimate": 1068,
+      "word_count": 586,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
         "community-020"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/06/00-INDEX",
@@ -701,7 +722,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-007"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/06/deep-research-report",
@@ -758,7 +780,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-007"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/06/mermaidTest",
@@ -794,7 +817,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-007"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/06/paperclipai교육요약",
@@ -844,7 +868,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-007"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/06/paperclipai사업계획서",
@@ -897,7 +922,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-007"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/07/00-INDEX",
@@ -953,7 +979,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-004"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/07/01-업무-흐름-구조화",
@@ -990,7 +1017,8 @@
       "inbound_count": 3,
       "community_ids": [
         "community-004"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/07/02-업무-흐름-mermaid",
@@ -1027,7 +1055,8 @@
       "inbound_count": 3,
       "community_ids": [
         "community-004"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/07/03-업무-비효율-수치화-템플릿",
@@ -1067,7 +1096,8 @@
       "inbound_count": 3,
       "community_ids": [
         "community-004"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/07/04-as-is-프로세스-스케치",
@@ -1105,7 +1135,8 @@
       "inbound_count": 3,
       "community_ids": [
         "community-004"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/07/5가지단계로 나누기",
@@ -1150,7 +1181,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-004"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/07/업무분석보고서",
@@ -1222,7 +1254,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-004"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/08/00-INDEX",
@@ -1281,7 +1314,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-005"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스",
@@ -1325,7 +1359,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-005"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/08/02-AI-활용영역-보조-요약-생성-분석",
@@ -1382,7 +1417,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-005"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/08/03-정량평가-우선순위",
@@ -1431,7 +1467,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-005"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/08/04-value-estimation-canvas",
@@ -1477,7 +1514,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-005"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우",
@@ -1525,7 +1563,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-005"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/08/업무리스트",
@@ -1569,7 +1608,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-005"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/09/00-INDEX",
@@ -1620,7 +1660,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-008"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/09/노래요청",
@@ -1657,7 +1698,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-008"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/09/문제 정의서",
@@ -1714,7 +1756,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-008"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/09/미션20대여성상품",
@@ -1769,7 +1812,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-008"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/09/현상에서문제로",
@@ -1825,7 +1869,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-008"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/13/00-INDEX",
@@ -1886,7 +1931,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-006"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/13/AIDX_5일차_교시별_요약",
@@ -1930,7 +1976,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-006"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/13/광물자료조사",
@@ -1976,7 +2023,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-006"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/13/노트북lm 수업 요약보고서",
@@ -2011,7 +2059,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-006"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/13/블로그 형태",
@@ -2045,7 +2094,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-006"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/13/수중드론_블로그",
@@ -2078,7 +2128,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-006"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/13/수중드론_사업화_기획안",
@@ -2135,7 +2186,8 @@
       "inbound_count": 3,
       "community_ids": [
         "community-003"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/13/해양드론딥리서치결과",
@@ -2192,7 +2244,8 @@
       "inbound_count": 3,
       "community_ids": [
         "community-003"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/13/해양드론조사보고서",
@@ -2248,7 +2301,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-006"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/00-INDEX",
@@ -2308,7 +2362,8 @@
       "inbound_count": 4,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/10-주간업무일지-INDEX",
@@ -2359,7 +2414,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/20-수중드론-INDEX",
@@ -2420,7 +2476,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-003"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/2026_3_13_주간 업무일지",
@@ -2473,7 +2530,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/2026_3_20_주간 업무일지",
@@ -2526,7 +2584,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/2026_3_27_주간 업무일지",
@@ -2579,7 +2638,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/2026_4_10_주간 업무일지",
@@ -2632,7 +2692,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/2026_4_3_주간 업무일지",
@@ -2685,7 +2746,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/30-소설-INDEX",
@@ -2744,7 +2806,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-002"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/AI요청 프롬프트",
@@ -2778,7 +2841,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/고려빙의_스토리라인",
@@ -2825,7 +2889,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-002"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/소설1권",
@@ -2880,7 +2945,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-002"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/소설2권",
@@ -2937,7 +3003,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-002"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/소설3권",
@@ -2994,7 +3061,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-002"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/소설4권",
@@ -3051,7 +3119,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-002"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/소설5권",
@@ -3107,7 +3176,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-002"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/소설_목차_5부작",
@@ -3154,7 +3224,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-002"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/소설_연속작성_토큰로그",
@@ -3201,7 +3272,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-002"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/수중드론_사업화_1페이지_BLUF",
@@ -3251,7 +3323,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-003"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/수중드론_사업화_1페이지_BLUF_열정설득서술형",
@@ -3292,7 +3365,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-003"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/수중드론_사업화_1페이지_BLUF_포멀서술형",
@@ -3331,7 +3405,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-003"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/수중드론_사업화_기획안",
@@ -3402,7 +3477,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-003"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/수중드론_사업화_상세기획안",
@@ -3459,7 +3535,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-003"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/수중드론_사업화_타당성",
@@ -3506,7 +3583,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-003"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/시대상 과 역사적 사실",
@@ -3558,7 +3636,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/업무일지 작성프롬프트",
@@ -3595,7 +3674,8 @@
       "inbound_count": 2,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/14/이메일발송프롬프트",
@@ -3632,7 +3712,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-001"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/15/00-INDEX",
@@ -3685,7 +3766,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-009"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/15/wikiLLM",
@@ -3741,7 +3823,8 @@
       "inbound_count": 1,
       "community_ids": [
         "community-009"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/15/Youtube 영상 스크립트",
@@ -3776,7 +3859,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-021"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서",
@@ -3825,7 +3909,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-022"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/15/YouTube 영상 요약본",
@@ -3851,7 +3936,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-023"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/15/로컬 whisper 모델 설치 프롬프트",
@@ -3889,7 +3975,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-024"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/16/imports-85_actual_data_summary",
@@ -3939,7 +4026,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-025"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/16/imports-85_interactive_report",
@@ -3996,7 +4084,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-026"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/16/imports-85_report",
@@ -4043,7 +4132,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-027"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/16/retail_sales_report_assets/README",
@@ -4081,7 +4171,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-028"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/16/retail_sales_trend_onepage_report",
@@ -4132,7 +4223,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-029"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/16/리테일 분석판매보고서노트북LM",
@@ -4164,7 +4256,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-030"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/16/매출분석에 쓰인 프롬프트",
@@ -4202,7 +4295,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-031"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/16/자동차수출예제관련프롬프트",
@@ -4232,7 +4326,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-032"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/16/한페이지요약 HRD AX 수업도향",
@@ -4278,7 +4373,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-033"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/17/02 Project Management_manager_ranking_report",
@@ -4327,7 +4423,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-034"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/17/02 Project Management_SCQA_insight_report",
@@ -4376,7 +4473,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-035"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/17/02 Project Management_summary_report",
@@ -4424,7 +4522,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-036"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report",
@@ -4472,7 +4571,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-037"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/17/08 E-Commerce Orders_price_outlier_report",
@@ -4520,7 +4620,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-038"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/17/project Magement_blog",
@@ -4554,7 +4655,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-039"
-      ]
+      ],
+      "obsidian_related_count": 12
     },
     {
       "id": "실습결과물/17/엑셀처리프롬프트",
@@ -4592,7 +4694,8 @@
       "inbound_count": 0,
       "community_ids": [
         "community-040"
-      ]
+      ],
+      "obsidian_related_count": 12
     }
   ],
   "edges": [
@@ -6160,14 +6263,6 @@
           2
         ],
         [
-          "rules",
-          2
-        ],
-        [
-          "saving",
-          2
-        ],
-        [
           "codex",
           2
         ],
@@ -6181,6 +6276,14 @@
         ],
         [
           "llm-wiki",
+          2
+        ],
+        [
+          "wiki",
+          2
+        ],
+        [
+          "실습결과물",
           2
         ]
       ],
@@ -6983,15 +7086,11 @@
       "representative_page_id": "skills/troubleshooting",
       "representative_title": "Troubleshooting",
       "representative_path": "skills/troubleshooting.md",
-      "summary": "Troubleshooting 중심의 지식 군집입니다. 핵심 주제는 fails, links, llm, local이며, 대표 문서는 Troubleshooting 입니다.",
+      "summary": "Troubleshooting 중심의 지식 군집입니다. 핵심 주제는 fails, llm, local, mem0이며, 대표 문서는 Troubleshooting 입니다.",
       "top_tags": [],
       "top_topics": [
         [
           "fails",
-          1
-        ],
-        [
-          "links",
           1
         ],
         [
@@ -7003,15 +7102,19 @@
           1
         ],
         [
+          "mem0",
+          1
+        ],
+        [
+          "memory",
+          1
+        ],
+        [
+          "semantic",
+          1
+        ],
+        [
           "troubleshooting",
-          1
-        ],
-        [
-          "unresolved",
-          1
-        ],
-        [
-          "whisper",
           1
         ],
         [
@@ -7021,6 +7124,10 @@
       ],
       "top_entities": [
         [
+          "are",
+          1
+        ],
+        [
           "covers",
           1
         ],
@@ -7029,15 +7136,15 @@
           1
         ],
         [
-          "gpu",
-          1
-        ],
-        [
-          "is",
-          1
-        ],
-        [
           "links",
+          1
+        ],
+        [
+          "memory",
+          1
+        ],
+        [
+          "missing",
           1
         ],
         [
@@ -7046,10 +7153,6 @@
         ],
         [
           "problems",
-          1
-        ],
-        [
-          "py",
           1
         ]
       ],
@@ -7069,23 +7172,19 @@
       "representative_page_id": "skills/wiki-llm-setup/SKILL",
       "representative_title": "Wiki LLM Setup",
       "representative_path": "skills/wiki-llm-setup/SKILL.md",
-      "summary": "Wiki LLM Setup 중심의 지식 군집입니다. 핵심 주제는 graph, in, keep, layer이며, 대표 문서는 Wiki LLM Setup 입니다.",
+      "summary": "Wiki LLM Setup 중심의 지식 군집입니다. 핵심 주제는 change, graph, keep, llm이며, 대표 문서는 Wiki LLM Setup 입니다.",
       "top_tags": [],
       "top_topics": [
+        [
+          "change",
+          1
+        ],
         [
           "graph",
           1
         ],
         [
-          "in",
-          1
-        ],
-        [
           "keep",
-          1
-        ],
-        [
-          "layer",
           1
         ],
         [
@@ -7103,15 +7202,15 @@
         [
           "wiki",
           1
+        ],
+        [
+          "workspace",
+          1
         ]
       ],
       "top_entities": [
         [
-          "artifacts",
-          1
-        ],
-        [
-          "build",
+          "change",
           1
         ],
         [
@@ -7131,11 +7230,15 @@
           1
         ],
         [
-          "layer",
+          "layout",
           1
         ],
         [
-          "layout",
+          "llm",
+          1
+        ],
+        [
+          "order",
           1
         ]
       ],
@@ -8774,7 +8877,7 @@
     "markdown_pages": 95,
     "resolved_edges": 89,
     "unresolved_links": 0,
-    "total_tokens_estimate": 81190,
+    "total_tokens_estimate": 83110,
     "community_count": 40
   },
   "facets": {

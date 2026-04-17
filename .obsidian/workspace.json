@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "실습결과물/17/02 Project Management_SCQA_insight_report.md",
+                "file": "실습결과물/17/02 Project Management_summary_report.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 Project Management_SCQA_insight_report"
+              "title": "02 Project Management_summary_report"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "실습결과물/17/02 Project Management_SCQA_insight_report.md",
+                "file": "실습결과물/17/02 Project Management_summary_report.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "02 Project Management_SCQA_insight_report 의 백링크"
+              "title": "02 Project Management_summary_report 의 백링크"
             }
           },
           {
@@ -194,8 +194,13 @@
       "smart-connections:Smart Lookup: Open lookup view": false
     }
   },
-  "active": "b01eb13f35815758",
+  "active": "a94fc1ab5438420f",
   "lastOpenFiles": [
+    "wiki/system/link_graph.gv",
+    "실습결과물/17/02 Project Management_SCQA_insight_report.md",
+    "wiki/system/obsidian_semantic_cache.json",
+    "llm_wiki/__pycache__/obsidian_bridge.cpython-312.pyc",
+    "llm_wiki/obsidian_bridge.py",
     "memory_layer/qdrant/collection/dxax_mem0_entities/storage.sqlite-journal",
     "memory_layer/qdrant/collection/dxax_mem0_entities/storage.sqlite",
     "memory_layer/qdrant/collection/dxax_mem0_entities",
@@ -205,15 +210,9 @@
     "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report.md",
     "memory_layer/qdrant/collection/dxax_mem0/storage.sqlite-journal",
     "memory_layer/memory_state.json",
-    "memory_layer/history.db",
-    "memory_layer/qdrant/collection/dxax_mem0/storage.sqlite",
-    "memory_layer/qdrant/collection/dxax_mem0",
-    "memory_layer/qdrant/collection",
-    "memory_layer/qdrant/meta.json",
     "wiki/community_report.md",
     "memory_layer/README.md",
     "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
-    "실습결과물/17/02 Project Management_SCQA_insight_report.md",
     "wiki/notes/2026-04-13_dxax_class_summary.md",
     "wiki/notes/2026-04-09_dxax_class_summary.md",
     "wiki/notes/2026-04-16_dxax_class_summary.md",

@@ -39,7 +39,7 @@
 <path fill="none" stroke="black" d="M1273.88,-57.5C1273.88,-57.5 1149.12,-57.5 1149.12,-57.5 1143.12,-57.5 1137.12,-51.5 1137.12,-45.5 1137.12,-45.5 1137.12,-12 1137.12,-12 1137.12,-6 1143.12,0 1149.12,0 1149.12,0 1273.88,0 1273.88,0 1279.88,0 1285.88,-6 1285.88,-12 1285.88,-12 1285.88,-45.5 1285.88,-45.5 1285.88,-51.5 1279.88,-57.5 1273.88,-57.5"/>
 <text xml:space="preserve" text-anchor="middle" x="1211.5" y="-40.2" font-family="Times New Roman,serif" font-size="14.00">Local LLM Wiki</text>
 <text xml:space="preserve" text-anchor="middle" x="1211.5" y="-23.7" font-family="Times New Roman,serif" font-size="14.00">llm_wiki/README.md</text>
-<text xml:space="preserve" text-anchor="middle" x="1211.5" y="-7.2" font-family="Times New Roman,serif" font-size="14.00">builds, files, karpathy</text>
+<text xml:space="preserve" text-anchor="middle" x="1211.5" y="-7.2" font-family="Times New Roman,serif" font-size="14.00">builds, first, llm</text>
 </g>
 <!-- memory_layer/README -->
 <g id="node5" class="node">
@@ -103,7 +103,7 @@
 <path fill="none" stroke="black" d="M279.62,-868.5C279.62,-868.5 148.88,-868.5 148.88,-868.5 142.88,-868.5 136.88,-862.5 136.88,-856.5 136.88,-856.5 136.88,-823 136.88,-823 136.88,-817 142.88,-811 148.88,-811 148.88,-811 279.62,-811 279.62,-811 285.62,-811 291.62,-817 291.62,-823 291.62,-823 291.62,-856.5 291.62,-856.5 291.62,-862.5 285.62,-868.5 279.62,-868.5"/>
 <text xml:space="preserve" text-anchor="middle" x="214.25" y="-851.2" font-family="Times New Roman,serif" font-size="14.00">Troubleshooting</text>
 <text xml:space="preserve" text-anchor="middle" x="214.25" y="-834.7" font-family="Times New Roman,serif" font-size="14.00">skills/troubleshooting.md</text>
-<text xml:space="preserve" text-anchor="middle" x="214.25" y="-818.2" font-family="Times New Roman,serif" font-size="14.00">fails, links, llm</text>
+<text xml:space="preserve" text-anchor="middle" x="214.25" y="-818.2" font-family="Times New Roman,serif" font-size="14.00">fails, llm, local</text>
 </g>
 <!-- skills/wiki&#45;llm&#45;setup/SKILL -->
 <g id="node13" class="node">
@@ -111,7 +111,7 @@
 <path fill="none" stroke="black" d="M298.38,-944.5C298.38,-944.5 130.12,-944.5 130.12,-944.5 124.12,-944.5 118.12,-938.5 118.12,-932.5 118.12,-932.5 118.12,-899 118.12,-899 118.12,-893 124.12,-887 130.12,-887 130.12,-887 298.38,-887 298.38,-887 304.38,-887 310.38,-893 310.38,-899 310.38,-899 310.38,-932.5 310.38,-932.5 310.38,-938.5 304.38,-944.5 298.38,-944.5"/>
 <text xml:space="preserve" text-anchor="middle" x="214.25" y="-927.2" font-family="Times New Roman,serif" font-size="14.00">Wiki LLM Setup</text>
 <text xml:space="preserve" text-anchor="middle" x="214.25" y="-910.7" font-family="Times New Roman,serif" font-size="14.00">skills/wiki&#45;llm&#45;setup/SKILL.md</text>
-<text xml:space="preserve" text-anchor="middle" x="214.25" y="-894.2" font-family="Times New Roman,serif" font-size="14.00">graph, in, keep</text>
+<text xml:space="preserve" text-anchor="middle" x="214.25" y="-894.2" font-family="Times New Roman,serif" font-size="14.00">change, graph, keep</text>
 </g>
 <!-- 실습결과물/06/00&#45;INDEX -->
 <g id="node14" class="node">

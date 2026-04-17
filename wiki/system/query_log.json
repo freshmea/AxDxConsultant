@@ -121,5 +121,83 @@
       "saved_estimate": 78987,
       "savings_ratio": 0.9729
     }
+  },
+  {
+    "timestamp": "2026-04-17T17:37:07.343857",
+    "query": "Smart Connections와 Mem0 설정",
+    "selected_paths": [
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
+      "skills/troubleshooting.md",
+      "실습결과물/07/03-업무-비효율-수치화-템플릿.md",
+      "실습결과물/08/03-정량평가-우선순위.md",
+      "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md"
+    ],
+    "read_plan_paths": [
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
+      "skills/troubleshooting.md",
+      "실습결과물/07/03-업무-비효율-수치화-템플릿.md",
+      "실습결과물/08/03-정량평가-우선순위.md",
+      "실습결과물/08/05-명세서-초안-자동생성-AI-워크플로우.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 83023,
+      "targeted_read_estimate": 3133,
+      "saved_estimate": 79890,
+      "savings_ratio": 0.9623
+    }
+  },
+  {
+    "timestamp": "2026-04-17T17:54:10.198043",
+    "query": "Smart Connections와 관련된 설정 문서",
+    "selected_paths": [
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
+      "실습결과물/07/03-업무-비효율-수치화-템플릿.md",
+      "실습결과물/14/00-INDEX.md",
+      "실습결과물/14/수중드론_사업화_1페이지_BLUF.md",
+      "실습결과물/08/00-INDEX.md"
+    ],
+    "read_plan_paths": [
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
+      "실습결과물/07/03-업무-비효율-수치화-템플릿.md",
+      "실습결과물/14/00-INDEX.md",
+      "실습결과물/14/10-주간업무일지-INDEX.md",
+      "실습결과물/14/20-수중드론-INDEX.md",
+      "실습결과물/14/30-소설-INDEX.md",
+      "실습결과물/14/수중드론_사업화_1페이지_BLUF.md",
+      "실습결과물/08/00-INDEX.md",
+      "실습결과물/08/01-핵심-업무-리스트업-및-명세서-프로세스.md",
+      "실습결과물/08/02-AI-활용영역-보조-요약-생성-분석.md",
+      "실습결과물/08/03-정량평가-우선순위.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 83023,
+      "targeted_read_estimate": 2688,
+      "saved_estimate": 80335,
+      "savings_ratio": 0.9676
+    }
+  },
+  {
+    "timestamp": "2026-04-17T17:54:43.975972",
+    "query": "AGENTS wiki setup",
+    "selected_paths": [
+      "skills/wiki-llm-setup/SKILL.md",
+      "AGENTS.md",
+      "실습결과물/15/00-INDEX.md",
+      "llm_wiki/README.md",
+      "실습결과물/15/wikiLLM.md"
+    ],
+    "read_plan_paths": [
+      "skills/wiki-llm-setup/SKILL.md",
+      "AGENTS.md",
+      "실습결과물/15/00-INDEX.md",
+      "llm_wiki/README.md",
+      "실습결과물/15/wikiLLM.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 83023,
+      "targeted_read_estimate": 3028,
+      "saved_estimate": 79995,
+      "savings_ratio": 0.9635
+    }
   }
 ]

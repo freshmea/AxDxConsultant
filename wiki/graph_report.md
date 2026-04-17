@@ -1,9 +1,10 @@
 # Graph Report
 
-- Generated: 2026-04-17T07:53:51.059976+00:00
+- Generated: 2026-04-17T08:55:17.922616+00:00
 - Pages: 95
 - Edges: 89
-- Estimated full corpus tokens: 81190
+- Estimated full corpus tokens: 83110
+- Smart Connections bridge: enabled
 
 ## Top Tags
 

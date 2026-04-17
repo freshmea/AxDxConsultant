@@ -37,6 +37,7 @@ def score_pages(repo_root: Path, cache: Dict[str, object], query: str, limit: in
     total_tokens = sum(int(page["tokens_estimate"]) for page in pages.values())
     semantic_hits = {item["id"]: item for item in search_semantic(repo_root / "wiki" / "system", query, limit=max(limit * 2, 8))}
     community_scores: Dict[str, int] = {}
+    provisional: List[Dict[str, object]] = []
 
     for community_id, community in communities.items():
         community_text = " ".join(
@@ -67,8 +68,9 @@ def score_pages(repo_root: Path, cache: Dict[str, object], query: str, limit: in
         total_score = semantic_score + semantic_bonus + community_bonus
         if total_score <= 0:
             continue
-        score = total_score + min(int(page["inbound_count"]), 5)
-        scores.append(
+        inbound_bonus = min(int(page["inbound_count"]), 5)
+        score = total_score + inbound_bonus
+        provisional.append(
             {
                 "id": page_id,
                 "title": page["title"],
@@ -85,12 +87,39 @@ def score_pages(repo_root: Path, cache: Dict[str, object], query: str, limit: in
                     "lexical": semantic_score,
                     "semantic": semantic_bonus,
                     "community": community_bonus,
-                    "inbound": min(int(page["inbound_count"]), 5),
+                    "obsidian": 0.0,
+                    "inbound": inbound_bonus,
                 },
             }
         )
 
-    scores.sort(key=lambda item: (-int(item["score"]), str(item["path"])))
+    provisional.sort(key=lambda item: (-float(item["score"]), str(item["path"])))
+    seed_ids = [item["id"] for item in provisional[: max(limit, 5)]]
+    obsidian_bonus_map: Dict[str, float] = {}
+    for seed_id in seed_ids:
+        seed_page = pages.get(seed_id, {})
+        for relation in seed_page.get("obsidian_related", []):
+            if not isinstance(relation, dict):
+                continue
+            related_id = relation.get("id")
+            related_score = relation.get("score", 0.0)
+            if not related_id or related_id == seed_id:
+                continue
+            try:
+                bonus = round(float(related_score) * 4.0, 4)
+            except (TypeError, ValueError):
+                continue
+            if bonus <= 0:
+                continue
+            obsidian_bonus_map[str(related_id)] = obsidian_bonus_map.get(str(related_id), 0.0) + bonus
+
+    for item in provisional:
+        obsidian_bonus = obsidian_bonus_map.get(str(item["id"]), 0.0)
+        item["score"] = round(float(item["score"]) + obsidian_bonus, 4)
+        item["score_breakdown"]["obsidian"] = obsidian_bonus  # type: ignore[index]
+        scores.append(item)
+
+    scores.sort(key=lambda item: (-float(item["score"]), str(item["path"])))
     selected = scores[:limit]
 
     expanded_ids = []
@@ -110,9 +139,10 @@ def score_pages(repo_root: Path, cache: Dict[str, object], query: str, limit: in
             "tags": pages[page_id]["tags"],
             "topics": pages[page_id]["topics"],
             "entities": pages[page_id]["entities"],
-            "community_ids": pages[page_id].get("community_ids", []),
-            "tokens_estimate": pages[page_id]["tokens_estimate"],
-        }
+                "community_ids": pages[page_id].get("community_ids", []),
+                "obsidian_related": pages[page_id].get("obsidian_related", [])[:5],
+                "tokens_estimate": pages[page_id]["tokens_estimate"],
+            }
         for page_id in expanded_ids
     ]
     routed_tokens = sum(int(page["tokens_estimate"]) for page in routed_pages)

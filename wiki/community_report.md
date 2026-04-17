@@ -1,6 +1,6 @@
 # Community Report
 
-- Generated: 2026-04-17T07:53:51.059976+00:00
+- Generated: 2026-04-17T08:55:17.922616+00:00
 - Community count: 40
 
 ## community-001
@@ -81,7 +81,7 @@
 - Size: 4
 - Summary: 실습결과물 15 인덱스 중심의 지식 군집입니다. 핵심 주제는 llm, wiki, local, codex이며, 대표 문서는 LLM Wiki Schema, Local LLM Wiki, 실습결과물 15 인덱스, wikillm 을 구현하기 위한 프롬프트 입니다.
 - Topics: llm, wiki, local, codex, day15, graph, llm-wiki, repository
-- Entities: llm, local, rules, saving, codex, day15, graph, llm-wiki
+- Entities: llm, local, codex, day15, graph, llm-wiki, wiki, 실습결과물
 - Pages: AGENTS.md, llm_wiki/README.md, 실습결과물/15/00-INDEX.md, 실습결과물/15/wikiLLM.md
 
 ## community-010
@@ -169,18 +169,18 @@
 
 - Representative: [Troubleshooting](../skills/troubleshooting.md)
 - Size: 1
-- Summary: Troubleshooting 중심의 지식 군집입니다. 핵심 주제는 fails, links, llm, local이며, 대표 문서는 Troubleshooting 입니다.
-- Topics: fails, links, llm, local, troubleshooting, unresolved, whisper, wiki
-- Entities: covers, fails, gpu, is, links, note, problems, py
+- Summary: Troubleshooting 중심의 지식 군집입니다. 핵심 주제는 fails, llm, local, mem0이며, 대표 문서는 Troubleshooting 입니다.
+- Topics: fails, llm, local, mem0, memory, semantic, troubleshooting, wiki
+- Entities: are, covers, fails, links, memory, missing, note, problems
 - Pages: skills/troubleshooting.md
 
 ## community-020
 
 - Representative: [Wiki LLM Setup](../skills/wiki-llm-setup/SKILL.md)
 - Size: 1
-- Summary: Wiki LLM Setup 중심의 지식 군집입니다. 핵심 주제는 graph, in, keep, layer이며, 대표 문서는 Wiki LLM Setup 입니다.
-- Topics: graph, in, keep, layer, llm, recreate, setup, wiki
-- Entities: artifacts, build, confirm, graph, in, keep, layer, layout
+- Summary: Wiki LLM Setup 중심의 지식 군집입니다. 핵심 주제는 change, graph, keep, llm이며, 대표 문서는 Wiki LLM Setup 입니다.
+- Topics: change, graph, keep, llm, recreate, setup, wiki, workspace
+- Entities: change, confirm, graph, in, keep, layout, llm, order
 - Pages: skills/wiki-llm-setup/SKILL.md
 
 ## community-021
