@@ -1,0 +1,787 @@
+{
+  "nodes": [
+    {
+      "id": "module::_/07/click_game.py",
+      "label": "click_game.py",
+      "kind": "module",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::argparse",
+      "label": "argparse",
+      "kind": "import",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::random",
+      "label": "random",
+      "kind": "import",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L2",
+      "external": true
+    },
+    {
+      "id": "import::sys",
+      "label": "sys",
+      "kind": "import",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::pygame",
+      "label": "pygame",
+      "kind": "import",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "symbol::_/07/click_game.py::spawn_target",
+      "label": "spawn_target",
+      "kind": "function",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L15"
+    },
+    {
+      "id": "symbol-ref::random.randint",
+      "label": "random.randint",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "symbol::_/07/click_game.py::make_font",
+      "label": "make_font",
+      "kind": "function",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "symbol-ref::pygame.font.SysFont",
+      "label": "pygame.font.SysFont",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "symbol-ref::pygame.font.Font",
+      "label": "pygame.font.Font",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L28"
+    },
+    {
+      "id": "symbol::_/07/click_game.py::run_game",
+      "label": "run_game",
+      "kind": "function",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L31"
+    },
+    {
+      "id": "symbol-ref::pygame.init",
+      "label": "pygame.init",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L32"
+    },
+    {
+      "id": "symbol-ref::pygame.display.set_mode",
+      "label": "pygame.display.set_mode",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "symbol-ref::pygame.display.set_caption",
+      "label": "pygame.display.set_caption",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L34"
+    },
+    {
+      "id": "symbol-ref::pygame.time.Clock",
+      "label": "pygame.time.Clock",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "symbol-ref::pygame.time.get_ticks",
+      "label": "pygame.time.get_ticks",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L40"
+    },
+    {
+      "id": "symbol-ref::int",
+      "label": "int",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "symbol-ref::max",
+      "label": "max",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L47"
+    },
+    {
+      "id": "symbol-ref::pygame.event.get",
+      "label": "pygame.event.get",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L49"
+    },
+    {
+      "id": "symbol-ref::screen.fill",
+      "label": "screen.fill",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L63"
+    },
+    {
+      "id": "symbol-ref::pygame.draw.circle",
+      "label": "pygame.draw.circle",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L64"
+    },
+    {
+      "id": "symbol-ref::screen.blit",
+      "label": "screen.blit",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L65"
+    },
+    {
+      "id": "symbol-ref::font.render",
+      "label": "font.render",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L65"
+    },
+    {
+      "id": "symbol-ref::pygame.display.flip",
+      "label": "pygame.display.flip",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L68"
+    },
+    {
+      "id": "symbol-ref::clock.tick",
+      "label": "clock.tick",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L69"
+    },
+    {
+      "id": "symbol-ref::end_text.get_width",
+      "label": "end_text.get_width",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L75"
+    },
+    {
+      "id": "symbol-ref::hint_text.get_width",
+      "label": "hint_text.get_width",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "symbol-ref::pygame.quit",
+      "label": "pygame.quit",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L88"
+    },
+    {
+      "id": "symbol::_/07/click_game.py::parse_args",
+      "label": "parse_args",
+      "kind": "function",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L92"
+    },
+    {
+      "id": "symbol-ref::argparse.ArgumentParser",
+      "label": "argparse.ArgumentParser",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L93"
+    },
+    {
+      "id": "symbol-ref::parser.add_argument",
+      "label": "parser.add_argument",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L94"
+    },
+    {
+      "id": "symbol-ref::parser.parse_args",
+      "label": "parser.parse_args",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L100"
+    },
+    {
+      "id": "symbol::_/07/click_game.py::main",
+      "label": "main",
+      "kind": "function",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L103"
+    },
+    {
+      "id": "symbol-ref::print",
+      "label": "print",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L108"
+    },
+    {
+      "id": "symbol-ref::SystemExit",
+      "label": "SystemExit",
+      "kind": "symbol_ref",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L114"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "import::argparse",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "import::random",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L2"
+    },
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "import::sys",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "import::pygame",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "symbol::_/07/click_game.py::spawn_target",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L15"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::spawn_target",
+      "target": "symbol-ref::random.randint",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L16"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::spawn_target",
+      "target": "symbol-ref::random.randint",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L17"
+    },
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "symbol::_/07/click_game.py::make_font",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L21"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::make_font",
+      "target": "symbol-ref::pygame.font.SysFont",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::make_font",
+      "target": "symbol-ref::pygame.font.Font",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L28"
+    },
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "symbol::_/07/click_game.py::run_game",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L31"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.init",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L32"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.display.set_mode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L33"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.display.set_caption",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L34"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.time.Clock",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L35"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol::_/07/click_game.py::make_font",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L36"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol::_/07/click_game.py::spawn_target",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L39"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.time.get_ticks",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L40"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L41"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.time.get_ticks",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L45"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::max",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L47"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L47"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.event.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L49"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol::_/07/click_game.py::spawn_target",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L56"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::screen.fill",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L63"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.draw.circle",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L64"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::screen.blit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L65"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::font.render",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L65"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::screen.blit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::font.render",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::screen.blit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L67"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::font.render",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L67"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.display.flip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L68"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::clock.tick",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L69"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::screen.fill",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L72"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::font.render",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L73"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::font.render",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L74"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::screen.blit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L75"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::end_text.get_width",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L75"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::screen.blit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::hint_text.get_width",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.display.flip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L77"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.event.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L81"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::clock.tick",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L86"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::run_game",
+      "target": "symbol-ref::pygame.quit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "symbol::_/07/click_game.py::parse_args",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::parse_args",
+      "target": "symbol-ref::argparse.ArgumentParser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L93"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::parse_args",
+      "target": "symbol-ref::parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L94"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::parse_args",
+      "target": "symbol-ref::parser.parse_args",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L100"
+    },
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "symbol::_/07/click_game.py::main",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L103"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::main",
+      "target": "symbol::_/07/click_game.py::parse_args",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L104"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::main",
+      "target": "symbol::_/07/click_game.py::run_game",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::_/07/click_game.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L108"
+    },
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "symbol-ref::SystemExit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L114"
+    },
+    {
+      "source": "module::_/07/click_game.py",
+      "target": "symbol::_/07/click_game.py::main",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/07/click_game.py",
+      "source_file": "실습결과물/07/click_game.py",
+      "source_location": "L114"
+    }
+  ],
+  "language": "python",
+  "path": "실습결과물/07/click_game.py"
+}

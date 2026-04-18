@@ -1,0 +1,788 @@
+{
+  "nodes": [
+    {
+      "id": "module::llm_wiki/memory_layer.py",
+      "label": "memory_layer.py",
+      "kind": "module",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::__future",
+      "label": "__future__",
+      "kind": "import",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::json",
+      "label": "json",
+      "kind": "import",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "import::typing",
+      "label": "typing",
+      "kind": "import",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "symbol-ref::Path",
+      "label": "Path",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "symbol::llm_wiki/memory_layer.py::memory_paths",
+      "label": "memory_paths",
+      "kind": "function",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "symbol::llm_wiki/memory_layer.py::default_mem0_config",
+      "label": "default_mem0_config",
+      "kind": "function",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "symbol-ref::str",
+      "label": "str",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L31"
+    },
+    {
+      "id": "symbol::llm_wiki/memory_layer.py::ensure_mem0_config",
+      "label": "ensure_mem0_config",
+      "kind": "function",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L56"
+    },
+    {
+      "id": "symbol-ref::mkdir",
+      "label": "mkdir",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L58"
+    },
+    {
+      "id": "symbol-ref::exists",
+      "label": "exists",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L59"
+    },
+    {
+      "id": "symbol-ref::write_text",
+      "label": "write_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L61"
+    },
+    {
+      "id": "symbol-ref::json.dumps",
+      "label": "json.dumps",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L61"
+    },
+    {
+      "id": "symbol::llm_wiki/memory_layer.py::load_mem0",
+      "label": "load_mem0",
+      "kind": "function",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L65"
+    },
+    {
+      "id": "import::mem0",
+      "label": "mem0",
+      "kind": "import",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L67",
+      "external": true
+    },
+    {
+      "id": "symbol-ref::RuntimeError",
+      "label": "RuntimeError",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L69"
+    },
+    {
+      "id": "symbol-ref::json.loads",
+      "label": "json.loads",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L72"
+    },
+    {
+      "id": "symbol-ref::config_path.read_text",
+      "label": "config_path.read_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L72"
+    },
+    {
+      "id": "symbol-ref::Memory.from_config",
+      "label": "Memory.from_config",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L73"
+    },
+    {
+      "id": "symbol::llm_wiki/memory_layer.py::check_ollama_models",
+      "label": "check_ollama_models",
+      "kind": "function",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "import::requests",
+      "label": "requests",
+      "kind": "import",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L77",
+      "external": true
+    },
+    {
+      "id": "symbol-ref::requests.get",
+      "label": "requests.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L79"
+    },
+    {
+      "id": "symbol-ref::response.raise_for_status",
+      "label": "response.raise_for_status",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L80"
+    },
+    {
+      "id": "symbol-ref::response.json",
+      "label": "response.json",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L81"
+    },
+    {
+      "id": "symbol-ref::item.get",
+      "label": "item.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L82"
+    },
+    {
+      "id": "symbol-ref::payload.get",
+      "label": "payload.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L82"
+    },
+    {
+      "id": "symbol::llm_wiki/memory_layer.py::memory_add",
+      "label": "memory_add",
+      "kind": "function",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L86"
+    },
+    {
+      "id": "symbol-ref::memory.add",
+      "label": "memory.add",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L88"
+    },
+    {
+      "id": "symbol::llm_wiki/memory_layer.py::memory_search",
+      "label": "memory_search",
+      "kind": "function",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L97"
+    },
+    {
+      "id": "symbol-ref::memory.search",
+      "label": "memory.search",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L99"
+    },
+    {
+      "id": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "label": "bootstrap_memory",
+      "kind": "function",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L103"
+    },
+    {
+      "id": "symbol-ref::list",
+      "label": "list",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L112"
+    },
+    {
+      "id": "symbol-ref::enumerate",
+      "label": "enumerate",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L119"
+    },
+    {
+      "id": "symbol-ref::join",
+      "label": "join",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L124"
+    },
+    {
+      "id": "symbol-ref::page.get",
+      "label": "page.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L124"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "import::__future",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "import::json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "import::typing",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L8"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "symbol::llm_wiki/memory_layer.py::memory_paths",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L13"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "symbol::llm_wiki/memory_layer.py::default_mem0_config",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L24"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::default_mem0_config",
+      "target": "symbol::llm_wiki/memory_layer.py::memory_paths",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::default_mem0_config",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L31"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::default_mem0_config",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "symbol::llm_wiki/memory_layer.py::ensure_mem0_config",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L56"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::ensure_mem0_config",
+      "target": "symbol::llm_wiki/memory_layer.py::memory_paths",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L57"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::ensure_mem0_config",
+      "target": "symbol-ref::mkdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L58"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::ensure_mem0_config",
+      "target": "symbol-ref::exists",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L59"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::ensure_mem0_config",
+      "target": "symbol::llm_wiki/memory_layer.py::default_mem0_config",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L60"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::ensure_mem0_config",
+      "target": "symbol-ref::write_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::ensure_mem0_config",
+      "target": "symbol-ref::json.dumps",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "symbol::llm_wiki/memory_layer.py::load_mem0",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L65"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "import::mem0",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L67"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::load_mem0",
+      "target": "symbol-ref::RuntimeError",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L69"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::load_mem0",
+      "target": "symbol::llm_wiki/memory_layer.py::ensure_mem0_config",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::load_mem0",
+      "target": "symbol-ref::json.loads",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L72"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::load_mem0",
+      "target": "symbol-ref::config_path.read_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L72"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::load_mem0",
+      "target": "symbol-ref::Memory.from_config",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L73"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "symbol::llm_wiki/memory_layer.py::check_ollama_models",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "import::requests",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L77"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::check_ollama_models",
+      "target": "symbol-ref::requests.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L79"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::check_ollama_models",
+      "target": "symbol-ref::response.raise_for_status",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::check_ollama_models",
+      "target": "symbol-ref::response.json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L81"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::check_ollama_models",
+      "target": "symbol-ref::item.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L82"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::check_ollama_models",
+      "target": "symbol-ref::payload.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L82"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "symbol::llm_wiki/memory_layer.py::memory_add",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L86"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::memory_add",
+      "target": "symbol::llm_wiki/memory_layer.py::load_mem0",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L87"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::memory_add",
+      "target": "symbol-ref::memory.add",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "symbol::llm_wiki/memory_layer.py::memory_search",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L97"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::memory_search",
+      "target": "symbol::llm_wiki/memory_layer.py::load_mem0",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L98"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::memory_search",
+      "target": "symbol-ref::memory.search",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "module::llm_wiki/memory_layer.py",
+      "target": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L103"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol::llm_wiki/memory_layer.py::load_mem0",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L111"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol::llm_wiki/memory_layer.py::memory_paths",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L118"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::enumerate",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L119"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L124"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::page.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L124"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L125"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::page.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L125"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L126"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::page.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L126"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::memory.add",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L133"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::write_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L135"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::json.dumps",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L136"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::write_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L159"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::json.dumps",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L159"
+    },
+    {
+      "source": "symbol::llm_wiki/memory_layer.py::bootstrap_memory",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/memory_layer.py",
+      "source_file": "llm_wiki/memory_layer.py",
+      "source_location": "L160"
+    }
+  ],
+  "language": "python",
+  "path": "llm_wiki/memory_layer.py"
+}

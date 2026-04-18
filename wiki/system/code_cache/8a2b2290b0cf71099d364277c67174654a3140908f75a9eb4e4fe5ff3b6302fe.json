@@ -1,0 +1,1434 @@
+{
+  "nodes": [
+    {
+      "id": "module::orange_example_10/train_adaboost_titanic.py",
+      "label": "train_adaboost_titanic.py",
+      "kind": "module",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::joblib",
+      "label": "joblib",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::numpy",
+      "label": "numpy",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "import::pandas",
+      "label": "pandas",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "import::sklearn.compose",
+      "label": "sklearn.compose",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L6",
+      "external": true
+    },
+    {
+      "id": "import::sklearn.ensemble",
+      "label": "sklearn.ensemble",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L7",
+      "external": true
+    },
+    {
+      "id": "import::sklearn.metrics",
+      "label": "sklearn.metrics",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L8",
+      "external": true
+    },
+    {
+      "id": "import::sklearn.model_selection",
+      "label": "sklearn.model_selection",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L15",
+      "external": true
+    },
+    {
+      "id": "import::sklearn.pipeline",
+      "label": "sklearn.pipeline",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L16",
+      "external": true
+    },
+    {
+      "id": "import::sklearn.preprocessing",
+      "label": "sklearn.preprocessing",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L17",
+      "external": true
+    },
+    {
+      "id": "import::sklearn.tree",
+      "label": "sklearn.tree",
+      "kind": "import",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L18",
+      "external": true
+    },
+    {
+      "id": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "label": "load_titanic",
+      "kind": "function",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "symbol-ref::pd.read_csv",
+      "label": "pd.read_csv",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L22"
+    },
+    {
+      "id": "symbol-ref::copy",
+      "label": "copy",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "symbol-ref::isin",
+      "label": "isin",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "symbol-ref::df.reset_index",
+      "label": "df.reset_index",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L32"
+    },
+    {
+      "id": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "label": "expand_by_kfold_10x",
+      "kind": "function",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "symbol-ref::astype",
+      "label": "astype",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L37"
+    },
+    {
+      "id": "symbol-ref::StratifiedKFold",
+      "label": "StratifiedKFold",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "symbol-ref::enumerate",
+      "label": "enumerate",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "symbol-ref::skf.split",
+      "label": "skf.split",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "symbol-ref::pd.concat",
+      "label": "pd.concat",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "symbol-ref::fold_full.sample",
+      "label": "fold_full.sample",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L43"
+    },
+    {
+      "id": "symbol-ref::expanded_parts.append",
+      "label": "expanded_parts.append",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "symbol-ref::fold_full.reset_index",
+      "label": "fold_full.reset_index",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "symbol::orange_example_10/train_adaboost_titanic.py::build_adaboost",
+      "label": "build_adaboost",
+      "kind": "function",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L50"
+    },
+    {
+      "id": "symbol-ref::DecisionTreeClassifier",
+      "label": "DecisionTreeClassifier",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L51"
+    },
+    {
+      "id": "symbol-ref::AdaBoostClassifier",
+      "label": "AdaBoostClassifier",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L53"
+    },
+    {
+      "id": "symbol::orange_example_10/train_adaboost_titanic.py::interpret_confusion_matrix",
+      "label": "interpret_confusion_matrix",
+      "kind": "function",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L70"
+    },
+    {
+      "id": "symbol-ref::lines.append",
+      "label": "lines.append",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L79"
+    },
+    {
+      "id": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "label": "main",
+      "kind": "function",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L106"
+    },
+    {
+      "id": "symbol-ref::Path",
+      "label": "Path",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L107"
+    },
+    {
+      "id": "symbol-ref::int",
+      "label": "int",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L118"
+    },
+    {
+      "id": "symbol-ref::len",
+      "label": "len",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L118"
+    },
+    {
+      "id": "symbol-ref::expanded_df.sample",
+      "label": "expanded_df.sample",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L119"
+    },
+    {
+      "id": "symbol-ref::ColumnTransformer",
+      "label": "ColumnTransformer",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L124"
+    },
+    {
+      "id": "symbol-ref::OneHotEncoder",
+      "label": "OneHotEncoder",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L128"
+    },
+    {
+      "id": "symbol-ref::Pipeline",
+      "label": "Pipeline",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L134"
+    },
+    {
+      "id": "symbol-ref::pipeline.fit",
+      "label": "pipeline.fit",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L141"
+    },
+    {
+      "id": "symbol-ref::joblib.dump",
+      "label": "joblib.dump",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L144"
+    },
+    {
+      "id": "symbol-ref::df.sample",
+      "label": "df.sample",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L155"
+    },
+    {
+      "id": "symbol-ref::pipeline.predict",
+      "label": "pipeline.predict",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L159"
+    },
+    {
+      "id": "symbol-ref::confusion_matrix",
+      "label": "confusion_matrix",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L161"
+    },
+    {
+      "id": "symbol-ref::cm.ravel",
+      "label": "cm.ravel",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L162"
+    },
+    {
+      "id": "symbol-ref::accuracy_score",
+      "label": "accuracy_score",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L164"
+    },
+    {
+      "id": "symbol-ref::precision_score",
+      "label": "precision_score",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L165"
+    },
+    {
+      "id": "symbol-ref::recall_score",
+      "label": "recall_score",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L166"
+    },
+    {
+      "id": "symbol-ref::f1_score",
+      "label": "f1_score",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L167"
+    },
+    {
+      "id": "symbol-ref::print",
+      "label": "print",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L171"
+    },
+    {
+      "id": "symbol-ref::report_path.open",
+      "label": "report_path.open",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L183"
+    },
+    {
+      "id": "symbol-ref::f.write",
+      "label": "f.write",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L184"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::joblib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::numpy",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::pandas",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::sklearn.compose",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L6"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::sklearn.ensemble",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L7"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::sklearn.metrics",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L8"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::sklearn.model_selection",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L15"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::sklearn.pipeline",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L16"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::sklearn.preprocessing",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L17"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "import::sklearn.tree",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L18"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L21"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "target": "symbol-ref::pd.read_csv",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L22"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "target": "symbol-ref::copy",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "target": "symbol-ref::isin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "target": "symbol-ref::copy",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L26"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "target": "symbol-ref::isin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L27"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "target": "symbol-ref::isin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L28"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "target": "symbol-ref::isin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L29"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "target": "symbol-ref::df.reset_index",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L32"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L35"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "target": "symbol-ref::astype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L37"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "target": "symbol-ref::StratifiedKFold",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L38"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "target": "symbol-ref::enumerate",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L41"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "target": "symbol-ref::skf.split",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L41"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "target": "symbol-ref::pd.concat",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L42"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "target": "symbol-ref::fold_full.sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L43"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "target": "symbol-ref::expanded_parts.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L44"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "target": "symbol-ref::fold_full.reset_index",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L44"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "target": "symbol-ref::pd.concat",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L46"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "symbol::orange_example_10/train_adaboost_titanic.py::build_adaboost",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L50"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::build_adaboost",
+      "target": "symbol-ref::DecisionTreeClassifier",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::build_adaboost",
+      "target": "symbol-ref::AdaBoostClassifier",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L53"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::build_adaboost",
+      "target": "symbol-ref::AdaBoostClassifier",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "symbol::orange_example_10/train_adaboost_titanic.py::interpret_confusion_matrix",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L70"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::interpret_confusion_matrix",
+      "target": "symbol-ref::lines.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L79"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::interpret_confusion_matrix",
+      "target": "symbol-ref::lines.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L82"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::interpret_confusion_matrix",
+      "target": "symbol-ref::lines.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L90"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::interpret_confusion_matrix",
+      "target": "symbol-ref::lines.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L94"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::interpret_confusion_matrix",
+      "target": "symbol-ref::lines.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L97"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::interpret_confusion_matrix",
+      "target": "symbol-ref::lines.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol::orange_example_10/train_adaboost_titanic.py::load_titanic",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol::orange_example_10/train_adaboost_titanic.py::expand_by_kfold_10x",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L115"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L118"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L118"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::expanded_df.sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L119"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::astype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::ColumnTransformer",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L124"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::OneHotEncoder",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L128"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::Pipeline",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L134"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol::orange_example_10/train_adaboost_titanic.py::build_adaboost",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L137"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::pipeline.fit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L141"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::joblib.dump",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L144"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L149"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::df.sample",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L155"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::astype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L157"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::pipeline.predict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L159"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::confusion_matrix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L161"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::cm.ravel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L162"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::accuracy_score",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L164"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::precision_score",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L165"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::recall_score",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L166"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f1_score",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L167"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol::orange_example_10/train_adaboost_titanic.py::interpret_confusion_matrix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L169"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L171"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L172"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L172"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L173"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L173"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L174"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L174"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L175"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L176"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L177"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L178"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L179"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L180"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L181"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::report_path.open",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L183"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L184"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L185"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L186"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L186"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L187"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L188"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L189"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L191"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L192"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L193"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L193"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L194"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L194"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L195"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L196"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L198"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L199"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L200"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L201"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L202"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L203"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L205"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L206"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L207"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L208"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L209"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L211"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L213"
+    },
+    {
+      "source": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L215"
+    },
+    {
+      "source": "module::orange_example_10/train_adaboost_titanic.py",
+      "target": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/train_adaboost_titanic.py",
+      "source_file": "orange_example_10/train_adaboost_titanic.py",
+      "source_location": "L219"
+    }
+  ],
+  "language": "python",
+  "path": "orange_example_10/train_adaboost_titanic.py"
+}

@@ -1,0 +1,3119 @@
+{
+  "nodes": [
+    {
+      "id": "module::_/16/retail_sales_seaborn_report.py",
+      "label": "retail_sales_seaborn_report.py",
+      "kind": "module",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::matplotlib.pyplot",
+      "label": "matplotlib.pyplot",
+      "kind": "import",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::pandas",
+      "label": "pandas",
+      "kind": "import",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "import::seaborn",
+      "label": "seaborn",
+      "kind": "import",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "symbol-ref::Path.resolve",
+      "label": "Path.resolve",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "symbol-ref::Path",
+      "label": "Path",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::ensure_output_dir",
+      "label": "ensure_output_dir",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "symbol-ref::OUTPUT_DIR.mkdir",
+      "label": "OUTPUT_DIR.mkdir",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L14"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "label": "load_data",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L17"
+    },
+    {
+      "id": "symbol-ref::pd.read_excel",
+      "label": "pd.read_excel",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L18"
+    },
+    {
+      "id": "symbol-ref::pd.to_datetime",
+      "label": "pd.to_datetime",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::round",
+      "label": "round",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "symbol-ref::pd.Timestamp",
+      "label": "pd.Timestamp",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "symbol-ref::transactions.merge.merge.merge",
+      "label": "transactions.merge.merge.merge",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L31"
+    },
+    {
+      "id": "symbol-ref::transactions.merge.merge",
+      "label": "transactions.merge.merge",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L31"
+    },
+    {
+      "id": "symbol-ref::transactions.merge",
+      "label": "transactions.merge",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L31"
+    },
+    {
+      "id": "symbol-ref::rename",
+      "label": "rename",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L37"
+    },
+    {
+      "id": "symbol-ref::dt.to_period.astype",
+      "label": "dt.to_period.astype",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L51"
+    },
+    {
+      "id": "symbol-ref::dt.to_period",
+      "label": "dt.to_period",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L51"
+    },
+    {
+      "id": "symbol-ref::pd.Categorical",
+      "label": "pd.Categorical",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L52"
+    },
+    {
+      "id": "symbol-ref::dt.day_name",
+      "label": "dt.day_name",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L53"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::setup_style",
+      "label": "setup_style",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L61"
+    },
+    {
+      "id": "symbol-ref::sns.set_theme",
+      "label": "sns.set_theme",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L62"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "label": "save_plot",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L68"
+    },
+    {
+      "id": "symbol-ref::plt.tight_layout",
+      "label": "plt.tight_layout",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L69"
+    },
+    {
+      "id": "symbol-ref::plt.savefig",
+      "label": "plt.savefig",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L70"
+    },
+    {
+      "id": "symbol-ref::plt.close",
+      "label": "plt.close",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "label": "plot_monthly_sales",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "symbol-ref::sum",
+      "label": "sum",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L75"
+    },
+    {
+      "id": "symbol-ref::sales.groupby",
+      "label": "sales.groupby",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L75"
+    },
+    {
+      "id": "symbol-ref::plt.figure",
+      "label": "plt.figure",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "symbol-ref::sns.lineplot",
+      "label": "sns.lineplot",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L77"
+    },
+    {
+      "id": "symbol-ref::ax.set_title",
+      "label": "ax.set_title",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L78"
+    },
+    {
+      "id": "symbol-ref::ax.set_xlabel",
+      "label": "ax.set_xlabel",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L79"
+    },
+    {
+      "id": "symbol-ref::ax.set_ylabel",
+      "label": "ax.set_ylabel",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L80"
+    },
+    {
+      "id": "symbol-ref::ax.tick_params",
+      "label": "ax.tick_params",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L81"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "label": "plot_monthly_quantity_trend",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L85"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "label": "plot_daily_sales_trend",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L96"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "label": "plot_daily_quantity_trend",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L106"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "label": "plot_monthly_category_sales_trend",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L116"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "label": "plot_monthly_category_quantity_trend",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L135"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "label": "plot_monthly_store_sales_trend",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L154"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "label": "plot_monthly_payment_trend",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L173"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "label": "plot_daily_category_sales_trend",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L192"
+    },
+    {
+      "id": "symbol-ref::sum.sort_values.head",
+      "label": "sum.sort_values.head",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L193"
+    },
+    {
+      "id": "symbol-ref::sum.sort_values",
+      "label": "sum.sort_values",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L193"
+    },
+    {
+      "id": "symbol-ref::groupby",
+      "label": "groupby",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L195"
+    },
+    {
+      "id": "symbol-ref::isin",
+      "label": "isin",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L195"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "label": "plot_category_sales",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L214"
+    },
+    {
+      "id": "symbol-ref::sns.barplot",
+      "label": "sns.barplot",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L217"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "label": "plot_subcategory_sales",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L224"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "label": "plot_store_sales",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L239"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "label": "plot_payment_methods",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L249"
+    },
+    {
+      "id": "symbol-ref::value_counts.rename_axis.reset_index",
+      "label": "value_counts.rename_axis.reset_index",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L250"
+    },
+    {
+      "id": "symbol-ref::value_counts.rename_axis",
+      "label": "value_counts.rename_axis",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L250"
+    },
+    {
+      "id": "symbol-ref::value_counts",
+      "label": "value_counts",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L250"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "label": "plot_weekday_sales",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L259"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_customer_age",
+      "label": "plot_customer_age",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L270"
+    },
+    {
+      "id": "symbol-ref::sns.histplot",
+      "label": "sns.histplot",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L272"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_order_value_distribution",
+      "label": "plot_order_value_distribution",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L279"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_discount_distribution",
+      "label": "plot_discount_distribution",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L288"
+    },
+    {
+      "id": "symbol-ref::sns.countplot",
+      "label": "sns.countplot",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L290"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_quantity_distribution",
+      "label": "plot_quantity_distribution",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L297"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "label": "plot_gender_sales",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L306"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "label": "plot_category_sales_pie",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L316"
+    },
+    {
+      "id": "symbol-ref::sns.color_palette",
+      "label": "sns.color_palette",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L318"
+    },
+    {
+      "id": "symbol-ref::len",
+      "label": "len",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L318"
+    },
+    {
+      "id": "symbol-ref::plt.pie",
+      "label": "plt.pie",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L320"
+    },
+    {
+      "id": "symbol-ref::plt.title",
+      "label": "plt.title",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L329"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "label": "plot_payment_methods_pie",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L333"
+    },
+    {
+      "id": "symbol-ref::value_counts.sort_values",
+      "label": "value_counts.sort_values",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L334"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "label": "plot_category_margin",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L350"
+    },
+    {
+      "id": "symbol-ref::sum.assign.sort_values",
+      "label": "sum.assign.sort_values",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L352"
+    },
+    {
+      "id": "symbol-ref::sum.assign",
+      "label": "sum.assign",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L352"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::write_manifest",
+      "label": "write_manifest",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L365"
+    },
+    {
+      "id": "symbol-ref::write_text",
+      "label": "write_text",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L391"
+    },
+    {
+      "id": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "label": "main",
+      "kind": "function",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L394"
+    },
+    {
+      "id": "symbol-ref::print",
+      "label": "print",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L424"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "import::matplotlib.pyplot",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "import::pandas",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "import::seaborn",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol-ref::Path.resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L8"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L8"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::ensure_output_dir",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L13"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::ensure_output_dir",
+      "target": "symbol-ref::OUTPUT_DIR.mkdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L14"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L17"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::pd.read_excel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L18"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::pd.read_excel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L19"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::pd.read_excel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L20"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::pd.read_excel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L21"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::pd.to_datetime",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::pd.to_datetime",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L24"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::pd.to_datetime",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L27"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::pd.Timestamp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L27"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::pd.Timestamp",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L28"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::transactions.merge.merge.merge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L31"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::transactions.merge.merge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L31"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::transactions.merge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L31"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::rename",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L37"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::dt.to_period.astype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::dt.to_period",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::pd.Categorical",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L52"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "target": "symbol-ref::dt.day_name",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L53"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::setup_style",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::setup_style",
+      "target": "symbol-ref::sns.set_theme",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L62"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L68"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "target": "symbol-ref::plt.tight_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L69"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "target": "symbol-ref::plt.savefig",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L70"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "target": "symbol-ref::plt.close",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L74"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L75"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L75"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "target": "symbol-ref::sns.lineplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L77"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L78"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L79"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "target": "symbol-ref::ax.tick_params",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L81"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L82"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L85"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L86"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L86"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L87"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "target": "symbol-ref::sns.lineplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L89"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L90"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L91"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "target": "symbol-ref::ax.tick_params",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L93"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L96"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L97"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L97"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L98"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "target": "symbol-ref::sns.lineplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L100"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L103"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L108"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "target": "symbol-ref::sns.lineplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L109"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L110"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L111"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L113"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L116"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L117"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L117"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L118"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "target": "symbol-ref::sns.lineplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L119"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L128"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L129"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L130"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "target": "symbol-ref::ax.tick_params",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L131"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L132"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L135"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L136"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L136"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L137"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "target": "symbol-ref::sns.lineplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L138"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L147"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L148"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L149"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "target": "symbol-ref::ax.tick_params",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L150"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L151"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L154"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L155"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L155"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L156"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "target": "symbol-ref::sns.lineplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L157"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L166"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L167"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L168"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "target": "symbol-ref::ax.tick_params",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L169"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L170"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L173"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L174"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L174"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L175"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "target": "symbol-ref::sns.lineplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L176"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L185"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L186"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L187"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "target": "symbol-ref::ax.tick_params",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L188"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L189"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L192"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::sum.sort_values.head",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L193"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::sum.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L193"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L193"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L193"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L195"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L195"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::isin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L195"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L199"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::sns.lineplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L200"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L208"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L209"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L210"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L211"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L214"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "target": "symbol-ref::sum.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L215"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L215"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L215"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L216"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "target": "symbol-ref::sns.barplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L217"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L218"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L219"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L220"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L221"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L224"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "target": "symbol-ref::sum.sort_values.head",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L226"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "target": "symbol-ref::sum.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L226"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L226"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L226"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L231"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "target": "symbol-ref::sns.barplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L232"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L233"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L234"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L235"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L236"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L239"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "target": "symbol-ref::sum.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L240"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L240"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L240"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L241"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "target": "symbol-ref::sns.barplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L242"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L243"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L244"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L245"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L246"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L249"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "target": "symbol-ref::value_counts.rename_axis.reset_index",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L250"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "target": "symbol-ref::value_counts.rename_axis",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L250"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "target": "symbol-ref::value_counts",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L250"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L251"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "target": "symbol-ref::sns.barplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L252"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L253"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L254"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L255"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L256"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L259"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L260"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L260"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L261"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "target": "symbol-ref::sns.barplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L262"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L263"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L264"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L265"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "target": "symbol-ref::ax.tick_params",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L266"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L267"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_customer_age",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L270"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_customer_age",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L271"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_customer_age",
+      "target": "symbol-ref::sns.histplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L272"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_customer_age",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L273"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_customer_age",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L274"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_customer_age",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L275"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_customer_age",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L276"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_order_value_distribution",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L279"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_order_value_distribution",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L280"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_order_value_distribution",
+      "target": "symbol-ref::sns.histplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L281"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_order_value_distribution",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L282"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_order_value_distribution",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L283"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_order_value_distribution",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L284"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_order_value_distribution",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L285"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_discount_distribution",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L288"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_discount_distribution",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L289"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_discount_distribution",
+      "target": "symbol-ref::sns.countplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L290"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_discount_distribution",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L291"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_discount_distribution",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L292"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_discount_distribution",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L293"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_discount_distribution",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L294"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_quantity_distribution",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L297"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_quantity_distribution",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L298"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_quantity_distribution",
+      "target": "symbol-ref::sns.countplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L299"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_quantity_distribution",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L300"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_quantity_distribution",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L301"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_quantity_distribution",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L302"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_quantity_distribution",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L303"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L306"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "target": "symbol-ref::sum.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L307"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L307"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L307"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L308"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "target": "symbol-ref::sns.barplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L309"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L310"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L311"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L312"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L313"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L316"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "target": "symbol-ref::sum.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L317"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L317"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L317"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "target": "symbol-ref::sns.color_palette",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L318"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L318"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L319"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "target": "symbol-ref::plt.pie",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L320"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "target": "symbol-ref::plt.title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L329"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L330"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L333"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "target": "symbol-ref::value_counts.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L334"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "target": "symbol-ref::value_counts",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L334"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "target": "symbol-ref::sns.color_palette",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L335"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L335"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L336"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "target": "symbol-ref::plt.pie",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L337"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "target": "symbol-ref::plt.title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L346"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L347"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L350"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "target": "symbol-ref::sum.assign.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L352"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "target": "symbol-ref::sum.assign",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L352"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L352"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "target": "symbol-ref::sales.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L352"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "target": "symbol-ref::plt.figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L357"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "target": "symbol-ref::sns.barplot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L358"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "target": "symbol-ref::ax.set_title",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L359"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "target": "symbol-ref::ax.set_xlabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L360"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "target": "symbol-ref::ax.set_ylabel",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L361"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::save_plot",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L362"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::write_manifest",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L365"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::write_manifest",
+      "target": "symbol-ref::write_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L391"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L394"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::ensure_output_dir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L395"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::setup_style",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L396"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::load_data",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L397"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_sales",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L400"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L401"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_subcategory_sales",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L402"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_store_sales",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L403"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L404"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_weekday_sales",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L405"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_customer_age",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L406"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_order_value_distribution",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L407"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_discount_distribution",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L408"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_quantity_distribution",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L409"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_gender_sales",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L410"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_sales_pie",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L411"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_payment_methods_pie",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L412"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_category_margin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L413"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_quantity_trend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L414"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_sales_trend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L415"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_quantity_trend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L416"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_sales_trend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L417"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_category_quantity_trend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L418"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_store_sales_trend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L419"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_monthly_payment_trend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L420"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::plot_daily_category_sales_trend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L421"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::write_manifest",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L422"
+    },
+    {
+      "source": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L424"
+    },
+    {
+      "source": "module::_/16/retail_sales_seaborn_report.py",
+      "target": "symbol::_/16/retail_sales_seaborn_report.py::main",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_file": "실습결과물/16/retail_sales_seaborn_report.py",
+      "source_location": "L428"
+    }
+  ],
+  "language": "python",
+  "path": "실습결과물/16/retail_sales_seaborn_report.py"
+}

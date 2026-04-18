@@ -1,6 +1,6 @@
 # Wiki Index
 
-- Generated: 2026-04-17T08:55:17.922616+00:00
+- Generated: 2026-04-18T11:49:39.413073+00:00
 - Markdown pages: 95
 - Resolved edges: 89
 - Communities: 40
@@ -8,6 +8,8 @@
 - Ignore file: `.llmwikiignore`
 - Semantic search: enabled
 - Smart Connections bridge: enabled
+- Code graph nodes: 891
+- Code graph edges: 2496
 
 ## Pages
 

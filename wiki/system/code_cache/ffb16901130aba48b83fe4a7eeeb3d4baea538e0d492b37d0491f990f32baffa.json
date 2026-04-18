@@ -1,0 +1,483 @@
+{
+  "nodes": [
+    {
+      "id": "module::llm_wiki/code_cache.py",
+      "label": "code_cache.py",
+      "kind": "module",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::__future",
+      "label": "__future__",
+      "kind": "import",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::hashlib",
+      "label": "hashlib",
+      "kind": "import",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::json",
+      "label": "json",
+      "kind": "import",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "import::typing",
+      "label": "typing",
+      "kind": "import",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L6",
+      "external": true
+    },
+    {
+      "id": "symbol::llm_wiki/code_cache.py::cache_dir",
+      "label": "cache_dir",
+      "kind": "function",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L12"
+    },
+    {
+      "id": "symbol-ref::path.mkdir",
+      "label": "path.mkdir",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L14"
+    },
+    {
+      "id": "symbol::llm_wiki/code_cache.py::file_hash",
+      "label": "file_hash",
+      "kind": "function",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L18"
+    },
+    {
+      "id": "symbol-ref::path.read_bytes",
+      "label": "path.read_bytes",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "symbol-ref::hashlib.sha256",
+      "label": "hashlib.sha256",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "symbol-ref::digest.update",
+      "label": "digest.update",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "symbol-ref::path.resolve.relative_to.as_posix.encode",
+      "label": "path.resolve.relative_to.as_posix.encode",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::path.resolve.relative_to.as_posix",
+      "label": "path.resolve.relative_to.as_posix",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::path.resolve.relative_to",
+      "label": "path.resolve.relative_to",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::path.resolve",
+      "label": "path.resolve",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::root.resolve",
+      "label": "root.resolve",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::digest.hexdigest",
+      "label": "digest.hexdigest",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "symbol::llm_wiki/code_cache.py::load_cached_extraction",
+      "label": "load_cached_extraction",
+      "kind": "function",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "symbol-ref::cache_path.exists",
+      "label": "cache_path.exists",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L30"
+    },
+    {
+      "id": "symbol-ref::json.loads",
+      "label": "json.loads",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "symbol-ref::cache_path.read_text",
+      "label": "cache_path.read_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "symbol::llm_wiki/code_cache.py::save_cached_extraction",
+      "label": "save_cached_extraction",
+      "kind": "function",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "symbol-ref::cache_path.write_text",
+      "label": "cache_path.write_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "symbol-ref::json.dumps",
+      "label": "json.dumps",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L41"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::llm_wiki/code_cache.py",
+      "target": "import::__future",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::llm_wiki/code_cache.py",
+      "target": "import::hashlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::llm_wiki/code_cache.py",
+      "target": "import::json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::llm_wiki/code_cache.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::llm_wiki/code_cache.py",
+      "target": "import::typing",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L6"
+    },
+    {
+      "source": "module::llm_wiki/code_cache.py",
+      "target": "symbol::llm_wiki/code_cache.py::cache_dir",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L12"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::cache_dir",
+      "target": "symbol-ref::path.mkdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L14"
+    },
+    {
+      "source": "module::llm_wiki/code_cache.py",
+      "target": "symbol::llm_wiki/code_cache.py::file_hash",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L18"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::path.read_bytes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L19"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::hashlib.sha256",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L20"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::digest.update",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L21"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::digest.update",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L22"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::digest.update",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::path.resolve.relative_to.as_posix.encode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::path.resolve.relative_to.as_posix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::path.resolve.relative_to",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::path.resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::root.resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::file_hash",
+      "target": "symbol-ref::digest.hexdigest",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L24"
+    },
+    {
+      "source": "module::llm_wiki/code_cache.py",
+      "target": "symbol::llm_wiki/code_cache.py::load_cached_extraction",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L27"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::load_cached_extraction",
+      "target": "symbol::llm_wiki/code_cache.py::file_hash",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L28"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::load_cached_extraction",
+      "target": "symbol::llm_wiki/code_cache.py::cache_dir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L29"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::load_cached_extraction",
+      "target": "symbol-ref::cache_path.exists",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L30"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::load_cached_extraction",
+      "target": "symbol-ref::json.loads",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L33"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::load_cached_extraction",
+      "target": "symbol-ref::cache_path.read_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L33"
+    },
+    {
+      "source": "module::llm_wiki/code_cache.py",
+      "target": "symbol::llm_wiki/code_cache.py::save_cached_extraction",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L38"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::save_cached_extraction",
+      "target": "symbol::llm_wiki/code_cache.py::file_hash",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L39"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::save_cached_extraction",
+      "target": "symbol::llm_wiki/code_cache.py::cache_dir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L40"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::save_cached_extraction",
+      "target": "symbol-ref::cache_path.write_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L41"
+    },
+    {
+      "source": "symbol::llm_wiki/code_cache.py::save_cached_extraction",
+      "target": "symbol-ref::json.dumps",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_cache.py",
+      "source_file": "llm_wiki/code_cache.py",
+      "source_location": "L41"
+    }
+  ],
+  "language": "python",
+  "path": "llm_wiki/code_cache.py"
+}

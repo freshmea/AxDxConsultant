@@ -7,6 +7,18 @@ description: "Set up or repair a local markdown-first LLM wiki with graph-first 
 
 Recreate the workspace in this order.
 
+## Architecture stance
+
+Keep the existing repository stack in place:
+
+- markdown wiki graph
+- FAISS semantic retrieval
+- GraphRAG-lite community summaries
+- Mem0 change-aware fact layer
+
+If Graphify-style features are added, absorb them into this stack instead of replacing it.
+Use `../graphify-code-wiki/SKILL.md` for code graph extraction, code query CLI, code-aware routing, and verification of that layer.
+
 ## 1. Confirm the required layout
 
 Expect these files and folders:

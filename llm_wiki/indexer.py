@@ -461,6 +461,8 @@ def build_index(repo_root: Path) -> Dict[str, object]:
 
 
 def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
+    from .code_graph import build_code_graph
+
     wiki_root = repo_root / "wiki"
     system_root = wiki_root / "system"
     notes_root = wiki_root / "notes"
@@ -474,6 +476,8 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
     community_graph_path = system_root / "community_graph.json"
     community_summaries_path = system_root / "community_summaries.json"
     obsidian_cache_path = system_root / "obsidian_semantic_cache.json"
+    code_graph_path = system_root / "code_graph.json"
+    code_graph_meta_path = system_root / "code_graph_meta.json"
     report_path = wiki_root / "graph_report.md"
     community_report_path = wiki_root / "community_report.md"
     query_log_json_path = system_root / "query_log.json"
@@ -522,6 +526,21 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         encoding="utf-8",
     )
     cache_path.write_text(json.dumps(build["query_cache"], ensure_ascii=False, indent=2), encoding="utf-8")
+    code_graph = build_code_graph(repo_root, system_root)
+    code_graph_path.write_text(json.dumps(code_graph, ensure_ascii=False, indent=2), encoding="utf-8")
+    code_graph_meta_path.write_text(
+        json.dumps(
+            {
+                "generated_at": code_graph["generated_at"],
+                "stats": code_graph["stats"],
+                "facets": code_graph["facets"],
+                "analysis": code_graph.get("analysis", {}),
+            },
+            ensure_ascii=False,
+            indent=2,
+        ),
+        encoding="utf-8",
+    )
     semantic_meta = build_semantic_index(
         system_root,
         [
@@ -555,6 +574,8 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         f"- Ignore file: `{IGNORE_FILE_NAME}`",
         f"- Semantic search: {'enabled' if semantic_meta.get('enabled') else 'disabled'}",
         f"- Smart Connections bridge: {'enabled' if obsidian_cache.get('enabled') else 'disabled'}",
+        f"- Code graph nodes: {code_graph['stats']['node_count']}",
+        f"- Code graph edges: {code_graph['stats']['edge_count']}",
         "",
         "## Pages",
         "",
@@ -584,6 +605,8 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         f"- Edges: {graph['stats']['resolved_edges']}",
         f"- Estimated full corpus tokens: {graph['stats']['total_tokens_estimate']}",
         f"- Smart Connections bridge: {'enabled' if obsidian_cache.get('enabled') else 'disabled'}",
+        f"- Code files scanned: {code_graph['stats']['files_scanned']}",
+        f"- Code graph: {code_graph['stats']['node_count']} nodes / {code_graph['stats']['edge_count']} edges / {code_graph['stats']['community_count']} communities",
         "",
         "## Top Tags",
         "",
@@ -611,6 +634,29 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
     report_lines.extend(["", "## Orphan Candidates", ""])
     for page in orphan_pages[:20]:
         report_lines.append(f"- [{page.title}](../{page.relpath})")
+    report_lines.extend(["", "## Code Graph", ""])
+    for language, count in code_graph["facets"]["languages"][:10]:
+        report_lines.append(f"- language `{language}` x {count}")
+    for relation, count in code_graph["facets"]["relations"][:10]:
+        report_lines.append(f"- relation `{relation}` x {count}")
+    for confidence, count in code_graph["facets"]["confidence"][:10]:
+        report_lines.append(f"- confidence `{confidence}` x {count}")
+    report_lines.extend(["", "## Code God Nodes", ""])
+    for node in code_graph.get("analysis", {}).get("god_nodes", [])[:10]:
+        report_lines.append(
+            f"- `{node['label']}` | kind={node['kind']} | degree={node['degree']} | path=`{node['path']}`"
+        )
+    report_lines.extend(["", "## Surprising Code Connections", ""])
+    surprising_connections = code_graph.get("analysis", {}).get("surprising_connections", [])
+    for item in surprising_connections[:10]:
+        report_lines.append(
+            f"- `{item['source']}` -> `{item['target']}` | relation={item['relation']} | {item['why']} | `{item['source_location']}`"
+        )
+    if not surprising_connections:
+        report_lines.append("- No high-signal cross-community internal code connections were detected in this build.")
+    report_lines.extend(["", "## Suggested Code Questions", ""])
+    for question in code_graph.get("analysis", {}).get("suggested_questions", [])[:10]:
+        report_lines.append(f"- {question}")
     report_path.write_text("\n".join(report_lines) + "\n", encoding="utf-8")
 
     community_lines = [
@@ -654,6 +700,8 @@ def write_outputs(repo_root: Path, build: Dict[str, object]) -> Dict[str, Path]:
         "community_graph_path": community_graph_path,
         "community_summaries_path": community_summaries_path,
         "obsidian_cache_path": obsidian_cache_path,
+        "code_graph_path": code_graph_path,
+        "code_graph_meta_path": code_graph_meta_path,
         "report_path": report_path,
         "community_report_path": community_report_path,
         "semantic_index_path": system_root / "semantic_index.faiss",

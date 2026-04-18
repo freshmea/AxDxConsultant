@@ -1,0 +1,1021 @@
+{
+  "nodes": [
+    {
+      "id": "module::orange_example_10/rewrite_bodyfat_report_preview.py",
+      "label": "rewrite_bodyfat_report_preview.py",
+      "kind": "module",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::pandas",
+      "label": "pandas",
+      "kind": "import",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L2",
+      "external": true
+    },
+    {
+      "id": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::load_df",
+      "label": "load_df",
+      "kind": "function",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L5"
+    },
+    {
+      "id": "symbol-ref::pd.read_csv",
+      "label": "pd.read_csv",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L6"
+    },
+    {
+      "id": "symbol-ref::copy",
+      "label": "copy",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L7"
+    },
+    {
+      "id": "symbol-ref::isin",
+      "label": "isin",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L7"
+    },
+    {
+      "id": "symbol-ref::pd.to_numeric",
+      "label": "pd.to_numeric",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L14"
+    },
+    {
+      "id": "symbol-ref::df.dropna.reset_index",
+      "label": "df.dropna.reset_index",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L15"
+    },
+    {
+      "id": "symbol-ref::df.dropna",
+      "label": "df.dropna",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L15"
+    },
+    {
+      "id": "symbol-ref::pd.qcut",
+      "label": "pd.qcut",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "label": "p",
+      "kind": "function",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "symbol-ref::path.as_posix",
+      "label": "path.as_posix",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "label": "main",
+      "kind": "function",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L28"
+    },
+    {
+      "id": "symbol-ref::Path",
+      "label": "Path",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L29"
+    },
+    {
+      "id": "symbol-ref::drop.sort_values",
+      "label": "drop.sort_values",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "symbol-ref::drop",
+      "label": "drop",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "symbol-ref::corr",
+      "label": "corr",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "symbol-ref::corr.head",
+      "label": "corr.head",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "symbol-ref::corr.tail",
+      "label": "corr.tail",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main.scatter_img",
+      "label": "main.scatter_img",
+      "kind": "function",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L52"
+    },
+    {
+      "id": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main.box_group_img",
+      "label": "main.box_group_img",
+      "kind": "function",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L55"
+    },
+    {
+      "id": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main.violin_group_img",
+      "label": "main.violin_group_img",
+      "kind": "function",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L58"
+    },
+    {
+      "id": "symbol-ref::report.open",
+      "label": "report.open",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L61"
+    },
+    {
+      "id": "symbol-ref::f.write",
+      "label": "f.write",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L62"
+    },
+    {
+      "id": "symbol-ref::len",
+      "label": "len",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L64"
+    },
+    {
+      "id": "symbol-ref::top_pos.to_frame.to_markdown",
+      "label": "top_pos.to_frame.to_markdown",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L80"
+    },
+    {
+      "id": "symbol-ref::top_pos.to_frame",
+      "label": "top_pos.to_frame",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L80"
+    },
+    {
+      "id": "symbol-ref::top_mid.to_frame.to_markdown",
+      "label": "top_mid.to_frame.to_markdown",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L82"
+    },
+    {
+      "id": "symbol-ref::top_mid.to_frame",
+      "label": "top_mid.to_frame",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L82"
+    },
+    {
+      "id": "symbol-ref::top_neg.to_frame.to_markdown",
+      "label": "top_neg.to_frame.to_markdown",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "symbol-ref::top_neg.to_frame",
+      "label": "top_neg.to_frame",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "symbol-ref::print",
+      "label": "print",
+      "kind": "symbol_ref",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L115"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::orange_example_10/rewrite_bodyfat_report_preview.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::orange_example_10/rewrite_bodyfat_report_preview.py",
+      "target": "import::pandas",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L2"
+    },
+    {
+      "source": "module::orange_example_10/rewrite_bodyfat_report_preview.py",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::load_df",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::load_df",
+      "target": "symbol-ref::pd.read_csv",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L6"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::load_df",
+      "target": "symbol-ref::copy",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L7"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::load_df",
+      "target": "symbol-ref::isin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L7"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::load_df",
+      "target": "symbol-ref::pd.to_numeric",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L14"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::load_df",
+      "target": "symbol-ref::df.dropna.reset_index",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L15"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::load_df",
+      "target": "symbol-ref::df.dropna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L15"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::load_df",
+      "target": "symbol-ref::pd.qcut",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L16"
+    },
+    {
+      "source": "module::orange_example_10/rewrite_bodyfat_report_preview.py",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L24"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "target": "symbol-ref::path.as_posix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "module::orange_example_10/rewrite_bodyfat_report_preview.py",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L28"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L29"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::load_df",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L34"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::drop.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L41"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::drop",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L41"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::corr",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L41"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::corr.head",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L42"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::corr.tail",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L44"
+    },
+    {
+      "source": "module::orange_example_10/rewrite_bodyfat_report_preview.py",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main.scatter_img",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L52"
+    },
+    {
+      "source": "module::orange_example_10/rewrite_bodyfat_report_preview.py",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main.box_group_img",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L55"
+    },
+    {
+      "source": "module::orange_example_10/rewrite_bodyfat_report_preview.py",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main.violin_group_img",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L58"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::report.open",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L62"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L63"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L64"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L64"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L65"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L68"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L69"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L69"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L70"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L70"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L72"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L73"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L74"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L74"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L75"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L75"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L78"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L79"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::top_pos.to_frame.to_markdown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::top_pos.to_frame",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L81"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L82"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::top_mid.to_frame.to_markdown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L82"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::top_mid.to_frame",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L82"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L83"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L84"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::top_neg.to_frame.to_markdown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L84"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::top_neg.to_frame",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L84"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L85"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L87"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L91"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main.scatter_img",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L94"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L95"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L98"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main.box_group_img",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L105"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::p",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main.violin_group_img",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L108"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L109"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L110"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L111"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::f.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L113"
+    },
+    {
+      "source": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L115"
+    },
+    {
+      "source": "module::orange_example_10/rewrite_bodyfat_report_preview.py",
+      "target": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_file": "orange_example_10/rewrite_bodyfat_report_preview.py",
+      "source_location": "L119"
+    }
+  ],
+  "language": "python",
+  "path": "orange_example_10/rewrite_bodyfat_report_preview.py"
+}

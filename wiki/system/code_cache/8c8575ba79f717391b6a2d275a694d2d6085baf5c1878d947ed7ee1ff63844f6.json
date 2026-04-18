@@ -1,0 +1,1291 @@
+{
+  "nodes": [
+    {
+      "id": "module::llm_wiki/code_analysis.py",
+      "label": "code_analysis.py",
+      "kind": "module",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::__future",
+      "label": "__future__",
+      "kind": "import",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::collections",
+      "label": "collections",
+      "kind": "import",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::typing",
+      "label": "typing",
+      "kind": "import",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "symbol::llm_wiki/code_analysis.py::_node_map",
+      "label": "_node_map",
+      "kind": "function",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L7"
+    },
+    {
+      "id": "symbol-ref::str",
+      "label": "str",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "symbol-ref::graph.get",
+      "label": "graph.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L8"
+    },
+    {
+      "id": "symbol::llm_wiki/code_analysis.py::_adjacency",
+      "label": "_adjacency",
+      "kind": "function",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "symbol-ref::neighbors.setdefault.append",
+      "label": "neighbors.setdefault.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "symbol-ref::neighbors.setdefault",
+      "label": "neighbors.setdefault",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "symbol::llm_wiki/code_analysis.py::_interesting_node",
+      "label": "_interesting_node",
+      "kind": "function",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "symbol-ref::node.get",
+      "label": "node.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L22"
+    },
+    {
+      "id": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "label": "god_nodes",
+      "kind": "function",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L26"
+    },
+    {
+      "id": "symbol-ref::nodes.items",
+      "label": "nodes.items",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L30"
+    },
+    {
+      "id": "symbol-ref::len",
+      "label": "len",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "symbol-ref::adjacency.get",
+      "label": "adjacency.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "symbol-ref::ranked.append",
+      "label": "ranked.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L34"
+    },
+    {
+      "id": "symbol-ref::ranked.sort",
+      "label": "ranked.sort",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "symbol-ref::int",
+      "label": "int",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "label": "surprising_connections",
+      "kind": "function",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L48"
+    },
+    {
+      "id": "symbol-ref::edge.get",
+      "label": "edge.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L52"
+    },
+    {
+      "id": "symbol-ref::nodes.get",
+      "label": "nodes.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L55"
+    },
+    {
+      "id": "symbol-ref::source.get",
+      "label": "source.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L59"
+    },
+    {
+      "id": "symbol-ref::target.get",
+      "label": "target.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L59"
+    },
+    {
+      "id": "symbol-ref::bool",
+      "label": "bool",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L61"
+    },
+    {
+      "id": "symbol-ref::reasons.append",
+      "label": "reasons.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L73"
+    },
+    {
+      "id": "symbol-ref::source_path.split",
+      "label": "source_path.split",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L77"
+    },
+    {
+      "id": "symbol-ref::target_path.split",
+      "label": "target_path.split",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L77"
+    },
+    {
+      "id": "symbol-ref::confidence.lower",
+      "label": "confidence.lower",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L83"
+    },
+    {
+      "id": "symbol-ref::seen.append",
+      "label": "seen.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L86"
+    },
+    {
+      "id": "symbol-ref::join",
+      "label": "join",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L95"
+    },
+    {
+      "id": "symbol-ref::seen.sort",
+      "label": "seen.sort",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L99"
+    },
+    {
+      "id": "symbol-ref::item.pop",
+      "label": "item.pop",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L101"
+    },
+    {
+      "id": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "label": "suggested_questions",
+      "kind": "function",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L105"
+    },
+    {
+      "id": "symbol-ref::max",
+      "label": "max",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L106"
+    },
+    {
+      "id": "symbol-ref::Counter",
+      "label": "Counter",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L107"
+    },
+    {
+      "id": "symbol-ref::questions.append",
+      "label": "questions.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L110"
+    },
+    {
+      "id": "symbol-ref::relation_counts.get",
+      "label": "relation_counts.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L113"
+    },
+    {
+      "id": "symbol-ref::isinstance",
+      "label": "isinstance",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L120"
+    },
+    {
+      "id": "symbol-ref::set",
+      "label": "set",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L125"
+    },
+    {
+      "id": "symbol-ref::seen.add",
+      "label": "seen.add",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L129"
+    },
+    {
+      "id": "symbol-ref::deduped.append",
+      "label": "deduped.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L130"
+    },
+    {
+      "id": "symbol::llm_wiki/code_analysis.py::analyze_code_graph",
+      "label": "analyze_code_graph",
+      "kind": "function",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L134"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::llm_wiki/code_analysis.py",
+      "target": "import::__future",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::llm_wiki/code_analysis.py",
+      "target": "import::collections",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::llm_wiki/code_analysis.py",
+      "target": "import::typing",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::llm_wiki/code_analysis.py",
+      "target": "symbol::llm_wiki/code_analysis.py::_node_map",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L7"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_node_map",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L8"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_node_map",
+      "target": "symbol-ref::graph.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L8"
+    },
+    {
+      "source": "module::llm_wiki/code_analysis.py",
+      "target": "symbol::llm_wiki/code_analysis.py::_adjacency",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L11"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_adjacency",
+      "target": "symbol-ref::graph.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L13"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_adjacency",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L14"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_adjacency",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L15"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_adjacency",
+      "target": "symbol-ref::neighbors.setdefault.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L16"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_adjacency",
+      "target": "symbol-ref::neighbors.setdefault",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L16"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_adjacency",
+      "target": "symbol-ref::neighbors.setdefault.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L17"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_adjacency",
+      "target": "symbol-ref::neighbors.setdefault",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L17"
+    },
+    {
+      "source": "module::llm_wiki/code_analysis.py",
+      "target": "symbol::llm_wiki/code_analysis.py::_interesting_node",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L21"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_interesting_node",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L22"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::_interesting_node",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L22"
+    },
+    {
+      "source": "module::llm_wiki/code_analysis.py",
+      "target": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L26"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol::llm_wiki/code_analysis.py::_node_map",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L27"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol::llm_wiki/code_analysis.py::_adjacency",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L28"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::nodes.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L30"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol::llm_wiki/code_analysis.py::_interesting_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L31"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L33"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::adjacency.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L33"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::ranked.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L34"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L37"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L38"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L39"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L40"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::ranked.sort",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L44"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L44"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L44"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L44"
+    },
+    {
+      "source": "module::llm_wiki/code_analysis.py",
+      "target": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L48"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol::llm_wiki/code_analysis.py::_node_map",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L49"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::graph.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L52"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L52"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::nodes.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L55"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L55"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::nodes.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L56"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L56"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L59"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::source.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L59"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L59"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::target.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L59"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::bool",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::source.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::bool",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::target.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L63"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::source.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L63"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L64"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::target.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L64"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::source.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L67"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::target.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L68"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::reasons.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L73"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::reasons.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::source_path.split",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L77"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::target_path.split",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L77"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::reasons.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L79"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::reasons.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L83"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::confidence.lower",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L83"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::seen.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L86"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::source.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::target.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L90"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L94"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L95"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::seen.sort",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "target": "symbol-ref::item.pop",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "module::llm_wiki/code_analysis.py",
+      "target": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L105"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::max",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::Counter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::graph.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::questions.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L110"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L111"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::questions.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::relation_counts.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L113"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::questions.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L114"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::relation_counts.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L115"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::questions.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L116"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::relation_counts.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L117"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::questions.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L118"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::graph.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L119"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L120"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L120"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::questions.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L121"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::questions.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::questions.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L123"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::set",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L125"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::seen.add",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L129"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "target": "symbol-ref::deduped.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L130"
+    },
+    {
+      "source": "module::llm_wiki/code_analysis.py",
+      "target": "symbol::llm_wiki/code_analysis.py::analyze_code_graph",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L134"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::analyze_code_graph",
+      "target": "symbol::llm_wiki/code_analysis.py::god_nodes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L136"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::analyze_code_graph",
+      "target": "symbol::llm_wiki/code_analysis.py::surprising_connections",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L137"
+    },
+    {
+      "source": "symbol::llm_wiki/code_analysis.py::analyze_code_graph",
+      "target": "symbol::llm_wiki/code_analysis.py::suggested_questions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_analysis.py",
+      "source_file": "llm_wiki/code_analysis.py",
+      "source_location": "L138"
+    }
+  ],
+  "language": "python",
+  "path": "llm_wiki/code_analysis.py"
+}

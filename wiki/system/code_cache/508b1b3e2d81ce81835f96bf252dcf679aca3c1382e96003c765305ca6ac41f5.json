@@ -1,0 +1,2350 @@
+{
+  "nodes": [
+    {
+      "id": "module::llm_wiki/code_query.py",
+      "label": "code_query.py",
+      "kind": "module",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::__future",
+      "label": "__future__",
+      "kind": "import",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::json",
+      "label": "json",
+      "kind": "import",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "import::typing",
+      "label": "typing",
+      "kind": "import",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::load_code_graph",
+      "label": "load_code_graph",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "symbol-ref::json.loads",
+      "label": "json.loads",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "symbol-ref::graph_path.read_text",
+      "label": "graph_path.read_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::_node_map",
+      "label": "_node_map",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "symbol-ref::str",
+      "label": "str",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L17"
+    },
+    {
+      "id": "symbol-ref::graph.get",
+      "label": "graph.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L17"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::_adjacency",
+      "label": "_adjacency",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "symbol-ref::neighbors.setdefault.append",
+      "label": "neighbors.setdefault.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "symbol-ref::neighbors.setdefault",
+      "label": "neighbors.setdefault",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::is_definition_kind",
+      "label": "is_definition_kind",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L30"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::_result_priority",
+      "label": "_result_priority",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L34"
+    },
+    {
+      "id": "symbol-ref::item.get",
+      "label": "item.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "symbol-ref::path.startswith",
+      "label": "path.startswith",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::search_nodes",
+      "label": "search_nodes",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "symbol-ref::term.lower",
+      "label": "term.lower",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L43"
+    },
+    {
+      "id": "symbol-ref::query.split",
+      "label": "query.split",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L43"
+    },
+    {
+      "id": "symbol-ref::term.strip",
+      "label": "term.strip",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L43"
+    },
+    {
+      "id": "symbol-ref::node.get",
+      "label": "node.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L48"
+    },
+    {
+      "id": "symbol-ref::join.lower",
+      "label": "join.lower",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L51"
+    },
+    {
+      "id": "symbol-ref::join",
+      "label": "join",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L51"
+    },
+    {
+      "id": "symbol-ref::sum",
+      "label": "sum",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L52"
+    },
+    {
+      "id": "symbol-ref::results.append",
+      "label": "results.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L55"
+    },
+    {
+      "id": "symbol-ref::results.sort",
+      "label": "results.sort",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L66"
+    },
+    {
+      "id": "symbol-ref::int",
+      "label": "int",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L66"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "label": "code_context_for_query",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L70"
+    },
+    {
+      "id": "symbol-ref::max",
+      "label": "max",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "symbol-ref::hit.get",
+      "label": "hit.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "symbol-ref::files.setdefault",
+      "label": "files.setdefault",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L83"
+    },
+    {
+      "id": "symbol-ref::append",
+      "label": "append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "symbol-ref::sorted",
+      "label": "sorted",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L96"
+    },
+    {
+      "id": "symbol-ref::files.values",
+      "label": "files.values",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L97"
+    },
+    {
+      "id": "symbol-ref::len",
+      "label": "len",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L102"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "label": "infer_relationship_between",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L111"
+    },
+    {
+      "id": "symbol-ref::resolve_node_ref",
+      "label": "resolve_node_ref",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L113"
+    },
+    {
+      "id": "symbol-ref::source.get",
+      "label": "source.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L120"
+    },
+    {
+      "id": "symbol-ref::target.get",
+      "label": "target.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L121"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "label": "infer_relationship_between._find_symbol_ref",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L125"
+    },
+    {
+      "id": "symbol-ref::matches.sort",
+      "label": "matches.sort",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L135"
+    },
+    {
+      "id": "symbol-ref::target_refers_to_source.get",
+      "label": "target_refers_to_source.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L149"
+    },
+    {
+      "id": "symbol-ref::source_refers_to_target.get",
+      "label": "source_refers_to_target.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L164"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::explain_node",
+      "label": "explain_node",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L171"
+    },
+    {
+      "id": "symbol-ref::adjacency.get",
+      "label": "adjacency.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L179"
+    },
+    {
+      "id": "symbol-ref::nodes.get",
+      "label": "nodes.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L180"
+    },
+    {
+      "id": "symbol-ref::neighbors.append",
+      "label": "neighbors.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L181"
+    },
+    {
+      "id": "symbol-ref::neighbor.get",
+      "label": "neighbor.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L184"
+    },
+    {
+      "id": "symbol-ref::edge.get",
+      "label": "edge.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L187"
+    },
+    {
+      "id": "symbol-ref::neighbors.sort",
+      "label": "neighbors.sort",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L192"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::neighbors_for_node",
+      "label": "neighbors_for_node",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L213"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "label": "resolve_node_ref",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L224"
+    },
+    {
+      "id": "symbol-ref::node_ref.lower.strip",
+      "label": "node_ref.lower.strip",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L228"
+    },
+    {
+      "id": "symbol-ref::node_ref.lower",
+      "label": "node_ref.lower",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L228"
+    },
+    {
+      "id": "symbol-ref::nodes.items",
+      "label": "nodes.items",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L231"
+    },
+    {
+      "id": "symbol-ref::str.lower",
+      "label": "str.lower",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L232"
+    },
+    {
+      "id": "symbol-ref::exact_candidates.append",
+      "label": "exact_candidates.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L235"
+    },
+    {
+      "id": "symbol-ref::fuzzy_candidates.append",
+      "label": "fuzzy_candidates.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L238"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::resolve_node_ref._priority",
+      "label": "resolve_node_ref._priority",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L240"
+    },
+    {
+      "id": "symbol-ref::get",
+      "label": "get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L243"
+    },
+    {
+      "id": "symbol-ref::exact_candidates.sort",
+      "label": "exact_candidates.sort",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L256"
+    },
+    {
+      "id": "symbol-ref::fuzzy_candidates.sort",
+      "label": "fuzzy_candidates.sort",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L259"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "label": "shortest_path_between",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L264"
+    },
+    {
+      "id": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "label": "shortest_path_between._neighbor_priority",
+      "kind": "function",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L282"
+    },
+    {
+      "id": "symbol-ref::queue.pop",
+      "label": "queue.pop",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L293"
+    },
+    {
+      "id": "symbol-ref::visited.add",
+      "label": "visited.add",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L300"
+    },
+    {
+      "id": "symbol-ref::queue.clear",
+      "label": "queue.clear",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L304"
+    },
+    {
+      "id": "symbol-ref::queue.append",
+      "label": "queue.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L306"
+    },
+    {
+      "id": "symbol-ref::hops.append",
+      "label": "hops.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L320"
+    },
+    {
+      "id": "symbol-ref::path_nodes.append",
+      "label": "path_nodes.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L331"
+    },
+    {
+      "id": "symbol-ref::path_nodes.reverse",
+      "label": "path_nodes.reverse",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L333"
+    },
+    {
+      "id": "symbol-ref::hops.reverse",
+      "label": "hops.reverse",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L334"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "import::__future",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "import::json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "import::typing",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::load_code_graph",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L11"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::load_code_graph",
+      "target": "symbol-ref::json.loads",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L13"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::load_code_graph",
+      "target": "symbol-ref::graph_path.read_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L13"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::_node_map",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L16"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_node_map",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L17"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_node_map",
+      "target": "symbol-ref::graph.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L17"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::_adjacency",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L20"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_adjacency",
+      "target": "symbol-ref::graph.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L22"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_adjacency",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_adjacency",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L24"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_adjacency",
+      "target": "symbol-ref::neighbors.setdefault.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_adjacency",
+      "target": "symbol-ref::neighbors.setdefault",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_adjacency",
+      "target": "symbol-ref::neighbors.setdefault.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L26"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_adjacency",
+      "target": "symbol-ref::neighbors.setdefault",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L26"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::is_definition_kind",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L30"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::_result_priority",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L34"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_result_priority",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L35"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_result_priority",
+      "target": "symbol-ref::item.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L35"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_result_priority",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L36"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_result_priority",
+      "target": "symbol-ref::item.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L36"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_result_priority",
+      "target": "symbol::llm_wiki/code_query.py::is_definition_kind",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L37"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_result_priority",
+      "target": "symbol-ref::path.startswith",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L38"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_result_priority",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L39"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::_result_priority",
+      "target": "symbol-ref::item.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L39"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::search_nodes",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L42"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::term.lower",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L43"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::query.split",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L43"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::term.strip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L43"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::graph.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L47"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L48"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L48"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L49"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L49"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L50"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L50"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::join.lower",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L52"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::results.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L55"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L63"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::results.sort",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::search_nodes",
+      "target": "symbol::llm_wiki/code_query.py::_result_priority",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L70"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol::llm_wiki/code_query.py::search_nodes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::max",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol::llm_wiki/code_query.py::is_definition_kind",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::hit.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol::llm_wiki/code_query.py::is_definition_kind",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L77"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L77"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::hit.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L77"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::hit.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::files.setdefault",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L83"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L84"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::hit.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L90"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::max",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L93"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L93"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L93"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol::llm_wiki/code_query.py::is_definition_kind",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L94"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L94"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::hit.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L94"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L95"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::sorted",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L96"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::files.values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L97"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L98"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L98"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L98"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::max",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::item.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::code_context_for_query",
+      "target": "symbol-ref::item.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L111"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol::llm_wiki/code_query.py::_node_map",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::resolve_node_ref",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L113"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::resolve_node_ref",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L114"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L120"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::source.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L120"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L121"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::target.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L121"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::source.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L123"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::target.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L123"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L125"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "target": "symbol-ref::graph.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L128"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L129"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L129"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L130"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L130"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L131"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L131"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "target": "symbol-ref::matches.sort",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L135"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L135"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "target": "symbol-ref::item.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L135"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L138"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::target_refers_to_source.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L149"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol::llm_wiki/code_query.py::infer_relationship_between._find_symbol_ref",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L153"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::infer_relationship_between",
+      "target": "symbol-ref::source_refers_to_target.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L164"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::explain_node",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L171"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol::llm_wiki/code_query.py::_node_map",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L172"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol::llm_wiki/code_query.py::_adjacency",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L173"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::resolve_node_ref",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L174"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::adjacency.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L179"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::nodes.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L180"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::neighbors.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L181"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::neighbor.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L184"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::neighbor.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L185"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::neighbor.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L186"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L187"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L188"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L189"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::neighbors.sort",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L192"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L192"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L192"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::graph.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L195"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L196"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L198"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L202"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L203"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L204"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L205"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::explain_node",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L206"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::neighbors_for_node",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L213"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::neighbors_for_node",
+      "target": "symbol::llm_wiki/code_query.py::explain_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L214"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L224"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol::llm_wiki/code_query.py::_node_map",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L225"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::node_ref.lower.strip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L228"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::node_ref.lower",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L228"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::nodes.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L231"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::str.lower",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L232"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L232"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L232"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::str.lower",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L233"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L233"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L233"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::exact_candidates.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L235"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::fuzzy_candidates.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L238"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::resolve_node_ref._priority",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L240"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref._priority",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L242"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref._priority",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L242"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref._priority",
+      "target": "symbol-ref::get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L243"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref._priority",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L251"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref._priority",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L251"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref._priority",
+      "target": "symbol-ref::path.startswith",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L252"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref._priority",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L253"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref._priority",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L253"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::exact_candidates.sort",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L256"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "target": "symbol-ref::fuzzy_candidates.sort",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L259"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L264"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L265"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol::llm_wiki/code_query.py::resolve_node_ref",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L266"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol::llm_wiki/code_query.py::_node_map",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L274"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol::llm_wiki/code_query.py::_adjacency",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L275"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::str.lower",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L280"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L280"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L280"
+    },
+    {
+      "source": "module::llm_wiki/code_query.py",
+      "target": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L282"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "target": "symbol-ref::nodes.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L283"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "target": "symbol-ref::str.lower",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L284"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L284"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "target": "symbol-ref::neighbor.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L284"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L285"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "target": "symbol-ref::neighbor.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L285"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L286"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "target": "symbol-ref::neighbor.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L286"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "target": "symbol::llm_wiki/code_query.py::is_definition_kind",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L288"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "target": "symbol-ref::path.startswith",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L289"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::queue.pop",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L293"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::sorted",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L296"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::adjacency.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L296"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol::llm_wiki/code_query.py::shortest_path_between._neighbor_priority",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L296"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::visited.add",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L300"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::queue.clear",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L304"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::queue.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L306"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::hops.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L320"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L323"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L325"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L326"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L327"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L328"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::path_nodes.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L331"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::path_nodes.reverse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L333"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::hops.reverse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L334"
+    },
+    {
+      "source": "symbol::llm_wiki/code_query.py::shortest_path_between",
+      "target": "symbol-ref::get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_query.py",
+      "source_file": "llm_wiki/code_query.py",
+      "source_location": "L339"
+    }
+  ],
+  "language": "python",
+  "path": "llm_wiki/code_query.py"
+}

@@ -1,0 +1,776 @@
+{
+  "nodes": [
+    {
+      "id": "module::llm_wiki/community.py",
+      "label": "community.py",
+      "kind": "module",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::__future",
+      "label": "__future__",
+      "kind": "import",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::collections",
+      "label": "collections",
+      "kind": "import",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::typing",
+      "label": "typing",
+      "kind": "import",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "symbol::llm_wiki/community.py::_page_key",
+      "label": "_page_key",
+      "kind": "function",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L7"
+    },
+    {
+      "id": "symbol::llm_wiki/community.py::_fallback_communities",
+      "label": "_fallback_communities",
+      "kind": "function",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "symbol-ref::defaultdict",
+      "label": "defaultdict",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "symbol-ref::strip",
+      "label": "strip",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::page.relpath.split",
+      "label": "page.relpath.split",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::append",
+      "label": "append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "symbol-ref::list",
+      "label": "list",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "symbol-ref::groups.values",
+      "label": "groups.values",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "symbol::llm_wiki/community.py::build_communities",
+      "label": "build_communities",
+      "kind": "function",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L28"
+    },
+    {
+      "id": "import::networkx",
+      "label": "networkx",
+      "kind": "import",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L30",
+      "external": true
+    },
+    {
+      "id": "symbol-ref::nx.Graph",
+      "label": "nx.Graph",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L37"
+    },
+    {
+      "id": "symbol-ref::graph.add_node",
+      "label": "graph.add_node",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L39"
+    },
+    {
+      "id": "symbol-ref::graph.add_edge",
+      "label": "graph.add_edge",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "symbol-ref::graph.number_of_edges",
+      "label": "graph.number_of_edges",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "symbol-ref::sorted",
+      "label": "sorted",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L43"
+    },
+    {
+      "id": "symbol-ref::nx.algorithms.community.greedy_modularity_communities",
+      "label": "nx.algorithms.community.greedy_modularity_communities",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L43"
+    },
+    {
+      "id": "symbol-ref::Counter",
+      "label": "Counter",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L51"
+    },
+    {
+      "id": "symbol-ref::enumerate",
+      "label": "enumerate",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L53"
+    },
+    {
+      "id": "symbol-ref::tags.update",
+      "label": "tags.update",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L60"
+    },
+    {
+      "id": "symbol-ref::topics.update",
+      "label": "topics.update",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L61"
+    },
+    {
+      "id": "symbol-ref::entities.update",
+      "label": "entities.update",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L62"
+    },
+    {
+      "id": "symbol-ref::len",
+      "label": "len",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L67"
+    },
+    {
+      "id": "symbol-ref::inbound_counts.get",
+      "label": "inbound_counts.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L67"
+    },
+    {
+      "id": "symbol-ref::join",
+      "label": "join",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "symbol-ref::topics.most_common",
+      "label": "topics.most_common",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "symbol-ref::communities.append",
+      "label": "communities.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "symbol-ref::tags.most_common",
+      "label": "tags.most_common",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L82"
+    },
+    {
+      "id": "symbol-ref::entities.most_common",
+      "label": "entities.most_common",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "symbol-ref::page_to_communities.get",
+      "label": "page_to_communities.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L93"
+    },
+    {
+      "id": "symbol-ref::tuple",
+      "label": "tuple",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L99"
+    },
+    {
+      "id": "symbol-ref::inter_edges.items",
+      "label": "inter_edges.items",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L106"
+    },
+    {
+      "id": "symbol-ref::max",
+      "label": "max",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L113"
+    },
+    {
+      "id": "symbol-ref::dict",
+      "label": "dict",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L116"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::llm_wiki/community.py",
+      "target": "import::__future",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::llm_wiki/community.py",
+      "target": "import::collections",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::llm_wiki/community.py",
+      "target": "import::typing",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::llm_wiki/community.py",
+      "target": "symbol::llm_wiki/community.py::_page_key",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L7"
+    },
+    {
+      "source": "module::llm_wiki/community.py",
+      "target": "symbol::llm_wiki/community.py::_fallback_communities",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L20"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::_fallback_communities",
+      "target": "symbol-ref::defaultdict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L21"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::_fallback_communities",
+      "target": "symbol-ref::strip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::_fallback_communities",
+      "target": "symbol-ref::page.relpath.split",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::_fallback_communities",
+      "target": "symbol-ref::append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L24"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::_fallback_communities",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::_fallback_communities",
+      "target": "symbol-ref::groups.values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "module::llm_wiki/community.py",
+      "target": "symbol::llm_wiki/community.py::build_communities",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L28"
+    },
+    {
+      "source": "module::llm_wiki/community.py",
+      "target": "import::networkx",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L30"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::nx.Graph",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L37"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::graph.add_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L39"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::graph.add_edge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L41"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::graph.number_of_edges",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L42"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::sorted",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L43"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L43"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::nx.algorithms.community.greedy_modularity_communities",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L43"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol::llm_wiki/community.py::_fallback_communities",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L45"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol::llm_wiki/community.py::_fallback_communities",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L47"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::defaultdict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L49"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::Counter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::enumerate",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L53"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::Counter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L56"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::Counter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L57"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::Counter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L58"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::tags.update",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L60"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::topics.update",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::entities.update",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L62"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L63"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::sorted",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L65"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L67"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::inbound_counts.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L67"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::topics.most_common",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L72"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::communities.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L74"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L77"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::tags.most_common",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L82"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::topics.most_common",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L83"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::entities.most_common",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L84"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::page_to_communities.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L93"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::page_to_communities.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L94"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::tuple",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::sorted",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::sorted",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::inter_edges.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::max",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L113"
+    },
+    {
+      "source": "symbol::llm_wiki/community.py::build_communities",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/community.py",
+      "source_file": "llm_wiki/community.py",
+      "source_location": "L116"
+    }
+  ],
+  "language": "python",
+  "path": "llm_wiki/community.py"
+}

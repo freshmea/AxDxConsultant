@@ -1,0 +1,1208 @@
+{
+  "nodes": [
+    {
+      "id": "module::llm_wiki/code_graph.py",
+      "label": "code_graph.py",
+      "kind": "module",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::__future",
+      "label": "__future__",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::json",
+      "label": "json",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::collections",
+      "label": "collections",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "import::datetime",
+      "label": "datetime",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L6",
+      "external": true
+    },
+    {
+      "id": "import::typing",
+      "label": "typing",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L7",
+      "external": true
+    },
+    {
+      "id": "import::.code_analysis",
+      "label": ".code_analysis",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L9",
+      "external": true
+    },
+    {
+      "id": "import::.code_cache",
+      "label": ".code_cache",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L10",
+      "external": true
+    },
+    {
+      "id": "import::.code_extractors",
+      "label": ".code_extractors",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L11",
+      "external": true
+    },
+    {
+      "id": "import::.indexer",
+      "label": ".indexer",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L12",
+      "external": true
+    },
+    {
+      "id": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "label": "iter_code_files",
+      "kind": "function",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L18"
+    },
+    {
+      "id": "symbol-ref::load_ignore_rules",
+      "label": "load_ignore_rules",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "symbol-ref::root.rglob",
+      "label": "root.rglob",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "symbol-ref::path.is_file",
+      "label": "path.is_file",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "symbol-ref::path.suffix.lower",
+      "label": "path.suffix.lower",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::any",
+      "label": "any",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "symbol-ref::path.relative_to.as_posix",
+      "label": "path.relative_to.as_posix",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "symbol-ref::path.relative_to",
+      "label": "path.relative_to",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "symbol-ref::matches_ignore",
+      "label": "matches_ignore",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L28"
+    },
+    {
+      "id": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "label": "_build_communities",
+      "kind": "function",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "import::networkx",
+      "label": "networkx",
+      "kind": "import",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L35",
+      "external": true
+    },
+    {
+      "id": "symbol-ref::str",
+      "label": "str",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L39"
+    },
+    {
+      "id": "symbol-ref::nx.Graph",
+      "label": "nx.Graph",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L46"
+    },
+    {
+      "id": "symbol-ref::graph.add_nodes_from",
+      "label": "graph.add_nodes_from",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L47"
+    },
+    {
+      "id": "symbol-ref::graph.add_edge",
+      "label": "graph.add_edge",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L50"
+    },
+    {
+      "id": "symbol-ref::graph.number_of_edges",
+      "label": "graph.number_of_edges",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L51"
+    },
+    {
+      "id": "symbol-ref::enumerate",
+      "label": "enumerate",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L52"
+    },
+    {
+      "id": "symbol-ref::nx.algorithms.community.greedy_modularity_communities",
+      "label": "nx.algorithms.community.greedy_modularity_communities",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L53"
+    },
+    {
+      "id": "symbol-ref::sorted",
+      "label": "sorted",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L54"
+    },
+    {
+      "id": "symbol-ref::list",
+      "label": "list",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L54"
+    },
+    {
+      "id": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "label": "build_code_graph",
+      "kind": "function",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L57"
+    },
+    {
+      "id": "symbol-ref::Counter",
+      "label": "Counter",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L61"
+    },
+    {
+      "id": "symbol-ref::load_cached_extraction",
+      "label": "load_cached_extraction",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L67"
+    },
+    {
+      "id": "symbol-ref::extract_code_file",
+      "label": "extract_code_file",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L70"
+    },
+    {
+      "id": "symbol-ref::save_cached_extraction",
+      "label": "save_cached_extraction",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "symbol-ref::extraction.get",
+      "label": "extraction.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "symbol-ref::nodes.extend",
+      "label": "nodes.extend",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L78"
+    },
+    {
+      "id": "symbol-ref::edges.extend",
+      "label": "edges.extend",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L79"
+    },
+    {
+      "id": "symbol-ref::set",
+      "label": "set",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "symbol-ref::edge.get",
+      "label": "edge.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L92"
+    },
+    {
+      "id": "symbol-ref::seen_edges.add",
+      "label": "seen_edges.add",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L95"
+    },
+    {
+      "id": "symbol-ref::dedup_edges.append",
+      "label": "dedup_edges.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L96"
+    },
+    {
+      "id": "symbol-ref::dedup_nodes.values",
+      "label": "dedup_nodes.values",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L98"
+    },
+    {
+      "id": "symbol-ref::communities.items",
+      "label": "communities.items",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L101"
+    },
+    {
+      "id": "symbol-ref::node_to_community.get",
+      "label": "node_to_community.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L105"
+    },
+    {
+      "id": "symbol-ref::analyze_code_graph",
+      "label": "analyze_code_graph",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L110"
+    },
+    {
+      "id": "symbol-ref::datetime.now.isoformat",
+      "label": "datetime.now.isoformat",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L119"
+    },
+    {
+      "id": "symbol-ref::datetime.now",
+      "label": "datetime.now",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L119"
+    },
+    {
+      "id": "symbol-ref::len",
+      "label": "len",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L123"
+    },
+    {
+      "id": "symbol-ref::language_counts.most_common",
+      "label": "language_counts.most_common",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L131"
+    },
+    {
+      "id": "symbol-ref::relation_counts.most_common",
+      "label": "relation_counts.most_common",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L132"
+    },
+    {
+      "id": "symbol-ref::confidence_counts.most_common",
+      "label": "confidence_counts.most_common",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L133"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::__future",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::collections",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::datetime",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L6"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::typing",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L7"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::.code_analysis",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L9"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::.code_cache",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L10"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::.code_extractors",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L11"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::.indexer",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L12"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L18"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "target": "symbol-ref::load_ignore_rules",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L19"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "target": "symbol-ref::root.rglob",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L20"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "target": "symbol-ref::path.is_file",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L21"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "target": "symbol-ref::path.suffix.lower",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "target": "symbol-ref::any",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "target": "symbol-ref::path.relative_to.as_posix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L27"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "target": "symbol-ref::path.relative_to",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L27"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "target": "symbol-ref::matches_ignore",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L28"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L33"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "import::networkx",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L35"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L39"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "target": "symbol-ref::nx.Graph",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L46"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "target": "symbol-ref::graph.add_nodes_from",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L47"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "target": "symbol-ref::graph.add_edge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L50"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "target": "symbol-ref::graph.number_of_edges",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "target": "symbol-ref::enumerate",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L52"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "target": "symbol-ref::nx.algorithms.community.greedy_modularity_communities",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L53"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "target": "symbol-ref::sorted",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L54"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L54"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "target": "symbol-ref::enumerate",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L54"
+    },
+    {
+      "source": "module::llm_wiki/code_graph.py",
+      "target": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L57"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::sorted",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L58"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol::llm_wiki/code_graph.py::iter_code_files",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L58"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::Counter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::path.relative_to.as_posix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::path.relative_to",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::load_cached_extraction",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L67"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::extract_code_file",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L70"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::save_cached_extraction",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::extraction.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::nodes.extend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L78"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::extraction.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L78"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::edges.extend",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L79"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::extraction.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L79"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L83"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::set",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L84"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::set",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L86"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L89"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::seen_edges.add",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L95"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::dedup_edges.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L96"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol::llm_wiki/code_graph.py::_build_communities",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L98"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L98"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::dedup_nodes.values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L98"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::communities.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::dedup_nodes.values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L104"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::node_to_community.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L105"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L105"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::Counter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::Counter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L108"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L108"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::edge.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L108"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::analyze_code_graph",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L110"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::dedup_nodes.values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::datetime.now.isoformat",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L119"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::datetime.now",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L119"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L120"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L123"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L126"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L127"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L128"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::language_counts.most_common",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L131"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::relation_counts.most_common",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L132"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::confidence_counts.most_common",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L133"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L135"
+    },
+    {
+      "source": "symbol::llm_wiki/code_graph.py::build_code_graph",
+      "target": "symbol-ref::dedup_nodes.values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_graph.py",
+      "source_file": "llm_wiki/code_graph.py",
+      "source_location": "L135"
+    }
+  ],
+  "language": "python",
+  "path": "llm_wiki/code_graph.py"
+}

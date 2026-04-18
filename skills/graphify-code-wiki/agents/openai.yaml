@@ -1,0 +1,4 @@
+interface:
+  display_name: "Graphify Code Wiki"
+  short_description: "Operate the dxAx code graph workflow."
+  default_prompt: "Use this skill to build, verify, and maintain the Graphify-style code graph workflow in the dxAx repository."

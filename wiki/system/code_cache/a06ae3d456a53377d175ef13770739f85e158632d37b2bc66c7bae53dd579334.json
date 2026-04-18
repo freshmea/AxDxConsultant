@@ -1,0 +1,2779 @@
+{
+  "nodes": [
+    {
+      "id": "module::llm_wiki/cli.py",
+      "label": "cli.py",
+      "kind": "module",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::__future",
+      "label": "__future__",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::argparse",
+      "label": "argparse",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::json",
+      "label": "json",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "import::os",
+      "label": "os",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "import::shutil",
+      "label": "shutil",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L6",
+      "external": true
+    },
+    {
+      "id": "import::sys",
+      "label": "sys",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L7",
+      "external": true
+    },
+    {
+      "id": "import::collections",
+      "label": "collections",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L8",
+      "external": true
+    },
+    {
+      "id": "import::datetime",
+      "label": "datetime",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L9",
+      "external": true
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L10",
+      "external": true
+    },
+    {
+      "id": "import::typing",
+      "label": "typing",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L11",
+      "external": true
+    },
+    {
+      "id": "import::.indexer",
+      "label": ".indexer",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L13",
+      "external": true
+    },
+    {
+      "id": "import::.memory_layer",
+      "label": ".memory_layer",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L14",
+      "external": true
+    },
+    {
+      "id": "import::.semantic",
+      "label": ".semantic",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L15",
+      "external": true
+    },
+    {
+      "id": "symbol::llm_wiki/cli.py::emit_json",
+      "label": "emit_json",
+      "kind": "function",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L18"
+    },
+    {
+      "id": "symbol-ref::json.dumps",
+      "label": "json.dumps",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "symbol-ref::sys.stdout.buffer.write",
+      "label": "sys.stdout.buffer.write",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "symbol-ref::data.encode",
+      "label": "data.encode",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "symbol::llm_wiki/cli.py::load_json",
+      "label": "load_json",
+      "kind": "function",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::json.loads",
+      "label": "json.loads",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "symbol-ref::path.read_text",
+      "label": "path.read_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "symbol::llm_wiki/cli.py::load_query_cache",
+      "label": "load_query_cache",
+      "kind": "function",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L27"
+    },
+    {
+      "id": "symbol::llm_wiki/cli.py::score_pages",
+      "label": "score_pages",
+      "kind": "function",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L32"
+    },
+    {
+      "id": "symbol-ref::tokenize",
+      "label": "tokenize",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "symbol-ref::cache.get",
+      "label": "cache.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "symbol-ref::sum",
+      "label": "sum",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L37"
+    },
+    {
+      "id": "symbol-ref::int",
+      "label": "int",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L37"
+    },
+    {
+      "id": "symbol-ref::pages.values",
+      "label": "pages.values",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L37"
+    },
+    {
+      "id": "symbol-ref::search_semantic",
+      "label": "search_semantic",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "symbol-ref::max",
+      "label": "max",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "symbol-ref::communities.items",
+      "label": "communities.items",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L42"
+    },
+    {
+      "id": "symbol-ref::join",
+      "label": "join",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L43"
+    },
+    {
+      "id": "symbol-ref::str",
+      "label": "str",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L45"
+    },
+    {
+      "id": "symbol-ref::community.get",
+      "label": "community.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L45"
+    },
+    {
+      "id": "symbol-ref::Counter",
+      "label": "Counter",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L51"
+    },
+    {
+      "id": "symbol-ref::pages.items",
+      "label": "pages.items",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L56"
+    },
+    {
+      "id": "symbol-ref::semantic_hits.get",
+      "label": "semantic_hits.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L64"
+    },
+    {
+      "id": "symbol-ref::round",
+      "label": "round",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L65"
+    },
+    {
+      "id": "symbol-ref::float",
+      "label": "float",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L65"
+    },
+    {
+      "id": "symbol-ref::community_scores.get",
+      "label": "community_scores.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L66"
+    },
+    {
+      "id": "symbol-ref::page.get",
+      "label": "page.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L66"
+    },
+    {
+      "id": "symbol-ref::min",
+      "label": "min",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "symbol-ref::provisional.append",
+      "label": "provisional.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L73"
+    },
+    {
+      "id": "symbol-ref::provisional.sort",
+      "label": "provisional.sort",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L96"
+    },
+    {
+      "id": "symbol-ref::pages.get",
+      "label": "pages.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L100"
+    },
+    {
+      "id": "symbol-ref::seed_page.get",
+      "label": "seed_page.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L101"
+    },
+    {
+      "id": "symbol-ref::isinstance",
+      "label": "isinstance",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L102"
+    },
+    {
+      "id": "symbol-ref::relation.get",
+      "label": "relation.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L104"
+    },
+    {
+      "id": "symbol-ref::obsidian_bonus_map.get",
+      "label": "obsidian_bonus_map.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L114"
+    },
+    {
+      "id": "symbol-ref::scores.append",
+      "label": "scores.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L120"
+    },
+    {
+      "id": "symbol-ref::scores.sort",
+      "label": "scores.sort",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L122"
+    },
+    {
+      "id": "symbol-ref::set",
+      "label": "set",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L126"
+    },
+    {
+      "id": "symbol-ref::list",
+      "label": "list",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L128"
+    },
+    {
+      "id": "symbol-ref::expanded_ids.append",
+      "label": "expanded_ids.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L130"
+    },
+    {
+      "id": "symbol-ref::seen.add",
+      "label": "seen.add",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L131"
+    },
+    {
+      "id": "symbol-ref::get",
+      "label": "get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L142"
+    },
+    {
+      "id": "symbol-ref::semantic_hits.values",
+      "label": "semantic_hits.values",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L160"
+    },
+    {
+      "id": "symbol::llm_wiki/cli.py::append_query_log",
+      "label": "append_query_log",
+      "kind": "function",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L164"
+    },
+    {
+      "id": "symbol-ref::json_path.exists",
+      "label": "json_path.exists",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L170"
+    },
+    {
+      "id": "symbol-ref::datetime.now.isoformat",
+      "label": "datetime.now.isoformat",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L173"
+    },
+    {
+      "id": "symbol-ref::datetime.now",
+      "label": "datetime.now",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L173"
+    },
+    {
+      "id": "symbol-ref::logs.append",
+      "label": "logs.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L181"
+    },
+    {
+      "id": "symbol-ref::json_path.write_text",
+      "label": "json_path.write_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L182"
+    },
+    {
+      "id": "symbol-ref::md_path.exists",
+      "label": "md_path.exists",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L197"
+    },
+    {
+      "id": "symbol-ref::md_path.read_text.rstrip",
+      "label": "md_path.read_text.rstrip",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L198"
+    },
+    {
+      "id": "symbol-ref::md_path.read_text",
+      "label": "md_path.read_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L198"
+    },
+    {
+      "id": "symbol-ref::md_path.write_text",
+      "label": "md_path.write_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L199"
+    },
+    {
+      "id": "symbol::llm_wiki/cli.py::render_graph",
+      "label": "render_graph",
+      "kind": "function",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L206"
+    },
+    {
+      "id": "import::graphviz",
+      "label": "graphviz",
+      "kind": "import",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L207",
+      "external": true
+    },
+    {
+      "id": "symbol-ref::Path",
+      "label": "Path",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L209"
+    },
+    {
+      "id": "symbol-ref::graphviz_bin.exists",
+      "label": "graphviz_bin.exists",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L210"
+    },
+    {
+      "id": "symbol-ref::shutil.which",
+      "label": "shutil.which",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L210"
+    },
+    {
+      "id": "symbol-ref::os.environ.get",
+      "label": "os.environ.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L211"
+    },
+    {
+      "id": "symbol-ref::cache_path.with_name",
+      "label": "cache_path.with_name",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L214"
+    },
+    {
+      "id": "symbol-ref::Digraph",
+      "label": "Digraph",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L215"
+    },
+    {
+      "id": "symbol-ref::dot.attr",
+      "label": "dot.attr",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L216"
+    },
+    {
+      "id": "symbol-ref::node.get",
+      "label": "node.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L219"
+    },
+    {
+      "id": "symbol-ref::dot.node",
+      "label": "dot.node",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L221"
+    },
+    {
+      "id": "symbol-ref::dot.edge",
+      "label": "dot.edge",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L223"
+    },
+    {
+      "id": "symbol-ref::output_path.with_suffix",
+      "label": "output_path.with_suffix",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L225"
+    },
+    {
+      "id": "symbol-ref::dot.render",
+      "label": "dot.render",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L226"
+    },
+    {
+      "id": "symbol::llm_wiki/cli.py::main",
+      "label": "main",
+      "kind": "function",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L230"
+    },
+    {
+      "id": "symbol-ref::argparse.ArgumentParser",
+      "label": "argparse.ArgumentParser",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L231"
+    },
+    {
+      "id": "symbol-ref::parser.add_subparsers",
+      "label": "parser.add_subparsers",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L232"
+    },
+    {
+      "id": "symbol-ref::subparsers.add_parser",
+      "label": "subparsers.add_parser",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L234"
+    },
+    {
+      "id": "symbol-ref::build_parser.add_argument",
+      "label": "build_parser.add_argument",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L235"
+    },
+    {
+      "id": "symbol-ref::route_parser.add_argument",
+      "label": "route_parser.add_argument",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L239"
+    },
+    {
+      "id": "symbol-ref::ask_parser.add_argument",
+      "label": "ask_parser.add_argument",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L244"
+    },
+    {
+      "id": "symbol-ref::memory_bootstrap_parser.add_argument",
+      "label": "memory_bootstrap_parser.add_argument",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L249"
+    },
+    {
+      "id": "symbol-ref::memory_add_parser.add_argument",
+      "label": "memory_add_parser.add_argument",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L256"
+    },
+    {
+      "id": "symbol-ref::memory_search_parser.add_argument",
+      "label": "memory_search_parser.add_argument",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L262"
+    },
+    {
+      "id": "symbol-ref::memory_check_parser.add_argument",
+      "label": "memory_check_parser.add_argument",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L268"
+    },
+    {
+      "id": "symbol-ref::parser.parse_args",
+      "label": "parser.parse_args",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L270"
+    },
+    {
+      "id": "symbol-ref::Path.resolve",
+      "label": "Path.resolve",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L271"
+    },
+    {
+      "id": "symbol-ref::build_index",
+      "label": "build_index",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L274"
+    },
+    {
+      "id": "symbol-ref::write_outputs",
+      "label": "write_outputs",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L275"
+    },
+    {
+      "id": "symbol-ref::paths.items",
+      "label": "paths.items",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L277"
+    },
+    {
+      "id": "symbol-ref::log_paths.items",
+      "label": "log_paths.items",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L299"
+    },
+    {
+      "id": "symbol-ref::values",
+      "label": "values",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L307"
+    },
+    {
+      "id": "symbol-ref::cache.get.items",
+      "label": "cache.get.items",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L310"
+    },
+    {
+      "id": "symbol-ref::items.append",
+      "label": "items.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L311"
+    },
+    {
+      "id": "symbol-ref::bootstrap_memory",
+      "label": "bootstrap_memory",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L322"
+    },
+    {
+      "id": "symbol-ref::memory_add",
+      "label": "memory_add",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L327"
+    },
+    {
+      "id": "symbol-ref::memory_search",
+      "label": "memory_search",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L337"
+    },
+    {
+      "id": "symbol-ref::check_ollama_models",
+      "label": "check_ollama_models",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L342"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::__future",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::argparse",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::os",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::shutil",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L6"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::sys",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L7"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::collections",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L8"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::datetime",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L9"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L10"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::typing",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L11"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::.indexer",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L13"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::.memory_layer",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L14"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::.semantic",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L15"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "symbol::llm_wiki/cli.py::emit_json",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L18"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::emit_json",
+      "target": "symbol-ref::json.dumps",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L19"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::emit_json",
+      "target": "symbol-ref::sys.stdout.buffer.write",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L20"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::emit_json",
+      "target": "symbol-ref::data.encode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L20"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "symbol::llm_wiki/cli.py::load_json",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::load_json",
+      "target": "symbol-ref::json.loads",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L24"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::load_json",
+      "target": "symbol-ref::path.read_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L24"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "symbol::llm_wiki/cli.py::load_query_cache",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L27"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::load_query_cache",
+      "target": "symbol::llm_wiki/cli.py::load_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L29"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "symbol::llm_wiki/cli.py::score_pages",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L32"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::tokenize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L33"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::cache.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L35"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L37"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L37"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::pages.values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L37"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::search_semantic",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L38"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::max",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L38"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::communities.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L42"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L43"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L45"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::community.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L45"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L46"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::community.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L46"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L47"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::community.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L47"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L48"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::community.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L48"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::Counter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::tokenize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L51"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L52"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::pages.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L56"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::Counter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L57"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L58"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L59"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::tokenize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L59"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L59"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L60"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::tokenize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L60"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L60"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::tokenize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L61"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L62"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::tokenize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L62"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L62"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L63"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::tokenize",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L63"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L63"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::semantic_hits.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L64"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L65"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::float",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L65"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::community_scores.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::page.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::min",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::provisional.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L73"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::page.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L85"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::provisional.sort",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L96"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::float",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L96"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L96"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::max",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L97"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::pages.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L100"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::seed_page.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::relation.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L104"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::relation.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L105"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L109"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::float",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L109"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L114"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::obsidian_bonus_map.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L114"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L114"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::obsidian_bonus_map.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L117"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L117"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L118"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::float",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L118"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::scores.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L120"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::scores.sort",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::float",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::set",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L126"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L128"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::expanded_ids.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L130"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::seen.add",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L131"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L142"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L143"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L148"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L148"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::max",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L157"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L158"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::max",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L158"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L160"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::score_pages",
+      "target": "symbol-ref::semantic_hits.values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L160"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "symbol::llm_wiki/cli.py::append_query_log",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L164"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::json_path.exists",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L170"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol::llm_wiki/cli.py::load_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L170"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L171"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::datetime.now.isoformat",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L173"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::datetime.now",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L173"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::logs.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L181"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::json_path.write_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L182"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::json.dumps",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L182"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L187"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L188"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::md_path.exists",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L197"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::md_path.read_text.rstrip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L198"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::md_path.read_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L198"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::md_path.write_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L199"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L199"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::md_path.write_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L201"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::append_query_log",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L201"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "symbol::llm_wiki/cli.py::render_graph",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L206"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "import::graphviz",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L207"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L209"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::graphviz_bin.exists",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L210"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::shutil.which",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L210"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::os.environ.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L211"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol::llm_wiki/cli.py::load_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L213"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::cache_path.with_name",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L214"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::Digraph",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L215"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::dot.attr",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L216"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L219"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::node.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L219"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::dot.node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L221"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::dot.edge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L223"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::output_path.with_suffix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L225"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::dot.render",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L226"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::render_graph",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L226"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "symbol::llm_wiki/cli.py::main",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L230"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::argparse.ArgumentParser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L231"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::parser.add_subparsers",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L232"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::subparsers.add_parser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L234"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::build_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L235"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::build_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L236"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::subparsers.add_parser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L238"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::route_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L239"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::route_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L240"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::route_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L241"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::subparsers.add_parser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L243"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::ask_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L244"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::ask_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L245"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::ask_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L246"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::subparsers.add_parser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L248"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_bootstrap_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L249"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_bootstrap_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L250"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_bootstrap_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L251"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_bootstrap_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L252"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_bootstrap_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L253"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::subparsers.add_parser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L255"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_add_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L256"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_add_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L257"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_add_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L258"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_add_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L259"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::subparsers.add_parser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L261"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_search_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L262"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_search_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L263"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_search_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L264"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_search_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L265"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::subparsers.add_parser",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L267"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_check_parser.add_argument",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L268"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::parser.parse_args",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L270"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::Path.resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L271"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L271"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::build_index",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L274"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::write_outputs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L275"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L277"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::paths.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L277"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L282"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::render_graph",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L282"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::emit_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L283"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::load_query_cache",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L287"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::score_pages",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L288"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::emit_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L289"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::load_query_cache",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L293"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::score_pages",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L294"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::append_query_log",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L295"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L299"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::log_paths.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L299"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::emit_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L301"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::load_query_cache",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L305"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L307"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L307"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::cache.get.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L310"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::cache.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L310"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::items.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L311"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L315"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::community.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L315"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::community.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L316"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::community.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L317"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::community.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L318"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::community.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L319"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::bootstrap_memory",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L322"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::emit_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L323"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_add",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L327"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::emit_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L333"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::memory_search",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L337"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::emit_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L338"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol-ref::check_ollama_models",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L342"
+    },
+    {
+      "source": "symbol::llm_wiki/cli.py::main",
+      "target": "symbol::llm_wiki/cli.py::emit_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L343"
+    },
+    {
+      "source": "module::llm_wiki/cli.py",
+      "target": "symbol::llm_wiki/cli.py::main",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/cli.py",
+      "source_file": "llm_wiki/cli.py",
+      "source_location": "L348"
+    }
+  ],
+  "language": "python",
+  "path": "llm_wiki/cli.py"
+}

@@ -85,3 +85,45 @@
 - communities: 40
 - estimated tokens: 83110
 
+## [2026-04-18 20:29:56] build | markdown graph refresh
+- pages: 95
+- edges: 89
+- communities: 40
+- estimated tokens: 83110
+
+## [2026-04-18 20:37:10] build | markdown graph refresh
+- pages: 95
+- edges: 89
+- communities: 40
+- estimated tokens: 83110
+
+## [2026-04-18 20:37:58] build | markdown graph refresh
+- pages: 95
+- edges: 89
+- communities: 40
+- estimated tokens: 83110
+
+## [2026-04-18 20:38:40] build | markdown graph refresh
+- pages: 95
+- edges: 89
+- communities: 40
+- estimated tokens: 83110
+
+## [2026-04-18 20:39:25] build | markdown graph refresh
+- pages: 95
+- edges: 89
+- communities: 40
+- estimated tokens: 83110
+
+## [2026-04-18 20:50:04] build | markdown graph refresh
+- pages: 95
+- edges: 89
+- communities: 40
+- estimated tokens: 83110
+
+## [2026-04-18 20:59:33] graphify-code-wiki | code graph integration and agent skill
+- added code-aware query profiling in `llm_wiki/cli.py`
+- added stronger definition-first ranking and relationship inference in `llm_wiki/code_query.py`
+- verified `build`, `graph-query`, `graph-neighbors`, `graph-explain`, `graph-path`, and code-oriented `ask`
+- created reusable agent skill at `skills/graphify-code-wiki/SKILL.md`
+

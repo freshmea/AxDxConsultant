@@ -1,10 +1,12 @@
 # Graph Report
 
-- Generated: 2026-04-17T08:55:17.922616+00:00
+- Generated: 2026-04-18T11:49:39.413073+00:00
 - Pages: 95
 - Edges: 89
 - Estimated full corpus tokens: 83110
 - Smart Connections bridge: enabled
+- Code files scanned: 19
+- Code graph: 891 nodes / 2496 edges / 13 communities
 
 ## Top Tags
 
@@ -123,3 +125,40 @@
 - [1. 업무 흐름 구조화](../실습결과물/07/01-업무-흐름-구조화.md)
 - [업무 흐름 (Mermaid)](../실습결과물/07/02-업무-흐름-mermaid.md)
 - [나의 업무 비효율 수치화 템플릿 작성](../실습결과물/07/03-업무-비효율-수치화-템플릿.md)
+
+## Code Graph
+
+- language `python` x 19
+- relation `calls` x 2204
+- relation `defines` x 167
+- relation `imports` x 124
+- relation `inherits` x 1
+- confidence `EXTRACTED` x 2496
+
+## Code God Nodes
+
+- `build_figures` | kind=function | degree=129 | path=`실습결과물/16/imports85_plotly_report.py`
+- `score_pages` | kind=function | degree=127 | path=`llm_wiki/cli.py`
+- `write_outputs` | kind=function | degree=110 | path=`llm_wiki/indexer.py`
+- `main` | kind=function | degree=105 | path=`llm_wiki/cli.py`
+- `run_analysis` | kind=function | degree=100 | path=`orange_example_10/analyze_titanic.py`
+- `build_index` | kind=function | degree=84 | path=`llm_wiki/indexer.py`
+- `load_and_clean_data` | kind=function | degree=77 | path=`실습결과물/16/imports85_plotly_report.py`
+- `main` | kind=function | degree=70 | path=`orange_example_10/train_adaboost_titanic.py`
+- `generate_plots` | kind=function | degree=68 | path=`orange_example_10/analyze_bodyfat_visuals.py`
+- `main` | kind=function | degree=68 | path=`orange_example_10/rewrite_bodyfat_report_preview.py`
+
+## Surprising Code Connections
+
+- No high-signal cross-community internal code connections were detected in this build.
+
+## Suggested Code Questions
+
+- Which modules and functions depend most on `build_figures`?
+- How is `build_figures` connected to `score_pages`?
+- Which cross-file call paths are most central in this codebase?
+- Which import relationships create the strongest coupling across modules?
+- Where does inheritance appear, and what architectural role does it play?
+- Which communities interact the most, and are those boundaries intentional?
+- Which nodes look like good entry points for onboarding into this repository?
+- Which symbol references point to missing or external definitions that deserve review?

@@ -1,0 +1,3897 @@
+{
+  "nodes": [
+    {
+      "id": "module::_/16/imports85_plotly_report.py",
+      "label": "imports85_plotly_report.py",
+      "kind": "module",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::__future",
+      "label": "__future__",
+      "kind": "import",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L2",
+      "external": true
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "import::textwrap",
+      "label": "textwrap",
+      "kind": "import",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "import::pandas",
+      "label": "pandas",
+      "kind": "import",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L7",
+      "external": true
+    },
+    {
+      "id": "import::plotly.express",
+      "label": "plotly.express",
+      "kind": "import",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L8",
+      "external": true
+    },
+    {
+      "id": "import::plotly.graph_objects",
+      "label": "plotly.graph_objects",
+      "kind": "import",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L9",
+      "external": true
+    },
+    {
+      "id": "import::plotly.subplots",
+      "label": "plotly.subplots",
+      "kind": "import",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L10",
+      "external": true
+    },
+    {
+      "id": "symbol-ref::Path.resolve",
+      "label": "Path.resolve",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "symbol-ref::Path",
+      "label": "Path",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L13"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "label": "load_and_clean_data",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L70"
+    },
+    {
+      "id": "symbol-ref::pd.read_csv",
+      "label": "pd.read_csv",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "symbol-ref::column.strip",
+      "label": "column.strip",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L72"
+    },
+    {
+      "id": "symbol-ref::astype.str.strip.isin",
+      "label": "astype.str.strip.isin",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "symbol-ref::astype.str.strip",
+      "label": "astype.str.strip",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "symbol-ref::astype",
+      "label": "astype",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "symbol-ref::copy",
+      "label": "copy",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L75"
+    },
+    {
+      "id": "symbol-ref::int",
+      "label": "int",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "symbol-ref::meta_mask.sum",
+      "label": "meta_mask.sum",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L76"
+    },
+    {
+      "id": "symbol-ref::cleaned.replace",
+      "label": "cleaned.replace",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L78"
+    },
+    {
+      "id": "symbol-ref::pd.to_numeric",
+      "label": "pd.to_numeric",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L80"
+    },
+    {
+      "id": "symbol-ref::cleaned.isna.sum.to_dict",
+      "label": "cleaned.isna.sum.to_dict",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "symbol-ref::cleaned.isna.sum",
+      "label": "cleaned.isna.sum",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "symbol-ref::cleaned.isna",
+      "label": "cleaned.isna",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "symbol-ref::cleaned.isna.copy",
+      "label": "cleaned.isna.copy",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L85"
+    },
+    {
+      "id": "symbol-ref::agg",
+      "label": "agg",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L88"
+    },
+    {
+      "id": "symbol-ref::cleaned.groupby",
+      "label": "cleaned.groupby",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L88"
+    },
+    {
+      "id": "symbol-ref::s.mode",
+      "label": "s.mode",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L89"
+    },
+    {
+      "id": "symbol-ref::mode",
+      "label": "mode",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L91"
+    },
+    {
+      "id": "symbol-ref::cleaned.apply",
+      "label": "cleaned.apply",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L92"
+    },
+    {
+      "id": "symbol-ref::pd.isna",
+      "label": "pd.isna",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L95"
+    },
+    {
+      "id": "symbol-ref::group_mode.get",
+      "label": "group_mode.get",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L94"
+    },
+    {
+      "id": "symbol-ref::transform",
+      "label": "transform",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L101"
+    },
+    {
+      "id": "symbol-ref::fillna",
+      "label": "fillna",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L102"
+    },
+    {
+      "id": "symbol-ref::fillna.fillna",
+      "label": "fillna.fillna",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L106"
+    },
+    {
+      "id": "symbol-ref::median",
+      "label": "median",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L106"
+    },
+    {
+      "id": "symbol-ref::isna.any",
+      "label": "isna.any",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L116"
+    },
+    {
+      "id": "symbol-ref::isna",
+      "label": "isna",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L116"
+    },
+    {
+      "id": "symbol-ref::quantile",
+      "label": "quantile",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L131"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data.classify_segment",
+      "label": "load_and_clean_data.classify_segment",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L137"
+    },
+    {
+      "id": "symbol-ref::pd.qcut",
+      "label": "pd.qcut",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L147"
+    },
+    {
+      "id": "symbol-ref::original_missing_flags.apply",
+      "label": "original_missing_flags.apply",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L151"
+    },
+    {
+      "id": "symbol-ref::join",
+      "label": "join",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L152"
+    },
+    {
+      "id": "symbol-ref::row.items",
+      "label": "row.items",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L152"
+    },
+    {
+      "id": "symbol-ref::bool",
+      "label": "bool",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L152"
+    },
+    {
+      "id": "symbol-ref::replace",
+      "label": "replace",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L155"
+    },
+    {
+      "id": "symbol-ref::original_missing_flags.sum.astype",
+      "label": "original_missing_flags.sum.astype",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L156"
+    },
+    {
+      "id": "symbol-ref::original_missing_flags.sum",
+      "label": "original_missing_flags.sum",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L156"
+    },
+    {
+      "id": "symbol-ref::where",
+      "label": "where",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L158"
+    },
+    {
+      "id": "symbol-ref::isin",
+      "label": "isin",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L159"
+    },
+    {
+      "id": "symbol-ref::value_counts.head",
+      "label": "value_counts.head",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L159"
+    },
+    {
+      "id": "symbol-ref::value_counts",
+      "label": "value_counts",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L159"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "label": "apply_layout",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L174"
+    },
+    {
+      "id": "symbol-ref::fig.update_layout",
+      "label": "fig.update_layout",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L175"
+    },
+    {
+      "id": "symbol-ref::dict",
+      "label": "dict",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L179"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "label": "save_figure",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L186"
+    },
+    {
+      "id": "symbol-ref::fig.write_html",
+      "label": "fig.write_html",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L188"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::correlation_table",
+      "label": "correlation_table",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L192"
+    },
+    {
+      "id": "symbol-ref::sort_values",
+      "label": "sort_values",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L210"
+    },
+    {
+      "id": "symbol-ref::numeric.corr",
+      "label": "numeric.corr",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L210"
+    },
+    {
+      "id": "symbol-ref::corr.reset_index.rename",
+      "label": "corr.reset_index.rename",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L211"
+    },
+    {
+      "id": "symbol-ref::corr.reset_index",
+      "label": "corr.reset_index",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L211"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "label": "build_figures",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L214"
+    },
+    {
+      "id": "symbol-ref::ASSET_DIR.mkdir",
+      "label": "ASSET_DIR.mkdir",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L215"
+    },
+    {
+      "id": "symbol-ref::pd.DataFrame",
+      "label": "pd.DataFrame",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L218"
+    },
+    {
+      "id": "symbol-ref::nunique",
+      "label": "nunique",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L236"
+    },
+    {
+      "id": "symbol-ref::go.Figure",
+      "label": "go.Figure",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L246"
+    },
+    {
+      "id": "symbol-ref::go.Table",
+      "label": "go.Table",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L248"
+    },
+    {
+      "id": "symbol-ref::list",
+      "label": "list",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L249"
+    },
+    {
+      "id": "symbol-ref::value_counts.head.reset_index.rename",
+      "label": "value_counts.head.reset_index.rename",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L257"
+    },
+    {
+      "id": "symbol-ref::value_counts.head.reset_index",
+      "label": "value_counts.head.reset_index",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L257"
+    },
+    {
+      "id": "symbol-ref::px.bar",
+      "label": "px.bar",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L259"
+    },
+    {
+      "id": "symbol-ref::brand_bar.update_traces",
+      "label": "brand_bar.update_traces",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L268"
+    },
+    {
+      "id": "symbol-ref::brand_bar.update_layout",
+      "label": "brand_bar.update_layout",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L269"
+    },
+    {
+      "id": "symbol-ref::value_counts.reset_index.rename",
+      "label": "value_counts.reset_index.rename",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L272"
+    },
+    {
+      "id": "symbol-ref::value_counts.reset_index",
+      "label": "value_counts.reset_index",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L272"
+    },
+    {
+      "id": "symbol-ref::px.pie",
+      "label": "px.pie",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L273"
+    },
+    {
+      "id": "symbol-ref::fuel_pie.update_traces",
+      "label": "fuel_pie.update_traces",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L281"
+    },
+    {
+      "id": "symbol-ref::make_subplots",
+      "label": "make_subplots",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L284"
+    },
+    {
+      "id": "symbol-ref::dist_fig.add_trace",
+      "label": "dist_fig.add_trace",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L292"
+    },
+    {
+      "id": "symbol-ref::go.Histogram",
+      "label": "go.Histogram",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L293"
+    },
+    {
+      "id": "symbol-ref::dist_fig.update_xaxes",
+      "label": "dist_fig.update_xaxes",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L304"
+    },
+    {
+      "id": "symbol-ref::dist_fig.update_yaxes",
+      "label": "dist_fig.update_yaxes",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L308"
+    },
+    {
+      "id": "symbol-ref::px.scatter",
+      "label": "px.scatter",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L321"
+    },
+    {
+      "id": "symbol-ref::groupby.agg.sort_values",
+      "label": "groupby.agg.sort_values",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L338"
+    },
+    {
+      "id": "symbol-ref::groupby.agg",
+      "label": "groupby.agg",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L338"
+    },
+    {
+      "id": "symbol-ref::groupby",
+      "label": "groupby",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L338"
+    },
+    {
+      "id": "symbol-ref::brand_metric_fig.add_trace",
+      "label": "brand_metric_fig.add_trace",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L344"
+    },
+    {
+      "id": "symbol-ref::go.Bar",
+      "label": "go.Bar",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L345"
+    },
+    {
+      "id": "symbol-ref::go.Scatter",
+      "label": "go.Scatter",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L355"
+    },
+    {
+      "id": "symbol-ref::brand_metric_fig.update_xaxes",
+      "label": "brand_metric_fig.update_xaxes",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L376"
+    },
+    {
+      "id": "symbol-ref::brand_metric_fig.update_yaxes",
+      "label": "brand_metric_fig.update_yaxes",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L377"
+    },
+    {
+      "id": "symbol-ref::df.groupby.agg",
+      "label": "df.groupby.agg",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L385"
+    },
+    {
+      "id": "symbol-ref::df.groupby",
+      "label": "df.groupby",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L385"
+    },
+    {
+      "id": "symbol-ref::body_drive_fig.update_layout",
+      "label": "body_drive_fig.update_layout",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L398"
+    },
+    {
+      "id": "symbol-ref::corr",
+      "label": "corr",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L404"
+    },
+    {
+      "id": "symbol-ref::go.Heatmap",
+      "label": "go.Heatmap",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L409"
+    },
+    {
+      "id": "symbol-ref::df.groupby.agg.sort_values",
+      "label": "df.groupby.agg.sort_values",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L425"
+    },
+    {
+      "id": "symbol-ref::line_fig.add_trace",
+      "label": "line_fig.add_trace",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L430"
+    },
+    {
+      "id": "symbol-ref::line_fig.update_xaxes",
+      "label": "line_fig.update_xaxes",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L460"
+    },
+    {
+      "id": "symbol-ref::line_fig.update_yaxes",
+      "label": "line_fig.update_yaxes",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L461"
+    },
+    {
+      "id": "symbol-ref::s.value_counts.head",
+      "label": "s.value_counts.head",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L475"
+    },
+    {
+      "id": "symbol-ref::s.value_counts",
+      "label": "s.value_counts",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L475"
+    },
+    {
+      "id": "symbol-ref::pd.Categorical",
+      "label": "pd.Categorical",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L478"
+    },
+    {
+      "id": "symbol-ref::segment_summary.sort_values",
+      "label": "segment_summary.sort_values",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L479"
+    },
+    {
+      "id": "symbol-ref::segment_fig.update_layout",
+      "label": "segment_fig.update_layout",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L491"
+    },
+    {
+      "id": "symbol-ref::value_map.update_layout",
+      "label": "value_map.update_layout",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L505"
+    },
+    {
+      "id": "symbol-ref::round",
+      "label": "round",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L523"
+    },
+    {
+      "id": "symbol-ref::correlation_table.query.assign.sort_values.head",
+      "label": "correlation_table.query.assign.sort_values.head",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L541"
+    },
+    {
+      "id": "symbol-ref::correlation_table.query.assign.sort_values",
+      "label": "correlation_table.query.assign.sort_values",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L541"
+    },
+    {
+      "id": "symbol-ref::correlation_table.query.assign",
+      "label": "correlation_table.query.assign",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L541"
+    },
+    {
+      "id": "symbol-ref::correlation_table.query",
+      "label": "correlation_table.query",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L541"
+    },
+    {
+      "id": "symbol-ref::abs",
+      "label": "abs",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L543"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "label": "fig_block",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L550"
+    },
+    {
+      "id": "symbol-ref::resolve.as_posix",
+      "label": "resolve.as_posix",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L551"
+    },
+    {
+      "id": "symbol-ref::resolve",
+      "label": "resolve",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L551"
+    },
+    {
+      "id": "symbol-ref::dedent.strip",
+      "label": "dedent.strip",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L552"
+    },
+    {
+      "id": "symbol-ref::dedent",
+      "label": "dedent",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L552"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::dataframe_to_markdown",
+      "label": "dataframe_to_markdown",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L564"
+    },
+    {
+      "id": "symbol-ref::df.to_markdown",
+      "label": "df.to_markdown",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L565"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "label": "build_markdown_report",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L568"
+    },
+    {
+      "id": "symbol-ref::pd.DataFrame.query.sort_values",
+      "label": "pd.DataFrame.query.sort_values",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L570"
+    },
+    {
+      "id": "symbol-ref::pd.DataFrame.query",
+      "label": "pd.DataFrame.query",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L570"
+    },
+    {
+      "id": "symbol-ref::keys",
+      "label": "keys",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L572"
+    },
+    {
+      "id": "symbol-ref::values",
+      "label": "values",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L573"
+    },
+    {
+      "id": "symbol-ref::OUT_HTML.resolve.as_posix",
+      "label": "OUT_HTML.resolve.as_posix",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L613"
+    },
+    {
+      "id": "symbol-ref::OUT_HTML.resolve",
+      "label": "OUT_HTML.resolve",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L613"
+    },
+    {
+      "id": "symbol-ref::RAW_CSV.resolve.as_posix",
+      "label": "RAW_CSV.resolve.as_posix",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L617"
+    },
+    {
+      "id": "symbol-ref::RAW_CSV.resolve",
+      "label": "RAW_CSV.resolve",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L617"
+    },
+    {
+      "id": "symbol-ref::OUT_CSV.resolve.as_posix",
+      "label": "OUT_CSV.resolve.as_posix",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L620"
+    },
+    {
+      "id": "symbol-ref::OUT_CSV.resolve",
+      "label": "OUT_CSV.resolve",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L620"
+    },
+    {
+      "id": "symbol-ref::assign",
+      "label": "assign",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L720"
+    },
+    {
+      "id": "symbol-ref::Path.cwd",
+      "label": "Path.cwd",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L727"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::build_dashboard_html",
+      "label": "build_dashboard_html",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L764"
+    },
+    {
+      "id": "symbol-ref::html_parts.append",
+      "label": "html_parts.append",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L777"
+    },
+    {
+      "id": "symbol-ref::to_html",
+      "label": "to_html",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L779"
+    },
+    {
+      "id": "symbol::_/16/imports85_plotly_report.py::main",
+      "label": "main",
+      "kind": "function",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L785"
+    },
+    {
+      "id": "symbol-ref::print",
+      "label": "print",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L787"
+    },
+    {
+      "id": "symbol-ref::df.to_csv",
+      "label": "df.to_csv",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L788"
+    },
+    {
+      "id": "symbol-ref::OUT_MD.write_text",
+      "label": "OUT_MD.write_text",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L793"
+    },
+    {
+      "id": "symbol-ref::OUT_HTML.write_text",
+      "label": "OUT_HTML.write_text",
+      "kind": "symbol_ref",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L794"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "import::__future",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L2"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "import::textwrap",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "import::pandas",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L7"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "import::plotly.express",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L8"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "import::plotly.graph_objects",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L9"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "import::plotly.subplots",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L10"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol-ref::Path.resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L13"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L13"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L70"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::pd.read_csv",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::column.strip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L72"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::astype.str.strip.isin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L74"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::astype.str.strip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L74"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::astype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L74"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::copy",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L75"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::meta_mask.sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.replace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L78"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::pd.to_numeric",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::astype.str.strip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L82"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::astype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L82"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.isna.sum.to_dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L84"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.isna.sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L84"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.isna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L84"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.isna.copy",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L85"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.isna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L85"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::agg",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::s.mode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L89"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::s.mode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L89"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::mode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L91"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.apply",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::pd.isna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L95"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::group_mode.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L94"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::transform",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::fillna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::transform",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L105"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L105"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::fillna.fillna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::fillna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::median",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::transform",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L109"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L109"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::fillna.fillna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L110"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::fillna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L110"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::median",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L110"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::transform",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L112"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::fillna.fillna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L113"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::fillna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L113"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::median",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L113"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::isna.any",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L116"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::isna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L116"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::mode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L117"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::mode",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L117"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::fillna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L118"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::isna.any",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L121"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::isna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L121"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::fillna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::median",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::quantile",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L131"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::quantile",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L132"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::quantile",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L133"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::quantile",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L134"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::median",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L135"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data.classify_segment",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L137"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data.classify_segment",
+      "target": "symbol-ref::median",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L142"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.apply",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L146"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::pd.qcut",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L147"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::astype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L148"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::original_missing_flags.apply",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L151"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L152"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::row.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L152"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::bool",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L152"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::replace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L155"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::original_missing_flags.sum.astype",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L156"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::original_missing_flags.sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L156"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::where",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L158"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::isin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L159"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::value_counts.head",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L159"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::value_counts",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L159"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L164"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L165"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::int",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L167"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.isna.sum.to_dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L169"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.isna.sum",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L169"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "target": "symbol-ref::cleaned.isna",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L169"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L174"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "target": "symbol-ref::fig.update_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L175"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L179"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L180"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L181"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L186"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "target": "symbol-ref::fig.write_html",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L188"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::correlation_table",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L192"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::correlation_table",
+      "target": "symbol-ref::sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L210"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::correlation_table",
+      "target": "symbol-ref::numeric.corr",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L210"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::correlation_table",
+      "target": "symbol-ref::corr.reset_index.rename",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L211"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::correlation_table",
+      "target": "symbol-ref::corr.reset_index",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L211"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L214"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::ASSET_DIR.mkdir",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L215"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::pd.DataFrame",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L218"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::nunique",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L236"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::nunique",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L237"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::nunique",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L238"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::nunique",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L239"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::median",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L240"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::median",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L241"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::median",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L242"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L246"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Table",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L248"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L249"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L249"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L249"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L250"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L254"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L254"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::value_counts.head.reset_index.rename",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L257"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::value_counts.head.reset_index",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L257"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::value_counts.head",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L257"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::value_counts",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L257"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::px.bar",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L259"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::brand_bar.update_traces",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L268"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::brand_bar.update_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L269"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L270"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L270"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::value_counts.reset_index.rename",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L272"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::value_counts.reset_index",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L272"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::value_counts",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L272"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::px.pie",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L273"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::fuel_pie.update_traces",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L281"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L282"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L282"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::make_subplots",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L284"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dist_fig.add_trace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L292"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Histogram",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L293"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dist_fig.update_xaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L304"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dist_fig.update_xaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L305"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dist_fig.update_xaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L306"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dist_fig.update_xaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L307"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dist_fig.update_yaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L308"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L309"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L310"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::px.scatter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L321"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::fig.update_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L333"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L334"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L334"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::value_counts.head",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L336"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::value_counts",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L336"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::groupby.agg.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L338"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::groupby.agg",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L338"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L338"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::isin",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L338"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::make_subplots",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L343"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::brand_metric_fig.add_trace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L344"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Bar",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L345"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::brand_metric_fig.add_trace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L354"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Scatter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L355"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L360"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::brand_metric_fig.add_trace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L365"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Scatter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L366"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L371"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::brand_metric_fig.update_xaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L376"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::brand_metric_fig.update_yaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L377"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::brand_metric_fig.update_yaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L378"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L379"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L380"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::df.groupby.agg",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L385"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::df.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L385"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::px.bar",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L388"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::body_drive_fig.update_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L398"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L399"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L400"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::corr",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L404"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L407"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Heatmap",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L409"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L419"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L420"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::df.groupby.agg.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L425"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::df.groupby.agg",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L425"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::df.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L425"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::make_subplots",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L429"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::line_fig.add_trace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L430"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Scatter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L431"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L436"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::line_fig.add_trace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L440"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Scatter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L441"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L446"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::line_fig.add_trace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L450"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Scatter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L451"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L456"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::line_fig.update_xaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L460"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::line_fig.update_yaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L461"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::line_fig.update_yaxes",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L462"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L463"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L464"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::df.groupby.agg",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L469"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::df.groupby",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L469"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L475"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::s.value_counts.head",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L475"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::s.value_counts",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L475"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::pd.Categorical",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L478"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::segment_summary.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L479"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::px.scatter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L480"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::segment_fig.update_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L491"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L492"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L492"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::px.scatter",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L494"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::value_map.update_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L505"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L506"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L507"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L511"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::go.Table",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L513"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L514"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L517"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::dict",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L519"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L523"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L524"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L525"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::save_figure",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L533"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::apply_layout",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L533"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::correlation_table",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L540"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::correlation_table.query.assign.sort_values.head",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L541"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::correlation_table.query.assign.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L541"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::correlation_table.query.assign",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L541"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::correlation_table.query",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L541"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol::_/16/imports85_plotly_report.py::correlation_table",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L541"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "target": "symbol-ref::abs",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L543"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L550"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "target": "symbol-ref::resolve.as_posix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L551"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "target": "symbol-ref::resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L551"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "target": "symbol-ref::dedent.strip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L552"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "target": "symbol-ref::dedent",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L552"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::dataframe_to_markdown",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L564"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::dataframe_to_markdown",
+      "target": "symbol-ref::df.to_markdown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L565"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L568"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::pd.DataFrame.query.sort_values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L570"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::pd.DataFrame.query",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L570"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::pd.DataFrame",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L570"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L572"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::keys",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L572"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::list",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L573"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L573"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::keys",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L574"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::pd.DataFrame",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L580"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::copy",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L599"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L600"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::OUT_HTML.resolve.as_posix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L613"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::OUT_HTML.resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L613"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::RAW_CSV.resolve.as_posix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L617"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::RAW_CSV.resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L617"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::OUT_CSV.resolve.as_posix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L620"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::OUT_CSV.resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L620"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L629"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::dataframe_to_markdown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L632"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::dataframe_to_markdown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L635"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::dataframe_to_markdown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L647"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L658"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L660"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L662"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L665"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L667"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L669"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L671"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L674"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L676"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L679"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L681"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L683"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L685"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::fig_block",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L687"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::dataframe_to_markdown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L720"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::assign",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L720"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L720"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol::_/16/imports85_plotly_report.py::dataframe_to_markdown",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L723"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::assign",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L723"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L723"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L723"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L723"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::resolve.as_posix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L726"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L726"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::resolve.as_posix",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L727"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L727"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "target": "symbol-ref::Path.cwd",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L727"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::build_dashboard_html",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L764"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_dashboard_html",
+      "target": "symbol-ref::html_parts.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L777"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_dashboard_html",
+      "target": "symbol-ref::to_html",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L779"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_dashboard_html",
+      "target": "symbol-ref::html_parts.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L780"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_dashboard_html",
+      "target": "symbol-ref::html_parts.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L781"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::build_dashboard_html",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L782"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::main",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L785"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L786"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L787"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol-ref::df.to_csv",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L788"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L789"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol::_/16/imports85_plotly_report.py::build_figures",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L790"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L791"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol::_/16/imports85_plotly_report.py::build_markdown_report",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L792"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol-ref::OUT_MD.write_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L793"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol-ref::OUT_HTML.write_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L794"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol::_/16/imports85_plotly_report.py::build_dashboard_html",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L794"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L795"
+    },
+    {
+      "source": "symbol::_/16/imports85_plotly_report.py::main",
+      "target": "symbol-ref::print",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L796"
+    },
+    {
+      "source": "module::_/16/imports85_plotly_report.py",
+      "target": "symbol::_/16/imports85_plotly_report.py::main",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "실습결과물/16/imports85_plotly_report.py",
+      "source_file": "실습결과물/16/imports85_plotly_report.py",
+      "source_location": "L800"
+    }
+  ],
+  "language": "python",
+  "path": "실습결과물/16/imports85_plotly_report.py"
+}

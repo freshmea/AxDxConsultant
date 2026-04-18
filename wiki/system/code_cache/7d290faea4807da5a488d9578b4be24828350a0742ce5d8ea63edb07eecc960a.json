@@ -1,0 +1,1223 @@
+{
+  "nodes": [
+    {
+      "id": "module::llm_wiki/code_extractors.py",
+      "label": "code_extractors.py",
+      "kind": "module",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::__future",
+      "label": "__future__",
+      "kind": "import",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::ast",
+      "label": "ast",
+      "kind": "import",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::re",
+      "label": "re",
+      "kind": "import",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "import::typing",
+      "label": "typing",
+      "kind": "import",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L6",
+      "external": true
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "label": "_make_id",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L9"
+    },
+    {
+      "id": "symbol-ref::join",
+      "label": "join",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L10"
+    },
+    {
+      "id": "symbol-ref::re.sub",
+      "label": "re.sub",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "symbol-ref::cleaned.strip",
+      "label": "cleaned.strip",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L12"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_module_node_id",
+      "label": "_module_node_id",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L15"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_symbol_node_id",
+      "label": "_symbol_node_id",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor",
+      "label": "_PythonExtractor",
+      "kind": "class",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol-ref::ast.NodeVisitor",
+      "label": "ast.NodeVisitor",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.__init",
+      "label": "_PythonExtractor.__init__",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "symbol-ref::set",
+      "label": "set",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L31"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.extract",
+      "label": "_PythonExtractor.extract",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L33"
+    },
+    {
+      "id": "symbol-ref::ast.parse",
+      "label": "ast.parse",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L34"
+    },
+    {
+      "id": "symbol-ref::self._add_node",
+      "label": "self._add_node",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "symbol-ref::Path",
+      "label": "Path",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L37"
+    },
+    {
+      "id": "symbol-ref::self.generic_visit",
+      "label": "self.generic_visit",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._qualname",
+      "label": "_PythonExtractor._qualname",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._add_node",
+      "label": "_PythonExtractor._add_node",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L47"
+    },
+    {
+      "id": "symbol-ref::self._seen_nodes.add",
+      "label": "self._seen_nodes.add",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L50"
+    },
+    {
+      "id": "symbol-ref::self.nodes.append",
+      "label": "self.nodes.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L60"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._add_edge",
+      "label": "_PythonExtractor._add_edge",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L62"
+    },
+    {
+      "id": "symbol-ref::self.edges.append",
+      "label": "self.edges.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L71"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._register_symbol",
+      "label": "_PythonExtractor._register_symbol",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L83"
+    },
+    {
+      "id": "symbol-ref::self._qualname",
+      "label": "self._qualname",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L84"
+    },
+    {
+      "id": "symbol-ref::self._add_edge",
+      "label": "self._add_edge",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L89"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Import",
+      "label": "_PythonExtractor.visit_Import",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L92"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ImportFrom",
+      "label": "_PythonExtractor.visit_ImportFrom",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L99"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "label": "_PythonExtractor.visit_ClassDef",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L107"
+    },
+    {
+      "id": "symbol-ref::self._register_symbol",
+      "label": "self._register_symbol",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L108"
+    },
+    {
+      "id": "symbol-ref::self._expr_name",
+      "label": "self._expr_name",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L110"
+    },
+    {
+      "id": "symbol-ref::self.local_defs.get",
+      "label": "self.local_defs.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L113"
+    },
+    {
+      "id": "symbol-ref::getattr",
+      "label": "getattr",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L114"
+    },
+    {
+      "id": "symbol-ref::self.scope_stack.append",
+      "label": "self.scope_stack.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L116"
+    },
+    {
+      "id": "symbol-ref::self.scope_stack.pop",
+      "label": "self.scope_stack.pop",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L118"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_FunctionDef",
+      "label": "_PythonExtractor.visit_FunctionDef",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L120"
+    },
+    {
+      "id": "symbol-ref::self.visit",
+      "label": "self.visit",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L124"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_AsyncFunctionDef",
+      "label": "_PythonExtractor.visit_AsyncFunctionDef",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L128"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "label": "_PythonExtractor.visit_Call",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L136"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._expr_name",
+      "label": "_PythonExtractor._expr_name",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L146"
+    },
+    {
+      "id": "symbol-ref::isinstance",
+      "label": "isinstance",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L147"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::extract_python",
+      "label": "extract_python",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L157"
+    },
+    {
+      "id": "symbol-ref::path.read_text",
+      "label": "path.read_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L158"
+    },
+    {
+      "id": "symbol-ref::extractor.extract",
+      "label": "extractor.extract",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L160"
+    },
+    {
+      "id": "symbol::llm_wiki/code_extractors.py::extract_code_file",
+      "label": "extract_code_file",
+      "kind": "function",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L166"
+    },
+    {
+      "id": "symbol-ref::path.suffix.lower",
+      "label": "path.suffix.lower",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L167"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "import::__future",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "import::ast",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "import::re",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "import::typing",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L6"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L9"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L10"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "target": "symbol-ref::re.sub",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L11"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "target": "symbol-ref::cleaned.strip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L12"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_module_node_id",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L15"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_module_node_id",
+      "target": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L16"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_symbol_node_id",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L19"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_symbol_node_id",
+      "target": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L20"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor",
+      "target": "symbol-ref::ast.NodeVisitor",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L23"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.__init",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L24"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.__init",
+      "target": "symbol::llm_wiki/code_extractors.py::_module_node_id",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L28"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.__init",
+      "target": "symbol-ref::set",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L31"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.extract",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L33"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.extract",
+      "target": "symbol-ref::ast.parse",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L34"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.extract",
+      "target": "symbol-ref::self._add_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L35"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.extract",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L37"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.extract",
+      "target": "symbol-ref::self.generic_visit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L41"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._qualname",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L44"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._qualname",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L45"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._add_node",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L47"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._add_node",
+      "target": "symbol-ref::self._seen_nodes.add",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L50"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._add_node",
+      "target": "symbol-ref::self.nodes.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L60"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._add_edge",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L62"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._add_edge",
+      "target": "symbol-ref::self.edges.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L71"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._register_symbol",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L83"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._register_symbol",
+      "target": "symbol-ref::self._qualname",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L84"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._register_symbol",
+      "target": "symbol::llm_wiki/code_extractors.py::_symbol_node_id",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L85"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._register_symbol",
+      "target": "symbol-ref::self._add_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._register_symbol",
+      "target": "symbol-ref::self._add_edge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L89"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Import",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Import",
+      "target": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L95"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Import",
+      "target": "symbol-ref::self._add_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L96"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Import",
+      "target": "symbol-ref::self._add_edge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L97"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ImportFrom",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ImportFrom",
+      "target": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L103"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ImportFrom",
+      "target": "symbol-ref::self._add_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L104"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ImportFrom",
+      "target": "symbol-ref::self._add_edge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L105"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L107"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol-ref::self._register_symbol",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L108"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol-ref::self._expr_name",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L110"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol-ref::self.local_defs.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L113"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L113"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol-ref::self._add_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L114"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol-ref::getattr",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L114"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol-ref::self._add_edge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L115"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol-ref::getattr",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L115"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol-ref::self.scope_stack.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L116"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol-ref::self.generic_visit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L117"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_ClassDef",
+      "target": "symbol-ref::self.scope_stack.pop",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L118"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_FunctionDef",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L120"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_FunctionDef",
+      "target": "symbol-ref::self._register_symbol",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L121"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_FunctionDef",
+      "target": "symbol-ref::self.scope_stack.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_FunctionDef",
+      "target": "symbol-ref::self.visit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L124"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_FunctionDef",
+      "target": "symbol-ref::self.scope_stack.pop",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L125"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_AsyncFunctionDef",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L128"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_AsyncFunctionDef",
+      "target": "symbol-ref::self._register_symbol",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L129"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_AsyncFunctionDef",
+      "target": "symbol-ref::self.scope_stack.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L130"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_AsyncFunctionDef",
+      "target": "symbol-ref::self.visit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L132"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_AsyncFunctionDef",
+      "target": "symbol-ref::self.scope_stack.pop",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L133"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L136"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol-ref::join",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L137"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L137"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol-ref::self.local_defs.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L138"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol-ref::self._expr_name",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L139"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol-ref::self.local_defs.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L141"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol::llm_wiki/code_extractors.py::_make_id",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L141"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol-ref::self._add_node",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L142"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol-ref::getattr",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L142"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol-ref::self._add_edge",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L143"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol-ref::getattr",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L143"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor.visit_Call",
+      "target": "symbol-ref::self.generic_visit",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L144"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._expr_name",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L146"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._expr_name",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L147"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._expr_name",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L149"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._expr_name",
+      "target": "symbol-ref::self._expr_name",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L150"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._expr_name",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L152"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::_PythonExtractor._expr_name",
+      "target": "symbol-ref::self._expr_name",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L153"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::extract_python",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L157"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::extract_python",
+      "target": "symbol-ref::path.read_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L158"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::extract_python",
+      "target": "symbol::llm_wiki/code_extractors.py::_PythonExtractor",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L159"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::extract_python",
+      "target": "symbol-ref::extractor.extract",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L160"
+    },
+    {
+      "source": "module::llm_wiki/code_extractors.py",
+      "target": "symbol::llm_wiki/code_extractors.py::extract_code_file",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L166"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::extract_code_file",
+      "target": "symbol-ref::path.suffix.lower",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L167"
+    },
+    {
+      "source": "symbol::llm_wiki/code_extractors.py::extract_code_file",
+      "target": "symbol::llm_wiki/code_extractors.py::extract_python",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/code_extractors.py",
+      "source_file": "llm_wiki/code_extractors.py",
+      "source_location": "L169"
+    }
+  ],
+  "language": "python",
+  "path": "llm_wiki/code_extractors.py"
+}

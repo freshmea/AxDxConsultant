@@ -1,0 +1,1151 @@
+{
+  "nodes": [
+    {
+      "id": "module::llm_wiki/obsidian_bridge.py",
+      "label": "obsidian_bridge.py",
+      "kind": "module",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "import::__future",
+      "label": "__future__",
+      "kind": "import",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L1",
+      "external": true
+    },
+    {
+      "id": "import::json",
+      "label": "json",
+      "kind": "import",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L3",
+      "external": true
+    },
+    {
+      "id": "import::datetime",
+      "label": "datetime",
+      "kind": "import",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L4",
+      "external": true
+    },
+    {
+      "id": "import::pathlib",
+      "label": "pathlib",
+      "kind": "import",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L5",
+      "external": true
+    },
+    {
+      "id": "import::typing",
+      "label": "typing",
+      "kind": "import",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L6",
+      "external": true
+    },
+    {
+      "id": "symbol-ref::Path",
+      "label": "Path",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L9"
+    },
+    {
+      "id": "symbol::llm_wiki/obsidian_bridge.py::obsidian_cache_path",
+      "label": "obsidian_cache_path",
+      "kind": "function",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "symbol::llm_wiki/obsidian_bridge.py::_load_json",
+      "label": "_load_json",
+      "kind": "function",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "symbol-ref::json.loads",
+      "label": "json.loads",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "symbol-ref::path.read_text",
+      "label": "path.read_text",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L21"
+    },
+    {
+      "id": "symbol::llm_wiki/obsidian_bridge.py::_load_ajson",
+      "label": "_load_ajson",
+      "kind": "function",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L24"
+    },
+    {
+      "id": "symbol-ref::path.read_text.strip",
+      "label": "path.read_text.strip",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L25"
+    },
+    {
+      "id": "symbol-ref::text.startswith",
+      "label": "text.startswith",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L28"
+    },
+    {
+      "id": "symbol-ref::text.rstrip",
+      "label": "text.rstrip",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L30"
+    },
+    {
+      "id": "symbol::llm_wiki/obsidian_bridge.py::_cosine_similarity",
+      "label": "_cosine_similarity",
+      "kind": "function",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L34"
+    },
+    {
+      "id": "symbol-ref::zip",
+      "label": "zip",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L38"
+    },
+    {
+      "id": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "label": "_active_model",
+      "kind": "function",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L47"
+    },
+    {
+      "id": "symbol-ref::settings_path.exists",
+      "label": "settings_path.exists",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L50"
+    },
+    {
+      "id": "symbol-ref::models_path.exists",
+      "label": "models_path.exists",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L50"
+    },
+    {
+      "id": "symbol-ref::get",
+      "label": "get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L54"
+    },
+    {
+      "id": "symbol-ref::isinstance",
+      "label": "isinstance",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L55"
+    },
+    {
+      "id": "symbol-ref::settings.get",
+      "label": "settings.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L55"
+    },
+    {
+      "id": "symbol-ref::models.get",
+      "label": "models.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L59"
+    },
+    {
+      "id": "symbol-ref::model_record.get",
+      "label": "model_record.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L64"
+    },
+    {
+      "id": "symbol::llm_wiki/obsidian_bridge.py::_iter_source_records",
+      "label": "_iter_source_records",
+      "kind": "function",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L70"
+    },
+    {
+      "id": "symbol-ref::multi_root.exists",
+      "label": "multi_root.exists",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L72"
+    },
+    {
+      "id": "symbol-ref::multi_root.glob",
+      "label": "multi_root.glob",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L74"
+    },
+    {
+      "id": "symbol-ref::payload.items",
+      "label": "payload.items",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L79"
+    },
+    {
+      "id": "symbol-ref::key.startswith",
+      "label": "key.startswith",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L80"
+    },
+    {
+      "id": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "label": "build_obsidian_semantic_cache",
+      "kind": "function",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L85"
+    },
+    {
+      "id": "symbol-ref::str.strip",
+      "label": "str.strip",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L88"
+    },
+    {
+      "id": "symbol-ref::str",
+      "label": "str",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L88"
+    },
+    {
+      "id": "symbol-ref::model.get",
+      "label": "model.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L88"
+    },
+    {
+      "id": "symbol-ref::str.replace",
+      "label": "str.replace",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L92"
+    },
+    {
+      "id": "symbol-ref::record.get",
+      "label": "record.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L92"
+    },
+    {
+      "id": "symbol-ref::embeddings.get",
+      "label": "embeddings.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L99"
+    },
+    {
+      "id": "symbol-ref::next",
+      "label": "next",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L101"
+    },
+    {
+      "id": "symbol-ref::embeddings.values",
+      "label": "embeddings.values",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L101"
+    },
+    {
+      "id": "symbol-ref::item.get",
+      "label": "item.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L101"
+    },
+    {
+      "id": "symbol-ref::active_embedding.get",
+      "label": "active_embedding.get",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L105"
+    },
+    {
+      "id": "symbol-ref::source_vectors.append",
+      "label": "source_vectors.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L110"
+    },
+    {
+      "id": "symbol-ref::datetime.now.isoformat",
+      "label": "datetime.now.isoformat",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L122"
+    },
+    {
+      "id": "symbol-ref::datetime.now",
+      "label": "datetime.now",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L122"
+    },
+    {
+      "id": "symbol-ref::scored.append",
+      "label": "scored.append",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L140"
+    },
+    {
+      "id": "symbol-ref::round",
+      "label": "round",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L145"
+    },
+    {
+      "id": "symbol-ref::scored.sort",
+      "label": "scored.sort",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L148"
+    },
+    {
+      "id": "symbol-ref::float",
+      "label": "float",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L148"
+    },
+    {
+      "id": "symbol-ref::len",
+      "label": "len",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L150"
+    },
+    {
+      "id": "symbol-ref::resolve",
+      "label": "resolve",
+      "kind": "symbol_ref",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L162"
+    }
+  ],
+  "edges": [
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "import::__future",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L1"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "import::json",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L3"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "import::datetime",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L4"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "import::pathlib",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L5"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "import::typing",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L6"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L9"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L11"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "symbol-ref::Path",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L12"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::obsidian_cache_path",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L16"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_load_json",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L20"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_load_json",
+      "target": "symbol-ref::json.loads",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L21"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_load_json",
+      "target": "symbol-ref::path.read_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L21"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_load_ajson",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L24"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_load_ajson",
+      "target": "symbol-ref::path.read_text.strip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_load_ajson",
+      "target": "symbol-ref::path.read_text",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L25"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_load_ajson",
+      "target": "symbol-ref::text.startswith",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L28"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_load_ajson",
+      "target": "symbol-ref::json.loads",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L29"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_load_ajson",
+      "target": "symbol-ref::text.rstrip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L30"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_load_ajson",
+      "target": "symbol-ref::json.loads",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L31"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_cosine_similarity",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L34"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_cosine_similarity",
+      "target": "symbol-ref::zip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L38"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L47"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::settings_path.exists",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L50"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::models_path.exists",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L50"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_load_json",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L52"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_load_ajson",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L53"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L54"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L55"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::settings.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L55"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::settings.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L55"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::models.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L59"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L60"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::model_record.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L64"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::model_record.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L65"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "target": "symbol-ref::model_record.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L66"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_iter_source_records",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L70"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_iter_source_records",
+      "target": "symbol-ref::multi_root.exists",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L72"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_iter_source_records",
+      "target": "symbol-ref::multi_root.glob",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L74"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_iter_source_records",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_load_ajson",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L76"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_iter_source_records",
+      "target": "symbol-ref::payload.items",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L79"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_iter_source_records",
+      "target": "symbol-ref::key.startswith",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::_iter_source_records",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L80"
+    },
+    {
+      "source": "module::llm_wiki/obsidian_bridge.py",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "relation": "defines",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L85"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_active_model",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L87"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::str.strip",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::model.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L88"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_iter_source_records",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L91"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::str.replace",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::record.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L92"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::record.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L95"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L96"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::embeddings.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L99"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L100"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::next",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::embeddings.values",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::item.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L101"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L102"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::active_embedding.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L105"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L106"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::source_vectors.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L110"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L116"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::isinstance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L116"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::record.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L116"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::record.get",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L116"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::datetime.now.isoformat",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::datetime.now",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L122"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol::llm_wiki/obsidian_bridge.py::_cosine_similarity",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L137"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::scored.append",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L140"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::round",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L145"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::scored.sort",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L148"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::float",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L148"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L148"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L150"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L151"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::datetime.now.isoformat",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L159"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::datetime.now",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L159"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::str",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L162"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::resolve",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L162"
+    },
+    {
+      "source": "symbol::llm_wiki/obsidian_bridge.py::build_obsidian_semantic_cache",
+      "target": "symbol-ref::len",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "path": "llm_wiki/obsidian_bridge.py",
+      "source_file": "llm_wiki/obsidian_bridge.py",
+      "source_location": "L166"
+    }
+  ],
+  "language": "python",
+  "path": "llm_wiki/obsidian_bridge.py"
+}

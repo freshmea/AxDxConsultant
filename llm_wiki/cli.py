@@ -11,8 +11,83 @@ from pathlib import Path
 from typing import Dict, List
 
 from .indexer import build_index, tokenize, write_outputs
+from .code_query import (
+    code_context_for_query,
+    explain_node,
+    infer_relationship_between,
+    load_code_graph,
+    neighbors_for_node,
+    search_nodes,
+    shortest_path_between,
+)
 from .memory_layer import bootstrap_memory, check_ollama_models, memory_add, memory_search
 from .semantic import search_semantic
+
+
+CODE_QUERY_MARKERS = {
+    "function",
+    "class",
+    "module",
+    "import",
+    "call",
+    "caller",
+    "callee",
+    "path",
+    "code",
+    "graph",
+    "api",
+    "함수",
+    "클래스",
+    "모듈",
+    "코드",
+    "호출",
+    "관계",
+    "연결",
+    "경로",
+    "역할",
+}
+TECHNICAL_PAGE_PREFIXES = ("llm_wiki/", "memory_layer/", "skills/")
+
+
+def _definition_hits(code_context: Dict[str, object]) -> List[Dict[str, object]]:
+    return [
+        hit
+        for hit in code_context.get("hits", [])  # type: ignore[union-attr]
+        if str(hit.get("kind", "")) in {"function", "async_function", "class", "module"}
+    ]
+
+
+def classify_query(query: str, code_context: Dict[str, object]) -> Dict[str, object]:
+    lowered = query.lower()
+    reasons: List[str] = []
+    score = 0
+    definition_hits = _definition_hits(code_context)
+
+    if definition_hits:
+        score += 2
+        reasons.append("matched code definitions")
+    if len(definition_hits) >= 2:
+        score += 1
+        reasons.append("matched multiple code definitions")
+    if any(marker in lowered for marker in CODE_QUERY_MARKERS):
+        score += 1
+        reasons.append("contains code-oriented markers")
+    if any(marker in query for marker in ("_", ".py", "::", "/")):
+        score += 1
+        reasons.append("contains code-like identifiers")
+
+    return {
+        "mode": "code-first" if score >= 2 else "document-first",
+        "is_code_query": score >= 2,
+        "score": score,
+        "reasons": reasons,
+    }
+
+
+def is_technical_page(page_path: str) -> bool:
+    if page_path == "AGENTS.md":
+        return True
+    return any(page_path.startswith(prefix) for prefix in TECHNICAL_PAGE_PREFIXES)
 
 
 def emit_json(payload: Dict[str, object]) -> None:
@@ -35,9 +110,28 @@ def score_pages(repo_root: Path, cache: Dict[str, object], query: str, limit: in
     communities: Dict[str, Dict[str, object]] = cache.get("communities", {})  # type: ignore[assignment]
     scores: List[Dict[str, object]] = []
     total_tokens = sum(int(page["tokens_estimate"]) for page in pages.values())
-    semantic_hits = {item["id"]: item for item in search_semantic(repo_root / "wiki" / "system", query, limit=max(limit * 2, 8))}
+    code_graph: Dict[str, object] | None = None
+    try:
+        code_graph = load_code_graph(repo_root)
+        code_context = code_context_for_query(code_graph, query, limit=max(limit, 5))
+    except Exception:
+        code_context = {"hits": [], "files": [], "estimated_tokens": 0}
+    query_profile = classify_query(query, code_context)
+    semantic_limit = max(limit, 5) if query_profile["is_code_query"] else max(limit * 2, 8)
+    semantic_hits = {
+        item["id"]: item for item in search_semantic(repo_root / "wiki" / "system", query, limit=semantic_limit)
+    }
     community_scores: Dict[str, int] = {}
     provisional: List[Dict[str, object]] = []
+    code_path_bonus: Dict[str, float] = {}
+
+    for hit in code_context.get("hits", []):  # type: ignore[union-attr]
+        hit_path = str(hit.get("path", ""))
+        if not hit_path:
+            continue
+        top_dir = hit_path.split("/", 1)[0]
+        code_path_bonus[top_dir] = max(code_path_bonus.get(top_dir, 0.0), float(hit.get("score", 0)) * 0.5)
+        code_path_bonus[hit_path] = max(code_path_bonus.get(hit_path, 0.0), float(hit.get("score", 0)) * 0.75)
 
     for community_id, community in communities.items():
         community_text = " ".join(
@@ -64,8 +158,16 @@ def score_pages(repo_root: Path, cache: Dict[str, object], query: str, limit: in
         semantic_hit = semantic_hits.get(page_id)
         semantic_bonus = round(float(semantic_hit["semantic_score"]) * 12, 4) if semantic_hit else 0.0
         community_bonus = sum(community_scores.get(community_id, 0) for community_id in page.get("community_ids", []))
+        page_path = str(page.get("path", ""))
+        path_bonus = code_path_bonus.get(page_path, 0.0) + code_path_bonus.get(page_path.split("/", 1)[0], 0.0)
         semantic_score = direct + title_hits + heading_hits + tag_hits + topic_hits + entity_hits
-        total_score = semantic_score + semantic_bonus + community_bonus
+        if query_profile["is_code_query"]:
+            technical_page = is_technical_page(page_path)
+            if not technical_page:
+                continue
+            path_bonus += 3.0
+            semantic_bonus = round(semantic_bonus * 0.35, 4)
+        total_score = semantic_score + semantic_bonus + community_bonus + path_bonus
         if total_score <= 0:
             continue
         inbound_bonus = min(int(page["inbound_count"]), 5)
@@ -87,6 +189,7 @@ def score_pages(repo_root: Path, cache: Dict[str, object], query: str, limit: in
                     "lexical": semantic_score,
                     "semantic": semantic_bonus,
                     "community": community_bonus,
+                    "code": path_bonus,
                     "obsidian": 0.0,
                     "inbound": inbound_bonus,
                 },
@@ -106,10 +209,14 @@ def score_pages(repo_root: Path, cache: Dict[str, object], query: str, limit: in
             if not related_id or related_id == seed_id:
                 continue
             try:
-                bonus = round(float(related_score) * 4.0, 4)
+                scale = 0.5 if query_profile["is_code_query"] else 4.0
+                bonus = round(float(related_score) * scale, 4)
             except (TypeError, ValueError):
                 continue
             if bonus <= 0:
+                continue
+            related_path = str(pages.get(str(related_id), {}).get("path", ""))
+            if query_profile["is_code_query"] and not is_technical_page(related_path):
                 continue
             obsidian_bonus_map[str(related_id)] = obsidian_bonus_map.get(str(related_id), 0.0) + bonus
 
@@ -146,18 +253,43 @@ def score_pages(repo_root: Path, cache: Dict[str, object], query: str, limit: in
         for page_id in expanded_ids
     ]
     routed_tokens = sum(int(page["tokens_estimate"]) for page in routed_pages)
+    code_read_plan = list(code_context.get("files", []))[: max(limit, 5)]  # type: ignore[arg-type]
+    code_relation = None
+    definition_hits = _definition_hits(code_context)
+    if code_graph and len(definition_hits) >= 2:
+        code_relation = infer_relationship_between(
+            code_graph,
+            str(definition_hits[0]["id"]),
+            str(definition_hits[1]["id"]),
+        )
+        if not code_relation:
+            code_relation = shortest_path_between(
+                code_graph,
+                str(definition_hits[0]["id"]),
+                str(definition_hits[1]["id"]),
+                max_depth=6,
+            )
 
     return {
         "query": query,
+        "query_profile": query_profile,
         "selected": selected,
         "read_plan": routed_pages,
+        "code_read_plan": code_read_plan,
+        "code_relation": code_relation,
         "token_budget": {
             "full_corpus_estimate": total_tokens,
             "targeted_read_estimate": routed_tokens,
+            "code_context_estimate": int(code_context.get("estimated_tokens", 0)),
             "saved_estimate": max(total_tokens - routed_tokens, 0),
             "savings_ratio": round(max(total_tokens - routed_tokens, 0) / total_tokens, 4) if total_tokens else 0,
         },
-        "semantic_hits": list(semantic_hits.values())[:limit],
+        "semantic_hits": [
+            hit
+            for hit in list(semantic_hits.values())
+            if not query_profile["is_code_query"] or is_technical_page(str(hit.get("path", "")))
+        ][:semantic_limit],
+        "code_context": code_context,
     }
 
 
@@ -245,6 +377,27 @@ def main() -> None:
     ask_parser.add_argument("--root", default=".", help="Repository root")
     ask_parser.add_argument("--limit", type=int, default=5, help="Primary result count")
 
+    graph_query_parser = subparsers.add_parser("graph-query", help="Search nodes in the code graph")
+    graph_query_parser.add_argument("query", help="Node search query")
+    graph_query_parser.add_argument("--root", default=".", help="Repository root")
+    graph_query_parser.add_argument("--limit", type=int, default=10, help="Result count")
+
+    graph_neighbors_parser = subparsers.add_parser("graph-neighbors", help="Show neighbors for a code graph node")
+    graph_neighbors_parser.add_argument("node", help="Node id, label, or path fragment")
+    graph_neighbors_parser.add_argument("--root", default=".", help="Repository root")
+    graph_neighbors_parser.add_argument("--limit", type=int, default=20, help="Neighbor count")
+
+    graph_explain_parser = subparsers.add_parser("graph-explain", help="Explain a code graph node")
+    graph_explain_parser.add_argument("node", help="Node id, label, or path fragment")
+    graph_explain_parser.add_argument("--root", default=".", help="Repository root")
+    graph_explain_parser.add_argument("--limit", type=int, default=12, help="Neighbor count")
+
+    graph_path_parser = subparsers.add_parser("graph-path", help="Find a path between two code graph nodes")
+    graph_path_parser.add_argument("source", help="Source node id, label, or path fragment")
+    graph_path_parser.add_argument("target", help="Target node id, label, or path fragment")
+    graph_path_parser.add_argument("--root", default=".", help="Repository root")
+    graph_path_parser.add_argument("--max-depth", type=int, default=8, help="Maximum BFS depth")
+
     memory_bootstrap_parser = subparsers.add_parser("memory-bootstrap", help="Push wiki summaries into Mem0")
     memory_bootstrap_parser.add_argument("--root", default=".", help="Repository root")
     memory_bootstrap_parser.add_argument("--user-id", default="dxax-wiki", help="Mem0 user id namespace")
@@ -293,12 +446,41 @@ def main() -> None:
         cache = load_query_cache(repo_root)
         result = score_pages(repo_root, cache, args.query, args.limit)
         log_paths = append_query_log(repo_root, result)
+        instruction = "Read only the read_plan pages unless more context is still needed."
+        if bool(result.get("query_profile", {}).get("is_code_query")):
+            instruction = "Read code_read_plan first, then consult read_plan markdown only if broader context is still needed."
         result["workflow"] = {
             "mode": "graph-first",
-            "instruction": "Read only the read_plan pages unless more context is still needed.",
+            "instruction": instruction,
             "log_paths": {key: str(value) for key, value in log_paths.items()},
         }
         emit_json(result)
+        return
+
+    if args.command == "graph-query":
+        graph = load_code_graph(repo_root)
+        emit_json(
+            {
+                "query": args.query,
+                "results": search_nodes(graph, args.query, limit=args.limit),
+                "stats": graph.get("stats", {}),
+            }
+        )
+        return
+
+    if args.command == "graph-neighbors":
+        graph = load_code_graph(repo_root)
+        emit_json(neighbors_for_node(graph, args.node, limit=args.limit))
+        return
+
+    if args.command == "graph-explain":
+        graph = load_code_graph(repo_root)
+        emit_json(explain_node(graph, args.node, neighbor_limit=args.limit))
+        return
+
+    if args.command == "graph-path":
+        graph = load_code_graph(repo_root)
+        emit_json(shortest_path_between(graph, args.source, args.target, max_depth=args.max_depth))
         return
 
     if args.command == "memory-bootstrap":

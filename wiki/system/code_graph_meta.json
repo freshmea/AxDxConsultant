@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-04-18T11:49:52.692289+00:00",
+  "stats": {
+    "files_scanned": 19,
+    "files_extracted": 2,
+    "cache_hits": 17,
+    "node_count": 891,
+    "edge_count": 2496,
+    "community_count": 13
+  },
+  "facets": {
+    "languages": [
+      [
+        "python",
+        19
+      ]
+    ],
+    "relations": [
+      [
+        "calls",
+        2204
+      ],
+      [
+        "defines",
+        167
+      ],
+      [
+        "imports",
+        124
+      ],
+      [
+        "inherits",
+        1
+      ]
+    ],
+    "confidence": [
+      [
+        "EXTRACTED",
+        2496
+      ]
+    ]
+  },
+  "analysis": {
+    "god_nodes": [
+      {
+        "id": "symbol::_/16/imports85_plotly_report.py::build_figures",
+        "label": "build_figures",
+        "kind": "function",
+        "path": "실습결과물/16/imports85_plotly_report.py",
+        "community_id": "community-003",
+        "degree": 129
+      },
+      {
+        "id": "symbol::llm_wiki/cli.py::score_pages",
+        "label": "score_pages",
+        "kind": "function",
+        "path": "llm_wiki/cli.py",
+        "community_id": "community-002",
+        "degree": 127
+      },
+      {
+        "id": "symbol::llm_wiki/indexer.py::write_outputs",
+        "label": "write_outputs",
+        "kind": "function",
+        "path": "llm_wiki/indexer.py",
+        "community_id": "community-009",
+        "degree": 110
+      },
+      {
+        "id": "symbol::llm_wiki/cli.py::main",
+        "label": "main",
+        "kind": "function",
+        "path": "llm_wiki/cli.py",
+        "community_id": "community-007",
+        "degree": 105
+      },
+      {
+        "id": "symbol::orange_example_10/analyze_titanic.py::run_analysis",
+        "label": "run_analysis",
+        "kind": "function",
+        "path": "orange_example_10/analyze_titanic.py",
+        "community_id": "community-005",
+        "degree": 100
+      },
+      {
+        "id": "symbol::llm_wiki/indexer.py::build_index",
+        "label": "build_index",
+        "kind": "function",
+        "path": "llm_wiki/indexer.py",
+        "community_id": "community-001",
+        "degree": 84
+      },
+      {
+        "id": "symbol::_/16/imports85_plotly_report.py::load_and_clean_data",
+        "label": "load_and_clean_data",
+        "kind": "function",
+        "path": "실습결과물/16/imports85_plotly_report.py",
+        "community_id": "community-003",
+        "degree": 77
+      },
+      {
+        "id": "symbol::orange_example_10/train_adaboost_titanic.py::main",
+        "label": "main",
+        "kind": "function",
+        "path": "orange_example_10/train_adaboost_titanic.py",
+        "community_id": "community-005",
+        "degree": 70
+      },
+      {
+        "id": "symbol::orange_example_10/analyze_bodyfat_visuals.py::generate_plots",
+        "label": "generate_plots",
+        "kind": "function",
+        "path": "orange_example_10/analyze_bodyfat_visuals.py",
+        "community_id": "community-006",
+        "degree": 68
+      },
+      {
+        "id": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
+        "label": "main",
+        "kind": "function",
+        "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
+        "community_id": "community-005",
+        "degree": 68
+      }
+    ],
+    "surprising_connections": [],
+    "suggested_questions": [
+      "Which modules and functions depend most on `build_figures`?",
+      "How is `build_figures` connected to `score_pages`?",
+      "Which cross-file call paths are most central in this codebase?",
+      "Which import relationships create the strongest coupling across modules?",
+      "Where does inheritance appear, and what architectural role does it play?",
+      "Which communities interact the most, and are those boundaries intentional?",
+      "Which nodes look like good entry points for onboarding into this repository?",
+      "Which symbol references point to missing or external definitions that deserve review?"
+    ]
+  }
+}

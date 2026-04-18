@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T08:55:17.922616+00:00",
+  "generated_at": "2026-04-18T11:49:39.412068+00:00",
   "enabled": true,
   "source": "obsidian-smart-connections",
   "smart_env_root": "C:\\Users\\Administrator\\dxAx\\.smart-env",
@@ -13,79 +13,79 @@
     "AGENTS": {
       "path": "AGENTS.md",
       "title": "LLM Wiki Schema",
-      "last_embed_at": 1776414908864,
+      "last_embed_at": 1776416144860,
       "related": [
         {
           "id": "llm_wiki/README",
           "path": "llm_wiki/README.md",
           "title": "Local LLM Wiki",
-          "score": 0.837087
+          "score": 0.848518
         },
         {
           "id": "skills/wiki-llm-setup/SKILL",
           "path": "skills/wiki-llm-setup/SKILL.md",
           "title": "Wiki LLM Setup",
-          "score": 0.802133
+          "score": 0.822437
         },
         {
           "id": "실습결과물/15/wikiLLM",
           "path": "실습결과물/15/wikiLLM.md",
           "title": "wikillm 을 구현하기 위한 프롬프트",
-          "score": 0.800968
-        },
-        {
-          "id": "실습결과물/15/00-INDEX",
-          "path": "실습결과물/15/00-INDEX.md",
-          "title": "실습결과물 15 인덱스",
-          "score": 0.777268
+          "score": 0.78834
         },
         {
           "id": "skills/troubleshooting",
           "path": "skills/troubleshooting.md",
           "title": "Troubleshooting",
-          "score": 0.74723
+          "score": 0.765576
         },
         {
-          "id": "llm_wiki/LLM 지식 아키텍처",
-          "path": "llm_wiki/LLM 지식 아키텍처.md",
-          "title": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서",
-          "score": 0.743717
+          "id": "실습결과물/15/00-INDEX",
+          "path": "실습결과물/15/00-INDEX.md",
+          "title": "실습결과물 15 인덱스",
+          "score": 0.754606
         },
         {
           "id": "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP",
           "path": "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md",
           "title": "Obsidian Smart Connections Setup",
-          "score": 0.717857
+          "score": 0.75269
         },
         {
-          "id": "실습결과물/15/Youtube 영상 스크립트",
-          "path": "실습결과물/15/Youtube 영상 스크립트.md",
-          "title": "Youtube 영상 스크립트",
-          "score": 0.700531
-        },
-        {
-          "id": "실습결과물/06/00-INDEX",
-          "path": "실습결과물/06/00-INDEX.md",
-          "title": "실습결과물 06 인덱스",
-          "score": 0.699319
+          "id": "llm_wiki/LLM 지식 아키텍처",
+          "path": "llm_wiki/LLM 지식 아키텍처.md",
+          "title": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서",
+          "score": 0.71848
         },
         {
           "id": "memory_layer/README",
           "path": "memory_layer/README.md",
           "title": "Local Memory Layer",
-          "score": 0.698848
+          "score": 0.714149
         },
         {
           "id": "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서",
           "path": "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md",
           "title": "Graphify 기반 LLM Wiki 활용 1페이지 요약보고서",
-          "score": 0.698714
+          "score": 0.675037
+        },
+        {
+          "id": "실습결과물/15/Youtube 영상 스크립트",
+          "path": "실습결과물/15/Youtube 영상 스크립트.md",
+          "title": "Youtube 영상 스크립트",
+          "score": 0.674278
+        },
+        {
+          "id": "실습결과물/06/00-INDEX",
+          "path": "실습결과물/06/00-INDEX.md",
+          "title": "실습결과물 06 인덱스",
+          "score": 0.668052
         },
         {
           "id": "실습결과물/14/수중드론_사업화_기획안",
           "path": "실습결과물/14/수중드론_사업화_기획안.md",
           "title": "수중드론 사업화 기획안(운영형)",
-          "score": 0.69254
+          "score": 0.660628
         }
       ]
     },
@@ -195,7 +195,7 @@
           "id": "AGENTS",
           "path": "AGENTS.md",
           "title": "LLM Wiki Schema",
-          "score": 0.717857
+          "score": 0.75269
         },
         {
           "id": "실습결과물/15/wikiLLM",
@@ -250,7 +250,7 @@
     "llm_wiki/README": {
       "path": "llm_wiki/README.md",
       "title": "Local LLM Wiki",
-      "last_embed_at": 1776414930860,
+      "last_embed_at": 1776416144922,
       "related": [
         {
           "id": "skills/wiki-llm-setup/SKILL",
@@ -262,7 +262,7 @@
           "id": "AGENTS",
           "path": "AGENTS.md",
           "title": "LLM Wiki Schema",
-          "score": 0.837087
+          "score": 0.848518
         },
         {
           "id": "memory_layer/README",
@@ -344,16 +344,16 @@
           "score": 0.735763
         },
         {
+          "id": "AGENTS",
+          "path": "AGENTS.md",
+          "title": "LLM Wiki Schema",
+          "score": 0.714149
+        },
+        {
           "id": "skills/troubleshooting",
           "path": "skills/troubleshooting.md",
           "title": "Troubleshooting",
           "score": 0.700739
-        },
-        {
-          "id": "AGENTS",
-          "path": "AGENTS.md",
-          "title": "LLM Wiki Schema",
-          "score": 0.698848
         },
         {
           "id": "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP",
@@ -851,7 +851,7 @@
           "id": "AGENTS",
           "path": "AGENTS.md",
           "title": "LLM Wiki Schema",
-          "score": 0.566822
+          "score": 0.575875
         },
         {
           "id": "실습결과물/07/04-as-is-프로세스-스케치",
@@ -906,7 +906,7 @@
           "id": "AGENTS",
           "path": "AGENTS.md",
           "title": "LLM Wiki Schema",
-          "score": 0.74723
+          "score": 0.765576
         },
         {
           "id": "실습결과물/15/wikiLLM",
@@ -985,7 +985,7 @@
           "id": "AGENTS",
           "path": "AGENTS.md",
           "title": "LLM Wiki Schema",
-          "score": 0.802133
+          "score": 0.822437
         },
         {
           "id": "memory_layer/README",
@@ -5910,12 +5910,6 @@
           "score": 0.802432
         },
         {
-          "id": "AGENTS",
-          "path": "AGENTS.md",
-          "title": "LLM Wiki Schema",
-          "score": 0.800968
-        },
-        {
           "id": "실습결과물/06/00-INDEX",
           "path": "실습결과물/06/00-INDEX.md",
           "title": "실습결과물 06 인덱스",
@@ -5932,6 +5926,12 @@
           "path": "실습결과물/08/00-INDEX.md",
           "title": "실습결과물 08 인덱스",
           "score": 0.79784
+        },
+        {
+          "id": "실습결과물/09/00-INDEX",
+          "path": "실습결과물/09/00-INDEX.md",
+          "title": "실습결과물 09 인덱스",
+          "score": 0.796986
         }
       ]
     },

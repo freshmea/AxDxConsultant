@@ -199,5 +199,159 @@
       "saved_estimate": 79995,
       "savings_ratio": 0.9635
     }
+  },
+  {
+    "timestamp": "2026-04-18T20:44:03.949501",
+    "query": "build_code_graph 와 write_outputs 의 관계",
+    "selected_paths": [
+      "실습결과물/16/imports-85_interactive_report.md",
+      "실습결과물/15/wikiLLM.md",
+      "실습결과물/16/imports-85_actual_data_summary.md",
+      "실습결과물/15/00-INDEX.md",
+      "llm_wiki/LLM 지식 아키텍처.md"
+    ],
+    "read_plan_paths": [
+      "실습결과물/16/imports-85_interactive_report.md",
+      "실습결과물/15/wikiLLM.md",
+      "AGENTS.md",
+      "llm_wiki/README.md",
+      "실습결과물/15/00-INDEX.md",
+      "실습결과물/16/imports-85_actual_data_summary.md",
+      "llm_wiki/LLM 지식 아키텍처.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 83110,
+      "targeted_read_estimate": 10982,
+      "code_context_estimate": 133,
+      "saved_estimate": 72128,
+      "savings_ratio": 0.8679
+    }
+  },
+  {
+    "timestamp": "2026-04-18T20:45:10.136718",
+    "query": "build_code_graph 와 write_outputs 의 관계",
+    "selected_paths": [
+      "실습결과물/16/imports-85_interactive_report.md",
+      "실습결과물/15/wikiLLM.md",
+      "실습결과물/16/imports-85_actual_data_summary.md",
+      "실습결과물/15/00-INDEX.md",
+      "llm_wiki/LLM 지식 아키텍처.md"
+    ],
+    "read_plan_paths": [
+      "실습결과물/16/imports-85_interactive_report.md",
+      "실습결과물/15/wikiLLM.md",
+      "AGENTS.md",
+      "llm_wiki/README.md",
+      "실습결과물/15/00-INDEX.md",
+      "실습결과물/16/imports-85_actual_data_summary.md",
+      "llm_wiki/LLM 지식 아키텍처.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 83110,
+      "targeted_read_estimate": 10982,
+      "code_context_estimate": 133,
+      "saved_estimate": 72128,
+      "savings_ratio": 0.8679
+    }
+  },
+  {
+    "timestamp": "2026-04-18T20:47:22.507928",
+    "query": "build_code_graph 와 write_outputs 의 관계",
+    "selected_paths": [
+      "실습결과물/16/imports-85_interactive_report.md",
+      "llm_wiki/README.md",
+      "AGENTS.md",
+      "llm_wiki/LLM 지식 아키텍처.md",
+      "skills/wiki-llm-setup/SKILL.md"
+    ],
+    "read_plan_paths": [
+      "실습결과물/16/imports-85_interactive_report.md",
+      "llm_wiki/README.md",
+      "AGENTS.md",
+      "llm_wiki/LLM 지식 아키텍처.md",
+      "skills/wiki-llm-setup/SKILL.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 83110,
+      "targeted_read_estimate": 11281,
+      "code_context_estimate": 133,
+      "saved_estimate": 71829,
+      "savings_ratio": 0.8643
+    }
+  },
+  {
+    "timestamp": "2026-04-18T20:48:17.525254",
+    "query": "build_code_graph 와 write_outputs 의 관계",
+    "selected_paths": [
+      "llm_wiki/README.md",
+      "AGENTS.md",
+      "llm_wiki/LLM 지식 아키텍처.md",
+      "skills/wiki-llm-setup/SKILL.md",
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md"
+    ],
+    "read_plan_paths": [
+      "llm_wiki/README.md",
+      "AGENTS.md",
+      "llm_wiki/LLM 지식 아키텍처.md",
+      "skills/wiki-llm-setup/SKILL.md",
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 83110,
+      "targeted_read_estimate": 9125,
+      "code_context_estimate": 133,
+      "saved_estimate": 73985,
+      "savings_ratio": 0.8902
+    }
+  },
+  {
+    "timestamp": "2026-04-18T20:49:12.218537",
+    "query": "build_code_graph 와 write_outputs 의 관계",
+    "selected_paths": [
+      "llm_wiki/README.md",
+      "AGENTS.md",
+      "llm_wiki/LLM 지식 아키텍처.md",
+      "skills/wiki-llm-setup/SKILL.md",
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md"
+    ],
+    "read_plan_paths": [
+      "llm_wiki/README.md",
+      "AGENTS.md",
+      "llm_wiki/LLM 지식 아키텍처.md",
+      "skills/wiki-llm-setup/SKILL.md",
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 83110,
+      "targeted_read_estimate": 9125,
+      "code_context_estimate": 133,
+      "saved_estimate": 73985,
+      "savings_ratio": 0.8902
+    }
+  },
+  {
+    "timestamp": "2026-04-18T20:49:46.286324",
+    "query": "build_code_graph 와 write_outputs 의 관계",
+    "selected_paths": [
+      "llm_wiki/README.md",
+      "AGENTS.md",
+      "llm_wiki/LLM 지식 아키텍처.md",
+      "skills/wiki-llm-setup/SKILL.md",
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md"
+    ],
+    "read_plan_paths": [
+      "llm_wiki/README.md",
+      "AGENTS.md",
+      "llm_wiki/LLM 지식 아키텍처.md",
+      "skills/wiki-llm-setup/SKILL.md",
+      "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 83110,
+      "targeted_read_estimate": 9125,
+      "code_context_estimate": 133,
+      "saved_estimate": 73985,
+      "savings_ratio": 0.8902
+    }
   }
 ]

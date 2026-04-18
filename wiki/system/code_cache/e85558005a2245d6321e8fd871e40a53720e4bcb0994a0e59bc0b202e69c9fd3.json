@@ -1,0 +1,15 @@
+{
+  "nodes": [
+    {
+      "id": "module::llm_wiki/__init__.py",
+      "label": "__init__.py",
+      "kind": "module",
+      "path": "llm_wiki/__init__.py",
+      "source_file": "llm_wiki/__init__.py",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [],
+  "language": "python",
+  "path": "llm_wiki/__init__.py"
+}

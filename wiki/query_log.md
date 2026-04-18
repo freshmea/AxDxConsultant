@@ -47,3 +47,39 @@
 - Selected: skills/wiki-llm-setup/SKILL.md, AGENTS.md, 실습결과물/15/00-INDEX.md, llm_wiki/README.md, 실습결과물/15/wikiLLM.md
 - Read plan: skills/wiki-llm-setup/SKILL.md, AGENTS.md, 실습결과물/15/00-INDEX.md, llm_wiki/README.md, 실습결과물/15/wikiLLM.md
 - Tokens: full=83023 targeted=3028 saved=79995 ratio=0.9635
+
+## 2026-04-18T20:44:03.949501
+- Query: build_code_graph 와 write_outputs 의 관계
+- Selected: 실습결과물/16/imports-85_interactive_report.md, 실습결과물/15/wikiLLM.md, 실습결과물/16/imports-85_actual_data_summary.md, 실습결과물/15/00-INDEX.md, llm_wiki/LLM 지식 아키텍처.md
+- Read plan: 실습결과물/16/imports-85_interactive_report.md, 실습결과물/15/wikiLLM.md, AGENTS.md, llm_wiki/README.md, 실습결과물/15/00-INDEX.md, 실습결과물/16/imports-85_actual_data_summary.md, llm_wiki/LLM 지식 아키텍처.md
+- Tokens: full=83110 targeted=10982 saved=72128 ratio=0.8679
+
+## 2026-04-18T20:45:10.136718
+- Query: build_code_graph 와 write_outputs 의 관계
+- Selected: 실습결과물/16/imports-85_interactive_report.md, 실습결과물/15/wikiLLM.md, 실습결과물/16/imports-85_actual_data_summary.md, 실습결과물/15/00-INDEX.md, llm_wiki/LLM 지식 아키텍처.md
+- Read plan: 실습결과물/16/imports-85_interactive_report.md, 실습결과물/15/wikiLLM.md, AGENTS.md, llm_wiki/README.md, 실습결과물/15/00-INDEX.md, 실습결과물/16/imports-85_actual_data_summary.md, llm_wiki/LLM 지식 아키텍처.md
+- Tokens: full=83110 targeted=10982 saved=72128 ratio=0.8679
+
+## 2026-04-18T20:47:22.507928
+- Query: build_code_graph 와 write_outputs 의 관계
+- Selected: 실습결과물/16/imports-85_interactive_report.md, llm_wiki/README.md, AGENTS.md, llm_wiki/LLM 지식 아키텍처.md, skills/wiki-llm-setup/SKILL.md
+- Read plan: 실습결과물/16/imports-85_interactive_report.md, llm_wiki/README.md, AGENTS.md, llm_wiki/LLM 지식 아키텍처.md, skills/wiki-llm-setup/SKILL.md
+- Tokens: full=83110 targeted=11281 saved=71829 ratio=0.8643
+
+## 2026-04-18T20:48:17.525254
+- Query: build_code_graph 와 write_outputs 의 관계
+- Selected: llm_wiki/README.md, AGENTS.md, llm_wiki/LLM 지식 아키텍처.md, skills/wiki-llm-setup/SKILL.md, llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md
+- Read plan: llm_wiki/README.md, AGENTS.md, llm_wiki/LLM 지식 아키텍처.md, skills/wiki-llm-setup/SKILL.md, llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md
+- Tokens: full=83110 targeted=9125 saved=73985 ratio=0.8902
+
+## 2026-04-18T20:49:12.218537
+- Query: build_code_graph 와 write_outputs 의 관계
+- Selected: llm_wiki/README.md, AGENTS.md, llm_wiki/LLM 지식 아키텍처.md, skills/wiki-llm-setup/SKILL.md, llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md
+- Read plan: llm_wiki/README.md, AGENTS.md, llm_wiki/LLM 지식 아키텍처.md, skills/wiki-llm-setup/SKILL.md, llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md
+- Tokens: full=83110 targeted=9125 saved=73985 ratio=0.8902
+
+## 2026-04-18T20:49:46.286324
+- Query: build_code_graph 와 write_outputs 의 관계
+- Selected: llm_wiki/README.md, AGENTS.md, llm_wiki/LLM 지식 아키텍처.md, skills/wiki-llm-setup/SKILL.md, llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md
+- Read plan: llm_wiki/README.md, AGENTS.md, llm_wiki/LLM 지식 아키텍처.md, skills/wiki-llm-setup/SKILL.md, llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md
+- Tokens: full=83110 targeted=9125 saved=73985 ratio=0.8902
