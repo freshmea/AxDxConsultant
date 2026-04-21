@@ -1,0 +1,392 @@
+{
+  "name": "My workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -320,
+        -112
+      ],
+      "id": "5e8036c2-d8bb-4f5a-a202-d60fbbd07621",
+      "name": "When chat message received",
+      "webhookId": "09042fc7-0dd4-4f2d-a725-81e959c6f60f"
+    },
+    {
+      "parameters": {
+        "inputText": "={{ $json.chatInput }}",
+        "options": {
+          "categories": "Positive, Neutral, Negative",
+          "enableAutoFixing": true
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.sentimentAnalysis",
+      "typeVersion": 1.1,
+      "position": [
+        16,
+        -128
+      ],
+      "id": "ff51d659-f792-4465-9c6d-3c9ca4e5cd7a",
+      "name": "Sentiment Analysis"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-5-mini"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        16,
+        144
+      ],
+      "id": "9e865705-19cf-42ca-8fc5-828b1ee6ae52",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "trEHuBSLALSVtcpy",
+          "name": "OpenAI account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "11kj4nxEVJvJXhze6OLhBkd5glEgGD-Gy7z63no0N0TQ",
+          "mode": "list",
+          "cachedResultName": "gmail 받은 내역",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/11kj4nxEVJvJXhze6OLhBkd5glEgGD-Gy7z63no0N0TQ/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1535652328,
+          "mode": "list",
+          "cachedResultName": "third",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/11kj4nxEVJvJXhze6OLhBkd5glEgGD-Gy7z63no0N0TQ/edit#gid=1535652328"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "action",
+              "displayName": "action",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "sessionId",
+              "displayName": "sessionId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "chatInput",
+              "displayName": "chatInput",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "sentimentAnalysis",
+              "displayName": "sentimentAnalysis",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        896,
+        -112
+      ],
+      "id": "5a5a338d-e867-4f27-b067-64d9bd738642",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SPvyTQhS6NLgSsf2",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c93841aa-67d5-43a7-b071-646ac689b6da",
+              "name": "value",
+              "value": "={{ $json.value }}",
+              "type": "number"
+            },
+            {
+              "id": "05ddcc62-0e61-49da-8019-b5f9f3aa3336",
+              "name": "chatInput",
+              "value": "={{ $('Sentiment Analysis').item.json.chatInput }}",
+              "type": "string"
+            },
+            {
+              "id": "9b70d572-5098-4eda-b801-d34d643ec904",
+              "name": "sentimentAnalysis.category",
+              "value": "={{ $('Sentiment Analysis').item.json.sentimentAnalysis.category }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        640,
+        -112
+      ],
+      "id": "168e7f2a-a5b1-4d08-8124-a871c4be1718",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "dataTableId": {
+          "__rl": true,
+          "value": "erGkRtK02FensbSs",
+          "mode": "list",
+          "cachedResultName": "test",
+          "cachedResultUrl": "/projects/8632qWhRmL4UbuHD/datatables/erGkRtK02FensbSs"
+        },
+        "filters": {
+          "conditions": [
+            {
+              "keyValue": "1"
+            }
+          ]
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "value": "={{ $(\"Get row(s)\").item.json.value + 1 }}"
+          },
+          "matchingColumns": [
+            "value"
+          ],
+          "schema": [
+            {
+              "id": "value",
+              "displayName": "value",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "readOnly": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        896,
+        128
+      ],
+      "id": "6d7d6cf8-11a3-4262-aa73-e217840f60d8",
+      "name": "Update row(s)"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "value": "erGkRtK02FensbSs",
+          "mode": "list",
+          "cachedResultName": "test",
+          "cachedResultUrl": "/projects/8632qWhRmL4UbuHD/datatables/erGkRtK02FensbSs"
+        },
+        "filters": {
+          "conditions": [
+            {
+              "keyValue": "1"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        432,
+        -112
+      ],
+      "id": "dfc3253d-ee14-40b3-9448-7976f0ddcfe3",
+      "name": "Get row(s)"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        -336,
+        352
+      ],
+      "id": "a9a4e38c-3cbd-4a32-a937-b0fc9d571857",
+      "name": "Error Trigger"
+    },
+    {
+      "parameters": {
+        "sendTo": "freshmea@bindsoft.co.kr",
+        "subject": "error 발생",
+        "emailType": "text",
+        "message": "=error {{ $json.execution.error }}{{ $json.execution.error.message }}{{ $json.execution.error.stack }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        -128,
+        352
+      ],
+      "id": "85348f11-c6da-473a-9e96-0c8decb29e7d",
+      "name": "Send a message",
+      "webhookId": "35a3ae7f-c800-4348-ad62-62aa5a9508de",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "fU6yN3EYVxa8IbuA",
+          "name": "Gmail OAuth2 API"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "Sentiment Analysis",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Sentiment Analysis",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sentiment Analysis": {
+      "main": [
+        [
+          {
+            "node": "Get row(s)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get row(s)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get row(s)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Update row(s)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s)": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "69dee5ea-84fa-4553-958d-7336dffe91f8",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1730f8f31a51b17130cabb0ca3e46a140977f645f6d862c42701b3a3d939fce6"
+  },
+  "id": "gPdT5qxONY1bjBim",
+  "tags": []
+}
