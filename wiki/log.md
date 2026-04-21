@@ -127,3 +127,9 @@
 - verified `build`, `graph-query`, `graph-neighbors`, `graph-explain`, `graph-path`, and code-oriented `ask`
 - created reusable agent skill at `skills/graphify-code-wiki/SKILL.md`
 
+## [2026-04-21 09:01:21] build | markdown graph refresh
+- pages: 97
+- edges: 89
+- communities: 42
+- estimated tokens: 87348
+

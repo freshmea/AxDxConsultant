@@ -35,6 +35,37 @@
       ]
     },
     {
+      "id": "llm_wiki/Hermes-Agent-비교-보고서",
+      "title": "Hermes Agent 조사 및 현재 시스템 비교 보고서",
+      "path": "llm_wiki/Hermes-Agent-비교-보고서.md",
+      "summary": "작성일: 2026-04-21 - 비교 대상 1: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) - 비교 대상 2: 현재 저장소의 `LLM Wiki + FAISS + GraphRAG-lite + Smart Connections bridge + Mem0 + local Whisper` 스택",
+      "tags": [],
+      "topics": [
+        "agent",
+        "hermes",
+        "nousresearch",
+        "대상",
+        "비교",
+        "시스템",
+        "조사",
+        "현재"
+      ],
+      "entities": [
+        "2026",
+        "agent",
+        "hermes",
+        "nousresearch",
+        "강한",
+        "구조",
+        "대상",
+        "메모리",
+        "부분",
+        "비교",
+        "시스템",
+        "작성일"
+      ]
+    },
+    {
       "id": "llm_wiki/LLM 지식 아키텍처",
       "title": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서",
       "path": "llm_wiki/LLM 지식 아키텍처.md",
@@ -314,6 +345,37 @@
       ]
     },
     {
+      "id": "skills/graphify-code-wiki/SKILL",
+      "title": "Graphify Code Wiki",
+      "path": "skills/graphify-code-wiki/SKILL.md",
+      "summary": "Use this skill when the task is about the Graphify-inspired code graph integration in this repository, not for generic wiki maintenance.",
+      "tags": [],
+      "topics": [
+        "code",
+        "graph",
+        "graphify",
+        "integration",
+        "repository",
+        "use",
+        "verify",
+        "wiki"
+      ],
+      "entities": [
+        "code",
+        "confirm",
+        "files",
+        "graph",
+        "graphify",
+        "integration",
+        "required",
+        "skill",
+        "stance",
+        "task",
+        "use",
+        "verify"
+      ]
+    },
+    {
       "id": "skills/local-whisper-gpu/SKILL",
       "title": "Local Whisper GPU",
       "path": "skills/local-whisper-gpu/SKILL.md",
@@ -392,18 +454,18 @@
         "workspace"
       ],
       "entities": [
+        "architecture",
         "change",
         "confirm",
         "graph",
         "in",
         "keep",
-        "layout",
         "llm",
         "order",
-        "prepare",
         "recreate",
         "required",
-        "setup"
+        "setup",
+        "stance"
       ]
     },
     {

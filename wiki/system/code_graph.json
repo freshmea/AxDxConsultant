@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-18T11:49:52.692289+00:00",
+  "generated_at": "2026-04-21T00:01:08.309256+00:00",
   "root": "C:\\Users\\Administrator\\dxAx",
   "ignore_file": ".llmwikiignore",
   "stats": {
     "files_scanned": 19,
-    "files_extracted": 2,
-    "cache_hits": 17,
+    "files_extracted": 0,
+    "cache_hits": 19,
     "node_count": 891,
     "edge_count": 2496,
     "community_count": 13

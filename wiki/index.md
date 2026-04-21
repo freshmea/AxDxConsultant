@@ -1,10 +1,10 @@
 # Wiki Index
 
-- Generated: 2026-04-18T11:49:39.413073+00:00
-- Markdown pages: 95
+- Generated: 2026-04-21T00:00:55.830302+00:00
+- Markdown pages: 97
 - Resolved edges: 89
-- Communities: 40
-- Estimated full-read tokens: 83110
+- Communities: 42
+- Estimated full-read tokens: 87348
 - Ignore file: `.llmwikiignore`
 - Semantic search: enabled
 - Smart Connections bridge: enabled
@@ -20,6 +20,13 @@
   - Topics: llm, local, repository, rules, schema
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 12
+- [Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
+  - Path: `llm_wiki/Hermes-Agent-비교-보고서.md`
+  - Summary: 작성일: 2026-04-21 - 비교 대상 1: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) - 비교 대상 2: 현재 저장소의 `LLM Wiki + FAISS + GraphRAG-lite + Smart Connections bridge + Mem0 + local Whisper` 스택
+  - Tags: (none)
+  - Topics: agent, hermes, nousresearch, 대상, 비교
+  - Links: 0 outbound / 3 unresolved
+  - Smart Connections neighbors: 0
 - [LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
   - Path: `llm_wiki/LLM 지식 아키텍처.md`
   - Summary: 2023~2026년의 흐름을 한 문장으로 요약하면, **“큰 컨텍스트 창에 다 때려 넣는 방식”에서 “필요한 지식과 절차를 분리해 지속적으로 기억·갱신하는 방식”으로 이동**했다고 볼 수 있습니다. 2023년 MemGPT는 제한된 컨텍스트 윈도우를 계층형 메모리로 우회하는 문제를 제기했고, 2024년 Microsoft GraphRAG는 사설 문서 코퍼스에 대해 **그래프 인덱스 + 커뮤니티 요약**으로 전역 질문을 다루는 방법을 제시했습니다. 2025년 Zep/Graphiti와 Mem0는 장기 기
@@ -83,6 +90,13 @@
   - Topics: 2026_4_6, 2026_4_7, 2026_4_8, 2026_4_9, axdx
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 12
+- [Graphify Code Wiki](../skills/graphify-code-wiki/SKILL.md)
+  - Path: `skills/graphify-code-wiki/SKILL.md`
+  - Summary: Use this skill when the task is about the Graphify-inspired code graph integration in this repository, not for generic wiki maintenance.
+  - Tags: (none)
+  - Topics: code, graph, graphify, integration, repository
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
 - [Local Whisper GPU](../skills/local-whisper-gpu/SKILL.md)
   - Path: `skills/local-whisper-gpu/SKILL.md`
   - Summary: Set up the STT stack in this order.
@@ -678,3 +692,9 @@
   - Topics: text, users, 데이터, 되지, 않아서
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 12
+
+## Unresolved Links
+
+- `/C:/Users/Administrator/dxAx/AGENTS.md` x 1
+- `/C:/Users/Administrator/dxAx/llm_wiki/README.md` x 1
+- `/C:/Users/Administrator/dxAx/memory_layer/README.md` x 1

@@ -1,7 +1,7 @@
 # Community Report
 
-- Generated: 2026-04-18T11:49:39.413073+00:00
-- Community count: 40
+- Generated: 2026-04-21T00:00:55.830302+00:00
+- Community count: 42
 
 ## community-001
 
@@ -86,6 +86,15 @@
 
 ## community-010
 
+- Representative: [Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
+- Size: 1
+- Summary: Hermes Agent 조사 및 현재 시스템 비교 보고서 중심의 지식 군집입니다. 핵심 주제는 agent, hermes, nousresearch, 대상이며, 대표 문서는 Hermes Agent 조사 및 현재 시스템 비교 보고서 입니다.
+- Topics: agent, hermes, nousresearch, 대상, 비교, 시스템, 조사, 현재
+- Entities: 2026, agent, hermes, nousresearch, 강한, 구조, 대상, 메모리
+- Pages: llm_wiki/Hermes-Agent-비교-보고서.md
+
+## community-011
+
 - Representative: [LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
 - Size: 1
 - Summary: LLM 지식 아키텍처와 장기 기억 도구 비교 보고서 중심의 지식 군집입니다. 핵심 주제는 llm, 기억, 도구, 비교이며, 대표 문서는 LLM 지식 아키텍처와 장기 기억 도구 비교 보고서 입니다.
@@ -93,7 +102,7 @@
 - Entities: 2023, executive, llm, summary, 기억, 도구, 방식, 비교
 - Pages: llm_wiki/LLM 지식 아키텍처.md
 
-## community-011
+## community-012
 
 - Representative: [Obsidian Smart Connections Setup](../llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md)
 - Size: 1
@@ -102,7 +111,7 @@
 - Entities: already, as, community, connections, goal, graph, install, obsidian
 - Pages: llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md
 
-## community-012
+## community-013
 
 - Representative: [Local Memory Layer](../memory_layer/README.md)
 - Size: 1
@@ -111,7 +120,7 @@
 - Entities: aware, change, commands, files, folder, holds, intended, layer
 - Pages: memory_layer/README.md
 
-## community-013
+## community-014
 
 - Representative: [Notion App Date Filter Fallback Skill](../notion_app_date_filter_fallback_skill/SKILL.md)
 - Size: 1
@@ -120,7 +129,7 @@
 - Entities: app, date, fallback, filter, notion, skill, sql, 데이터소스
 - Pages: notion_app_date_filter_fallback_skill/SKILL.md
 
-## community-014
+## community-015
 
 - Representative: [Body Fat Brozek 시각 분석 보고서 (미리보기 중심)](../orange_example_10/bodyfat_analysis_report.md)
 - Size: 1
@@ -129,7 +138,7 @@
 - Entities: 252, body, box, brozek, fat, vs, 데이터, 미리보기
 - Pages: orange_example_10/bodyfat_analysis_report.md
 
-## community-015
+## community-016
 
 - Representative: [Titanic AdaBoost 분석 보고서](../orange_example_10/titanic_adaboost_report.md)
 - Size: 1
@@ -138,7 +147,7 @@
 - Entities: 2201, 500개, adaboost, titanic, 데이터, 변수, 분석, 샘플링
 - Pages: orange_example_10/titanic_adaboost_report.md
 
-## community-016
+## community-017
 
 - Representative: [Titanic 생존 분석 보고서](../orange_example_10/titanic_survival_report.md)
 - Size: 1
@@ -147,7 +156,7 @@
 - Entities: 2201건, age별, sex별, status, status별, titanic, 관측치, 기술통계
 - Pages: orange_example_10/titanic_survival_report.md
 
-## community-017
+## community-018
 
 - Representative: [AxDxConsultant](../README.md)
 - Size: 1
@@ -156,7 +165,16 @@
 - Entities: 2026_4_10, 2026_4_13, 2026_4_14, 2026_4_15, 2026_4_16, 2026_4_6, 2026_4_7, 2026_4_8
 - Pages: README.md
 
-## community-018
+## community-019
+
+- Representative: [Graphify Code Wiki](../skills/graphify-code-wiki/SKILL.md)
+- Size: 1
+- Summary: Graphify Code Wiki 중심의 지식 군집입니다. 핵심 주제는 code, graph, graphify, integration이며, 대표 문서는 Graphify Code Wiki 입니다.
+- Topics: code, graph, graphify, integration, repository, use, verify, wiki
+- Entities: code, confirm, files, graph, graphify, integration, required, skill
+- Pages: skills/graphify-code-wiki/SKILL.md
+
+## community-020
 
 - Representative: [Local Whisper GPU](../skills/local-whisper-gpu/SKILL.md)
 - Size: 1
@@ -165,7 +183,7 @@
 - Entities: confirm, environment, gpu, install, layout, local, provide, required
 - Pages: skills/local-whisper-gpu/SKILL.md
 
-## community-019
+## community-021
 
 - Representative: [Troubleshooting](../skills/troubleshooting.md)
 - Size: 1
@@ -174,16 +192,16 @@
 - Entities: are, covers, fails, links, memory, missing, note, problems
 - Pages: skills/troubleshooting.md
 
-## community-020
+## community-022
 
 - Representative: [Wiki LLM Setup](../skills/wiki-llm-setup/SKILL.md)
 - Size: 1
 - Summary: Wiki LLM Setup 중심의 지식 군집입니다. 핵심 주제는 change, graph, keep, llm이며, 대표 문서는 Wiki LLM Setup 입니다.
 - Topics: change, graph, keep, llm, recreate, setup, wiki, workspace
-- Entities: change, confirm, graph, in, keep, layout, llm, order
+- Entities: architecture, change, confirm, graph, in, keep, llm, order
 - Pages: skills/wiki-llm-setup/SKILL.md
 
-## community-021
+## community-023
 
 - Representative: [Youtube 영상 스크립트](../실습결과물/15/Youtube 영상 스크립트.md)
 - Size: 1
@@ -192,7 +210,7 @@
 - Entities: graphify, llm, wiki를, youtube, 스크립트, 업그레이드한, 영상
 - Pages: 실습결과물/15/Youtube 영상 스크립트.md
 
-## community-022
+## community-024
 
 - Representative: [Graphify 기반 LLM Wiki 활용 1페이지 요약보고서](../실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md)
 - Size: 1
@@ -201,7 +219,7 @@
 - Entities: 1페이지, graphify, llm, wiki, 기반, 기존, 메시지, 목적
 - Pages: 실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md
 
-## community-023
+## community-025
 
 - Representative: [YouTube 영상 요약본](../실습결과물/15/YouTube 영상 요약본.md)
 - Size: 1
@@ -210,7 +228,7 @@
 - Entities: youtube, 영상, 요약본
 - Pages: 실습결과물/15/YouTube 영상 요약본.md
 
-## community-024
+## community-026
 
 - Representative: [whisper 모델 설치 프롬프트](../실습결과물/15/로컬 whisper 모델 설치 프롬프트.md)
 - Size: 1
@@ -219,7 +237,7 @@
 - Entities: faster, small, text, whisper, 모델, 설치, 순위, 프롬프트
 - Pages: 실습결과물/15/로컬 whisper 모델 설치 프롬프트.md
 
-## community-025
+## community-027
 
 - Representative: [imports-85 실제데이터 기반 요약보고서](../실습결과물/16/imports-85_actual_data_summary.md)
 - Size: 1
@@ -228,7 +246,7 @@
 - Entities: 85, 85_cleaned, csv, imports, mpg, 기반, 범위, 보고
 - Pages: 실습결과물/16/imports-85_actual_data_summary.md
 
-## community-026
+## community-028
 
 - Representative: [자동차 모델 가격·성능·연비 관계 인터랙티브 보고서](../실습결과물/16/imports-85_interactive_report.md)
 - Size: 1
@@ -237,7 +255,7 @@
 - Entities: administrator, users, 가격, 가격의, 관계, 대시보드, 데이터, 모델
 - Pages: 실습결과물/16/imports-85_interactive_report.md
 
-## community-027
+## community-029
 
 - Representative: [imports-85 정제 보고서](../실습결과물/16/imports-85_report.md)
 - Size: 1
@@ -246,7 +264,7 @@
 - Entities: 59, 85, bore, horsepower, imports, normalized, 결측치, 기준
 - Pages: 실습결과물/16/imports-85_report.md
 
-## community-028
+## community-030
 
 - Representative: [Retail Sales Seaborn Graphs](../실습결과물/16/retail_sales_report_assets/README.md)
 - Size: 1
@@ -255,7 +273,7 @@
 - Entities: 01_monthly_net_sales_trend, graphs, png, retail, sales, seaborn, 순매출, 월별
 - Pages: 실습결과물/16/retail_sales_report_assets/README.md
 
-## community-029
+## community-031
 
 - Representative: [Retail Sales 추세 1페이지 보고서](../실습결과물/16/retail_sales_trend_onepage_report.md)
 - Size: 1
@@ -264,7 +282,7 @@
 - Entities: 04, 16, 1페이지, 2026, retail, sales, 매출, 어떤
 - Pages: 실습결과물/16/retail_sales_trend_onepage_report.md
 
-## community-030
+## community-032
 
 - Representative: [리테일 분석판매보고서노트북LM](../실습결과물/16/리테일 분석판매보고서노트북LM.md)
 - Size: 1
@@ -273,7 +291,7 @@
 - Entities: 리테일, 분석, 분석판매보고서노트북lm, 브리핑, 전략, 판매
 - Pages: 실습결과물/16/리테일 분석판매보고서노트북LM.md
 
-## community-031
+## community-033
 
 - Representative: [매출 분석에 쓰인 프롬프트](../실습결과물/16/매출분석에 쓰인 프롬프트.md)
 - Size: 1
@@ -282,7 +300,7 @@
 - Entities: administrator, dxax, text, users, 매출, 분석에, 쓰인, 프롬프트
 - Pages: 실습결과물/16/매출분석에 쓰인 프롬프트.md
 
-## community-032
+## community-034
 
 - Representative: [자동차 수출 관련 예제 프롬프트](../실습결과물/16/자동차수출예제관련프롬프트.md)
 - Size: 1
@@ -291,7 +309,7 @@
 - Entities: 수출, 예제, 자동차, 프롬프트
 - Pages: 실습결과물/16/자동차수출예제관련프롬프트.md
 
-## community-033
+## community-035
 
 - Representative: [📊 2026 HRD Trend Report 요약](../실습결과물/16/한페이지요약 HRD AX 수업도향.md)
 - Size: 1
@@ -300,7 +318,7 @@
 - Entities: 1페이지, 2026, current, hrd, issues, report, state, trend
 - Pages: 실습결과물/16/한페이지요약 HRD AX 수업도향.md
 
-## community-034
+## community-036
 
 - Representative: [Project Management 매니저 성과 1페이지 요약 보고서](../실습결과물/17/02 Project Management_manager_ranking_report.md)
 - Size: 1
@@ -309,7 +327,7 @@
 - Entities: 02, 1페이지, management, project, 기준으로, 매니저, 목적, 보고서는
 - Pages: 실습결과물/17/02 Project Management_manager_ranking_report.md
 
-## community-035
+## community-037
 
 - Representative: [프로젝트 포트폴리오 SCQA 인사이트 리포트](../실습결과물/17/02 Project Management_SCQA_insight_report.md)
 - Size: 1
@@ -318,7 +336,7 @@
 - Entities: complication, question, scqa, situation, 리포트, 문제, 상황, 성과
 - Pages: 실습결과물/17/02 Project Management_SCQA_insight_report.md
 
-## community-036
+## community-038
 
 - Representative: [Project Management 데이터 1페이지 요약 보고서](../실습결과물/17/02 Project Management_summary_report.md)
 - Size: 1
@@ -327,7 +345,7 @@
 - Entities: 02, 1페이지, actual, date, management, project, 결론, 담당자별
 - Pages: 실습결과물/17/02 Project Management_summary_report.md
 
-## community-037
+## community-039
 
 - Representative: [E-Commerce Orders 매장별 일매출 이상치 분석 보고서](../실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report.md)
 - Size: 1
@@ -336,7 +354,7 @@
 - Entities: 08, 5배, commerce, csv, iqr, orders, store, 기본
 - Pages: 실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report.md
 
-## community-038
+## community-040
 
 - Representative: [E-Commerce Orders 가격 이상치 분석 보고서](../실습결과물/17/08 E-Commerce Orders_price_outlier_report.md)
 - Size: 1
@@ -345,7 +363,7 @@
 - Entities: 5배, commerce, iqr, orders, 가격, 결과, 규칙, 기본
 - Pages: 실습결과물/17/08 E-Commerce Orders_price_outlier_report.md
 
-## community-039
+## community-041
 
 - Representative: [project Magement_blog](../실습결과물/17/project Magement_blog.md)
 - Size: 1
@@ -354,7 +372,7 @@
 - Entities: magement_blog, pm은, project, 끝내고, 어떤, 항상
 - Pages: 실습결과물/17/project Magement_blog.md
 
-## community-040
+## community-042
 
 - Representative: [엑셀 데이터 처리 프롬프트](../실습결과물/17/엑셀처리프롬프트.md)
 - Size: 1

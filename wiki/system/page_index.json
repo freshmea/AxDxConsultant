@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-18T11:49:39.413073+00:00",
+  "generated_at": "2026-04-21T00:00:55.830302+00:00",
   "pages": [
     {
       "id": "AGENTS",
@@ -113,6 +113,48 @@
       ]
     },
     {
+      "id": "llm_wiki/Hermes-Agent-비교-보고서",
+      "title": "Hermes Agent 조사 및 현재 시스템 비교 보고서",
+      "path": "llm_wiki/Hermes-Agent-비교-보고서.md",
+      "summary": "작성일: 2026-04-21 - 비교 대상 1: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) - 비교 대상 2: 현재 저장소의 `LLM Wiki + FAISS + GraphRAG-lite + Smart Connections bridge + Mem0 + local Whisper` 스택",
+      "tags": [],
+      "topics": [
+        "agent",
+        "hermes",
+        "nousresearch",
+        "대상",
+        "비교",
+        "시스템",
+        "조사",
+        "현재"
+      ],
+      "entities": [
+        "2026",
+        "agent",
+        "hermes",
+        "nousresearch",
+        "강한",
+        "구조",
+        "대상",
+        "메모리",
+        "부분",
+        "비교",
+        "시스템",
+        "작성일"
+      ],
+      "tokens_estimate": 2138,
+      "outbound_links": [],
+      "unresolved_links": [
+        "/C:/Users/Administrator/dxAx/AGENTS.md",
+        "/C:/Users/Administrator/dxAx/llm_wiki/README.md",
+        "/C:/Users/Administrator/dxAx/memory_layer/README.md"
+      ],
+      "community_ids": [
+        "community-010"
+      ],
+      "obsidian_related": []
+    },
+    {
       "id": "llm_wiki/LLM 지식 아키텍처",
       "title": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서",
       "path": "llm_wiki/LLM 지식 아키텍처.md",
@@ -146,7 +188,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-010"
+        "community-011"
       ],
       "obsidian_related": [
         {
@@ -257,7 +299,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-011"
+        "community-012"
       ],
       "obsidian_related": [
         {
@@ -479,7 +521,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-012"
+        "community-013"
       ],
       "obsidian_related": [
         {
@@ -590,7 +632,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-013"
+        "community-014"
       ],
       "obsidian_related": [
         {
@@ -701,7 +743,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-014"
+        "community-015"
       ],
       "obsidian_related": [
         {
@@ -812,7 +854,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-015"
+        "community-016"
       ],
       "obsidian_related": [
         {
@@ -923,7 +965,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-016"
+        "community-017"
       ],
       "obsidian_related": [
         {
@@ -1030,11 +1072,11 @@
         "axdxconsultant",
         "과정"
       ],
-      "tokens_estimate": 1584,
+      "tokens_estimate": 2063,
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-017"
+        "community-018"
       ],
       "obsidian_related": [
         {
@@ -1112,6 +1154,44 @@
       ]
     },
     {
+      "id": "skills/graphify-code-wiki/SKILL",
+      "title": "Graphify Code Wiki",
+      "path": "skills/graphify-code-wiki/SKILL.md",
+      "summary": "Use this skill when the task is about the Graphify-inspired code graph integration in this repository, not for generic wiki maintenance.",
+      "tags": [],
+      "topics": [
+        "code",
+        "graph",
+        "graphify",
+        "integration",
+        "repository",
+        "use",
+        "verify",
+        "wiki"
+      ],
+      "entities": [
+        "code",
+        "confirm",
+        "files",
+        "graph",
+        "graphify",
+        "integration",
+        "required",
+        "skill",
+        "stance",
+        "task",
+        "use",
+        "verify"
+      ],
+      "tokens_estimate": 1518,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "community_ids": [
+        "community-019"
+      ],
+      "obsidian_related": []
+    },
+    {
       "id": "skills/local-whisper-gpu/SKILL",
       "title": "Local Whisper GPU",
       "path": "skills/local-whisper-gpu/SKILL.md",
@@ -1145,7 +1225,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-018"
+        "community-020"
       ],
       "obsidian_related": [
         {
@@ -1256,7 +1336,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-019"
+        "community-021"
       ],
       "obsidian_related": [
         {
@@ -1350,24 +1430,24 @@
         "workspace"
       ],
       "entities": [
+        "architecture",
         "change",
         "confirm",
         "graph",
         "in",
         "keep",
-        "layout",
         "llm",
         "order",
-        "prepare",
         "recreate",
         "required",
-        "setup"
+        "setup",
+        "stance"
       ],
-      "tokens_estimate": 1068,
+      "tokens_estimate": 1171,
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-020"
+        "community-022"
       ],
       "obsidian_related": [
         {
@@ -8448,7 +8528,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-021"
+        "community-023"
       ],
       "obsidian_related": [
         {
@@ -8559,7 +8639,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-022"
+        "community-024"
       ],
       "obsidian_related": [
         {
@@ -8656,7 +8736,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-023"
+        "community-025"
       ],
       "obsidian_related": [
         {
@@ -8763,7 +8843,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-024"
+        "community-026"
       ],
       "obsidian_related": [
         {
@@ -8874,7 +8954,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-025"
+        "community-027"
       ],
       "obsidian_related": [
         {
@@ -8985,7 +9065,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-026"
+        "community-028"
       ],
       "obsidian_related": [
         {
@@ -9096,7 +9176,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-027"
+        "community-029"
       ],
       "obsidian_related": [
         {
@@ -9203,7 +9283,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-028"
+        "community-030"
       ],
       "obsidian_related": [
         {
@@ -9314,7 +9394,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-029"
+        "community-031"
       ],
       "obsidian_related": [
         {
@@ -9417,7 +9497,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-030"
+        "community-032"
       ],
       "obsidian_related": [
         {
@@ -9524,7 +9604,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-031"
+        "community-033"
       ],
       "obsidian_related": [
         {
@@ -9623,7 +9703,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-032"
+        "community-034"
       ],
       "obsidian_related": [
         {
@@ -9734,7 +9814,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-033"
+        "community-035"
       ],
       "obsidian_related": [
         {
@@ -9845,7 +9925,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-034"
+        "community-036"
       ],
       "obsidian_related": [
         {
@@ -9956,7 +10036,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-035"
+        "community-037"
       ],
       "obsidian_related": [
         {
@@ -10067,7 +10147,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-036"
+        "community-038"
       ],
       "obsidian_related": [
         {
@@ -10178,7 +10258,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-037"
+        "community-039"
       ],
       "obsidian_related": [
         {
@@ -10289,7 +10369,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-038"
+        "community-040"
       ],
       "obsidian_related": [
         {
@@ -10394,7 +10474,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-039"
+        "community-041"
       ],
       "obsidian_related": [
         {
@@ -10501,7 +10581,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-040"
+        "community-042"
       ],
       "obsidian_related": [
         {

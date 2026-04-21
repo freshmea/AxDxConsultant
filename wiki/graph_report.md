@@ -1,9 +1,9 @@
 # Graph Report
 
-- Generated: 2026-04-18T11:49:39.413073+00:00
-- Pages: 95
+- Generated: 2026-04-21T00:00:55.830302+00:00
+- Pages: 97
 - Edges: 89
-- Estimated full corpus tokens: 83110
+- Estimated full corpus tokens: 87348
 - Smart Connections bridge: enabled
 - Code files scanned: 19
 - Code graph: 891 nodes / 2496 edges / 13 communities
@@ -36,8 +36,8 @@
 - `llm` x 9
 - `핵심` x 9
 - `사업화` x 9
+- `wiki` x 8
 - `1페이지` x 8
-- `wiki` x 7
 - `작성` x 7
 - `고려의` x 7
 - `그림자` x 7
@@ -73,9 +73,9 @@
 - `community-007` | size=5 | representative=[실습결과물 06 인덱스](../실습결과물/06/00-INDEX.md)
 - `community-008` | size=5 | representative=[실습결과물 09 인덱스](../실습결과물/09/00-INDEX.md)
 - `community-009` | size=4 | representative=[실습결과물 15 인덱스](../실습결과물/15/00-INDEX.md)
-- `community-010` | size=1 | representative=[LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
-- `community-011` | size=1 | representative=[Obsidian Smart Connections Setup](../llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md)
-- `community-012` | size=1 | representative=[Local Memory Layer](../memory_layer/README.md)
+- `community-010` | size=1 | representative=[Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
+- `community-011` | size=1 | representative=[LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
+- `community-012` | size=1 | representative=[Obsidian Smart Connections Setup](../llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md)
 
 ## Most Connected Pages
 
@@ -106,6 +106,7 @@
 ## Orphan Candidates
 
 - [LLM Wiki Schema](../AGENTS.md)
+- [Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
 - [LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
 - [Obsidian Smart Connections Setup](../llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md)
 - [Local LLM Wiki](../llm_wiki/README.md)
@@ -115,6 +116,7 @@
 - [Titanic AdaBoost 분석 보고서](../orange_example_10/titanic_adaboost_report.md)
 - [Titanic 생존 분석 보고서](../orange_example_10/titanic_survival_report.md)
 - [AxDxConsultant](../README.md)
+- [Graphify Code Wiki](../skills/graphify-code-wiki/SKILL.md)
 - [Local Whisper GPU](../skills/local-whisper-gpu/SKILL.md)
 - [Troubleshooting](../skills/troubleshooting.md)
 - [Wiki LLM Setup](../skills/wiki-llm-setup/SKILL.md)
@@ -123,8 +125,6 @@
 - [2. 교육 요약본 (1페이지)](../실습결과물/06/paperclipai교육요약.md)
 - [1. 사업계획서 (요약형)](../실습결과물/06/paperclipai사업계획서.md)
 - [1. 업무 흐름 구조화](../실습결과물/07/01-업무-흐름-구조화.md)
-- [업무 흐름 (Mermaid)](../실습결과물/07/02-업무-흐름-mermaid.md)
-- [나의 업무 비효율 수치화 템플릿 작성](../실습결과물/07/03-업무-비효율-수치화-템플릿.md)
 
 ## Code Graph
 
