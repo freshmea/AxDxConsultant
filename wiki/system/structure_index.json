@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T00:00:55.830302+00:00",
+  "generated_at": "2026-04-21T23:53:36.343576+00:00",
   "pages": [
     {
       "id": "AGENTS",
@@ -1070,7 +1070,7 @@
       "summary": "AxDx 전문가 과정",
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 2063,
+      "tokens_estimate": 2282,
       "community_ids": [
         "community-018"
       ],

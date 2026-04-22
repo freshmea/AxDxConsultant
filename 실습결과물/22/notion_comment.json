@@ -1,0 +1,326 @@
+{
+  "name": "notion_comment",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            }
+          ]
+        }
+      },
+      "id": "7d410382-ae9e-4591-8578-013297275faf",
+      "name": "Run every hour",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "position": [
+        -176,
+        976
+      ],
+      "typeVersion": 1.2
+    },
+    {
+      "parameters": {
+        "url": "=https://api.notion.com/v1/comments?block_id={{ $json.id }}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "notionApi",
+        "options": {}
+      },
+      "id": "0adb75b5-3609-4e0a-94ee-d00864583d67",
+      "name": "List comments",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [
+        480,
+        976
+      ],
+      "typeVersion": 4.2,
+      "credentials": {
+        "notionApi": {
+          "id": "SHuZTOTG90zR5SsZ",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8a294900-f367-47a2-b260-344b133dc2ff",
+              "name": "notionDatabaseId",
+              "type": "string",
+              "value": "349541956f7a80518c89e173ce6b5a55"
+            },
+            {
+              "id": "650dfea4-7240-482e-bf0d-b978edcc3d78",
+              "name": "AI Summary Notion Property (type text)",
+              "type": "string",
+              "value": "AI Summary"
+            },
+            {
+              "id": "47c1271d-2b0b-4dab-a3c2-c6030a03a660",
+              "name": "Last Execution Notion Property (type date)",
+              "type": "string",
+              "value": "Last AI summary update"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "79043ff2-5ec0-41b1-a6e5-72c16d4f571a",
+      "name": "Define your Notion Database1",
+      "type": "n8n-nodes-base.set",
+      "position": [
+        32,
+        976
+      ],
+      "typeVersion": 3.4,
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "getAll",
+        "databaseId": {
+          "__rl": true,
+          "value": "34954195-6f7a-8051-8c89-e173ce6b5a55",
+          "mode": "list",
+          "cachedResultName": "실습데이터베이스",
+          "cachedResultUrl": "https://www.notion.so/349541956f7a80518c89e173ce6b5a55"
+        },
+        "returnAll": true,
+        "simple": false,
+        "options": {}
+      },
+      "id": "5b879294-f7e4-48a6-aee1-fd73b861139d",
+      "name": "List database pages1",
+      "type": "n8n-nodes-base.notion",
+      "position": [
+        256,
+        976
+      ],
+      "typeVersion": 2.2,
+      "credentials": {
+        "notionApi": {
+          "id": "SHuZTOTG90zR5SsZ",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "version": 2,
+            "leftValue": "",
+            "caseSensitive": true,
+            "typeValidation": "strict"
+          },
+          "combinator": "or",
+          "conditions": [
+            {
+              "id": "309836eb-51d2-4543-bc03-949d6280b0dc",
+              "operator": {
+                "type": "dateTime",
+                "operation": "after"
+              },
+              "leftValue": "={{$json.results.length && $json.results[$json.results.length-1].last_edited_time }}",
+              "rightValue": "={{ $('List database pages1').item.json.properties[$('Define your Notion Database1').item.json['Last Execution Notion Property']].date.start }}"
+            },
+            {
+              "id": "24faa20c-973d-4539-9b7a-706368527304",
+              "operator": {
+                "type": "string",
+                "operation": "empty",
+                "singleValue": true
+              },
+              "leftValue": "={{ $('List database pages1').item.json.properties[$('Define your Notion Database1').item.json['Last Execution Notion Property']].date.start }}",
+              "rightValue": ""
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "99d68b51-cebd-40db-b7bc-d2797306be2e",
+      "name": "Only keep pages that received new comments since last execution1",
+      "type": "n8n-nodes-base.filter",
+      "position": [
+        672,
+        976
+      ],
+      "typeVersion": 2.2
+    },
+    {
+      "parameters": {
+        "resource": "databasePage",
+        "operation": "update",
+        "pageId": {
+          "__rl": true,
+          "value": "={{ $('List database pages1').item.json.id }}",
+          "mode": "id"
+        },
+        "simple": false,
+        "propertiesUi": {
+          "propertyValues": [
+            {
+              "key": "={{ $('Define your Notion Database1').item.json['AI Summary Notion Property (type text)'] }}|rich_text",
+              "textContent": "={{ $json.output }}"
+            },
+            {
+              "key": "={{ $('Define your Notion Database1').item.json['Last Execution Notion Property (type date)'] }}|date",
+              "date": "={{ $('Run every hour').item.json.timestamp }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "8721cc62-17f5-4e21-b9ec-d77b05a2160b",
+      "name": "Add summary to Notion page and update last execution date1",
+      "type": "n8n-nodes-base.notion",
+      "position": [
+        1296,
+        976
+      ],
+      "typeVersion": 2.2,
+      "credentials": {
+        "notionApi": {
+          "id": "SHuZTOTG90zR5SsZ",
+          "name": "Notion account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-5-mini"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        912,
+        1248
+      ],
+      "id": "a476095e-48e0-4234-b98e-329da360ff31",
+      "name": "OpenAI Chat Model1",
+      "credentials": {
+        "openAiApi": {
+          "id": "7mn8ZHMgZfxunVDA",
+          "name": "n8n free OpenAI API credits"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ JSON.stringify($json.results)}}\n\nThose are comments from a single Notion Page extracted from Notion API. They show an email conversation (each comment representing an email). \n\nCan you please summarize the email conversation?  \n\nPlease send me only the summary of maximum 6 sentencences. Example: \"Stefan initially had trouble selecting a Notion database in Slap, which he resolved. He then faced email delivery/ingestion issues between his Infomaniak email and Slap/Notion, partly complicated by general Notion instability. They scheduled and had a meeting, after which Laura shared resources and promised follow-ups on specific features/offers.\"\n\nIf there is no comment, do not generate a summary but give as answer \"Empty\".\n\nThe result must be written in Korean.",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        912,
+        976
+      ],
+      "id": "41eb54f7-da1a-41af-ba0d-ac548ed71b81",
+      "name": "AI Agent1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Run every hour": {
+      "main": [
+        [
+          {
+            "node": "Define your Notion Database1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "List comments": {
+      "main": [
+        [
+          {
+            "node": "Only keep pages that received new comments since last execution1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Define your Notion Database1": {
+      "main": [
+        [
+          {
+            "node": "List database pages1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "List database pages1": {
+      "main": [
+        [
+          {
+            "node": "List comments",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Only keep pages that received new comments since last execution1": {
+      "main": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent1": {
+      "main": [
+        [
+          {
+            "node": "Add summary to Notion page and update last execution date1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "8c2b7a20-34ff-4ec6-a99b-bbdb7bb1bd75",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1730f8f31a51b17130cabb0ca3e46a140977f645f6d862c42701b3a3d939fce6"
+  },
+  "id": "NOdRP3wBQgTSIeFI",
+  "tags": []
+}

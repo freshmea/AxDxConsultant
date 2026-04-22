@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T00:00:55.830302+00:00",
+  "generated_at": "2026-04-21T23:53:36.343576+00:00",
   "repo_root": "C:\\Users\\Administrator\\dxAx",
   "nodes": [
     {
@@ -541,7 +541,8 @@
         "2026_4_15",
         "2026_4_16",
         "2026_4_17",
-        "2026_4_20"
+        "2026_4_20",
+        "2026_4_21"
       ],
       "tags": [],
       "topics": [
@@ -568,8 +569,8 @@
         "axdxconsultant",
         "과정"
       ],
-      "tokens_estimate": 2063,
-      "word_count": 1872,
+      "tokens_estimate": 2282,
+      "word_count": 2070,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0,
@@ -9166,7 +9167,7 @@
     "markdown_pages": 97,
     "resolved_edges": 89,
     "unresolved_links": 3,
-    "total_tokens_estimate": 87348,
+    "total_tokens_estimate": 87567,
     "community_count": 42
   },
   "facets": {

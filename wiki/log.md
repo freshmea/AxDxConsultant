@@ -133,3 +133,9 @@
 - communities: 42
 - estimated tokens: 87348
 
+## [2026-04-22 08:54:04] build | markdown graph refresh
+- pages: 97
+- edges: 89
+- communities: 42
+- estimated tokens: 87567
+
