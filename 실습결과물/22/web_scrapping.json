@@ -1,0 +1,373 @@
+{
+  "name": "My workflow 2",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -528,
+        -48
+      ],
+      "id": "1009500d-88e3-48b5-9e5d-89b21acb298a",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nconst totalPages = 128;\nconst items = [];\n\n\nfor (let i=1;i<=totalPages; i++) {\n  items.push({\n    json: {page: i}\n  });\n}\n\nreturn items;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -320,
+        -48
+      ],
+      "id": "0aad1dfa-26a2-4831-aa4d-4e9cbd48b687",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -112,
+        -48
+      ],
+      "id": "7c245d30-3496-4cac-9d03-63526a1999d6",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0",
+          "mode": "list",
+          "cachedResultName": "피드백 제출",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 72479161,
+          "mode": "list",
+          "cachedResultName": "응답에서",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0/edit#gid=72479161"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        976,
+        -160
+      ],
+      "id": "b586d442-c668-4602-b223-e53672f6ebee",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SPvyTQhS6NLgSsf2",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://bizinfo.go.kr/sii/siia/selectSIIA200View.do?rows=15&cpage={{ $json.page }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        112,
+        48
+      ],
+      "id": "3dfea47c-9a32-4f1d-bd23-af23892f7add",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "bizinfo",
+              "cssSelector": "table tbody tr",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        304,
+        48
+      ],
+      "id": "3b754630-abdc-4fcf-a0ca-f21c6ff64f0b",
+      "name": "HTML1"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "bizinfo",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        512,
+        48
+      ],
+      "id": "863f7955-c865-4f33-86c9-7a6db3bc8023",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "cdbae22c-f7eb-4003-afa7-5cd5564c30bc",
+              "name": "지원사업ID",
+              "value": "={{$json.bizinfo.match(/^\\d+/)?.[0]}}",
+              "type": "string"
+            },
+            {
+              "id": "74139bea-35d4-47cb-a281-161c48736cd8",
+              "name": "bizinfo",
+              "value": "={{$json.bizinfo.replace(/^\\d+\\s*/, '').split('\\n')[0].trim()}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        720,
+        48
+      ],
+      "id": "ebe41344-ebef-4eef-b86e-b3eb2e5886fa",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "8b349b5c-d192-4ddd-a559-6a00d72aff8d",
+              "leftValue": "={{ $json[\"지원사업ID\"] }}",
+              "rightValue": "=null",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        928,
+        48
+      ],
+      "id": "d91727cc-cc22-41d9-a5b2-840a048ff7ed",
+      "name": "If"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "name": "Replace Me",
+      "typeVersion": 1,
+      "position": [
+        1344,
+        352
+      ],
+      "id": "d863de6d-2f5c-4f91-8021-0fecaaa5fb42",
+      "placeholder": true
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0",
+          "mode": "list",
+          "cachedResultName": "피드백 제출",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 72479161,
+          "mode": "list",
+          "cachedResultName": "응답에서",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0/edit#gid=72479161"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {},
+          "matchingColumns": [],
+          "schema": [],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        1136,
+        64
+      ],
+      "id": "b21b7d59-ed9d-42b1-a0ec-8e173bc55558",
+      "name": "Append row in sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SPvyTQhS6NLgSsf2",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "HTML1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML1": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Append row in sheet1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Replace Me": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "ebff965f-ba55-4eb2-a92c-f19f2961bcdc",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1730f8f31a51b17130cabb0ca3e46a140977f645f6d862c42701b3a3d939fce6"
+  },
+  "id": "CKxn9yODo1F0b3iB",
+  "tags": []
+}
