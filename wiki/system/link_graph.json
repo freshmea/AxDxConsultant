@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T23:53:36.343576+00:00",
+  "generated_at": "2026-04-23T00:15:57.197579+00:00",
   "repo_root": "C:\\Users\\Administrator\\dxAx",
   "nodes": [
     {
@@ -110,7 +110,7 @@
       "community_ids": [
         "community-010"
       ],
-      "obsidian_related_count": 0
+      "obsidian_related_count": 12
     },
     {
       "id": "llm_wiki/LLM 지식 아키텍처",
@@ -542,7 +542,8 @@
         "2026_4_16",
         "2026_4_17",
         "2026_4_20",
-        "2026_4_21"
+        "2026_4_21",
+        "2026_4_22"
       ],
       "tags": [],
       "topics": [
@@ -569,8 +570,8 @@
         "axdxconsultant",
         "과정"
       ],
-      "tokens_estimate": 2282,
-      "word_count": 2070,
+      "tokens_estimate": 2461,
+      "word_count": 2226,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0,
@@ -630,7 +631,7 @@
       "community_ids": [
         "community-019"
       ],
-      "obsidian_related_count": 0
+      "obsidian_related_count": 12
     },
     {
       "id": "skills/local-whisper-gpu/SKILL",
@@ -9167,7 +9168,7 @@
     "markdown_pages": 97,
     "resolved_edges": 89,
     "unresolved_links": 3,
-    "total_tokens_estimate": 87567,
+    "total_tokens_estimate": 87746,
     "community_count": 42
   },
   "facets": {

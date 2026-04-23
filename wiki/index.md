@@ -1,15 +1,15 @@
 # Wiki Index
 
-- Generated: 2026-04-21T23:53:36.343576+00:00
+- Generated: 2026-04-23T00:15:57.197579+00:00
 - Markdown pages: 97
 - Resolved edges: 89
 - Communities: 42
-- Estimated full-read tokens: 87567
+- Estimated full-read tokens: 87746
 - Ignore file: `.llmwikiignore`
 - Semantic search: enabled
 - Smart Connections bridge: enabled
-- Code graph nodes: 891
-- Code graph edges: 2496
+- Code graph nodes: 980
+- Code graph edges: 2720
 
 ## Pages
 
@@ -26,7 +26,7 @@
   - Tags: (none)
   - Topics: agent, hermes, nousresearch, 대상, 비교
   - Links: 0 outbound / 3 unresolved
-  - Smart Connections neighbors: 0
+  - Smart Connections neighbors: 12
 - [LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
   - Path: `llm_wiki/LLM 지식 아키텍처.md`
   - Summary: 2023~2026년의 흐름을 한 문장으로 요약하면, **“큰 컨텍스트 창에 다 때려 넣는 방식”에서 “필요한 지식과 절차를 분리해 지속적으로 기억·갱신하는 방식”으로 이동**했다고 볼 수 있습니다. 2023년 MemGPT는 제한된 컨텍스트 윈도우를 계층형 메모리로 우회하는 문제를 제기했고, 2024년 Microsoft GraphRAG는 사설 문서 코퍼스에 대해 **그래프 인덱스 + 커뮤니티 요약**으로 전역 질문을 다루는 방법을 제시했습니다. 2025년 Zep/Graphiti와 Mem0는 장기 기
@@ -96,7 +96,7 @@
   - Tags: (none)
   - Topics: code, graph, graphify, integration, repository
   - Links: 0 outbound / 0 unresolved
-  - Smart Connections neighbors: 0
+  - Smart Connections neighbors: 12
 - [Local Whisper GPU](../skills/local-whisper-gpu/SKILL.md)
   - Path: `skills/local-whisper-gpu/SKILL.md`
   - Summary: Set up the STT stack in this order.
