@@ -1,0 +1,649 @@
+{
+  "name": "gov_check_update",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -496,
+        32
+      ],
+      "id": "ff4156a5-f143-4b0f-a6c0-b9da977627bb",
+      "name": "Loop Over Items"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0",
+          "mode": "list",
+          "cachedResultName": "피드백 제출",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 72479161,
+          "mode": "list",
+          "cachedResultName": "응답에서",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0/edit#gid=72479161"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "지원사업ID": "={{ $json[\"지원사업ID\"] }}",
+            "bizinfo": "={{ $json.bizinfo }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "지원사업ID",
+              "displayName": "지원사업ID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "bizinfo",
+              "displayName": "bizinfo",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        480,
+        -352
+      ],
+      "id": "2f63212e-20ef-487b-9912-35dc4571d604",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SPvyTQhS6NLgSsf2",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "=https://bizinfo.go.kr/sii/siia/selectSIIA200View.do?rows=15&cpage={{ $json.page }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -144,
+        176
+      ],
+      "id": "a631d7a7-f4a1-4b5a-b552-61a39844d6ed",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "operation": "extractHtmlContent",
+        "extractionValues": {
+          "values": [
+            {
+              "key": "bizinfo",
+              "cssSelector": "table tbody tr",
+              "returnArray": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        80,
+        176
+      ],
+      "id": "a544c536-57a7-4085-9cae-13f330646c10",
+      "name": "HTML1"
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "bizinfo",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        304,
+        176
+      ],
+      "id": "7b0f9ae8-2267-41ae-8aef-92d7f383c6db",
+      "name": "Split Out"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "cdbae22c-f7eb-4003-afa7-5cd5564c30bc",
+              "name": "지원사업ID",
+              "value": "={{$json.bizinfo.match(/^\\d+/)?.[0]}}",
+              "type": "string"
+            },
+            {
+              "id": "74139bea-35d4-47cb-a281-161c48736cd8",
+              "name": "bizinfo",
+              "value": "={{$json.bizinfo.replace(/^\\d+\\s*/, '').split('\\n')[0].trim()}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        528,
+        176
+      ],
+      "id": "43facc85-abc6-46ec-b53a-77fb4f20276f",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        -1120,
+        -112
+      ],
+      "id": "4f8150cc-9b94-4c87-a44f-fc6fb82eb3a0",
+      "name": "Schedule Trigger"
+    },
+    {
+      "parameters": {
+        "language": "pythonNative",
+        "pythonCode": "total_pages = 3\nitems = []\n\nfor i in range(1, total_pages + 1):\n    items.append({\n        \"json\": {\n            \"page\": i\n        }\n    })\n\nreturn items"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -800,
+        32
+      ],
+      "id": "9373113f-cb5a-4cf8-8f1c-9a05abf1d532",
+      "name": "Code in Python1"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0",
+          "mode": "list",
+          "cachedResultName": "피드백 제출",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 72479161,
+          "mode": "list",
+          "cachedResultName": "응답에서",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1F9BEcb3oU-YeTm_9e4dZKIXfwGhHqF4bH_KpvcGBLm0/edit#gid=72479161"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        -800,
+        -176
+      ],
+      "id": "0e81697f-8c59-4aef-8d4a-7ed1a8f764af",
+      "name": "Get row(s) in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "SPvyTQhS6NLgSsf2",
+          "name": "Google Sheets OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a0d3d347-4ad4-41b1-b85e-167dadb97638",
+              "name": "지원사업ID",
+              "value": "={{ $json[\"지원사업ID\"] }}",
+              "type": "string"
+            },
+            {
+              "id": "233f09f3-95d2-464d-a97c-3c1a140b9124",
+              "name": "bizinfo",
+              "value": "={{ $json.bizinfo }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -400,
+        -176
+      ],
+      "id": "5d2b34a0-e1e4-4886-9d0a-92f6dab50aee",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "mergeByFields": {
+          "values": [
+            {
+              "field1": "지원사업ID",
+              "field2": "지원사업ID"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.compareDatasets",
+      "typeVersion": 2.3,
+      "position": [
+        -160,
+        -144
+      ],
+      "id": "88000604-8e74-41e9-961d-5169a01eaefe",
+      "name": "Compare Datasets"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "4e8b8a16-a8ac-4049-9c41-351f84f4fdb6",
+              "leftValue": "={{ $items().length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        112,
+        -64
+      ],
+      "id": "a7a8b887-7a1f-46c1-b8c2-8e93daad4085",
+      "name": "If"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        288,
+        48
+      ],
+      "id": "7b758dcc-5eb2-4950-85a9-f43e3d4b9e4e",
+      "name": "No Operation, do nothing"
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "value": "C0AUTDJNL0Y",
+          "mode": "list",
+          "cachedResultName": "slack-전체"
+        },
+        "text": "={{ $json.output }}",
+        "otherOptions": {}
+      },
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.4,
+      "position": [
+        1280,
+        16
+      ],
+      "id": "813046d9-d5fa-4b2e-b868-3bdf508986b9",
+      "name": "Send a message",
+      "webhookId": "6b7bff60-8b1f-4ac3-abfc-ab8d25b3a0e6",
+      "credentials": {
+        "slackOAuth2Api": {
+          "id": "JR6hNJnZipHqKWUc",
+          "name": "Slack OAuth2 API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=들어온 정보   를 모두 종합해서 알림 메세지를 만들어줘 {{ JSON.stringify($json.data) }}",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        720,
+        -144
+      ],
+      "id": "15e9f57a-a15b-4580-8766-0b3d5eaf524f",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "mode": "list",
+          "value": "gpt-5-mini"
+        },
+        "builtInTools": {},
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        672,
+        32
+      ],
+      "id": "7403eeca-6f9b-4663-93a0-7bc7efd2053c",
+      "name": "OpenAI Chat Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "7mn8ZHMgZfxunVDA",
+          "name": "n8n free OpenAI API credits"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "aggregate": "aggregateAllItemData",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        480,
+        -144
+      ],
+      "id": "4f87b3b7-2ea8-49f8-82e2-8612ab90b46d",
+      "name": "Aggregate"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://kapi.kakao.com/v2/api/talk/memo/default/send",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "oAuth2Api",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/x-www-form-urlencoded;charset=utf-8"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "template_object",
+              "value": "={{ JSON.stringify({ \"object_type\":\"text\",   \"text\": \"[정부지원사업안내]\\n\" + $json.output, \"link\": { \"web_url\": \"https://www.bizinfo.go.kr/\", \"mobile_web_url\": \"https://www.bizinfo.go.kr/\" }, \"button_title\":\"포털 바로가기\"}) }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1280,
+        -256
+      ],
+      "id": "2789e565-1fe5-4957-aa88-18b3af03c376",
+      "name": "kakaoapi",
+      "credentials": {
+        "oAuth2Api": {
+          "id": "RAeEkTGY5ysKQ73i",
+          "name": "Unnamed credential"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Loop Over Items": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets",
+            "type": "main",
+            "index": 1
+          }
+        ],
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "HTML1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML1": {
+      "main": [
+        [
+          {
+            "node": "Split Out",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Out": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Code in Python1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Get row(s) in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in Python1": {
+      "main": [
+        [
+          {
+            "node": "Loop Over Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get row(s) in sheet": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "Compare Datasets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Compare Datasets": {
+      "main": [
+        [],
+        [],
+        [],
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Aggregate",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Operation, do nothing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "kakaoapi",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "4e4646bb-ad5a-4b7c-9082-a3ec406b2c78",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "1730f8f31a51b17130cabb0ca3e46a140977f645f6d862c42701b3a3d939fce6"
+  },
+  "id": "F1TwuOZffJzqQM6P",
+  "tags": []
+}
