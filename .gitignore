@@ -6,6 +6,7 @@ local_whisper/
 *.m4a
 .venv-report/
 .venv-knowledge/
+.venv-comfyui/
 
 
 

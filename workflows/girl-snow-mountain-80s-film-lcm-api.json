@@ -1,0 +1,128 @@
+{
+  "prompt": {
+    "3": {
+      "inputs": {
+        "seed": 123456789,
+        "steps": 6,
+        "cfg": 1.8,
+        "sampler_name": "lcm",
+        "scheduler": "sgm_uniform",
+        "denoise": 1.0,
+        "model": [
+          "10",
+          0
+        ],
+        "positive": [
+          "6",
+          0
+        ],
+        "negative": [
+          "7",
+          0
+        ],
+        "latent_image": [
+          "5",
+          0
+        ]
+      },
+      "class_type": "KSampler",
+      "_meta": {
+        "title": "KSampler"
+      }
+    },
+    "4": {
+      "inputs": {
+        "ckpt_name": "sd15-runwayml-v1-5-pruned-emaonly.safetensors"
+      },
+      "class_type": "CheckpointLoaderSimple",
+      "_meta": {
+        "title": "Load Checkpoint"
+      }
+    },
+    "5": {
+      "inputs": {
+        "width": 512,
+        "height": 512,
+        "batch_size": 1
+      },
+      "class_type": "EmptyLatentImage",
+      "_meta": {
+        "title": "Empty Latent Image"
+      }
+    },
+    "6": {
+      "inputs": {
+        "text": "distant full body photo of a young girl dancing on a snowy mountain, wide shot, far away subject, 1980s film photography, vintage analog photo, natural cold daylight, subtle film grain, faded colors, candid motion, realistic scene, scenic snowy landscape",
+        "clip": [
+          "10",
+          1
+        ]
+      },
+      "class_type": "CLIPTextEncode",
+      "_meta": {
+        "title": "Positive Prompt"
+      }
+    },
+    "7": {
+      "inputs": {
+        "text": "close-up, portrait, low quality, worst quality, blurry face, deformed body, extra limbs, duplicate person, cartoon, anime, painting, illustration, text, watermark",
+        "clip": [
+          "10",
+          1
+        ]
+      },
+      "class_type": "CLIPTextEncode",
+      "_meta": {
+        "title": "Negative Prompt"
+      }
+    },
+    "8": {
+      "inputs": {
+        "samples": [
+          "3",
+          0
+        ],
+        "vae": [
+          "4",
+          2
+        ]
+      },
+      "class_type": "VAEDecode",
+      "_meta": {
+        "title": "VAE Decode"
+      }
+    },
+    "9": {
+      "inputs": {
+        "filename_prefix": "GIRL_SNOW_MTN_FILM",
+        "images": [
+          "8",
+          0
+        ]
+      },
+      "class_type": "SaveImage",
+      "_meta": {
+        "title": "Save Image"
+      }
+    },
+    "10": {
+      "inputs": {
+        "model": [
+          "4",
+          0
+        ],
+        "clip": [
+          "4",
+          1
+        ],
+        "lora_name": "lcm-lora-sdv1-5.safetensors",
+        "strength_model": 1.0,
+        "strength_clip": 1.0
+      },
+      "class_type": "LoraLoader",
+      "_meta": {
+        "title": "Load LCM LoRA"
+      }
+    }
+  }
+}
