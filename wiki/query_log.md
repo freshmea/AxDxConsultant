@@ -83,3 +83,9 @@
 - Selected: llm_wiki/README.md, AGENTS.md, llm_wiki/LLM 지식 아키텍처.md, skills/wiki-llm-setup/SKILL.md, llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md
 - Read plan: llm_wiki/README.md, AGENTS.md, llm_wiki/LLM 지식 아키텍처.md, skills/wiki-llm-setup/SKILL.md, llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md
 - Tokens: full=83110 targeted=9125 saved=73985 ratio=0.8902
+
+## 2026-04-24T13:16:00.260302
+- Query: paperclipai memory migration para memory mem0 qdrant
+- Selected: skills/troubleshooting.md, memory_layer/README.md, llm_wiki/README.md, llm_wiki/Hermes-Agent-비교-보고서.md, AGENTS.md
+- Read plan: skills/troubleshooting.md, memory_layer/README.md, llm_wiki/README.md, llm_wiki/Hermes-Agent-비교-보고서.md, AGENTS.md
+- Tokens: full=88332 targeted=6310 saved=82022 ratio=0.9286

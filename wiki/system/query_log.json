@@ -353,5 +353,30 @@
       "saved_estimate": 73985,
       "savings_ratio": 0.8902
     }
+  },
+  {
+    "timestamp": "2026-04-24T13:16:00.260302",
+    "query": "paperclipai memory migration para memory mem0 qdrant",
+    "selected_paths": [
+      "skills/troubleshooting.md",
+      "memory_layer/README.md",
+      "llm_wiki/README.md",
+      "llm_wiki/Hermes-Agent-비교-보고서.md",
+      "AGENTS.md"
+    ],
+    "read_plan_paths": [
+      "skills/troubleshooting.md",
+      "memory_layer/README.md",
+      "llm_wiki/README.md",
+      "llm_wiki/Hermes-Agent-비교-보고서.md",
+      "AGENTS.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 88332,
+      "targeted_read_estimate": 6310,
+      "code_context_estimate": 201,
+      "saved_estimate": 82022,
+      "savings_ratio": 0.9286
+    }
   }
 ]

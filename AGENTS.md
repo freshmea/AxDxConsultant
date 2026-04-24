@@ -36,6 +36,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 5. Read only the top-ranked markdown pages that are needed to answer the question.
 6. If the question is about evolving configuration or operational state, also check `memory-search` before reading many raw pages.
 7. If a useful synthesis is created, store it back into `wiki/notes/`.
+8. When tracing local code relationships, use `graph-neighbors` before broader code reads when a single node's adjacency is enough.
 
 ## Maintenance Workflow
 
@@ -54,6 +55,8 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 - Check memory prerequisites: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-check --root .`
 - Bootstrap memory in batches: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-bootstrap --root . --user-id dxax-wiki --mode communities --offset 0 --limit 10`
 - Search change-aware facts: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-search "<query>" --root . --user-id dxax-wiki --top-k 5`
+- Add a change-aware fact manually: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-add "<fact>" --root . --user-id dxax-wiki`
 - Inspect the code graph: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-query "<query>" --root . --limit 10`
+- Inspect node neighbors in the code graph: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-neighbors "<node>" --root . --limit 20`
 - Explain a code node: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-explain "<node>" --root . --limit 12`
 - Trace a code path: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-path "<source>" "<target>" --root . --max-depth 8`

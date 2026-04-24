@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T00:15:57.197579+00:00",
+  "generated_at": "2026-04-23T23:57:24.442712+00:00",
   "repo_root": "C:\\Users\\Administrator\\dxAx",
   "nodes": [
     {
@@ -13,7 +13,8 @@
         "Operating Rules",
         "Unicode And Chart Rules",
         "Query Workflow",
-        "Maintenance Workflow"
+        "Maintenance Workflow",
+        "CLI Commands"
       ],
       "tags": [],
       "topics": [
@@ -40,8 +41,8 @@
         "unicode",
         "uses"
       ],
-      "tokens_estimate": 855,
-      "word_count": 538,
+      "tokens_estimate": 1285,
+      "word_count": 792,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 2,
@@ -543,7 +544,8 @@
         "2026_4_17",
         "2026_4_20",
         "2026_4_21",
-        "2026_4_22"
+        "2026_4_22",
+        "2026_4_23"
       ],
       "tags": [],
       "topics": [
@@ -570,8 +572,8 @@
         "axdxconsultant",
         "과정"
       ],
-      "tokens_estimate": 2461,
-      "word_count": 2226,
+      "tokens_estimate": 2617,
+      "word_count": 2352,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0,
@@ -9168,7 +9170,7 @@
     "markdown_pages": 97,
     "resolved_edges": 89,
     "unresolved_links": 3,
-    "total_tokens_estimate": 87746,
+    "total_tokens_estimate": 88332,
     "community_count": 42
   },
   "facets": {

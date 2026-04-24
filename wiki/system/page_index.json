@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T00:15:57.197579+00:00",
+  "generated_at": "2026-04-23T23:57:24.442712+00:00",
   "pages": [
     {
       "id": "AGENTS",
@@ -31,7 +31,7 @@
         "unicode",
         "uses"
       ],
-      "tokens_estimate": 855,
+      "tokens_estimate": 1285,
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
@@ -1145,7 +1145,7 @@
         "axdxconsultant",
         "과정"
       ],
-      "tokens_estimate": 2461,
+      "tokens_estimate": 2617,
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [

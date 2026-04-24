@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T00:15:57.197579+00:00",
+  "generated_at": "2026-04-23T23:57:24.442712+00:00",
   "pages": [
     {
       "id": "AGENTS",
@@ -33,7 +33,7 @@
       "summary": "This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm-wiki.md` gist.",
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 855,
+      "tokens_estimate": 1285,
       "community_ids": [
         "community-009"
       ],
@@ -1143,7 +1143,7 @@
       "summary": "AxDx 전문가 과정",
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 2461,
+      "tokens_estimate": 2617,
       "community_ids": [
         "community-018"
       ],

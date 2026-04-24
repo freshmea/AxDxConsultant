@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T00:15:57.197579+00:00",
+  "generated_at": "2026-04-23T23:57:24.442712+00:00",
   "pages": {
     "AGENTS": {
       "title": "LLM Wiki Schema",
@@ -11,7 +11,8 @@
         "Operating Rules",
         "Unicode And Chart Rules",
         "Query Workflow",
-        "Maintenance Workflow"
+        "Maintenance Workflow",
+        "CLI Commands"
       ],
       "tags": [],
       "topics": [
@@ -64,11 +65,13 @@
         "query": 2,
         "workflow": 3,
         "maintenance": 1,
+        "cli": 1,
+        "commands": 1,
         "agents": 1
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 855,
+      "tokens_estimate": 1285,
       "community_ids": [
         "community-009"
       ],
@@ -1739,7 +1742,8 @@
         "2026_4_17",
         "2026_4_20",
         "2026_4_21",
-        "2026_4_22"
+        "2026_4_22",
+        "2026_4_23"
       ],
       "tags": [],
       "topics": [
@@ -1784,12 +1788,13 @@
         "2026_4_20": 1,
         "2026_4_21": 1,
         "2026_4_22": 1,
+        "2026_4_23": 1,
         "readme": 1,
         "md": 1
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 2461,
+      "tokens_estimate": 2617,
       "community_ids": [
         "community-018"
       ],
