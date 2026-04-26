@@ -1,12 +1,12 @@
 # Graph Report
 
-- Generated: 2026-04-23T23:57:24.442712+00:00
-- Pages: 97
+- Generated: 2026-04-26T21:42:39.046324+00:00
+- Pages: 99
 - Edges: 89
-- Estimated full corpus tokens: 88332
+- Estimated full corpus tokens: 89434
 - Smart Connections bridge: enabled
-- Code files scanned: 20
-- Code graph: 980 nodes / 2720 edges / 14 communities
+- Code files scanned: 27
+- Code graph: 1036 nodes / 2950 edges / 16 communities
 
 ## Top Tags
 
@@ -73,9 +73,9 @@
 - `community-007` | size=5 | representative=[실습결과물 06 인덱스](../실습결과물/06/00-INDEX.md)
 - `community-008` | size=5 | representative=[실습결과물 09 인덱스](../실습결과물/09/00-INDEX.md)
 - `community-009` | size=4 | representative=[실습결과물 15 인덱스](../실습결과물/15/00-INDEX.md)
-- `community-010` | size=1 | representative=[Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
-- `community-011` | size=1 | representative=[LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
-- `community-012` | size=1 | representative=[Obsidian Smart Connections Setup](../llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md)
+- `community-010` | size=1 | representative=[Remote ComfyUI Z-Image Setup](../docs/comfyui-remote-zimage.md)
+- `community-011` | size=1 | representative=[ComfyUI Local Setup](../docs/comfyui-setup.md)
+- `community-012` | size=1 | representative=[Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
 
 ## Most Connected Pages
 
@@ -106,6 +106,8 @@
 ## Orphan Candidates
 
 - [LLM Wiki Schema](../AGENTS.md)
+- [Remote ComfyUI Z-Image Setup](../docs/comfyui-remote-zimage.md)
+- [ComfyUI Local Setup](../docs/comfyui-setup.md)
 - [Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
 - [LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
 - [Obsidian Smart Connections Setup](../llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md)
@@ -123,17 +125,16 @@
 - [PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지](../실습결과물/06/deep-research-report.md)
 - [머메이드 테스트](../실습결과물/06/mermaidTest.md)
 - [2. 교육 요약본 (1페이지)](../실습결과물/06/paperclipai교육요약.md)
-- [1. 사업계획서 (요약형)](../실습결과물/06/paperclipai사업계획서.md)
-- [1. 업무 흐름 구조화](../실습결과물/07/01-업무-흐름-구조화.md)
 
 ## Code Graph
 
-- language `python` x 20
-- relation `calls` x 2390
-- relation `defines` x 195
-- relation `imports` x 134
+- language `python` x 24
+- language `unsupported` x 3
+- relation `calls` x 2575
+- relation `defines` x 212
+- relation `imports` x 162
 - relation `inherits` x 1
-- confidence `EXTRACTED` x 2720
+- confidence `EXTRACTED` x 2950
 
 ## Code God Nodes
 

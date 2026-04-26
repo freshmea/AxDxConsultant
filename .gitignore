@@ -7,7 +7,11 @@ local_whisper/
 .venv-report/
 .venv-knowledge/
 .venv-comfyui/
-
+.gstack/
+node_modules/
+.smart-env/
+comfyui/
+wiki/system/code_cache/
 
 
 

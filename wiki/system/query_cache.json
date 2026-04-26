@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T23:57:24.442712+00:00",
+  "generated_at": "2026-04-26T21:42:39.046324+00:00",
   "pages": {
     "AGENTS": {
       "title": "LLM Wiki Schema",
@@ -71,7 +71,7 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 1285,
+      "tokens_estimate": 1458,
       "community_ids": [
         "community-009"
       ],
@@ -149,6 +149,125 @@
           "score": 0.674278
         }
       ]
+    },
+    "docs/comfyui-remote-zimage": {
+      "title": "Remote ComfyUI Z-Image Setup",
+      "path": "docs/comfyui-remote-zimage.md",
+      "summary": "Remote endpoint",
+      "headings": [
+        "Remote ComfyUI Z-Image Setup"
+      ],
+      "tags": [],
+      "topics": [
+        "comfyui",
+        "endpoint",
+        "image",
+        "remote",
+        "setup"
+      ],
+      "entities": [
+        "comfyui",
+        "endpoint",
+        "image",
+        "remote",
+        "setup"
+      ],
+      "terms": {
+        "remote": 6,
+        "comfyui": 5,
+        "z": 2,
+        "image": 4,
+        "setup": 4,
+        "endpoint": 3,
+        "docs": 1,
+        "zimage": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 331,
+      "community_ids": [
+        "community-010"
+      ],
+      "obsidian_related": []
+    },
+    "docs/comfyui-setup": {
+      "title": "ComfyUI Local Setup",
+      "path": "docs/comfyui-setup.md",
+      "summary": "이 작업 공간에는 ComfyUI를 별도 가상환경으로 설치했다.",
+      "headings": [
+        "ComfyUI Local Setup",
+        "경로",
+        "시작",
+        "상태 확인",
+        "중지",
+        "API 워크플로 제출",
+        "입력 이미지 업로드",
+        "모델 배치",
+        "Codex에서 제어하는 방법"
+      ],
+      "tags": [],
+      "topics": [
+        "comfyui",
+        "comfyui를",
+        "local",
+        "setup",
+        "가상환경으로",
+        "공간에는",
+        "별도",
+        "작업"
+      ],
+      "entities": [
+        "api",
+        "comfyui",
+        "comfyui를",
+        "local",
+        "setup",
+        "경로",
+        "공간에는",
+        "별도",
+        "상태",
+        "시작",
+        "워크플로",
+        "작업"
+      ],
+      "terms": {
+        "comfyui": 5,
+        "local": 4,
+        "setup": 5,
+        "이": 1,
+        "작업": 3,
+        "공간에는": 3,
+        "comfyui를": 3,
+        "별도": 3,
+        "가상환경으로": 2,
+        "설치했다": 1,
+        "경로": 2,
+        "시작": 2,
+        "상태": 2,
+        "확인": 1,
+        "중지": 1,
+        "api": 2,
+        "워크플로": 2,
+        "제출": 1,
+        "입력": 1,
+        "이미지": 1,
+        "업로드": 1,
+        "모델": 1,
+        "배치": 1,
+        "codex에서": 1,
+        "제어하는": 1,
+        "방법": 1,
+        "docs": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 437,
+      "community_ids": [
+        "community-011"
+      ],
+      "obsidian_related": []
     },
     "llm_wiki/Hermes-Agent-비교-보고서": {
       "title": "Hermes Agent 조사 및 현재 시스템 비교 보고서",
@@ -267,7 +386,7 @@
       "inbound_count": 0,
       "tokens_estimate": 2138,
       "community_ids": [
-        "community-010"
+        "community-012"
       ],
       "obsidian_related": [
         {
@@ -486,7 +605,7 @@
       "inbound_count": 0,
       "tokens_estimate": 5618,
       "community_ids": [
-        "community-011"
+        "community-013"
       ],
       "obsidian_related": [
         {
@@ -650,7 +769,7 @@
       "inbound_count": 0,
       "tokens_estimate": 564,
       "community_ids": [
-        "community-012"
+        "community-014"
       ],
       "obsidian_related": [
         {
@@ -941,7 +1060,7 @@
       "inbound_count": 0,
       "tokens_estimate": 325,
       "community_ids": [
-        "community-013"
+        "community-015"
       ],
       "obsidian_related": [
         {
@@ -1133,7 +1252,7 @@
       "inbound_count": 0,
       "tokens_estimate": 469,
       "community_ids": [
-        "community-014"
+        "community-016"
       ],
       "obsidian_related": [
         {
@@ -1315,7 +1434,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1549,
       "community_ids": [
-        "community-015"
+        "community-017"
       ],
       "obsidian_related": [
         {
@@ -1482,7 +1601,7 @@
       "inbound_count": 0,
       "tokens_estimate": 226,
       "community_ids": [
-        "community-016"
+        "community-018"
       ],
       "obsidian_related": [
         {
@@ -1647,7 +1766,7 @@
       "inbound_count": 0,
       "tokens_estimate": 883,
       "community_ids": [
-        "community-017"
+        "community-019"
       ],
       "obsidian_related": [
         {
@@ -1743,7 +1862,8 @@
         "2026_4_20",
         "2026_4_21",
         "2026_4_22",
-        "2026_4_23"
+        "2026_4_23",
+        "2026_4_24"
       ],
       "tags": [],
       "topics": [
@@ -1789,14 +1909,15 @@
         "2026_4_21": 1,
         "2026_4_22": 1,
         "2026_4_23": 1,
+        "2026_4_24": 1,
         "readme": 1,
         "md": 1
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 2617,
+      "tokens_estimate": 2778,
       "community_ids": [
-        "community-018"
+        "community-020"
       ],
       "obsidian_related": [
         {
@@ -1983,7 +2104,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1518,
       "community_ids": [
-        "community-019"
+        "community-021"
       ],
       "obsidian_related": [
         {
@@ -2143,7 +2264,7 @@
       "inbound_count": 0,
       "tokens_estimate": 612,
       "community_ids": [
-        "community-020"
+        "community-022"
       ],
       "obsidian_related": [
         {
@@ -2355,7 +2476,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1542,
       "community_ids": [
-        "community-021"
+        "community-023"
       ],
       "obsidian_related": [
         {
@@ -2539,7 +2660,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1171,
       "community_ids": [
-        "community-022"
+        "community-024"
       ],
       "obsidian_related": [
         {
@@ -13149,7 +13270,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1978,
       "community_ids": [
-        "community-023"
+        "community-025"
       ],
       "obsidian_related": [
         {
@@ -13327,7 +13448,7 @@
       "inbound_count": 0,
       "tokens_estimate": 522,
       "community_ids": [
-        "community-024"
+        "community-026"
       ],
       "obsidian_related": [
         {
@@ -13433,7 +13554,7 @@
       "inbound_count": 0,
       "tokens_estimate": 298,
       "community_ids": [
-        "community-025"
+        "community-027"
       ],
       "obsidian_related": [
         {
@@ -13574,7 +13695,7 @@
       "inbound_count": 0,
       "tokens_estimate": 62,
       "community_ids": [
-        "community-026"
+        "community-028"
       ],
       "obsidian_related": [
         {
@@ -13770,7 +13891,7 @@
       "inbound_count": 0,
       "tokens_estimate": 597,
       "community_ids": [
-        "community-027"
+        "community-029"
       ],
       "obsidian_related": [
         {
@@ -13960,7 +14081,7 @@
       "inbound_count": 0,
       "tokens_estimate": 2720,
       "community_ids": [
-        "community-028"
+        "community-030"
       ],
       "obsidian_related": [
         {
@@ -14113,7 +14234,7 @@
       "inbound_count": 0,
       "tokens_estimate": 2434,
       "community_ids": [
-        "community-029"
+        "community-031"
       ],
       "obsidian_related": [
         {
@@ -14254,7 +14375,7 @@
       "inbound_count": 0,
       "tokens_estimate": 274,
       "community_ids": [
-        "community-030"
+        "community-032"
       ],
       "obsidian_related": [
         {
@@ -14425,7 +14546,7 @@
       "inbound_count": 0,
       "tokens_estimate": 804,
       "community_ids": [
-        "community-031"
+        "community-033"
       ],
       "obsidian_related": [
         {
@@ -14541,7 +14662,7 @@
       "inbound_count": 0,
       "tokens_estimate": 830,
       "community_ids": [
-        "community-032"
+        "community-034"
       ],
       "obsidian_related": [
         {
@@ -14689,7 +14810,7 @@
       "inbound_count": 0,
       "tokens_estimate": 290,
       "community_ids": [
-        "community-033"
+        "community-035"
       ],
       "obsidian_related": [
         {
@@ -14801,7 +14922,7 @@
       "inbound_count": 0,
       "tokens_estimate": 962,
       "community_ids": [
-        "community-034"
+        "community-036"
       ],
       "obsidian_related": [
         {
@@ -14953,7 +15074,7 @@
       "inbound_count": 0,
       "tokens_estimate": 293,
       "community_ids": [
-        "community-035"
+        "community-037"
       ],
       "obsidian_related": [
         {
@@ -15128,7 +15249,7 @@
       "inbound_count": 0,
       "tokens_estimate": 841,
       "community_ids": [
-        "community-036"
+        "community-038"
       ],
       "obsidian_related": [
         {
@@ -15291,7 +15412,7 @@
       "inbound_count": 0,
       "tokens_estimate": 602,
       "community_ids": [
-        "community-037"
+        "community-039"
       ],
       "obsidian_related": [
         {
@@ -15473,7 +15594,7 @@
       "inbound_count": 0,
       "tokens_estimate": 481,
       "community_ids": [
-        "community-038"
+        "community-040"
       ],
       "obsidian_related": [
         {
@@ -15647,7 +15768,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1360,
       "community_ids": [
-        "community-039"
+        "community-041"
       ],
       "obsidian_related": [
         {
@@ -15815,7 +15936,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1088,
       "community_ids": [
-        "community-040"
+        "community-042"
       ],
       "obsidian_related": [
         {
@@ -15938,7 +16059,7 @@
       "inbound_count": 0,
       "tokens_estimate": 738,
       "community_ids": [
-        "community-041"
+        "community-043"
       ],
       "obsidian_related": [
         {
@@ -16090,7 +16211,7 @@
       "inbound_count": 0,
       "tokens_estimate": 164,
       "community_ids": [
-        "community-042"
+        "community-044"
       ],
       "obsidian_related": [
         {
@@ -17203,6 +17324,138 @@
       ]
     },
     "community-010": {
+      "summary": "Remote ComfyUI Z-Image Setup 중심의 지식 군집입니다. 핵심 주제는 comfyui, endpoint, image, remote이며, 대표 문서는 Remote ComfyUI Z-Image Setup 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "comfyui",
+          1
+        ],
+        [
+          "endpoint",
+          1
+        ],
+        [
+          "image",
+          1
+        ],
+        [
+          "remote",
+          1
+        ],
+        [
+          "setup",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "comfyui",
+          1
+        ],
+        [
+          "endpoint",
+          1
+        ],
+        [
+          "image",
+          1
+        ],
+        [
+          "remote",
+          1
+        ],
+        [
+          "setup",
+          1
+        ]
+      ],
+      "page_ids": [
+        "docs/comfyui-remote-zimage"
+      ],
+      "paths": [
+        "docs/comfyui-remote-zimage.md"
+      ]
+    },
+    "community-011": {
+      "summary": "ComfyUI Local Setup 중심의 지식 군집입니다. 핵심 주제는 comfyui, comfyui를, local, setup이며, 대표 문서는 ComfyUI Local Setup 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "comfyui",
+          1
+        ],
+        [
+          "comfyui를",
+          1
+        ],
+        [
+          "local",
+          1
+        ],
+        [
+          "setup",
+          1
+        ],
+        [
+          "가상환경으로",
+          1
+        ],
+        [
+          "공간에는",
+          1
+        ],
+        [
+          "별도",
+          1
+        ],
+        [
+          "작업",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "api",
+          1
+        ],
+        [
+          "comfyui",
+          1
+        ],
+        [
+          "comfyui를",
+          1
+        ],
+        [
+          "local",
+          1
+        ],
+        [
+          "setup",
+          1
+        ],
+        [
+          "경로",
+          1
+        ],
+        [
+          "공간에는",
+          1
+        ],
+        [
+          "별도",
+          1
+        ]
+      ],
+      "page_ids": [
+        "docs/comfyui-setup"
+      ],
+      "paths": [
+        "docs/comfyui-setup.md"
+      ]
+    },
+    "community-012": {
       "summary": "Hermes Agent 조사 및 현재 시스템 비교 보고서 중심의 지식 군집입니다. 핵심 주제는 agent, hermes, nousresearch, 대상이며, 대표 문서는 Hermes Agent 조사 및 현재 시스템 비교 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17280,7 +17533,7 @@
         "llm_wiki/Hermes-Agent-비교-보고서.md"
       ]
     },
-    "community-011": {
+    "community-013": {
       "summary": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서 중심의 지식 군집입니다. 핵심 주제는 llm, 기억, 도구, 비교이며, 대표 문서는 LLM 지식 아키텍처와 장기 기억 도구 비교 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17358,7 +17611,7 @@
         "llm_wiki/LLM 지식 아키텍처.md"
       ]
     },
-    "community-012": {
+    "community-014": {
       "summary": "Obsidian Smart Connections Setup 중심의 지식 군집입니다. 핵심 주제는 as, connections, graph, obsidian이며, 대표 문서는 Obsidian Smart Connections Setup 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17436,7 +17689,7 @@
         "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md"
       ]
     },
-    "community-013": {
+    "community-015": {
       "summary": "Local Memory Layer 중심의 지식 군집입니다. 핵심 주제는 aware, change, folder, holds이며, 대표 문서는 Local Memory Layer 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17514,7 +17767,7 @@
         "memory_layer/README.md"
       ]
     },
-    "community-014": {
+    "community-016": {
       "summary": "Notion App Date Filter Fallback Skill 중심의 지식 군집입니다. 핵심 주제는 app, date, fallback, filter이며, 대표 문서는 Notion App Date Filter Fallback Skill 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17592,7 +17845,7 @@
         "notion_app_date_filter_fallback_skill/SKILL.md"
       ]
     },
-    "community-015": {
+    "community-017": {
       "summary": "Body Fat Brozek 시각 분석 보고서 (미리보기 중심) 중심의 지식 군집입니다. 핵심 주제는 body, box, brozek, fat이며, 대표 문서는 Body Fat Brozek 시각 분석 보고서 (미리보기 중심) 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17670,7 +17923,7 @@
         "orange_example_10/bodyfat_analysis_report.md"
       ]
     },
-    "community-016": {
+    "community-018": {
       "summary": "Titanic AdaBoost 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 2201, adaboost, titanic, 데이터이며, 대표 문서는 Titanic AdaBoost 분석 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17748,7 +18001,7 @@
         "orange_example_10/titanic_adaboost_report.md"
       ]
     },
-    "community-017": {
+    "community-019": {
       "summary": "Titanic 생존 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 2201건, 711건, titanic, 관측치이며, 대표 문서는 Titanic 생존 분석 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17826,7 +18079,7 @@
         "orange_example_10/titanic_survival_report.md"
       ]
     },
-    "community-018": {
+    "community-020": {
       "summary": "AxDxConsultant 중심의 지식 군집입니다. 핵심 주제는 2026_4_6, 2026_4_7, 2026_4_8, 2026_4_9이며, 대표 문서는 AxDxConsultant 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17904,7 +18157,7 @@
         "README.md"
       ]
     },
-    "community-019": {
+    "community-021": {
       "summary": "Graphify Code Wiki 중심의 지식 군집입니다. 핵심 주제는 code, graph, graphify, integration이며, 대표 문서는 Graphify Code Wiki 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17982,7 +18235,7 @@
         "skills/graphify-code-wiki/SKILL.md"
       ]
     },
-    "community-020": {
+    "community-022": {
       "summary": "Local Whisper GPU 중심의 지식 군집입니다. 핵심 주제는 gpu, in, local, run이며, 대표 문서는 Local Whisper GPU 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18060,7 +18313,7 @@
         "skills/local-whisper-gpu/SKILL.md"
       ]
     },
-    "community-021": {
+    "community-023": {
       "summary": "Troubleshooting 중심의 지식 군집입니다. 핵심 주제는 fails, llm, local, mem0이며, 대표 문서는 Troubleshooting 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18138,7 +18391,7 @@
         "skills/troubleshooting.md"
       ]
     },
-    "community-022": {
+    "community-024": {
       "summary": "Wiki LLM Setup 중심의 지식 군집입니다. 핵심 주제는 change, graph, keep, llm이며, 대표 문서는 Wiki LLM Setup 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18216,7 +18469,7 @@
         "skills/wiki-llm-setup/SKILL.md"
       ]
     },
-    "community-023": {
+    "community-025": {
       "summary": "Youtube 영상 스크립트 중심의 지식 군집입니다. 핵심 주제는 graphify, llm, wiki를, youtube이며, 대표 문서는 Youtube 영상 스크립트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18290,7 +18543,7 @@
         "실습결과물/15/Youtube 영상 스크립트.md"
       ]
     },
-    "community-024": {
+    "community-026": {
       "summary": "Graphify 기반 LLM Wiki 활용 1페이지 요약보고서 중심의 지식 군집입니다. 핵심 주제는 1페이지, graphify, llm, wiki이며, 대표 문서는 Graphify 기반 LLM Wiki 활용 1페이지 요약보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18368,7 +18621,7 @@
         "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md"
       ]
     },
-    "community-025": {
+    "community-027": {
       "summary": "YouTube 영상 요약본 중심의 지식 군집입니다. 핵심 주제는 youtube, 영상, 요약본이며, 대표 문서는 YouTube 영상 요약본 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18406,7 +18659,7 @@
         "실습결과물/15/YouTube 영상 요약본.md"
       ]
     },
-    "community-026": {
+    "community-028": {
       "summary": "whisper 모델 설치 프롬프트 중심의 지식 군집입니다. 핵심 주제는 faster, small, text, whisper이며, 대표 문서는 whisper 모델 설치 프롬프트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18484,7 +18737,7 @@
         "실습결과물/15/로컬 whisper 모델 설치 프롬프트.md"
       ]
     },
-    "community-027": {
+    "community-029": {
       "summary": "imports-85 실제데이터 기반 요약보고서 중심의 지식 군집입니다. 핵심 주제는 85, 85_cleaned, imports, 기반이며, 대표 문서는 imports-85 실제데이터 기반 요약보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18562,7 +18815,7 @@
         "실습결과물/16/imports-85_actual_data_summary.md"
       ]
     },
-    "community-028": {
+    "community-030": {
       "summary": "자동차 모델 가격·성능·연비 관계 인터랙티브 보고서 중심의 지식 군집입니다. 핵심 주제는 가격, 가격의, 관계, 데이터이며, 대표 문서는 자동차 모델 가격·성능·연비 관계 인터랙티브 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18640,7 +18893,7 @@
         "실습결과물/16/imports-85_interactive_report.md"
       ]
     },
-    "community-029": {
+    "community-031": {
       "summary": "imports-85 정제 보고서 중심의 지식 군집입니다. 핵심 주제는 59, 85, bore, imports이며, 대표 문서는 imports-85 정제 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18718,7 +18971,7 @@
         "실습결과물/16/imports-85_report.md"
       ]
     },
-    "community-030": {
+    "community-032": {
       "summary": "Retail Sales Seaborn Graphs 중심의 지식 군집입니다. 핵심 주제는 01_monthly_net_sales_trend, graphs, png, retail이며, 대표 문서는 Retail Sales Seaborn Graphs 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18796,7 +19049,7 @@
         "실습결과물/16/retail_sales_report_assets/README.md"
       ]
     },
-    "community-031": {
+    "community-033": {
       "summary": "Retail Sales 추세 1페이지 보고서 중심의 지식 군집입니다. 핵심 주제는 1페이지, retail, sales, 매출이며, 대표 문서는 Retail Sales 추세 1페이지 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18874,7 +19127,7 @@
         "실습결과물/16/retail_sales_trend_onepage_report.md"
       ]
     },
-    "community-032": {
+    "community-034": {
       "summary": "리테일 분석판매보고서노트북LM 중심의 지식 군집입니다. 핵심 주제는 리테일, 분석, 분석판매보고서노트북lm, 브리핑이며, 대표 문서는 리테일 분석판매보고서노트북LM 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18936,7 +19189,7 @@
         "실습결과물/16/리테일 분석판매보고서노트북LM.md"
       ]
     },
-    "community-033": {
+    "community-035": {
       "summary": "매출 분석에 쓰인 프롬프트 중심의 지식 군집입니다. 핵심 주제는 administrator, dxax, text, users이며, 대표 문서는 매출 분석에 쓰인 프롬프트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19014,7 +19267,7 @@
         "실습결과물/16/매출분석에 쓰인 프롬프트.md"
       ]
     },
-    "community-034": {
+    "community-036": {
       "summary": "자동차 수출 관련 예제 프롬프트 중심의 지식 군집입니다. 핵심 주제는 수출, 예제, 자동차, 프롬프트이며, 대표 문서는 자동차 수출 관련 예제 프롬프트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19060,7 +19313,7 @@
         "실습결과물/16/자동차수출예제관련프롬프트.md"
       ]
     },
-    "community-035": {
+    "community-037": {
       "summary": "📊 2026 HRD Trend Report 요약 중심의 지식 군집입니다. 핵심 주제는 2026, hrd, report, trend이며, 대표 문서는 📊 2026 HRD Trend Report 요약 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19138,7 +19391,7 @@
         "실습결과물/16/한페이지요약 HRD AX 수업도향.md"
       ]
     },
-    "community-036": {
+    "community-038": {
       "summary": "Project Management 매니저 성과 1페이지 요약 보고서 중심의 지식 군집입니다. 핵심 주제는 1페이지, management, project, 기준으로이며, 대표 문서는 Project Management 매니저 성과 1페이지 요약 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19216,7 +19469,7 @@
         "실습결과물/17/02 Project Management_manager_ranking_report.md"
       ]
     },
-    "community-037": {
+    "community-039": {
       "summary": "프로젝트 포트폴리오 SCQA 인사이트 리포트 중심의 지식 군집입니다. 핵심 주제는 scqa, 리포트, 성과, 실행력이며, 대표 문서는 프로젝트 포트폴리오 SCQA 인사이트 리포트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19294,7 +19547,7 @@
         "실습결과물/17/02 Project Management_SCQA_insight_report.md"
       ]
     },
-    "community-038": {
+    "community-040": {
       "summary": "Project Management 데이터 1페이지 요약 보고서 중심의 지식 군집입니다. 핵심 주제는 02, 1페이지, date, management이며, 대표 문서는 Project Management 데이터 1페이지 요약 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19372,7 +19625,7 @@
         "실습결과물/17/02 Project Management_summary_report.md"
       ]
     },
-    "community-039": {
+    "community-041": {
       "summary": "E-Commerce Orders 매장별 일매출 이상치 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 08, commerce, orders, 매장별이며, 대표 문서는 E-Commerce Orders 매장별 일매출 이상치 분석 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19450,7 +19703,7 @@
         "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report.md"
       ]
     },
-    "community-040": {
+    "community-042": {
       "summary": "E-Commerce Orders 가격 이상치 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 commerce, iqr, orders, 가격이며, 대표 문서는 E-Commerce Orders 가격 이상치 분석 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19528,7 +19781,7 @@
         "실습결과물/17/08 E-Commerce Orders_price_outlier_report.md"
       ]
     },
-    "community-041": {
+    "community-043": {
       "summary": "project Magement_blog 중심의 지식 군집입니다. 핵심 주제는 magement_blog, pm은, project, 끝내고이며, 대표 문서는 project Magement_blog 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19598,7 +19851,7 @@
         "실습결과물/17/project Magement_blog.md"
       ]
     },
-    "community-042": {
+    "community-044": {
       "summary": "엑셀 데이터 처리 프롬프트 중심의 지식 군집입니다. 핵심 주제는 text, users, 데이터, 되지이며, 대표 문서는 엑셀 데이터 처리 프롬프트 입니다.",
       "top_tags": [],
       "top_topics": [

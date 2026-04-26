@@ -12,6 +12,12 @@ tmp/
 local_whisper/
 .venv-report/
 .venv-knowledge/
+.venv-comfyui/
+**/.venv-comfyui/
+**/.venv-comfyui/**
+comfyui/
+.smart-env/
+node_modules/
 
 
 # Generated or backup markdown

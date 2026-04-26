@@ -1,0 +1,3707 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>16일차 ComfyUI + LTX-Video 교안</title>
+  <style>
+    :root {
+      --bg: #0B1020;
+      --panel: #121A30;
+      --panel-alt: #162441;
+      --panel-alt2: #1D2E54;
+      --primary: #41D9E6;
+      --secondary: #7C72FF;
+      --accent: #FF6B57;
+      --text: #F5F7FB;
+      --subtext: #AAB7D4;
+      --border: #2A3657;
+      --success: #35D49A;
+      --warning: #FFC857;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      background:
+        radial-gradient(circle at top left, rgba(65, 217, 230, .13), transparent 26%),
+        radial-gradient(circle at 80% 0%, rgba(124, 114, 255, .12), transparent 22%),
+        linear-gradient(180deg, #060A16 0%, var(--bg) 100%);
+      color: var(--text);
+      font-family: "Aptos", "Malgun Gothic", sans-serif;
+    }
+    main {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: grid;
+      gap: 24px;
+    }
+    .slide {
+      min-height: 860px;
+      padding: 32px;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)),
+        linear-gradient(135deg, rgba(65,217,230,.04), rgba(124,114,255,.05));
+      box-shadow: 0 20px 60px rgba(0,0,0,.25);
+      position: relative;
+      overflow: hidden;
+    }
+    .slide::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      bottom: -80px;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(65,217,230,.12), transparent 70%);
+      pointer-events: none;
+    }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      color: var(--subtext);
+      font-size: 14px;
+    }
+    .session,
+    .num {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.05);
+    }
+    .session {
+      background: rgba(65,217,230,.12);
+      color: var(--primary);
+      font-weight: 800;
+    }
+    .kicker {
+      margin-top: 16px;
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 10px 0 0;
+      max-width: 1000px;
+      font-size: 52px;
+      line-height: 1.08;
+      font-family: "Aptos Display", "Malgun Gothic", sans-serif;
+    }
+    .subtitle {
+      margin: 14px 0 0;
+      max-width: 980px;
+      color: var(--subtext);
+      font-size: 26px;
+    }
+    .body {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+    .reverse .body {
+      grid-template-columns: .98fr 1.02fr;
+    }
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: rgba(18,26,48,.84);
+    }
+    .content {
+      padding: 24px;
+    }
+    .bullet-list {
+      margin: 0;
+      padding-left: 24px;
+      display: grid;
+      gap: 18px;
+      font-size: 24px;
+      line-height: 1.45;
+    }
+    .bullet-list li::marker {
+      color: var(--primary);
+    }
+    .visual {
+      padding: 18px;
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+    .visual-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+    }
+    .visual-label {
+      color: var(--subtext);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .02em;
+    }
+    .visual-kind {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.05);
+      color: var(--subtext);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .visual-stage {
+      min-height: 420px;
+      display: grid;
+      place-items: center;
+    }
+    .viz-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .legend-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .legend-chip {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.05);
+      font-size: 14px;
+      font-weight: 700;
+      border: 1px solid rgba(255,255,255,.06);
+    }
+    .legend-chip.is-cyan { color: var(--primary); }
+    .legend-chip.is-violet { color: var(--secondary); }
+    .legend-chip.is-gold { color: var(--warning); }
+    .legend-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .legend-grid.compact {
+      grid-template-columns: 1fr;
+    }
+    .legend-grid div {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.06);
+      display: grid;
+      gap: 6px;
+    }
+    .legend-grid strong {
+      color: var(--text);
+      font-size: 15px;
+    }
+    .legend-grid span {
+      color: var(--subtext);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+    .note {
+      margin-top: 18px;
+      padding: 14px 18px;
+    }
+    .note strong {
+      color: var(--accent);
+      font-size: 13px;
+      letter-spacing: .03em;
+    }
+    .note p {
+      margin: 8px 0 0;
+      color: var(--subtext);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    @media (max-width: 1180px) {
+      .slide { min-height: auto; }
+      h1 { font-size: 42px; }
+      .subtitle { font-size: 22px; }
+      .body,
+      .reverse .body {
+        grid-template-columns: 1fr;
+      }
+      .bullet-list { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    
+    <section class="slide " id="slide-1">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">01 / 40</span>
+      </div>
+      <div class="kicker">DAY 16 / OPENING</div>
+      <h1>고성능 AI 영상 제작 실무</h1>
+      <p class="subtitle">ComfyUI + LTX-Video로 비즈니스 홍보 영상 제작</p>
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>오늘 목표는 ComfyUI 기반의 영상 생성 파이프라인을 직접 구성하는 것이다.</li><li>오전에는 환경 세팅과 LTX-Video 구조를 이해하고 실습 준비를 완료한다.</li><li>오후에는 Text-to-Video와 Image-to-Video를 활용해 일관성 있는 홍보 영상을 제작한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">학습 축</span>
+            <span class="visual-kind">hero</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <rect x="212" y="116" width="196" height="112" rx="20" fill="#121A30" stroke="#41D9E6" />
+    <rect x="230" y="136" width="160" height="72" rx="14" fill="#1E305A" />
+    <polygon points="295,150 295,194 336,172" fill="#41D9E6" filter="url(#softGlow)"/>
+    
+      <line x1="310" y1="172" x2="310" y2="56" stroke="rgba(255,255,255,.10)" />
+      <rect x="256" y="36" width="108" height="40" rx="16" fill="#1A2950" stroke="#41D9E6" />
+      <text x="310" y="63" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">ComfyUI</text>
+    
+      <line x1="310" y1="172" x2="410.45894683899485" y2="114" stroke="rgba(255,255,255,.10)" />
+      <rect x="356.45894683899485" y="94" width="108" height="40" rx="16" fill="#1A2950" stroke="#7C72FF" />
+      <text x="410.45894683899485" y="121" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">LTX-Video</text>
+    
+      <line x1="310" y1="172" x2="410.4589468389949" y2="229.99999999999997" stroke="rgba(255,255,255,.10)" />
+      <rect x="356.4589468389949" y="209.99999999999997" width="108" height="40" rx="16" fill="#1A2950" stroke="#41D9E6" />
+      <text x="410.4589468389949" y="236.99999999999997" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">Prompt</text>
+    
+      <line x1="310" y1="172" x2="310" y2="288" stroke="rgba(255,255,255,.10)" />
+      <rect x="256" y="268" width="108" height="40" rx="16" fill="#1A2950" stroke="#7C72FF" />
+      <text x="310" y="295" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">CFG</text>
+    
+      <line x1="310" y1="172" x2="209.54105316100515" y2="230.00000000000003" stroke="rgba(255,255,255,.10)" />
+      <rect x="155.54105316100515" y="210.00000000000003" width="108" height="40" rx="16" fill="#1A2950" stroke="#41D9E6" />
+      <text x="209.54105316100515" y="237.00000000000003" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">Sampler</text>
+    
+      <line x1="310" y1="172" x2="209.54105316100512" y2="113.99999999999999" stroke="rgba(255,255,255,.10)" />
+      <rect x="155.54105316100512" y="93.99999999999999" width="108" height="40" rx="16" fill="#1A2950" stroke="#7C72FF" />
+      <text x="209.54105316100512" y="120.99999999999999" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">Business Video</text>
+    
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">ComfyUI</span><span class="legend-chip is-violet">LTX-Video</span><span class="legend-chip is-gold">Prompt</span><span class="legend-chip is-cyan">CFG</span><span class="legend-chip is-violet">Sampler</span><span class="legend-chip is-gold">Business Video</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>오늘 수업은 기능 소개보다 실무 제작 흐름 체득에 초점을 둔다. 오전에 구조를 잡고 오후에 결과물을 만든다는 흐름을 먼저 고정해 준다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-2">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">02 / 40</span>
+      </div>
+      <div class="kicker">LEARNING GOALS</div>
+      <h1>학습 목표와 기대 산출물</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>ComfyUI에서 영상 생성용 노드 흐름을 읽고 수정할 수 있다.</li><li>LTX-Video의 핵심 개념과 파라미터가 결과물에 미치는 영향을 설명할 수 있다.</li><li>수업 종료 시 5~10초 분량의 홍보 영상 샘플과 재사용 가능한 워크플로를 확보한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">성과물</span>
+            <span class="visual-kind">grid</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">워크플로 JSON</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">프롬프트 세트</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">샘플 영상</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">품질 점검표</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">워크플로 JSON</span><span class="legend-chip is-violet">프롬프트 세트</span><span class="legend-chip is-gold">샘플 영상</span><span class="legend-chip is-cyan">품질 점검표</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>학습 목표를 기능 중심이 아니라 산출물 중심으로 제시해 학습자들이 무엇을 완성해야 하는지 명확히 인식하게 한다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-3">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">03 / 40</span>
+      </div>
+      <div class="kicker">AGENDA</div>
+      <h1>하루 40장 교안 구성</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>1~20장은 오전 세션으로 환경, 구조, 파이프라인 이해를 다룬다.</li><li>21~40장은 오후 세션으로 CFG, 샘플러, 일관성 제어, 홍보 영상 제작을 다룬다.</li><li>각 블록은 개념 2~3장, 시각화 1장, 실습/체크리스트 1~2장으로 배열한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">진행 흐름</span>
+            <span class="visual-kind">timeline</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+      <g transform="translate(58, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#41D9E6" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#41D9E6" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">1</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">세팅</text>
+      </g>
+      <path d="M 170 172 C 186 172, 186 172, 190 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(190, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#7C72FF" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#7C72FF" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">2</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">구조 이해</text>
+      </g>
+      <path d="M 302 172 C 318 172, 318 172, 322 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(322, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#41D9E6" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#41D9E6" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">3</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">워크플로</text>
+      </g>
+      <path d="M 434 172 C 450 172, 450 172, 454 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(454, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#7C72FF" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#7C72FF" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">4</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">파라미터 제어</text>
+      </g>
+      <path d="M 566 172 C 582 172, 582 172, 586 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(586, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#41D9E6" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#41D9E6" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">5</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">홍보 영상</text>
+      </g>
+      <path d="M 698 172 C 714 172, 714 172, 718 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(718, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#7C72FF" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#7C72FF" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">6</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">점검 및 정리</text>
+      </g>
+      
+    
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">세팅</span><span class="legend-chip is-violet">구조 이해</span><span class="legend-chip is-gold">워크플로</span><span class="legend-chip is-cyan">파라미터 제어</span><span class="legend-chip is-violet">홍보 영상</span><span class="legend-chip is-gold">점검 및 정리</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>하루 분량이 길기 때문에 전체 지도를 먼저 보여주고, 학습자가 현재 어디를 배우는지 계속 추적할 수 있게 한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-4">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">04 / 40</span>
+      </div>
+      <div class="kicker">MORNING BLOCK</div>
+      <h1>오전 세션 운영 방식</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>강의와 실습의 비율은 약 4:6으로 구성한다.</li><li>개념 설명 직후 바로 노드 화면에서 확인하도록 짧은 실습 단위를 반복한다.</li><li>설치 문제와 모델 로딩 문제를 초반에 집중 해결해 오후 제작 시간을 확보한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">운영 루프</span>
+            <span class="visual-kind">steps</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <text x="44" y="54" fill="#AAB7D4" font-size="18">workflow / pipeline diagram</text>
+    
+        <rect x="36" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="54" cy="144" r="10" fill="#41D9E6" />
+        <text x="80" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">개념 설명</text>
+        
+          <path d="M 124 154 C 144 154, 122 230, 142 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="134,224 148,230 134,236" fill="#41D9E6" />
+        
+      
+        <rect x="142" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="160" cy="220" r="10" fill="#7C72FF" />
+        <text x="186" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">노드 확인</text>
+        
+          <path d="M 230 230 C 250 230, 228 154, 248 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="240,148 254,154 240,160" fill="#41D9E6" />
+        
+      
+        <rect x="248" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="266" cy="144" r="10" fill="#41D9E6" />
+        <text x="292" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">파라미터 변경</text>
+        
+          <path d="M 336 154 C 356 154, 334 230, 354 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="346,224 360,230 346,236" fill="#41D9E6" />
+        
+      
+        <rect x="354" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="372" cy="220" r="10" fill="#7C72FF" />
+        <text x="398" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">결과 비교</text>
+        
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">개념 설명</span><span class="legend-chip is-violet">노드 확인</span><span class="legend-chip is-gold">파라미터 변경</span><span class="legend-chip is-cyan">결과 비교</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>실습 중심 운영 방식을 미리 안내하면 학습자들이 수동적으로 듣기보다 바로 손을 움직이게 된다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-5">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">05 / 40</span>
+      </div>
+      <div class="kicker">COMFYUI CONTEXT</div>
+      <h1>왜 ComfyUI인가</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>노드 기반 인터페이스는 생성 파이프라인을 시각적으로 이해하고 재조합하기 쉽다.</li><li>텍스트, 이미지, 비디오 입력을 한 워크플로 안에서 연결하기에 유리하다.</li><li>실험 결과를 노드 단위로 기록하고 재현할 수 있어 교육용과 실무용 모두 적합하다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">도구 관점</span>
+            <span class="visual-kind">compare</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <rect x="60" y="70" width="228" height="218" rx="18" fill="#162441" stroke="#41D9E6" />
+    <text x="84" y="102" fill="#41D9E6" font-size="22" font-weight="800">채팅형 도구</text>
+    
+      <circle cx="88" cy="136" r="6" fill="#41D9E6" />
+      <rect x="104" y="124" width="130" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="140" fill="#F5F7FB" font-size="16">빠른 시작</text>
+    
+      <circle cx="88" cy="170" r="6" fill="#41D9E6" />
+      <rect x="104" y="158" width="140" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="174" fill="#F5F7FB" font-size="16">흐름이 숨겨짐</text>
+    
+      <circle cx="88" cy="204" r="6" fill="#41D9E6" />
+      <rect x="104" y="192" width="150" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="208" fill="#F5F7FB" font-size="16">재현성이 약함</text>
+    
+  
+    <rect x="332" y="70" width="228" height="218" rx="18" fill="#162441" stroke="#7C72FF" />
+    <text x="356" y="102" fill="#7C72FF" font-size="22" font-weight="800">ComfyUI</text>
+    
+      <circle cx="360" cy="136" r="6" fill="#7C72FF" />
+      <rect x="376" y="124" width="130" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="140" fill="#F5F7FB" font-size="16">흐름이 보임</text>
+    
+      <circle cx="360" cy="170" r="6" fill="#7C72FF" />
+      <rect x="376" y="158" width="140" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="174" fill="#F5F7FB" font-size="16">재사용 가능</text>
+    
+      <circle cx="360" cy="204" r="6" fill="#7C72FF" />
+      <rect x="376" y="192" width="150" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="208" fill="#F5F7FB" font-size="16">세밀한 제어 가능</text>
+    
+  
+    </svg>
+          </div>
+          
+      <div class="legend-grid compare-legend">
+        <div><strong>채팅형 도구</strong><span>빠른 시작 / 흐름이 숨겨짐 / 재현성이 약함</span></div>
+        <div><strong>ComfyUI</strong><span>흐름이 보임 / 재사용 가능 / 세밀한 제어 가능</span></div>
+      </div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>ComfyUI를 단순한 UI 툴이 아니라 실험과 운영을 위한 파이프라인 에디터로 설명한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-6">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">06 / 40</span>
+      </div>
+      <div class="kicker">PIPELINE BASICS</div>
+      <h1>노드 기반 영상 생성 파이프라인 개념</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>입력 노드, 모델 노드, 조건 노드, 샘플링 노드, 출력 노드로 흐름을 구분한다.</li><li>문제가 발생하면 어느 구간에서 품질 저하가 생겼는지 분리해서 디버깅할 수 있다.</li><li>텍스트 프롬프트와 참조 이미지가 조건 노드에서 합쳐진 뒤 샘플러로 전달된다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">기본 구조</span>
+            <span class="visual-kind">flow</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <text x="44" y="54" fill="#AAB7D4" font-size="18">workflow / pipeline diagram</text>
+    
+        <rect x="36" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="54" cy="144" r="10" fill="#41D9E6" />
+        <text x="80" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Prompt/Input</text>
+        
+          <path d="M 124 154 C 144 154, 122 230, 142 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="134,224 148,230 134,236" fill="#41D9E6" />
+        
+      
+        <rect x="142" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="160" cy="220" r="10" fill="#7C72FF" />
+        <text x="186" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Conditioning</text>
+        
+          <path d="M 230 230 C 250 230, 228 154, 248 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="240,148 254,154 240,160" fill="#41D9E6" />
+        
+      
+        <rect x="248" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="266" cy="144" r="10" fill="#41D9E6" />
+        <text x="292" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">LTX Model</text>
+        
+          <path d="M 336 154 C 356 154, 334 230, 354 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="346,224 360,230 346,236" fill="#41D9E6" />
+        
+      
+        <rect x="354" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="372" cy="220" r="10" fill="#7C72FF" />
+        <text x="398" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Sampler</text>
+        
+          <path d="M 442 230 C 462 230, 440 154, 460 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="452,148 466,154 452,160" fill="#41D9E6" />
+        
+      
+        <rect x="460" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="478" cy="144" r="10" fill="#41D9E6" />
+        <text x="504" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Decode</text>
+        
+          <path d="M 548 154 C 568 154, 546 230, 566 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="558,224 572,230 558,236" fill="#41D9E6" />
+        
+      
+        <rect x="566" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="584" cy="220" r="10" fill="#7C72FF" />
+        <text x="610" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Export</text>
+        
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">Prompt/Input</span><span class="legend-chip is-violet">Conditioning</span><span class="legend-chip is-gold">LTX Model</span><span class="legend-chip is-cyan">Sampler</span><span class="legend-chip is-violet">Decode</span><span class="legend-chip is-gold">Export</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>학습자가 노드 이름보다 역할을 먼저 이해하도록 유도한다. 기능을 역할로 묶어 설명하면 이후 응용이 쉬워진다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-7">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">07 / 40</span>
+      </div>
+      <div class="kicker">SETUP CHECK</div>
+      <h1>실습 환경 체크리스트</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>GPU VRAM, Python 환경, ComfyUI 실행 상태, 모델 저장 경로를 먼저 점검한다.</li><li>워크플로 파일과 샘플 입력 이미지, 테스트 프롬프트를 사전에 내려받아 둔다.</li><li>실습 시작 전에 출력 폴더와 캐시 위치를 확인해 저장 실패를 방지한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">필수 확인</span>
+            <span class="visual-kind">checklist</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#41D9E6" opacity="0" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">GPU/VRAM</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#7C72FF" opacity="0" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">ComfyUI 실행</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#FFC857" opacity="0" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">모델 경로</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#41D9E6" opacity="0" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">워크플로 파일</text>
+      
+        <rect x="62" y="260" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="90" cy="295" r="14" fill="#7C72FF" />
+        <path d="M 84 296 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="280" width="20" height="20" rx="6" fill="#7C72FF" opacity="0" />
+        <text x="116" y="302" fill="#F5F7FB" font-size="18" font-weight="700">출력 폴더</text>
+      
+        <rect x="314" y="260" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="342" cy="295" r="14" fill="#FFC857" />
+        <path d="M 336 296 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="280" width="20" height="20" rx="6" fill="#FFC857" opacity="0" />
+        <text x="368" y="302" fill="#F5F7FB" font-size="18" font-weight="700">샘플 이미지</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">GPU/VRAM</span><span class="legend-chip is-violet">ComfyUI 실행</span><span class="legend-chip is-gold">모델 경로</span><span class="legend-chip is-cyan">워크플로 파일</span><span class="legend-chip is-violet">출력 폴더</span><span class="legend-chip is-gold">샘플 이미지</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>설치가 끝났는지보다 실제 생성이 가능한 상태인지 묻는 식으로 체크리스트를 운영한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-8">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">08 / 40</span>
+      </div>
+      <div class="kicker">STACK</div>
+      <h1>ComfyUI + LTX-Video 실행 스택</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>프론트엔드는 ComfyUI 캔버스, 핵심 연산은 GPU 기반 모델 추론으로 분리된다.</li><li>모델 파일과 VAE, 샘플러 설정은 결과 품질과 속도에 직접적인 영향을 준다.</li><li>출력은 영상 프레임 또는 인코딩 파일 형태로 저장되며 후처리 단계와 연결될 수 있다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">기술 스택</span>
+            <span class="visual-kind">stack</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+      <g transform="translate(74, 70)">
+        <rect width="410" height="46" rx="14" fill="#1A2950" stroke="#41D9E6" />
+        <rect x="18" y="13" width="22" height="22" rx="5" fill="#41D9E6" />
+        
+        <text x="68" y="29" fill="#F5F7FB" font-size="18" font-weight="700">UI Layer</text>
+      </g>
+    
+      <g transform="translate(88, 112)">
+        <rect width="410" height="46" rx="14" fill="#1A2950" stroke="#7C72FF" />
+        <rect x="18" y="13" width="22" height="22" rx="5" fill="#7C72FF" />
+        
+        <text x="68" y="29" fill="#F5F7FB" font-size="18" font-weight="700">Workflow Graph</text>
+      </g>
+    
+      <g transform="translate(102, 154)">
+        <rect width="410" height="46" rx="14" fill="#1A2950" stroke="#41D9E6" />
+        <rect x="18" y="13" width="22" height="22" rx="5" fill="#41D9E6" />
+        
+        <text x="68" y="29" fill="#F5F7FB" font-size="18" font-weight="700">Model Weights</text>
+      </g>
+    
+      <g transform="translate(116, 196)">
+        <rect width="410" height="46" rx="14" fill="#1A2950" stroke="#7C72FF" />
+        <rect x="18" y="13" width="22" height="22" rx="5" fill="#7C72FF" />
+        
+        <text x="68" y="29" fill="#F5F7FB" font-size="18" font-weight="700">GPU Inference</text>
+      </g>
+    
+      <g transform="translate(130, 238)">
+        <rect width="410" height="46" rx="14" fill="#1A2950" stroke="#41D9E6" />
+        <rect x="18" y="13" width="22" height="22" rx="5" fill="#41D9E6" />
+        
+        <text x="68" y="29" fill="#F5F7FB" font-size="18" font-weight="700">Video Output</text>
+      </g>
+    
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">UI Layer</span><span class="legend-chip is-violet">Workflow Graph</span><span class="legend-chip is-gold">Model Weights</span><span class="legend-chip is-cyan">GPU Inference</span><span class="legend-chip is-violet">Video Output</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>학습자들이 ‘무슨 파일이 어디에 필요한지’를 혼동하지 않도록 계층 구조로 설명한다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-9">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">09 / 40</span>
+      </div>
+      <div class="kicker">INSTALL ARCH</div>
+      <h1>설치 후 반드시 이해해야 할 폴더 구조</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>models, custom_nodes, input, output 디렉터리는 실습 중 가장 자주 다루는 경로다.</li><li>모델 위치가 잘못되면 로딩 실패, 출력 경로가 잘못되면 결과 저장 실패가 발생한다.</li><li>팀 수업에서는 공통 자산과 개인 자산의 경계를 미리 정해 두는 것이 좋다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">핵심 폴더</span>
+            <span class="visual-kind">folders</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+      <g transform="translate(74, 70)">
+        <rect width="410" height="46" rx="14" fill="#1A2950" stroke="#41D9E6" />
+        <rect x="18" y="13" width="34" height="18" rx="5" fill="#41D9E6" />
+        <rect x="18" y="8" width="20" height="10" rx="4" fill="#FFC857" />
+        <text x="68" y="29" fill="#F5F7FB" font-size="18" font-weight="700">models/</text>
+      </g>
+    
+      <g transform="translate(88, 112)">
+        <rect width="410" height="46" rx="14" fill="#1A2950" stroke="#7C72FF" />
+        <rect x="18" y="13" width="34" height="18" rx="5" fill="#7C72FF" />
+        <rect x="18" y="8" width="20" height="10" rx="4" fill="#FFC857" />
+        <text x="68" y="29" fill="#F5F7FB" font-size="18" font-weight="700">custom_nodes/</text>
+      </g>
+    
+      <g transform="translate(102, 154)">
+        <rect width="410" height="46" rx="14" fill="#1A2950" stroke="#41D9E6" />
+        <rect x="18" y="13" width="34" height="18" rx="5" fill="#41D9E6" />
+        <rect x="18" y="8" width="20" height="10" rx="4" fill="#FFC857" />
+        <text x="68" y="29" fill="#F5F7FB" font-size="18" font-weight="700">input/</text>
+      </g>
+    
+      <g transform="translate(116, 196)">
+        <rect width="410" height="46" rx="14" fill="#1A2950" stroke="#7C72FF" />
+        <rect x="18" y="13" width="34" height="18" rx="5" fill="#7C72FF" />
+        <rect x="18" y="8" width="20" height="10" rx="4" fill="#FFC857" />
+        <text x="68" y="29" fill="#F5F7FB" font-size="18" font-weight="700">output/</text>
+      </g>
+    
+      <g transform="translate(130, 238)">
+        <rect width="410" height="46" rx="14" fill="#1A2950" stroke="#41D9E6" />
+        <rect x="18" y="13" width="34" height="18" rx="5" fill="#41D9E6" />
+        <rect x="18" y="8" width="20" height="10" rx="4" fill="#FFC857" />
+        <text x="68" y="29" fill="#F5F7FB" font-size="18" font-weight="700">temp/</text>
+      </g>
+    
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">models/</span><span class="legend-chip is-violet">custom_nodes/</span><span class="legend-chip is-gold">input/</span><span class="legend-chip is-cyan">output/</span><span class="legend-chip is-violet">temp/</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>이 슬라이드는 단순 안내가 아니라 향후 오류를 줄이기 위한 예방 교육이라는 점을 강조한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-10">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">10 / 40</span>
+      </div>
+      <div class="kicker">UI ANATOMY</div>
+      <h1>ComfyUI 화면 읽는 법</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>왼쪽은 노드 배치 공간, 오른쪽 또는 하단은 결과 확인과 로그 추적 영역으로 본다.</li><li>노드 연결선은 데이터 흐름, 노드 내부 값은 제어 파라미터를 의미한다.</li><li>실습 중에는 생성 결과보다 연결 상태와 입력값의 일관성을 먼저 확인한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">화면 영역</span>
+            <span class="visual-kind">quadrants</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <rect x="46" y="58" width="528" height="248" rx="20" fill="#10182D" stroke="#2A3657" />
+    <rect x="46" y="58" width="112" height="248" rx="20" fill="#121A30" stroke="#2A3657" />
+    <rect x="176" y="78" width="240" height="150" rx="18" fill="#162441" stroke="#41D9E6" />
+    <path d="M 202 176 C 236 104, 274 148, 308 112 S 378 148, 390 102" fill="none" stroke="#41D9E6" stroke-width="4" />
+    <circle cx="308" cy="112" r="12" fill="#7C72FF" />
+    
+      <rect x="192" y="244" width="100" height="24" rx="10" fill="#1E305A" />
+      <text x="242" y="260" text-anchor="middle" fill="#F5F7FB" font-size="14">캔버스</text>
+    
+      <rect x="308" y="244" width="100" height="24" rx="10" fill="#1E305A" />
+      <text x="358" y="260" text-anchor="middle" fill="#F5F7FB" font-size="14">노드 속성</text>
+    
+      <rect x="192" y="278" width="100" height="24" rx="10" fill="#1E305A" />
+      <text x="242" y="294" text-anchor="middle" fill="#F5F7FB" font-size="14">프리뷰</text>
+    
+      <rect x="308" y="278" width="100" height="24" rx="10" fill="#1E305A" />
+      <text x="358" y="294" text-anchor="middle" fill="#F5F7FB" font-size="14">로그/큐</text>
+    
+    
+      <rect x="68" y="82" width="68" height="28" rx="10" fill="#20315B" />
+      <text x="102" y="101" text-anchor="middle" fill="#AAB7D4" font-size="14">Input</text>
+    
+      <rect x="68" y="130" width="68" height="28" rx="10" fill="#1A2950" />
+      <text x="102" y="149" text-anchor="middle" fill="#AAB7D4" font-size="14">Sampler</text>
+    
+      <rect x="68" y="178" width="68" height="28" rx="10" fill="#20315B" />
+      <text x="102" y="197" text-anchor="middle" fill="#AAB7D4" font-size="14">Preview</text>
+    
+      <rect x="68" y="226" width="68" height="28" rx="10" fill="#1A2950" />
+      <text x="102" y="245" text-anchor="middle" fill="#AAB7D4" font-size="14">Queue</text>
+    
+    <rect x="438" y="78" width="112" height="64" rx="16" fill="#162441" stroke="#7C72FF" />
+    <rect x="438" y="154" width="112" height="64" rx="16" fill="#162441" stroke="#41D9E6" />
+    <rect x="438" y="230" width="112" height="54" rx="16" fill="#162441" stroke="#FF6B57" />
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">캔버스</span><span class="legend-chip is-violet">노드 속성</span><span class="legend-chip is-gold">프리뷰</span><span class="legend-chip is-cyan">로그/큐</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>UI의 물리적 위치를 설명하는 데서 멈추지 말고, 어떤 순서로 화면을 읽어야 하는지까지 알려준다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-11">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">11 / 40</span>
+      </div>
+      <div class="kicker">MODEL</div>
+      <h1>LTX-Video 모델의 포지션</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>LTX-Video는 고속 추론과 실무 활용성을 노린 텍스트·이미지 기반 영상 생성 모델이다.</li><li>짧은 실험 주기를 가능하게 해 프롬프트와 샘플링 조합을 반복 검증하기 좋다.</li><li>교육 관점에서는 결과의 즉시성 덕분에 파라미터 변화와 출력 차이를 빠르게 학습시킬 수 있다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">장점</span>
+            <span class="visual-kind">cards</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">속도</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">반복 실험</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">조건 제어</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">교육 적합성</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">속도</span><span class="legend-chip is-violet">반복 실험</span><span class="legend-chip is-gold">조건 제어</span><span class="legend-chip is-cyan">교육 적합성</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>모델의 수치 스펙만 소개하지 말고 왜 수업용으로 좋은지 연결해 설명한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-12">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">12 / 40</span>
+      </div>
+      <div class="kicker">ARCHITECTURE</div>
+      <h1>DiT 아키텍처를 실무적으로 이해하기</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>DiT는 확산 모델의 노이즈 제거 과정을 Transformer 기반으로 처리하는 접근으로 이해하면 된다.</li><li>핵심은 프레임 간 관계와 조건 정보를 더 유연하게 반영할 수 있다는 점이다.</li><li>실습자는 수학보다 ‘조건 반영력’과 ‘시간축 일관성’ 관점에서 개념을 잡으면 충분하다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">DiT 개념</span>
+            <span class="visual-kind">flow</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <text x="44" y="54" fill="#AAB7D4" font-size="18">workflow / pipeline diagram</text>
+    
+        <rect x="36" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="54" cy="144" r="10" fill="#41D9E6" />
+        <text x="80" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Noisy Frames</text>
+        
+          <path d="M 124 154 C 144 154, 122 230, 142 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="134,224 148,230 134,236" fill="#41D9E6" />
+        
+      
+        <rect x="142" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="160" cy="220" r="10" fill="#7C72FF" />
+        <text x="186" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Tokenization</text>
+        
+          <path d="M 230 230 C 250 230, 228 154, 248 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="240,148 254,154 240,160" fill="#41D9E6" />
+        
+      
+        <rect x="248" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="266" cy="144" r="10" fill="#41D9E6" />
+        <text x="292" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Transformer Blocks</text>
+        
+          <path d="M 336 154 C 356 154, 334 230, 354 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="346,224 360,230 346,236" fill="#41D9E6" />
+        
+      
+        <rect x="354" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="372" cy="220" r="10" fill="#7C72FF" />
+        <text x="398" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Denoise</text>
+        
+          <path d="M 442 230 C 462 230, 440 154, 460 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="452,148 466,154 452,160" fill="#41D9E6" />
+        
+      
+        <rect x="460" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="478" cy="144" r="10" fill="#41D9E6" />
+        <text x="504" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Video Frames</text>
+        
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">Noisy Frames</span><span class="legend-chip is-violet">Tokenization</span><span class="legend-chip is-gold">Transformer Blocks</span><span class="legend-chip is-cyan">Denoise</span><span class="legend-chip is-violet">Video Frames</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>모델 내부를 지나치게 깊게 파지 않고, 현업 적용에 필요한 해석 수준으로 개념을 고정한다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-13">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">13 / 40</span>
+      </div>
+      <div class="kicker">CONSISTENCY</div>
+      <h1>영상 품질의 핵심: 시간축 일관성</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>텍스트 프롬프트가 좋아도 프레임 간 일관성이 무너지면 실무 영상으로 쓰기 어렵다.</li><li>캐릭터, 카메라, 조명, 배경 요소가 급격히 흔들리지 않도록 조건을 제어해야 한다.</li><li>오후 실습의 CFG와 샘플러 조정은 결국 이 일관성을 확보하기 위한 수단이다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">결과 비교</span>
+            <span class="visual-kind">compare</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <rect x="60" y="70" width="228" height="218" rx="18" fill="#162441" stroke="#41D9E6" />
+    <text x="84" y="102" fill="#41D9E6" font-size="22" font-weight="800">불안정한 출력</text>
+    
+      <circle cx="88" cy="136" r="6" fill="#41D9E6" />
+      <rect x="104" y="124" width="130" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="140" fill="#F5F7FB" font-size="16">형태 흔들림</text>
+    
+      <circle cx="88" cy="170" r="6" fill="#41D9E6" />
+      <rect x="104" y="158" width="140" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="174" fill="#F5F7FB" font-size="16">색상 점프</text>
+    
+      <circle cx="88" cy="204" r="6" fill="#41D9E6" />
+      <rect x="104" y="192" width="150" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="208" fill="#F5F7FB" font-size="16">장면 붕괴</text>
+    
+  
+    <rect x="332" y="70" width="228" height="218" rx="18" fill="#162441" stroke="#7C72FF" />
+    <text x="356" y="102" fill="#7C72FF" font-size="22" font-weight="800">안정적 출력</text>
+    
+      <circle cx="360" cy="136" r="6" fill="#7C72FF" />
+      <rect x="376" y="124" width="130" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="140" fill="#F5F7FB" font-size="16">주체 유지</text>
+    
+      <circle cx="360" cy="170" r="6" fill="#7C72FF" />
+      <rect x="376" y="158" width="140" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="174" fill="#F5F7FB" font-size="16">동작 연속성</text>
+    
+      <circle cx="360" cy="204" r="6" fill="#7C72FF" />
+      <rect x="376" y="192" width="150" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="208" fill="#F5F7FB" font-size="16">브랜드 톤 유지</text>
+    
+  
+    </svg>
+          </div>
+          
+      <div class="legend-grid compare-legend">
+        <div><strong>불안정한 출력</strong><span>형태 흔들림 / 색상 점프 / 장면 붕괴</span></div>
+        <div><strong>안정적 출력</strong><span>주체 유지 / 동작 연속성 / 브랜드 톤 유지</span></div>
+      </div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>좋은 영상의 기준을 ‘예쁜 화면’이 아니라 ‘쓸 수 있는 화면’으로 바꾸어 설명한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-14">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">14 / 40</span>
+      </div>
+      <div class="kicker">WORKFLOW</div>
+      <h1>오전 핵심 워크플로 한 장 요약</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>입력 준비, 조건 구성, 모델 로딩, 샘플링, 디코딩, 저장의 여섯 단계로 단순화한다.</li><li>학습자는 노드를 외우기보다 이 여섯 단계 중 어디를 수정하는지 파악해야 한다.</li><li>이 구조를 기준으로 새로운 워크플로도 해석할 수 있다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">6단계</span>
+            <span class="visual-kind">flow</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <text x="44" y="54" fill="#AAB7D4" font-size="18">workflow / pipeline diagram</text>
+    
+        <rect x="36" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="54" cy="144" r="10" fill="#41D9E6" />
+        <text x="80" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Input</text>
+        
+          <path d="M 124 154 C 144 154, 122 230, 142 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="134,224 148,230 134,236" fill="#41D9E6" />
+        
+      
+        <rect x="142" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="160" cy="220" r="10" fill="#7C72FF" />
+        <text x="186" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Condition</text>
+        
+          <path d="M 230 230 C 250 230, 228 154, 248 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="240,148 254,154 240,160" fill="#41D9E6" />
+        
+      
+        <rect x="248" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="266" cy="144" r="10" fill="#41D9E6" />
+        <text x="292" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Model</text>
+        
+          <path d="M 336 154 C 356 154, 334 230, 354 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="346,224 360,230 346,236" fill="#41D9E6" />
+        
+      
+        <rect x="354" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="372" cy="220" r="10" fill="#7C72FF" />
+        <text x="398" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Sample</text>
+        
+          <path d="M 442 230 C 462 230, 440 154, 460 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="452,148 466,154 452,160" fill="#41D9E6" />
+        
+      
+        <rect x="460" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="478" cy="144" r="10" fill="#41D9E6" />
+        <text x="504" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Decode</text>
+        
+          <path d="M 548 154 C 568 154, 546 230, 566 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="558,224 572,230 558,236" fill="#41D9E6" />
+        
+      
+        <rect x="566" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="584" cy="220" r="10" fill="#7C72FF" />
+        <text x="610" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">Save</text>
+        
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">Input</span><span class="legend-chip is-violet">Condition</span><span class="legend-chip is-gold">Model</span><span class="legend-chip is-cyan">Sample</span><span class="legend-chip is-violet">Decode</span><span class="legend-chip is-gold">Save</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>복잡한 캔버스 화면을 그대로 보여주기 전에 추상화된 6단계 그림으로 먼저 머릿속 구조를 만든다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-15">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">15 / 40</span>
+      </div>
+      <div class="kicker">PROMPTING</div>
+      <h1>Text-to-Video 프롬프트 설계 원칙</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>주체, 동작, 카메라, 조명, 배경, 분위기를 한 문장 안에서 구분해 적는다.</li><li>브랜드 홍보 영상은 장면 설명뿐 아니라 제품/서비스 포지셔닝이 드러나야 한다.</li><li>짧은 문장 여러 개보다 통제 가능한 구조 문장을 쓰는 편이 재현성이 높다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">프롬프트 공식</span>
+            <span class="visual-kind">formula</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <text x="44" y="54" fill="#AAB7D4" font-size="18">workflow / pipeline diagram</text>
+    
+        <rect x="36" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="54" cy="144" r="10" fill="#41D9E6" />
+        <text x="80" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">주체</text>
+        
+          <path d="M 124 154 C 144 154, 122 230, 142 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="134,224 148,230 134,236" fill="#41D9E6" />
+        
+      
+        <rect x="142" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="160" cy="220" r="10" fill="#7C72FF" />
+        <text x="186" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">동작</text>
+        
+          <path d="M 230 230 C 250 230, 228 154, 248 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="240,148 254,154 240,160" fill="#41D9E6" />
+        
+      
+        <rect x="248" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="266" cy="144" r="10" fill="#41D9E6" />
+        <text x="292" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">카메라</text>
+        
+          <path d="M 336 154 C 356 154, 334 230, 354 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="346,224 360,230 346,236" fill="#41D9E6" />
+        
+      
+        <rect x="354" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="372" cy="220" r="10" fill="#7C72FF" />
+        <text x="398" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">조명</text>
+        
+          <path d="M 442 230 C 462 230, 440 154, 460 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="452,148 466,154 452,160" fill="#41D9E6" />
+        
+      
+        <rect x="460" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="478" cy="144" r="10" fill="#41D9E6" />
+        <text x="504" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">배경</text>
+        
+          <path d="M 548 154 C 568 154, 546 230, 566 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="558,224 572,230 558,236" fill="#41D9E6" />
+        
+      
+        <rect x="566" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="584" cy="220" r="10" fill="#7C72FF" />
+        <text x="610" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">톤앤매너</text>
+        
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">주체</span><span class="legend-chip is-violet">동작</span><span class="legend-chip is-gold">카메라</span><span class="legend-chip is-cyan">조명</span><span class="legend-chip is-violet">배경</span><span class="legend-chip is-gold">톤앤매너</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>학습자 프롬프트를 읽어 주면서 빠진 슬롯이 무엇인지 실시간으로 짚어 주는 방식이 효과적이다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-16">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">16 / 40</span>
+      </div>
+      <div class="kicker">IMAGE TO VIDEO</div>
+      <h1>Image-to-Video 입력 설계 포인트</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>입력 이미지는 구도와 피사체가 명확해야 후속 프레임의 흔들림이 줄어든다.</li><li>정지 이미지가 이미 브랜드 메시지를 담고 있으면 영상 확장이 쉬워진다.</li><li>과도하게 복잡한 원본보다 핵심 오브젝트가 분명한 이미지를 선택하는 것이 좋다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">좋은 입력 이미지</span>
+            <span class="visual-kind">cards</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">명확한 피사체</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">안정적 구도</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">브랜드 포인트</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">단순한 배경</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">명확한 피사체</span><span class="legend-chip is-violet">안정적 구도</span><span class="legend-chip is-gold">브랜드 포인트</span><span class="legend-chip is-cyan">단순한 배경</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>이미지 선택 품질이 곧 영상 품질의 절반이라는 점을 강조한다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-17">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">17 / 40</span>
+      </div>
+      <div class="kicker">DEMO FLOW</div>
+      <h1>실시간 데모 진행 순서</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>기본 워크플로를 불러오고 최소 파라미터만 수정해 첫 결과를 빠르게 만든다.</li><li>그 다음 프롬프트, 프레임 수, 시드, CFG를 하나씩 바꿔 차이를 비교한다.</li><li>학습자는 결과만 보지 말고 어떤 변경이 어떤 차이를 만들었는지 기록한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">데모 단계</span>
+            <span class="visual-kind">steps</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <text x="44" y="54" fill="#AAB7D4" font-size="18">workflow / pipeline diagram</text>
+    
+        <rect x="36" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="54" cy="144" r="10" fill="#41D9E6" />
+        <text x="80" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">불러오기</text>
+        
+          <path d="M 124 154 C 144 154, 122 230, 142 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="134,224 148,230 134,236" fill="#41D9E6" />
+        
+      
+        <rect x="142" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="160" cy="220" r="10" fill="#7C72FF" />
+        <text x="186" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">기본 생성</text>
+        
+          <path d="M 230 230 C 250 230, 228 154, 248 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="240,148 254,154 240,160" fill="#41D9E6" />
+        
+      
+        <rect x="248" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="266" cy="144" r="10" fill="#41D9E6" />
+        <text x="292" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">파라미터 변경</text>
+        
+          <path d="M 336 154 C 356 154, 334 230, 354 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="346,224 360,230 346,236" fill="#41D9E6" />
+        
+      
+        <rect x="354" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="372" cy="220" r="10" fill="#7C72FF" />
+        <text x="398" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">결과 비교</text>
+        
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">불러오기</span><span class="legend-chip is-violet">기본 생성</span><span class="legend-chip is-gold">파라미터 변경</span><span class="legend-chip is-cyan">결과 비교</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>데모는 완벽한 결과 시연보다 변수 하나씩 통제하는 실험 수업으로 운영한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-18">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">18 / 40</span>
+      </div>
+      <div class="kicker">PRACTICE</div>
+      <h1>오전 실습 미션</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>기본 워크플로 실행 성공을 1차 목표로 한다.</li><li>텍스트 입력만 변경한 결과와 참조 이미지를 넣은 결과를 각각 한 번씩 생성한다.</li><li>실패 로그가 있으면 오류 메시지와 수정 과정을 함께 기록한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">실습 완료 조건</span>
+            <span class="visual-kind">checklist</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#41D9E6" opacity="0" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">생성 1회 성공</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#7C72FF" opacity="0" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">T2V 결과 저장</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#FFC857" opacity="0" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">I2V 결과 저장</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#41D9E6" opacity="0" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">오류 기록</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">생성 1회 성공</span><span class="legend-chip is-violet">T2V 결과 저장</span><span class="legend-chip is-gold">I2V 결과 저장</span><span class="legend-chip is-cyan">오류 기록</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>오전 실습의 성공 기준을 ‘좋은 영상’이 아니라 ‘파이프라인 정상 동작’으로 둔다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-19">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">19 / 40</span>
+      </div>
+      <div class="kicker">TROUBLESHOOTING</div>
+      <h1>오전에 자주 발생하는 문제와 해결 포인트</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>모델 미인식, VRAM 부족, 노드 누락, 출력 경로 오류가 대표적이다.</li><li>오류는 증상-원인-조치 순으로 기록해야 같은 문제가 반복되지 않는다.</li><li>개인 PC 환경 차이가 크므로 표준 해결 절차를 공용 문서로 공유하는 것이 좋다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">대표 오류</span>
+            <span class="visual-kind">table</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <rect x="58" y="78" width="504" height="208" rx="18" fill="#162441" stroke="#2A3657" />
+    
+      <line x1="58" y1="124" x2="562" y2="124" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="92" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="109" fill="#41D9E6" font-size="16" font-weight="700">모델 로딩 실패</text>
+      <rect x="258" y="92" width="180" height="24" rx="10" fill="rgba(255,255,255,.06)" />
+      <text x="272" y="109" fill="#F5F7FB" font-size="15">경로 확인</text>
+    
+      <line x1="58" y1="166" x2="562" y2="166" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="134" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="151" fill="#41D9E6" font-size="16" font-weight="700">메모리 부족</text>
+      <rect x="258" y="134" width="192" height="24" rx="10" fill="rgba(124,114,255,.18)" />
+      <text x="272" y="151" fill="#F5F7FB" font-size="15">해상도/프레임 감소</text>
+    
+      <line x1="58" y1="208" x2="562" y2="208" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="176" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="193" fill="#41D9E6" font-size="16" font-weight="700">노드 누락</text>
+      <rect x="258" y="176" width="204" height="24" rx="10" fill="rgba(255,255,255,.06)" />
+      <text x="272" y="193" fill="#F5F7FB" font-size="15">커스텀 노드 설치</text>
+    
+      <line x1="58" y1="250" x2="562" y2="250" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="218" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="235" fill="#41D9E6" font-size="16" font-weight="700">저장 실패</text>
+      <rect x="258" y="218" width="216" height="24" rx="10" fill="rgba(124,114,255,.18)" />
+      <text x="272" y="235" fill="#F5F7FB" font-size="15">출력 폴더 권한 확인</text>
+    
+    <text x="74" y="66" fill="#AAB7D4" font-size="17">review / troubleshooting matrix</text>
+  
+    </svg>
+          </div>
+          <div class="legend-grid compact"><div><strong>모델 로딩 실패</strong><span>경로 확인</span></div><div><strong>메모리 부족</strong><span>해상도/프레임 감소</span></div><div><strong>노드 누락</strong><span>커스텀 노드 설치</span></div><div><strong>저장 실패</strong><span>출력 폴더 권한 확인</span></div></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>오류를 개인 문제로 넘기지 말고 팀 자산으로 축적하는 습관을 강조한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-20">
+      <div class="topline">
+        <span class="session">오전</span>
+        <span class="num">20 / 40</span>
+      </div>
+      <div class="kicker">WRAP-UP</div>
+      <h1>오전 세션 정리</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>ComfyUI 구조 이해, LTX-Video 개념 파악, 기본 생성 성공이 오전의 핵심이다.</li><li>오후에는 파라미터 제어를 통해 결과를 상업적으로 쓸 수 있는 수준으로 끌어올린다.</li><li>오전 실습 결과를 저장해 두면 오후 비교 실험의 기준선으로 활용할 수 있다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">오전 성과</span>
+            <span class="visual-kind">summary</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">세팅 완료</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">개념 이해</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">기본 생성</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">오후 준비</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">세팅 완료</span><span class="legend-chip is-violet">개념 이해</span><span class="legend-chip is-gold">기본 생성</span><span class="legend-chip is-cyan">오후 준비</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>오전 결과물을 버리지 말고 baseline으로 남겨 두라고 안내한다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-21">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">21 / 40</span>
+      </div>
+      <div class="kicker">AFTERNOON BLOCK</div>
+      <h1>오후 세션: 영상 고도화 실습</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>오후는 결과 품질과 비즈니스 활용성을 높이는 데 집중한다.</li><li>CFG와 샘플러 조정, 프롬프트 정교화, 장면 일관성 확보가 핵심 과제다.</li><li>최종 목표는 짧지만 설득력 있는 비즈니스 홍보 영상 샘플 완성이다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">고도화 축</span>
+            <span class="visual-kind">hero</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <rect x="212" y="116" width="196" height="112" rx="20" fill="#121A30" stroke="#41D9E6" />
+    <rect x="230" y="136" width="160" height="72" rx="14" fill="#1E305A" />
+    <polygon points="295,150 295,194 336,172" fill="#41D9E6" filter="url(#softGlow)"/>
+    
+      <line x1="310" y1="172" x2="310" y2="56" stroke="rgba(255,255,255,.10)" />
+      <rect x="256" y="36" width="108" height="40" rx="16" fill="#1A2950" stroke="#41D9E6" />
+      <text x="310" y="63" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">CFG</text>
+    
+      <line x1="310" y1="172" x2="420.3225558902378" y2="136.1540286525061" stroke="rgba(255,255,255,.10)" />
+      <rect x="366.3225558902378" y="116.1540286525061" width="108" height="40" rx="16" fill="#1A2950" stroke="#7C72FF" />
+      <text x="420.3225558902378" y="143.1540286525061" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">Sampler</text>
+    
+      <line x1="310" y1="172" x2="378.18308926592687" y2="265.8459713474939" stroke="rgba(255,255,255,.10)" />
+      <rect x="324.18308926592687" y="245.8459713474939" width="108" height="40" rx="16" fill="#1A2950" stroke="#41D9E6" />
+      <text x="378.18308926592687" y="272.8459713474939" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">Consistency</text>
+    
+      <line x1="310" y1="172" x2="241.81691073407313" y2="265.8459713474939" stroke="rgba(255,255,255,.10)" />
+      <rect x="187.81691073407313" y="245.8459713474939" width="108" height="40" rx="16" fill="#1A2950" stroke="#7C72FF" />
+      <text x="241.81691073407313" y="272.8459713474939" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">Storyboard</text>
+    
+      <line x1="310" y1="172" x2="199.67744410976218" y2="136.1540286525061" stroke="rgba(255,255,255,.10)" />
+      <rect x="145.67744410976218" y="116.1540286525061" width="108" height="40" rx="16" fill="#1A2950" stroke="#41D9E6" />
+      <text x="199.67744410976218" y="143.1540286525061" fill="#F5F7FB" text-anchor="middle" font-size="18" font-weight="700">Promo Output</text>
+    
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">CFG</span><span class="legend-chip is-violet">Sampler</span><span class="legend-chip is-gold">Consistency</span><span class="legend-chip is-cyan">Storyboard</span><span class="legend-chip is-violet">Promo Output</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>오후는 ‘작동’에서 ‘품질’로 초점이 이동한다는 점을 분명히 말한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-22">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">22 / 40</span>
+      </div>
+      <div class="kicker">GOALS</div>
+      <h1>오후 학습 목표</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>CFG와 샘플러가 결과물의 안정성과 표현력에 주는 영향을 비교한다.</li><li>브랜드 메시지를 포함한 짧은 홍보 영상 구조를 설계한다.</li><li>최종 산출물을 리뷰 기준에 따라 점검하고 개선한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">오후 목표</span>
+            <span class="visual-kind">grid</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">제어</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">비교</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">스토리보드</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">산출물 완성</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">제어</span><span class="legend-chip is-violet">비교</span><span class="legend-chip is-gold">스토리보드</span><span class="legend-chip is-cyan">산출물 완성</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>단순 생성보다 ‘비교와 개선’을 핵심 학습 행위로 안내한다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-23">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">23 / 40</span>
+      </div>
+      <div class="kicker">ROADMAP</div>
+      <h1>오후 실습 로드맵</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>파라미터 이해, 장면 설계, 개별 실습, 리뷰와 수정의 네 단계로 진행한다.</li><li>실습 중간에 짧은 리뷰 포인트를 끼워 넣어 시행착오를 빨리 줄인다.</li><li>마지막 2~3장은 결과 점검과 제출 요건 확인에 사용한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">4단계</span>
+            <span class="visual-kind">timeline</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+      <g transform="translate(58, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#41D9E6" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#41D9E6" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">1</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">파라미터</text>
+      </g>
+      <path d="M 170 172 C 186 172, 186 172, 190 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(190, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#7C72FF" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#7C72FF" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">2</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">스토리보드</text>
+      </g>
+      <path d="M 302 172 C 318 172, 318 172, 322 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(322, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#41D9E6" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#41D9E6" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">3</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">제작</text>
+      </g>
+      <path d="M 434 172 C 450 172, 450 172, 454 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(454, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#7C72FF" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#7C72FF" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">4</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">리뷰/수정</text>
+      </g>
+      
+    
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">파라미터</span><span class="legend-chip is-violet">스토리보드</span><span class="legend-chip is-gold">제작</span><span class="legend-chip is-cyan">리뷰/수정</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>학습자들이 중간에 길을 잃지 않도록 리뷰 시점을 미리 알려 준다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-24">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">24 / 40</span>
+      </div>
+      <div class="kicker">CFG</div>
+      <h1>CFG의 역할: 조건 충실도와 자유도의 균형</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>CFG 값이 높을수록 프롬프트 조건을 강하게 따르려는 경향이 생긴다.</li><li>너무 높으면 경직된 결과나 아티팩트가 생길 수 있고, 너무 낮으면 의도가 흐려질 수 있다.</li><li>홍보 영상은 제품 메시지를 유지해야 하므로 과도한 자유도보다 통제 가능한 범위를 찾는 것이 중요하다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">CFG 해석</span>
+            <span class="visual-kind">compare</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <rect x="60" y="70" width="228" height="218" rx="18" fill="#162441" stroke="#41D9E6" />
+    <text x="84" y="102" fill="#41D9E6" font-size="22" font-weight="800">낮은 CFG</text>
+    
+      <circle cx="88" cy="136" r="6" fill="#41D9E6" />
+      <rect x="104" y="124" width="130" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="140" fill="#F5F7FB" font-size="16">자유도 높음</text>
+    
+      <circle cx="88" cy="170" r="6" fill="#41D9E6" />
+      <rect x="104" y="158" width="140" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="174" fill="#F5F7FB" font-size="16">메시지 약화</text>
+    
+      <circle cx="88" cy="204" r="6" fill="#41D9E6" />
+      <rect x="104" y="192" width="150" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="208" fill="#F5F7FB" font-size="16">예측 어려움</text>
+    
+  
+    <rect x="332" y="70" width="228" height="218" rx="18" fill="#162441" stroke="#7C72FF" />
+    <text x="356" y="102" fill="#7C72FF" font-size="22" font-weight="800">높은 CFG</text>
+    
+      <circle cx="360" cy="136" r="6" fill="#7C72FF" />
+      <rect x="376" y="124" width="130" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="140" fill="#F5F7FB" font-size="16">조건 충실</text>
+    
+      <circle cx="360" cy="170" r="6" fill="#7C72FF" />
+      <rect x="376" y="158" width="140" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="174" fill="#F5F7FB" font-size="16">표현 경직 가능</text>
+    
+      <circle cx="360" cy="204" r="6" fill="#7C72FF" />
+      <rect x="376" y="192" width="150" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="208" fill="#F5F7FB" font-size="16">브랜드 통제 용이</text>
+    
+  
+    </svg>
+          </div>
+          
+      <div class="legend-grid compare-legend">
+        <div><strong>낮은 CFG</strong><span>자유도 높음 / 메시지 약화 / 예측 어려움</span></div>
+        <div><strong>높은 CFG</strong><span>조건 충실 / 표현 경직 가능 / 브랜드 통제 용이</span></div>
+      </div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>숫자 자체를 외우게 하기보다 출력 성향을 읽게 만드는 것이 핵심이다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-25">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">25 / 40</span>
+      </div>
+      <div class="kicker">SAMPLER</div>
+      <h1>샘플러는 결과의 성격을 바꾼다</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>샘플러는 노이즈를 제거하는 경로와 속도에 영향을 준다.</li><li>같은 프롬프트라도 샘플러에 따라 선명도, 안정성, 디테일 표현이 달라질 수 있다.</li><li>실무에서는 한 번에 정답을 찾기보다 후보 2~3개를 비교해 기준을 정하는 방식이 효율적이다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">비교 프레임</span>
+            <span class="visual-kind">table</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <rect x="58" y="78" width="504" height="208" rx="18" fill="#162441" stroke="#2A3657" />
+    
+      <line x1="58" y1="124" x2="562" y2="124" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="92" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="109" fill="#41D9E6" font-size="16" font-weight="700">Sampler A</text>
+      <rect x="258" y="92" width="180" height="24" rx="10" fill="rgba(255,255,255,.06)" />
+      <text x="272" y="109" fill="#F5F7FB" font-size="15">안정적 / 보수적</text>
+    
+      <line x1="58" y1="166" x2="562" y2="166" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="134" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="151" fill="#41D9E6" font-size="16" font-weight="700">Sampler B</text>
+      <rect x="258" y="134" width="192" height="24" rx="10" fill="rgba(124,114,255,.18)" />
+      <text x="272" y="151" fill="#F5F7FB" font-size="15">디테일 / 표현력</text>
+    
+      <line x1="58" y1="208" x2="562" y2="208" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="176" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="193" fill="#41D9E6" font-size="16" font-weight="700">Sampler C</text>
+      <rect x="258" y="176" width="204" height="24" rx="10" fill="rgba(255,255,255,.06)" />
+      <text x="272" y="193" fill="#F5F7FB" font-size="15">속도 / 실험용</text>
+    
+    <text x="74" y="66" fill="#AAB7D4" font-size="17">review / troubleshooting matrix</text>
+  
+    </svg>
+          </div>
+          <div class="legend-grid compact"><div><strong>Sampler A</strong><span>안정적 / 보수적</span></div><div><strong>Sampler B</strong><span>디테일 / 표현력</span></div><div><strong>Sampler C</strong><span>속도 / 실험용</span></div></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>샘플러 이름 암기보다 ‘출력 성향 분류표’를 만드는 방식으로 학습시키면 실무 전환이 쉽다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-26">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">26 / 40</span>
+      </div>
+      <div class="kicker">PROMPT REFINEMENT</div>
+      <h1>프롬프트와 네거티브 프롬프트 고도화</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>핵심 장면을 강화하는 문구와 제거해야 할 오류 요소를 분리해서 관리한다.</li><li>네거티브 프롬프트는 흔들림, 왜곡, 저품질 디테일 같은 실패 패턴을 줄이는 데 유용하다.</li><li>팀 수업에서는 잘 먹힌 문구를 공유 리스트로 남기면 반복 학습 효과가 커진다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">프롬프트 구조</span>
+            <span class="visual-kind">compare</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <rect x="60" y="70" width="228" height="218" rx="18" fill="#162441" stroke="#41D9E6" />
+    <text x="84" y="102" fill="#41D9E6" font-size="22" font-weight="800">Positive</text>
+    
+      <circle cx="88" cy="136" r="6" fill="#41D9E6" />
+      <rect x="104" y="124" width="130" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="140" fill="#F5F7FB" font-size="16">제품 메시지</text>
+    
+      <circle cx="88" cy="170" r="6" fill="#41D9E6" />
+      <rect x="104" y="158" width="140" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="174" fill="#F5F7FB" font-size="16">카메라 무드</text>
+    
+      <circle cx="88" cy="204" r="6" fill="#41D9E6" />
+      <rect x="104" y="192" width="150" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="116" y="208" fill="#F5F7FB" font-size="16">조명/브랜드 톤</text>
+    
+  
+    <rect x="332" y="70" width="228" height="218" rx="18" fill="#162441" stroke="#7C72FF" />
+    <text x="356" y="102" fill="#7C72FF" font-size="22" font-weight="800">Negative</text>
+    
+      <circle cx="360" cy="136" r="6" fill="#7C72FF" />
+      <rect x="376" y="124" width="130" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="140" fill="#F5F7FB" font-size="16">왜곡</text>
+    
+      <circle cx="360" cy="170" r="6" fill="#7C72FF" />
+      <rect x="376" y="158" width="140" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="174" fill="#F5F7FB" font-size="16">프레임 붕괴</text>
+    
+      <circle cx="360" cy="204" r="6" fill="#7C72FF" />
+      <rect x="376" y="192" width="150" height="22" rx="11" fill="rgba(255,255,255,.05)" />
+      <text x="388" y="208" fill="#F5F7FB" font-size="16">저해상도 느낌</text>
+    
+  
+    </svg>
+          </div>
+          
+      <div class="legend-grid compare-legend">
+        <div><strong>Positive</strong><span>제품 메시지 / 카메라 무드 / 조명/브랜드 톤</span></div>
+        <div><strong>Negative</strong><span>왜곡 / 프레임 붕괴 / 저해상도 느낌</span></div>
+      </div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>좋은 문장을 쓰는 것보다 실패를 줄이는 금지어 관리가 더 중요할 때가 많다고 설명한다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-27">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">27 / 40</span>
+      </div>
+      <div class="kicker">MOTION</div>
+      <h1>움직임을 설계해야 영상이 산다</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>카메라 이동과 피사체 동작을 동시에 과도하게 주면 결과가 불안정해진다.</li><li>처음에는 한 장면에 한 개의 주된 움직임만 설정하는 것이 안전하다.</li><li>홍보 영상은 보여줄 정보가 분명하므로 ‘과한 연출’보다 ‘읽히는 연출’이 중요하다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">움직임 설계</span>
+            <span class="visual-kind">steps</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <text x="44" y="54" fill="#AAB7D4" font-size="18">workflow / pipeline diagram</text>
+    
+        <rect x="36" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="54" cy="144" r="10" fill="#41D9E6" />
+        <text x="80" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">주체 선정</text>
+        
+          <path d="M 124 154 C 144 154, 122 230, 142 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="134,224 148,230 134,236" fill="#41D9E6" />
+        
+      
+        <rect x="142" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="160" cy="220" r="10" fill="#7C72FF" />
+        <text x="186" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">주동작 1개</text>
+        
+          <path d="M 230 230 C 250 230, 228 154, 248 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="240,148 254,154 240,160" fill="#41D9E6" />
+        
+      
+        <rect x="248" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="266" cy="144" r="10" fill="#41D9E6" />
+        <text x="292" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">카메라 1개</text>
+        
+          <path d="M 336 154 C 356 154, 334 230, 354 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="346,224 360,230 346,236" fill="#41D9E6" />
+        
+      
+        <rect x="354" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="372" cy="220" r="10" fill="#7C72FF" />
+        <text x="398" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">배경 안정화</text>
+        
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">주체 선정</span><span class="legend-chip is-violet">주동작 1개</span><span class="legend-chip is-gold">카메라 1개</span><span class="legend-chip is-cyan">배경 안정화</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>실무 영상은 화려함보다 메시지 전달력이 우선이라는 점을 반복해서 상기시킨다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-28">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">28 / 40</span>
+      </div>
+      <div class="kicker">CONSISTENCY</div>
+      <h1>일관성을 높이는 실전 전략</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>같은 주체를 유지하려면 참조 이미지, 프롬프트 구조, 시드 전략을 함께 관리해야 한다.</li><li>색감과 조명 톤을 고정하면 장면 간 브랜드 인상이 덜 흔들린다.</li><li>짧은 장면 여러 개를 만들더라도 공통 스타일 문장을 유지하는 것이 중요하다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">일관성 레버</span>
+            <span class="visual-kind">grid</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">참조 이미지</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">공통 시드</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">색감 통일</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">고정 톤 문장</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">참조 이미지</span><span class="legend-chip is-violet">공통 시드</span><span class="legend-chip is-gold">색감 통일</span><span class="legend-chip is-cyan">고정 톤 문장</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>일관성은 한 파라미터의 문제가 아니라 여러 제어값의 조합이라는 점을 짚는다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-29">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">29 / 40</span>
+      </div>
+      <div class="kicker">STORYBOARD</div>
+      <h1>비즈니스 홍보 영상의 기본 스토리보드</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>문제 제기, 가치 제안, 핵심 장면, 마무리 메시지의 4단 구성이 가장 무난하다.</li><li>AI 생성 영상이라도 스토리 흐름이 없으면 단순 데모 영상처럼 보이기 쉽다.</li><li>짧은 길이에서는 한 장면당 한 메시지 원칙을 지키는 것이 효과적이다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">4장면 구성</span>
+            <span class="visual-kind">timeline</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+      <g transform="translate(58, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#41D9E6" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#41D9E6" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">1</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">문제</text>
+      </g>
+      <path d="M 170 172 C 186 172, 186 172, 190 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(190, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#7C72FF" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#7C72FF" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">2</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">해결</text>
+      </g>
+      <path d="M 302 172 C 318 172, 318 172, 322 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(322, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#41D9E6" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#41D9E6" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">3</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">사용 장면</text>
+      </g>
+      <path d="M 434 172 C 450 172, 450 172, 454 172" stroke="url(#cyanViolet)" stroke-width="5" />
+    
+      <g transform="translate(454, 94)">
+        <rect width="112" height="158" rx="18" fill="#162441" stroke="#7C72FF" />
+        <rect x="12" y="14" width="88" height="64" rx="12" fill="#20315B" />
+        <path d="M 24 64 Q 54 26 88 52" fill="none" stroke="#7C72FF" stroke-width="4" />
+        <circle cx="36" cy="42" r="9" fill="#FFC857" />
+        <text x="56" y="108" text-anchor="middle" fill="#41D9E6" font-size="22" font-weight="800">4</text>
+        <text x="56" y="132" text-anchor="middle" fill="#F5F7FB" font-size="16" font-weight="700">CTA/브랜드</text>
+      </g>
+      
+    
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">문제</span><span class="legend-chip is-violet">해결</span><span class="legend-chip is-gold">사용 장면</span><span class="legend-chip is-cyan">CTA/브랜드</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>기술 실습이더라도 반드시 스토리보드 개념을 연결해야 결과가 비즈니스 영상으로 수렴한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-30">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">30 / 40</span>
+      </div>
+      <div class="kicker">PRE-PRODUCTION</div>
+      <h1>제작 전 준비 체크리스트</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>브랜드 대상, 제품 메시지, 장면 수, 길이, 톤앤매너를 먼저 정한다.</li><li>텍스트 기반 접근인지 이미지 기반 접근인지 선택하고 입력 자산을 준비한다.</li><li>실습 시간 제약을 고려해 2~3장면 수준으로 범위를 통제한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">준비 항목</span>
+            <span class="visual-kind">checklist</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#41D9E6" opacity="0" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">대상 고객</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#7C72FF" opacity="0" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">핵심 메시지</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#FFC857" opacity="0" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">입력 자산</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#41D9E6" opacity="0" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">장면 수</text>
+      
+        <rect x="62" y="260" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="90" cy="295" r="14" fill="#7C72FF" />
+        <path d="M 84 296 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="280" width="20" height="20" rx="6" fill="#7C72FF" opacity="0" />
+        <text x="116" y="302" fill="#F5F7FB" font-size="18" font-weight="700">길이</text>
+      
+        <rect x="314" y="260" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="342" cy="295" r="14" fill="#FFC857" />
+        <path d="M 336 296 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="280" width="20" height="20" rx="6" fill="#FFC857" opacity="0" />
+        <text x="368" y="302" fill="#F5F7FB" font-size="18" font-weight="700">톤앤매너</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">대상 고객</span><span class="legend-chip is-violet">핵심 메시지</span><span class="legend-chip is-gold">입력 자산</span><span class="legend-chip is-cyan">장면 수</span><span class="legend-chip is-violet">길이</span><span class="legend-chip is-gold">톤앤매너</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>좋은 제작은 생성 버튼을 누르기 전에 이미 절반이 결정된다고 설명한다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-31">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">31 / 40</span>
+      </div>
+      <div class="kicker">EXERCISE 1</div>
+      <h1>실습 1: Text-to-Video 홍보 컷 만들기</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>텍스트 프롬프트만으로 5초 내외의 짧은 브랜드 소개 컷을 만든다.</li><li>주체와 움직임, 조명, 카메라 문장을 포함해 프롬프트를 설계한다.</li><li>최소 2개의 CFG 값으로 결과를 비교 저장한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">실습 순서</span>
+            <span class="visual-kind">steps</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <text x="44" y="54" fill="#AAB7D4" font-size="18">workflow / pipeline diagram</text>
+    
+        <rect x="36" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="54" cy="144" r="10" fill="#41D9E6" />
+        <text x="80" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">프롬프트 작성</text>
+        
+          <path d="M 124 154 C 144 154, 122 230, 142 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="134,224 148,230 134,236" fill="#41D9E6" />
+        
+      
+        <rect x="142" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="160" cy="220" r="10" fill="#7C72FF" />
+        <text x="186" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">생성 1차</text>
+        
+          <path d="M 230 230 C 250 230, 228 154, 248 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="240,148 254,154 240,160" fill="#41D9E6" />
+        
+      
+        <rect x="248" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="266" cy="144" r="10" fill="#41D9E6" />
+        <text x="292" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">CFG 변경</text>
+        
+          <path d="M 336 154 C 356 154, 334 230, 354 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="346,224 360,230 346,236" fill="#41D9E6" />
+        
+      
+        <rect x="354" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="372" cy="220" r="10" fill="#7C72FF" />
+        <text x="398" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">비교 저장</text>
+        
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">프롬프트 작성</span><span class="legend-chip is-violet">생성 1차</span><span class="legend-chip is-gold">CFG 변경</span><span class="legend-chip is-cyan">비교 저장</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>이 실습은 모델 반응을 읽는 단계이므로 완성도보다 비교 실험의 충실함을 보게 한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-32">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">32 / 40</span>
+      </div>
+      <div class="kicker">EXERCISE 2</div>
+      <h1>실습 2: Image-to-Video 제품 히어로 장면</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>제품 또는 서비스 대표 이미지를 입력으로 넣어 시네마틱한 움직임을 부여한다.</li><li>배경이 복잡한 이미지는 단순화하거나 크롭해 핵심 오브젝트를 강조한다.</li><li>브랜드 컬러와 조명 톤이 유지되는지 중점적으로 본다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">관찰 포인트</span>
+            <span class="visual-kind">cards</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">제품 유지</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">카메라 안정성</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">브랜드 컬러</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">배경 일관성</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">제품 유지</span><span class="legend-chip is-violet">카메라 안정성</span><span class="legend-chip is-gold">브랜드 컬러</span><span class="legend-chip is-cyan">배경 일관성</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>제품이 흔들리거나 변형되면 홍보 영상으로 쓰기 어려우므로 객체 유지 여부를 엄격히 보게 한다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-33">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">33 / 40</span>
+      </div>
+      <div class="kicker">EXERCISE 3</div>
+      <h1>실습 3: 다장면 일관성 확보</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>두 개 이상의 장면을 만들 때 동일 브랜드 톤과 메시지가 유지되도록 조정한다.</li><li>시드, 프롬프트 공통 문장, 색감 요소를 공유해 장면 간 연결감을 만든다.</li><li>최종 편집을 염두에 두고 전환이 자연스러운 조합을 고른다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">다장면 관리</span>
+            <span class="visual-kind">flow</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <text x="44" y="54" fill="#AAB7D4" font-size="18">workflow / pipeline diagram</text>
+    
+        <rect x="36" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="54" cy="144" r="10" fill="#41D9E6" />
+        <text x="80" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">공통 스타일</text>
+        
+          <path d="M 124 154 C 144 154, 122 230, 142 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="134,224 148,230 134,236" fill="#41D9E6" />
+        
+      
+        <rect x="142" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="160" cy="220" r="10" fill="#7C72FF" />
+        <text x="186" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">장면 A</text>
+        
+          <path d="M 230 230 C 250 230, 228 154, 248 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="240,148 254,154 240,160" fill="#41D9E6" />
+        
+      
+        <rect x="248" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="266" cy="144" r="10" fill="#41D9E6" />
+        <text x="292" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">장면 B</text>
+        
+          <path d="M 336 154 C 356 154, 334 230, 354 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="346,224 360,230 346,236" fill="#41D9E6" />
+        
+      
+        <rect x="354" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="372" cy="220" r="10" fill="#7C72FF" />
+        <text x="398" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">전환 검토</text>
+        
+          <path d="M 442 230 C 462 230, 440 154, 460 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="452,148 466,154 452,160" fill="#41D9E6" />
+        
+      
+        <rect x="460" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="478" cy="144" r="10" fill="#41D9E6" />
+        <text x="504" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">최종 선택</text>
+        
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">공통 스타일</span><span class="legend-chip is-violet">장면 A</span><span class="legend-chip is-gold">장면 B</span><span class="legend-chip is-cyan">전환 검토</span><span class="legend-chip is-violet">최종 선택</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>한 장면 결과가 좋더라도 전체 흐름이 안 맞으면 홍보 영상으로는 약하다는 점을 강조한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-34">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">34 / 40</span>
+      </div>
+      <div class="kicker">REVIEW RUBRIC</div>
+      <h1>결과물 품질 리뷰 기준</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>메시지 명확성, 주체 유지, 화면 안정성, 브랜드 톤, 재사용 가능성을 기준으로 본다.</li><li>단순 미적 취향보다 비즈니스 활용 가능성 관점에서 평가한다.</li><li>개별 결과를 팀 리뷰로 돌려 개선 포인트를 빠르게 찾는다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">5개 기준</span>
+            <span class="visual-kind">table</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <rect x="58" y="78" width="504" height="208" rx="18" fill="#162441" stroke="#2A3657" />
+    
+      <line x1="58" y1="124" x2="562" y2="124" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="92" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="109" fill="#41D9E6" font-size="16" font-weight="700">메시지 명확성</text>
+      <rect x="258" y="92" width="180" height="24" rx="10" fill="rgba(255,255,255,.06)" />
+      <text x="272" y="109" fill="#F5F7FB" font-size="15">무엇을 홍보하는지 바로 알 수 있는가</text>
+    
+      <line x1="58" y1="166" x2="562" y2="166" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="134" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="151" fill="#41D9E6" font-size="16" font-weight="700">주체 유지</text>
+      <rect x="258" y="134" width="192" height="24" rx="10" fill="rgba(124,114,255,.18)" />
+      <text x="272" y="151" fill="#F5F7FB" font-size="15">제품/인물이 흔들리지 않는가</text>
+    
+      <line x1="58" y1="208" x2="562" y2="208" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="176" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="193" fill="#41D9E6" font-size="16" font-weight="700">화면 안정성</text>
+      <rect x="258" y="176" width="204" height="24" rx="10" fill="rgba(255,255,255,.06)" />
+      <text x="272" y="193" fill="#F5F7FB" font-size="15">프레임 붕괴가 적은가</text>
+    
+      <line x1="58" y1="250" x2="562" y2="250" stroke="rgba(255,255,255,.08)" />
+      <rect x="76" y="218" width="154" height="24" rx="10" fill="rgba(65,217,230,.12)" />
+      <text x="90" y="235" fill="#41D9E6" font-size="16" font-weight="700">브랜드 톤</text>
+      <rect x="258" y="218" width="216" height="24" rx="10" fill="rgba(124,114,255,.18)" />
+      <text x="272" y="235" fill="#F5F7FB" font-size="15">색/조명/분위기가 일관적인가</text>
+    
+    <text x="74" y="66" fill="#AAB7D4" font-size="17">review / troubleshooting matrix</text>
+  
+    </svg>
+          </div>
+          <div class="legend-grid compact"><div><strong>메시지 명확성</strong><span>무엇을 홍보하는지 바로 알 수 있는가</span></div><div><strong>주체 유지</strong><span>제품/인물이 흔들리지 않는가</span></div><div><strong>화면 안정성</strong><span>프레임 붕괴가 적은가</span></div><div><strong>브랜드 톤</strong><span>색/조명/분위기가 일관적인가</span></div></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>리뷰 기준을 말로만 설명하지 말고 평가표로 고정해 팀끼리 같은 언어로 피드백하게 한다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-35">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">35 / 40</span>
+      </div>
+      <div class="kicker">EXPORT</div>
+      <h1>출력 설정과 후처리 연결</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>실습에서는 생성 속도와 비교 편의성을 위해 지나치게 긴 클립은 피한다.</li><li>파일명 규칙을 정해 CFG, 샘플러, 시드 정보를 남기면 재현성이 높아진다.</li><li>후처리 편집 도구와 연결할 경우 장면별 버전 관리가 중요하다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">출력 관리</span>
+            <span class="visual-kind">checklist</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#41D9E6" opacity="0" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">파일명 규칙</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#7C72FF" opacity="0" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">버전 기록</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#FFC857" opacity="0" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">장면별 저장</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#41D9E6" opacity="0" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">비교용 메모</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">파일명 규칙</span><span class="legend-chip is-violet">버전 기록</span><span class="legend-chip is-gold">장면별 저장</span><span class="legend-chip is-cyan">비교용 메모</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>좋은 결과를 만들어도 어떤 조건으로 만들었는지 모르면 실무 자산이 되지 않는다고 설명한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-36">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">36 / 40</span>
+      </div>
+      <div class="kicker">RISK</div>
+      <h1>실무 적용 시 주의할 점</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>저작권, 초상권, 브랜드 오인 가능성, 과장 표현 등 법무 리스크를 고려해야 한다.</li><li>AI 생성 결과는 데모 단계와 상용 배포 단계를 구분해 검토하는 것이 안전하다.</li><li>기업 내부에서는 검수자와 승인 절차를 명확히 두는 것이 바람직하다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">리스크 영역</span>
+            <span class="visual-kind">cards</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">저작권</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">초상권</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">브랜드 오인</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">승인 프로세스</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">저작권</span><span class="legend-chip is-violet">초상권</span><span class="legend-chip is-gold">브랜드 오인</span><span class="legend-chip is-cyan">승인 프로세스</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>기술 수업이지만 최종 사용 맥락까지 연결해야 현업 적용력이 생긴다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-37">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">37 / 40</span>
+      </div>
+      <div class="kicker">TEAM WORKFLOW</div>
+      <h1>팀 단위 운영 시 역할 분담 예시</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>프롬프트 설계자, 입력 자산 관리자, 생성 운영자, 리뷰어로 역할을 나눌 수 있다.</li><li>작업 역할을 분리하면 반복 실험의 속도와 결과 비교 품질이 좋아진다.</li><li>교육 현장에서도 짧은 조별 역할 분담을 주면 참여도가 높아진다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">역할</span>
+            <span class="visual-kind">grid</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">프롬프트</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">자산 준비</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">생성 운영</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">리뷰</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">프롬프트</span><span class="legend-chip is-violet">자산 준비</span><span class="legend-chip is-gold">생성 운영</span><span class="legend-chip is-cyan">리뷰</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>개인 실습을 하더라도 팀 운영 관점을 넣어 주면 향후 현업 전환에 도움이 된다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-38">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">38 / 40</span>
+      </div>
+      <div class="kicker">CAPSTONE</div>
+      <h1>최종 미션: 10초 내외 홍보 영상 제안</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>각 팀 또는 개인은 하나의 제품·서비스를 정하고 10초 내외 홍보 영상을 설계한다.</li><li>최소 2개 장면, 1개 이상의 비교 실험, 최종 선택 근거를 포함한다.</li><li>기술 데모가 아니라 마케팅 목적이 읽히는 구조를 목표로 한다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">제출 구조</span>
+            <span class="visual-kind">formula</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    <text x="44" y="54" fill="#AAB7D4" font-size="18">workflow / pipeline diagram</text>
+    
+        <rect x="36" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="54" cy="144" r="10" fill="#41D9E6" />
+        <text x="80" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">대상</text>
+        
+          <path d="M 124 154 C 144 154, 122 230, 142 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="134,224 148,230 134,236" fill="#41D9E6" />
+        
+      
+        <rect x="142" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="160" cy="220" r="10" fill="#7C72FF" />
+        <text x="186" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">메시지</text>
+        
+          <path d="M 230 230 C 250 230, 228 154, 248 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="240,148 254,154 240,160" fill="#41D9E6" />
+        
+      
+        <rect x="248" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="266" cy="144" r="10" fill="#41D9E6" />
+        <text x="292" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">장면 2개+</text>
+        
+          <path d="M 336 154 C 356 154, 334 230, 354 230" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="346,224 360,230 346,236" fill="#41D9E6" />
+        
+      
+        <rect x="354" y="202" width="88" height="56" rx="16" fill="#1A2950" stroke="#7C72FF" />
+        <circle cx="372" cy="220" r="10" fill="#7C72FF" />
+        <text x="398" y="238" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">비교 실험</text>
+        
+          <path d="M 442 230 C 462 230, 440 154, 460 154" fill="none" stroke="url(#cyanViolet)" stroke-width="4" />
+          <polygon points="452,148 466,154 452,160" fill="#41D9E6" />
+        
+      
+        <rect x="460" y="126" width="88" height="56" rx="16" fill="#1A2950" stroke="#41D9E6" />
+        <circle cx="478" cy="144" r="10" fill="#41D9E6" />
+        <text x="504" y="162" fill="#F5F7FB" text-anchor="middle" font-size="16" font-weight="700">최종 선택</text>
+        
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">대상</span><span class="legend-chip is-violet">메시지</span><span class="legend-chip is-gold">장면 2개+</span><span class="legend-chip is-cyan">비교 실험</span><span class="legend-chip is-violet">최종 선택</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>최종 미션은 결과물뿐 아니라 선택 근거를 말하게 만드는 것이 중요하다.</p>
+      </div>
+    </section>
+    <section class="slide " id="slide-39">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">39 / 40</span>
+      </div>
+      <div class="kicker">DELIVERABLES</div>
+      <h1>제출물 체크리스트</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>최종 영상 파일, 사용한 프롬프트, 핵심 파라미터 기록, 결과 비교 메모를 제출한다.</li><li>어떤 시도는 실패했고 왜 수정했는지도 간단히 남기게 한다.</li><li>좋은 제출물은 결과보다 과정 재현성이 분명하다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">제출 항목</span>
+            <span class="visual-kind">checklist</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#41D9E6" opacity="0" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">영상 파일</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#7C72FF" opacity="0" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">프롬프트</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#FFC857" opacity="0" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">파라미터</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#41D9E6" opacity="0" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">비교 메모</text>
+      
+        <rect x="62" y="260" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="90" cy="295" r="14" fill="#7C72FF" />
+        <path d="M 84 296 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="1" />
+        <rect x="80" y="280" width="20" height="20" rx="6" fill="#7C72FF" opacity="0" />
+        <text x="116" y="302" fill="#F5F7FB" font-size="18" font-weight="700">수정 기록</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">영상 파일</span><span class="legend-chip is-violet">프롬프트</span><span class="legend-chip is-gold">파라미터</span><span class="legend-chip is-cyan">비교 메모</span><span class="legend-chip is-violet">수정 기록</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>교육 결과물을 포트폴리오 자산으로 전환할 수 있도록 기록 관행까지 함께 훈련한다.</p>
+      </div>
+    </section>
+    <section class="slide reverse" id="slide-40">
+      <div class="topline">
+        <span class="session">오후</span>
+        <span class="num">40 / 40</span>
+      </div>
+      <div class="kicker">CLOSING</div>
+      <h1>정리 및 Q&amp;A</h1>
+      
+      <div class="body">
+        <article class="panel content">
+          <ul class="bullet-list">
+            <li>오늘 수업의 핵심은 ComfyUI 기반 파이프라인 이해와 LTX-Video 실전 활용 경험이다.</li><li>CFG, 샘플러, 참조 이미지, 스토리보드 설계가 결과 품질을 좌우한다.</li><li>다음 실습에서는 오늘 만든 워크플로를 재사용해 더 긴 장면과 자동화로 확장할 수 있다.</li>
+          </ul>
+        </article>
+        <aside class="panel visual">
+          <div class="visual-head">
+            <span class="visual-label">핵심 키워드</span>
+            <span class="visual-kind">summary</span>
+          </div>
+          <div class="visual-stage">
+            
+    <svg class="viz-svg " viewBox="0 0 620 360" role="img" aria-label="diagram">
+      <defs>
+        <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#182544"/>
+          <stop offset="100%" stop-color="#0F1730"/>
+        </linearGradient>
+        <linearGradient id="cyanViolet" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#41D9E6"/>
+          <stop offset="100%" stop-color="#7C72FF"/>
+        </linearGradient>
+        <filter id="softGlow">
+          <feGaussianBlur stdDeviation="8" result="blur"/>
+          <feMerge>
+            <feMergeNode in="blur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <rect x="8" y="8" width="604" height="344" rx="24" fill="url(#bgGrad)" stroke="#2A3657" />
+      <circle cx="520" cy="56" r="40" fill="rgba(65,217,230,.08)" />
+      <circle cx="96" cy="298" r="52" fill="rgba(124,114,255,.08)" />
+      
+    
+        <rect x="62" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="90" cy="111" r="14" fill="#41D9E6" />
+        <path d="M 84 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="118" fill="#F5F7FB" font-size="18" font-weight="700">파이프라인</text>
+      
+        <rect x="314" y="76" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="342" cy="111" r="14" fill="#7C72FF" />
+        <path d="M 336 112 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="96" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="118" fill="#F5F7FB" font-size="18" font-weight="700">제어</text>
+      
+        <rect x="62" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#FFC857" />
+        <circle cx="90" cy="203" r="14" fill="#FFC857" />
+        <path d="M 84 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="210" fill="#F5F7FB" font-size="18" font-weight="700">일관성</text>
+      
+        <rect x="314" y="168" width="214" height="70" rx="18" fill="#162441" stroke="#41D9E6" />
+        <circle cx="342" cy="203" r="14" fill="#41D9E6" />
+        <path d="M 336 204 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="332" y="188" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="368" y="210" fill="#F5F7FB" font-size="18" font-weight="700">홍보 영상</text>
+      
+        <rect x="62" y="260" width="214" height="70" rx="18" fill="#162441" stroke="#7C72FF" />
+        <circle cx="90" cy="295" r="14" fill="#7C72FF" />
+        <path d="M 84 296 l5 6 9 -14" fill="none" stroke="#071018" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0" />
+        <rect x="80" y="280" width="20" height="20" rx="6" fill="#20315B" opacity="1" />
+        <text x="116" y="302" fill="#F5F7FB" font-size="18" font-weight="700">재사용</text>
+      
+  
+    </svg>
+          </div>
+          <div class="legend-chips"><span class="legend-chip is-cyan">파이프라인</span><span class="legend-chip is-violet">제어</span><span class="legend-chip is-gold">일관성</span><span class="legend-chip is-cyan">홍보 영상</span><span class="legend-chip is-violet">재사용</span></div>
+        </aside>
+      </div>
+      <div class="panel note">
+        <strong>강사 포인트</strong>
+        <p>마지막에는 기술 키워드보다 실무 적용 포인트를 다시 묶어 주며 마무리한다.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,15 +1,15 @@
 # Wiki Index
 
-- Generated: 2026-04-23T23:57:24.442712+00:00
-- Markdown pages: 97
+- Generated: 2026-04-26T21:42:39.046324+00:00
+- Markdown pages: 99
 - Resolved edges: 89
-- Communities: 42
-- Estimated full-read tokens: 88332
+- Communities: 44
+- Estimated full-read tokens: 89434
 - Ignore file: `.llmwikiignore`
 - Semantic search: enabled
 - Smart Connections bridge: enabled
-- Code graph nodes: 980
-- Code graph edges: 2720
+- Code graph nodes: 1036
+- Code graph edges: 2950
 
 ## Pages
 
@@ -20,6 +20,20 @@
   - Topics: llm, local, repository, rules, schema
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 12
+- [Remote ComfyUI Z-Image Setup](../docs/comfyui-remote-zimage.md)
+  - Path: `docs/comfyui-remote-zimage.md`
+  - Summary: Remote endpoint
+  - Tags: (none)
+  - Topics: comfyui, endpoint, image, remote, setup
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [ComfyUI Local Setup](../docs/comfyui-setup.md)
+  - Path: `docs/comfyui-setup.md`
+  - Summary: 이 작업 공간에는 ComfyUI를 별도 가상환경으로 설치했다.
+  - Tags: (none)
+  - Topics: comfyui, comfyui를, local, setup, 가상환경으로
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
 - [Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
   - Path: `llm_wiki/Hermes-Agent-비교-보고서.md`
   - Summary: 작성일: 2026-04-21 - 비교 대상 1: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) - 비교 대상 2: 현재 저장소의 `LLM Wiki + FAISS + GraphRAG-lite + Smart Connections bridge + Mem0 + local Whisper` 스택

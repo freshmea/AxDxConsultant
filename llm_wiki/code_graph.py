@@ -7,12 +7,21 @@ from pathlib import Path
 from typing import Dict, Iterable, List
 
 from .code_analysis import analyze_code_graph
-from .code_cache import load_cached_extraction, save_cached_extraction
+from .code_cache import load_cached_extraction, prune_stale_cache, save_cached_extraction
 from .code_extractors import extract_code_file
 from .indexer import IGNORE_FILE_NAME, SKIP_DIR_NAMES, load_ignore_rules, matches_ignore
 
 
 CODE_EXTENSIONS = {".py", ".js", ".jsx", ".ts", ".tsx", ".ps1"}
+
+
+def _is_nested_git_repo_path(path: Path, root: Path) -> bool:
+    for parent in path.parents:
+        if parent == root:
+            return False
+        if (parent / ".git").exists():
+            return True
+    return False
 
 
 def iter_code_files(root: Path) -> Iterable[Path]:
@@ -26,6 +35,8 @@ def iter_code_files(root: Path) -> Iterable[Path]:
             continue
         relpath = path.relative_to(root).as_posix()
         if matches_ignore(relpath, ignore_rules):
+            continue
+        if _is_nested_git_repo_path(path.parent, root):
             continue
         yield path
 
@@ -56,6 +67,8 @@ def _build_communities(nodes: List[Dict[str, object]], edges: List[Dict[str, obj
 
 def build_code_graph(repo_root: Path, system_root: Path) -> Dict[str, object]:
     files = sorted(iter_code_files(repo_root))
+    active_relpaths = [path.relative_to(repo_root).as_posix() for path in files]
+    stale_cache_removed = prune_stale_cache(system_root, active_relpaths)
     nodes: List[Dict[str, object]] = []
     edges: List[Dict[str, object]] = []
     language_counts: Counter[str] = Counter()
@@ -123,6 +136,7 @@ def build_code_graph(repo_root: Path, system_root: Path) -> Dict[str, object]:
             "files_scanned": len(files),
             "files_extracted": extracted_files,
             "cache_hits": cache_hits,
+            "stale_cache_removed": stale_cache_removed,
             "node_count": len(dedup_nodes),
             "edge_count": len(dedup_edges),
             "community_count": len(communities),

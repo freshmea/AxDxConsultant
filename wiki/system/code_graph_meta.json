@@ -1,32 +1,37 @@
 {
-  "generated_at": "2026-04-23T23:57:36.806697+00:00",
+  "generated_at": "2026-04-26T21:43:06.464779+00:00",
   "stats": {
-    "files_scanned": 20,
-    "files_extracted": 0,
-    "cache_hits": 20,
-    "node_count": 980,
-    "edge_count": 2720,
-    "community_count": 14
+    "files_scanned": 27,
+    "files_extracted": 2,
+    "cache_hits": 25,
+    "stale_cache_removed": 10018,
+    "node_count": 1036,
+    "edge_count": 2950,
+    "community_count": 16
   },
   "facets": {
     "languages": [
       [
         "python",
-        20
+        24
+      ],
+      [
+        "unsupported",
+        3
       ]
     ],
     "relations": [
       [
         "calls",
-        2390
+        2575
       ],
       [
         "defines",
-        195
+        212
       ],
       [
         "imports",
-        134
+        162
       ],
       [
         "inherits",
@@ -36,7 +41,7 @@
     "confidence": [
       [
         "EXTRACTED",
-        2720
+        2950
       ]
     ]
   },
@@ -47,7 +52,7 @@
         "label": "build_figures",
         "kind": "function",
         "path": "실습결과물/16/imports85_plotly_report.py",
-        "community_id": "community-003",
+        "community_id": "community-001",
         "degree": 129
       },
       {
@@ -87,7 +92,7 @@
         "label": "build_index",
         "kind": "function",
         "path": "llm_wiki/indexer.py",
-        "community_id": "community-001",
+        "community_id": "community-004",
         "degree": 84
       },
       {
@@ -95,7 +100,7 @@
         "label": "load_and_clean_data",
         "kind": "function",
         "path": "실습결과물/16/imports85_plotly_report.py",
-        "community_id": "community-003",
+        "community_id": "community-001",
         "degree": 77
       },
       {
@@ -111,7 +116,7 @@
         "label": "generate_plots",
         "kind": "function",
         "path": "orange_example_10/analyze_bodyfat_visuals.py",
-        "community_id": "community-004",
+        "community_id": "community-006",
         "degree": 68
       },
       {
@@ -119,7 +124,7 @@
         "label": "main",
         "kind": "function",
         "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
-        "community_id": "community-004",
+        "community_id": "community-001",
         "degree": 68
       }
     ],

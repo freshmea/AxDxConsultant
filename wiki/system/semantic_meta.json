@@ -35,6 +35,58 @@
       ]
     },
     {
+      "id": "docs/comfyui-remote-zimage",
+      "title": "Remote ComfyUI Z-Image Setup",
+      "path": "docs/comfyui-remote-zimage.md",
+      "summary": "Remote endpoint",
+      "tags": [],
+      "topics": [
+        "comfyui",
+        "endpoint",
+        "image",
+        "remote",
+        "setup"
+      ],
+      "entities": [
+        "comfyui",
+        "endpoint",
+        "image",
+        "remote",
+        "setup"
+      ]
+    },
+    {
+      "id": "docs/comfyui-setup",
+      "title": "ComfyUI Local Setup",
+      "path": "docs/comfyui-setup.md",
+      "summary": "이 작업 공간에는 ComfyUI를 별도 가상환경으로 설치했다.",
+      "tags": [],
+      "topics": [
+        "comfyui",
+        "comfyui를",
+        "local",
+        "setup",
+        "가상환경으로",
+        "공간에는",
+        "별도",
+        "작업"
+      ],
+      "entities": [
+        "api",
+        "comfyui",
+        "comfyui를",
+        "local",
+        "setup",
+        "경로",
+        "공간에는",
+        "별도",
+        "상태",
+        "시작",
+        "워크플로",
+        "작업"
+      ]
+    },
+    {
       "id": "llm_wiki/Hermes-Agent-비교-보고서",
       "title": "Hermes Agent 조사 및 현재 시스템 비교 보고서",
       "path": "llm_wiki/Hermes-Agent-비교-보고서.md",

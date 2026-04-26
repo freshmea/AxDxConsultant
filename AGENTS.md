@@ -11,7 +11,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 ## Operating Rules
 
 1. Never edit raw source files during indexing.
-2. Update `wiki/system/page_index.json`, `wiki/system/link_graph.json`, `wiki/system/query_cache.json`, `wiki/system/structure_index.json`, `wiki/system/community_graph.json`, `wiki/system/community_summaries.json`, `wiki/system/code_graph.json`, `wiki/system/code_graph_meta.json`, `wiki/system/semantic_index.faiss`, `wiki/system/semantic_meta.json`, `wiki/system/obsidian_semantic_cache.json`, `wiki/system/query_log.json`, `wiki/index.md`, `wiki/graph_report.md`, `wiki/community_report.md`, `wiki/query_log.md`, and `wiki/log.md` together.
+2. Update `wiki/system/page_index.json`, `wiki/system/link_graph.json`, `wiki/system/query_cache.json`, `wiki/system/structure_index.json`, `wiki/system/community_graph.json`, `wiki/system/community_summaries.json`, `wiki/system/code_graph.json`, `wiki/system/code_graph_meta.json`, `wiki/system/semantic_index.faiss`, `wiki/system/semantic_meta.json`, `wiki/system/obsidian_semantic_cache.json`, `wiki/system/query_log.json`, `wiki/system/link_graph.svg`, `wiki/index.md`, `wiki/graph_report.md`, `wiki/community_report.md`, `wiki/query_log.md`, and `wiki/log.md` together when the graph is rendered.
 3. Prefer answering questions by reading the JSON index/graph first, then opening only a small set of markdown files.
 4. Treat markdown links and wiki links as first-class edges.
 5. Preserve relative paths from the repository root in generated metadata.
@@ -40,12 +40,14 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 
 ## Maintenance Workflow
 
-1. Rebuild indexes after adding or moving markdown files with `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli build --root . --render-graph`.
-2. Check for orphan pages and unresolved links.
-3. Keep `wiki/log.md` append-only.
-4. Keep `wiki/system/query_log.json` and `wiki/query_log.md` append-only; prefer `ask` over ad hoc routing when you want the token-savings trail preserved.
-5. Rebuild the semantic FAISS index, code graph, and community summaries as part of every wiki build.
-6. Keep Mem0 bootstraps resumable by using offsets and small batches when local Qdrant is in use.
+1. Run wiki build and memory commands from the dedicated knowledge environment at `.\.venv-knowledge\Scripts\python.exe`.
+2. Rebuild indexes after adding or moving markdown files with `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli build --root . --render-graph`.
+3. Check for orphan pages and unresolved links.
+4. Keep `wiki/log.md` append-only.
+5. Keep `wiki/system/query_log.json` and `wiki/query_log.md` append-only; prefer `ask` over ad hoc routing when you want the token-savings trail preserved.
+6. Rebuild the semantic FAISS index, code graph, and community summaries as part of every wiki build.
+7. Keep Mem0 bootstraps resumable by using offsets and small batches when local Qdrant is in use.
+8. Do not run multiple Mem0 commands in parallel against the local Qdrant store.
 
 ## CLI Commands
 
@@ -55,7 +57,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 - Check memory prerequisites: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-check --root .`
 - Bootstrap memory in batches: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-bootstrap --root . --user-id dxax-wiki --mode communities --offset 0 --limit 10`
 - Search change-aware facts: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-search "<query>" --root . --user-id dxax-wiki --top-k 5`
-- Add a change-aware fact manually: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-add "<fact>" --root . --user-id dxax-wiki`
+- Add a change-aware fact manually: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-add "<fact>" --root . --user-id dxax-wiki --source manual`
 - Inspect the code graph: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-query "<query>" --root . --limit 10`
 - Inspect node neighbors in the code graph: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-neighbors "<node>" --root . --limit 20`
 - Explain a code node: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-explain "<node>" --root . --limit 12`

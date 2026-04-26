@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T23:57:24.442712+00:00",
+  "generated_at": "2026-04-26T21:42:39.046324+00:00",
   "repo_root": "C:\\Users\\Administrator\\dxAx",
   "nodes": [
     {
@@ -41,8 +41,8 @@
         "unicode",
         "uses"
       ],
-      "tokens_estimate": 1285,
-      "word_count": 792,
+      "tokens_estimate": 1458,
+      "word_count": 899,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 2,
@@ -50,6 +50,90 @@
         "community-009"
       ],
       "obsidian_related_count": 12
+    },
+    {
+      "id": "docs/comfyui-remote-zimage",
+      "title": "Remote ComfyUI Z-Image Setup",
+      "path": "docs/comfyui-remote-zimage.md",
+      "summary": "Remote endpoint",
+      "headings": [
+        "Remote ComfyUI Z-Image Setup"
+      ],
+      "tags": [],
+      "topics": [
+        "comfyui",
+        "endpoint",
+        "image",
+        "remote",
+        "setup"
+      ],
+      "entities": [
+        "comfyui",
+        "endpoint",
+        "image",
+        "remote",
+        "setup"
+      ],
+      "tokens_estimate": 331,
+      "word_count": 168,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0,
+      "community_ids": [
+        "community-010"
+      ],
+      "obsidian_related_count": 0
+    },
+    {
+      "id": "docs/comfyui-setup",
+      "title": "ComfyUI Local Setup",
+      "path": "docs/comfyui-setup.md",
+      "summary": "이 작업 공간에는 ComfyUI를 별도 가상환경으로 설치했다.",
+      "headings": [
+        "ComfyUI Local Setup",
+        "경로",
+        "시작",
+        "상태 확인",
+        "중지",
+        "API 워크플로 제출",
+        "입력 이미지 업로드",
+        "모델 배치",
+        "Codex에서 제어하는 방법"
+      ],
+      "tags": [],
+      "topics": [
+        "comfyui",
+        "comfyui를",
+        "local",
+        "setup",
+        "가상환경으로",
+        "공간에는",
+        "별도",
+        "작업"
+      ],
+      "entities": [
+        "api",
+        "comfyui",
+        "comfyui를",
+        "local",
+        "setup",
+        "경로",
+        "공간에는",
+        "별도",
+        "상태",
+        "시작",
+        "워크플로",
+        "작업"
+      ],
+      "tokens_estimate": 437,
+      "word_count": 249,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0,
+      "community_ids": [
+        "community-011"
+      ],
+      "obsidian_related_count": 0
     },
     {
       "id": "llm_wiki/Hermes-Agent-비교-보고서",
@@ -109,7 +193,7 @@
       ],
       "inbound_count": 0,
       "community_ids": [
-        "community-010"
+        "community-012"
       ],
       "obsidian_related_count": 12
     },
@@ -159,7 +243,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-011"
+        "community-013"
       ],
       "obsidian_related_count": 12
     },
@@ -209,7 +293,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-012"
+        "community-014"
       ],
       "obsidian_related_count": 12
     },
@@ -305,7 +389,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-013"
+        "community-015"
       ],
       "obsidian_related_count": 12
     },
@@ -363,7 +447,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-014"
+        "community-016"
       ],
       "obsidian_related_count": 12
     },
@@ -421,7 +505,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-015"
+        "community-017"
       ],
       "obsidian_related_count": 12
     },
@@ -469,7 +553,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-016"
+        "community-018"
       ],
       "obsidian_related_count": 12
     },
@@ -521,7 +605,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-017"
+        "community-019"
       ],
       "obsidian_related_count": 12
     },
@@ -545,7 +629,8 @@
         "2026_4_20",
         "2026_4_21",
         "2026_4_22",
-        "2026_4_23"
+        "2026_4_23",
+        "2026_4_24"
       ],
       "tags": [],
       "topics": [
@@ -572,13 +657,13 @@
         "axdxconsultant",
         "과정"
       ],
-      "tokens_estimate": 2617,
-      "word_count": 2352,
+      "tokens_estimate": 2778,
+      "word_count": 2488,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-018"
+        "community-020"
       ],
       "obsidian_related_count": 12
     },
@@ -631,7 +716,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-019"
+        "community-021"
       ],
       "obsidian_related_count": 12
     },
@@ -680,7 +765,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-020"
+        "community-022"
       ],
       "obsidian_related_count": 12
     },
@@ -738,7 +823,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-021"
+        "community-023"
       ],
       "obsidian_related_count": 12
     },
@@ -791,7 +876,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-022"
+        "community-024"
       ],
       "obsidian_related_count": 12
     },
@@ -3979,7 +4064,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-023"
+        "community-025"
       ],
       "obsidian_related_count": 12
     },
@@ -4029,7 +4114,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-024"
+        "community-026"
       ],
       "obsidian_related_count": 12
     },
@@ -4056,7 +4141,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-025"
+        "community-027"
       ],
       "obsidian_related_count": 12
     },
@@ -4095,7 +4180,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-026"
+        "community-028"
       ],
       "obsidian_related_count": 12
     },
@@ -4146,7 +4231,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-027"
+        "community-029"
       ],
       "obsidian_related_count": 12
     },
@@ -4204,7 +4289,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-028"
+        "community-030"
       ],
       "obsidian_related_count": 12
     },
@@ -4252,7 +4337,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-029"
+        "community-031"
       ],
       "obsidian_related_count": 12
     },
@@ -4291,7 +4376,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-030"
+        "community-032"
       ],
       "obsidian_related_count": 12
     },
@@ -4343,7 +4428,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-031"
+        "community-033"
       ],
       "obsidian_related_count": 12
     },
@@ -4376,7 +4461,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-032"
+        "community-034"
       ],
       "obsidian_related_count": 12
     },
@@ -4415,7 +4500,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-033"
+        "community-035"
       ],
       "obsidian_related_count": 12
     },
@@ -4446,7 +4531,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-034"
+        "community-036"
       ],
       "obsidian_related_count": 12
     },
@@ -4493,7 +4578,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-035"
+        "community-037"
       ],
       "obsidian_related_count": 12
     },
@@ -4543,7 +4628,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-036"
+        "community-038"
       ],
       "obsidian_related_count": 12
     },
@@ -4593,7 +4678,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-037"
+        "community-039"
       ],
       "obsidian_related_count": 12
     },
@@ -4642,7 +4727,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-038"
+        "community-040"
       ],
       "obsidian_related_count": 12
     },
@@ -4691,7 +4776,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-039"
+        "community-041"
       ],
       "obsidian_related_count": 12
     },
@@ -4740,7 +4825,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-040"
+        "community-042"
       ],
       "obsidian_related_count": 12
     },
@@ -4775,7 +4860,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-041"
+        "community-043"
       ],
       "obsidian_related_count": 12
     },
@@ -4814,7 +4899,7 @@
       "unresolved_links": [],
       "inbound_count": 0,
       "community_ids": [
-        "community-042"
+        "community-044"
       ],
       "obsidian_related_count": 12
     }
@@ -6430,6 +6515,154 @@
     {
       "id": "community-010",
       "size": 1,
+      "representative_page_id": "docs/comfyui-remote-zimage",
+      "representative_title": "Remote ComfyUI Z-Image Setup",
+      "representative_path": "docs/comfyui-remote-zimage.md",
+      "summary": "Remote ComfyUI Z-Image Setup 중심의 지식 군집입니다. 핵심 주제는 comfyui, endpoint, image, remote이며, 대표 문서는 Remote ComfyUI Z-Image Setup 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "comfyui",
+          1
+        ],
+        [
+          "endpoint",
+          1
+        ],
+        [
+          "image",
+          1
+        ],
+        [
+          "remote",
+          1
+        ],
+        [
+          "setup",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "comfyui",
+          1
+        ],
+        [
+          "endpoint",
+          1
+        ],
+        [
+          "image",
+          1
+        ],
+        [
+          "remote",
+          1
+        ],
+        [
+          "setup",
+          1
+        ]
+      ],
+      "page_ids": [
+        "docs/comfyui-remote-zimage"
+      ],
+      "paths": [
+        "docs/comfyui-remote-zimage.md"
+      ],
+      "titles": [
+        "Remote ComfyUI Z-Image Setup"
+      ]
+    },
+    {
+      "id": "community-011",
+      "size": 1,
+      "representative_page_id": "docs/comfyui-setup",
+      "representative_title": "ComfyUI Local Setup",
+      "representative_path": "docs/comfyui-setup.md",
+      "summary": "ComfyUI Local Setup 중심의 지식 군집입니다. 핵심 주제는 comfyui, comfyui를, local, setup이며, 대표 문서는 ComfyUI Local Setup 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "comfyui",
+          1
+        ],
+        [
+          "comfyui를",
+          1
+        ],
+        [
+          "local",
+          1
+        ],
+        [
+          "setup",
+          1
+        ],
+        [
+          "가상환경으로",
+          1
+        ],
+        [
+          "공간에는",
+          1
+        ],
+        [
+          "별도",
+          1
+        ],
+        [
+          "작업",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "api",
+          1
+        ],
+        [
+          "comfyui",
+          1
+        ],
+        [
+          "comfyui를",
+          1
+        ],
+        [
+          "local",
+          1
+        ],
+        [
+          "setup",
+          1
+        ],
+        [
+          "경로",
+          1
+        ],
+        [
+          "공간에는",
+          1
+        ],
+        [
+          "별도",
+          1
+        ]
+      ],
+      "page_ids": [
+        "docs/comfyui-setup"
+      ],
+      "paths": [
+        "docs/comfyui-setup.md"
+      ],
+      "titles": [
+        "ComfyUI Local Setup"
+      ]
+    },
+    {
+      "id": "community-012",
+      "size": 1,
       "representative_page_id": "llm_wiki/Hermes-Agent-비교-보고서",
       "representative_title": "Hermes Agent 조사 및 현재 시스템 비교 보고서",
       "representative_path": "llm_wiki/Hermes-Agent-비교-보고서.md",
@@ -6514,7 +6747,7 @@
       ]
     },
     {
-      "id": "community-011",
+      "id": "community-013",
       "size": 1,
       "representative_page_id": "llm_wiki/LLM 지식 아키텍처",
       "representative_title": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서",
@@ -6600,7 +6833,7 @@
       ]
     },
     {
-      "id": "community-012",
+      "id": "community-014",
       "size": 1,
       "representative_page_id": "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP",
       "representative_title": "Obsidian Smart Connections Setup",
@@ -6686,7 +6919,7 @@
       ]
     },
     {
-      "id": "community-013",
+      "id": "community-015",
       "size": 1,
       "representative_page_id": "memory_layer/README",
       "representative_title": "Local Memory Layer",
@@ -6772,7 +7005,7 @@
       ]
     },
     {
-      "id": "community-014",
+      "id": "community-016",
       "size": 1,
       "representative_page_id": "notion_app_date_filter_fallback_skill/SKILL",
       "representative_title": "Notion App Date Filter Fallback Skill",
@@ -6858,7 +7091,7 @@
       ]
     },
     {
-      "id": "community-015",
+      "id": "community-017",
       "size": 1,
       "representative_page_id": "orange_example_10/bodyfat_analysis_report",
       "representative_title": "Body Fat Brozek 시각 분석 보고서 (미리보기 중심)",
@@ -6944,7 +7177,7 @@
       ]
     },
     {
-      "id": "community-016",
+      "id": "community-018",
       "size": 1,
       "representative_page_id": "orange_example_10/titanic_adaboost_report",
       "representative_title": "Titanic AdaBoost 분석 보고서",
@@ -7030,7 +7263,7 @@
       ]
     },
     {
-      "id": "community-017",
+      "id": "community-019",
       "size": 1,
       "representative_page_id": "orange_example_10/titanic_survival_report",
       "representative_title": "Titanic 생존 분석 보고서",
@@ -7116,7 +7349,7 @@
       ]
     },
     {
-      "id": "community-018",
+      "id": "community-020",
       "size": 1,
       "representative_page_id": "README",
       "representative_title": "AxDxConsultant",
@@ -7202,7 +7435,7 @@
       ]
     },
     {
-      "id": "community-019",
+      "id": "community-021",
       "size": 1,
       "representative_page_id": "skills/graphify-code-wiki/SKILL",
       "representative_title": "Graphify Code Wiki",
@@ -7288,7 +7521,7 @@
       ]
     },
     {
-      "id": "community-020",
+      "id": "community-022",
       "size": 1,
       "representative_page_id": "skills/local-whisper-gpu/SKILL",
       "representative_title": "Local Whisper GPU",
@@ -7374,7 +7607,7 @@
       ]
     },
     {
-      "id": "community-021",
+      "id": "community-023",
       "size": 1,
       "representative_page_id": "skills/troubleshooting",
       "representative_title": "Troubleshooting",
@@ -7460,7 +7693,7 @@
       ]
     },
     {
-      "id": "community-022",
+      "id": "community-024",
       "size": 1,
       "representative_page_id": "skills/wiki-llm-setup/SKILL",
       "representative_title": "Wiki LLM Setup",
@@ -7546,7 +7779,7 @@
       ]
     },
     {
-      "id": "community-023",
+      "id": "community-025",
       "size": 1,
       "representative_page_id": "실습결과물/15/Youtube 영상 스크립트",
       "representative_title": "Youtube 영상 스크립트",
@@ -7628,7 +7861,7 @@
       ]
     },
     {
-      "id": "community-024",
+      "id": "community-026",
       "size": 1,
       "representative_page_id": "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서",
       "representative_title": "Graphify 기반 LLM Wiki 활용 1페이지 요약보고서",
@@ -7714,7 +7947,7 @@
       ]
     },
     {
-      "id": "community-025",
+      "id": "community-027",
       "size": 1,
       "representative_page_id": "실습결과물/15/YouTube 영상 요약본",
       "representative_title": "YouTube 영상 요약본",
@@ -7760,7 +7993,7 @@
       ]
     },
     {
-      "id": "community-026",
+      "id": "community-028",
       "size": 1,
       "representative_page_id": "실습결과물/15/로컬 whisper 모델 설치 프롬프트",
       "representative_title": "whisper 모델 설치 프롬프트",
@@ -7846,7 +8079,7 @@
       ]
     },
     {
-      "id": "community-027",
+      "id": "community-029",
       "size": 1,
       "representative_page_id": "실습결과물/16/imports-85_actual_data_summary",
       "representative_title": "imports-85 실제데이터 기반 요약보고서",
@@ -7932,7 +8165,7 @@
       ]
     },
     {
-      "id": "community-028",
+      "id": "community-030",
       "size": 1,
       "representative_page_id": "실습결과물/16/imports-85_interactive_report",
       "representative_title": "자동차 모델 가격·성능·연비 관계 인터랙티브 보고서",
@@ -8018,7 +8251,7 @@
       ]
     },
     {
-      "id": "community-029",
+      "id": "community-031",
       "size": 1,
       "representative_page_id": "실습결과물/16/imports-85_report",
       "representative_title": "imports-85 정제 보고서",
@@ -8104,7 +8337,7 @@
       ]
     },
     {
-      "id": "community-030",
+      "id": "community-032",
       "size": 1,
       "representative_page_id": "실습결과물/16/retail_sales_report_assets/README",
       "representative_title": "Retail Sales Seaborn Graphs",
@@ -8190,7 +8423,7 @@
       ]
     },
     {
-      "id": "community-031",
+      "id": "community-033",
       "size": 1,
       "representative_page_id": "실습결과물/16/retail_sales_trend_onepage_report",
       "representative_title": "Retail Sales 추세 1페이지 보고서",
@@ -8276,7 +8509,7 @@
       ]
     },
     {
-      "id": "community-032",
+      "id": "community-034",
       "size": 1,
       "representative_page_id": "실습결과물/16/리테일 분석판매보고서노트북LM",
       "representative_title": "리테일 분석판매보고서노트북LM",
@@ -8346,7 +8579,7 @@
       ]
     },
     {
-      "id": "community-033",
+      "id": "community-035",
       "size": 1,
       "representative_page_id": "실습결과물/16/매출분석에 쓰인 프롬프트",
       "representative_title": "매출 분석에 쓰인 프롬프트",
@@ -8432,7 +8665,7 @@
       ]
     },
     {
-      "id": "community-034",
+      "id": "community-036",
       "size": 1,
       "representative_page_id": "실습결과물/16/자동차수출예제관련프롬프트",
       "representative_title": "자동차 수출 관련 예제 프롬프트",
@@ -8486,7 +8719,7 @@
       ]
     },
     {
-      "id": "community-035",
+      "id": "community-037",
       "size": 1,
       "representative_page_id": "실습결과물/16/한페이지요약 HRD AX 수업도향",
       "representative_title": "📊 2026 HRD Trend Report 요약",
@@ -8572,7 +8805,7 @@
       ]
     },
     {
-      "id": "community-036",
+      "id": "community-038",
       "size": 1,
       "representative_page_id": "실습결과물/17/02 Project Management_manager_ranking_report",
       "representative_title": "Project Management 매니저 성과 1페이지 요약 보고서",
@@ -8658,7 +8891,7 @@
       ]
     },
     {
-      "id": "community-037",
+      "id": "community-039",
       "size": 1,
       "representative_page_id": "실습결과물/17/02 Project Management_SCQA_insight_report",
       "representative_title": "프로젝트 포트폴리오 SCQA 인사이트 리포트",
@@ -8744,7 +8977,7 @@
       ]
     },
     {
-      "id": "community-038",
+      "id": "community-040",
       "size": 1,
       "representative_page_id": "실습결과물/17/02 Project Management_summary_report",
       "representative_title": "Project Management 데이터 1페이지 요약 보고서",
@@ -8830,7 +9063,7 @@
       ]
     },
     {
-      "id": "community-039",
+      "id": "community-041",
       "size": 1,
       "representative_page_id": "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report",
       "representative_title": "E-Commerce Orders 매장별 일매출 이상치 분석 보고서",
@@ -8916,7 +9149,7 @@
       ]
     },
     {
-      "id": "community-040",
+      "id": "community-042",
       "size": 1,
       "representative_page_id": "실습결과물/17/08 E-Commerce Orders_price_outlier_report",
       "representative_title": "E-Commerce Orders 가격 이상치 분석 보고서",
@@ -9002,7 +9235,7 @@
       ]
     },
     {
-      "id": "community-041",
+      "id": "community-043",
       "size": 1,
       "representative_page_id": "실습결과물/17/project Magement_blog",
       "representative_title": "project Magement_blog",
@@ -9080,7 +9313,7 @@
       ]
     },
     {
-      "id": "community-042",
+      "id": "community-044",
       "size": 1,
       "representative_page_id": "실습결과물/17/엑셀처리프롬프트",
       "representative_title": "엑셀 데이터 처리 프롬프트",
@@ -9167,11 +9400,11 @@
     }
   ],
   "stats": {
-    "markdown_pages": 97,
+    "markdown_pages": 99,
     "resolved_edges": 89,
     "unresolved_links": 3,
-    "total_tokens_estimate": 88332,
-    "community_count": 42
+    "total_tokens_estimate": 89434,
+    "community_count": 44
   },
   "facets": {
     "top_tags": [
