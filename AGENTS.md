@@ -37,6 +37,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 6. If the question is about evolving configuration or operational state, also check `memory-search` before reading many raw pages.
 7. If a useful synthesis is created, store it back into `wiki/notes/`.
 8. When tracing local code relationships, use `graph-neighbors` before broader code reads when a single node's adjacency is enough.
+9. When using `ask`, follow the returned `workflow.instruction` and prefer its `code_read_plan` or `read_plan` before ad hoc file opens.
 
 ## Maintenance Workflow
 
@@ -56,6 +57,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 - Run the graph-first query workflow: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli ask "<query>" --root . --limit 5`
 - Check memory prerequisites: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-check --root .`
 - Bootstrap memory in batches: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-bootstrap --root . --user-id dxax-wiki --mode communities --offset 0 --limit 10`
+- Bootstrap page summaries into memory: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-bootstrap --root . --user-id dxax-wiki --mode pages --offset 0 --limit 10`
 - Search change-aware facts: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-search "<query>" --root . --user-id dxax-wiki --top-k 5`
 - Add a change-aware fact manually: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-add "<fact>" --root . --user-id dxax-wiki --source manual`
 - Inspect the code graph: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-query "<query>" --root . --limit 10`
