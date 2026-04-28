@@ -1,0 +1,3 @@
+[mcp_servers.kordoc]
+command = "cmd"
+args = ["/c", "npx", "-y", "kordoc@latest", "mcp"]

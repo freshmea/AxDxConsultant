@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "kordoc": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "kordoc@latest", "mcp"]
+    }
+  }
+}
