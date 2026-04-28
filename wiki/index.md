@@ -1,15 +1,15 @@
 # Wiki Index
 
-- Generated: 2026-04-26T21:42:39.046324+00:00
+- Generated: 2026-04-28T00:23:06.423625+00:00
 - Markdown pages: 99
 - Resolved edges: 89
 - Communities: 44
-- Estimated full-read tokens: 89434
+- Estimated full-read tokens: 89726
 - Ignore file: `.llmwikiignore`
 - Semantic search: enabled
 - Smart Connections bridge: enabled
-- Code graph nodes: 1036
-- Code graph edges: 2950
+- Code graph nodes: 1046
+- Code graph edges: 3057
 
 ## Pages
 

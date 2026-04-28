@@ -1,12 +1,12 @@
 # Graph Report
 
-- Generated: 2026-04-26T21:42:39.046324+00:00
+- Generated: 2026-04-28T00:23:06.423625+00:00
 - Pages: 99
 - Edges: 89
-- Estimated full corpus tokens: 89434
+- Estimated full corpus tokens: 89726
 - Smart Connections bridge: enabled
-- Code files scanned: 27
-- Code graph: 1036 nodes / 2950 edges / 16 communities
+- Code files scanned: 28
+- Code graph: 1046 nodes / 3057 edges / 16 communities
 
 ## Top Tags
 
@@ -128,13 +128,13 @@
 
 ## Code Graph
 
-- language `python` x 24
+- language `python` x 25
 - language `unsupported` x 3
-- relation `calls` x 2575
-- relation `defines` x 212
-- relation `imports` x 162
+- relation `calls` x 2667
+- relation `defines` x 219
+- relation `imports` x 170
 - relation `inherits` x 1
-- confidence `EXTRACTED` x 2950
+- confidence `EXTRACTED` x 3057
 
 ## Code God Nodes
 

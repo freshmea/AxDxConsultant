@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T21:42:39.046324+00:00",
+  "generated_at": "2026-04-28T00:23:06.423625+00:00",
   "pages": {
     "AGENTS": {
       "title": "LLM Wiki Schema",
@@ -71,7 +71,7 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 1458,
+      "tokens_estimate": 1536,
       "community_ids": [
         "community-009"
       ],
@@ -1915,7 +1915,7 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 2778,
+      "tokens_estimate": 2992,
       "community_ids": [
         "community-020"
       ],

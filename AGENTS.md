@@ -38,6 +38,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 7. If a useful synthesis is created, store it back into `wiki/notes/`.
 8. When tracing local code relationships, use `graph-neighbors` before broader code reads when a single node's adjacency is enough.
 9. When using `ask`, follow the returned `workflow.instruction` and prefer its `code_read_plan` or `read_plan` before ad hoc file opens.
+10. For code-oriented `ask` results, treat `code_read_plan` as the primary read target and use the markdown `selected` or `read_plan` pages only for broader context when needed.
 
 ## Maintenance Workflow
 

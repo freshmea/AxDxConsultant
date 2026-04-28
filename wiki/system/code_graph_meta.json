@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-04-26T21:43:06.464779+00:00",
+  "generated_at": "2026-04-28T00:23:29.834674+00:00",
   "stats": {
-    "files_scanned": 27,
-    "files_extracted": 2,
-    "cache_hits": 25,
-    "stale_cache_removed": 10018,
-    "node_count": 1036,
-    "edge_count": 2950,
+    "files_scanned": 28,
+    "files_extracted": 0,
+    "cache_hits": 28,
+    "stale_cache_removed": 0,
+    "node_count": 1046,
+    "edge_count": 3057,
     "community_count": 16
   },
   "facets": {
     "languages": [
       [
         "python",
-        24
+        25
       ],
       [
         "unsupported",
@@ -23,15 +23,15 @@
     "relations": [
       [
         "calls",
-        2575
+        2667
       ],
       [
         "defines",
-        212
+        219
       ],
       [
         "imports",
-        162
+        170
       ],
       [
         "inherits",
@@ -41,7 +41,7 @@
     "confidence": [
       [
         "EXTRACTED",
-        2950
+        3057
       ]
     ]
   },
@@ -52,7 +52,7 @@
         "label": "build_figures",
         "kind": "function",
         "path": "실습결과물/16/imports85_plotly_report.py",
-        "community_id": "community-001",
+        "community_id": "community-002",
         "degree": 129
       },
       {
@@ -60,7 +60,7 @@
         "label": "score_pages",
         "kind": "function",
         "path": "llm_wiki/cli.py",
-        "community_id": "community-002",
+        "community_id": "community-001",
         "degree": 127
       },
       {
@@ -84,7 +84,7 @@
         "label": "run_analysis",
         "kind": "function",
         "path": "orange_example_10/analyze_titanic.py",
-        "community_id": "community-007",
+        "community_id": "community-006",
         "degree": 100
       },
       {
@@ -92,7 +92,7 @@
         "label": "build_index",
         "kind": "function",
         "path": "llm_wiki/indexer.py",
-        "community_id": "community-004",
+        "community_id": "community-003",
         "degree": 84
       },
       {
@@ -100,7 +100,7 @@
         "label": "load_and_clean_data",
         "kind": "function",
         "path": "실습결과물/16/imports85_plotly_report.py",
-        "community_id": "community-001",
+        "community_id": "community-002",
         "degree": 77
       },
       {
@@ -108,7 +108,7 @@
         "label": "main",
         "kind": "function",
         "path": "orange_example_10/train_adaboost_titanic.py",
-        "community_id": "community-007",
+        "community_id": "community-006",
         "degree": 70
       },
       {
@@ -116,7 +116,7 @@
         "label": "generate_plots",
         "kind": "function",
         "path": "orange_example_10/analyze_bodyfat_visuals.py",
-        "community_id": "community-006",
+        "community_id": "community-004",
         "degree": 68
       },
       {
@@ -124,7 +124,7 @@
         "label": "main",
         "kind": "function",
         "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
-        "community_id": "community-001",
+        "community_id": "community-004",
         "degree": 68
       }
     ],
