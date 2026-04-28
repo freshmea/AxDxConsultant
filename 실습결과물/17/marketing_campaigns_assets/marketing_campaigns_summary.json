@@ -1,0 +1,386 @@
+﻿{
+  "input_file": "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\14 Marketing Campaigns.xlsx",
+  "output_dir": "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets",
+  "rows": 1000,
+  "columns": [
+    "Campaign ID",
+    "Campaign Name",
+    "Channel",
+    "Start Date",
+    "End Date",
+    "Budget Allocated",
+    "Amount Spent",
+    "Impressions",
+    "Clicks",
+    "Conversions",
+    "Revenue Generated",
+    "Campaign Duration Days",
+    "CTR",
+    "CVR",
+    "CPC",
+    "CPA",
+    "ROAS",
+    "Budget Utilization",
+    "Revenue per Conversion",
+    "Start Year",
+    "Start Quarter"
+  ],
+  "date_range": {
+    "start": "2024-01-02",
+    "end": "2026-01-17"
+  },
+  "overview": {
+    "campaign_count": 1000,
+    "channel_count": 5,
+    "total_budget_allocated": 12976200.0,
+    "total_amount_spent": 11676846.71,
+    "total_revenue_generated": 64943234.3,
+    "avg_campaign_duration_days": 33.73,
+    "avg_roas": 5.6701,
+    "avg_ctr": 0.0396,
+    "avg_cvr": 0.0542
+  },
+  "channel_summary": [
+    {
+      "Channel": "Email",
+      "campaign_count": 148,
+      "budget_allocated_sum": 1781400.0,
+      "amount_spent_sum": 1618478.38,
+      "revenue_sum": 21021486.18,
+      "impressions_sum": 1016398257.0,
+      "clicks_sum": 70356643.0,
+      "conversions_sum": 5330243.0,
+      "avg_roas": 12.8928,
+      "avg_ctr": 0.0711,
+      "avg_cvr": 0.076
+    },
+    {
+      "Channel": "Google Ads",
+      "campaign_count": 246,
+      "budget_allocated_sum": 3199100.0,
+      "amount_spent_sum": 2848758.03,
+      "revenue_sum": 14354802.98,
+      "impressions_sum": 247358506.0,
+      "clicks_sum": 12056571.0,
+      "conversions_sum": 798360.0,
+      "avg_roas": 5.0294,
+      "avg_ctr": 0.0487,
+      "avg_cvr": 0.0672
+    },
+    {
+      "Channel": "LinkedIn",
+      "campaign_count": 174,
+      "budget_allocated_sum": 2309200.0,
+      "amount_spent_sum": 2091597.98,
+      "revenue_sum": 11863688.53,
+      "impressions_sum": 92943912.0,
+      "clicks_sum": 1566582.0,
+      "conversions_sum": 76520.0,
+      "avg_roas": 5.8505,
+      "avg_ctr": 0.0169,
+      "avg_cvr": 0.0486
+    },
+    {
+      "Channel": "Facebook",
+      "campaign_count": 244,
+      "budget_allocated_sum": 3146300.0,
+      "amount_spent_sum": 2860850.37,
+      "revenue_sum": 10469060.73,
+      "impressions_sum": 346959382.0,
+      "clicks_sum": 10193878.0,
+      "conversions_sum": 459470.0,
+      "avg_roas": 3.7134,
+      "avg_ctr": 0.0297,
+      "avg_cvr": 0.045
+    },
+    {
+      "Channel": "Instagram",
+      "campaign_count": 188,
+      "budget_allocated_sum": 2540200.0,
+      "amount_spent_sum": 2257161.95,
+      "revenue_sum": 7234195.88,
+      "impressions_sum": 239244327.0,
+      "clicks_sum": 8890861.0,
+      "conversions_sum": 314050.0,
+      "avg_roas": 3.1951,
+      "avg_ctr": 0.0368,
+      "avg_cvr": 0.0368
+    }
+  ],
+  "quarterly_summary": [
+    {
+      "Start Year": 2024,
+      "Start Quarter": 1,
+      "campaign_count": 101,
+      "amount_spent_sum": 1121160.98,
+      "revenue_sum": 6078881.61,
+      "avg_roas": 5.5833
+    },
+    {
+      "Start Year": 2024,
+      "Start Quarter": 2,
+      "campaign_count": 118,
+      "amount_spent_sum": 1551440.44,
+      "revenue_sum": 9289548.4,
+      "avg_roas": 6.2707
+    },
+    {
+      "Start Year": 2024,
+      "Start Quarter": 3,
+      "campaign_count": 135,
+      "amount_spent_sum": 1495916.26,
+      "revenue_sum": 8753774.7,
+      "avg_roas": 5.8956
+    },
+    {
+      "Start Year": 2024,
+      "Start Quarter": 4,
+      "campaign_count": 132,
+      "amount_spent_sum": 1576931.32,
+      "revenue_sum": 9331576.69,
+      "avg_roas": 5.8972
+    },
+    {
+      "Start Year": 2025,
+      "Start Quarter": 1,
+      "campaign_count": 131,
+      "amount_spent_sum": 1498035.49,
+      "revenue_sum": 8734307.11,
+      "avg_roas": 5.6911
+    },
+    {
+      "Start Year": 2025,
+      "Start Quarter": 2,
+      "campaign_count": 155,
+      "amount_spent_sum": 1854795.86,
+      "revenue_sum": 9102703.08,
+      "avg_roas": 5.1674
+    },
+    {
+      "Start Year": 2025,
+      "Start Quarter": 3,
+      "campaign_count": 138,
+      "amount_spent_sum": 1524970.6,
+      "revenue_sum": 8167255.74,
+      "avg_roas": 5.6262
+    },
+    {
+      "Start Year": 2025,
+      "Start Quarter": 4,
+      "campaign_count": 90,
+      "amount_spent_sum": 1053595.76,
+      "revenue_sum": 5485186.97,
+      "avg_roas": 5.2114
+    }
+  ],
+  "top_campaigns": [
+    {
+      "Campaign ID": "CMP-8927",
+      "Campaign Name": "Summer Promo - Email 2025 Q1",
+      "Channel": "Email",
+      "Amount Spent": 25184.99,
+      "Revenue Generated": 503194.13,
+      "ROAS": 19.979921770864312,
+      "CTR": 0.04497863532992445,
+      "CVR": 0.11282495404690246
+    },
+    {
+      "Campaign ID": "CMP-8682",
+      "Campaign Name": "Seasonal Collection - Email 2025 Q4",
+      "Channel": "Email",
+      "Amount Spent": 23108.84,
+      "Revenue Generated": 428710.6,
+      "ROAS": 18.551800955824696,
+      "CTR": 0.09990140432993289,
+      "CVR": 0.034878084577979133
+    },
+    {
+      "Campaign ID": "CMP-8100",
+      "Campaign Name": "New Product Launch - Email 2025 Q3",
+      "Channel": "Email",
+      "Amount Spent": 25641.23,
+      "Revenue Generated": 424886.78,
+      "ROAS": 16.570452353494744,
+      "CTR": 0.06502951261503502,
+      "CVR": 0.11502372516948614
+    },
+    {
+      "Campaign ID": "CMP-8696",
+      "Campaign Name": "Seasonal Collection - Email 2025 Q2",
+      "Channel": "Email",
+      "Amount Spent": 20859.32,
+      "Revenue Generated": 406089.71,
+      "ROAS": 19.468022447519864,
+      "CTR": 0.09402989877270422,
+      "CVR": 0.03768018001826064
+    },
+    {
+      "Campaign ID": "CMP-8613",
+      "Campaign Name": "Brand Awareness - Email 2024 Q3",
+      "Channel": "Email",
+      "Amount Spent": 24247.01,
+      "Revenue Generated": 386281.55,
+      "ROAS": 15.931100370726123,
+      "CTR": 0.11159326678180659,
+      "CVR": 0.06354800546626865
+    },
+    {
+      "Campaign ID": "CMP-8546",
+      "Campaign Name": "Referral Program - Email 2025 Q3",
+      "Channel": "Email",
+      "Amount Spent": 21798.64,
+      "Revenue Generated": 365781.35,
+      "ROAS": 16.780007835351196,
+      "CTR": 0.03277771033506057,
+      "CVR": 0.08926478573809708
+    },
+    {
+      "Campaign ID": "CMP-8858",
+      "Campaign Name": "Valentine's Special - Email 2024 Q4",
+      "Channel": "Email",
+      "Amount Spent": 20049.09,
+      "Revenue Generated": 364496.96,
+      "ROAS": 18.180224638624498,
+      "CTR": 0.11245794426225195,
+      "CVR": 0.07066761602736313
+    },
+    {
+      "Campaign ID": "CMP-8413",
+      "Campaign Name": "Year End Clearance - Email 2024 Q3",
+      "Channel": "Email",
+      "Amount Spent": 17781.13,
+      "Revenue Generated": 351231.04,
+      "ROAS": 19.75302132091717,
+      "CTR": 0.0938774640559214,
+      "CVR": 0.10885877286046006
+    },
+    {
+      "Campaign ID": "CMP-8758",
+      "Campaign Name": "Valentine's Special - Email 2024 Q2",
+      "Channel": "Email",
+      "Amount Spent": 23575.49,
+      "Revenue Generated": 331104.53,
+      "ROAS": 14.044438949095014,
+      "CTR": 0.0777290610274368,
+      "CVR": 0.08484842714601265
+    },
+    {
+      "Campaign ID": "CMP-8566",
+      "Campaign Name": "Free Trial Push - Email 2025 Q1",
+      "Channel": "Email",
+      "Amount Spent": 17125.76,
+      "Revenue Generated": 330312.58,
+      "ROAS": 19.2874698699503,
+      "CTR": 0.04595631777493856,
+      "CVR": 0.048668883880018284
+    }
+  ],
+  "modeling": {
+    "baseline_linear_regression": {
+      "r2": 0.6348,
+      "mae": 22582.8906,
+      "rmse": 32212.2794
+    },
+    "random_forest_regressor": {
+      "r2": 0.5396,
+      "mae": 24278.1303,
+      "rmse": 36165.5178
+    },
+    "feature_importance_top10": [
+      {
+        "feature": "numeric__Impressions",
+        "importance": 0.387168
+      },
+      {
+        "feature": "numeric__Amount Spent",
+        "importance": 0.189771
+      },
+      {
+        "feature": "numeric__Clicks",
+        "importance": 0.129999
+      },
+      {
+        "feature": "numeric__Budget Allocated",
+        "importance": 0.080275
+      },
+      {
+        "feature": "numeric__Budget Utilization",
+        "importance": 0.032667
+      },
+      {
+        "feature": "numeric__CPC",
+        "importance": 0.031578
+      },
+      {
+        "feature": "numeric__CVR",
+        "importance": 0.026967
+      },
+      {
+        "feature": "numeric__Conversions",
+        "importance": 0.022219
+      },
+      {
+        "feature": "numeric__CPA",
+        "importance": 0.019379
+      },
+      {
+        "feature": "numeric__Campaign Duration Days",
+        "importance": 0.01913
+      }
+    ]
+  },
+  "clustering": {
+    "selected_k": 3,
+    "silhouette_score": 0.4117,
+    "cluster_summary": [
+      {
+        "cluster": 0,
+        "campaign_count": 111,
+        "avg_roas": 13.5261,
+        "avg_ctr": 0.0786,
+        "avg_cvr": 0.0785,
+        "avg_amount_spent": 13126.51,
+        "avg_revenue": 173857.0,
+        "label": "고효율 고수익"
+      },
+      {
+        "cluster": 1,
+        "campaign_count": 63,
+        "avg_roas": 6.0405,
+        "avg_ctr": 0.0109,
+        "avg_cvr": 0.0403,
+        "avg_amount_spent": 11455.25,
+        "avg_revenue": 69126.31,
+        "label": "균형형 캠페인"
+      },
+      {
+        "cluster": 2,
+        "campaign_count": 826,
+        "avg_roas": 4.5862,
+        "avg_ctr": 0.0366,
+        "avg_cvr": 0.0519,
+        "avg_amount_spent": 11498.94,
+        "avg_revenue": 49988.08,
+        "label": "저효율 개선대상"
+      }
+    ]
+  },
+  "artifacts": {
+    "graphs": [
+      "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\actual_vs_predicted_revenue.png",
+      "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\campaign_cluster_pca.png",
+      "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\channel_avg_roas.png",
+      "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\channel_ctr_cvr_boxplot.png",
+      "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\feature_importance_top10.png",
+      "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\impressions_vs_clicks.png",
+      "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\spent_vs_revenue.png",
+      "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\top_campaigns_revenue_roas.png"
+    ],
+    "report_markdown": "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\marketing_campaigns_report.md",
+    "cleaned_csv": "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\cleaned_campaigns.csv",
+    "summary_json": "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\marketing_campaigns_summary.json",
+    "infographic_prompt": "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\infographic_prompt.md",
+    "infographic_image": "C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets\\marketing_campaigns_infographic.png"
+  },
+  "notion_parent_url": "https://www.notion.so/343541956f7a80008cb9d08ac25ad3e6"
+}
