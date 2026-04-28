@@ -1,5 +1,20 @@
 {
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "n8n-mcp-token",
+      "description": "n8n MCP Access Token",
+      "password": true
+    }
+  ],
   "servers": {
+    "n8n": {
+      "type": "http",
+      "url": "https://freshmea.app.n8n.cloud/mcp-server/http",
+      "headers": {
+        "Authorization": "Bearer ${input:n8n-mcp-token}"
+      }
+    },
     "kordoc": {
       "type": "stdio",
       "command": "cmd",

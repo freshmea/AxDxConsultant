@@ -26,6 +26,11 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 3. If a script-generated Korean string has any risk of console/codepage corruption, build the text from Unicode escape sequences and decode it inside Python before writing the file.
 4. When generating charts with Korean labels, explicitly load a Korean font file such as `C:\Windows\Fonts\NotoSansKR-Regular.ttf` and apply that font to titles, axes, tick labels, legends, and annotations.
 5. After creating a Korean report or chart, verify the output by checking file bytes or rendering the image instead of trusting terminal output alone.
+6. When reading Korean documents or markdown from the workspace, do not use PowerShell console output as the source of truth for filenames or body text if mojibake appears.
+7. If a Korean filename or document body looks corrupted in terminal output, first enumerate the directory programmatically to recover the exact path, then read the file bytes or load the file with Python using explicit UTF-8 decoding.
+8. Prefer a safe read workflow for Korean local files: discover the path with Python or a filesystem listing, read with explicit encoding, and only then summarize or transform the content.
+9. Do not describe terminal mojibake as a content problem in the source file until the file bytes or an explicit UTF-8 read confirm it.
+10. For Korean local files, avoid making decisions from `Get-Content` output alone when a Python byte-safe read is available.
 
 ## Query Workflow
 

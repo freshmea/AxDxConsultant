@@ -1,3 +1,11 @@
 [mcp_servers.kordoc]
 command = "cmd"
 args = ["/c", "npx", "-y", "kordoc@latest", "mcp"]
+
+[mcp_servers."makenotion/notion-mcp-server"]
+url = "https://mcp.notion.com/sse"
+
+[mcp_servers.n8n]
+url = "https://freshmea.app.n8n.cloud/mcp-server/http"
+# Add your n8n MCP access token before using this server:
+# http_headers = { authorization = "Bearer <YOUR_N8N_MCP_TOKEN>" }
