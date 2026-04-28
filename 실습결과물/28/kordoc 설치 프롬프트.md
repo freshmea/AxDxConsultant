@@ -40,3 +40,15 @@ command = "cmd"
 args = ["/c", "npx", "-y", "kordoc@latest", "mcp"]
 
 ```
+
+- 플랜모드 실습
+
+```text
+
+C:\Users\Administrator\dxAx\실습결과물\17\14 Marketing Campaigns.xlsx
+이 엑셀 파일을 분석하려고 한다. polars 라이브러리를 써서 스크립트 파일을 만들고 통계 분석을 진행해줘
+그다음에 필요한 머신러닝 기법을 skitlearn을 통해서 수행을 하고 seaborn을 통해서 그래프를 여러개 만들어줘
+만들어진 자료들을 gpt 의 image 생성 기술을 써서 한장 짜리 infography 를 만들어주고 한페이지 분량의 보고서와 그림을 notion에
+페이지를 작성해줘
+
+---
