@@ -1,4 +1,9 @@
-﻿# Notion App Date Filter Fallback Skill
+---
+name: notion-app-date-filter-fallback
+description: "Fallback workflow for Notion date-based task retrieval when the SQL-style datasource query tool is unavailable. Use search to gather candidates, then verify the real date properties on each page before answering."
+---
+
+# Notion App Date Filter Fallback Skill
 
 ## 목적
 Notion 앱 연동에서 데이터소스 SQL 도구(`notion-query-data-sources`)가 비활성일 때,
