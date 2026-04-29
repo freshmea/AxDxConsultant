@@ -1,0 +1,53 @@
+{
+  "users": [
+    {
+      "username": "admin",
+      "password": "admin1234",
+      "name": "DXAX Admin",
+      "role": "admin"
+    },
+    {
+      "username": "guest",
+      "password": "guest1234",
+      "name": "DXAX Guest",
+      "role": "member"
+    }
+  ],
+  "board_posts": [
+    {
+      "id": 1,
+      "title": "DXAX 클래스 커뮤니티 오픈",
+      "content": "매주 수업 노트와 자동화 실습 사례를 이 게시판에서 공유합니다.",
+      "author": "DXAX Admin",
+      "username": "admin",
+      "createdAt": "2026-04-29T13:00:00"
+    },
+    {
+      "id": 2,
+      "title": "안녕",
+      "content": "나야 최수길",
+      "author": "DXAX Admin",
+      "username": "admin",
+      "createdAt": "2026-04-29T17:09:35"
+    },
+    {
+      "id": 3,
+      "title": "안녕하세요",
+      "content": "홈페이지 멋지네요.",
+      "author": "DXAX Admin",
+      "username": "admin",
+      "createdAt": "2026-04-29T17:11:55"
+    }
+  ],
+  "qna_posts": [
+    {
+      "id": 1,
+      "title": "수업 자료는 어디서 확인하나요?",
+      "content": "홈 화면 클래스 카드와 위키 노트에서 최신 요약을 확인할 수 있습니다.",
+      "author": "DXAX Admin",
+      "username": "admin",
+      "createdAt": "2026-04-29T13:10:00",
+      "answer": "홈 화면 카드와 backend API의 /api/classes 응답이 연결되어 있습니다."
+    }
+  ]
+}

@@ -30,6 +30,7 @@ This project is a small full-stack DXAX class promotion site.
   - `GET /api/classes`
   - `GET /api/classes/{date}`
   - `GET /api/highlights`
+  - `GET /api/covers/{filename}`
 - If changing response shapes, update `frontend/src/app/page.tsx` TypeScript types at the same time.
 - Preserve CORS access for `http://localhost:3000` and `http://127.0.0.1:3000` during local development.
 - The class list is cached with `lru_cache`; clear or adjust caching if live file refresh becomes a requirement.
@@ -40,7 +41,7 @@ This project is a small full-stack DXAX class promotion site.
 - Use the App Router under `frontend/src/app`.
 - Keep the landing page server-rendered unless client-side interactivity is required.
 - `NEXT_PUBLIC_API_BASE_URL` controls the FastAPI base URL and defaults to `http://localhost:8000`.
-- Preserve the existing dark, high-contrast promotional visual language unless the user asks for a redesign.
+- Preserve the current bright, image-forward promotional visual language unless the user asks for a redesign.
 - Keep Tailwind utility styling local and direct for small components; avoid adding a component library unless needed.
 - Maintain fallback content so the page still builds and renders when the FastAPI server is offline.
 

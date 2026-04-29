@@ -23,6 +23,7 @@ API 확인:
 - `http://localhost:8000/api/health`
 - `http://localhost:8000/api/classes`
 - `http://localhost:8000/api/highlights`
+- `http://localhost:8000/api/covers/{filename}`
 
 ## Frontend 실행
 
@@ -46,4 +47,4 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
 
 ## 동작 방식
 
-FastAPI는 `C:\Users\Administrator\dxAx\wiki\notes` 안의 `*_dxax_class_summary.md` 파일을 읽어 날짜, 제목, 수업 요약, 핵심 메시지, 기억해야 할 디테일을 JSON으로 제공합니다. Next.js 페이지는 이 API를 호출해 최신 수업 내용을 홍보 페이지에 동적으로 표시합니다.
+FastAPI는 `C:\Users\Administrator\dxAx\wiki\notes` 안의 `*_dxax_class_summary.md` 파일을 읽어 날짜, 제목, 수업 요약, 핵심 메시지, 기억해야 할 디테일, 커버 이미지 URL을 JSON으로 제공합니다. Next.js 페이지는 이 API를 호출해 최신 수업 내용과 커버 이미지를 밝은 톤의 가로 슬라이드형 홍보 화면에 동적으로 표시합니다.
