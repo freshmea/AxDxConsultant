@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T00:23:06.423625+00:00",
+  "generated_at": "2026-04-29T00:28:24.658255+00:00",
   "pages": {
     "AGENTS": {
       "title": "LLM Wiki Schema",
@@ -71,7 +71,7 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 1536,
+      "tokens_estimate": 1906,
       "community_ids": [
         "community-009"
       ],
@@ -150,6 +150,212 @@
         }
       ]
     },
+    "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회": {
+      "title": "사업내용",
+      "path": "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회.md",
+      "summary": "<table> <tr><th>교육목적</th><th colspan=\"6\">블록체인 기술을 활용하여 데이터 보안 시스템을 구현한다.</th></tr> <tr><td>교육내용</td><td colspan=\"6\">1. 분산컴퓨팅 기반 불변의 공유원장 기술로서의 블록체인을 이해한다.<br>2. 합의 알고리즘을 이해하고, 디지털화폐에 들어간 기술과 한계 사항을 파악한다.<br>3. 보안기술을 알아보고. 하이퍼레저 패브릭으로 블록체인을 구성해 본다.</td></tr> <tr><td>교육효과</td><td c",
+      "headings": [
+        "사업내용",
+        "1. 블록체인 기술을 활용한 데이터 보안 시스템 교육 (160H)"
+      ],
+      "tags": [],
+      "topics": [
+        "colspan",
+        "td",
+        "th",
+        "tr",
+        "기술을",
+        "데이터",
+        "블록체인",
+        "사업내용"
+      ],
+      "entities": [
+        "160h",
+        "colspan",
+        "td",
+        "th",
+        "tr",
+        "교육",
+        "기술을",
+        "데이터",
+        "보안",
+        "블록체인",
+        "사업내용",
+        "시스템"
+      ],
+      "terms": {
+        "사업내용": 4,
+        "table": 1,
+        "tr": 7,
+        "th": 6,
+        "교육목적": 1,
+        "colspan": 4,
+        "6": 2,
+        "블록체인": 5,
+        "기술을": 5,
+        "활용하여": 1,
+        "데이터": 5,
+        "보안": 4,
+        "시스템을": 1,
+        "구현한다": 1,
+        "td": 9,
+        "교육내용": 1,
+        "1": 3,
+        "분산컴퓨팅": 1,
+        "기반": 1,
+        "불변의": 1,
+        "공유원장": 1,
+        "기술로서의": 1,
+        "블록체인을": 2,
+        "이해한다": 1,
+        "br": 2,
+        "2": 1,
+        "합의": 1,
+        "알고리즘을": 1,
+        "이해하고": 1,
+        "디지털화폐에": 1,
+        "들어간": 1,
+        "기술과": 1,
+        "한계": 1,
+        "사항을": 1,
+        "파악한다": 1,
+        "3": 1,
+        "보안기술을": 1,
+        "알아보고": 1,
+        "하이퍼레저": 1,
+        "패브릭으로": 1,
+        "구성해": 1,
+        "본다": 1,
+        "교육효과": 1,
+        "c": 1,
+        "활용한": 2,
+        "시스템": 2,
+        "교육": 2,
+        "160h": 2,
+        "docs": 1,
+        "시스템_교육_한국융합인재교육협회": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 760,
+      "community_ids": [
+        "community-010"
+      ],
+      "obsidian_related": []
+    },
+    "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회": {
+      "title": "사업내용",
+      "path": "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md",
+      "summary": "| 항목 | 내용 | | --- | --- | | 교육목적 | 블록체인 기술을 활용하여 뱅킹 시스템을 구현한다. | | 교육수준 | 고급 | | 세부역량 | 기획력, 분석력, 기술활용, 의사소통 등 | | 교육시간 | 160H | | 교육구분 | 블록체인 | | 기술 스택 | 자바스크립트, 도커, 리눅스, Go |",
+      "headings": [
+        "사업내용",
+        "2. 블록체인 뱅킹 시스템 프로젝트 (160H)",
+        "기본 정보",
+        "교육내용",
+        "교육효과",
+        "교육목표",
+        "정성적 목표",
+        "기술 스택",
+        "교육 구성",
+        "세부교육 내용",
+        "GoLang 프로그래밍",
+        "하이퍼레저 Explorer, 체인코드",
+        "하이퍼레저 네트워크",
+        "블록체인 실습",
+        "프로젝트 개발 및 공유",
+        "기타 운영 내용"
+      ],
+      "tags": [],
+      "topics": [
+        "160h",
+        "기술",
+        "뱅킹",
+        "블록체인",
+        "사업내용",
+        "스택",
+        "하이퍼레저",
+        "항목"
+      ],
+      "entities": [
+        "160h",
+        "교육내용",
+        "교육목적",
+        "교육효과",
+        "기본",
+        "기술을",
+        "뱅킹",
+        "블록체인",
+        "사업내용",
+        "시스템",
+        "정보",
+        "하이퍼레저"
+      ],
+      "terms": {
+        "사업내용": 4,
+        "항목": 2,
+        "내용": 3,
+        "교육목적": 2,
+        "블록체인": 7,
+        "기술을": 2,
+        "활용하여": 1,
+        "뱅킹": 5,
+        "시스템을": 1,
+        "구현한다": 1,
+        "교육수준": 1,
+        "고급": 1,
+        "세부역량": 1,
+        "기획력": 1,
+        "분석력": 1,
+        "기술활용": 1,
+        "의사소통": 1,
+        "등": 1,
+        "교육시간": 1,
+        "160h": 4,
+        "교육구분": 1,
+        "기술": 3,
+        "스택": 3,
+        "자바스크립트": 1,
+        "도커": 1,
+        "리눅스": 1,
+        "go": 1,
+        "2": 2,
+        "시스템": 3,
+        "프로젝트": 2,
+        "기본": 2,
+        "정보": 2,
+        "교육내용": 2,
+        "교육효과": 2,
+        "교육목표": 1,
+        "정성적": 1,
+        "목표": 1,
+        "교육": 1,
+        "구성": 1,
+        "세부교육": 1,
+        "golang": 1,
+        "프로그래밍": 1,
+        "하이퍼레저": 4,
+        "explorer": 1,
+        "체인코드": 1,
+        "네트워크": 1,
+        "실습": 1,
+        "개발": 1,
+        "및": 1,
+        "공유": 1,
+        "기타": 1,
+        "운영": 1,
+        "docs": 1,
+        "프로젝트_교육_한국융합인재교육협회": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 554,
+      "community_ids": [
+        "community-011"
+      ],
+      "obsidian_related": []
+    },
     "docs/comfyui-remote-zimage": {
       "title": "Remote ComfyUI Z-Image Setup",
       "path": "docs/comfyui-remote-zimage.md",
@@ -187,7 +393,7 @@
       "inbound_count": 0,
       "tokens_estimate": 331,
       "community_ids": [
-        "community-010"
+        "community-012"
       ],
       "obsidian_related": []
     },
@@ -265,7 +471,7 @@
       "inbound_count": 0,
       "tokens_estimate": 437,
       "community_ids": [
-        "community-011"
+        "community-013"
       ],
       "obsidian_related": []
     },
@@ -386,7 +592,7 @@
       "inbound_count": 0,
       "tokens_estimate": 2138,
       "community_ids": [
-        "community-012"
+        "community-014"
       ],
       "obsidian_related": [
         {
@@ -605,7 +811,7 @@
       "inbound_count": 0,
       "tokens_estimate": 5618,
       "community_ids": [
-        "community-013"
+        "community-015"
       ],
       "obsidian_related": [
         {
@@ -769,7 +975,7 @@
       "inbound_count": 0,
       "tokens_estimate": 564,
       "community_ids": [
-        "community-014"
+        "community-016"
       ],
       "obsidian_related": [
         {
@@ -1060,7 +1266,7 @@
       "inbound_count": 0,
       "tokens_estimate": 325,
       "community_ids": [
-        "community-015"
+        "community-017"
       ],
       "obsidian_related": [
         {
@@ -1252,7 +1458,7 @@
       "inbound_count": 0,
       "tokens_estimate": 469,
       "community_ids": [
-        "community-016"
+        "community-018"
       ],
       "obsidian_related": [
         {
@@ -1434,7 +1640,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1549,
       "community_ids": [
-        "community-017"
+        "community-019"
       ],
       "obsidian_related": [
         {
@@ -1601,7 +1807,7 @@
       "inbound_count": 0,
       "tokens_estimate": 226,
       "community_ids": [
-        "community-018"
+        "community-020"
       ],
       "obsidian_related": [
         {
@@ -1766,7 +1972,7 @@
       "inbound_count": 0,
       "tokens_estimate": 883,
       "community_ids": [
-        "community-019"
+        "community-021"
       ],
       "obsidian_related": [
         {
@@ -1915,9 +2121,9 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 2992,
+      "tokens_estimate": 3336,
       "community_ids": [
-        "community-020"
+        "community-022"
       ],
       "obsidian_related": [
         {
@@ -2104,7 +2310,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1518,
       "community_ids": [
-        "community-021"
+        "community-023"
       ],
       "obsidian_related": [
         {
@@ -2264,7 +2470,7 @@
       "inbound_count": 0,
       "tokens_estimate": 612,
       "community_ids": [
-        "community-022"
+        "community-024"
       ],
       "obsidian_related": [
         {
@@ -2476,7 +2682,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1542,
       "community_ids": [
-        "community-023"
+        "community-025"
       ],
       "obsidian_related": [
         {
@@ -2660,7 +2866,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1171,
       "community_ids": [
-        "community-024"
+        "community-026"
       ],
       "obsidian_related": [
         {
@@ -13270,7 +13476,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1978,
       "community_ids": [
-        "community-025"
+        "community-027"
       ],
       "obsidian_related": [
         {
@@ -13448,7 +13654,7 @@
       "inbound_count": 0,
       "tokens_estimate": 522,
       "community_ids": [
-        "community-026"
+        "community-028"
       ],
       "obsidian_related": [
         {
@@ -13554,7 +13760,7 @@
       "inbound_count": 0,
       "tokens_estimate": 298,
       "community_ids": [
-        "community-027"
+        "community-029"
       ],
       "obsidian_related": [
         {
@@ -13695,7 +13901,7 @@
       "inbound_count": 0,
       "tokens_estimate": 62,
       "community_ids": [
-        "community-028"
+        "community-030"
       ],
       "obsidian_related": [
         {
@@ -13891,7 +14097,7 @@
       "inbound_count": 0,
       "tokens_estimate": 597,
       "community_ids": [
-        "community-029"
+        "community-031"
       ],
       "obsidian_related": [
         {
@@ -14081,7 +14287,7 @@
       "inbound_count": 0,
       "tokens_estimate": 2720,
       "community_ids": [
-        "community-030"
+        "community-032"
       ],
       "obsidian_related": [
         {
@@ -14234,7 +14440,7 @@
       "inbound_count": 0,
       "tokens_estimate": 2434,
       "community_ids": [
-        "community-031"
+        "community-033"
       ],
       "obsidian_related": [
         {
@@ -14375,7 +14581,7 @@
       "inbound_count": 0,
       "tokens_estimate": 274,
       "community_ids": [
-        "community-032"
+        "community-034"
       ],
       "obsidian_related": [
         {
@@ -14546,7 +14752,7 @@
       "inbound_count": 0,
       "tokens_estimate": 804,
       "community_ids": [
-        "community-033"
+        "community-035"
       ],
       "obsidian_related": [
         {
@@ -14662,7 +14868,7 @@
       "inbound_count": 0,
       "tokens_estimate": 830,
       "community_ids": [
-        "community-034"
+        "community-036"
       ],
       "obsidian_related": [
         {
@@ -14810,7 +15016,7 @@
       "inbound_count": 0,
       "tokens_estimate": 290,
       "community_ids": [
-        "community-035"
+        "community-037"
       ],
       "obsidian_related": [
         {
@@ -14922,7 +15128,7 @@
       "inbound_count": 0,
       "tokens_estimate": 962,
       "community_ids": [
-        "community-036"
+        "community-038"
       ],
       "obsidian_related": [
         {
@@ -15074,7 +15280,7 @@
       "inbound_count": 0,
       "tokens_estimate": 293,
       "community_ids": [
-        "community-037"
+        "community-039"
       ],
       "obsidian_related": [
         {
@@ -15249,7 +15455,7 @@
       "inbound_count": 0,
       "tokens_estimate": 841,
       "community_ids": [
-        "community-038"
+        "community-040"
       ],
       "obsidian_related": [
         {
@@ -15412,7 +15618,7 @@
       "inbound_count": 0,
       "tokens_estimate": 602,
       "community_ids": [
-        "community-039"
+        "community-041"
       ],
       "obsidian_related": [
         {
@@ -15594,7 +15800,7 @@
       "inbound_count": 0,
       "tokens_estimate": 481,
       "community_ids": [
-        "community-040"
+        "community-042"
       ],
       "obsidian_related": [
         {
@@ -15768,7 +15974,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1360,
       "community_ids": [
-        "community-041"
+        "community-043"
       ],
       "obsidian_related": [
         {
@@ -15936,7 +16142,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1088,
       "community_ids": [
-        "community-042"
+        "community-044"
       ],
       "obsidian_related": [
         {
@@ -16059,7 +16265,7 @@
       "inbound_count": 0,
       "tokens_estimate": 738,
       "community_ids": [
-        "community-043"
+        "community-045"
       ],
       "obsidian_related": [
         {
@@ -16211,7 +16417,7 @@
       "inbound_count": 0,
       "tokens_estimate": 164,
       "community_ids": [
-        "community-044"
+        "community-046"
       ],
       "obsidian_related": [
         {
@@ -16287,6 +16493,215 @@
           "score": 0.782262
         }
       ]
+    },
+    "실습결과물/28/kordoc 설치 프롬프트": {
+      "title": "kordoc mcp 설치",
+      "path": "실습결과물/28/kordoc 설치 프롬프트.md",
+      "summary": "설치",
+      "headings": [
+        "kordoc mcp 설치"
+      ],
+      "tags": [],
+      "topics": [
+        "kordoc",
+        "mcp",
+        "설치"
+      ],
+      "entities": [
+        "kordoc",
+        "mcp",
+        "설치"
+      ],
+      "terms": {
+        "kordoc": 5,
+        "mcp": 4,
+        "설치": 6,
+        "실습결과물": 1,
+        "28": 1,
+        "프롬프트": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 229,
+      "community_ids": [
+        "community-047"
+      ],
+      "obsidian_related": []
+    },
+    "실습결과물/28/marketing_campaigns_assets/infographic_prompt": {
+      "title": "Marketing Campaigns Infographic Prompt",
+      "path": "실습결과물/28/marketing_campaigns_assets/infographic_prompt.md",
+      "summary": "Use case: infographic-diagram Asset type: executive one-page business infographic Primary request: 2025 marketing campaign performance infographic in Korean for executives Style/medium: clean corporate infographic, data-storytelling layout, sharp typography, modern dashboard aest",
+      "headings": [
+        "Marketing Campaigns Infographic Prompt"
+      ],
+      "tags": [],
+      "topics": [
+        "asset",
+        "campaigns",
+        "case",
+        "diagram",
+        "infographic",
+        "marketing",
+        "prompt",
+        "use"
+      ],
+      "entities": [
+        "asset",
+        "campaigns",
+        "case",
+        "diagram",
+        "infographic",
+        "marketing",
+        "prompt",
+        "use"
+      ],
+      "terms": {
+        "marketing": 5,
+        "campaigns": 4,
+        "infographic": 8,
+        "prompt": 4,
+        "use": 3,
+        "case": 3,
+        "diagram": 3,
+        "asset": 3,
+        "type": 1,
+        "executive": 1,
+        "one": 1,
+        "page": 1,
+        "business": 1,
+        "primary": 1,
+        "request": 1,
+        "2025": 1,
+        "campaign": 1,
+        "performance": 1,
+        "in": 1,
+        "korean": 1,
+        "for": 1,
+        "executives": 1,
+        "style": 1,
+        "medium": 1,
+        "clean": 1,
+        "corporate": 1,
+        "data": 1,
+        "storytelling": 1,
+        "layout": 1,
+        "sharp": 1,
+        "typography": 1,
+        "modern": 1,
+        "dashboard": 1,
+        "aest": 1,
+        "실습결과물": 1,
+        "28": 1,
+        "marketing_campaigns_assets": 1,
+        "infographic_prompt": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 472,
+      "community_ids": [
+        "community-048"
+      ],
+      "obsidian_related": []
+    },
+    "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report": {
+      "title": "Marketing Campaigns 분석 보고서",
+      "path": "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report.md",
+      "summary": "대상 파일: `C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\14 Marketing Campaigns.xlsx` - 분석 건수: 1000개 캠페인 - 기간: 2024-01-02 ~ 2026-01-17 - 채널 수: 5개 - 산출물 폴더: `C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets`",
+      "headings": [
+        "Marketing Campaigns 분석 보고서",
+        "분석 개요",
+        "핵심 KPI",
+        "채널별 성과 요약",
+        "회귀 모델 결과",
+        "군집 인사이트",
+        "실행 제안",
+        "로컬 산출물 경로",
+        "그래프 파일"
+      ],
+      "tags": [],
+      "topics": [
+        "17",
+        "administrator",
+        "campaigns",
+        "dxax",
+        "marketing",
+        "users",
+        "분석",
+        "파일"
+      ],
+      "entities": [
+        "17",
+        "administrator",
+        "campaigns",
+        "dxax",
+        "kpi",
+        "marketing",
+        "users",
+        "결과",
+        "모델",
+        "분석",
+        "성과",
+        "채널별"
+      ],
+      "terms": {
+        "marketing": 5,
+        "campaigns": 5,
+        "분석": 6,
+        "보고서": 2,
+        "대상": 1,
+        "파일": 3,
+        "c": 2,
+        "users": 4,
+        "administrator": 4,
+        "dxax": 4,
+        "실습결과물": 3,
+        "17": 5,
+        "14": 1,
+        "xlsx": 1,
+        "건수": 1,
+        "1000개": 1,
+        "캠페인": 1,
+        "기간": 1,
+        "2024": 1,
+        "01": 2,
+        "02": 1,
+        "2026": 1,
+        "채널": 1,
+        "수": 1,
+        "5개": 1,
+        "산출물": 2,
+        "폴더": 1,
+        "marketing_campaigns_assets": 2,
+        "개요": 1,
+        "핵심": 1,
+        "kpi": 2,
+        "채널별": 2,
+        "성과": 2,
+        "요약": 1,
+        "회귀": 1,
+        "모델": 2,
+        "결과": 2,
+        "군집": 1,
+        "인사이트": 1,
+        "실행": 1,
+        "제안": 1,
+        "로컬": 1,
+        "경로": 1,
+        "그래프": 1,
+        "28": 1,
+        "marketing_campaigns_report": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 684,
+      "community_ids": [
+        "community-049"
+      ],
+      "obsidian_related": []
     }
   },
   "communities": {
@@ -17324,6 +17739,162 @@
       ]
     },
     "community-010": {
+      "summary": "사업내용 중심의 지식 군집입니다. 핵심 주제는 colspan, td, th, tr이며, 대표 문서는 사업내용 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "colspan",
+          1
+        ],
+        [
+          "td",
+          1
+        ],
+        [
+          "th",
+          1
+        ],
+        [
+          "tr",
+          1
+        ],
+        [
+          "기술을",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ],
+        [
+          "블록체인",
+          1
+        ],
+        [
+          "사업내용",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "160h",
+          1
+        ],
+        [
+          "colspan",
+          1
+        ],
+        [
+          "td",
+          1
+        ],
+        [
+          "th",
+          1
+        ],
+        [
+          "tr",
+          1
+        ],
+        [
+          "교육",
+          1
+        ],
+        [
+          "기술을",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ]
+      ],
+      "page_ids": [
+        "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회"
+      ],
+      "paths": [
+        "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회.md"
+      ]
+    },
+    "community-011": {
+      "summary": "사업내용 중심의 지식 군집입니다. 핵심 주제는 160h, 기술, 뱅킹, 블록체인이며, 대표 문서는 사업내용 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "160h",
+          1
+        ],
+        [
+          "기술",
+          1
+        ],
+        [
+          "뱅킹",
+          1
+        ],
+        [
+          "블록체인",
+          1
+        ],
+        [
+          "사업내용",
+          1
+        ],
+        [
+          "스택",
+          1
+        ],
+        [
+          "하이퍼레저",
+          1
+        ],
+        [
+          "항목",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "160h",
+          1
+        ],
+        [
+          "교육내용",
+          1
+        ],
+        [
+          "교육목적",
+          1
+        ],
+        [
+          "교육효과",
+          1
+        ],
+        [
+          "기본",
+          1
+        ],
+        [
+          "기술을",
+          1
+        ],
+        [
+          "뱅킹",
+          1
+        ],
+        [
+          "블록체인",
+          1
+        ]
+      ],
+      "page_ids": [
+        "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회"
+      ],
+      "paths": [
+        "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md"
+      ]
+    },
+    "community-012": {
       "summary": "Remote ComfyUI Z-Image Setup 중심의 지식 군집입니다. 핵심 주제는 comfyui, endpoint, image, remote이며, 대표 문서는 Remote ComfyUI Z-Image Setup 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17377,7 +17948,7 @@
         "docs/comfyui-remote-zimage.md"
       ]
     },
-    "community-011": {
+    "community-013": {
       "summary": "ComfyUI Local Setup 중심의 지식 군집입니다. 핵심 주제는 comfyui, comfyui를, local, setup이며, 대표 문서는 ComfyUI Local Setup 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17455,7 +18026,7 @@
         "docs/comfyui-setup.md"
       ]
     },
-    "community-012": {
+    "community-014": {
       "summary": "Hermes Agent 조사 및 현재 시스템 비교 보고서 중심의 지식 군집입니다. 핵심 주제는 agent, hermes, nousresearch, 대상이며, 대표 문서는 Hermes Agent 조사 및 현재 시스템 비교 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17533,7 +18104,7 @@
         "llm_wiki/Hermes-Agent-비교-보고서.md"
       ]
     },
-    "community-013": {
+    "community-015": {
       "summary": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서 중심의 지식 군집입니다. 핵심 주제는 llm, 기억, 도구, 비교이며, 대표 문서는 LLM 지식 아키텍처와 장기 기억 도구 비교 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17611,7 +18182,7 @@
         "llm_wiki/LLM 지식 아키텍처.md"
       ]
     },
-    "community-014": {
+    "community-016": {
       "summary": "Obsidian Smart Connections Setup 중심의 지식 군집입니다. 핵심 주제는 as, connections, graph, obsidian이며, 대표 문서는 Obsidian Smart Connections Setup 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17689,7 +18260,7 @@
         "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md"
       ]
     },
-    "community-015": {
+    "community-017": {
       "summary": "Local Memory Layer 중심의 지식 군집입니다. 핵심 주제는 aware, change, folder, holds이며, 대표 문서는 Local Memory Layer 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17767,7 +18338,7 @@
         "memory_layer/README.md"
       ]
     },
-    "community-016": {
+    "community-018": {
       "summary": "Notion App Date Filter Fallback Skill 중심의 지식 군집입니다. 핵심 주제는 app, date, fallback, filter이며, 대표 문서는 Notion App Date Filter Fallback Skill 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17845,7 +18416,7 @@
         "notion_app_date_filter_fallback_skill/SKILL.md"
       ]
     },
-    "community-017": {
+    "community-019": {
       "summary": "Body Fat Brozek 시각 분석 보고서 (미리보기 중심) 중심의 지식 군집입니다. 핵심 주제는 body, box, brozek, fat이며, 대표 문서는 Body Fat Brozek 시각 분석 보고서 (미리보기 중심) 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -17923,7 +18494,7 @@
         "orange_example_10/bodyfat_analysis_report.md"
       ]
     },
-    "community-018": {
+    "community-020": {
       "summary": "Titanic AdaBoost 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 2201, adaboost, titanic, 데이터이며, 대표 문서는 Titanic AdaBoost 분석 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18001,7 +18572,7 @@
         "orange_example_10/titanic_adaboost_report.md"
       ]
     },
-    "community-019": {
+    "community-021": {
       "summary": "Titanic 생존 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 2201건, 711건, titanic, 관측치이며, 대표 문서는 Titanic 생존 분석 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18079,7 +18650,7 @@
         "orange_example_10/titanic_survival_report.md"
       ]
     },
-    "community-020": {
+    "community-022": {
       "summary": "AxDxConsultant 중심의 지식 군집입니다. 핵심 주제는 2026_4_6, 2026_4_7, 2026_4_8, 2026_4_9이며, 대표 문서는 AxDxConsultant 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18157,7 +18728,7 @@
         "README.md"
       ]
     },
-    "community-021": {
+    "community-023": {
       "summary": "Graphify Code Wiki 중심의 지식 군집입니다. 핵심 주제는 code, graph, graphify, integration이며, 대표 문서는 Graphify Code Wiki 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18235,7 +18806,7 @@
         "skills/graphify-code-wiki/SKILL.md"
       ]
     },
-    "community-022": {
+    "community-024": {
       "summary": "Local Whisper GPU 중심의 지식 군집입니다. 핵심 주제는 gpu, in, local, run이며, 대표 문서는 Local Whisper GPU 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18313,7 +18884,7 @@
         "skills/local-whisper-gpu/SKILL.md"
       ]
     },
-    "community-023": {
+    "community-025": {
       "summary": "Troubleshooting 중심의 지식 군집입니다. 핵심 주제는 fails, llm, local, mem0이며, 대표 문서는 Troubleshooting 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18391,7 +18962,7 @@
         "skills/troubleshooting.md"
       ]
     },
-    "community-024": {
+    "community-026": {
       "summary": "Wiki LLM Setup 중심의 지식 군집입니다. 핵심 주제는 change, graph, keep, llm이며, 대표 문서는 Wiki LLM Setup 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18469,7 +19040,7 @@
         "skills/wiki-llm-setup/SKILL.md"
       ]
     },
-    "community-025": {
+    "community-027": {
       "summary": "Youtube 영상 스크립트 중심의 지식 군집입니다. 핵심 주제는 graphify, llm, wiki를, youtube이며, 대표 문서는 Youtube 영상 스크립트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18543,7 +19114,7 @@
         "실습결과물/15/Youtube 영상 스크립트.md"
       ]
     },
-    "community-026": {
+    "community-028": {
       "summary": "Graphify 기반 LLM Wiki 활용 1페이지 요약보고서 중심의 지식 군집입니다. 핵심 주제는 1페이지, graphify, llm, wiki이며, 대표 문서는 Graphify 기반 LLM Wiki 활용 1페이지 요약보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18621,7 +19192,7 @@
         "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서.md"
       ]
     },
-    "community-027": {
+    "community-029": {
       "summary": "YouTube 영상 요약본 중심의 지식 군집입니다. 핵심 주제는 youtube, 영상, 요약본이며, 대표 문서는 YouTube 영상 요약본 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18659,7 +19230,7 @@
         "실습결과물/15/YouTube 영상 요약본.md"
       ]
     },
-    "community-028": {
+    "community-030": {
       "summary": "whisper 모델 설치 프롬프트 중심의 지식 군집입니다. 핵심 주제는 faster, small, text, whisper이며, 대표 문서는 whisper 모델 설치 프롬프트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18737,7 +19308,7 @@
         "실습결과물/15/로컬 whisper 모델 설치 프롬프트.md"
       ]
     },
-    "community-029": {
+    "community-031": {
       "summary": "imports-85 실제데이터 기반 요약보고서 중심의 지식 군집입니다. 핵심 주제는 85, 85_cleaned, imports, 기반이며, 대표 문서는 imports-85 실제데이터 기반 요약보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18815,7 +19386,7 @@
         "실습결과물/16/imports-85_actual_data_summary.md"
       ]
     },
-    "community-030": {
+    "community-032": {
       "summary": "자동차 모델 가격·성능·연비 관계 인터랙티브 보고서 중심의 지식 군집입니다. 핵심 주제는 가격, 가격의, 관계, 데이터이며, 대표 문서는 자동차 모델 가격·성능·연비 관계 인터랙티브 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18893,7 +19464,7 @@
         "실습결과물/16/imports-85_interactive_report.md"
       ]
     },
-    "community-031": {
+    "community-033": {
       "summary": "imports-85 정제 보고서 중심의 지식 군집입니다. 핵심 주제는 59, 85, bore, imports이며, 대표 문서는 imports-85 정제 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -18971,7 +19542,7 @@
         "실습결과물/16/imports-85_report.md"
       ]
     },
-    "community-032": {
+    "community-034": {
       "summary": "Retail Sales Seaborn Graphs 중심의 지식 군집입니다. 핵심 주제는 01_monthly_net_sales_trend, graphs, png, retail이며, 대표 문서는 Retail Sales Seaborn Graphs 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19049,7 +19620,7 @@
         "실습결과물/16/retail_sales_report_assets/README.md"
       ]
     },
-    "community-033": {
+    "community-035": {
       "summary": "Retail Sales 추세 1페이지 보고서 중심의 지식 군집입니다. 핵심 주제는 1페이지, retail, sales, 매출이며, 대표 문서는 Retail Sales 추세 1페이지 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19127,7 +19698,7 @@
         "실습결과물/16/retail_sales_trend_onepage_report.md"
       ]
     },
-    "community-034": {
+    "community-036": {
       "summary": "리테일 분석판매보고서노트북LM 중심의 지식 군집입니다. 핵심 주제는 리테일, 분석, 분석판매보고서노트북lm, 브리핑이며, 대표 문서는 리테일 분석판매보고서노트북LM 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19189,7 +19760,7 @@
         "실습결과물/16/리테일 분석판매보고서노트북LM.md"
       ]
     },
-    "community-035": {
+    "community-037": {
       "summary": "매출 분석에 쓰인 프롬프트 중심의 지식 군집입니다. 핵심 주제는 administrator, dxax, text, users이며, 대표 문서는 매출 분석에 쓰인 프롬프트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19267,7 +19838,7 @@
         "실습결과물/16/매출분석에 쓰인 프롬프트.md"
       ]
     },
-    "community-036": {
+    "community-038": {
       "summary": "자동차 수출 관련 예제 프롬프트 중심의 지식 군집입니다. 핵심 주제는 수출, 예제, 자동차, 프롬프트이며, 대표 문서는 자동차 수출 관련 예제 프롬프트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19313,7 +19884,7 @@
         "실습결과물/16/자동차수출예제관련프롬프트.md"
       ]
     },
-    "community-037": {
+    "community-039": {
       "summary": "📊 2026 HRD Trend Report 요약 중심의 지식 군집입니다. 핵심 주제는 2026, hrd, report, trend이며, 대표 문서는 📊 2026 HRD Trend Report 요약 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19391,7 +19962,7 @@
         "실습결과물/16/한페이지요약 HRD AX 수업도향.md"
       ]
     },
-    "community-038": {
+    "community-040": {
       "summary": "Project Management 매니저 성과 1페이지 요약 보고서 중심의 지식 군집입니다. 핵심 주제는 1페이지, management, project, 기준으로이며, 대표 문서는 Project Management 매니저 성과 1페이지 요약 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19469,7 +20040,7 @@
         "실습결과물/17/02 Project Management_manager_ranking_report.md"
       ]
     },
-    "community-039": {
+    "community-041": {
       "summary": "프로젝트 포트폴리오 SCQA 인사이트 리포트 중심의 지식 군집입니다. 핵심 주제는 scqa, 리포트, 성과, 실행력이며, 대표 문서는 프로젝트 포트폴리오 SCQA 인사이트 리포트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19547,7 +20118,7 @@
         "실습결과물/17/02 Project Management_SCQA_insight_report.md"
       ]
     },
-    "community-040": {
+    "community-042": {
       "summary": "Project Management 데이터 1페이지 요약 보고서 중심의 지식 군집입니다. 핵심 주제는 02, 1페이지, date, management이며, 대표 문서는 Project Management 데이터 1페이지 요약 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19625,7 +20196,7 @@
         "실습결과물/17/02 Project Management_summary_report.md"
       ]
     },
-    "community-041": {
+    "community-043": {
       "summary": "E-Commerce Orders 매장별 일매출 이상치 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 08, commerce, orders, 매장별이며, 대표 문서는 E-Commerce Orders 매장별 일매출 이상치 분석 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19703,7 +20274,7 @@
         "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report.md"
       ]
     },
-    "community-042": {
+    "community-044": {
       "summary": "E-Commerce Orders 가격 이상치 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 commerce, iqr, orders, 가격이며, 대표 문서는 E-Commerce Orders 가격 이상치 분석 보고서 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19781,7 +20352,7 @@
         "실습결과물/17/08 E-Commerce Orders_price_outlier_report.md"
       ]
     },
-    "community-043": {
+    "community-045": {
       "summary": "project Magement_blog 중심의 지식 군집입니다. 핵심 주제는 magement_blog, pm은, project, 끝내고이며, 대표 문서는 project Magement_blog 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19851,7 +20422,7 @@
         "실습결과물/17/project Magement_blog.md"
       ]
     },
-    "community-044": {
+    "community-046": {
       "summary": "엑셀 데이터 처리 프롬프트 중심의 지식 군집입니다. 핵심 주제는 text, users, 데이터, 되지이며, 대표 문서는 엑셀 데이터 처리 프롬프트 입니다.",
       "top_tags": [],
       "top_topics": [
@@ -19927,6 +20498,200 @@
       ],
       "paths": [
         "실습결과물/17/엑셀처리프롬프트.md"
+      ]
+    },
+    "community-047": {
+      "summary": "kordoc mcp 설치 중심의 지식 군집입니다. 핵심 주제는 kordoc, mcp, 설치이며, 대표 문서는 kordoc mcp 설치 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "kordoc",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "설치",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "kordoc",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "설치",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/28/kordoc 설치 프롬프트"
+      ],
+      "paths": [
+        "실습결과물/28/kordoc 설치 프롬프트.md"
+      ]
+    },
+    "community-048": {
+      "summary": "Marketing Campaigns Infographic Prompt 중심의 지식 군집입니다. 핵심 주제는 asset, campaigns, case, diagram이며, 대표 문서는 Marketing Campaigns Infographic Prompt 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "asset",
+          1
+        ],
+        [
+          "campaigns",
+          1
+        ],
+        [
+          "case",
+          1
+        ],
+        [
+          "diagram",
+          1
+        ],
+        [
+          "infographic",
+          1
+        ],
+        [
+          "marketing",
+          1
+        ],
+        [
+          "prompt",
+          1
+        ],
+        [
+          "use",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "asset",
+          1
+        ],
+        [
+          "campaigns",
+          1
+        ],
+        [
+          "case",
+          1
+        ],
+        [
+          "diagram",
+          1
+        ],
+        [
+          "infographic",
+          1
+        ],
+        [
+          "marketing",
+          1
+        ],
+        [
+          "prompt",
+          1
+        ],
+        [
+          "use",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/28/marketing_campaigns_assets/infographic_prompt"
+      ],
+      "paths": [
+        "실습결과물/28/marketing_campaigns_assets/infographic_prompt.md"
+      ]
+    },
+    "community-049": {
+      "summary": "Marketing Campaigns 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 17, administrator, campaigns, dxax이며, 대표 문서는 Marketing Campaigns 분석 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "17",
+          1
+        ],
+        [
+          "administrator",
+          1
+        ],
+        [
+          "campaigns",
+          1
+        ],
+        [
+          "dxax",
+          1
+        ],
+        [
+          "marketing",
+          1
+        ],
+        [
+          "users",
+          1
+        ],
+        [
+          "분석",
+          1
+        ],
+        [
+          "파일",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "17",
+          1
+        ],
+        [
+          "administrator",
+          1
+        ],
+        [
+          "campaigns",
+          1
+        ],
+        [
+          "dxax",
+          1
+        ],
+        [
+          "kpi",
+          1
+        ],
+        [
+          "marketing",
+          1
+        ],
+        [
+          "users",
+          1
+        ],
+        [
+          "결과",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report"
+      ],
+      "paths": [
+        "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report.md"
       ]
     }
   },

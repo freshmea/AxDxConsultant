@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T00:23:06.423625+00:00",
+  "generated_at": "2026-04-29T00:28:24.658255+00:00",
   "pages": [
     {
       "id": "AGENTS",
@@ -31,7 +31,7 @@
         "unicode",
         "uses"
       ],
-      "tokens_estimate": 1536,
+      "tokens_estimate": 1906,
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
@@ -113,6 +113,82 @@
       ]
     },
     {
+      "id": "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회",
+      "title": "사업내용",
+      "path": "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회.md",
+      "summary": "<table> <tr><th>교육목적</th><th colspan=\"6\">블록체인 기술을 활용하여 데이터 보안 시스템을 구현한다.</th></tr> <tr><td>교육내용</td><td colspan=\"6\">1. 분산컴퓨팅 기반 불변의 공유원장 기술로서의 블록체인을 이해한다.<br>2. 합의 알고리즘을 이해하고, 디지털화폐에 들어간 기술과 한계 사항을 파악한다.<br>3. 보안기술을 알아보고. 하이퍼레저 패브릭으로 블록체인을 구성해 본다.</td></tr> <tr><td>교육효과</td><td c",
+      "tags": [],
+      "topics": [
+        "colspan",
+        "td",
+        "th",
+        "tr",
+        "기술을",
+        "데이터",
+        "블록체인",
+        "사업내용"
+      ],
+      "entities": [
+        "160h",
+        "colspan",
+        "td",
+        "th",
+        "tr",
+        "교육",
+        "기술을",
+        "데이터",
+        "보안",
+        "블록체인",
+        "사업내용",
+        "시스템"
+      ],
+      "tokens_estimate": 760,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "community_ids": [
+        "community-010"
+      ],
+      "obsidian_related": []
+    },
+    {
+      "id": "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회",
+      "title": "사업내용",
+      "path": "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md",
+      "summary": "| 항목 | 내용 | | --- | --- | | 교육목적 | 블록체인 기술을 활용하여 뱅킹 시스템을 구현한다. | | 교육수준 | 고급 | | 세부역량 | 기획력, 분석력, 기술활용, 의사소통 등 | | 교육시간 | 160H | | 교육구분 | 블록체인 | | 기술 스택 | 자바스크립트, 도커, 리눅스, Go |",
+      "tags": [],
+      "topics": [
+        "160h",
+        "기술",
+        "뱅킹",
+        "블록체인",
+        "사업내용",
+        "스택",
+        "하이퍼레저",
+        "항목"
+      ],
+      "entities": [
+        "160h",
+        "교육내용",
+        "교육목적",
+        "교육효과",
+        "기본",
+        "기술을",
+        "뱅킹",
+        "블록체인",
+        "사업내용",
+        "시스템",
+        "정보",
+        "하이퍼레저"
+      ],
+      "tokens_estimate": 554,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "community_ids": [
+        "community-011"
+      ],
+      "obsidian_related": []
+    },
+    {
       "id": "docs/comfyui-remote-zimage",
       "title": "Remote ComfyUI Z-Image Setup",
       "path": "docs/comfyui-remote-zimage.md",
@@ -136,7 +212,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-010"
+        "community-012"
       ],
       "obsidian_related": []
     },
@@ -174,7 +250,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-011"
+        "community-013"
       ],
       "obsidian_related": []
     },
@@ -216,7 +292,7 @@
         "/C:/Users/Administrator/dxAx/memory_layer/README.md"
       ],
       "community_ids": [
-        "community-012"
+        "community-014"
       ],
       "obsidian_related": [
         {
@@ -327,7 +403,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-013"
+        "community-015"
       ],
       "obsidian_related": [
         {
@@ -438,7 +514,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-014"
+        "community-016"
       ],
       "obsidian_related": [
         {
@@ -660,7 +736,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-015"
+        "community-017"
       ],
       "obsidian_related": [
         {
@@ -771,7 +847,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-016"
+        "community-018"
       ],
       "obsidian_related": [
         {
@@ -882,7 +958,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-017"
+        "community-019"
       ],
       "obsidian_related": [
         {
@@ -993,7 +1069,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-018"
+        "community-020"
       ],
       "obsidian_related": [
         {
@@ -1104,7 +1180,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-019"
+        "community-021"
       ],
       "obsidian_related": [
         {
@@ -1211,11 +1287,11 @@
         "axdxconsultant",
         "과정"
       ],
-      "tokens_estimate": 2992,
+      "tokens_estimate": 3336,
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-020"
+        "community-022"
       ],
       "obsidian_related": [
         {
@@ -1326,7 +1402,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-021"
+        "community-023"
       ],
       "obsidian_related": [
         {
@@ -1437,7 +1513,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-022"
+        "community-024"
       ],
       "obsidian_related": [
         {
@@ -1548,7 +1624,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-023"
+        "community-025"
       ],
       "obsidian_related": [
         {
@@ -1659,7 +1735,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-024"
+        "community-026"
       ],
       "obsidian_related": [
         {
@@ -8740,7 +8816,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-025"
+        "community-027"
       ],
       "obsidian_related": [
         {
@@ -8851,7 +8927,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-026"
+        "community-028"
       ],
       "obsidian_related": [
         {
@@ -8948,7 +9024,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-027"
+        "community-029"
       ],
       "obsidian_related": [
         {
@@ -9055,7 +9131,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-028"
+        "community-030"
       ],
       "obsidian_related": [
         {
@@ -9166,7 +9242,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-029"
+        "community-031"
       ],
       "obsidian_related": [
         {
@@ -9277,7 +9353,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-030"
+        "community-032"
       ],
       "obsidian_related": [
         {
@@ -9388,7 +9464,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-031"
+        "community-033"
       ],
       "obsidian_related": [
         {
@@ -9495,7 +9571,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-032"
+        "community-034"
       ],
       "obsidian_related": [
         {
@@ -9606,7 +9682,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-033"
+        "community-035"
       ],
       "obsidian_related": [
         {
@@ -9709,7 +9785,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-034"
+        "community-036"
       ],
       "obsidian_related": [
         {
@@ -9816,7 +9892,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-035"
+        "community-037"
       ],
       "obsidian_related": [
         {
@@ -9915,7 +9991,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-036"
+        "community-038"
       ],
       "obsidian_related": [
         {
@@ -10026,7 +10102,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-037"
+        "community-039"
       ],
       "obsidian_related": [
         {
@@ -10137,7 +10213,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-038"
+        "community-040"
       ],
       "obsidian_related": [
         {
@@ -10248,7 +10324,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-039"
+        "community-041"
       ],
       "obsidian_related": [
         {
@@ -10359,7 +10435,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-040"
+        "community-042"
       ],
       "obsidian_related": [
         {
@@ -10470,7 +10546,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-041"
+        "community-043"
       ],
       "obsidian_related": [
         {
@@ -10581,7 +10657,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-042"
+        "community-044"
       ],
       "obsidian_related": [
         {
@@ -10686,7 +10762,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-043"
+        "community-045"
       ],
       "obsidian_related": [
         {
@@ -10793,7 +10869,7 @@
       "outbound_links": [],
       "unresolved_links": [],
       "community_ids": [
-        "community-044"
+        "community-046"
       ],
       "obsidian_related": [
         {
@@ -10869,6 +10945,102 @@
           "score": 0.782262
         }
       ]
+    },
+    {
+      "id": "실습결과물/28/kordoc 설치 프롬프트",
+      "title": "kordoc mcp 설치",
+      "path": "실습결과물/28/kordoc 설치 프롬프트.md",
+      "summary": "설치",
+      "tags": [],
+      "topics": [
+        "kordoc",
+        "mcp",
+        "설치"
+      ],
+      "entities": [
+        "kordoc",
+        "mcp",
+        "설치"
+      ],
+      "tokens_estimate": 229,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "community_ids": [
+        "community-047"
+      ],
+      "obsidian_related": []
+    },
+    {
+      "id": "실습결과물/28/marketing_campaigns_assets/infographic_prompt",
+      "title": "Marketing Campaigns Infographic Prompt",
+      "path": "실습결과물/28/marketing_campaigns_assets/infographic_prompt.md",
+      "summary": "Use case: infographic-diagram Asset type: executive one-page business infographic Primary request: 2025 marketing campaign performance infographic in Korean for executives Style/medium: clean corporate infographic, data-storytelling layout, sharp typography, modern dashboard aest",
+      "tags": [],
+      "topics": [
+        "asset",
+        "campaigns",
+        "case",
+        "diagram",
+        "infographic",
+        "marketing",
+        "prompt",
+        "use"
+      ],
+      "entities": [
+        "asset",
+        "campaigns",
+        "case",
+        "diagram",
+        "infographic",
+        "marketing",
+        "prompt",
+        "use"
+      ],
+      "tokens_estimate": 472,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "community_ids": [
+        "community-048"
+      ],
+      "obsidian_related": []
+    },
+    {
+      "id": "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report",
+      "title": "Marketing Campaigns 분석 보고서",
+      "path": "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report.md",
+      "summary": "대상 파일: `C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\14 Marketing Campaigns.xlsx` - 분석 건수: 1000개 캠페인 - 기간: 2024-01-02 ~ 2026-01-17 - 채널 수: 5개 - 산출물 폴더: `C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets`",
+      "tags": [],
+      "topics": [
+        "17",
+        "administrator",
+        "campaigns",
+        "dxax",
+        "marketing",
+        "users",
+        "분석",
+        "파일"
+      ],
+      "entities": [
+        "17",
+        "administrator",
+        "campaigns",
+        "dxax",
+        "kpi",
+        "marketing",
+        "users",
+        "결과",
+        "모델",
+        "분석",
+        "성과",
+        "채널별"
+      ],
+      "tokens_estimate": 684,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "community_ids": [
+        "community-049"
+      ],
+      "obsidian_related": []
     }
   ]
 }

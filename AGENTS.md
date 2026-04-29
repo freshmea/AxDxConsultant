@@ -44,6 +44,9 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 8. When tracing local code relationships, use `graph-neighbors` before broader code reads when a single node's adjacency is enough.
 9. When using `ask`, follow the returned `workflow.instruction` and prefer its `code_read_plan` or `read_plan` before ad hoc file opens.
 10. For code-oriented `ask` results, treat `code_read_plan` as the primary read target and use the markdown `selected` or `read_plan` pages only for broader context when needed.
+11. For code-oriented `ask` results, inspect `code_relation` when present before falling back to broader graph traversal or ad hoc code reads.
+12. For lecture, transcript, or meeting-summary requests, read the full source span before writing, then weight the summary according to where the session spent its time instead of over-indexing the opening recap.
+13. When a summary request references multiple related files, inspect all relevant files first and produce a balanced synthesis that reflects the whole session, including later practical sections, setup details, and conclusions.
 
 ## Maintenance Workflow
 
@@ -55,6 +58,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 6. Rebuild the semantic FAISS index, code graph, and community summaries as part of every wiki build.
 7. Keep Mem0 bootstraps resumable by using offsets and small batches when local Qdrant is in use.
 8. Do not run multiple Mem0 commands in parallel against the local Qdrant store.
+9. After code graph or routing changes, verify the `llm_wiki` package compiles and run a compact code-graph smoke test before trusting the outputs.
 
 ## CLI Commands
 
@@ -70,3 +74,5 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 - Inspect node neighbors in the code graph: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-neighbors "<node>" --root . --limit 20`
 - Explain a code node: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-explain "<node>" --root . --limit 12`
 - Trace a code path: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-path "<source>" "<target>" --root . --max-depth 8`
+- Verify the package still compiles: `.\.venv-knowledge\Scripts\python.exe -m compileall llm_wiki`
+- Verify code-aware ask routing: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli ask "relationship between build_code_graph and write_outputs" --root . --limit 5`

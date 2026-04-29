@@ -35,6 +35,68 @@
       ]
     },
     {
+      "id": "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회",
+      "title": "사업내용",
+      "path": "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회.md",
+      "summary": "<table> <tr><th>교육목적</th><th colspan=\"6\">블록체인 기술을 활용하여 데이터 보안 시스템을 구현한다.</th></tr> <tr><td>교육내용</td><td colspan=\"6\">1. 분산컴퓨팅 기반 불변의 공유원장 기술로서의 블록체인을 이해한다.<br>2. 합의 알고리즘을 이해하고, 디지털화폐에 들어간 기술과 한계 사항을 파악한다.<br>3. 보안기술을 알아보고. 하이퍼레저 패브릭으로 블록체인을 구성해 본다.</td></tr> <tr><td>교육효과</td><td c",
+      "tags": [],
+      "topics": [
+        "colspan",
+        "td",
+        "th",
+        "tr",
+        "기술을",
+        "데이터",
+        "블록체인",
+        "사업내용"
+      ],
+      "entities": [
+        "160h",
+        "colspan",
+        "td",
+        "th",
+        "tr",
+        "교육",
+        "기술을",
+        "데이터",
+        "보안",
+        "블록체인",
+        "사업내용",
+        "시스템"
+      ]
+    },
+    {
+      "id": "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회",
+      "title": "사업내용",
+      "path": "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md",
+      "summary": "| 항목 | 내용 | | --- | --- | | 교육목적 | 블록체인 기술을 활용하여 뱅킹 시스템을 구현한다. | | 교육수준 | 고급 | | 세부역량 | 기획력, 분석력, 기술활용, 의사소통 등 | | 교육시간 | 160H | | 교육구분 | 블록체인 | | 기술 스택 | 자바스크립트, 도커, 리눅스, Go |",
+      "tags": [],
+      "topics": [
+        "160h",
+        "기술",
+        "뱅킹",
+        "블록체인",
+        "사업내용",
+        "스택",
+        "하이퍼레저",
+        "항목"
+      ],
+      "entities": [
+        "160h",
+        "교육내용",
+        "교육목적",
+        "교육효과",
+        "기본",
+        "기술을",
+        "뱅킹",
+        "블록체인",
+        "사업내용",
+        "시스템",
+        "정보",
+        "하이퍼레저"
+      ]
+    },
+    {
       "id": "docs/comfyui-remote-zimage",
       "title": "Remote ComfyUI Z-Image Setup",
       "path": "docs/comfyui-remote-zimage.md",
@@ -2988,6 +3050,81 @@
         "엑셀",
         "처리",
         "프롬프트"
+      ]
+    },
+    {
+      "id": "실습결과물/28/kordoc 설치 프롬프트",
+      "title": "kordoc mcp 설치",
+      "path": "실습결과물/28/kordoc 설치 프롬프트.md",
+      "summary": "설치",
+      "tags": [],
+      "topics": [
+        "kordoc",
+        "mcp",
+        "설치"
+      ],
+      "entities": [
+        "kordoc",
+        "mcp",
+        "설치"
+      ]
+    },
+    {
+      "id": "실습결과물/28/marketing_campaigns_assets/infographic_prompt",
+      "title": "Marketing Campaigns Infographic Prompt",
+      "path": "실습결과물/28/marketing_campaigns_assets/infographic_prompt.md",
+      "summary": "Use case: infographic-diagram Asset type: executive one-page business infographic Primary request: 2025 marketing campaign performance infographic in Korean for executives Style/medium: clean corporate infographic, data-storytelling layout, sharp typography, modern dashboard aest",
+      "tags": [],
+      "topics": [
+        "asset",
+        "campaigns",
+        "case",
+        "diagram",
+        "infographic",
+        "marketing",
+        "prompt",
+        "use"
+      ],
+      "entities": [
+        "asset",
+        "campaigns",
+        "case",
+        "diagram",
+        "infographic",
+        "marketing",
+        "prompt",
+        "use"
+      ]
+    },
+    {
+      "id": "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report",
+      "title": "Marketing Campaigns 분석 보고서",
+      "path": "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report.md",
+      "summary": "대상 파일: `C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\14 Marketing Campaigns.xlsx` - 분석 건수: 1000개 캠페인 - 기간: 2024-01-02 ~ 2026-01-17 - 채널 수: 5개 - 산출물 폴더: `C:\\Users\\Administrator\\dxAx\\실습결과물\\17\\marketing_campaigns_assets`",
+      "tags": [],
+      "topics": [
+        "17",
+        "administrator",
+        "campaigns",
+        "dxax",
+        "marketing",
+        "users",
+        "분석",
+        "파일"
+      ],
+      "entities": [
+        "17",
+        "administrator",
+        "campaigns",
+        "dxax",
+        "kpi",
+        "marketing",
+        "users",
+        "결과",
+        "모델",
+        "분석",
+        "성과",
+        "채널별"
       ]
     }
   ]

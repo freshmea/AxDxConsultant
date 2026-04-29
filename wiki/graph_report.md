@@ -1,12 +1,12 @@
 # Graph Report
 
-- Generated: 2026-04-28T00:23:06.423625+00:00
-- Pages: 99
+- Generated: 2026-04-29T00:28:24.658255+00:00
+- Pages: 104
 - Edges: 89
-- Estimated full corpus tokens: 89726
+- Estimated full corpus tokens: 93139
 - Smart Connections bridge: enabled
-- Code files scanned: 28
-- Code graph: 1046 nodes / 3057 edges / 16 communities
+- Code files scanned: 29
+- Code graph: 1182 nodes / 3539 edges / 19 communities
 
 ## Top Tags
 
@@ -29,7 +29,7 @@
 ## Top Topics
 
 - `업무` x 14
-- `분석` x 10
+- `분석` x 11
 - `인덱스` x 10
 - `수중드론` x 10
 - `프롬프트` x 10
@@ -38,24 +38,24 @@
 - `사업화` x 9
 - `wiki` x 8
 - `1페이지` x 8
+- `데이터` x 7
 - `작성` x 7
 - `고려의` x 7
 - `그림자` x 7
 - `새벽` x 7
-- `설계자` x 7
 
 ## Top Entities
 
 - `실습결과물` x 13
 - `업무` x 13
-- `분석` x 10
+- `분석` x 11
 - `인덱스` x 10
 - `1페이지` x 10
 - `수중드론` x 10
 - `사업화` x 9
 - `프롬프트` x 9
 - `llm` x 8
-- `데이터` x 7
+- `데이터` x 8
 - `작성` x 7
 - `소설` x 7
 - `고려의` x 7
@@ -73,9 +73,9 @@
 - `community-007` | size=5 | representative=[실습결과물 06 인덱스](../실습결과물/06/00-INDEX.md)
 - `community-008` | size=5 | representative=[실습결과물 09 인덱스](../실습결과물/09/00-INDEX.md)
 - `community-009` | size=4 | representative=[실습결과물 15 인덱스](../실습결과물/15/00-INDEX.md)
-- `community-010` | size=1 | representative=[Remote ComfyUI Z-Image Setup](../docs/comfyui-remote-zimage.md)
-- `community-011` | size=1 | representative=[ComfyUI Local Setup](../docs/comfyui-setup.md)
-- `community-012` | size=1 | representative=[Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
+- `community-010` | size=1 | representative=[사업내용](../docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회.md)
+- `community-011` | size=1 | representative=[사업내용](../docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md)
+- `community-012` | size=1 | representative=[Remote ComfyUI Z-Image Setup](../docs/comfyui-remote-zimage.md)
 
 ## Most Connected Pages
 
@@ -106,6 +106,8 @@
 ## Orphan Candidates
 
 - [LLM Wiki Schema](../AGENTS.md)
+- [사업내용](../docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회.md)
+- [사업내용](../docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md)
 - [Remote ComfyUI Z-Image Setup](../docs/comfyui-remote-zimage.md)
 - [ComfyUI Local Setup](../docs/comfyui-setup.md)
 - [Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
@@ -123,31 +125,29 @@
 - [Troubleshooting](../skills/troubleshooting.md)
 - [Wiki LLM Setup](../skills/wiki-llm-setup/SKILL.md)
 - [PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지](../실습결과물/06/deep-research-report.md)
-- [머메이드 테스트](../실습결과물/06/mermaidTest.md)
-- [2. 교육 요약본 (1페이지)](../실습결과물/06/paperclipai교육요약.md)
 
 ## Code Graph
 
-- language `python` x 25
+- language `python` x 26
 - language `unsupported` x 3
-- relation `calls` x 2667
-- relation `defines` x 219
-- relation `imports` x 170
+- relation `calls` x 3113
+- relation `defines` x 231
+- relation `imports` x 194
 - relation `inherits` x 1
-- confidence `EXTRACTED` x 3057
+- confidence `EXTRACTED` x 3539
 
 ## Code God Nodes
 
+- `build_summary` | kind=function | degree=144 | path=`scripts/analyze_marketing_campaigns.py`
 - `build_figures` | kind=function | degree=129 | path=`실습결과물/16/imports85_plotly_report.py`
 - `score_pages` | kind=function | degree=127 | path=`llm_wiki/cli.py`
 - `write_outputs` | kind=function | degree=110 | path=`llm_wiki/indexer.py`
+- `main` | kind=function | degree=110 | path=`scripts/analyze_marketing_campaigns.py`
+- `create_visualizations` | kind=function | degree=107 | path=`scripts/analyze_marketing_campaigns.py`
 - `main` | kind=function | degree=105 | path=`llm_wiki/cli.py`
 - `run_analysis` | kind=function | degree=100 | path=`orange_example_10/analyze_titanic.py`
 - `build_index` | kind=function | degree=84 | path=`llm_wiki/indexer.py`
 - `load_and_clean_data` | kind=function | degree=77 | path=`실습결과물/16/imports85_plotly_report.py`
-- `main` | kind=function | degree=70 | path=`orange_example_10/train_adaboost_titanic.py`
-- `generate_plots` | kind=function | degree=68 | path=`orange_example_10/analyze_bodyfat_visuals.py`
-- `main` | kind=function | degree=68 | path=`orange_example_10/rewrite_bodyfat_report_preview.py`
 
 ## Surprising Code Connections
 
@@ -155,8 +155,8 @@
 
 ## Suggested Code Questions
 
-- Which modules and functions depend most on `build_figures`?
-- How is `build_figures` connected to `score_pages`?
+- Which modules and functions depend most on `build_summary`?
+- How is `build_summary` connected to `build_figures`?
 - Which cross-file call paths are most central in this codebase?
 - Which import relationships create the strongest coupling across modules?
 - Where does inheritance appear, and what architectural role does it play?

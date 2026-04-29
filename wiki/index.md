@@ -1,15 +1,15 @@
 # Wiki Index
 
-- Generated: 2026-04-28T00:23:06.423625+00:00
-- Markdown pages: 99
+- Generated: 2026-04-29T00:28:24.658255+00:00
+- Markdown pages: 104
 - Resolved edges: 89
-- Communities: 44
-- Estimated full-read tokens: 89726
+- Communities: 49
+- Estimated full-read tokens: 93139
 - Ignore file: `.llmwikiignore`
 - Semantic search: enabled
 - Smart Connections bridge: enabled
-- Code graph nodes: 1046
-- Code graph edges: 3057
+- Code graph nodes: 1182
+- Code graph edges: 3539
 
 ## Pages
 
@@ -20,6 +20,20 @@
   - Topics: llm, local, repository, rules, schema
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 12
+- [사업내용](../docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회.md)
+  - Path: `docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회.md`
+  - Summary: <table> <tr><th>교육목적</th><th colspan="6">블록체인 기술을 활용하여 데이터 보안 시스템을 구현한다.</th></tr> <tr><td>교육내용</td><td colspan="6">1. 분산컴퓨팅 기반 불변의 공유원장 기술로서의 블록체인을 이해한다.<br>2. 합의 알고리즘을 이해하고, 디지털화폐에 들어간 기술과 한계 사항을 파악한다.<br>3. 보안기술을 알아보고. 하이퍼레저 패브릭으로 블록체인을 구성해 본다.</td></tr> <tr><td>교육효과</td><td c
+  - Tags: (none)
+  - Topics: colspan, td, th, tr, 기술을
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [사업내용](../docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md)
+  - Path: `docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md`
+  - Summary: | 항목 | 내용 | | --- | --- | | 교육목적 | 블록체인 기술을 활용하여 뱅킹 시스템을 구현한다. | | 교육수준 | 고급 | | 세부역량 | 기획력, 분석력, 기술활용, 의사소통 등 | | 교육시간 | 160H | | 교육구분 | 블록체인 | | 기술 스택 | 자바스크립트, 도커, 리눅스, Go |
+  - Tags: (none)
+  - Topics: 160h, 기술, 뱅킹, 블록체인, 사업내용
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
 - [Remote ComfyUI Z-Image Setup](../docs/comfyui-remote-zimage.md)
   - Path: `docs/comfyui-remote-zimage.md`
   - Summary: Remote endpoint
@@ -706,6 +720,27 @@
   - Topics: text, users, 데이터, 되지, 않아서
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 12
+- [kordoc mcp 설치](../실습결과물/28/kordoc 설치 프롬프트.md)
+  - Path: `실습결과물/28/kordoc 설치 프롬프트.md`
+  - Summary: 설치
+  - Tags: (none)
+  - Topics: kordoc, mcp, 설치
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [Marketing Campaigns Infographic Prompt](../실습결과물/28/marketing_campaigns_assets/infographic_prompt.md)
+  - Path: `실습결과물/28/marketing_campaigns_assets/infographic_prompt.md`
+  - Summary: Use case: infographic-diagram Asset type: executive one-page business infographic Primary request: 2025 marketing campaign performance infographic in Korean for executives Style/medium: clean corporate infographic, data-storytelling layout, sharp typography, modern dashboard aest
+  - Tags: (none)
+  - Topics: asset, campaigns, case, diagram, infographic
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [Marketing Campaigns 분석 보고서](../실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report.md)
+  - Path: `실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report.md`
+  - Summary: 대상 파일: `C:\Users\Administrator\dxAx\실습결과물\17\14 Marketing Campaigns.xlsx` - 분석 건수: 1000개 캠페인 - 기간: 2024-01-02 ~ 2026-01-17 - 채널 수: 5개 - 산출물 폴더: `C:\Users\Administrator\dxAx\실습결과물\17\marketing_campaigns_assets`
+  - Tags: (none)
+  - Topics: 17, administrator, campaigns, dxax, marketing
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
 
 ## Unresolved Links
 

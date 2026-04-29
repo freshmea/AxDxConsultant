@@ -1163,6 +1163,178 @@
     {
       "id": "community-010",
       "size": 1,
+      "representative_page_id": "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회",
+      "representative_title": "사업내용",
+      "representative_path": "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회.md",
+      "summary": "사업내용 중심의 지식 군집입니다. 핵심 주제는 colspan, td, th, tr이며, 대표 문서는 사업내용 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "colspan",
+          1
+        ],
+        [
+          "td",
+          1
+        ],
+        [
+          "th",
+          1
+        ],
+        [
+          "tr",
+          1
+        ],
+        [
+          "기술을",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ],
+        [
+          "블록체인",
+          1
+        ],
+        [
+          "사업내용",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "160h",
+          1
+        ],
+        [
+          "colspan",
+          1
+        ],
+        [
+          "td",
+          1
+        ],
+        [
+          "th",
+          1
+        ],
+        [
+          "tr",
+          1
+        ],
+        [
+          "교육",
+          1
+        ],
+        [
+          "기술을",
+          1
+        ],
+        [
+          "데이터",
+          1
+        ]
+      ],
+      "page_ids": [
+        "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회"
+      ],
+      "paths": [
+        "docs/1. 블록체인 기술을 활용한 데이터 보안 시스템_교육_한국융합인재교육협회.md"
+      ],
+      "titles": [
+        "사업내용"
+      ]
+    },
+    {
+      "id": "community-011",
+      "size": 1,
+      "representative_page_id": "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회",
+      "representative_title": "사업내용",
+      "representative_path": "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md",
+      "summary": "사업내용 중심의 지식 군집입니다. 핵심 주제는 160h, 기술, 뱅킹, 블록체인이며, 대표 문서는 사업내용 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "160h",
+          1
+        ],
+        [
+          "기술",
+          1
+        ],
+        [
+          "뱅킹",
+          1
+        ],
+        [
+          "블록체인",
+          1
+        ],
+        [
+          "사업내용",
+          1
+        ],
+        [
+          "스택",
+          1
+        ],
+        [
+          "하이퍼레저",
+          1
+        ],
+        [
+          "항목",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "160h",
+          1
+        ],
+        [
+          "교육내용",
+          1
+        ],
+        [
+          "교육목적",
+          1
+        ],
+        [
+          "교육효과",
+          1
+        ],
+        [
+          "기본",
+          1
+        ],
+        [
+          "기술을",
+          1
+        ],
+        [
+          "뱅킹",
+          1
+        ],
+        [
+          "블록체인",
+          1
+        ]
+      ],
+      "page_ids": [
+        "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회"
+      ],
+      "paths": [
+        "docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md"
+      ],
+      "titles": [
+        "사업내용"
+      ]
+    },
+    {
+      "id": "community-012",
+      "size": 1,
       "representative_page_id": "docs/comfyui-remote-zimage",
       "representative_title": "Remote ComfyUI Z-Image Setup",
       "representative_path": "docs/comfyui-remote-zimage.md",
@@ -1223,7 +1395,7 @@
       ]
     },
     {
-      "id": "community-011",
+      "id": "community-013",
       "size": 1,
       "representative_page_id": "docs/comfyui-setup",
       "representative_title": "ComfyUI Local Setup",
@@ -1309,7 +1481,7 @@
       ]
     },
     {
-      "id": "community-012",
+      "id": "community-014",
       "size": 1,
       "representative_page_id": "llm_wiki/Hermes-Agent-비교-보고서",
       "representative_title": "Hermes Agent 조사 및 현재 시스템 비교 보고서",
@@ -1395,7 +1567,7 @@
       ]
     },
     {
-      "id": "community-013",
+      "id": "community-015",
       "size": 1,
       "representative_page_id": "llm_wiki/LLM 지식 아키텍처",
       "representative_title": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서",
@@ -1481,7 +1653,7 @@
       ]
     },
     {
-      "id": "community-014",
+      "id": "community-016",
       "size": 1,
       "representative_page_id": "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP",
       "representative_title": "Obsidian Smart Connections Setup",
@@ -1567,7 +1739,7 @@
       ]
     },
     {
-      "id": "community-015",
+      "id": "community-017",
       "size": 1,
       "representative_page_id": "memory_layer/README",
       "representative_title": "Local Memory Layer",
@@ -1653,7 +1825,7 @@
       ]
     },
     {
-      "id": "community-016",
+      "id": "community-018",
       "size": 1,
       "representative_page_id": "notion_app_date_filter_fallback_skill/SKILL",
       "representative_title": "Notion App Date Filter Fallback Skill",
@@ -1739,7 +1911,7 @@
       ]
     },
     {
-      "id": "community-017",
+      "id": "community-019",
       "size": 1,
       "representative_page_id": "orange_example_10/bodyfat_analysis_report",
       "representative_title": "Body Fat Brozek 시각 분석 보고서 (미리보기 중심)",
@@ -1825,7 +1997,7 @@
       ]
     },
     {
-      "id": "community-018",
+      "id": "community-020",
       "size": 1,
       "representative_page_id": "orange_example_10/titanic_adaboost_report",
       "representative_title": "Titanic AdaBoost 분석 보고서",
@@ -1911,7 +2083,7 @@
       ]
     },
     {
-      "id": "community-019",
+      "id": "community-021",
       "size": 1,
       "representative_page_id": "orange_example_10/titanic_survival_report",
       "representative_title": "Titanic 생존 분석 보고서",
@@ -1997,7 +2169,7 @@
       ]
     },
     {
-      "id": "community-020",
+      "id": "community-022",
       "size": 1,
       "representative_page_id": "README",
       "representative_title": "AxDxConsultant",
@@ -2083,7 +2255,7 @@
       ]
     },
     {
-      "id": "community-021",
+      "id": "community-023",
       "size": 1,
       "representative_page_id": "skills/graphify-code-wiki/SKILL",
       "representative_title": "Graphify Code Wiki",
@@ -2169,7 +2341,7 @@
       ]
     },
     {
-      "id": "community-022",
+      "id": "community-024",
       "size": 1,
       "representative_page_id": "skills/local-whisper-gpu/SKILL",
       "representative_title": "Local Whisper GPU",
@@ -2255,7 +2427,7 @@
       ]
     },
     {
-      "id": "community-023",
+      "id": "community-025",
       "size": 1,
       "representative_page_id": "skills/troubleshooting",
       "representative_title": "Troubleshooting",
@@ -2341,7 +2513,7 @@
       ]
     },
     {
-      "id": "community-024",
+      "id": "community-026",
       "size": 1,
       "representative_page_id": "skills/wiki-llm-setup/SKILL",
       "representative_title": "Wiki LLM Setup",
@@ -2427,7 +2599,7 @@
       ]
     },
     {
-      "id": "community-025",
+      "id": "community-027",
       "size": 1,
       "representative_page_id": "실습결과물/15/Youtube 영상 스크립트",
       "representative_title": "Youtube 영상 스크립트",
@@ -2509,7 +2681,7 @@
       ]
     },
     {
-      "id": "community-026",
+      "id": "community-028",
       "size": 1,
       "representative_page_id": "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서",
       "representative_title": "Graphify 기반 LLM Wiki 활용 1페이지 요약보고서",
@@ -2595,7 +2767,7 @@
       ]
     },
     {
-      "id": "community-027",
+      "id": "community-029",
       "size": 1,
       "representative_page_id": "실습결과물/15/YouTube 영상 요약본",
       "representative_title": "YouTube 영상 요약본",
@@ -2641,7 +2813,7 @@
       ]
     },
     {
-      "id": "community-028",
+      "id": "community-030",
       "size": 1,
       "representative_page_id": "실습결과물/15/로컬 whisper 모델 설치 프롬프트",
       "representative_title": "whisper 모델 설치 프롬프트",
@@ -2727,7 +2899,7 @@
       ]
     },
     {
-      "id": "community-029",
+      "id": "community-031",
       "size": 1,
       "representative_page_id": "실습결과물/16/imports-85_actual_data_summary",
       "representative_title": "imports-85 실제데이터 기반 요약보고서",
@@ -2813,7 +2985,7 @@
       ]
     },
     {
-      "id": "community-030",
+      "id": "community-032",
       "size": 1,
       "representative_page_id": "실습결과물/16/imports-85_interactive_report",
       "representative_title": "자동차 모델 가격·성능·연비 관계 인터랙티브 보고서",
@@ -2899,7 +3071,7 @@
       ]
     },
     {
-      "id": "community-031",
+      "id": "community-033",
       "size": 1,
       "representative_page_id": "실습결과물/16/imports-85_report",
       "representative_title": "imports-85 정제 보고서",
@@ -2985,7 +3157,7 @@
       ]
     },
     {
-      "id": "community-032",
+      "id": "community-034",
       "size": 1,
       "representative_page_id": "실습결과물/16/retail_sales_report_assets/README",
       "representative_title": "Retail Sales Seaborn Graphs",
@@ -3071,7 +3243,7 @@
       ]
     },
     {
-      "id": "community-033",
+      "id": "community-035",
       "size": 1,
       "representative_page_id": "실습결과물/16/retail_sales_trend_onepage_report",
       "representative_title": "Retail Sales 추세 1페이지 보고서",
@@ -3157,7 +3329,7 @@
       ]
     },
     {
-      "id": "community-034",
+      "id": "community-036",
       "size": 1,
       "representative_page_id": "실습결과물/16/리테일 분석판매보고서노트북LM",
       "representative_title": "리테일 분석판매보고서노트북LM",
@@ -3227,7 +3399,7 @@
       ]
     },
     {
-      "id": "community-035",
+      "id": "community-037",
       "size": 1,
       "representative_page_id": "실습결과물/16/매출분석에 쓰인 프롬프트",
       "representative_title": "매출 분석에 쓰인 프롬프트",
@@ -3313,7 +3485,7 @@
       ]
     },
     {
-      "id": "community-036",
+      "id": "community-038",
       "size": 1,
       "representative_page_id": "실습결과물/16/자동차수출예제관련프롬프트",
       "representative_title": "자동차 수출 관련 예제 프롬프트",
@@ -3367,7 +3539,7 @@
       ]
     },
     {
-      "id": "community-037",
+      "id": "community-039",
       "size": 1,
       "representative_page_id": "실습결과물/16/한페이지요약 HRD AX 수업도향",
       "representative_title": "📊 2026 HRD Trend Report 요약",
@@ -3453,7 +3625,7 @@
       ]
     },
     {
-      "id": "community-038",
+      "id": "community-040",
       "size": 1,
       "representative_page_id": "실습결과물/17/02 Project Management_manager_ranking_report",
       "representative_title": "Project Management 매니저 성과 1페이지 요약 보고서",
@@ -3539,7 +3711,7 @@
       ]
     },
     {
-      "id": "community-039",
+      "id": "community-041",
       "size": 1,
       "representative_page_id": "실습결과물/17/02 Project Management_SCQA_insight_report",
       "representative_title": "프로젝트 포트폴리오 SCQA 인사이트 리포트",
@@ -3625,7 +3797,7 @@
       ]
     },
     {
-      "id": "community-040",
+      "id": "community-042",
       "size": 1,
       "representative_page_id": "실습결과물/17/02 Project Management_summary_report",
       "representative_title": "Project Management 데이터 1페이지 요약 보고서",
@@ -3711,7 +3883,7 @@
       ]
     },
     {
-      "id": "community-041",
+      "id": "community-043",
       "size": 1,
       "representative_page_id": "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report",
       "representative_title": "E-Commerce Orders 매장별 일매출 이상치 분석 보고서",
@@ -3797,7 +3969,7 @@
       ]
     },
     {
-      "id": "community-042",
+      "id": "community-044",
       "size": 1,
       "representative_page_id": "실습결과물/17/08 E-Commerce Orders_price_outlier_report",
       "representative_title": "E-Commerce Orders 가격 이상치 분석 보고서",
@@ -3883,7 +4055,7 @@
       ]
     },
     {
-      "id": "community-043",
+      "id": "community-045",
       "size": 1,
       "representative_page_id": "실습결과물/17/project Magement_blog",
       "representative_title": "project Magement_blog",
@@ -3961,7 +4133,7 @@
       ]
     },
     {
-      "id": "community-044",
+      "id": "community-046",
       "size": 1,
       "representative_page_id": "실습결과물/17/엑셀처리프롬프트",
       "representative_title": "엑셀 데이터 처리 프롬프트",
@@ -4045,10 +4217,228 @@
       "titles": [
         "엑셀 데이터 처리 프롬프트"
       ]
+    },
+    {
+      "id": "community-047",
+      "size": 1,
+      "representative_page_id": "실습결과물/28/kordoc 설치 프롬프트",
+      "representative_title": "kordoc mcp 설치",
+      "representative_path": "실습결과물/28/kordoc 설치 프롬프트.md",
+      "summary": "kordoc mcp 설치 중심의 지식 군집입니다. 핵심 주제는 kordoc, mcp, 설치이며, 대표 문서는 kordoc mcp 설치 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "kordoc",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "설치",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "kordoc",
+          1
+        ],
+        [
+          "mcp",
+          1
+        ],
+        [
+          "설치",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/28/kordoc 설치 프롬프트"
+      ],
+      "paths": [
+        "실습결과물/28/kordoc 설치 프롬프트.md"
+      ],
+      "titles": [
+        "kordoc mcp 설치"
+      ]
+    },
+    {
+      "id": "community-048",
+      "size": 1,
+      "representative_page_id": "실습결과물/28/marketing_campaigns_assets/infographic_prompt",
+      "representative_title": "Marketing Campaigns Infographic Prompt",
+      "representative_path": "실습결과물/28/marketing_campaigns_assets/infographic_prompt.md",
+      "summary": "Marketing Campaigns Infographic Prompt 중심의 지식 군집입니다. 핵심 주제는 asset, campaigns, case, diagram이며, 대표 문서는 Marketing Campaigns Infographic Prompt 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "asset",
+          1
+        ],
+        [
+          "campaigns",
+          1
+        ],
+        [
+          "case",
+          1
+        ],
+        [
+          "diagram",
+          1
+        ],
+        [
+          "infographic",
+          1
+        ],
+        [
+          "marketing",
+          1
+        ],
+        [
+          "prompt",
+          1
+        ],
+        [
+          "use",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "asset",
+          1
+        ],
+        [
+          "campaigns",
+          1
+        ],
+        [
+          "case",
+          1
+        ],
+        [
+          "diagram",
+          1
+        ],
+        [
+          "infographic",
+          1
+        ],
+        [
+          "marketing",
+          1
+        ],
+        [
+          "prompt",
+          1
+        ],
+        [
+          "use",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/28/marketing_campaigns_assets/infographic_prompt"
+      ],
+      "paths": [
+        "실습결과물/28/marketing_campaigns_assets/infographic_prompt.md"
+      ],
+      "titles": [
+        "Marketing Campaigns Infographic Prompt"
+      ]
+    },
+    {
+      "id": "community-049",
+      "size": 1,
+      "representative_page_id": "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report",
+      "representative_title": "Marketing Campaigns 분석 보고서",
+      "representative_path": "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report.md",
+      "summary": "Marketing Campaigns 분석 보고서 중심의 지식 군집입니다. 핵심 주제는 17, administrator, campaigns, dxax이며, 대표 문서는 Marketing Campaigns 분석 보고서 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "17",
+          1
+        ],
+        [
+          "administrator",
+          1
+        ],
+        [
+          "campaigns",
+          1
+        ],
+        [
+          "dxax",
+          1
+        ],
+        [
+          "marketing",
+          1
+        ],
+        [
+          "users",
+          1
+        ],
+        [
+          "분석",
+          1
+        ],
+        [
+          "파일",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "17",
+          1
+        ],
+        [
+          "administrator",
+          1
+        ],
+        [
+          "campaigns",
+          1
+        ],
+        [
+          "dxax",
+          1
+        ],
+        [
+          "kpi",
+          1
+        ],
+        [
+          "marketing",
+          1
+        ],
+        [
+          "users",
+          1
+        ],
+        [
+          "결과",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report"
+      ],
+      "paths": [
+        "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report.md"
+      ],
+      "titles": [
+        "Marketing Campaigns 분석 보고서"
+      ]
     }
   ],
   "stats": {
-    "community_count": 44,
+    "community_count": 49,
     "largest_community_size": 11
   }
 }

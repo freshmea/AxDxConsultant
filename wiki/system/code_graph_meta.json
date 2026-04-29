@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-04-28T00:23:29.834674+00:00",
+  "generated_at": "2026-04-29T00:28:49.365164+00:00",
   "stats": {
-    "files_scanned": 28,
+    "files_scanned": 29,
     "files_extracted": 0,
-    "cache_hits": 28,
+    "cache_hits": 29,
     "stale_cache_removed": 0,
-    "node_count": 1046,
-    "edge_count": 3057,
-    "community_count": 16
+    "node_count": 1182,
+    "edge_count": 3539,
+    "community_count": 19
   },
   "facets": {
     "languages": [
       [
         "python",
-        25
+        26
       ],
       [
         "unsupported",
@@ -23,15 +23,15 @@
     "relations": [
       [
         "calls",
-        2667
+        3113
       ],
       [
         "defines",
-        219
+        231
       ],
       [
         "imports",
-        170
+        194
       ],
       [
         "inherits",
@@ -41,18 +41,26 @@
     "confidence": [
       [
         "EXTRACTED",
-        3057
+        3539
       ]
     ]
   },
   "analysis": {
     "god_nodes": [
       {
+        "id": "symbol::scripts/analyze_marketing_campaigns.py::build_summary",
+        "label": "build_summary",
+        "kind": "function",
+        "path": "scripts/analyze_marketing_campaigns.py",
+        "community_id": "community-002",
+        "degree": 144
+      },
+      {
         "id": "symbol::_/16/imports85_plotly_report.py::build_figures",
         "label": "build_figures",
         "kind": "function",
         "path": "실습결과물/16/imports85_plotly_report.py",
-        "community_id": "community-002",
+        "community_id": "community-003",
         "degree": 129
       },
       {
@@ -68,8 +76,24 @@
         "label": "write_outputs",
         "kind": "function",
         "path": "llm_wiki/indexer.py",
-        "community_id": "community-010",
+        "community_id": "community-012",
         "degree": 110
+      },
+      {
+        "id": "symbol::scripts/analyze_marketing_campaigns.py::main",
+        "label": "main",
+        "kind": "function",
+        "path": "scripts/analyze_marketing_campaigns.py",
+        "community_id": "community-002",
+        "degree": 110
+      },
+      {
+        "id": "symbol::scripts/analyze_marketing_campaigns.py::create_visualizations",
+        "label": "create_visualizations",
+        "kind": "function",
+        "path": "scripts/analyze_marketing_campaigns.py",
+        "community_id": "community-002",
+        "degree": 107
       },
       {
         "id": "symbol::llm_wiki/cli.py::main",
@@ -84,7 +108,7 @@
         "label": "run_analysis",
         "kind": "function",
         "path": "orange_example_10/analyze_titanic.py",
-        "community_id": "community-006",
+        "community_id": "community-007",
         "degree": 100
       },
       {
@@ -92,7 +116,7 @@
         "label": "build_index",
         "kind": "function",
         "path": "llm_wiki/indexer.py",
-        "community_id": "community-003",
+        "community_id": "community-001",
         "degree": 84
       },
       {
@@ -100,38 +124,14 @@
         "label": "load_and_clean_data",
         "kind": "function",
         "path": "실습결과물/16/imports85_plotly_report.py",
-        "community_id": "community-002",
+        "community_id": "community-003",
         "degree": 77
-      },
-      {
-        "id": "symbol::orange_example_10/train_adaboost_titanic.py::main",
-        "label": "main",
-        "kind": "function",
-        "path": "orange_example_10/train_adaboost_titanic.py",
-        "community_id": "community-006",
-        "degree": 70
-      },
-      {
-        "id": "symbol::orange_example_10/analyze_bodyfat_visuals.py::generate_plots",
-        "label": "generate_plots",
-        "kind": "function",
-        "path": "orange_example_10/analyze_bodyfat_visuals.py",
-        "community_id": "community-004",
-        "degree": 68
-      },
-      {
-        "id": "symbol::orange_example_10/rewrite_bodyfat_report_preview.py::main",
-        "label": "main",
-        "kind": "function",
-        "path": "orange_example_10/rewrite_bodyfat_report_preview.py",
-        "community_id": "community-004",
-        "degree": 68
       }
     ],
     "surprising_connections": [],
     "suggested_questions": [
-      "Which modules and functions depend most on `build_figures`?",
-      "How is `build_figures` connected to `score_pages`?",
+      "Which modules and functions depend most on `build_summary`?",
+      "How is `build_summary` connected to `build_figures`?",
       "Which cross-file call paths are most central in this codebase?",
       "Which import relationships create the strongest coupling across modules?",
       "Where does inheritance appear, and what architectural role does it play?",
