@@ -2,10 +2,8 @@
 
 ```text
 
-paperclipai 를 설치하려고 한다. 전역으로 설치해 주고 관련 설정 파일은 로컬에 적당한 위치에 저장될 수 있게 해줘.
-https://github.com/reallygood83/paperclip-company-factory/tree/main
-이 페이지에서 튜닝된 내용을 기초로해서 설치를 해줘
+paperclipai 를 전역에 설치하고 dxax 폴더를 기준으로 해서 실행하게 만들어줘
 
-windows 에서는 wsl이나 도커로 하라고 안내가 되어 있다. 다시 플랜을 작서해줘
+헤르메스 agent 를 설치해서 paperclipai 하고 연동하려고 한다. wsl2 를 지원한다고 하니 참고해서 설치해줘
 
 ```
