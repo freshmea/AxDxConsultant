@@ -35,18 +35,19 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 ## Query Workflow
 
 1. Load `wiki/system/query_cache.json`.
-2. Rank candidate pages using title, summary, headings, tags, topics, entities, path tokens, graph neighbors, semantic similarity, and community summaries.
-3. Prefer the `ask` workflow so the graph-first route and token savings are logged.
-4. For code-oriented questions, use the code-graph workflow first and read `wiki/system/code_graph.json` or `wiki/system/code_graph_meta.json` before opening many files.
-5. Read only the top-ranked markdown pages that are needed to answer the question.
-6. If the question is about evolving configuration or operational state, also check `memory-search` before reading many raw pages.
-7. If a useful synthesis is created, store it back into `wiki/notes/`.
-8. When tracing local code relationships, use `graph-neighbors` before broader code reads when a single node's adjacency is enough.
-9. When using `ask`, follow the returned `workflow.instruction` and prefer its `code_read_plan` or `read_plan` before ad hoc file opens.
-10. For code-oriented `ask` results, treat `code_read_plan` as the primary read target and use the markdown `selected` or `read_plan` pages only for broader context when needed.
-11. For code-oriented `ask` results, inspect `code_relation` when present before falling back to broader graph traversal or ad hoc code reads.
-12. For lecture, transcript, or meeting-summary requests, read the full source span before writing, then weight the summary according to where the session spent its time instead of over-indexing the opening recap.
-13. When a summary request references multiple related files, inspect all relevant files first and produce a balanced synthesis that reflects the whole session, including later practical sections, setup details, and conclusions.
+2. For retrieval context, also inspect `wiki/system/community_summaries.json`, `wiki/system/semantic_meta.json`, and `wiki/system/obsidian_semantic_cache.json` before broad markdown reads.
+3. Rank candidate pages using title, summary, headings, tags, topics, entities, path tokens, graph neighbors, semantic similarity, community summaries, and the Smart Connections bridge bonus from the Obsidian semantic cache.
+4. Prefer the `ask` workflow so the graph-first route and token savings are logged.
+5. For code-oriented questions, use the code-graph workflow first and read `wiki/system/code_graph.json` or `wiki/system/code_graph_meta.json` before opening many files.
+6. Read only the top-ranked markdown pages that are needed to answer the question.
+7. If the question is about evolving configuration or operational state, also check `memory-search` before reading many raw pages.
+8. If a useful synthesis is created, store it back into `wiki/notes/`.
+9. When tracing local code relationships, use `graph-neighbors` before broader code reads when a single node's adjacency is enough.
+10. When using `ask`, follow the returned `workflow.instruction` and prefer its `code_read_plan` or `read_plan` before ad hoc file opens.
+11. For code-oriented `ask` results, treat `code_read_plan` as the primary read target and use the markdown `selected` or `read_plan` pages only for broader context when needed.
+12. For code-oriented `ask` results, inspect `code_relation` when present before falling back to broader graph traversal or ad hoc code reads.
+13. For lecture, transcript, or meeting-summary requests, read the full source span before writing, then weight the summary according to where the session spent its time instead of over-indexing the opening recap.
+14. When a summary request references multiple related files, inspect all relevant files first and produce a balanced synthesis that reflects the whole session, including later practical sections, setup details, and conclusions.
 
 ## Maintenance Workflow
 

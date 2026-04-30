@@ -1,15 +1,15 @@
 # Wiki Index
 
-- Generated: 2026-04-29T00:28:24.658255+00:00
-- Markdown pages: 104
+- Generated: 2026-04-30T00:37:33.614004+00:00
+- Markdown pages: 112
 - Resolved edges: 89
-- Communities: 49
-- Estimated full-read tokens: 93139
+- Communities: 57
+- Estimated full-read tokens: 97001
 - Ignore file: `.llmwikiignore`
 - Semantic search: enabled
 - Smart Connections bridge: enabled
-- Code graph nodes: 1182
-- Code graph edges: 3539
+- Code graph nodes: 1260
+- Code graph edges: 3719
 
 ## Pages
 
@@ -46,6 +46,13 @@
   - Summary: 이 작업 공간에는 ComfyUI를 별도 가상환경으로 설치했다.
   - Tags: (none)
   - Topics: comfyui, comfyui를, local, setup, 가상환경으로
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [OpenCode Tool Calling Guide For `gemma4:e4b`](../docs/opencode-gemma4e2b-tool-calling-guide.md)
+  - Path: `docs/opencode-gemma4e2b-tool-calling-guide.md`
+  - Summary: 이 문서는 OpenCode에서 `ollama/gemma4:e4b`를 사용할 때 도구 호출 정확도를 높이기 위한 운영 지침이다.
+  - Tags: (none)
+  - Topics: behavior, calling, e4b, gemma4, guide
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 0
 - [Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
@@ -118,6 +125,20 @@
   - Topics: 2026_4_6, 2026_4_7, 2026_4_8, 2026_4_9, axdx
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 12
+- [Pyramid Program](../scripts/pyramid.md)
+  - Path: `scripts/pyramid.md`
+  - Summary: 사용자로부터 숫자를 입력받아 피라미드 형태의 별(*)을 출력하는 프로그램입니다.
+  - Tags: (none)
+  - Topics: program, pyramid, 사용자로부터, 숫자를, 입력받아
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [xwing.py](../scripts/xwing.md)
+  - Path: `scripts/xwing.md`
+  - Summary: `xwing.py`는 숫자를 입력받아 터미널에 `*` 문자로 X 모양을 출력하는 프로그램입니다.
+  - Tags: (none)
+  - Topics: py, xwing, 모양을, 문자로, 숫자를
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
 - [Graphify Code Wiki](../skills/graphify-code-wiki/SKILL.md)
   - Path: `skills/graphify-code-wiki/SKILL.md`
   - Summary: Use this skill when the task is about the Graphify-inspired code graph integration in this repository, not for generic wiki maintenance.
@@ -125,6 +146,13 @@
   - Topics: code, graph, graphify, integration, repository
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 12
+- [Local LLM Stack Setup](../skills/local-llm-stack-setup/SKILL.md)
+  - Path: `skills/local-llm-stack-setup/SKILL.md`
+  - Summary: Use this skill to get the repository into a runnable local-AI state before task work starts.
+  - Tags: (none)
+  - Topics: llm, local, setup, skill, stack
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
 - [Local Whisper GPU](../skills/local-whisper-gpu/SKILL.md)
   - Path: `skills/local-whisper-gpu/SKILL.md`
   - Summary: Set up the STT stack in this order.
@@ -146,6 +174,20 @@
   - Topics: change, graph, keep, llm, recreate
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 12
+- [testOpenCode Agent Guide](../testOpenCode/AGENTS.md)
+  - Path: `testOpenCode/AGENTS.md`
+  - Summary: This project is a small full-stack DXAX class promotion site.
+  - Tags: (none)
+  - Topics: agent, full, guide, is, project
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [DXAX Class Promotion Site](../testOpenCode/README.md)
+  - Path: `testOpenCode/README.md`
+  - Summary: Next.js와 Tailwind CSS로 만든 수업 홍보 페이지와 FastAPI 기반 동적 수업 노트 API입니다.
+  - Tags: (none)
+  - Topics: class, dxax, js와, next, promotion
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
 - [실습결과물 06 인덱스](../실습결과물/06/00-INDEX.md)
   - Path: `실습결과물/06/00-INDEX.md`
   - Summary: tags: [실습결과물, day06, 리서치, paperclip, markdown]
@@ -739,6 +781,20 @@
   - Summary: 대상 파일: `C:\Users\Administrator\dxAx\실습결과물\17\14 Marketing Campaigns.xlsx` - 분석 건수: 1000개 캠페인 - 기간: 2024-01-02 ~ 2026-01-17 - 채널 수: 5개 - 산출물 폴더: `C:\Users\Administrator\dxAx\실습결과물\17\marketing_campaigns_assets`
   - Tags: (none)
   - Topics: 17, administrator, campaigns, dxax, marketing
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [codex cli 프롬프트](../실습결과물/29/codex cli프롬프트.md)
+  - Path: `실습결과물/29/codex cli프롬프트.md`
+  - Summary: ```text
+  - Tags: (none)
+  - Topics: cli, codex, text, 프롬프트
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [분기 test](../실습결과물/29/분기 test.md)
+  - Path: `실습결과물/29/분기 test.md`
+  - Summary: 첫 번째 수정 메시지입니다. 추가 메시지 한 줄 더 남깁니다. 두 번째 수정 메시지입니다. 세 번째 수정 메시지입니다.
+  - Tags: (none)
+  - Topics: test, 남깁니다, 메시지, 메시지입니다, 번째
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 0
 

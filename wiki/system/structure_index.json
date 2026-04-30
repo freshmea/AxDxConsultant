@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-29T00:28:24.658255+00:00",
+  "generated_at": "2026-04-30T00:37:33.614004+00:00",
   "pages": [
     {
       "id": "AGENTS",
@@ -33,7 +33,7 @@
       "summary": "This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm-wiki.md` gist.",
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 1906,
+      "tokens_estimate": 2046,
       "community_ids": [
         "community-009"
       ],
@@ -255,6 +255,44 @@
       "obsidian_related": []
     },
     {
+      "id": "docs/opencode-gemma4e2b-tool-calling-guide",
+      "title": "OpenCode Tool Calling Guide For `gemma4:e4b`",
+      "path": "docs/opencode-gemma4e2b-tool-calling-guide.md",
+      "tags": [],
+      "topics": [
+        "behavior",
+        "calling",
+        "e4b",
+        "gemma4",
+        "guide",
+        "mandatory",
+        "opencode",
+        "tool"
+      ],
+      "entities": [
+        "behavior",
+        "calling",
+        "e4b",
+        "gemma4",
+        "guide",
+        "mandatory",
+        "ollama",
+        "opencode",
+        "opencode에서",
+        "search",
+        "tasks",
+        "tool"
+      ],
+      "summary": "이 문서는 OpenCode에서 `ollama/gemma4:e4b`를 사용할 때 도구 호출 정확도를 높이기 위한 운영 지침이다.",
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 860,
+      "community_ids": [
+        "community-014"
+      ],
+      "obsidian_related": []
+    },
+    {
       "id": "llm_wiki/Hermes-Agent-비교-보고서",
       "title": "Hermes Agent 조사 및 현재 시스템 비교 보고서",
       "path": "llm_wiki/Hermes-Agent-비교-보고서.md",
@@ -288,7 +326,7 @@
       "inbound_count": 0,
       "tokens_estimate": 2138,
       "community_ids": [
-        "community-014"
+        "community-015"
       ],
       "obsidian_related": [
         {
@@ -399,7 +437,7 @@
       "inbound_count": 0,
       "tokens_estimate": 5618,
       "community_ids": [
-        "community-015"
+        "community-016"
       ],
       "obsidian_related": [
         {
@@ -510,7 +548,7 @@
       "inbound_count": 0,
       "tokens_estimate": 564,
       "community_ids": [
-        "community-016"
+        "community-017"
       ],
       "obsidian_related": [
         {
@@ -732,7 +770,7 @@
       "inbound_count": 0,
       "tokens_estimate": 325,
       "community_ids": [
-        "community-017"
+        "community-018"
       ],
       "obsidian_related": [
         {
@@ -841,9 +879,9 @@
       "summary": "Notion 앱 연동에서 데이터소스 SQL 도구(`notion-query-data-sources`)가 비활성일 때, `기간` 같은 날짜 속성 기준으로 업무를 정확하게 추출한다.",
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 469,
+      "tokens_estimate": 538,
       "community_ids": [
-        "community-018"
+        "community-019"
       ],
       "obsidian_related": [
         {
@@ -954,7 +992,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1549,
       "community_ids": [
-        "community-019"
+        "community-020"
       ],
       "obsidian_related": [
         {
@@ -1065,7 +1103,7 @@
       "inbound_count": 0,
       "tokens_estimate": 226,
       "community_ids": [
-        "community-020"
+        "community-021"
       ],
       "obsidian_related": [
         {
@@ -1176,7 +1214,7 @@
       "inbound_count": 0,
       "tokens_estimate": 883,
       "community_ids": [
-        "community-021"
+        "community-022"
       ],
       "obsidian_related": [
         {
@@ -1285,9 +1323,9 @@
       "summary": "AxDx 전문가 과정",
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 3336,
+      "tokens_estimate": 3763,
       "community_ids": [
-        "community-022"
+        "community-023"
       ],
       "obsidian_related": [
         {
@@ -1365,6 +1403,79 @@
       ]
     },
     {
+      "id": "scripts/pyramid",
+      "title": "Pyramid Program",
+      "path": "scripts/pyramid.md",
+      "tags": [],
+      "topics": [
+        "program",
+        "pyramid",
+        "사용자로부터",
+        "숫자를",
+        "입력받아",
+        "출력하는",
+        "피라미드",
+        "형태의"
+      ],
+      "entities": [
+        "program",
+        "pyramid",
+        "방법",
+        "사용",
+        "사용자로부터",
+        "설명",
+        "숫자를",
+        "실행",
+        "예시",
+        "입력받아",
+        "코드",
+        "피라미드"
+      ],
+      "summary": "사용자로부터 숫자를 입력받아 피라미드 형태의 별(*)을 출력하는 프로그램입니다.",
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 96,
+      "community_ids": [
+        "community-024"
+      ],
+      "obsidian_related": []
+    },
+    {
+      "id": "scripts/xwing",
+      "title": "xwing.py",
+      "path": "scripts/xwing.md",
+      "tags": [],
+      "topics": [
+        "py",
+        "xwing",
+        "모양을",
+        "문자로",
+        "숫자를",
+        "입력받아",
+        "출력하는",
+        "터미널에"
+      ],
+      "entities": [
+        "py",
+        "xwing",
+        "문자로",
+        "방법",
+        "숫자를",
+        "실행",
+        "예시",
+        "입력받아",
+        "터미널에"
+      ],
+      "summary": "`xwing.py`는 숫자를 입력받아 터미널에 `*` 문자로 X 모양을 출력하는 프로그램입니다.",
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 53,
+      "community_ids": [
+        "community-025"
+      ],
+      "obsidian_related": []
+    },
+    {
       "id": "skills/graphify-code-wiki/SKILL",
       "title": "Graphify Code Wiki",
       "path": "skills/graphify-code-wiki/SKILL.md",
@@ -1398,7 +1509,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1518,
       "community_ids": [
-        "community-023"
+        "community-026"
       ],
       "obsidian_related": [
         {
@@ -1476,6 +1587,44 @@
       ]
     },
     {
+      "id": "skills/local-llm-stack-setup/SKILL",
+      "title": "Local LLM Stack Setup",
+      "path": "skills/local-llm-stack-setup/SKILL.md",
+      "tags": [],
+      "topics": [
+        "llm",
+        "local",
+        "setup",
+        "skill",
+        "stack",
+        "to",
+        "use",
+        "verify"
+      ],
+      "entities": [
+        "confirm",
+        "expected",
+        "get",
+        "layout",
+        "llm",
+        "local",
+        "scope",
+        "setup",
+        "skill",
+        "stack",
+        "to",
+        "use"
+      ],
+      "summary": "Use this skill to get the repository into a runnable local-AI state before task work starts.",
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 738,
+      "community_ids": [
+        "community-027"
+      ],
+      "obsidian_related": []
+    },
+    {
       "id": "skills/local-whisper-gpu/SKILL",
       "title": "Local Whisper GPU",
       "path": "skills/local-whisper-gpu/SKILL.md",
@@ -1509,7 +1658,7 @@
       "inbound_count": 0,
       "tokens_estimate": 612,
       "community_ids": [
-        "community-024"
+        "community-028"
       ],
       "obsidian_related": [
         {
@@ -1620,7 +1769,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1542,
       "community_ids": [
-        "community-025"
+        "community-029"
       ],
       "obsidian_related": [
         {
@@ -1731,7 +1880,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1171,
       "community_ids": [
-        "community-026"
+        "community-030"
       ],
       "obsidian_related": [
         {
@@ -1807,6 +1956,82 @@
           "score": 0.689264
         }
       ]
+    },
+    {
+      "id": "testOpenCode/AGENTS",
+      "title": "testOpenCode Agent Guide",
+      "path": "testOpenCode/AGENTS.md",
+      "tags": [],
+      "topics": [
+        "agent",
+        "full",
+        "guide",
+        "is",
+        "project",
+        "rules",
+        "small",
+        "testopencode"
+      ],
+      "entities": [
+        "agent",
+        "backend",
+        "data",
+        "frontend",
+        "full",
+        "guide",
+        "is",
+        "project",
+        "rules",
+        "small",
+        "source",
+        "stack"
+      ],
+      "summary": "This project is a small full-stack DXAX class promotion site.",
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 1074,
+      "community_ids": [
+        "community-031"
+      ],
+      "obsidian_related": []
+    },
+    {
+      "id": "testOpenCode/README",
+      "title": "DXAX Class Promotion Site",
+      "path": "testOpenCode/README.md",
+      "tags": [],
+      "topics": [
+        "class",
+        "dxax",
+        "js와",
+        "next",
+        "promotion",
+        "site",
+        "수업",
+        "실행"
+      ],
+      "entities": [
+        "backend",
+        "class",
+        "dxax",
+        "frontend",
+        "js와",
+        "next",
+        "promotion",
+        "site",
+        "tailwind",
+        "구조",
+        "변수",
+        "수업"
+      ],
+      "summary": "Next.js와 Tailwind CSS로 만든 수업 홍보 페이지와 FastAPI 기반 동적 수업 노트 API입니다.",
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 277,
+      "community_ids": [
+        "community-032"
+      ],
+      "obsidian_related": []
     },
     {
       "id": "실습결과물/06/00-INDEX",
@@ -8812,7 +9037,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1978,
       "community_ids": [
-        "community-027"
+        "community-033"
       ],
       "obsidian_related": [
         {
@@ -8923,7 +9148,7 @@
       "inbound_count": 0,
       "tokens_estimate": 522,
       "community_ids": [
-        "community-028"
+        "community-034"
       ],
       "obsidian_related": [
         {
@@ -9020,7 +9245,7 @@
       "inbound_count": 0,
       "tokens_estimate": 298,
       "community_ids": [
-        "community-029"
+        "community-035"
       ],
       "obsidian_related": [
         {
@@ -9127,7 +9352,7 @@
       "inbound_count": 0,
       "tokens_estimate": 62,
       "community_ids": [
-        "community-030"
+        "community-036"
       ],
       "obsidian_related": [
         {
@@ -9238,7 +9463,7 @@
       "inbound_count": 0,
       "tokens_estimate": 597,
       "community_ids": [
-        "community-031"
+        "community-037"
       ],
       "obsidian_related": [
         {
@@ -9349,7 +9574,7 @@
       "inbound_count": 0,
       "tokens_estimate": 2720,
       "community_ids": [
-        "community-032"
+        "community-038"
       ],
       "obsidian_related": [
         {
@@ -9460,7 +9685,7 @@
       "inbound_count": 0,
       "tokens_estimate": 2434,
       "community_ids": [
-        "community-033"
+        "community-039"
       ],
       "obsidian_related": [
         {
@@ -9567,7 +9792,7 @@
       "inbound_count": 0,
       "tokens_estimate": 274,
       "community_ids": [
-        "community-034"
+        "community-040"
       ],
       "obsidian_related": [
         {
@@ -9678,7 +9903,7 @@
       "inbound_count": 0,
       "tokens_estimate": 804,
       "community_ids": [
-        "community-035"
+        "community-041"
       ],
       "obsidian_related": [
         {
@@ -9781,7 +10006,7 @@
       "inbound_count": 0,
       "tokens_estimate": 830,
       "community_ids": [
-        "community-036"
+        "community-042"
       ],
       "obsidian_related": [
         {
@@ -9888,7 +10113,7 @@
       "inbound_count": 0,
       "tokens_estimate": 290,
       "community_ids": [
-        "community-037"
+        "community-043"
       ],
       "obsidian_related": [
         {
@@ -9987,7 +10212,7 @@
       "inbound_count": 0,
       "tokens_estimate": 962,
       "community_ids": [
-        "community-038"
+        "community-044"
       ],
       "obsidian_related": [
         {
@@ -10098,7 +10323,7 @@
       "inbound_count": 0,
       "tokens_estimate": 293,
       "community_ids": [
-        "community-039"
+        "community-045"
       ],
       "obsidian_related": [
         {
@@ -10209,7 +10434,7 @@
       "inbound_count": 0,
       "tokens_estimate": 841,
       "community_ids": [
-        "community-040"
+        "community-046"
       ],
       "obsidian_related": [
         {
@@ -10320,7 +10545,7 @@
       "inbound_count": 0,
       "tokens_estimate": 602,
       "community_ids": [
-        "community-041"
+        "community-047"
       ],
       "obsidian_related": [
         {
@@ -10431,7 +10656,7 @@
       "inbound_count": 0,
       "tokens_estimate": 481,
       "community_ids": [
-        "community-042"
+        "community-048"
       ],
       "obsidian_related": [
         {
@@ -10542,7 +10767,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1360,
       "community_ids": [
-        "community-043"
+        "community-049"
       ],
       "obsidian_related": [
         {
@@ -10653,7 +10878,7 @@
       "inbound_count": 0,
       "tokens_estimate": 1088,
       "community_ids": [
-        "community-044"
+        "community-050"
       ],
       "obsidian_related": [
         {
@@ -10758,7 +10983,7 @@
       "inbound_count": 0,
       "tokens_estimate": 738,
       "community_ids": [
-        "community-045"
+        "community-051"
       ],
       "obsidian_related": [
         {
@@ -10865,7 +11090,7 @@
       "inbound_count": 0,
       "tokens_estimate": 164,
       "community_ids": [
-        "community-046"
+        "community-052"
       ],
       "obsidian_related": [
         {
@@ -10962,7 +11187,7 @@
       "inbound_count": 0,
       "tokens_estimate": 229,
       "community_ids": [
-        "community-047"
+        "community-053"
       ],
       "obsidian_related": []
     },
@@ -10996,7 +11221,7 @@
       "inbound_count": 0,
       "tokens_estimate": 472,
       "community_ids": [
-        "community-048"
+        "community-054"
       ],
       "obsidian_related": []
     },
@@ -11034,7 +11259,65 @@
       "inbound_count": 0,
       "tokens_estimate": 684,
       "community_ids": [
-        "community-049"
+        "community-055"
+      ],
+      "obsidian_related": []
+    },
+    {
+      "id": "실습결과물/29/codex cli프롬프트",
+      "title": "codex cli 프롬프트",
+      "path": "실습결과물/29/codex cli프롬프트.md",
+      "tags": [],
+      "topics": [
+        "cli",
+        "codex",
+        "text",
+        "프롬프트"
+      ],
+      "entities": [
+        "cli",
+        "codex",
+        "text",
+        "프롬프트"
+      ],
+      "summary": "```text",
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 111,
+      "community_ids": [
+        "community-056"
+      ],
+      "obsidian_related": []
+    },
+    {
+      "id": "실습결과물/29/분기 test",
+      "title": "분기 test",
+      "path": "실습결과물/29/분기 test.md",
+      "tags": [],
+      "topics": [
+        "test",
+        "남깁니다",
+        "메시지",
+        "메시지입니다",
+        "번째",
+        "분기",
+        "수정",
+        "추가"
+      ],
+      "entities": [
+        "test",
+        "메시지입니다",
+        "번째",
+        "분기",
+        "수정",
+        "추가"
+      ],
+      "summary": "첫 번째 수정 메시지입니다. 추가 메시지 한 줄 더 남깁니다. 두 번째 수정 메시지입니다. 세 번째 수정 메시지입니다.",
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 17,
+      "community_ids": [
+        "community-057"
       ],
       "obsidian_related": []
     }
@@ -12523,6 +12806,92 @@
     {
       "id": "community-014",
       "size": 1,
+      "representative_page_id": "docs/opencode-gemma4e2b-tool-calling-guide",
+      "representative_title": "OpenCode Tool Calling Guide For `gemma4:e4b`",
+      "representative_path": "docs/opencode-gemma4e2b-tool-calling-guide.md",
+      "summary": "OpenCode Tool Calling Guide For `gemma4:e4b` 중심의 지식 군집입니다. 핵심 주제는 behavior, calling, e4b, gemma4이며, 대표 문서는 OpenCode Tool Calling Guide For `gemma4:e4b` 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "behavior",
+          1
+        ],
+        [
+          "calling",
+          1
+        ],
+        [
+          "e4b",
+          1
+        ],
+        [
+          "gemma4",
+          1
+        ],
+        [
+          "guide",
+          1
+        ],
+        [
+          "mandatory",
+          1
+        ],
+        [
+          "opencode",
+          1
+        ],
+        [
+          "tool",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "behavior",
+          1
+        ],
+        [
+          "calling",
+          1
+        ],
+        [
+          "e4b",
+          1
+        ],
+        [
+          "gemma4",
+          1
+        ],
+        [
+          "guide",
+          1
+        ],
+        [
+          "mandatory",
+          1
+        ],
+        [
+          "ollama",
+          1
+        ],
+        [
+          "opencode",
+          1
+        ]
+      ],
+      "page_ids": [
+        "docs/opencode-gemma4e2b-tool-calling-guide"
+      ],
+      "paths": [
+        "docs/opencode-gemma4e2b-tool-calling-guide.md"
+      ],
+      "titles": [
+        "OpenCode Tool Calling Guide For `gemma4:e4b`"
+      ]
+    },
+    {
+      "id": "community-015",
+      "size": 1,
       "representative_page_id": "llm_wiki/Hermes-Agent-비교-보고서",
       "representative_title": "Hermes Agent 조사 및 현재 시스템 비교 보고서",
       "representative_path": "llm_wiki/Hermes-Agent-비교-보고서.md",
@@ -12607,7 +12976,7 @@
       ]
     },
     {
-      "id": "community-015",
+      "id": "community-016",
       "size": 1,
       "representative_page_id": "llm_wiki/LLM 지식 아키텍처",
       "representative_title": "LLM 지식 아키텍처와 장기 기억 도구 비교 보고서",
@@ -12693,7 +13062,7 @@
       ]
     },
     {
-      "id": "community-016",
+      "id": "community-017",
       "size": 1,
       "representative_page_id": "llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP",
       "representative_title": "Obsidian Smart Connections Setup",
@@ -12779,7 +13148,7 @@
       ]
     },
     {
-      "id": "community-017",
+      "id": "community-018",
       "size": 1,
       "representative_page_id": "memory_layer/README",
       "representative_title": "Local Memory Layer",
@@ -12865,7 +13234,7 @@
       ]
     },
     {
-      "id": "community-018",
+      "id": "community-019",
       "size": 1,
       "representative_page_id": "notion_app_date_filter_fallback_skill/SKILL",
       "representative_title": "Notion App Date Filter Fallback Skill",
@@ -12951,7 +13320,7 @@
       ]
     },
     {
-      "id": "community-019",
+      "id": "community-020",
       "size": 1,
       "representative_page_id": "orange_example_10/bodyfat_analysis_report",
       "representative_title": "Body Fat Brozek 시각 분석 보고서 (미리보기 중심)",
@@ -13037,7 +13406,7 @@
       ]
     },
     {
-      "id": "community-020",
+      "id": "community-021",
       "size": 1,
       "representative_page_id": "orange_example_10/titanic_adaboost_report",
       "representative_title": "Titanic AdaBoost 분석 보고서",
@@ -13123,7 +13492,7 @@
       ]
     },
     {
-      "id": "community-021",
+      "id": "community-022",
       "size": 1,
       "representative_page_id": "orange_example_10/titanic_survival_report",
       "representative_title": "Titanic 생존 분석 보고서",
@@ -13209,7 +13578,7 @@
       ]
     },
     {
-      "id": "community-022",
+      "id": "community-023",
       "size": 1,
       "representative_page_id": "README",
       "representative_title": "AxDxConsultant",
@@ -13295,7 +13664,179 @@
       ]
     },
     {
-      "id": "community-023",
+      "id": "community-024",
+      "size": 1,
+      "representative_page_id": "scripts/pyramid",
+      "representative_title": "Pyramid Program",
+      "representative_path": "scripts/pyramid.md",
+      "summary": "Pyramid Program 중심의 지식 군집입니다. 핵심 주제는 program, pyramid, 사용자로부터, 숫자를이며, 대표 문서는 Pyramid Program 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "program",
+          1
+        ],
+        [
+          "pyramid",
+          1
+        ],
+        [
+          "사용자로부터",
+          1
+        ],
+        [
+          "숫자를",
+          1
+        ],
+        [
+          "입력받아",
+          1
+        ],
+        [
+          "출력하는",
+          1
+        ],
+        [
+          "피라미드",
+          1
+        ],
+        [
+          "형태의",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "program",
+          1
+        ],
+        [
+          "pyramid",
+          1
+        ],
+        [
+          "방법",
+          1
+        ],
+        [
+          "사용",
+          1
+        ],
+        [
+          "사용자로부터",
+          1
+        ],
+        [
+          "설명",
+          1
+        ],
+        [
+          "숫자를",
+          1
+        ],
+        [
+          "실행",
+          1
+        ]
+      ],
+      "page_ids": [
+        "scripts/pyramid"
+      ],
+      "paths": [
+        "scripts/pyramid.md"
+      ],
+      "titles": [
+        "Pyramid Program"
+      ]
+    },
+    {
+      "id": "community-025",
+      "size": 1,
+      "representative_page_id": "scripts/xwing",
+      "representative_title": "xwing.py",
+      "representative_path": "scripts/xwing.md",
+      "summary": "xwing.py 중심의 지식 군집입니다. 핵심 주제는 py, xwing, 모양을, 문자로이며, 대표 문서는 xwing.py 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "py",
+          1
+        ],
+        [
+          "xwing",
+          1
+        ],
+        [
+          "모양을",
+          1
+        ],
+        [
+          "문자로",
+          1
+        ],
+        [
+          "숫자를",
+          1
+        ],
+        [
+          "입력받아",
+          1
+        ],
+        [
+          "출력하는",
+          1
+        ],
+        [
+          "터미널에",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "py",
+          1
+        ],
+        [
+          "xwing",
+          1
+        ],
+        [
+          "문자로",
+          1
+        ],
+        [
+          "방법",
+          1
+        ],
+        [
+          "숫자를",
+          1
+        ],
+        [
+          "실행",
+          1
+        ],
+        [
+          "예시",
+          1
+        ],
+        [
+          "입력받아",
+          1
+        ]
+      ],
+      "page_ids": [
+        "scripts/xwing"
+      ],
+      "paths": [
+        "scripts/xwing.md"
+      ],
+      "titles": [
+        "xwing.py"
+      ]
+    },
+    {
+      "id": "community-026",
       "size": 1,
       "representative_page_id": "skills/graphify-code-wiki/SKILL",
       "representative_title": "Graphify Code Wiki",
@@ -13381,7 +13922,93 @@
       ]
     },
     {
-      "id": "community-024",
+      "id": "community-027",
+      "size": 1,
+      "representative_page_id": "skills/local-llm-stack-setup/SKILL",
+      "representative_title": "Local LLM Stack Setup",
+      "representative_path": "skills/local-llm-stack-setup/SKILL.md",
+      "summary": "Local LLM Stack Setup 중심의 지식 군집입니다. 핵심 주제는 llm, local, setup, skill이며, 대표 문서는 Local LLM Stack Setup 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "llm",
+          1
+        ],
+        [
+          "local",
+          1
+        ],
+        [
+          "setup",
+          1
+        ],
+        [
+          "skill",
+          1
+        ],
+        [
+          "stack",
+          1
+        ],
+        [
+          "to",
+          1
+        ],
+        [
+          "use",
+          1
+        ],
+        [
+          "verify",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "confirm",
+          1
+        ],
+        [
+          "expected",
+          1
+        ],
+        [
+          "get",
+          1
+        ],
+        [
+          "layout",
+          1
+        ],
+        [
+          "llm",
+          1
+        ],
+        [
+          "local",
+          1
+        ],
+        [
+          "scope",
+          1
+        ],
+        [
+          "setup",
+          1
+        ]
+      ],
+      "page_ids": [
+        "skills/local-llm-stack-setup/SKILL"
+      ],
+      "paths": [
+        "skills/local-llm-stack-setup/SKILL.md"
+      ],
+      "titles": [
+        "Local LLM Stack Setup"
+      ]
+    },
+    {
+      "id": "community-028",
       "size": 1,
       "representative_page_id": "skills/local-whisper-gpu/SKILL",
       "representative_title": "Local Whisper GPU",
@@ -13467,7 +14094,7 @@
       ]
     },
     {
-      "id": "community-025",
+      "id": "community-029",
       "size": 1,
       "representative_page_id": "skills/troubleshooting",
       "representative_title": "Troubleshooting",
@@ -13553,7 +14180,7 @@
       ]
     },
     {
-      "id": "community-026",
+      "id": "community-030",
       "size": 1,
       "representative_page_id": "skills/wiki-llm-setup/SKILL",
       "representative_title": "Wiki LLM Setup",
@@ -13639,7 +14266,179 @@
       ]
     },
     {
-      "id": "community-027",
+      "id": "community-031",
+      "size": 1,
+      "representative_page_id": "testOpenCode/AGENTS",
+      "representative_title": "testOpenCode Agent Guide",
+      "representative_path": "testOpenCode/AGENTS.md",
+      "summary": "testOpenCode Agent Guide 중심의 지식 군집입니다. 핵심 주제는 agent, full, guide, is이며, 대표 문서는 testOpenCode Agent Guide 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "agent",
+          1
+        ],
+        [
+          "full",
+          1
+        ],
+        [
+          "guide",
+          1
+        ],
+        [
+          "is",
+          1
+        ],
+        [
+          "project",
+          1
+        ],
+        [
+          "rules",
+          1
+        ],
+        [
+          "small",
+          1
+        ],
+        [
+          "testopencode",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "agent",
+          1
+        ],
+        [
+          "backend",
+          1
+        ],
+        [
+          "data",
+          1
+        ],
+        [
+          "frontend",
+          1
+        ],
+        [
+          "full",
+          1
+        ],
+        [
+          "guide",
+          1
+        ],
+        [
+          "is",
+          1
+        ],
+        [
+          "project",
+          1
+        ]
+      ],
+      "page_ids": [
+        "testOpenCode/AGENTS"
+      ],
+      "paths": [
+        "testOpenCode/AGENTS.md"
+      ],
+      "titles": [
+        "testOpenCode Agent Guide"
+      ]
+    },
+    {
+      "id": "community-032",
+      "size": 1,
+      "representative_page_id": "testOpenCode/README",
+      "representative_title": "DXAX Class Promotion Site",
+      "representative_path": "testOpenCode/README.md",
+      "summary": "DXAX Class Promotion Site 중심의 지식 군집입니다. 핵심 주제는 class, dxax, js와, next이며, 대표 문서는 DXAX Class Promotion Site 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "class",
+          1
+        ],
+        [
+          "dxax",
+          1
+        ],
+        [
+          "js와",
+          1
+        ],
+        [
+          "next",
+          1
+        ],
+        [
+          "promotion",
+          1
+        ],
+        [
+          "site",
+          1
+        ],
+        [
+          "수업",
+          1
+        ],
+        [
+          "실행",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "backend",
+          1
+        ],
+        [
+          "class",
+          1
+        ],
+        [
+          "dxax",
+          1
+        ],
+        [
+          "frontend",
+          1
+        ],
+        [
+          "js와",
+          1
+        ],
+        [
+          "next",
+          1
+        ],
+        [
+          "promotion",
+          1
+        ],
+        [
+          "site",
+          1
+        ]
+      ],
+      "page_ids": [
+        "testOpenCode/README"
+      ],
+      "paths": [
+        "testOpenCode/README.md"
+      ],
+      "titles": [
+        "DXAX Class Promotion Site"
+      ]
+    },
+    {
+      "id": "community-033",
       "size": 1,
       "representative_page_id": "실습결과물/15/Youtube 영상 스크립트",
       "representative_title": "Youtube 영상 스크립트",
@@ -13721,7 +14520,7 @@
       ]
     },
     {
-      "id": "community-028",
+      "id": "community-034",
       "size": 1,
       "representative_page_id": "실습결과물/15/Youtube 영상 스크립트_1페이지 요약보고서",
       "representative_title": "Graphify 기반 LLM Wiki 활용 1페이지 요약보고서",
@@ -13807,7 +14606,7 @@
       ]
     },
     {
-      "id": "community-029",
+      "id": "community-035",
       "size": 1,
       "representative_page_id": "실습결과물/15/YouTube 영상 요약본",
       "representative_title": "YouTube 영상 요약본",
@@ -13853,7 +14652,7 @@
       ]
     },
     {
-      "id": "community-030",
+      "id": "community-036",
       "size": 1,
       "representative_page_id": "실습결과물/15/로컬 whisper 모델 설치 프롬프트",
       "representative_title": "whisper 모델 설치 프롬프트",
@@ -13939,7 +14738,7 @@
       ]
     },
     {
-      "id": "community-031",
+      "id": "community-037",
       "size": 1,
       "representative_page_id": "실습결과물/16/imports-85_actual_data_summary",
       "representative_title": "imports-85 실제데이터 기반 요약보고서",
@@ -14025,7 +14824,7 @@
       ]
     },
     {
-      "id": "community-032",
+      "id": "community-038",
       "size": 1,
       "representative_page_id": "실습결과물/16/imports-85_interactive_report",
       "representative_title": "자동차 모델 가격·성능·연비 관계 인터랙티브 보고서",
@@ -14111,7 +14910,7 @@
       ]
     },
     {
-      "id": "community-033",
+      "id": "community-039",
       "size": 1,
       "representative_page_id": "실습결과물/16/imports-85_report",
       "representative_title": "imports-85 정제 보고서",
@@ -14197,7 +14996,7 @@
       ]
     },
     {
-      "id": "community-034",
+      "id": "community-040",
       "size": 1,
       "representative_page_id": "실습결과물/16/retail_sales_report_assets/README",
       "representative_title": "Retail Sales Seaborn Graphs",
@@ -14283,7 +15082,7 @@
       ]
     },
     {
-      "id": "community-035",
+      "id": "community-041",
       "size": 1,
       "representative_page_id": "실습결과물/16/retail_sales_trend_onepage_report",
       "representative_title": "Retail Sales 추세 1페이지 보고서",
@@ -14369,7 +15168,7 @@
       ]
     },
     {
-      "id": "community-036",
+      "id": "community-042",
       "size": 1,
       "representative_page_id": "실습결과물/16/리테일 분석판매보고서노트북LM",
       "representative_title": "리테일 분석판매보고서노트북LM",
@@ -14439,7 +15238,7 @@
       ]
     },
     {
-      "id": "community-037",
+      "id": "community-043",
       "size": 1,
       "representative_page_id": "실습결과물/16/매출분석에 쓰인 프롬프트",
       "representative_title": "매출 분석에 쓰인 프롬프트",
@@ -14525,7 +15324,7 @@
       ]
     },
     {
-      "id": "community-038",
+      "id": "community-044",
       "size": 1,
       "representative_page_id": "실습결과물/16/자동차수출예제관련프롬프트",
       "representative_title": "자동차 수출 관련 예제 프롬프트",
@@ -14579,7 +15378,7 @@
       ]
     },
     {
-      "id": "community-039",
+      "id": "community-045",
       "size": 1,
       "representative_page_id": "실습결과물/16/한페이지요약 HRD AX 수업도향",
       "representative_title": "📊 2026 HRD Trend Report 요약",
@@ -14665,7 +15464,7 @@
       ]
     },
     {
-      "id": "community-040",
+      "id": "community-046",
       "size": 1,
       "representative_page_id": "실습결과물/17/02 Project Management_manager_ranking_report",
       "representative_title": "Project Management 매니저 성과 1페이지 요약 보고서",
@@ -14751,7 +15550,7 @@
       ]
     },
     {
-      "id": "community-041",
+      "id": "community-047",
       "size": 1,
       "representative_page_id": "실습결과물/17/02 Project Management_SCQA_insight_report",
       "representative_title": "프로젝트 포트폴리오 SCQA 인사이트 리포트",
@@ -14837,7 +15636,7 @@
       ]
     },
     {
-      "id": "community-042",
+      "id": "community-048",
       "size": 1,
       "representative_page_id": "실습결과물/17/02 Project Management_summary_report",
       "representative_title": "Project Management 데이터 1페이지 요약 보고서",
@@ -14923,7 +15722,7 @@
       ]
     },
     {
-      "id": "community-043",
+      "id": "community-049",
       "size": 1,
       "representative_page_id": "실습결과물/17/08 E-Commerce Orders_daily_sales_outlier_report",
       "representative_title": "E-Commerce Orders 매장별 일매출 이상치 분석 보고서",
@@ -15009,7 +15808,7 @@
       ]
     },
     {
-      "id": "community-044",
+      "id": "community-050",
       "size": 1,
       "representative_page_id": "실습결과물/17/08 E-Commerce Orders_price_outlier_report",
       "representative_title": "E-Commerce Orders 가격 이상치 분석 보고서",
@@ -15095,7 +15894,7 @@
       ]
     },
     {
-      "id": "community-045",
+      "id": "community-051",
       "size": 1,
       "representative_page_id": "실습결과물/17/project Magement_blog",
       "representative_title": "project Magement_blog",
@@ -15173,7 +15972,7 @@
       ]
     },
     {
-      "id": "community-046",
+      "id": "community-052",
       "size": 1,
       "representative_page_id": "실습결과물/17/엑셀처리프롬프트",
       "representative_title": "엑셀 데이터 처리 프롬프트",
@@ -15259,7 +16058,7 @@
       ]
     },
     {
-      "id": "community-047",
+      "id": "community-053",
       "size": 1,
       "representative_page_id": "실습결과물/28/kordoc 설치 프롬프트",
       "representative_title": "kordoc mcp 설치",
@@ -15305,7 +16104,7 @@
       ]
     },
     {
-      "id": "community-048",
+      "id": "community-054",
       "size": 1,
       "representative_page_id": "실습결과물/28/marketing_campaigns_assets/infographic_prompt",
       "representative_title": "Marketing Campaigns Infographic Prompt",
@@ -15391,7 +16190,7 @@
       ]
     },
     {
-      "id": "community-049",
+      "id": "community-055",
       "size": 1,
       "representative_page_id": "실습결과물/28/marketing_campaigns_assets/marketing_campaigns_report",
       "representative_title": "Marketing Campaigns 분석 보고서",
@@ -15474,6 +16273,138 @@
       ],
       "titles": [
         "Marketing Campaigns 분석 보고서"
+      ]
+    },
+    {
+      "id": "community-056",
+      "size": 1,
+      "representative_page_id": "실습결과물/29/codex cli프롬프트",
+      "representative_title": "codex cli 프롬프트",
+      "representative_path": "실습결과물/29/codex cli프롬프트.md",
+      "summary": "codex cli 프롬프트 중심의 지식 군집입니다. 핵심 주제는 cli, codex, text, 프롬프트이며, 대표 문서는 codex cli 프롬프트 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "cli",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "cli",
+          1
+        ],
+        [
+          "codex",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "프롬프트",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/29/codex cli프롬프트"
+      ],
+      "paths": [
+        "실습결과물/29/codex cli프롬프트.md"
+      ],
+      "titles": [
+        "codex cli 프롬프트"
+      ]
+    },
+    {
+      "id": "community-057",
+      "size": 1,
+      "representative_page_id": "실습결과물/29/분기 test",
+      "representative_title": "분기 test",
+      "representative_path": "실습결과물/29/분기 test.md",
+      "summary": "분기 test 중심의 지식 군집입니다. 핵심 주제는 test, 남깁니다, 메시지, 메시지입니다이며, 대표 문서는 분기 test 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "test",
+          1
+        ],
+        [
+          "남깁니다",
+          1
+        ],
+        [
+          "메시지",
+          1
+        ],
+        [
+          "메시지입니다",
+          1
+        ],
+        [
+          "번째",
+          1
+        ],
+        [
+          "분기",
+          1
+        ],
+        [
+          "수정",
+          1
+        ],
+        [
+          "추가",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "test",
+          1
+        ],
+        [
+          "메시지입니다",
+          1
+        ],
+        [
+          "번째",
+          1
+        ],
+        [
+          "분기",
+          1
+        ],
+        [
+          "수정",
+          1
+        ],
+        [
+          "추가",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/29/분기 test"
+      ],
+      "paths": [
+        "실습결과물/29/분기 test.md"
+      ],
+      "titles": [
+        "분기 test"
       ]
     }
   ]

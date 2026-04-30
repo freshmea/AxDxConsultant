@@ -1,12 +1,12 @@
 # Graph Report
 
-- Generated: 2026-04-29T00:28:24.658255+00:00
-- Pages: 104
+- Generated: 2026-04-30T00:37:33.614004+00:00
+- Pages: 112
 - Edges: 89
-- Estimated full corpus tokens: 93139
+- Estimated full corpus tokens: 97001
 - Smart Connections bridge: enabled
-- Code files scanned: 29
-- Code graph: 1182 nodes / 3539 edges / 19 communities
+- Code files scanned: 86
+- Code graph: 1260 nodes / 3719 edges / 17 communities
 
 ## Top Tags
 
@@ -30,19 +30,19 @@
 
 - `업무` x 14
 - `분석` x 11
+- `프롬프트` x 11
+- `llm` x 10
 - `인덱스` x 10
 - `수중드론` x 10
-- `프롬프트` x 10
-- `llm` x 9
 - `핵심` x 9
 - `사업화` x 9
 - `wiki` x 8
 - `1페이지` x 8
+- `local` x 7
 - `데이터` x 7
 - `작성` x 7
 - `고려의` x 7
 - `그림자` x 7
-- `새벽` x 7
 
 ## Top Entities
 
@@ -52,9 +52,9 @@
 - `인덱스` x 10
 - `1페이지` x 10
 - `수중드론` x 10
+- `프롬프트` x 10
+- `llm` x 9
 - `사업화` x 9
-- `프롬프트` x 9
-- `llm` x 8
 - `데이터` x 8
 - `작성` x 7
 - `소설` x 7
@@ -110,6 +110,7 @@
 - [사업내용](../docs/2. 블록체인 뱅킹 시스템 프로젝트_교육_한국융합인재교육협회.md)
 - [Remote ComfyUI Z-Image Setup](../docs/comfyui-remote-zimage.md)
 - [ComfyUI Local Setup](../docs/comfyui-setup.md)
+- [OpenCode Tool Calling Guide For `gemma4:e4b`](../docs/opencode-gemma4e2b-tool-calling-guide.md)
 - [Hermes Agent 조사 및 현재 시스템 비교 보고서](../llm_wiki/Hermes-Agent-비교-보고서.md)
 - [LLM 지식 아키텍처와 장기 기억 도구 비교 보고서](../llm_wiki/LLM 지식 아키텍처.md)
 - [Obsidian Smart Connections Setup](../llm_wiki/OBSIDIAN_SMART_CONNECTIONS_SETUP.md)
@@ -120,21 +121,20 @@
 - [Titanic AdaBoost 분석 보고서](../orange_example_10/titanic_adaboost_report.md)
 - [Titanic 생존 분석 보고서](../orange_example_10/titanic_survival_report.md)
 - [AxDxConsultant](../README.md)
+- [Pyramid Program](../scripts/pyramid.md)
+- [xwing.py](../scripts/xwing.md)
 - [Graphify Code Wiki](../skills/graphify-code-wiki/SKILL.md)
-- [Local Whisper GPU](../skills/local-whisper-gpu/SKILL.md)
-- [Troubleshooting](../skills/troubleshooting.md)
-- [Wiki LLM Setup](../skills/wiki-llm-setup/SKILL.md)
-- [PaperclipAI 교육 커리큘럼 및 강의자용 운영 패키지](../실습결과물/06/deep-research-report.md)
+- [Local LLM Stack Setup](../skills/local-llm-stack-setup/SKILL.md)
 
 ## Code Graph
 
-- language `python` x 26
-- language `unsupported` x 3
-- relation `calls` x 3113
-- relation `defines` x 231
-- relation `imports` x 194
-- relation `inherits` x 1
-- confidence `EXTRACTED` x 3539
+- language `unsupported` x 57
+- language `python` x 29
+- relation `calls` x 3249
+- relation `defines` x 260
+- relation `imports` x 207
+- relation `inherits` x 3
+- confidence `EXTRACTED` x 3719
 
 ## Code God Nodes
 

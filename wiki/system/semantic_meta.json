@@ -149,6 +149,37 @@
       ]
     },
     {
+      "id": "docs/opencode-gemma4e2b-tool-calling-guide",
+      "title": "OpenCode Tool Calling Guide For `gemma4:e4b`",
+      "path": "docs/opencode-gemma4e2b-tool-calling-guide.md",
+      "summary": "이 문서는 OpenCode에서 `ollama/gemma4:e4b`를 사용할 때 도구 호출 정확도를 높이기 위한 운영 지침이다.",
+      "tags": [],
+      "topics": [
+        "behavior",
+        "calling",
+        "e4b",
+        "gemma4",
+        "guide",
+        "mandatory",
+        "opencode",
+        "tool"
+      ],
+      "entities": [
+        "behavior",
+        "calling",
+        "e4b",
+        "gemma4",
+        "guide",
+        "mandatory",
+        "ollama",
+        "opencode",
+        "opencode에서",
+        "search",
+        "tasks",
+        "tool"
+      ]
+    },
+    {
       "id": "llm_wiki/Hermes-Agent-비교-보고서",
       "title": "Hermes Agent 조사 및 현재 시스템 비교 보고서",
       "path": "llm_wiki/Hermes-Agent-비교-보고서.md",
@@ -459,6 +490,65 @@
       ]
     },
     {
+      "id": "scripts/pyramid",
+      "title": "Pyramid Program",
+      "path": "scripts/pyramid.md",
+      "summary": "사용자로부터 숫자를 입력받아 피라미드 형태의 별(*)을 출력하는 프로그램입니다.",
+      "tags": [],
+      "topics": [
+        "program",
+        "pyramid",
+        "사용자로부터",
+        "숫자를",
+        "입력받아",
+        "출력하는",
+        "피라미드",
+        "형태의"
+      ],
+      "entities": [
+        "program",
+        "pyramid",
+        "방법",
+        "사용",
+        "사용자로부터",
+        "설명",
+        "숫자를",
+        "실행",
+        "예시",
+        "입력받아",
+        "코드",
+        "피라미드"
+      ]
+    },
+    {
+      "id": "scripts/xwing",
+      "title": "xwing.py",
+      "path": "scripts/xwing.md",
+      "summary": "`xwing.py`는 숫자를 입력받아 터미널에 `*` 문자로 X 모양을 출력하는 프로그램입니다.",
+      "tags": [],
+      "topics": [
+        "py",
+        "xwing",
+        "모양을",
+        "문자로",
+        "숫자를",
+        "입력받아",
+        "출력하는",
+        "터미널에"
+      ],
+      "entities": [
+        "py",
+        "xwing",
+        "문자로",
+        "방법",
+        "숫자를",
+        "실행",
+        "예시",
+        "입력받아",
+        "터미널에"
+      ]
+    },
+    {
       "id": "skills/graphify-code-wiki/SKILL",
       "title": "Graphify Code Wiki",
       "path": "skills/graphify-code-wiki/SKILL.md",
@@ -487,6 +577,37 @@
         "task",
         "use",
         "verify"
+      ]
+    },
+    {
+      "id": "skills/local-llm-stack-setup/SKILL",
+      "title": "Local LLM Stack Setup",
+      "path": "skills/local-llm-stack-setup/SKILL.md",
+      "summary": "Use this skill to get the repository into a runnable local-AI state before task work starts.",
+      "tags": [],
+      "topics": [
+        "llm",
+        "local",
+        "setup",
+        "skill",
+        "stack",
+        "to",
+        "use",
+        "verify"
+      ],
+      "entities": [
+        "confirm",
+        "expected",
+        "get",
+        "layout",
+        "llm",
+        "local",
+        "scope",
+        "setup",
+        "skill",
+        "stack",
+        "to",
+        "use"
       ]
     },
     {
@@ -580,6 +701,68 @@
         "required",
         "setup",
         "stance"
+      ]
+    },
+    {
+      "id": "testOpenCode/AGENTS",
+      "title": "testOpenCode Agent Guide",
+      "path": "testOpenCode/AGENTS.md",
+      "summary": "This project is a small full-stack DXAX class promotion site.",
+      "tags": [],
+      "topics": [
+        "agent",
+        "full",
+        "guide",
+        "is",
+        "project",
+        "rules",
+        "small",
+        "testopencode"
+      ],
+      "entities": [
+        "agent",
+        "backend",
+        "data",
+        "frontend",
+        "full",
+        "guide",
+        "is",
+        "project",
+        "rules",
+        "small",
+        "source",
+        "stack"
+      ]
+    },
+    {
+      "id": "testOpenCode/README",
+      "title": "DXAX Class Promotion Site",
+      "path": "testOpenCode/README.md",
+      "summary": "Next.js와 Tailwind CSS로 만든 수업 홍보 페이지와 FastAPI 기반 동적 수업 노트 API입니다.",
+      "tags": [],
+      "topics": [
+        "class",
+        "dxax",
+        "js와",
+        "next",
+        "promotion",
+        "site",
+        "수업",
+        "실행"
+      ],
+      "entities": [
+        "backend",
+        "class",
+        "dxax",
+        "frontend",
+        "js와",
+        "next",
+        "promotion",
+        "site",
+        "tailwind",
+        "구조",
+        "변수",
+        "수업"
       ]
     },
     {
@@ -3125,6 +3308,50 @@
         "분석",
         "성과",
         "채널별"
+      ]
+    },
+    {
+      "id": "실습결과물/29/codex cli프롬프트",
+      "title": "codex cli 프롬프트",
+      "path": "실습결과물/29/codex cli프롬프트.md",
+      "summary": "```text",
+      "tags": [],
+      "topics": [
+        "cli",
+        "codex",
+        "text",
+        "프롬프트"
+      ],
+      "entities": [
+        "cli",
+        "codex",
+        "text",
+        "프롬프트"
+      ]
+    },
+    {
+      "id": "실습결과물/29/분기 test",
+      "title": "분기 test",
+      "path": "실습결과물/29/분기 test.md",
+      "summary": "첫 번째 수정 메시지입니다. 추가 메시지 한 줄 더 남깁니다. 두 번째 수정 메시지입니다. 세 번째 수정 메시지입니다.",
+      "tags": [],
+      "topics": [
+        "test",
+        "남깁니다",
+        "메시지",
+        "메시지입니다",
+        "번째",
+        "분기",
+        "수정",
+        "추가"
+      ],
+      "entities": [
+        "test",
+        "메시지입니다",
+        "번째",
+        "분기",
+        "수정",
+        "추가"
       ]
     }
   ]
