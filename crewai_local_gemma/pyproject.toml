@@ -9,6 +9,8 @@ authors = [
 requires-python = ">=3.12"
 dependencies = [
     "crewai>=1.14.4",
+    "crewai-tools>=1.14.4",
+    "firecrawl-py>=4.24.1",
     "python-dotenv>=1.2.2",
     "pyyaml>=6.0.3",
 ]
