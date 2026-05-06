@@ -89,3 +89,9 @@
 - Selected: skills/troubleshooting.md, memory_layer/README.md, llm_wiki/README.md, llm_wiki/Hermes-Agent-비교-보고서.md, AGENTS.md
 - Read plan: skills/troubleshooting.md, memory_layer/README.md, llm_wiki/README.md, llm_wiki/Hermes-Agent-비교-보고서.md, AGENTS.md
 - Tokens: full=88332 targeted=6310 saved=82022 ratio=0.9286
+
+## 2026-05-06T13:08:38.963545
+- Query: 2026-04-20 DXAX 수업 한페이지 요약
+- Selected: 실습결과물/16/한페이지요약 HRD AX 수업도향.md, 실습결과물/07/업무분석보고서.md, testOpenCode/README.md, 실습결과물/13/AIDX_5일차_교시별_요약.md, 실습결과물/13/00-INDEX.md
+- Read plan: 실습결과물/16/한페이지요약 HRD AX 수업도향.md, 실습결과물/07/업무분석보고서.md, 실습결과물/07/00-INDEX.md, 실습결과물/07/01-업무-흐름-구조화.md, 실습결과물/07/02-업무-흐름-mermaid.md, testOpenCode/README.md, 실습결과물/13/AIDX_5일차_교시별_요약.md, 실습결과물/13/00-INDEX.md, 실습결과물/13/광물자료조사.md, 실습결과물/13/노트북lm 수업 요약보고서.md
+- Tokens: full=98385 targeted=6678 saved=91707 ratio=0.9321

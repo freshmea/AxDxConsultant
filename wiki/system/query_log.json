@@ -378,5 +378,35 @@
       "saved_estimate": 82022,
       "savings_ratio": 0.9286
     }
+  },
+  {
+    "timestamp": "2026-05-06T13:08:38.963545",
+    "query": "2026-04-20 DXAX 수업 한페이지 요약",
+    "selected_paths": [
+      "실습결과물/16/한페이지요약 HRD AX 수업도향.md",
+      "실습결과물/07/업무분석보고서.md",
+      "testOpenCode/README.md",
+      "실습결과물/13/AIDX_5일차_교시별_요약.md",
+      "실습결과물/13/00-INDEX.md"
+    ],
+    "read_plan_paths": [
+      "실습결과물/16/한페이지요약 HRD AX 수업도향.md",
+      "실습결과물/07/업무분석보고서.md",
+      "실습결과물/07/00-INDEX.md",
+      "실습결과물/07/01-업무-흐름-구조화.md",
+      "실습결과물/07/02-업무-흐름-mermaid.md",
+      "testOpenCode/README.md",
+      "실습결과물/13/AIDX_5일차_교시별_요약.md",
+      "실습결과물/13/00-INDEX.md",
+      "실습결과물/13/광물자료조사.md",
+      "실습결과물/13/노트북lm 수업 요약보고서.md"
+    ],
+    "token_budget": {
+      "full_corpus_estimate": 98385,
+      "targeted_read_estimate": 6678,
+      "code_context_estimate": 0,
+      "saved_estimate": 91707,
+      "savings_ratio": 0.9321
+    }
   }
 ]
