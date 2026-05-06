@@ -1,0 +1,12 @@
+crew:
+  name: 코드_작성_검증_위임_시나리오
+  process: 순차
+  verbose: 예
+  memory: 아니오
+  output_file: 출력/위임_코드_테스트_결과.md
+  agents:
+    - 코드작성자
+    - 코드검증자
+  tasks:
+    - 코드작성
+    - 코드검증
