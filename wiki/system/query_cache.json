@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T00:37:33.614004+00:00",
+  "generated_at": "2026-05-06T01:42:22.606663+00:00",
   "pages": {
     "AGENTS": {
       "title": "LLM Wiki Schema",
@@ -71,7 +71,7 @@
       },
       "neighbors": [],
       "inbound_count": 2,
-      "tokens_estimate": 2046,
+      "tokens_estimate": 2301,
       "community_ids": [
         "community-009"
       ],
@@ -2228,7 +2228,7 @@
       },
       "neighbors": [],
       "inbound_count": 0,
-      "tokens_estimate": 3763,
+      "tokens_estimate": 4205,
       "community_ids": [
         "community-023"
       ],
@@ -17279,6 +17279,174 @@
         "community-057"
       ],
       "obsidian_related": []
+    },
+    "실습결과물/30/paperclipai 설치": {
+      "title": "paperclipai 설치",
+      "path": "실습결과물/30/paperclipai 설치.md",
+      "summary": "```text",
+      "headings": [
+        "paperclipai 설치"
+      ],
+      "tags": [],
+      "topics": [
+        "paperclipai",
+        "text",
+        "설치"
+      ],
+      "entities": [
+        "paperclipai",
+        "text",
+        "설치"
+      ],
+      "terms": {
+        "paperclipai": 5,
+        "설치": 5,
+        "text": 3,
+        "실습결과물": 1,
+        "30": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 38,
+      "community_ids": [
+        "community-058"
+      ],
+      "obsidian_related": []
+    },
+    "실습결과물/30/RES-15_조사결과보고서_2026-04-30": {
+      "title": "국제정세 조사 결과 보고서 (RES-15)",
+      "path": "실습결과물/30/RES-15_조사결과보고서_2026-04-30.md",
+      "summary": "작성일: 2026-04-30 - 작성자: Researcher Agent (cb8c38d0-1909-40fb-ab48-4f018ef413de) - 조사 범위: 중동 안보 리스크(미·이란) 및 중국 실물경기 지표의 동시 점검",
+      "headings": [
+        "국제정세 조사 결과 보고서 (RES-15)",
+        "1) Executive Summary",
+        "2) Key Findings",
+        "A. 미·이란: 협상은 열려 있으나 실질 교착 구간",
+        "B. 에너지 시장: 지정학 프리미엄 재확대",
+        "C. 중국 경기: 제조업 확장 지속 vs 내수·서비스 약세",
+        "D. 한국어 포털 편집동향(다음 국제면)",
+        "3) Risks",
+        "4) Next Actions (Actionable)",
+        "5) Source Log (with dates)",
+        "6) Data Quality Note"
+      ],
+      "tags": [],
+      "topics": [
+        "15",
+        "res",
+        "결과",
+        "국제정세",
+        "이란",
+        "작성일",
+        "조사",
+        "중국"
+      ],
+      "entities": [
+        "04",
+        "15",
+        "2026",
+        "30",
+        "executive",
+        "findings",
+        "key",
+        "res",
+        "summary",
+        "결과",
+        "국제정세",
+        "이란"
+      ],
+      "terms": {
+        "국제정세": 4,
+        "조사": 4,
+        "결과": 4,
+        "보고서": 2,
+        "res": 5,
+        "15": 4,
+        "작성일": 2,
+        "2026": 2,
+        "04": 3,
+        "30": 4,
+        "작성자": 1,
+        "researcher": 1,
+        "agent": 1,
+        "cb8c38d0": 1,
+        "1909": 1,
+        "40fb": 1,
+        "ab48": 1,
+        "4f018ef413de": 1,
+        "범위": 1,
+        "중동": 1,
+        "안보": 1,
+        "리스크": 1,
+        "미": 2,
+        "이란": 4,
+        "및": 1,
+        "중국": 3,
+        "실물경기": 1,
+        "지표의": 1,
+        "동시": 1,
+        "점검": 1,
+        "1": 1,
+        "executive": 2,
+        "summary": 2,
+        "2": 1,
+        "key": 2,
+        "findings": 2,
+        "a": 1,
+        "협상은": 1,
+        "열려": 1,
+        "있으나": 1,
+        "실질": 1,
+        "교착": 1,
+        "구간": 1,
+        "b": 1,
+        "에너지": 1,
+        "시장": 1,
+        "지정학": 1,
+        "프리미엄": 1,
+        "재확대": 1,
+        "c": 1,
+        "경기": 1,
+        "제조업": 1,
+        "확장": 1,
+        "지속": 1,
+        "vs": 1,
+        "내수": 1,
+        "서비스": 1,
+        "약세": 1,
+        "d": 1,
+        "한국어": 1,
+        "포털": 1,
+        "편집동향": 1,
+        "다음": 1,
+        "국제면": 1,
+        "3": 1,
+        "risks": 1,
+        "4": 1,
+        "next": 1,
+        "actions": 1,
+        "actionable": 1,
+        "5": 1,
+        "source": 1,
+        "log": 1,
+        "with": 1,
+        "dates": 1,
+        "6": 1,
+        "data": 1,
+        "quality": 1,
+        "note": 1,
+        "실습결과물": 1,
+        "15_조사결과보고서_2026": 1,
+        "md": 1
+      },
+      "neighbors": [],
+      "inbound_count": 0,
+      "tokens_estimate": 649,
+      "community_ids": [
+        "community-059"
+      ],
+      "obsidian_related": []
     }
   },
   "communities": {
@@ -21853,6 +22021,122 @@
       ],
       "paths": [
         "실습결과물/29/분기 test.md"
+      ]
+    },
+    "community-058": {
+      "summary": "paperclipai 설치 중심의 지식 군집입니다. 핵심 주제는 paperclipai, text, 설치이며, 대표 문서는 paperclipai 설치 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "paperclipai",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "설치",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "paperclipai",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "설치",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/30/paperclipai 설치"
+      ],
+      "paths": [
+        "실습결과물/30/paperclipai 설치.md"
+      ]
+    },
+    "community-059": {
+      "summary": "국제정세 조사 결과 보고서 (RES-15) 중심의 지식 군집입니다. 핵심 주제는 15, res, 결과, 국제정세이며, 대표 문서는 국제정세 조사 결과 보고서 (RES-15) 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "15",
+          1
+        ],
+        [
+          "res",
+          1
+        ],
+        [
+          "결과",
+          1
+        ],
+        [
+          "국제정세",
+          1
+        ],
+        [
+          "이란",
+          1
+        ],
+        [
+          "작성일",
+          1
+        ],
+        [
+          "조사",
+          1
+        ],
+        [
+          "중국",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "04",
+          1
+        ],
+        [
+          "15",
+          1
+        ],
+        [
+          "2026",
+          1
+        ],
+        [
+          "30",
+          1
+        ],
+        [
+          "executive",
+          1
+        ],
+        [
+          "findings",
+          1
+        ],
+        [
+          "key",
+          1
+        ],
+        [
+          "res",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/30/RES-15_조사결과보고서_2026-04-30"
+      ],
+      "paths": [
+        "실습결과물/30/RES-15_조사결과보고서_2026-04-30.md"
       ]
     }
   },

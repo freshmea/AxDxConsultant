@@ -1,9 +1,9 @@
 # Graph Report
 
-- Generated: 2026-04-30T00:37:33.614004+00:00
-- Pages: 112
+- Generated: 2026-05-06T01:42:22.606663+00:00
+- Pages: 114
 - Edges: 89
-- Estimated full corpus tokens: 97001
+- Estimated full corpus tokens: 98385
 - Smart Connections bridge: enabled
 - Code files scanned: 86
 - Code graph: 1260 nodes / 3719 edges / 17 communities

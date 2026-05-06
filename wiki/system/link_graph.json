@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T00:37:33.614004+00:00",
+  "generated_at": "2026-05-06T01:42:22.606663+00:00",
   "repo_root": "C:\\Users\\Administrator\\dxAx",
   "nodes": [
     {
@@ -41,8 +41,8 @@
         "unicode",
         "uses"
       ],
-      "tokens_estimate": 2046,
-      "word_count": 1265,
+      "tokens_estimate": 2301,
+      "word_count": 1403,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 2,
@@ -817,8 +817,8 @@
         "axdxconsultant",
         "과정"
       ],
-      "tokens_estimate": 3763,
-      "word_count": 3364,
+      "tokens_estimate": 4205,
+      "word_count": 3754,
       "outbound_links": [],
       "unresolved_links": [],
       "inbound_count": 0,
@@ -5484,6 +5484,88 @@
       "inbound_count": 0,
       "community_ids": [
         "community-057"
+      ],
+      "obsidian_related_count": 0
+    },
+    {
+      "id": "실습결과물/30/paperclipai 설치",
+      "title": "paperclipai 설치",
+      "path": "실습결과물/30/paperclipai 설치.md",
+      "summary": "```text",
+      "headings": [
+        "paperclipai 설치"
+      ],
+      "tags": [],
+      "topics": [
+        "paperclipai",
+        "text",
+        "설치"
+      ],
+      "entities": [
+        "paperclipai",
+        "text",
+        "설치"
+      ],
+      "tokens_estimate": 38,
+      "word_count": 27,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0,
+      "community_ids": [
+        "community-058"
+      ],
+      "obsidian_related_count": 0
+    },
+    {
+      "id": "실습결과물/30/RES-15_조사결과보고서_2026-04-30",
+      "title": "국제정세 조사 결과 보고서 (RES-15)",
+      "path": "실습결과물/30/RES-15_조사결과보고서_2026-04-30.md",
+      "summary": "작성일: 2026-04-30 - 작성자: Researcher Agent (cb8c38d0-1909-40fb-ab48-4f018ef413de) - 조사 범위: 중동 안보 리스크(미·이란) 및 중국 실물경기 지표의 동시 점검",
+      "headings": [
+        "국제정세 조사 결과 보고서 (RES-15)",
+        "1) Executive Summary",
+        "2) Key Findings",
+        "A. 미·이란: 협상은 열려 있으나 실질 교착 구간",
+        "B. 에너지 시장: 지정학 프리미엄 재확대",
+        "C. 중국 경기: 제조업 확장 지속 vs 내수·서비스 약세",
+        "D. 한국어 포털 편집동향(다음 국제면)",
+        "3) Risks",
+        "4) Next Actions (Actionable)",
+        "5) Source Log (with dates)",
+        "6) Data Quality Note"
+      ],
+      "tags": [],
+      "topics": [
+        "15",
+        "res",
+        "결과",
+        "국제정세",
+        "이란",
+        "작성일",
+        "조사",
+        "중국"
+      ],
+      "entities": [
+        "04",
+        "15",
+        "2026",
+        "30",
+        "executive",
+        "findings",
+        "key",
+        "res",
+        "summary",
+        "결과",
+        "국제정세",
+        "이란"
+      ],
+      "tokens_estimate": 649,
+      "word_count": 601,
+      "outbound_links": [],
+      "unresolved_links": [],
+      "inbound_count": 0,
+      "community_ids": [
+        "community-059"
       ],
       "obsidian_related_count": 0
     }
@@ -11019,14 +11101,146 @@
       "titles": [
         "분기 test"
       ]
+    },
+    {
+      "id": "community-058",
+      "size": 1,
+      "representative_page_id": "실습결과물/30/paperclipai 설치",
+      "representative_title": "paperclipai 설치",
+      "representative_path": "실습결과물/30/paperclipai 설치.md",
+      "summary": "paperclipai 설치 중심의 지식 군집입니다. 핵심 주제는 paperclipai, text, 설치이며, 대표 문서는 paperclipai 설치 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "paperclipai",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "설치",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "paperclipai",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "설치",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/30/paperclipai 설치"
+      ],
+      "paths": [
+        "실습결과물/30/paperclipai 설치.md"
+      ],
+      "titles": [
+        "paperclipai 설치"
+      ]
+    },
+    {
+      "id": "community-059",
+      "size": 1,
+      "representative_page_id": "실습결과물/30/RES-15_조사결과보고서_2026-04-30",
+      "representative_title": "국제정세 조사 결과 보고서 (RES-15)",
+      "representative_path": "실습결과물/30/RES-15_조사결과보고서_2026-04-30.md",
+      "summary": "국제정세 조사 결과 보고서 (RES-15) 중심의 지식 군집입니다. 핵심 주제는 15, res, 결과, 국제정세이며, 대표 문서는 국제정세 조사 결과 보고서 (RES-15) 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "15",
+          1
+        ],
+        [
+          "res",
+          1
+        ],
+        [
+          "결과",
+          1
+        ],
+        [
+          "국제정세",
+          1
+        ],
+        [
+          "이란",
+          1
+        ],
+        [
+          "작성일",
+          1
+        ],
+        [
+          "조사",
+          1
+        ],
+        [
+          "중국",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "04",
+          1
+        ],
+        [
+          "15",
+          1
+        ],
+        [
+          "2026",
+          1
+        ],
+        [
+          "30",
+          1
+        ],
+        [
+          "executive",
+          1
+        ],
+        [
+          "findings",
+          1
+        ],
+        [
+          "key",
+          1
+        ],
+        [
+          "res",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/30/RES-15_조사결과보고서_2026-04-30"
+      ],
+      "paths": [
+        "실습결과물/30/RES-15_조사결과보고서_2026-04-30.md"
+      ],
+      "titles": [
+        "국제정세 조사 결과 보고서 (RES-15)"
+      ]
     }
   ],
   "stats": {
-    "markdown_pages": 112,
+    "markdown_pages": 114,
     "resolved_edges": 89,
     "unresolved_links": 3,
-    "total_tokens_estimate": 97001,
-    "community_count": 57
+    "total_tokens_estimate": 98385,
+    "community_count": 59
   },
   "facets": {
     "top_tags": [

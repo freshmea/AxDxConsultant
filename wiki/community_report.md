@@ -1,7 +1,7 @@
 # Community Report
 
-- Generated: 2026-04-30T00:37:33.614004+00:00
-- Community count: 57
+- Generated: 2026-05-06T01:42:22.606663+00:00
+- Community count: 59
 
 ## community-001
 
@@ -515,3 +515,21 @@
 - Topics: test, 남깁니다, 메시지, 메시지입니다, 번째, 분기, 수정, 추가
 - Entities: test, 메시지입니다, 번째, 분기, 수정, 추가
 - Pages: 실습결과물/29/분기 test.md
+
+## community-058
+
+- Representative: [paperclipai 설치](../실습결과물/30/paperclipai 설치.md)
+- Size: 1
+- Summary: paperclipai 설치 중심의 지식 군집입니다. 핵심 주제는 paperclipai, text, 설치이며, 대표 문서는 paperclipai 설치 입니다.
+- Topics: paperclipai, text, 설치
+- Entities: paperclipai, text, 설치
+- Pages: 실습결과물/30/paperclipai 설치.md
+
+## community-059
+
+- Representative: [국제정세 조사 결과 보고서 (RES-15)](../실습결과물/30/RES-15_조사결과보고서_2026-04-30.md)
+- Size: 1
+- Summary: 국제정세 조사 결과 보고서 (RES-15) 중심의 지식 군집입니다. 핵심 주제는 15, res, 결과, 국제정세이며, 대표 문서는 국제정세 조사 결과 보고서 (RES-15) 입니다.
+- Topics: 15, res, 결과, 국제정세, 이란, 작성일, 조사, 중국
+- Entities: 04, 15, 2026, 30, executive, findings, key, res
+- Pages: 실습결과물/30/RES-15_조사결과보고서_2026-04-30.md

@@ -43,11 +43,12 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 7. If the question is about evolving configuration or operational state, also check `memory-search` before reading many raw pages.
 8. If a useful synthesis is created, store it back into `wiki/notes/`.
 9. When tracing local code relationships, use `graph-neighbors` before broader code reads when a single node's adjacency is enough.
-10. When using `ask`, follow the returned `workflow.instruction` and prefer its `code_read_plan` or `read_plan` before ad hoc file opens.
-11. For code-oriented `ask` results, treat `code_read_plan` as the primary read target and use the markdown `selected` or `read_plan` pages only for broader context when needed.
-12. For code-oriented `ask` results, inspect `code_relation` when present before falling back to broader graph traversal or ad hoc code reads.
-13. For lecture, transcript, or meeting-summary requests, read the full source span before writing, then weight the summary according to where the session spent its time instead of over-indexing the opening recap.
-14. When a summary request references multiple related files, inspect all relevant files first and produce a balanced synthesis that reflects the whole session, including later practical sections, setup details, and conclusions.
+10. When a single code node needs clarification, use `graph-explain` before opening the source file broadly so you can inspect its source location and immediate relations first.
+11. When using `ask`, follow the returned `workflow.instruction` and prefer its `code_read_plan` or `read_plan` before ad hoc file opens.
+12. For code-oriented `ask` results, treat `code_read_plan` as the primary read target and use the markdown `selected` or `read_plan` pages only for broader context when needed.
+13. For code-oriented `ask` results, inspect `code_relation` when present before falling back to broader graph traversal or ad hoc code reads.
+14. For lecture, transcript, or meeting-summary requests, read the full source span before writing, then weight the summary according to where the session spent its time instead of over-indexing the opening recap.
+15. When a summary request references multiple related files, inspect all relevant files first and produce a balanced synthesis that reflects the whole session, including later practical sections, setup details, and conclusions.
 
 ## Maintenance Workflow
 
@@ -60,6 +61,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 7. Keep Mem0 bootstraps resumable by using offsets and small batches when local Qdrant is in use.
 8. Do not run multiple Mem0 commands in parallel against the local Qdrant store.
 9. After code graph or routing changes, verify the `llm_wiki` package compiles and run a compact code-graph smoke test before trusting the outputs.
+10. After changing links, ignore rules, memory config, or skill docs, rebuild the wiki, confirm unresolved links are `0` or intentionally excluded, run one `ask` query, run one `memory-search` query, and verify token savings were logged.
 
 ## CLI Commands
 
@@ -71,6 +73,16 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 - Bootstrap page summaries into memory: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-bootstrap --root . --user-id dxax-wiki --mode pages --offset 0 --limit 10`
 - Search change-aware facts: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-search "<query>" --root . --user-id dxax-wiki --top-k 5`
 - Add a change-aware fact manually: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli memory-add "<fact>" --root . --user-id dxax-wiki --source manual`
+- Check unresolved wiki links:
+  ```powershell
+  @'
+  import json, pathlib
+  obj = json.loads(pathlib.Path("wiki/system/link_graph.json").read_text(encoding="utf-8"))
+  print(len(obj.get("unresolved_links", [])))
+  for item in obj.get("unresolved_links", []):
+      print(item.get("source_path"), "=>", item.get("target"))
+  '@ | python -
+  ```
 - Inspect the code graph: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-query "<query>" --root . --limit 10`
 - Inspect node neighbors in the code graph: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-neighbors "<node>" --root . --limit 20`
 - Explain a code node: `.\.venv-knowledge\Scripts\python.exe -m llm_wiki.cli graph-explain "<node>" --root . --limit 12`

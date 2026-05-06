@@ -3353,6 +3353,54 @@
         "수정",
         "추가"
       ]
+    },
+    {
+      "id": "실습결과물/30/paperclipai 설치",
+      "title": "paperclipai 설치",
+      "path": "실습결과물/30/paperclipai 설치.md",
+      "summary": "```text",
+      "tags": [],
+      "topics": [
+        "paperclipai",
+        "text",
+        "설치"
+      ],
+      "entities": [
+        "paperclipai",
+        "text",
+        "설치"
+      ]
+    },
+    {
+      "id": "실습결과물/30/RES-15_조사결과보고서_2026-04-30",
+      "title": "국제정세 조사 결과 보고서 (RES-15)",
+      "path": "실습결과물/30/RES-15_조사결과보고서_2026-04-30.md",
+      "summary": "작성일: 2026-04-30 - 작성자: Researcher Agent (cb8c38d0-1909-40fb-ab48-4f018ef413de) - 조사 범위: 중동 안보 리스크(미·이란) 및 중국 실물경기 지표의 동시 점검",
+      "tags": [],
+      "topics": [
+        "15",
+        "res",
+        "결과",
+        "국제정세",
+        "이란",
+        "작성일",
+        "조사",
+        "중국"
+      ],
+      "entities": [
+        "04",
+        "15",
+        "2026",
+        "30",
+        "executive",
+        "findings",
+        "key",
+        "res",
+        "summary",
+        "결과",
+        "국제정세",
+        "이란"
+      ]
     }
   ]
 }

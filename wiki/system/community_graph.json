@@ -5083,6 +5083,138 @@
       "titles": [
         "분기 test"
       ]
+    },
+    {
+      "id": "community-058",
+      "size": 1,
+      "representative_page_id": "실습결과물/30/paperclipai 설치",
+      "representative_title": "paperclipai 설치",
+      "representative_path": "실습결과물/30/paperclipai 설치.md",
+      "summary": "paperclipai 설치 중심의 지식 군집입니다. 핵심 주제는 paperclipai, text, 설치이며, 대표 문서는 paperclipai 설치 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "paperclipai",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "설치",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "paperclipai",
+          1
+        ],
+        [
+          "text",
+          1
+        ],
+        [
+          "설치",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/30/paperclipai 설치"
+      ],
+      "paths": [
+        "실습결과물/30/paperclipai 설치.md"
+      ],
+      "titles": [
+        "paperclipai 설치"
+      ]
+    },
+    {
+      "id": "community-059",
+      "size": 1,
+      "representative_page_id": "실습결과물/30/RES-15_조사결과보고서_2026-04-30",
+      "representative_title": "국제정세 조사 결과 보고서 (RES-15)",
+      "representative_path": "실습결과물/30/RES-15_조사결과보고서_2026-04-30.md",
+      "summary": "국제정세 조사 결과 보고서 (RES-15) 중심의 지식 군집입니다. 핵심 주제는 15, res, 결과, 국제정세이며, 대표 문서는 국제정세 조사 결과 보고서 (RES-15) 입니다.",
+      "top_tags": [],
+      "top_topics": [
+        [
+          "15",
+          1
+        ],
+        [
+          "res",
+          1
+        ],
+        [
+          "결과",
+          1
+        ],
+        [
+          "국제정세",
+          1
+        ],
+        [
+          "이란",
+          1
+        ],
+        [
+          "작성일",
+          1
+        ],
+        [
+          "조사",
+          1
+        ],
+        [
+          "중국",
+          1
+        ]
+      ],
+      "top_entities": [
+        [
+          "04",
+          1
+        ],
+        [
+          "15",
+          1
+        ],
+        [
+          "2026",
+          1
+        ],
+        [
+          "30",
+          1
+        ],
+        [
+          "executive",
+          1
+        ],
+        [
+          "findings",
+          1
+        ],
+        [
+          "key",
+          1
+        ],
+        [
+          "res",
+          1
+        ]
+      ],
+      "page_ids": [
+        "실습결과물/30/RES-15_조사결과보고서_2026-04-30"
+      ],
+      "paths": [
+        "실습결과물/30/RES-15_조사결과보고서_2026-04-30.md"
+      ],
+      "titles": [
+        "국제정세 조사 결과 보고서 (RES-15)"
+      ]
     }
   ],
   "edges": [

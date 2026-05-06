@@ -1,10 +1,10 @@
 # Wiki Index
 
-- Generated: 2026-04-30T00:37:33.614004+00:00
-- Markdown pages: 112
+- Generated: 2026-05-06T01:42:22.606663+00:00
+- Markdown pages: 114
 - Resolved edges: 89
-- Communities: 57
-- Estimated full-read tokens: 97001
+- Communities: 59
+- Estimated full-read tokens: 98385
 - Ignore file: `.llmwikiignore`
 - Semantic search: enabled
 - Smart Connections bridge: enabled
@@ -795,6 +795,20 @@
   - Summary: 첫 번째 수정 메시지입니다. 추가 메시지 한 줄 더 남깁니다. 두 번째 수정 메시지입니다. 세 번째 수정 메시지입니다.
   - Tags: (none)
   - Topics: test, 남깁니다, 메시지, 메시지입니다, 번째
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [paperclipai 설치](../실습결과물/30/paperclipai 설치.md)
+  - Path: `실습결과물/30/paperclipai 설치.md`
+  - Summary: ```text
+  - Tags: (none)
+  - Topics: paperclipai, text, 설치
+  - Links: 0 outbound / 0 unresolved
+  - Smart Connections neighbors: 0
+- [국제정세 조사 결과 보고서 (RES-15)](../실습결과물/30/RES-15_조사결과보고서_2026-04-30.md)
+  - Path: `실습결과물/30/RES-15_조사결과보고서_2026-04-30.md`
+  - Summary: 작성일: 2026-04-30 - 작성자: Researcher Agent (cb8c38d0-1909-40fb-ab48-4f018ef413de) - 조사 범위: 중동 안보 리스크(미·이란) 및 중국 실물경기 지표의 동시 점검
+  - Tags: (none)
+  - Topics: 15, res, 결과, 국제정세, 이란
   - Links: 0 outbound / 0 unresolved
   - Smart Connections neighbors: 0
 
