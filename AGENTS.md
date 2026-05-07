@@ -62,6 +62,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 8. Do not run multiple Mem0 commands in parallel against the local Qdrant store.
 9. After code graph or routing changes, verify the `llm_wiki` package compiles and run a compact code-graph smoke test before trusting the outputs.
 10. After changing links, ignore rules, memory config, or skill docs, rebuild the wiki, confirm unresolved links are `0` or intentionally excluded, run one `ask` query, run one `memory-search` query, and verify token savings were logged.
+11. After material setup-state or operational changes that `memory-search` should answer, rerun the relevant `memory-bootstrap` batches before relying on Mem0 results.
 
 ## CLI Commands
 
