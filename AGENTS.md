@@ -42,13 +42,16 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 6. Read only the top-ranked markdown pages that are needed to answer the question.
 7. If the question is about evolving configuration or operational state, also check `memory-search` before reading many raw pages.
 8. If a useful synthesis is created, store it back into `wiki/notes/`.
-9. When tracing local code relationships, use `graph-neighbors` before broader code reads when a single node's adjacency is enough.
-10. When a single code node needs clarification, use `graph-explain` before opening the source file broadly so you can inspect its source location and immediate relations first.
-11. When using `ask`, follow the returned `workflow.instruction` and prefer its `code_read_plan` or `read_plan` before ad hoc file opens.
-12. For code-oriented `ask` results, treat `code_read_plan` as the primary read target and use the markdown `selected` or `read_plan` pages only for broader context when needed.
-13. For code-oriented `ask` results, inspect `code_relation` when present before falling back to broader graph traversal or ad hoc code reads.
-14. For lecture, transcript, or meeting-summary requests, read the full source span before writing, then weight the summary according to where the session spent its time instead of over-indexing the opening recap.
-15. When a summary request references multiple related files, inspect all relevant files first and produce a balanced synthesis that reflects the whole session, including later practical sections, setup details, and conclusions.
+9. When a code-oriented question does not already name a specific node, use `graph-query` first to discover the relevant code graph ids before broader code reads.
+10. When tracing local code relationships, use `graph-neighbors` before broader code reads when a single node's adjacency is enough.
+11. When a single code node needs clarification, use `graph-explain` before opening the source file broadly so you can inspect its source location and immediate relations first.
+12. When using `ask`, follow the returned `workflow.instruction` and prefer its `code_read_plan` or `read_plan` before ad hoc file opens.
+13. For code-oriented `ask` results, treat `code_read_plan` as the primary read target and use the markdown `selected` or `read_plan` pages only for broader context when needed.
+14. When `ask` or `route` returns `query_profile.mode` as `code-first`, treat `code_context` and `code_read_plan` as the authoritative code-first routing output before broader markdown reads.
+15. For code-oriented `ask` results, inspect `code_relation` when present before falling back to broader graph traversal or ad hoc code reads.
+16. When the question is about how two code nodes relate, use `graph-path` before broader code reads so you can inspect the shortest graph route first.
+17. For lecture, transcript, or meeting-summary requests, read the full source span before writing, then weight the summary according to where the session spent its time instead of over-indexing the opening recap.
+18. When a summary request references multiple related files, inspect all relevant files first and produce a balanced synthesis that reflects the whole session, including later practical sections, setup details, and conclusions.
 
 ## Maintenance Workflow
 
@@ -63,6 +66,7 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 9. After code graph or routing changes, verify the `llm_wiki` package compiles and run a compact code-graph smoke test before trusting the outputs.
 10. After changing links, ignore rules, memory config, or skill docs, rebuild the wiki, confirm unresolved links are `0` or intentionally excluded, run one `ask` query, run one `memory-search` query, and verify token savings were logged.
 11. After material setup-state or operational changes that `memory-search` should answer, rerun the relevant `memory-bootstrap` batches before relying on Mem0 results.
+12. Before running `memory-bootstrap` or relying on `memory-search` after local model or environment changes, run `memory-check` and confirm the expected Ollama models are available.
 
 ## CLI Commands
 
