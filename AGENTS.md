@@ -19,6 +19,12 @@ This repository uses a local LLM Wiki pattern inspired by Andrej Karpathy's `llm
 7. Keep the semantic index, Smart Connections bridge cache, and GraphRAG-lite community summaries in sync with the page and link graph outputs.
 8. Keep change-aware facts in `memory_layer/` and query them through Mem0 before re-reading large parts of the corpus when the question is about setup state or recent changes.
 
+## Education Material Rules
+
+1. Treat `docs/ver1` as the authoritative location for the actual education materials unless the user explicitly points to a different source.
+2. When a user asks about class materials, lecture summaries, or work by date, search primarily from git commit data first. Use commit dates, changed file lists, renames/moves, and diffs around the requested date before relying on filesystem modified dates.
+3. If git history and current file locations disagree, explain the evidence clearly: current authoritative path, commit dates, file rename/move history, and the files selected for the answer.
+
 ## Unicode And Chart Rules
 
 1. When generating Korean markdown or report files from scripts, write them as UTF-8 and prefer `utf-8-sig` on Windows-facing deliverables.

@@ -17,3 +17,5 @@ wiki/system/code_cache/
 
 # Ignore Smart Environment folder
 .smart-env
+
+.codex_archive/
